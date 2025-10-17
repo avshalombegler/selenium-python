@@ -2,7 +2,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Flake8
 .flake8
+
+# Black
+pyproject.toml
 
 # Pytest
 .pytest_cache/
