@@ -1,7 +1,7 @@
 
 # Selenium-Python Test Suite
 
-This project is a Selenium-based test automation framework for testing web applications, specifically targeting "https://the-internet.herokuapp.com/".
+This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.
 It uses the Page Object Model (POM) pattern, Pytest for test execution, Allure for reporting, and custom logging for debugging.
 
 ## Project status
@@ -22,7 +22,7 @@ It uses the Page Object Model (POM) pattern, Pytest for test execution, Allure f
 
 1. Clone the repository:
 
-git clone https://github.com/<your-username>/selenium-python.git
+git clone https://github.com/avshalombegler/selenium-python.git
 cd selenium-python
 
 2. Create a virtual environment:
