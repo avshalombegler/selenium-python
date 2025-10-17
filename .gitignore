@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest
+.pytest_cache/
+
+# Reports
+/reports/allure-report
+
+# Screenshots
+tests_screenshots/
+
+# Recordings
+tests_recordings/
+
+# IDE/VS Code
+.vscode/
+
+# Virtual Environment
+venv/
+env/
+
+# OS generated files
+.DS_Store
+
+# GitHub Actions/CI
+*.env
+!.env.example
+.github/workflows/*.log
+
+# Logs
+*.log tests.log
