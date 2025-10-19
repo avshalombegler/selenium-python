@@ -13,7 +13,8 @@ jobs:
       matrix:
         browser: [chrome, firefox]
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -36,14 +37,14 @@ jobs:
       - name: Install browsers and drivers
         run: |
           sudo apt-get update
-          sudo apt-get install -y xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
+          sudo apt-get install -y jq xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
           if [ "${{ matrix.browser }}" = "chrome" ]; then
             sudo apt-get install -y google-chrome-stable
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
             # Install Firefox
             sudo apt-get install -y firefox
             # Install latest geckodriver
-            GECKO_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep tag_name | cut -d '"' -f 4)
+            GECKO_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r '.tag_name')
             wget https://github.com/mozilla/geckodriver/releases/download/${GECKO_VERSION}/geckodriver-${GECKO_VERSION}-linux64.tar.gz
             tar -xzf geckodriver-${GECKO_VERSION}-linux64.tar.gz
             sudo mv geckodriver /usr/local/bin/
@@ -52,26 +53,6 @@ jobs:
             geckodriver --version
             firefox --version
           fi
-      # - name: Install browsers and drivers
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
-      #     if [ "${{ matrix.browser }}" = "chrome" ]; then
-      #       sudo apt-get install -y google-chrome-stable
-      #     elif [ "${{ matrix.browser }}" = "firefox" ]; then
-      #       sudo apt-get install -y firefox
-      #       # Install geckodriver for Firefox
-      #       wget https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-linux64.tar.gz
-      #       tar -xzf geckodriver-v0.35.0-linux64.tar.gz
-      #       sudo mv geckodriver /usr/local/bin/
-      #       geckodriver --version
-      #       firefox --version
-      #     fi
-
-      # To enable video recording in CI (Change VIDEO_RECORDING to True)
-      # - name: Install Xvfb
-      #   run: |
-      #     sudo apt-get install -y xvfb
 
       - name: Install Java and Allure Commandline
         run: |
