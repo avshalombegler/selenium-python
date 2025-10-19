@@ -42,6 +42,17 @@ jobs:
             sudo apt-get install -y firefox
           fi
 
+      # To enable video recording in CI (Change VIDEO_RECORDING to True)
+      # - name: Install Xvfb
+      #   run: |
+      #     sudo apt-get install -y xvfb
+
+      - name: Install Allure Commandline
+        run: |
+          wget https://github.com/allure-framework/allure2/releases/download/2.25.0/allure-2.25.0.zip
+          unzip allure-2.25.0.zip -d allure-2.25.0
+          echo "$GITHUB_WORKSPACE/allure-2.25.0/bin" >> $GITHUB_PATH
+
       - name: Create .env file
         run: |
           echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
@@ -54,6 +65,11 @@ jobs:
           echo "USERNAME=tomsmith" >> .env
           echo "PASSWORD=SuperSecretPassword!" >> .env
 
+      # - name: Run Pytest with Allure under Xvfb
+      #   run: |
+      #     export DISPLAY=:99
+      #     Xvfb :99 -screen 0 1920x1080x24 &
+      #     pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results --reruns 2 --reruns-delay 1
       - name: Run Pytest with Allure
         run: pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results --reruns 2 --reruns-delay 1
 
