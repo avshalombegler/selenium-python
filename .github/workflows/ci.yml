@@ -57,8 +57,9 @@ jobs:
       - name: Install Allure CLI
         run: |
           curl -o allure-commandline.zip -L https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
-          unzip allure-commandline.zip
-          echo "$(pwd)/allure-2.35.1/bin" >> $GITHUB_PATH
+          unzip allure-commandline.zip -d allure-2.35.1
+          sudo mv allure-2.35.1 /usr/local/allure
+          echo "/usr/local/allure/bin" >> $GITHUB_PATH
           # Verify Allure installation
           allure --version
 
