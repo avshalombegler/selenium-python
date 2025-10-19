@@ -81,9 +81,6 @@ jobs:
       - name: Run Pytest with Allure
         run: |
           if [ "${{ matrix.browser }}" = "firefox" ]; then
-            export DISPLAY=:99
-            Xvfb :99 -screen 0 1920x1080x24 -ac +extension RANDR &
-            sleep 3
             PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
               pytest tests/ -v --html=reports/report.html --self-contained-html \
               --alluredir=reports/allure-results
