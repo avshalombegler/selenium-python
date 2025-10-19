@@ -54,25 +54,25 @@ jobs:
         run: allure generate reports/allure-results --clean -o reports/allure-report
       - name: Upload Allure Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.browser }}-${{ github.run_id }}
           path: reports/allure-results/
       - name: Upload Allure Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-report-${{ matrix.browser }}-${{ github.run_id }}
           path: reports/allure-report/
       - name: Upload Videos
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-videos-${{ matrix.browser }}-${{ github.run_id }}
           path: tests_recordings/
       - name: Upload Screenshots
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-screenshots-${{ matrix.browser }}-${{ github.run_id }}
           path: tests_screenshots/
