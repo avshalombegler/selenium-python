@@ -61,10 +61,10 @@ jobs:
             curl -o allure-commandline.zip -L https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
             unzip allure-commandline.zip -d allure-2.35.1
             sudo mv allure-2.35.1 /usr/local/allure
-            export PATH=$PATH:/usr/local/allure/bin
-            echo "/usr/local/allure/bin" >> $GITHUB_PATH
+            sudo ln -sf /usr/local/allure/bin/allure /usr/local/bin/allure
             # Verify installations
             java -version
+            which allure
             allure --version
             ls -l /usr/local/allure/bin
       # - name: Install Allure CLI
@@ -78,7 +78,7 @@ jobs:
           echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
           echo "BROWSER=${{ matrix.browser }}" >> .env
           echo "SHORT_TIMEOUT=3" >> .env
-          echo "LONG_TIMEOUT=20" >> .env
+          echo "LONG_TIMEOUT=10" >> .env
           echo "VIDEO_RECORDING=False" >> .env
           echo "HEADLESS=True" >> .env
           echo "MAXIMIZED=False" >> .env

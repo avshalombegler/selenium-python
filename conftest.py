@@ -116,8 +116,6 @@ def driver(request):
         # chrome_options.add_argument("--disable-background-networking")  # If there are network related issues
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
-        driver.set_page_load_timeout(30)
-        driver.implicitly_wait(10)
 
     elif browser == "firefox":
         firefox_options = FirefoxOptions()
@@ -130,8 +128,6 @@ def driver(request):
         driver = webdriver.Firefox(service=service, options=firefox_options)
         if env_config.MAXIMIZED:
             driver.maximize_window()
-        driver.set_page_load_timeout(30)
-        driver.implicitly_wait(10)
 
     else:
         raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
