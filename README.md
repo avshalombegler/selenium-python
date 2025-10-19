@@ -55,6 +55,9 @@ Then generate the HTML report (requires Allure CLI installed separately):
 
 Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
 
+## CI/CD with GitHub Actions
+Tests are automatically run on every push/pull request to `main` using GitHub Actions. Check the [Actions tab](https://github.com/avshalombegler/selenium-python/actions) for results. Allure reports are uploaded as artifacts.
+
 ## Project layout
 
 - `pages/` - Page Object Model classes
