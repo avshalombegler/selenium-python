@@ -88,7 +88,7 @@ def pytest_runtest_makereport(item, call):
         set_current_test(None)
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def driver(request):
     """
     Initialize driver at the start of each session.
@@ -99,11 +99,15 @@ def driver(request):
 
     if browser == "chrome":
         chrome_options = ChromeOptions()
-        chrome_options.add_argument("--user-data-dir=C:\\Temp\\ChromeProfile")
-        if env_config.MAXIMIZED is True:
+        # Use platform-appropriate user-data-dir
+        if os.name == 'nt':  # Windows
+            chrome_options.add_argument("--user-data-dir=C:\\Temp\\ChromeProfile")
+        else:  # Linux (CI)
+            chrome_options.add_argument("--user-data-dir=/tmp/chrome-profile")
+        if env_config.MAXIMIZED:
             chrome_options.add_argument("--start-maximized")
         # More suitable for CI/CD run.
-        if env_config.HEADLESS is True:
+        if env_config.HEADLESS:
             chrome_options.add_argument("--headless=new")
         # chrome_options.add_argument("--disable-popup-blocking")
         # chrome_options.add_argument("--disable-notifications")
@@ -119,11 +123,11 @@ def driver(request):
         firefox_options.set_preference("dom.webdriver.enabled", False)
         firefox_options.set_preference("dom.push.enabled", False)
         firefox_options.set_preference("javascript.enabled", True)
-        if env_config.HEADLESS is True:
-            firefox_options.add_argument("--headless")
+        if env_config.HEADLESS:
+            firefox_options.add_argument("--headless=new")
         service = FirefoxService(GeckoDriverManager().install())
         driver = webdriver.Firefox(service=service, options=firefox_options)
-        if env_config.MAXIMIZED is True:
+        if env_config.MAXIMIZED:
             driver.maximize_window()
 
     else:

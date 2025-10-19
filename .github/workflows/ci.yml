@@ -36,6 +36,7 @@ jobs:
       - name: Install browsers and drivers
         run: |
           sudo apt-get update
+          sudo apt-get install -y xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
           if [ "${{ matrix.browser }}" = "chrome" ]; then
             sudo apt-get install -y google-chrome-stable
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
@@ -45,6 +46,7 @@ jobs:
             tar -xzf geckodriver-v0.35.0-linux64.tar.gz
             sudo mv geckodriver /usr/local/bin/
             geckodriver --version
+            firefox --version
           fi
 
       # To enable video recording in CI (Change VIDEO_RECORDING to True)
@@ -57,6 +59,8 @@ jobs:
           curl -o allure-commandline.zip -L https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
           unzip allure-commandline.zip
           echo "$(pwd)/allure-2.35.1/bin" >> $GITHUB_PATH
+          # Verify Allure installation
+          allure --version
 
       - name: Create .env file
         run: |
@@ -75,11 +79,19 @@ jobs:
       #     export DISPLAY=:99
       #     Xvfb :99 -screen 0 1920x1080x24 &
       #     pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results --reruns 2 --reruns-delay 1
-      - name: Run Pytest with Allure
+      # - name: Run Pytest with Allure
         # Run with reruns
         # run: pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results --reruns 2 --reruns-delay 1
         # Run without reruns
-        run: pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
+        # run: pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
+      
+      - name: Run Pytest with Allure
+        run: |
+          if [ "${{ matrix.browser }}" = "firefox" ]; then
+            xvfb-run --auto-servernum pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
+          else
+            pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
+          fi
 
       - name: Generate Allure report
         if: always()
