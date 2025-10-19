@@ -50,8 +50,8 @@ jobs:
       - name: Install Allure Commandline
         run: |
           wget https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
-          unzip allure-2.25.0.zip -d allure-2.25.0
-          echo "$GITHUB_WORKSPACE/allure-2.25.0/bin" >> $GITHUB_PATH
+          unzip allure-2.35.1.zip -d allure-2.35.1
+          echo "$GITHUB_WORKSPACE/allure-2.35.1/bin" >> $GITHUB_PATH
 
       - name: Create .env file
         run: |
