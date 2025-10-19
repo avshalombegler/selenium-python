@@ -13,10 +13,12 @@ jobs:
         browser: [chrome, firefox]
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+
       - name: Cache pip
         uses: actions/cache@v3
         with:
@@ -24,10 +26,12 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Install browsers
         run: |
           sudo apt-get update
@@ -36,6 +40,7 @@ jobs:
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
             sudo apt-get install -y firefox
           fi
+
       - name: Create .env file
         run: |
           echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
@@ -47,29 +52,35 @@ jobs:
           echo "MAXIMIZED=False" >> .env
           echo "USERNAME=tomsmith" >> .env
           echo "PASSWORD=SuperSecretPassword!" >> .env
+
       - name: Run Pytest with Allure
         run: pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results --reruns 2 --reruns-delay 1
+
       - name: Generate Allure report
         if: always()
         run: allure generate reports/allure-results --clean -o reports/allure-report
+
       - name: Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.browser }}-${{ github.run_id }}
           path: reports/allure-results/
+
       - name: Upload Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report-${{ matrix.browser }}-${{ github.run_id }}
           path: reports/allure-report/
+
       - name: Upload Videos
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-videos-${{ matrix.browser }}-${{ github.run_id }}
           path: tests_recordings/
+
       - name: Upload Screenshots
         if: always()
         uses: actions/upload-artifact@v4
