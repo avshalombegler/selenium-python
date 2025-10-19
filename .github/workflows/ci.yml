@@ -47,11 +47,16 @@ jobs:
       #   run: |
       #     sudo apt-get install -y xvfb
 
-      - name: Install Allure Commandline
+      - name: Install Java and Allure Commandline
         run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jre
           wget https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
           unzip allure-2.35.1.zip -d allure-2.35.1
-          echo "$GITHUB_WORKSPACE/allure-2.35.1/bin" >> $GITHUB_PATH
+          sudo mv allure-2.35.1 /usr/local/allure
+          echo "/usr/local/allure/bin" >> $GITHUB_PATH
+          # Verify Allure installation
+          allure --version
 
       - name: Create .env file
         run: |
