@@ -54,25 +54,35 @@ jobs:
       #   run: |
       #     sudo apt-get install -y xvfb
 
-      # - name: Install Java and Allure Commandline
-      #   run: |
-      #       sudo apt-get update
-      #       sudo apt-get install -y unzip openjdk-11-jre
-      #       curl -o allure-commandline.zip -L https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
-      #       unzip allure-commandline.zip -d allure-2.35.1
-      #       sudo mv allure-2.35.1 /usr/local/allure
-      #       sudo ln -sf /usr/local/allure/bin/allure /usr/local/bin/allure
-      #       # Verify installations
-      #       java -version
-      #       which allure
-      #       allure --version
-      #       ls -l /usr/local/allure/bin
       - name: Install Java and Allure Commandline
         run: |
-            curl -o allure-commandline.zip -L https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
-            unzip allure-commandline.zip -d allure-2.35.1
-            sudo mv allure-2.35.1 /usr/local/allure
+            sudo apt-get update
+            sudo apt-get install -y unzip curl openjdk-11-jre-headless
+            curl -L -o allure-commandline.zip https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
+            unzip -q allure-commandline.zip -d /tmp/allure-extract
+            # Inspect extracted structure for debugging
+            ls -la /tmp/allure-extract
+            # Move the directory that contains 'bin/allure' to /usr/local/allure
+            if [ -d /tmp/allure-extract/allure-2.35.1 ]; then
+              sudo mv /tmp/allure-extract/allure-2.35.1 /usr/local/allure
+            else
+              # try to find the dir that includes bin/allure
+              DIR=$(find /tmp/allure-extract -maxdepth 2 -type d -name "allure-*" | head -n1)
+              if [ -n "$DIR" ]; then
+                sudo mv "$DIR" /usr/local/allure
+              else
+                echo "Could not find extracted allure directory"
+                ls -R /tmp/allure-extract
+                exit 1
+              fi
+            fi
+            sudo chmod -R +x /usr/local/allure/bin
             sudo ln -sf /usr/local/allure/bin/allure /usr/local/bin/allure
+            # Diagnostics
+            ls -la /usr/local/allure/bin || true
+            ls -la /usr/local/bin/allure || true
+            which allure
+            allure --version
       # - name: Install Allure CLI
       #   run: |
       #     curl -o allure-commandline.zip -L https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
