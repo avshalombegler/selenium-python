@@ -78,7 +78,7 @@ jobs:
           echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
           echo "BROWSER=${{ matrix.browser }}" >> .env
           echo "SHORT_TIMEOUT=3" >> .env
-          echo "LONG_TIMEOUT=10" >> .env
+          echo "LONG_TIMEOUT=20" >> .env
           echo "VIDEO_RECORDING=False" >> .env
           echo "HEADLESS=True" >> .env
           echo "MAXIMIZED=False" >> .env
