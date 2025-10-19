@@ -40,14 +40,33 @@ jobs:
           if [ "${{ matrix.browser }}" = "chrome" ]; then
             sudo apt-get install -y google-chrome-stable
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
+            # Install Firefox
             sudo apt-get install -y firefox
-            # Install geckodriver for Firefox
-            wget https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-linux64.tar.gz
-            tar -xzf geckodriver-v0.35.0-linux64.tar.gz
+            # Install latest geckodriver
+            GECKO_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep tag_name | cut -d '"' -f 4)
+            wget https://github.com/mozilla/geckodriver/releases/download/${GECKO_VERSION}/geckodriver-${GECKO_VERSION}-linux64.tar.gz
+            tar -xzf geckodriver-${GECKO_VERSION}-linux64.tar.gz
             sudo mv geckodriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/geckodriver
+            # Verify installations
             geckodriver --version
             firefox --version
           fi
+      # - name: Install browsers and drivers
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
+      #     if [ "${{ matrix.browser }}" = "chrome" ]; then
+      #       sudo apt-get install -y google-chrome-stable
+      #     elif [ "${{ matrix.browser }}" = "firefox" ]; then
+      #       sudo apt-get install -y firefox
+      #       # Install geckodriver for Firefox
+      #       wget https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-linux64.tar.gz
+      #       tar -xzf geckodriver-v0.35.0-linux64.tar.gz
+      #       sudo mv geckodriver /usr/local/bin/
+      #       geckodriver --version
+      #       firefox --version
+      #     fi
 
       # To enable video recording in CI (Change VIDEO_RECORDING to True)
       # - name: Install Xvfb
@@ -70,28 +89,28 @@ jobs:
         run: |
           echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
           echo "BROWSER=${{ matrix.browser }}" >> .env
-          echo "SHORT_TIMEOUT=3" >> .env
-          echo "LONG_TIMEOUT=10" >> .env
+          echo "SHORT_TIMEOUT=10" >> .env
+          echo "LONG_TIMEOUT=30" >> .env
           echo "VIDEO_RECORDING=False" >> .env
           echo "HEADLESS=True" >> .env
           echo "MAXIMIZED=False" >> .env
           echo "USERNAME=tomsmith" >> .env
           echo "PASSWORD=SuperSecretPassword!" >> .env
 
-      # - name: Run Pytest with Allure under Xvfb
-      #   run: |
-      #     export DISPLAY=:99
-      #     Xvfb :99 -screen 0 1920x1080x24 &
-      #     pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results --reruns 2 --reruns-delay 1
-      # - name: Run Pytest with Allure
-        # Run with reruns
-        # run: pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results --reruns 2 --reruns-delay 1
-        # Run without reruns
-        # run: pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
       - name: Run Pytest with Allure
         run: |
           if [ "${{ matrix.browser }}" = "firefox" ]; then
-            xvfb-run --auto-servernum pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
+            # Start Xvfb with larger screen and more memory
+            export DISPLAY=:99
+            Xvfb :99 -screen 0 1920x1080x24 -ac +extension RANDR &
+            sleep 3  # Give Xvfb time to start
+            
+            # Run tests with increased timeouts
+            PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
+              pytest tests/ -v --html=reports/report.html --self-contained-html \
+              --alluredir=reports/allure-results \
+              --driver-args "--marionette-port=2828 --foreground" \
+              --timeout=300
           else
             pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
           fi
