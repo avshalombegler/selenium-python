@@ -91,8 +91,7 @@ def pytest_runtest_makereport(item, call):
 @pytest.fixture(scope="function")
 def driver(request):
     """
-    Initialize driver at the start of each session.
-    Driver can be selected in config.py using BROWSER.
+    Initialize driver at the start of each test.
     """
     browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
     root_logger.info(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
