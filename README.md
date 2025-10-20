@@ -41,17 +41,14 @@ cd selenium-python
 
 ## Running tests
 
-Run the full pytest suite:
-- pytest tests
+- Run the full pytest suite: `pytest tests`
 
-Run a single test file:
-- pytest tests\test_name.py
+- Run a single test file: `pytest tests\test_name.py`
 
-View Allure report:
-- allure serve reports
+- View Allure report: `allure serve reports`
 
-Then generate the HTML report (requires Allure CLI installed separately):
-- allure generate reports/allure-results -o reports/allure-report
+- Then generate the HTML report (requires Allure CLI installed separately):
+`allure generate reports/allure-results -o reports/allure-report`
 
 Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
 
