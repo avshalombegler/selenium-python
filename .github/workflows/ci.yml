@@ -105,6 +105,8 @@ jobs:
       - name: Clean old Allure Reports
         if: github.ref == 'refs/heads/main'
         run: |
+          # Clean untracked files to avoid checkout conflicts
+          git clean -fdx
           # Fetch the gh-pages branch to ensure it's available
           git fetch origin gh-pages:gh-pages || echo "No existing gh-pages branch"
           git checkout gh-pages || git checkout -b gh-pages
