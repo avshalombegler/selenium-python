@@ -79,15 +79,15 @@ jobs:
           echo "USERNAME=tomsmith" >> .env
           echo "PASSWORD=SuperSecretPassword!" >> .env
 
+      - name: Check website availability
+        run: |
+          curl -s -f https://the-internet.herokuapp.com/ || exit 1
+
       - name: Run Pytest with Allure
         run: |
-          if [ "${{ matrix.browser }}" = "firefox" ]; then
-            PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-              pytest tests/ -v --html=reports/report.html --self-contained-html \
-              --alluredir=reports/allure-results
-          else
-            pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
-          fi
+          PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
+            pytest tests/ -v -n auto --html=reports/report.html --self-contained-html \
+            --alluredir=reports/allure-results
 
       - name: Generate Allure report
         if: always()
