@@ -1,0 +1,25 @@
+2025-10-20 06:20:50,662 - INFO - [test_add_remove_elements] Starting test: test_add_remove_elements.
+2025-10-20 06:20:50,663 - INFO - [test_add_remove_elements] Video recording is disabled in config.py.
+2025-10-20 06:20:50,663 - INFO - [test_add_remove_elements] Initializing driver for browser: chrome (Config: chrome).
+2025-10-20 06:20:50,663 - INFO - [test_add_remove_elements] ====== WebDriver manager ======
+2025-10-20 06:20:50,730 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-20 06:20:50,763 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-20 06:20:50,826 - INFO - [test_add_remove_elements] Driver [/home/runner/.wdm/drivers/chromedriver/linux64/141.0.7390.78/chromedriver-linux64/chromedriver] found in cache
+2025-10-20 06:20:51,060 - INFO - [test_add_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-20 06:20:51,477 - INFO - [test_add_remove_elements] Navigation completed.
+2025-10-20 06:20:51,477 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h1.heading') for 30s.
+2025-10-20 06:20:51,500 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-20 06:20:51,501 - INFO - [test_add_remove_elements] Starting Add/Remove Elements test.
+2025-10-20 06:20:51,685 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h3') for 30s.
+2025-10-20 06:20:51,701 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h3').
+2025-10-20 06:20:51,701 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-20 06:20:51,782 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-20 06:20:51,847 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-20 06:20:51,856 - INFO - [test_add_remove_elements] Found 2 delete buttons.
+2025-10-20 06:20:51,856 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-20 06:20:51,927 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-20 06:20:51,990 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-20 06:21:02,117 - INFO - [test_add_remove_elements] Found 0 delete buttons
+2025-10-20 06:21:02,117 - INFO - [test_add_remove_elements] Add/Remove Elements test completed successfully.
+2025-10-20 06:21:02,118 - INFO - [test_add_remove_elements] Finished test: test_add_remove_elements (Duration: 10.62s).
+2025-10-20 06:21:02,119 - INFO - [test_add_remove_elements] Quitting driver for browser: chrome.
