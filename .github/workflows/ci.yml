@@ -93,6 +93,15 @@ jobs:
         if: always()
         run: allure generate reports/allure-results --clean -o reports/allure-report
 
+      - name: Deploy Allure Report to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: reports/allure-report
+          destination_dir: allure-report/build-${{ github.run_id }}
+          keep_files: false  # Overwrite existing files
+
       - name: Clean old Allure Reports
         if: github.ref == 'refs/heads/main'
         run: |
@@ -102,15 +111,6 @@ jobs:
           git add .
           git commit -m "Clean old Allure reports" || echo "No changes to clean"
           git push origin gh-pages || echo "No changes to push"
-
-      - name: Deploy Allure Report to GitHub Pages
-        if: github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: reports/allure-report
-          destination_dir: allure-report/build-${{ github.run_id }}
-          keep_files: false  # Overwrite existing files
 
       - name: Upload Allure Results
         if: always()
