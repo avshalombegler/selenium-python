@@ -1,3 +1,7 @@
+"""
+Module containing locators for Selenium page objects.
+"""
+
 from selenium.webdriver.common.by import By
 
 

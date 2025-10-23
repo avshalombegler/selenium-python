@@ -100,25 +100,32 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports/allure-report
           destination_dir: allure-report/build-${{ github.run_id }}
-          keep_files: false  # Overwrite existing files
+          keep_files: false  # Overwrites existing files in destination_dir
+          exclude_assets: |
+            **/__pycache__/**
+            **/*.pyc
+            .env
+            config/**
+            pages/**
+            tests/**
+            utils/**
+        # Deploys only allure-report directory to gh-pages, excluding unnecessary files
 
       - name: Clean old Allure Reports
         if: github.ref == 'refs/heads/main'
         run: |
-          # Clean untracked files to avoid checkout conflicts
-          git clean -fdx
-          # Fetch the gh-pages branch to ensure it's available
           git fetch origin gh-pages:gh-pages || echo "No existing gh-pages branch"
           git checkout gh-pages || git checkout -b gh-pages
-          # Remove old build folders (keep the latest one)
-          [ -d allure-report ] && find allure-report -maxdepth 1 -type d -name 'build-*' -not -name "build-${{ github.run_id }}" -exec rm -rf {} + || echo "No allure-report directory"
-          # Remove 'reports/' if it exists (legacy)
-          rm -rf reports 2>/dev/null || true
+          find . -type d -name "__pycache__" -exec rm -rf {} +  # Remove all __pycache__ directories
+          find . -name "*.pyc" -exec rm -f {} +  # Remove all .pyc files
+          rm -f .env  # Remove .env file
+          rm -rf config pages tests utils  # Remove unnecessary directories
           git add .
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "Clean old Allure reports" || echo "No changes to commit"
+          git commit -m "Clean old Allure reports and remove unnecessary files" || echo "No changes to commit"
           git push origin gh-pages || echo "No changes to push"
+        # Cleans up gh-pages branch to keep only allure-report and .nojekyll
 
       - name: Upload Allure Results
         if: always()
