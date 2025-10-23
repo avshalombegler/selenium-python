@@ -76,8 +76,8 @@ jobs:
           echo "VIDEO_RECORDING=False" >> .env
           echo "HEADLESS=True" >> .env
           echo "MAXIMIZED=False" >> .env
-          echo "USERNAME=tomsmith" >> .env
-          echo "PASSWORD=SuperSecretPassword!" >> .env
+          echo "USERNAME=${{ secrets.TEST_USERNAME }}" >> .env
+          echo "PASSWORD=${{ secrets.TEST_PASSWORD }}" >> .env
 
       - name: Check website availability
         run: |
