@@ -71,8 +71,8 @@ jobs:
         run: |
           echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
           echo "BROWSER=${{ matrix.browser }}" >> .env
-          echo "SHORT_TIMEOUT=10" >> .env
-          echo "LONG_TIMEOUT=30" >> .env
+          echo "SHORT_TIMEOUT=15" >> .env
+          echo "LONG_TIMEOUT=45" >> .env
           echo "VIDEO_RECORDING=False" >> .env
           echo "HEADLESS=True" >> .env
           echo "MAXIMIZED=False" >> .env
@@ -86,7 +86,7 @@ jobs:
       - name: Run Pytest with Allure
         run: |
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-            pytest tests/ -v -n auto --html=reports/report.html --self-contained-html \
+            pytest tests/ -v -n auto --dist=loadfile --html=reports/report.html --self-contained-html \
             --alluredir=reports/allure-results
 
       - name: Generate Allure report
