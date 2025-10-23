@@ -126,44 +126,79 @@ def test_context(request):
 @pytest.fixture(scope="function", autouse=True)
 def video_recorder(request, logger):
     """
-    Handle test video recording.
-    Set On/Off from VIDEO_RECORDING in confing.py.
+    Handle test video recording with proper parallel execution and Allure reporting support.
     """
     if not env_config.VIDEO_RECORDING:
         logger.info("Video recording is disabled in config.py.")
         yield
         return
 
+    # Get worker ID for parallel runs
+    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
     test_name = request.node.name.replace(":", "_").replace("/", "_")
-    videos_dir = "tests_recordings"
-    if not os.path.exists(videos_dir):
-        os.makedirs(videos_dir)
-
     timestamp = time.strftime("%Y%m%d_%H%M%S")
+    
+    # Create worker-specific directory
+    videos_dir = os.path.join("tests_recordings", worker_id)
     video_path = os.path.join(videos_dir, f"{test_name}_{timestamp}.mp4")
+    lock_file = os.path.join(videos_dir, f"{worker_id}.lock")
 
-    logger.info(f"Starting video recording for test {test_name} to: {video_path}.")
+    try:
+        # Ensure directory exists before creating/using the lock
+        os.makedirs(videos_dir, exist_ok=True)
 
-    sct = mss()
-    monitor = sct.monitors[1]
-    region = {
-        "mon": 0,
-        "left": monitor["left"],
-        "top": monitor["top"],
-        "width": monitor["width"],
-        "height": monitor["height"],
-    }
+        with FileLock(lock_file):
+            logger.info(f"Starting video recording for test {test_name} to: {video_path}")
+            
+            sct = mss()
+            monitor = sct.monitors[1]  # Assuming primary monitor
+            region = {
+                "mon": 0,
+                "left": monitor["left"],
+                "top": monitor["top"],
+                "width": monitor["width"],
+                "height": monitor["height"],
+            }
 
-    recorder = ScreenRecorder()
+            recorder = ScreenRecorder()
+            recorder.start_recording(video_path, 10, region)
 
-    recorder.start_recording(video_path, 10, region)
+        yield
 
-    yield
+        with FileLock(lock_file):
+            recorder.stop_recording()
+            logger.info(f"Video saved to: {video_path}")
 
-    recorder.stop_recording()
-    logger.info(f"Video saved to: {video_path}.")
+            # Wait for the file to be fully written
+            max_retries = 10
+            retry_count = 0
+            while retry_count < max_retries:
+                if os.path.exists(video_path) and os.path.getsize(video_path) > 0:
+                    try:
+                        # Get test outcome to only attach videos for failed tests (optional)
+                        test_failed = request.node.rep_call.failed if hasattr(request.node, 'rep_call') else False
+                        
+                        # Attach to Allure report
+                        with open(video_path, 'rb') as video_file:
+                            allure.attach(
+                                video_file.read(),
+                                name=f"Test Recording - {test_name}",
+                                attachment_type=allure.attachment_type.MP4,
+                                extension=".mp4"
+                            )
+                        logger.info(f"Video attached to Allure report for {test_name}")
+                        break
+                    except Exception as e:
+                        logger.warning(f"Failed to attach video to Allure report: {str(e)}")
+                        break
+                retry_count += 1
+                time.sleep(0.5)  # Wait 500ms between retries
+            else:
+                logger.warning(f"Video file not ready after {max_retries} retries: {video_path}")
 
-    allure.attach.file(video_path, name=f"Video for {test_name}", attachment_type=allure.attachment_type.MP4)
+    except Exception as e:
+        logger.error(f"Error in video recording: {str(e)}")
+        yield  # Still yield to allow test to continue
 
 
 @pytest.fixture(scope="function")
