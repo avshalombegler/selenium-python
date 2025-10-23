@@ -38,7 +38,7 @@ jobs:
       - name: Install browsers and drivers
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
+          sudo apt-get install -y jq ffmpeg xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
           if [ "${{ matrix.browser }}" = "chrome" ]; then
             sudo apt-get install -y google-chrome-stable
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
@@ -86,7 +86,7 @@ jobs:
       - name: Run Pytest with Allure
         run: |
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-            pytest tests/ -v -n auto --dist=loadfile --html=reports/report.html --self-contained-html \
+            pytest tests/ -v --html=reports/report.html --self-contained-html \
             --alluredir=reports/allure-results
 
       - name: Generate Allure report
