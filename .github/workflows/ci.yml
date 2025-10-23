@@ -35,12 +35,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Cache apt packages
+        uses: actions/cache@v3
+        with:
+          path: /var/cache/apt
+          key: ${{ runner.os }}-apt-${{ hashFiles('**/ci.yml') }}
+          restore-keys: ${{ runner.os }}-apt-
+
       - name: Install browsers and drivers
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq ffmpeg xvfb libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6
+          sudo apt-get install -y ffmpeg xvfb libx11-6 libxcb1 libxcomposite1 libxcursor1 libxext6 libxfixes3 libxi6 libxrender1
           if [ "${{ matrix.browser }}" = "chrome" ]; then
-            sudo apt-get install -y google-chrome-stable
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo dpkg -i google-chrome-stable_current_amd64.deb
+            sudo apt-get install -f -y  # Fix missing dependencies
+            rm google-chrome-stable_current_amd64.deb
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
             # Install Firefox
             sudo apt-get install -y firefox
