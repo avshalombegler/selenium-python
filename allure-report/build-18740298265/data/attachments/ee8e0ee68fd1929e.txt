@@ -1,0 +1,36 @@
+2025-10-23 07:03:46,950 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots.
+2025-10-23 07:03:46,951 - INFO - [] Videos directory cleaned and recreated at: tests_recordings.
+2025-10-23 07:03:46,952 - INFO - [test_add_remove_elements] Starting test: test_add_remove_elements.
+2025-10-23 07:03:46,952 - INFO - [test_add_remove_elements] Starting video recording for test test_add_remove_elements to: tests_recordings/test_add_remove_elements_20251023_070346.mp4.
+2025-10-23 07:03:47,079 - INFO - [test_add_remove_elements] Initializing driver for browser: chrome (Config: chrome).
+2025-10-23 07:03:47,080 - INFO - [test_add_remove_elements] xdist worker is: gw1
+2025-10-23 07:03:47,080 - INFO - [test_add_remove_elements] ====== WebDriver manager ======
+2025-10-23 07:03:48,852 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 07:03:48,935 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 07:03:48,991 - INFO - [test_add_remove_elements] There is no [linux64] chromedriver "140.0.7339.207" for browser google-chrome "140.0.7339" in cache
+2025-10-23 07:03:48,992 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 07:03:49,146 - INFO - [test_add_remove_elements] WebDriver version 140.0.7339.207 selected
+2025-10-23 07:03:49,151 - INFO - [test_add_remove_elements] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.207/linux64/chromedriver-linux64.zip
+2025-10-23 07:03:49,151 - INFO - [test_add_remove_elements] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.207/linux64/chromedriver-linux64.zip
+2025-10-23 07:03:49,201 - INFO - [test_add_remove_elements] Driver downloading response is 200
+2025-10-23 07:03:49,290 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 07:03:49,482 - INFO - [test_add_remove_elements] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/140.0.7339.207]
+2025-10-23 07:03:56,171 - INFO - [test_add_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-23 07:03:57,008 - INFO - [test_add_remove_elements] Navigation completed.
+2025-10-23 07:03:57,008 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h1.heading') for 45s.
+2025-10-23 07:03:57,042 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-23 07:03:57,044 - INFO - [test_add_remove_elements] Starting Add/Remove Elements test.
+2025-10-23 07:03:57,278 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h3') for 45s.
+2025-10-23 07:03:57,301 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h3').
+2025-10-23 07:03:57,301 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-23 07:03:57,411 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-23 07:03:57,487 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-23 07:03:57,495 - INFO - [test_add_remove_elements] Found 2 delete buttons.
+2025-10-23 07:03:57,496 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-23 07:03:57,574 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-23 07:03:57,639 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-23 07:04:12,819 - INFO - [test_add_remove_elements] Found 0 delete buttons
+2025-10-23 07:04:12,819 - INFO - [test_add_remove_elements] Add/Remove Elements test completed successfully.
+2025-10-23 07:04:12,819 - INFO - [test_add_remove_elements] Finished test: test_add_remove_elements (Duration: 15.78s).
+2025-10-23 07:04:12,821 - INFO - [test_add_remove_elements] Quitting driver for browser: chrome.
+2025-10-23 07:04:12,924 - INFO - [test_add_remove_elements] Video saved to: tests_recordings/test_add_remove_elements_20251023_070346.mp4.
