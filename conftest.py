@@ -35,6 +35,7 @@ Pytest Fixtures - Scope = function
 
 """
 
+
 @pytest.fixture(scope="function")
 def driver(request):
     """
@@ -63,22 +64,21 @@ def driver(request):
 
     if browser == "chrome":
         chrome_options = ChromeOptions()
-        # Use the per-worker user-data-dir
-        chrome_options.add_argument(f"--user-data-dir={user_data_dir}")
-        # avoid DevTools port collisions between workers
-        chrome_options.add_argument(f"--remote-debugging-port={debug_port}")
-
-        if env_config.MAXIMIZED:
-            chrome_options.add_argument("--start-maximized")
-        # More suitable for CI/CD run.
-        if env_config.HEADLESS:
-            chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument(f"--user-data-dir={user_data_dir}")  # Use the per-worker user-data-dir
+        chrome_options.add_argument(
+            f"--remote-debugging-port={debug_port}"
+        )  # avoid DevTools port collisions between workers
         chrome_options.add_argument("--disable-popup-blocking")
         chrome_options.add_argument("--disable-notifications")
         chrome_options.add_argument("--disable-gpu")  # If there are GPU related issues
         chrome_options.add_argument("--no-sandbox")  # If there are sandbox related issues
         chrome_options.add_argument("--disable-dev-shm-usage")  # If there are memory related issues
         chrome_options.add_argument("--disable-background-networking")  # If there are network related issues
+        if env_config.MAXIMIZED:
+            chrome_options.add_argument("--start-maximized")
+        if env_config.HEADLESS:
+            chrome_options.add_argument("--headless=new")
+
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
 
@@ -132,7 +132,7 @@ def test_context(request):
     root_logger.info(f"Starting test: {test_name}.")
     yield
 
-    
+
 @pytest.fixture(scope="function", autouse=True)
 def video_recorder(request, driver, logger):
     """
@@ -171,7 +171,9 @@ def video_recorder(request, driver, logger):
 
             try:
                 # lower JPEG quality to reduce IO if capturing many frames
-                res = driver.execute_cdp_cmd("Page.captureScreenshot", {"format": "jpeg", "quality": 80, "fromSurface": True})
+                res = driver.execute_cdp_cmd(
+                    "Page.captureScreenshot", {"format": "jpeg", "quality": 80, "fromSurface": True}
+                )
                 data = res.get("data")
                 if data:
                     raw = base64.b64decode(data)
@@ -187,6 +189,7 @@ def video_recorder(request, driver, logger):
                         logger.debug("Skipped tiny/corrupt frame (len=%d)", len(raw))
             except Exception as e:
                 from selenium.common.exceptions import InvalidSessionIdException
+
                 if isinstance(e, InvalidSessionIdException) or "invalid session id" in str(e).lower():
                     logger.debug("Invalid session during capture, stopping capture loop.")
                     break
@@ -226,14 +229,20 @@ def video_recorder(request, driver, logger):
     # compute fps from capture interval (fallback to 5)
     fps = max(1, int(round(1.0 / 0.1)))  # if you change interval, change this accordingly
     ffmpeg_cmd = [
-        "ffmpeg", "-y",
-        "-framerate", str(fps),
-        "-i", os.path.join(frames_dir, "frame_%06d.jpg"),
+        "ffmpeg",
+        "-y",
+        "-framerate",
+        str(fps),
+        "-i",
+        os.path.join(frames_dir, "frame_%06d.jpg"),
         # ensure even width/height and correct pixel format for mp4 playback
-        "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2,format=yuv420p",
-        "-c:v", "libx264",
-        "-pix_fmt", "yuv420p",
-        video_path
+        "-vf",
+        "scale=trunc(iw/2)*2:trunc(ih/2)*2,format=yuv420p",
+        "-c:v",
+        "libx264",
+        "-pix_fmt",
+        "yuv420p",
+        video_path,
     ]
 
     # Run ffmpeg and capture stderr/stdout for debugging
@@ -247,7 +256,9 @@ def video_recorder(request, driver, logger):
         # attach to Allure report
         try:
             with FileLock(f"{video_path}.lock"):
-                allure.attach.file(video_path, name=f"Recording - {test_name}", attachment_type=allure.attachment_type.MP4)
+                allure.attach.file(
+                    video_path, name=f"Recording - {test_name}", attachment_type=allure.attachment_type.MP4
+                )
                 logger.info(f"Video attached to Allure for {test_name}")
         except Exception as e:
             logger.warning(f"Failed to attach video to Allure: {e}")
@@ -265,6 +276,7 @@ def actions(driver):
 Pytest Fixtures - Scope = session
 
 """
+
 
 @pytest.fixture(scope="session")
 def logger():
