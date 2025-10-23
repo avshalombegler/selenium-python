@@ -71,23 +71,23 @@ jobs:
         run: |
           echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
           echo "BROWSER=${{ matrix.browser }}" >> .env
-          echo "SHORT_TIMEOUT=10" >> .env
-          echo "LONG_TIMEOUT=30" >> .env
+          echo "SHORT_TIMEOUT=15" >> .env
+          echo "LONG_TIMEOUT=45" >> .env
           echo "VIDEO_RECORDING=False" >> .env
           echo "HEADLESS=True" >> .env
           echo "MAXIMIZED=False" >> .env
-          echo "USERNAME=tomsmith" >> .env
-          echo "PASSWORD=SuperSecretPassword!" >> .env
+          echo "USERNAME=${{ secrets.TEST_USERNAME }}" >> .env
+          echo "PASSWORD=${{ secrets.TEST_PASSWORD }}" >> .env
+
+      - name: Check website availability
+        run: |
+          curl -s -f https://the-internet.herokuapp.com/ || exit 1
 
       - name: Run Pytest with Allure
         run: |
-          if [ "${{ matrix.browser }}" = "firefox" ]; then
-            PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-              pytest tests/ -v --html=reports/report.html --self-contained-html \
-              --alluredir=reports/allure-results
-          else
-            pytest tests/ -v --html=reports/report.html --self-contained-html --alluredir=reports/allure-results
-          fi
+          PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
+            pytest tests/ -v -n auto --dist=loadfile --html=reports/report.html --self-contained-html \
+            --alluredir=reports/allure-results
 
       - name: Generate Allure report
         if: always()
