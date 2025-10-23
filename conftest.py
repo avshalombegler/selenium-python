@@ -6,9 +6,6 @@ import pytest
 import allure
 import time
 import config.env_config as env_config
-import base64
-import threading
-import subprocess
 from pathlib import Path
 from filelock import FileLock
 from datetime import datetime
@@ -22,6 +19,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from pages.page_manager import PageManager
 from utils.logging_helper import configure_root_logger, set_current_test
+from utils.video_recorder import start_video_recording
 
 # Configure root logger once for the test session
 root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO)
@@ -133,135 +131,24 @@ def test_context(request):
 
 @pytest.fixture(scope="function", autouse=True)
 def video_recorder(request, driver, logger):
-    """
-    Capture repeated screenshots via CDP (jpeg) and assemble into mp4 with ffmpeg.
-    Works in regular and headless mode.
-    Works in parallel run mode.
-    Requires ffmpeg on PATH.
-    """
-    if not getattr(env_config, "VIDEO_RECORDING", False) or not isinstance(driver, webdriver.Chrome):
+    if not getattr(env_config, "VIDEO_RECORDING", False):
+        yield
+        return
+
+    if not isinstance(driver, webdriver.Chrome):
         yield
         return
 
     worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
     test_name = request.node.name.replace(":", "_").replace("/", "_")
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    base_dir = os.path.join("tests_recordings", worker_id, f"{test_name}_{timestamp}")
-    frames_dir = os.path.join(base_dir, "frames")
-    os.makedirs(frames_dir, exist_ok=True)
-    video_path = os.path.join(base_dir, f"{test_name}_{timestamp}.mp4")
 
-    stop_event = threading.Event()
-
-    def capture_loop():
-        idx = 0
-        interval = 0.10  # was 0.4 -> smaller interval => more frames (0.10 ~ 10 FPS)
-        min_frame_size = 256  # allow smaller frames when capturing more frequently
-        max_frames = 2000  # optional safety cap to avoid unlimited disk usage (None to disable)
-        while not stop_event.is_set():
-            # stop if session is gone
-            try:
-                if not getattr(driver, "session_id", None):
-                    logger.debug("Driver session gone, stopping capture loop.")
-                    break
-            except Exception:
-                break
-
-            try:
-                # lower JPEG quality to reduce IO if capturing many frames
-                res = driver.execute_cdp_cmd(
-                    "Page.captureScreenshot", {"format": "jpeg", "quality": 80, "fromSurface": True}
-                )
-                data = res.get("data")
-                if data:
-                    raw = base64.b64decode(data)
-                    if len(raw) > min_frame_size:
-                        if max_frames and idx >= max_frames:
-                            logger.debug("Reached max_frames, stopping capture loop.")
-                            break
-                        frame_file = os.path.join(frames_dir, f"frame_{idx:06d}.jpg")
-                        with open(frame_file, "wb") as fh:
-                            fh.write(raw)
-                        idx += 1
-                    else:
-                        logger.debug("Skipped tiny/corrupt frame (len=%d)", len(raw))
-            except Exception as e:
-                from selenium.common.exceptions import InvalidSessionIdException
-
-                if isinstance(e, InvalidSessionIdException) or "invalid session id" in str(e).lower():
-                    logger.debug("Invalid session during capture, stopping capture loop.")
-                    break
-                logger.debug("video_recorder capture error: %s", e)
-            time.sleep(interval)
-
-    t = threading.Thread(target=capture_loop, daemon=True)
-    t.start()
+    stop_func, video_path = start_video_recording(driver, test_name, worker_id)
+    logger.info(f"Started recording: {video_path}")
 
     yield
 
-    # stop capture and assemble video
-    stop_event.set()
-    t.join(timeout=5)
-
-    # Validate frames and remove tiny files
-    try:
-        frame_files = sorted(Path(frames_dir).glob("frame_*.jpg"))
-    except Exception:
-        frame_files = []
-
-    valid_frames = []
-    for p in frame_files:
-        try:
-            size = p.stat().st_size
-            if size > 512:
-                valid_frames.append(str(p))
-            else:
-                p.unlink(missing_ok=True)
-        except Exception:
-            continue
-
-    if not valid_frames:
-        logger.warning(f"No valid frames captured for {test_name}, skipping video assembly.")
-        return
-
-    # compute fps from capture interval (fallback to 5)
-    fps = max(1, int(round(1.0 / 0.1)))  # if you change interval, change this accordingly
-    ffmpeg_cmd = [
-        "ffmpeg",
-        "-y",
-        "-framerate",
-        str(fps),
-        "-i",
-        os.path.join(frames_dir, "frame_%06d.jpg"),
-        # ensure even width/height and correct pixel format for mp4 playback
-        "-vf",
-        "scale=trunc(iw/2)*2:trunc(ih/2)*2,format=yuv420p",
-        "-c:v",
-        "libx264",
-        "-pix_fmt",
-        "yuv420p",
-        video_path,
-    ]
-
-    # Run ffmpeg and capture stderr/stdout for debugging
-    try:
-        proc = subprocess.run(ffmpeg_cmd, check=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-        if proc.returncode != 0:
-            logger.error("ffmpeg failed (rc=%s). stdout:\n%s\nstderr:\n%s", proc.returncode, proc.stdout, proc.stderr)
-            raise subprocess.CalledProcessError(proc.returncode, ffmpeg_cmd, output=proc.stdout, stderr=proc.stderr)
-        logger.info(f"Video assembled: {video_path}")
-
-        # attach to Allure report
-        try:
-            with FileLock(f"{video_path}.lock"):
-                allure.attach.file(
-                    video_path, name=f"Recording - {test_name}", attachment_type=allure.attachment_type.MP4
-                )
-                logger.info(f"Video attached to Allure for {test_name}")
-        except Exception as e:
-            logger.warning(f"Failed to attach video to Allure: {e}")
-    except subprocess.CalledProcessError as e:
-        logger.error("ffmpeg failed to create video: %s", getattr(e, "stderr", str(e)))
+    logger.info("Stopping video recording...")
+    stop_func()
 
 
 @pytest.fixture(scope="function")
