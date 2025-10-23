@@ -93,21 +93,6 @@ jobs:
         if: always()
         run: allure generate reports/allure-results --clean -o reports/allure-report
 
-      - name: Clean old Allure Reports
-        if: github.ref == 'refs/heads/main'
-        run: |
-          # Fetch the gh-pages branch to ensure it's available
-          git fetch origin gh-pages:gh-pages || echo "No existing gh-pages branch"
-          git checkout gh-pages || git checkout -b gh-pages
-          # Remove old build folders (keep none as we're about to deploy new)
-          [ -d allure-report ] && find allure-report -maxdepth 1 -type d -name 'build-*' -exec rm -rf {} + || echo "No allure-report directory"
-          git add .
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m "Clean old Allure reports" || echo "No changes to commit"
-          git push origin gh-pages || echo "No changes to push"
-          git checkout -
-
       - name: Deploy Allure Report to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
@@ -115,7 +100,25 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports/allure-report
           destination_dir: allure-report/build-${{ github.run_id }}
-          keep_files: true
+          keep_files: false  # Overwrite existing files
+
+      - name: Clean old Allure Reports
+        if: github.ref == 'refs/heads/main'
+        run: |
+          # Clean untracked files to avoid checkout conflicts
+          git clean -fdx
+          # Fetch the gh-pages branch to ensure it's available
+          git fetch origin gh-pages:gh-pages || echo "No existing gh-pages branch"
+          git checkout gh-pages || git checkout -b gh-pages
+          # Remove old build folders (keep the latest one)
+          [ -d allure-report ] && find allure-report -maxdepth 1 -type d -name 'build-*' -not -name "build-${{ github.run_id }}" -exec rm -rf {} + || echo "No allure-report directory"
+          # Remove 'reports/' if it exists (legacy)
+          rm -rf reports 2>/dev/null || true
+          git add .
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Clean old Allure reports" || echo "No changes to commit"
+          git push origin gh-pages || echo "No changes to push"
 
       - name: Upload Allure Results
         if: always()
