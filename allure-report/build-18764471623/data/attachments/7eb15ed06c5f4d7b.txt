@@ -1,0 +1,66 @@
+2025-10-23 23:12:25,050 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots.
+2025-10-23 23:12:25,051 - INFO - [] Videos directory cleaned and recreated at: tests_recordings.
+2025-10-23 23:12:25,051 - INFO - [test_add_remove_elements] Starting test: test_add_remove_elements.
+2025-10-23 23:12:25,052 - INFO - [test_add_remove_elements] Initializing driver for browser: chrome (Config: chrome).
+2025-10-23 23:12:25,052 - INFO - [test_add_remove_elements] xdist worker is: gw1
+2025-10-23 23:12:25,052 - INFO - [test_add_remove_elements] ====== WebDriver manager ======
+2025-10-23 23:12:26,091 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 23:12:26,152 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 23:12:26,186 - INFO - [test_add_remove_elements] There is no [linux64] chromedriver "140.0.7339.207" for browser google-chrome "140.0.7339" in cache
+2025-10-23 23:12:26,186 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 23:12:26,301 - INFO - [test_add_remove_elements] WebDriver version 140.0.7339.207 selected
+2025-10-23 23:12:26,307 - INFO - [test_add_remove_elements] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.207/linux64/chromedriver-linux64.zip
+2025-10-23 23:12:26,307 - INFO - [test_add_remove_elements] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.207/linux64/chromedriver-linux64.zip
+2025-10-23 23:12:26,368 - INFO - [test_add_remove_elements] Driver downloading response is 200
+2025-10-23 23:12:26,453 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-23 23:12:26,603 - INFO - [test_add_remove_elements] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/140.0.7339.207]
+2025-10-23 23:12:38,861 - INFO - [test_add_remove_elements] Started recording: tests_recordings/gw1/test_add_remove_elements_20251023_231238/test_add_remove_elements_20251023_231238.mp4
+2025-10-23 23:12:38,862 - INFO - [test_add_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-23 23:12:39,492 - INFO - [test_add_remove_elements] Navigation completed.
+2025-10-23 23:12:39,493 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h1.heading') for 45s.
+2025-10-23 23:12:39,577 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:39,586 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-23 23:12:39,587 - INFO - [test_add_remove_elements] Starting Add/Remove Elements test.
+2025-10-23 23:12:39,931 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h3') for 45s.
+2025-10-23 23:12:39,981 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:39,987 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h3').
+2025-10-23 23:12:39,988 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-23 23:12:40,074 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-23 23:12:40,143 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:40,198 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-23 23:12:40,207 - INFO - [test_add_remove_elements] Found 2 delete buttons.
+2025-10-23 23:12:40,207 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-23 23:12:40,285 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-23 23:12:40,363 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:40,419 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-23 23:12:41,457 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:41,989 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:42,523 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:43,056 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:43,589 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:44,123 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:46,156 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:46,689 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:47,222 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:47,756 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:48,290 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:48,823 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:49,356 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:49,890 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:50,422 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:50,956 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:51,489 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:52,022 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:52,556 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:53,090 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:53,623 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:54,156 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:54,690 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:55,222 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:55,755 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-23 23:12:55,756 - INFO - [test_add_remove_elements] Found 0 delete buttons
+2025-10-23 23:12:55,756 - INFO - [test_add_remove_elements] Add/Remove Elements test completed successfully.
+2025-10-23 23:12:55,756 - INFO - [test_add_remove_elements] Finished test: test_add_remove_elements (Duration: 16.17s).
+2025-10-23 23:12:55,757 - INFO - [test_add_remove_elements] Stopping video recording...
+2025-10-23 23:12:56,914 - INFO - [test_add_remove_elements] Video created: tests_recordings/gw1/test_add_remove_elements_20251023_231238/test_add_remove_elements_20251023_231238.mp4
+2025-10-23 23:12:56,915 - INFO - [test_add_remove_elements] Quitting driver for browser: chrome.
