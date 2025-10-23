@@ -210,13 +210,14 @@ def clean_screenshots_at_start():
     """
     Cleans tests screenshots folder at the start of each session.
     """
-    screenshots_dir = "tests_screenshots"
-    lock_file = "tests_screenshots.lock"
-
+    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
+    screenshots_dir = os.path.join("tests_screenshots", worker_id)
+    lock_file = os.path.join(screenshots_dir, f"{worker_id}.lock")
+    os.makedirs(screenshots_dir, exist_ok=True)
     with FileLock(lock_file):
         if os.path.exists(screenshots_dir):
-            shutil.rmtree(screenshots_dir, ignore_errors=True)  # Safely remove directory
-        os.makedirs(screenshots_dir, exist_ok=True)  # Recreate empty directory
+            shutil.rmtree(screenshots_dir, ignore_errors=True)
+        os.makedirs(screenshots_dir, exist_ok=True)
         root_logger.info(f"Screenshots directory cleaned and recreated at: {screenshots_dir}.")
 
 
@@ -225,19 +226,20 @@ def clean_videos_at_start():
     """
     Cleans tests recordings folder at the start of each session.
     """
-    videos_dir = "tests_recordings"
-    lock_file = "tests_recordings.lock"
-
+    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
+    videos_dir = os.path.join("tests_recordings", worker_id)
+    lock_file = os.path.join(videos_dir, f"{worker_id}.lock")
+    os.makedirs(videos_dir, exist_ok=True)
     with FileLock(lock_file):
         if os.path.exists(videos_dir):
-            shutil.rmtree(videos_dir, ignore_errors=True)  # Safely remove directory
-        os.makedirs(videos_dir, exist_ok=True)  # Recreate empty directory
+            shutil.rmtree(videos_dir, ignore_errors=True)
+        os.makedirs(videos_dir, exist_ok=True)
         root_logger.info(f"Videos directory cleaned and recreated at: {videos_dir}.")
 
 
 """
 
-Pytest Hooks
+ed and recreated atPytest Hooks
 
 """
 

@@ -32,6 +32,7 @@ def start_video_recording(driver, test_name, worker_id="local"):
     base_dir = Path("tests_recordings") / worker_id / f"{test_name}_{timestamp}"
     frames_dir = base_dir / "frames"
     video_path = base_dir / f"{test_name}_{timestamp}.mp4"
+    lock_file = base_dir / f"{worker_id}.lock"
 
     frames_dir.mkdir(parents=True, exist_ok=True)
 
@@ -92,8 +93,7 @@ def start_video_recording(driver, test_name, worker_id="local"):
         try:
             proc = subprocess.run(ffmpeg_cmd, check=True, capture_output=True, text=True)
             logger.info(f"Video created: {video_path}")
-
-            with FileLock(f"{video_path}.lock"):
+            with FileLock(lock_file):
                 allure.attach.file(
                     str(video_path), name=f"Recording - {test_name}", attachment_type=allure.attachment_type.MP4
                 )
