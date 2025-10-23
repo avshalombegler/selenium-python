@@ -1,3 +1,9 @@
+"""
+Module for recording test videos using Selenium WebDriver and ffmpeg.
+Supports parallel execution, headless mode, and CI environments.
+Requires: ffmpeg, filelock, selenium, pytest-xdist.
+"""
+
 import threading
 import time
 import base64
