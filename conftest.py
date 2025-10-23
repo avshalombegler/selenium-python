@@ -11,8 +11,6 @@ import threading
 import subprocess
 from pathlib import Path
 from filelock import FileLock
-from pyscreenrec import ScreenRecorder
-from mss import mss
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
@@ -355,6 +353,7 @@ def clean_videos_at_start():
 Pytest Hooks
 
 """
+
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
