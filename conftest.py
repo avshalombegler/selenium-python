@@ -45,8 +45,8 @@ def driver(request):
     if not user_data_dir:
         # per-test fallback
         worker = os.environ.get("PYTEST_XDIST_WORKER", f"local_{os.getpid()}")
-        user_data_dir = os.path.join(tempfile.gettempdir(), f"user_data_{worker}_{int(time.time())}")
-        os.makedirs(user_data_dir, exist_ok=True)
+        user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker}_{int(time.time())}"
+        user_data_dir.mkdir(parents=True, exist_ok=True)
 
     # compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
     worker_token = os.environ.get("PYTEST_XDIST_WORKER") or (getattr(request.config, "workerinput", {}) or {}).get(
@@ -183,8 +183,8 @@ def unique_user_data_dir(request):
     if not worker_id:
         worker_id = f"local_{os.getpid()}"
 
-    user_data_dir = os.path.join(tempfile.gettempdir(), f"user_data_{worker_id}")
-    os.makedirs(user_data_dir, exist_ok=True)
+    user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker_id}"
+    user_data_dir.mkdir(parents=True, exist_ok=True)
     request.config.user_data_dir = user_data_dir
     yield
 
@@ -194,15 +194,14 @@ def clean_allure_report():
     """
     Cleans Allure Report folder(s) at the start of each session.
     """
-    allure_report_dir = "reports/allure-report"
-    lock_file = "reports/allure-report.lock"
-    os.makedirs("reports", exist_ok=True)  # Ensure reports directory exists
-
+    allure_report_dir = Path("reports") / "allure-report"
+    lock_file = allure_report_dir / "allure-report.lock"
+    allure_report_dir.parent.mkdir(parents=True, exist_ok=True)
     # Use a file lock to prevent race conditions in parallel execution
     with FileLock(lock_file):
-        if os.path.exists(allure_report_dir):
+        if allure_report_dir.exists():
             shutil.rmtree(allure_report_dir, ignore_errors=True)  # Safely remove directory
-        os.makedirs(allure_report_dir, exist_ok=True)  # Recreate empty directory
+        allure_report_dir.mkdir(parents=True, exist_ok=True)  # Recreate empty directory
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -211,13 +210,13 @@ def clean_screenshots_at_start():
     Cleans tests screenshots folder at the start of each session.
     """
     worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
-    screenshots_dir = os.path.join("tests_screenshots", worker_id)
-    lock_file = os.path.join(screenshots_dir, f"{worker_id}.lock")
-    os.makedirs(screenshots_dir, exist_ok=True)
+    screenshots_dir = Path("tests_screenshots") / worker_id
+    lock_file = screenshots_dir / f"{worker_id}.lock"
+    screenshots_dir.mkdir(parents=True, exist_ok=True)
     with FileLock(lock_file):
-        if os.path.exists(screenshots_dir):
+        if screenshots_dir.exists():
             shutil.rmtree(screenshots_dir, ignore_errors=True)
-        os.makedirs(screenshots_dir, exist_ok=True)
+        screenshots_dir.mkdir(parents=True, exist_ok=True)
         root_logger.info(f"Screenshots directory cleaned and recreated at: {screenshots_dir}.")
 
 
@@ -227,13 +226,13 @@ def clean_videos_at_start():
     Cleans tests recordings folder at the start of each session.
     """
     worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
-    videos_dir = os.path.join("tests_recordings", worker_id)
-    lock_file = os.path.join(videos_dir, f"{worker_id}.lock")
-    os.makedirs(videos_dir, exist_ok=True)
+    videos_dir = Path("tests_recordings") / worker_id
+    lock_file = videos_dir / f"{worker_id}.lock"
+    videos_dir.mkdir(parents=True, exist_ok=True)
     with FileLock(lock_file):
-        if os.path.exists(videos_dir):
+        if videos_dir.exists():
             shutil.rmtree(videos_dir, ignore_errors=True)
-        os.makedirs(videos_dir, exist_ok=True)
+        videos_dir.mkdir(parents=True, exist_ok=True)
         root_logger.info(f"Videos directory cleaned and recreated at: {videos_dir}.")
 
 
@@ -275,12 +274,12 @@ def pytest_runtest_makereport(item, call):
             root_logger.info(f"Test {test_name} failed, capturing screenshot.")
             # Use worker ID to create unique screenshot directory for each parallel worker
             worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
-            screenshot_dir = os.path.join("tests_screenshots", worker_id)
+            screenshot_dir = Path("tests_screenshots") / worker_id
             screenshot_filename = (
                 f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_" f"{test_name.replace(':', '_').replace('/', '_')}.png"
             )
-            screenshot_path = os.path.join(screenshot_dir, screenshot_filename)
-            lock_file = os.path.join(screenshot_dir, f"{worker_id}.lock")
+            screenshot_path = Path(screenshot_dir) / screenshot_filename
+            lock_file = Path(screenshot_dir) / f"{worker_id}.lock"
 
             try:
                 # Ensure directory exists before creating/using the lock
