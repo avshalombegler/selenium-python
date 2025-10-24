@@ -47,16 +47,13 @@ def driver(request):
         worker = os.environ.get("PYTEST_XDIST_WORKER", f"local_{os.getpid()}")
         user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker}_{int(time.time())}"
         user_data_dir.mkdir(parents=True, exist_ok=True)
+    root_logger.info(f"Using user_data_dir: {user_data_dir}")
 
     # compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
-    worker_token = os.environ.get("PYTEST_XDIST_WORKER") or (getattr(request.config, "workerinput", {}) or {}).get(
-        "workerid", None
-    )
-    if not worker_token:
-        worker_token = str(os.getpid())
-    digits = "".join(ch for ch in worker_token if ch.isdigit())
-    port_suffix = int(digits) if digits else (os.getpid() % 10000)
-    debug_port = 9222 + (port_suffix % 1000)  # keep port in reasonable range
+    worker_token = os.environ.get("PYTEST_XDIST_WORKER", str(os.getpid()))
+    port_suffix = int("".join(ch for ch in worker_token if ch.isdigit()) or "0") % 1000
+    debug_port = 9222 + port_suffix  # keep port in reasonable range
+    root_logger.info(f"Using debug_port: {debug_port}")
 
     if browser == "chrome":
         chrome_options = ChromeOptions()
@@ -69,7 +66,6 @@ def driver(request):
         chrome_options.add_argument("--disable-gpu")  # If there are GPU related issues
         chrome_options.add_argument("--no-sandbox")  # If there are sandbox related issues
         chrome_options.add_argument("--disable-dev-shm-usage")  # If there are memory related issues
-        chrome_options.add_argument("--disable-background-networking")  # If there are network related issues
         if env_config.MAXIMIZED:
             chrome_options.add_argument("--start-maximized")
         if env_config.HEADLESS:
