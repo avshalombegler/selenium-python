@@ -9,6 +9,7 @@ class MainPageLocators:
     PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "h1.heading")
     AB_TESTING_LINK = (By.LINK_TEXT, "A/B Testing")
     ADD_REMOVE_ELEMENTS_LINK = (By.LINK_TEXT, "Add/Remove Elements")
+    BASIC_AUTH_LINK = (By.LINK_TEXT, "Basic Auth")
 
 
 class AbTestingPageLocators:
@@ -22,3 +23,7 @@ class AddRemoveElementsPageLocators:
     ADD_ELEMENT_BTN = (By.CSS_SELECTOR, ".example > button")
     DELETE_BTN = (By.CSS_SELECTOR, "#elements > button:first-child")
     DELETE_BTNS = (By.CSS_SELECTOR, "#elements > button")
+
+
+class BasicAuthPageLocators:
+    AUTHORIZED_INDICATOR = (By.CSS_SELECTOR, "div#content p")
