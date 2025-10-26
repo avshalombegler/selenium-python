@@ -4,7 +4,7 @@ from pages.page_manager import PageManager
 
 
 @allure.feature("Basic Auth")
-@allure.story("")
+@allure.story("Tests Basic Autorization login scenatios")
 @pytest.mark.usefixtures("page_manager")
 class TestBasicAuth:
     """Tests Basic Auth login scenatios"""
