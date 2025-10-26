@@ -2,6 +2,7 @@ from pages.base_page import BasePage
 from utils.locators import MainPageLocators
 from pages.ab_testing_page import ABTestingPage
 from pages.add_remove_elements_page import AddRemoveElements
+from pages.basic_auth_page import BasicAuth
 
 
 class MainPage(BasePage):
@@ -16,3 +17,6 @@ class MainPage(BasePage):
     def click_add_remove_elements(self):
         self.click_element(MainPageLocators.ADD_REMOVE_ELEMENTS_LINK)
         return AddRemoveElements(self.driver, self.logger)
+
+    def get_basic_auth(self):
+        return BasicAuth(self.driver, self.logger)

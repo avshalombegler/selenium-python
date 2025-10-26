@@ -24,3 +24,6 @@ class PageManager:
 
     def get_add_remove_elements_page(self):
         return self.main_page.click_add_remove_elements()
+
+    def get_basic_auth_page(self):
+        return self.main_page.get_basic_auth()
