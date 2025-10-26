@@ -1,0 +1,37 @@
+2025-10-26 12:35:20,577 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots/gw1.
+2025-10-26 12:35:20,578 - INFO - [] Videos directory cleaned and recreated at: tests_recordings/gw1.
+2025-10-26 12:35:20,579 - INFO - [test_ab_testing_content] Starting test: test_ab_testing_content.
+2025-10-26 12:35:20,579 - INFO - [test_ab_testing_content] Initializing driver for browser: chrome (Config: chrome).
+2025-10-26 12:35:20,579 - INFO - [test_ab_testing_content] Using user_data_dir: /tmp/user_data_gw1
+2025-10-26 12:35:20,579 - INFO - [test_ab_testing_content] Using debug_port: 9223
+2025-10-26 12:35:20,579 - INFO - [test_ab_testing_content] xdist worker is: gw1
+2025-10-26 12:35:20,580 - INFO - [test_ab_testing_content] ====== WebDriver manager ======
+2025-10-26 12:35:20,710 - INFO - [test_ab_testing_content] Get LATEST chromedriver version for google-chrome
+2025-10-26 12:35:20,797 - INFO - [test_ab_testing_content] Get LATEST chromedriver version for google-chrome
+2025-10-26 12:35:20,883 - INFO - [test_ab_testing_content] There is no [linux64] chromedriver "141.0.7390.122" for browser google-chrome "141.0.7390" in cache
+2025-10-26 12:35:20,883 - INFO - [test_ab_testing_content] Get LATEST chromedriver version for google-chrome
+2025-10-26 12:35:21,114 - INFO - [test_ab_testing_content] WebDriver version 141.0.7390.122 selected
+2025-10-26 12:35:21,122 - INFO - [test_ab_testing_content] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-26 12:35:21,123 - INFO - [test_ab_testing_content] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-26 12:35:21,206 - INFO - [test_ab_testing_content] Driver downloading response is 200
+2025-10-26 12:35:21,324 - INFO - [test_ab_testing_content] Get LATEST chromedriver version for google-chrome
+2025-10-26 12:35:21,554 - INFO - [test_ab_testing_content] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/141.0.7390.122]
+2025-10-26 12:35:22,486 - INFO - [test_ab_testing_content] Started recording: tests_recordings/gw1/test_ab_testing_content_20251026_123522/test_ab_testing_content_20251026_123522.mp4
+2025-10-26 12:35:22,486 - INFO - [test_ab_testing_content] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-26 12:35:23,151 - INFO - [test_ab_testing_content] Navigation completed.
+2025-10-26 12:35:23,151 - INFO - [test_ab_testing_content] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-26 12:35:23,284 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 12:35:23,298 - INFO - [test_ab_testing_content] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-26 12:35:23,299 - INFO - [test_ab_testing_content] Starting A/B Testing test.
+2025-10-26 12:35:23,513 - INFO - [test_ab_testing_content] Waiting for page to load with indicator ('css selector', 'div.example h3') for 10s.
+2025-10-26 12:35:23,599 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 12:35:23,604 - INFO - [test_ab_testing_content] Page loaded successfully with indicator ('css selector', 'div.example h3').
+2025-10-26 12:35:23,604 - INFO - [test_ab_testing_content] Retrieving title text from AB Testing page.
+2025-10-26 12:35:23,625 - INFO - [test_ab_testing_content] Retrieved title: A/B Test Variation 1.
+2025-10-26 12:35:23,625 - INFO - [test_ab_testing_content] Retrieving paragraph text from AB Testing page.
+2025-10-26 12:35:23,649 - INFO - [test_ab_testing_content] Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+2025-10-26 12:35:23,650 - INFO - [test_ab_testing_content] A/B Testing test completed successfully.
+2025-10-26 12:35:23,651 - INFO - [test_ab_testing_content] Finished test: test_ab_testing_content (Duration: 0.35s).
+2025-10-26 12:35:23,652 - INFO - [test_ab_testing_content] Stopping video recording...
+2025-10-26 12:35:23,852 - INFO - [test_ab_testing_content] Video created: tests_recordings/gw1/test_ab_testing_content_20251026_123522/test_ab_testing_content_20251026_123522.mp4
+2025-10-26 12:35:23,853 - INFO - [test_ab_testing_content] Quitting driver for browser: chrome.
