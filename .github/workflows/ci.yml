@@ -119,6 +119,7 @@ jobs:
             pages/**
             tests/**
             utils/**
+            reports/**
             tests_recordings/**
             tests_screenshots/**
             *.lock
@@ -130,17 +131,16 @@ jobs:
         run: |
           git fetch origin gh-pages:gh-pages || echo "No existing gh-pages branch"
           git checkout gh-pages || git checkout -b gh-pages
-          find . -type d -name "__pycache__" -exec rm -rf {} +  # Remove __pycache__ directories
-          find . -name "*.pyc" -exec rm -f {} +  # Remove .pyc files
-          rm -f .env  # Remove .env file
-          rm -rf config pages tests utils tests_recordings tests_screenshots  # Remove unnecessary directories
-          rm -f *.lock test_logs.log  # Remove lock files and test_logs.log
+          find . -type d -name "__pycache__" -exec rm -rf {} +
+          find . -name "*.pyc" -exec rm -f {} +
+          rm -f .env
+          rm -rf config pages tests utils tests_recordings tests_screenshots reports
+          rm -f *.lock test_logs.log
           git add .
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Clean old Allure reports and remove unnecessary files" || echo "No changes to commit"
-          git push origin gh-pages || echo "No changes to push"
-        # Cleans up gh-pages to keep only allure-report and .nojekyll
+          git push origin gh-pages
 
       - name: Upload Allure Results
         if: always()
