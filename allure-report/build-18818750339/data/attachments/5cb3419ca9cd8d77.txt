@@ -1,0 +1,62 @@
+INFO     root:conftest.py:124 Starting test: test_basic_auth[--Not authorized\n].
+INFO     root:conftest.py:41 Initializing driver for browser: chrome (Config: chrome).
+INFO     root:conftest.py:50 Using user_data_dir: /tmp/user_data_gw0
+INFO     root:conftest.py:56 Using debug_port: 9222
+INFO     WDM:logger.py:11 xdist worker is: gw0
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/141.0.7390.122/chromedriver-linux64/chromedriver] found in cache
+INFO     root:conftest.py:142 Started recording: tests_recordings/gw0/test_basic_auth[--Not authorized\n]_20251026_134015/test_basic_auth[--Not authorized\n]_20251026_134015.mp4
+INFO     root:base_page.py:74 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:76 Navigation completed.
+INFO     root:base_page.py:55 Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:60 Page loaded successfully with indicator ('css selector', 'h1.heading').
+INFO     root:test_basic_auth_login_scenarios.py:22 Starting Basic Auth test.
+INFO     root:basic_auth_page.py:17 .
+INFO     root:basic_auth_page.py:25 .
+INFO     root:base_page.py:74 Navigating to URL: http://the-internet.herokuapp.com/basic_auth.
+INFO     root:base_page.py:76 Navigation completed.
+INFO     root:basic_auth_page.py:30 Attempting to get authorization message.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+ERROR    root:base_page.py:30 Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x556f67820fea <unknown>
+#1 0x556f6729ed06 <unknown>
+#2 0x556f672f0e6d <unknown>
+#3 0x556f672f1101 <unknown>
+#4 0x556f6733f6b4 <unknown>
+#5 0x556f67316e3d <unknown>
+#6 0x556f6733cb3b <unknown>
+#7 0x556f67316be3 <unknown>
+#8 0x556f672e32d2 <unknown>
+#9 0x556f672e3f91 <unknown>
+#10 0x556f677e49e8 <unknown>
+#11 0x556f677e884f <unknown>
+#12 0x556f677cbec9 <unknown>
+#13 0x556f677e93f5 <unknown>
+#14 0x556f677b174f <unknown>
+#15 0x556f6780dcc8 <unknown>
+#16 0x556f6780dea3 <unknown>
+#17 0x556f6781ff83 <unknown>
+#18 0x7f801c29caa4 <unknown>
+#19 0x7f801c329c6c <unknown>
+
+INFO     root:test_basic_auth_login_scenarios.py:28 Basic Auth test completed successfully.
+INFO     root:conftest.py:146 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw0/test_basic_auth[--Not authorized\n]_20251026_134015/test_basic_auth[--Not authorized\n]_20251026_134015.mp4
+INFO     root:conftest.py:102 Quitting driver for browser: chrome.

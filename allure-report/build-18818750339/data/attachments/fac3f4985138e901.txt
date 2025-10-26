@@ -1,0 +1,47 @@
+2025-10-26 13:39:57,777 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots/gw2.
+2025-10-26 13:39:57,778 - INFO - [] Videos directory cleaned and recreated at: tests_recordings/gw2.
+2025-10-26 13:39:57,779 - INFO - [test_add_remove_elements] Starting test: test_add_remove_elements.
+2025-10-26 13:39:57,779 - INFO - [test_add_remove_elements] Initializing driver for browser: chrome (Config: chrome).
+2025-10-26 13:39:57,779 - INFO - [test_add_remove_elements] Using user_data_dir: /tmp/user_data_gw2
+2025-10-26 13:39:57,779 - INFO - [test_add_remove_elements] Using debug_port: 9224
+2025-10-26 13:39:57,779 - INFO - [test_add_remove_elements] xdist worker is: gw2
+2025-10-26 13:39:57,779 - INFO - [test_add_remove_elements] ====== WebDriver manager ======
+2025-10-26 13:39:57,955 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-26 13:39:57,991 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-26 13:39:58,023 - INFO - [test_add_remove_elements] There is no [linux64] chromedriver "141.0.7390.122" for browser google-chrome "141.0.7390" in cache
+2025-10-26 13:39:58,023 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-26 13:39:58,124 - INFO - [test_add_remove_elements] WebDriver version 141.0.7390.122 selected
+2025-10-26 13:39:58,129 - INFO - [test_add_remove_elements] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-26 13:39:58,129 - INFO - [test_add_remove_elements] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-26 13:39:58,191 - INFO - [test_add_remove_elements] Driver downloading response is 200
+2025-10-26 13:39:58,243 - INFO - [test_add_remove_elements] Get LATEST chromedriver version for google-chrome
+2025-10-26 13:39:58,405 - INFO - [test_add_remove_elements] Driver has been saved in cache [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/141.0.7390.122]
+2025-10-26 13:40:00,280 - INFO - [test_add_remove_elements] Started recording: tests_recordings/gw2/test_add_remove_elements_20251026_134000/test_add_remove_elements_20251026_134000.mp4
+2025-10-26 13:40:00,285 - INFO - [test_add_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-26 13:40:01,336 - INFO - [test_add_remove_elements] Navigation completed.
+2025-10-26 13:40:01,337 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-26 13:40:01,442 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:01,451 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-26 13:40:01,453 - INFO - [test_add_remove_elements] Starting Add/Remove Elements test.
+2025-10-26 13:40:01,676 - INFO - [test_add_remove_elements] Waiting for page to load with indicator ('css selector', 'h3') for 10s.
+2025-10-26 13:40:01,764 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:01,770 - INFO - [test_add_remove_elements] Page loaded successfully with indicator ('css selector', 'h3').
+2025-10-26 13:40:01,771 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-26 13:40:01,851 - INFO - [test_add_remove_elements] Clicking Add Element button.
+2025-10-26 13:40:01,971 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:02,041 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-26 13:40:02,058 - INFO - [test_add_remove_elements] Found 2 delete buttons.
+2025-10-26 13:40:02,059 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-26 13:40:02,175 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:02,233 - INFO - [test_add_remove_elements] Clicking Delete Element button.
+2025-10-26 13:40:02,296 - INFO - [test_add_remove_elements] Counting elements with locator: ('css selector', '#elements > button')
+2025-10-26 13:40:02,369 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:04,415 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:04,949 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:05,481 - WARNING - [test_add_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-26 13:40:05,481 - INFO - [test_add_remove_elements] Found 0 delete buttons
+2025-10-26 13:40:05,481 - INFO - [test_add_remove_elements] Add/Remove Elements test completed successfully.
+2025-10-26 13:40:05,482 - INFO - [test_add_remove_elements] Finished test: test_add_remove_elements (Duration: 4.03s).
+2025-10-26 13:40:05,483 - INFO - [test_add_remove_elements] Stopping video recording...
+2025-10-26 13:40:06,007 - INFO - [test_add_remove_elements] Video created: tests_recordings/gw2/test_add_remove_elements_20251026_134000/test_add_remove_elements_20251026_134000.mp4
+2025-10-26 13:40:06,009 - INFO - [test_add_remove_elements] Quitting driver for browser: chrome.
