@@ -103,14 +103,20 @@ jobs:
         if: always()
         run: allure generate reports/allure-results --clean -o reports/allure-report
 
+      - name: Create redirect index.html
+        if: github.ref == 'refs/heads/main'
+        run: |
+          echo '<meta http-equiv="refresh" content="0;url=./allure-report/build-${{ github.run_id }}/index.html">' > index.html
+          mv index.html reports/allure-report/
+
       - name: Deploy Allure Report to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports/allure-report
-          destination_dir: allure-report/build-${{ github.run_id }}
-          keep_files: false  # Overwrites existing files in destination_dir
+          destination_dir: .
+          keep_files: true
           exclude_assets: |
             **/__pycache__/**
             **/*.pyc
