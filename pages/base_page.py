@@ -38,7 +38,7 @@ class BasePage:
             self.logger.critical(f"Unexpected error for locator {locator}: {str(e)}")
             raise
 
-    @allure.step("Waiting for page to load with indicator: {indicator_locator}.")
+    @allure.step("Waiting for page to load with indicator: {indicator_locator}")
     def wait_for_page_to_load(self, indicator_locator, timeout=None):
         """
         Wait for page to load by checking visibility of an indicator element.
@@ -71,7 +71,7 @@ class BasePage:
         """Wait for element visible"""
         return self._safe_wait(EC.visibility_of_element_located, locator, timeout)
 
-    @allure.step("Navigating to URL: {url}.")
+    @allure.step("Navigating to URL: {url}")
     def navigate_to(self, url):
         self.logger.info(f"Navigating to URL: {url}.")
         self.driver.get(url)

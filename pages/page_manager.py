@@ -30,3 +30,6 @@ class PageManager:
 
     def get_broken_images_page(self):
         return self.main_page.click_broken_images()
+
+    def get_challenging_dom_page(self):
+        return self.main_page.click_challenging_dom()

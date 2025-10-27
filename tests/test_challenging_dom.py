@@ -1,0 +1,41 @@
+import pytest
+import allure
+from pages.page_manager import PageManager
+
+
+@allure.feature("Challenging DOM")
+@allure.story("Verifying Challenging DOM interactions and table content")
+@pytest.mark.usefixtures("page_manager")
+class TestChallengingDom:
+    BUTTONS = ["blue", "red", "green"]
+    COLUMNS = ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Diceret"]
+    CELL_VALUES = ["Iuvaret", "Apeirian", "Adipisci", "Definiebas", "Consequuntur", "Phaedrum"]
+
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.parametrize("button", BUTTONS)
+    def test_each_button_clicks(self, page_manager: PageManager, logger, button):
+        """Verify each page button can be clicked."""
+        with allure.step(f"Navigate to Challenging DOM page"):
+            challenging_dom_page = page_manager.get_challenging_dom_page()
+
+        with allure.step(f"Click {button} button"):
+            challenging_dom_page.click_page_button(button)
+            logger.info(f"Clicked {button}")
+
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.parametrize("col,cell", list(zip(COLUMNS, CELL_VALUES)))
+    def test_table_content_per_column(self, page_manager: PageManager, logger, col, cell):
+        """Verify header and a sample of cell values under each column."""
+        with allure.step("Navigate to Challenging DOM page"):
+            challenging_dom_page = page_manager.get_challenging_dom_page()
+
+        with allure.step(f"Verify header for column '{col}'"):
+            header = challenging_dom_page.get_table_head_text(col)
+            assert header == col, f"Table head value '{col}' not found (got '{header}')"
+
+        with allure.step(f"Verify cells for column '{col}' contain expected samples"):
+            # check a few sample cell suffixes to ensure content is present
+            for i in range(3):  # reduced repetition for faster tests; expand as needed
+                expected = f"{cell}{i}"
+                val = challenging_dom_page.get_table_cell_text(col, expected)
+                assert val == expected, f"Cell value '{expected}' under '{col}' not found (got '{val}')"

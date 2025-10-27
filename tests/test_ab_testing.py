@@ -15,14 +15,14 @@ class TestABTesting:
         logger.info("Starting A/B Testing test.")
         ab_page = page_manager.get_ab_testing_page()
 
-        @allure.step("Verify title.")
+        @allure.step("Verify title")
         def verify_title():
             title = ab_page.get_title_text()
             logger.info(f"Retrieved title: {title}.")
             expected_titles = ["A/B Test Control", "A/B Test Variation 1"]
             assert title in expected_titles, f"Expected title in {expected_titles}, got '{title}'"
 
-        @allure.step("Verify paragraph content.")
+        @allure.step("Verify paragraph content")
         def verify_paragraph():
             paragraph = ab_page.get_paragraph_text()
             logger.info(f"Retrieved paragraph: {paragraph}.")

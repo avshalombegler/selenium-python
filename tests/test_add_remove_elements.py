@@ -15,23 +15,23 @@ class TestAddRemoveElements:
         logger.info("Starting Add/Remove Elements test.")
         add_remove_page = page_manager.get_add_remove_elements_page()
 
-        @allure.step("Add two elements.")
+        @allure.step("Add two elements")
         def add_elements():
             for _ in range(2):
                 add_remove_page.click_add_element()
 
-        @allure.step("Verify 2 delete buttons exist.")
+        @allure.step("Verify 2 delete buttons exist")
         def verify_two_elements():
             count = add_remove_page.count_delete_buttons()
             logger.info(f"Found {count} delete buttons.")
             assert count == 2, f"Expected 2 delete buttons, got {count}"
 
-        @allure.step("Remove all elements.")
+        @allure.step("Remove all elements")
         def remove_elements():
             for _ in range(2):
                 add_remove_page.click_delete()
 
-        @allure.step("Verify no delete buttons remain.")
+        @allure.step("Verify no delete buttons remain")
         def verify_no_elements():
             count = add_remove_page.count_delete_buttons()
             logger.info(f"Found {count} delete buttons")
