@@ -1,0 +1,34 @@
+INFO     root:conftest.py:216 Screenshots directory cleaned and recreated at: tests_screenshots/gw3.
+INFO     root:conftest.py:232 Videos directory cleaned and recreated at: tests_recordings/gw3.
+INFO     root:conftest.py:124 Starting test: test_broken_images.
+INFO     root:conftest.py:41 Initializing driver for browser: chrome (Config: chrome).
+INFO     root:conftest.py:50 Using user_data_dir: /tmp/user_data_gw3
+INFO     root:conftest.py:56 Using debug_port: 9225
+INFO     WDM:logger.py:11 xdist worker is: gw3
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 There is no [linux64] chromedriver "141.0.7390.122" for browser google-chrome "141.0.7390" in cache
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 WebDriver version 141.0.7390.122 selected
+INFO     WDM:logger.py:11 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+INFO     WDM:logger.py:11 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+INFO     WDM:logger.py:11 Driver downloading response is 200
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver has been saved in cache [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/141.0.7390.122]
+INFO     root:conftest.py:142 Started recording: tests_recordings/gw3/test_broken_images_20251027_100108/test_broken_images_20251027_100108.mp4
+INFO     root:base_page.py:76 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:78 Navigation completed.
+INFO     root:base_page.py:57 Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:62 Page loaded successfully with indicator ('css selector', 'h1.heading').
+INFO     root:base_page.py:57 Waiting for page to load with indicator ('css selector', 'div.example h3') for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:62 Page loaded successfully with indicator ('css selector', 'div.example h3').
+INFO     root:broken_images_page.py:15 Getting all image elements.
+INFO     root:broken_images_page.py:29 Checking if image is broken.
+INFO     root:broken_images_page.py:29 Checking if image is broken.
+INFO     root:broken_images_page.py:29 Checking if image is broken.
+INFO     root:conftest.py:146 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw3/test_broken_images_20251027_100108/test_broken_images_20251027_100108.mp4
+INFO     root:conftest.py:102 Quitting driver for browser: chrome.
