@@ -10,6 +10,7 @@ class MainPageLocators:
     AB_TESTING_LINK = (By.LINK_TEXT, "A/B Testing")
     ADD_REMOVE_ELEMENTS_LINK = (By.LINK_TEXT, "Add/Remove Elements")
     BASIC_AUTH_LINK = (By.LINK_TEXT, "Basic Auth")
+    BROKEN_IMAGES_LINK = (By.LINK_TEXT, "Broken Images")
 
 
 class AbTestingPageLocators:
@@ -27,3 +28,8 @@ class AddRemoveElementsPageLocators:
 
 class BasicAuthPageLocators:
     AUTHORIZED_INDICATOR = (By.CSS_SELECTOR, "div#content p")
+
+
+class BrokenImagesPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
+    IMAGES = (By.CSS_SELECTOR, "div.example img")

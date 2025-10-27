@@ -27,3 +27,6 @@ class PageManager:
 
     def get_basic_auth_page(self):
         return self.main_page.get_basic_auth()
+
+    def get_broken_images_page(self):
+        return self.main_page.click_broken_images()

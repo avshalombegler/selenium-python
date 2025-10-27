@@ -1,4 +1,5 @@
 import allure
+from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import (
@@ -6,13 +7,14 @@ from selenium.common.exceptions import (
     NoSuchElementException,
     StaleElementReferenceException,
     ElementClickInterceptedException,
+    JavascriptException,
 )
 from config.env_config import SHORT_TIMEOUT, LONG_TIMEOUT
 from utils.logging_helper import get_logger
 
 
 class BasePage:
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger=None):
         self.driver = driver
         # Accept an injected logger (for tests) or use a sensible default from logging_helper
         self.logger = logger if logger is not None else get_logger(self.__class__.__name__)
@@ -138,3 +140,20 @@ class BasePage:
         except TimeoutException:
             self.logger.debug(f"No elements found with locator {locator} after {SHORT_TIMEOUT}s, returning 0")
             return 0
+
+    def get_all_elements(self, locator):
+        try:
+            elements = WebDriverWait(self.driver, self.short_wait).until(
+                EC.presence_of_all_elements_located(locator),
+                message=f"Timeout waiting for elements with locator {locator}",
+            )
+            return elements
+        except TimeoutException:
+            self.logger.debug(f"No elements found with locator {locator} after {SHORT_TIMEOUT}s.")
+        return
+
+    def get_element_attr_js(self, web_element, attr):
+        try:
+            return self.driver.execute_script(f"return arguments[0].{attr}", web_element)
+        except JavascriptException as e:
+            self.logger.error(f"Could not execute script: {str(e)}")
