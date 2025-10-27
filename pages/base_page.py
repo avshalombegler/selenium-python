@@ -153,7 +153,23 @@ class BasePage:
         return
 
     def get_element_attr_js(self, web_element, attr):
+        """
+        Get element attribute using JavaScript execution.
+
+        Args:
+            web_element: WebElement to get attribute from
+            attr: Attribute name to retrieve
+
+        Returns:
+            Any: Attribute value or None if execution failed
+
+        Raises:
+            JavascriptException: If script execution fails
+        """
         try:
-            return self.driver.execute_script(f"return arguments[0].{attr}", web_element)
+            result = self.driver.execute_script(f"return arguments[0].{attr}", web_element)
+            self.logger.debug(f"Retrieved {attr}={result} for element")
+            return result
         except JavascriptException as e:
-            self.logger.error(f"Could not execute script: {str(e)}")
+            self.logger.error(f"Failed to get {attr}: {str(e)}")
+            return None

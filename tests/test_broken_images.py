@@ -7,27 +7,29 @@ from pages.page_manager import PageManager
 @allure.story("Verifying visibility of images")
 @pytest.mark.usefixtures("page_manager")
 class TestBrokenImages:
-    """Tests for verifying visibility of images"""
+    EXPECTED_BROKEN_IMAGES = 2
+    EXPECTED_VALID_IMAGES = 1
 
     @allure.severity(allure.severity_level.NORMAL)
     def test_broken_images(self, page_manager: PageManager, logger):
-        logger.info("Starting Broken Images test.")
-        broken_images_page = page_manager.get_broken_images_page()
-        images_elements = broken_images_page.get_all_images()
-        broken_images = []
-        valid_images = []
-        for image in images_elements:
-            image_results = broken_images_page.is_image_broken(image)
-            if image_results["is_broken"]:
-                broken_images.append(image_results)
-            else:
-                valid_images.append(image_results)
+        """Verify the correct number of broken and valid images on the page."""
+        with allure.step("Navigate to Broken Images page"):
+            broken_images_page = page_manager.get_broken_images_page()
 
-        # for testing if any image is broken
-        # assert broken_images.len == 0
+        with allure.step("Get all images"):
+            images = broken_images_page.get_all_images()
+            assert images, "No images found on the page"
 
-        # for testing if exact images are broken
-        assert len(broken_images) is 2
-        assert len(valid_images) is 1
+        with allure.step("Analyze images"):
+            results = [broken_images_page.is_image_broken(img) for img in images]
 
-        logger.info("Broken Images test completed successfully.")
+        broken = [img for img in results if img["is_broken"]]
+        valid = [img for img in results if not img["is_broken"]]
+
+        with allure.step("Verify image counts"):
+            assert (
+                len(broken) == self.EXPECTED_BROKEN_IMAGES
+            ), f"Expected {self.EXPECTED_BROKEN_IMAGES} broken images, found {len(broken)}"
+            assert (
+                len(valid) == self.EXPECTED_VALID_IMAGES
+            ), f"Expected {self.EXPECTED_VALID_IMAGES} valid images, found {len(valid)}"

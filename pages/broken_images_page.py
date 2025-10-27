@@ -4,21 +4,30 @@ from utils.locators import BrokenImagesPageLocators
 
 
 class BrokenImages(BasePage):
+    """Page object for the Broken Images page containing methods to interact with and validate images."""
+
     def __init__(self, driver, logger=None):
         super().__init__(driver, logger)
         self.wait_for_page_to_load(BrokenImagesPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Getting all image elements.")
-    def get_all_images(self):
+    def get_all_images(self) -> list:
         self.logger.info("Getting all image elements.")
-        images = self.get_all_elements(BrokenImagesPageLocators.IMAGES)
-        return images
+        return self.get_all_elements(BrokenImagesPageLocators.IMAGES)
 
-    # @allure.step("Checking image {image.get_attribute('src')}.")
-    def is_image_broken(self, image):
-        self.logger.info("Verify if image is broken.")
+    @allure.step("Checking if image is broken")
+    def is_image_broken(self, image) -> dict:
+        """
+        Check if an image is broken by verifying its natural width.
+
+        Args:
+            image: WebElement representing the image
+
+        Returns:
+            dict: Contains image source, broken status and natural width
+        """
+        self.logger.info("Checking if image is broken.")
+        src = image.get_attribute("src")
         natural_width = self.get_element_attr_js(image, "naturalWidth")
-        if natural_width:
-            return {"src": image.get_attribute("src"), "is_broken": False, "natural_width": natural_width}
-        else:
-            return {"src": image.get_attribute("src"), "is_broken": True, "natural_width": natural_width}
+
+        return {"src": src, "is_broken": not natural_width, "natural_width": natural_width}
