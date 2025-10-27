@@ -122,7 +122,6 @@ jobs:
             reports/**
             tests_recordings/**
             tests_screenshots/**
-            *.lock
             test_logs.log
         # Deploys only allure-report directory to gh-pages, excluding unnecessary files
 
