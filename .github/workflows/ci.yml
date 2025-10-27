@@ -103,11 +103,6 @@ jobs:
         if: always()
         run: allure generate reports/allure-results --clean -o reports/allure-report
 
-      - name: Create redirect index.html
-        if: github.ref == 'refs/heads/main'
-        run: |
-          echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Redirecting...</title><script>window.location.href = "./allure-report/build-${{ github.run_id }}/index.html";</script></head><body></body></html>' > index.html
-
       - name: Deploy Allure Report to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
@@ -129,7 +124,6 @@ jobs:
             tests_screenshots/**
             *.lock
             test_logs.log
-            index.html
         # Deploys only allure-report directory to gh-pages, excluding unnecessary files
 
       - name: Clean old Allure Reports
