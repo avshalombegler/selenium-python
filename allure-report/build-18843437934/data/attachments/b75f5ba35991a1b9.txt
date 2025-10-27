@@ -1,0 +1,55 @@
+2025-10-27 13:56:46,958 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Starting test: test_basic_auth[wrong-wrong-Not authorized\n].
+2025-10-27 13:56:46,959 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] xdist worker is: gw1
+2025-10-27 13:56:46,959 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] ====== WebDriver manager ======
+2025-10-27 13:56:47,026 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:47,067 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:47,151 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Driver [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/141.0.7390.122/chromedriver-linux64/chromedriver] found in cache
+2025-10-27 13:56:47,553 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Started recording: tests_recordings/gw1/test_basic_auth[wrong-wrong-Not authorized\n]_20251027_135647/test_basic_auth[wrong-wrong-Not authorized\n]_20251027_135647.mp4
+2025-10-27 13:56:47,554 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-27 13:56:47,928 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Navigation completed.
+2025-10-27 13:56:47,928 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-27 13:56:48,028 - WARNING - [test_basic_auth[wrong-wrong-Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:48,040 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-27 13:56:48,042 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Starting Basic Auth test.
+2025-10-27 13:56:48,043 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] .
+2025-10-27 13:56:48,043 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] .
+2025-10-27 13:56:48,043 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Navigating to URL: http://wrong:wrong@the-internet.herokuapp.com/basic_auth.
+2025-10-27 13:56:48,163 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Navigation completed.
+2025-10-27 13:56:48,164 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Attempting to get authorization message.
+2025-10-27 13:56:48,275 - WARNING - [test_basic_auth[wrong-wrong-Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:49,854 - WARNING - [test_basic_auth[wrong-wrong-Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:51,421 - WARNING - [test_basic_auth[wrong-wrong-Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:51,987 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:53,507 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:55,019 - WARNING - [test_basic_auth[wrong-wrong-Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:55,554 - WARNING - [test_basic_auth[wrong-wrong-Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:56,123 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:57,657 - WARNING - [test_basic_auth[wrong-wrong-Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:58,170 - ERROR - [test_basic_auth[wrong-wrong-Not authorized\n]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x5612b273ffea <unknown>
+#1 0x5612b21bdd06 <unknown>
+#2 0x5612b220fe6d <unknown>
+#3 0x5612b2210101 <unknown>
+#4 0x5612b225e6b4 <unknown>
+#5 0x5612b2235e3d <unknown>
+#6 0x5612b225bb3b <unknown>
+#7 0x5612b2235be3 <unknown>
+#8 0x5612b22022d2 <unknown>
+#9 0x5612b2202f91 <unknown>
+#10 0x5612b27039e8 <unknown>
+#11 0x5612b270784f <unknown>
+#12 0x5612b26eaec9 <unknown>
+#13 0x5612b27083f5 <unknown>
+#14 0x5612b26d074f <unknown>
+#15 0x5612b272ccc8 <unknown>
+#16 0x5612b272cea3 <unknown>
+#17 0x5612b273ef83 <unknown>
+#18 0x7f929b09caa4 <unknown>
+#19 0x7f929b129c6c <unknown>
+
+2025-10-27 13:56:58,235 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Basic Auth test completed successfully.
+2025-10-27 13:56:58,236 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Finished test: test_basic_auth[wrong-wrong-Not authorized\n] (Duration: 10.19s).
+2025-10-27 13:56:58,238 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Stopping video recording...
+2025-10-27 13:56:59,276 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Video created: tests_recordings/gw1/test_basic_auth[wrong-wrong-Not authorized\n]_20251027_135647/test_basic_auth[wrong-wrong-Not authorized\n]_20251027_135647.mp4
+2025-10-27 13:56:59,277 - INFO - [test_basic_auth[wrong-wrong-Not authorized\n]] Quitting driver for browser: chrome.

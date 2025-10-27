@@ -1,0 +1,25 @@
+2025-10-27 13:56:58,860 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Starting test: test_table_content_per_column[Diceret-Phaedrum].
+2025-10-27 13:56:58,860 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] xdist worker is: gw0
+2025-10-27 13:56:58,860 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] ====== WebDriver manager ======
+2025-10-27 13:56:58,967 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:59,019 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:59,084 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/141.0.7390.122/chromedriver-linux64/chromedriver] found in cache
+2025-10-27 13:56:59,478 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Started recording: tests_recordings/gw0/test_table_content_per_column[Diceret-Phaedrum]_20251027_135659/test_table_content_per_column[Diceret-Phaedrum]_20251027_135659.mp4
+2025-10-27 13:56:59,478 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-27 13:56:59,780 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Navigation completed.
+2025-10-27 13:56:59,781 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-27 13:56:59,892 - WARNING - [test_table_content_per_column[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:59,901 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-27 13:57:00,113 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Waiting for page to load with indicator ('css selector', 'div.example h3') for 10s.
+2025-10-27 13:57:00,217 - WARNING - [test_table_content_per_column[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:57:00,224 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Page loaded successfully with indicator ('css selector', 'div.example h3').
+2025-10-27 13:57:00,224 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Getting table head text: Diceret.
+2025-10-27 13:57:00,279 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Getting table cell text 'Phaedrum0' under column 'Diceret'.
+2025-10-27 13:57:00,380 - WARNING - [test_table_content_per_column[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:57:00,411 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Getting table cell text 'Phaedrum1' under column 'Diceret'.
+2025-10-27 13:57:00,474 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Getting table cell text 'Phaedrum2' under column 'Diceret'.
+2025-10-27 13:57:00,520 - WARNING - [test_table_content_per_column[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:57:00,565 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Finished test: test_table_content_per_column[Diceret-Phaedrum] (Duration: 0.66s).
+2025-10-27 13:57:00,567 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Stopping video recording...
+2025-10-27 13:57:00,795 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Video created: tests_recordings/gw0/test_table_content_per_column[Diceret-Phaedrum]_20251027_135659/test_table_content_per_column[Diceret-Phaedrum]_20251027_135659.mp4
+2025-10-27 13:57:00,796 - INFO - [test_table_content_per_column[Diceret-Phaedrum]] Quitting driver for browser: chrome.

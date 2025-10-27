@@ -1,0 +1,31 @@
+2025-10-27 13:56:39,977 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots/gw0.
+2025-10-27 13:56:39,977 - INFO - [] Videos directory cleaned and recreated at: tests_recordings/gw0.
+2025-10-27 13:56:39,978 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue].
+2025-10-27 13:56:39,978 - INFO - [test_each_button_clicks[blue]] xdist worker is: gw0
+2025-10-27 13:56:39,978 - INFO - [test_each_button_clicks[blue]] ====== WebDriver manager ======
+2025-10-27 13:56:40,536 - INFO - [test_each_button_clicks[blue]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:40,598 - INFO - [test_each_button_clicks[blue]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:40,649 - INFO - [test_each_button_clicks[blue]] There is no [linux64] chromedriver "141.0.7390.122" for browser google-chrome "141.0.7390" in cache
+2025-10-27 13:56:40,649 - INFO - [test_each_button_clicks[blue]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:40,799 - INFO - [test_each_button_clicks[blue]] WebDriver version 141.0.7390.122 selected
+2025-10-27 13:56:40,808 - INFO - [test_each_button_clicks[blue]] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-27 13:56:40,808 - INFO - [test_each_button_clicks[blue]] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-27 13:56:40,899 - INFO - [test_each_button_clicks[blue]] Driver downloading response is 200
+2025-10-27 13:56:40,972 - INFO - [test_each_button_clicks[blue]] Get LATEST chromedriver version for google-chrome
+2025-10-27 13:56:41,171 - INFO - [test_each_button_clicks[blue]] Driver has been saved in cache [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/141.0.7390.122]
+2025-10-27 13:56:45,016 - INFO - [test_each_button_clicks[blue]] Started recording: tests_recordings/gw0/test_each_button_clicks[blue]_20251027_135645/test_each_button_clicks[blue]_20251027_135645.mp4
+2025-10-27 13:56:45,020 - INFO - [test_each_button_clicks[blue]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-27 13:56:45,623 - INFO - [test_each_button_clicks[blue]] Navigation completed.
+2025-10-27 13:56:45,624 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-27 13:56:45,717 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:45,728 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-27 13:56:46,046 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator ('css selector', 'div.example h3') for 10s.
+2025-10-27 13:56:46,148 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:46,155 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator ('css selector', 'div.example h3').
+2025-10-27 13:56:46,155 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-10-27 13:56:46,309 - INFO - [test_each_button_clicks[blue]] Clicked blue
+2025-10-27 13:56:46,310 - INFO - [test_each_button_clicks[blue]] Finished test: test_each_button_clicks[blue] (Duration: 0.58s).
+2025-10-27 13:56:46,312 - INFO - [test_each_button_clicks[blue]] Stopping video recording...
+2025-10-27 13:56:46,388 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 13:56:46,849 - INFO - [test_each_button_clicks[blue]] Video created: tests_recordings/gw0/test_each_button_clicks[blue]_20251027_135645/test_each_button_clicks[blue]_20251027_135645.mp4
+2025-10-27 13:56:46,851 - INFO - [test_each_button_clicks[blue]] Quitting driver for browser: chrome.
