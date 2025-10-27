@@ -10,7 +10,7 @@ class BrokenImages(BasePage):
         super().__init__(driver, logger)
         self.wait_for_page_to_load(BrokenImagesPageLocators.PAGE_LOADED_INDICATOR)
 
-    @allure.step("Getting all image elements.")
+    @allure.step("Getting all image elements")
     def get_all_images(self) -> list:
         self.logger.info("Getting all image elements.")
         return self.get_all_elements(BrokenImagesPageLocators.IMAGES)

@@ -8,13 +8,13 @@ class AddRemoveElements(BasePage):
         super().__init__(driver, logger)
         self.wait_for_page_to_load(AddRemoveElementsPageLocators.PAGE_LOADED_INDICATOR)
 
-    @allure.step("Clicking Add Element button.")
+    @allure.step("Clicking Add Element button")
     def click_add_element(self):
         self.logger.info("Clicking Add Element button.")
         self.click_element(AddRemoveElementsPageLocators.ADD_ELEMENT_BTN)
         return self
 
-    @allure.step("Clicking Delete Element button.")
+    @allure.step("Clicking Delete Element button")
     def click_delete(self):
         self.logger.info("Clicking Delete Element button.")
         self.click_element(AddRemoveElementsPageLocators.DELETE_BTN)

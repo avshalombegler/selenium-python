@@ -38,7 +38,7 @@ def driver(request):
     Initialize driver at the start of each test.
     """
     browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
-    root_logger.info(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
+    root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
 
     # try to get the user_data_dir that was set by unique_user_data_dir; if missing create a temp one
     user_data_dir = getattr(request.config, "user_data_dir", None)
@@ -47,13 +47,13 @@ def driver(request):
         worker = os.environ.get("PYTEST_XDIST_WORKER", f"local_{os.getpid()}")
         user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker}_{int(time.time())}"
         user_data_dir.mkdir(parents=True, exist_ok=True)
-    root_logger.info(f"Using user_data_dir: {user_data_dir}")
+    root_logger.debug(f"Using user_data_dir: {user_data_dir}")
 
     # compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
     worker_token = os.environ.get("PYTEST_XDIST_WORKER", str(os.getpid()))
     port_suffix = int("".join(ch for ch in worker_token if ch.isdigit()) or "0") % 1000
     debug_port = 9222 + port_suffix  # keep port in reasonable range
-    root_logger.info(f"Using debug_port: {debug_port}")
+    root_logger.debug(f"Using debug_port: {debug_port}")
 
     if browser == "chrome":
         chrome_options = ChromeOptions()

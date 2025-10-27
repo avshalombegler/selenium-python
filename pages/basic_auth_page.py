@@ -12,7 +12,7 @@ class BasicAuth(BasePage):
     def __init__(self, driver, logger=None):
         super().__init__(driver, logger)
 
-    @allure.step("Initialize URL.")
+    @allure.step("Initialize URL")
     def init_url(self, username, password):
         self.logger.info(".")
         if username == "" and password == "":
@@ -20,12 +20,12 @@ class BasicAuth(BasePage):
         else:
             return f"http://{username}:{password}@the-internet.herokuapp.com/basic_auth"
 
-    @allure.step("Navigating to URL: {url}.")
+    @allure.step("Navigating to URL: {url}")
     def navigate_using_url(self, url):
         self.logger.info(".")
         self.navigate_to(url)
 
-    @allure.step("Get authorization message.")
+    @allure.step("Get authorization message")
     def get_auth_message(self):
         self.logger.info("Attempting to get authorization message.")
         try:
