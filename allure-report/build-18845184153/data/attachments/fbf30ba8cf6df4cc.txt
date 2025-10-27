@@ -1,0 +1,22 @@
+2025-10-27 14:55:35,351 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green].
+2025-10-27 14:55:35,352 - INFO - [test_each_button_clicks[green]] xdist worker is: gw0
+2025-10-27 14:55:35,352 - INFO - [test_each_button_clicks[green]] ====== WebDriver manager ======
+2025-10-27 14:55:35,434 - INFO - [test_each_button_clicks[green]] Get LATEST chromedriver version for google-chrome
+2025-10-27 14:55:35,529 - INFO - [test_each_button_clicks[green]] Get LATEST chromedriver version for google-chrome
+2025-10-27 14:55:35,643 - INFO - [test_each_button_clicks[green]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/141.0.7390.122/chromedriver-linux64/chromedriver] found in cache
+2025-10-27 14:55:35,993 - INFO - [test_each_button_clicks[green]] Started recording: tests_recordings/gw0/test_each_button_clicks[green]_20251027_145535/test_each_button_clicks[green]_20251027_145535.mp4
+2025-10-27 14:55:35,994 - INFO - [test_each_button_clicks[green]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-27 14:55:36,355 - INFO - [test_each_button_clicks[green]] Navigation completed.
+2025-10-27 14:55:36,356 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-27 14:55:36,442 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 14:55:36,450 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-27 14:55:36,651 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator ('css selector', 'div.example h3') for 10s.
+2025-10-27 14:55:36,748 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 14:55:36,754 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator ('css selector', 'div.example h3').
+2025-10-27 14:55:36,754 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-10-27 14:55:36,928 - INFO - [test_each_button_clicks[green]] Clicked green
+2025-10-27 14:55:36,929 - INFO - [test_each_button_clicks[green]] Finished test: test_each_button_clicks[green] (Duration: 0.48s).
+2025-10-27 14:55:36,931 - INFO - [test_each_button_clicks[green]] Stopping video recording...
+2025-10-27 14:55:37,029 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-27 14:55:37,295 - INFO - [test_each_button_clicks[green]] Video created: tests_recordings/gw0/test_each_button_clicks[green]_20251027_145535/test_each_button_clicks[green]_20251027_145535.mp4
+2025-10-27 14:55:37,297 - INFO - [test_each_button_clicks[green]] Quitting driver for browser: chrome.

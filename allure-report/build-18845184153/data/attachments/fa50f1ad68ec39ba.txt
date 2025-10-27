@@ -1,0 +1,22 @@
+INFO     root:conftest.py:124 Starting test: test_broken_images.
+INFO     WDM:logger.py:11 xdist worker is: gw2
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/141.0.7390.122/chromedriver-linux64/chromedriver] found in cache
+INFO     root:conftest.py:142 Started recording: tests_recordings/gw2/test_broken_images_20251027_145532/test_broken_images_20251027_145532.mp4
+INFO     root:base_page.py:76 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:78 Navigation completed.
+INFO     root:base_page.py:57 Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:62 Page loaded successfully with indicator ('css selector', 'h1.heading').
+INFO     root:base_page.py:57 Waiting for page to load with indicator ('css selector', 'div.example h3') for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:62 Page loaded successfully with indicator ('css selector', 'div.example h3').
+INFO     root:broken_images_page.py:15 Getting all image elements.
+INFO     root:broken_images_page.py:29 Checking if image is broken.
+INFO     root:broken_images_page.py:29 Checking if image is broken.
+INFO     root:broken_images_page.py:29 Checking if image is broken.
+INFO     root:conftest.py:146 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw2/test_broken_images_20251027_145532/test_broken_images_20251027_145532.mp4
+INFO     root:conftest.py:102 Quitting driver for browser: chrome.
