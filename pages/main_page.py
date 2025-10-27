@@ -3,6 +3,7 @@ from utils.locators import MainPageLocators
 from pages.ab_testing_page import ABTestingPage
 from pages.add_remove_elements_page import AddRemoveElements
 from pages.basic_auth_page import BasicAuth
+from pages.broken_images_page import BrokenImages
 
 
 class MainPage(BasePage):
@@ -20,3 +21,7 @@ class MainPage(BasePage):
 
     def get_basic_auth(self):
         return BasicAuth(self.driver, self.logger)
+
+    def click_broken_images(self):
+        self.click_element(MainPageLocators.BROKEN_IMAGES_LINK)
+        return BrokenImages(self.driver, self.logger)
