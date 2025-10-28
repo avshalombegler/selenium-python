@@ -3,21 +3,21 @@ from pages.base_page import BasePage
 from utils.locators import ChallengingDomPageLocators
 
 
-class ChallengingDom(BasePage):
+class ChallengingDomPage(BasePage):
     """Page object for the Challenging DOM page containing methods to interact with and validate page web elements."""
 
     def __init__(self, driver, logger=None):
         super().__init__(driver, logger)
         self.wait_for_page_to_load(ChallengingDomPageLocators.PAGE_LOADED_INDICATOR)
 
-    @allure.step("Clicking {button_color} button")
+    @allure.step("Click {button_color} button")
     def click_page_button(self, button_color: str):
         """
         Click one of the page buttons. Case-insensitive.
 
         Returns self for fluent usage.
         """
-        self.logger.info(f"Clicking {button_color} button.")
+        self.logger.info(f"Click {button_color} button.")
         mapping = {
             "blue": ChallengingDomPageLocators.BLUE_BTN,
             "red": ChallengingDomPageLocators.RED_BTN,
@@ -30,13 +30,13 @@ class ChallengingDom(BasePage):
         self.click_element(btn)
         return self
 
-    @allure.step("Getting table head text of column '{col}'")
+    @allure.step("Get table head text of column '{col}'")
     def get_table_head_text(self, col):
         """
         Return header text for the requested column name (exact match) or None.
         This searches the thead th elements instead of relying purely on dynamic XPATHs.
         """
-        self.logger.info(f"Getting table head text of column '{col}'.")
+        self.logger.info(f"Get table head text of column '{col}'.")
         # Locate header elements directly for stability
         headers = self.get_all_elements(ChallengingDomPageLocators.TABLE_HEADERS_TEXT)
         if not headers:
@@ -48,9 +48,9 @@ class ChallengingDom(BasePage):
         xpath = ChallengingDomPageLocators.TABLE_HEAD_TEXT[1].format(column_name=col)
         return self.get_dynamic_element_text((ChallengingDomPageLocators.TABLE_HEAD_TEXT[0], xpath))
 
-    @allure.step("Getting table cell text '{cell}' under column '{col}'")
+    @allure.step("Get table cell text '{cell}' under column '{col}'")
     def get_table_cell_text(self, col: str, cell: str):
-        self.logger.info(f"Getting table cell text '{cell}' under column '{col}'.")
+        self.logger.info(f"Get table cell text '{cell}' under column '{col}'.")
         headers = self.get_all_elements(ChallengingDomPageLocators.TABLE_HEADERS_TEXT)
         if not headers:
             # fallback to XPath approach
@@ -68,14 +68,14 @@ class ChallengingDom(BasePage):
         xpath = f"//div[contains(@class,'example')]//table//tbody//tr/td[{idx + 1}][normalize-space()='{cell}']"
         return self.get_dynamic_element_text((ChallengingDomPageLocators.TABLE_CELL_TEXT[0], xpath))
 
-    @allure.step("Clicking edit button")
+    @allure.step("Click edit button in row {row}")
     def click_edit_button(self, row):
         self.logger.info("Clicking edit button.")
         xpath = ChallengingDomPageLocators.EDIT_BTN[1].format(row_num=row)
         self.click_element((ChallengingDomPageLocators.EDIT_BTN[0], xpath))
 
-    @allure.step("Clicking delete button")
+    @allure.step("Click delete button in row {row}")
     def click_delete_button(self, row):
-        self.logger.info("Clicking delete button.")
+        self.logger.info("Click delete button in row {row}.")
         xpath = ChallengingDomPageLocators.DEL_BTN[1].format(row_num=row)
         self.click_element((ChallengingDomPageLocators.DEL_BTN[0], xpath))

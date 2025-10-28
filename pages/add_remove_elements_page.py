@@ -3,7 +3,7 @@ from pages.base_page import BasePage
 from utils.locators import AddRemoveElementsPageLocators
 
 
-class AddRemoveElements(BasePage):
+class AddRemoveElementsPage(BasePage):
     def __init__(self, driver, logger=None):
         super().__init__(driver, logger)
         self.wait_for_page_to_load(AddRemoveElementsPageLocators.PAGE_LOADED_INDICATOR)

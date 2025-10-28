@@ -4,21 +4,20 @@ from pages.page_manager import PageManager
 
 
 @allure.feature("Broken Images")
-@allure.story("Verifying visibility of images")
+@allure.story("Verify the correct number of broken and valid images on the page")
 @pytest.mark.usefixtures("page_manager")
 class TestBrokenImages:
+    
     EXPECTED_BROKEN_IMAGES = 2
     EXPECTED_VALID_IMAGES = 1
 
     @allure.severity(allure.severity_level.NORMAL)
     def test_broken_images(self, page_manager: PageManager, logger):
         """Verify the correct number of broken and valid images on the page."""
-        with allure.step("Navigate to Broken Images page"):
-            page = page_manager.get_broken_images_page()
+        page = page_manager.get_broken_images_page()
 
-        with allure.step("Get all images"):
-            images = page.get_all_images()
-            assert images, "No images found on the page"
+        images = page.get_all_images()
+        assert images, "No images found on the page"
 
         with allure.step("Analyze images"):
             results = [page.is_image_broken(img) for img in images]

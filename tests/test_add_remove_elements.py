@@ -7,14 +7,12 @@ from pages.page_manager import PageManager
 @allure.story("Verify adding and removing elements on the page")
 @pytest.mark.usefixtures("page_manager")
 class TestAddRemoveElements:
-    """Tests for Add/Remove Elements page functionality"""
+    """Tests for add/remove elements page functionality"""
 
     @allure.severity(allure.severity_level.NORMAL)
     def test_add_remove_elements(self, page_manager: PageManager, logger):
         """Verify adding two elements and removing them, checking counts"""
-
-        with allure.step("Navigate to Add/Remove Elements page"):
-            page = page_manager.get_add_remove_elements_page()
+        page = page_manager.get_add_remove_elements_page()
 
         with allure.step("Add two elements"):
             for _ in range(2):

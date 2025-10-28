@@ -234,7 +234,7 @@ def clean_videos_at_start():
 
 """
 
-ed and recreated atPytest Hooks
+Pytest Hooks
 
 """
 
@@ -254,8 +254,8 @@ def pytest_sessionstart(session):
 def pytest_runtest_makereport(item, call):
     """
     Pytest hook to handle:
-        Test duration logging.
-        Screenshot taking on test faliure (Locally and to Allure Report).
+    - Test duration logging.
+    - Screenshot taking on test faliure (Locally and to Allure Report).
     """
     outcome = yield
     report = outcome.get_result()
