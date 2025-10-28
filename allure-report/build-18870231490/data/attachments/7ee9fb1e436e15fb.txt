@@ -1,0 +1,31 @@
+2025-10-28 09:32:24,466 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots/gw1.
+2025-10-28 09:32:24,467 - INFO - [] Videos directory cleaned and recreated at: tests_recordings/gw1.
+2025-10-28 09:32:24,468 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.].
+2025-10-28 09:32:24,469 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] xdist worker is: gw1
+2025-10-28 09:32:24,469 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] ====== WebDriver manager ======
+2025-10-28 09:32:24,723 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Get LATEST chromedriver version for google-chrome
+2025-10-28 09:32:24,795 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Get LATEST chromedriver version for google-chrome
+2025-10-28 09:32:24,860 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] There is no [linux64] chromedriver "141.0.7390.122" for browser google-chrome "141.0.7390" in cache
+2025-10-28 09:32:24,860 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Get LATEST chromedriver version for google-chrome
+2025-10-28 09:32:25,046 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] WebDriver version 141.0.7390.122 selected
+2025-10-28 09:32:25,054 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-28 09:32:25,054 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2025-10-28 09:32:25,118 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Driver downloading response is 200
+2025-10-28 09:32:25,195 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Get LATEST chromedriver version for google-chrome
+2025-10-28 09:32:25,408 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/141.0.7390.122]
+2025-10-28 09:32:27,290 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Started recording: tests_recordings/gw1/test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]_20251028_093227/test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]_20251028_093227.mp4
+2025-10-28 09:32:27,291 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-28 09:32:27,959 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-10-28 09:32:27,959 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-28 09:32:28,070 - WARNING - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-28 09:32:28,084 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-28 09:32:28,087 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] .
+2025-10-28 09:32:28,087 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] .
+2025-10-28 09:32:28,088 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Navigating to URL: http://admin:admin@the-internet.herokuapp.com/basic_auth.
+2025-10-28 09:32:28,286 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-10-28 09:32:28,287 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Attempting to get authorization message.
+2025-10-28 09:32:28,421 - WARNING - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-28 09:32:28,457 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Finished test: test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.] (Duration: 0.37s).
+2025-10-28 09:32:28,459 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Stopping video recording...
+2025-10-28 09:32:29,004 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Video created: tests_recordings/gw1/test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]_20251028_093227/test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]_20251028_093227.mp4
+2025-10-28 09:32:29,006 - INFO - [test_basic_auth[admin-admin-Congratulations! You must have the proper credentials.]] Quitting driver for browser: chrome.

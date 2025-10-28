@@ -1,0 +1,23 @@
+2025-10-28 09:32:29,120 - INFO - [test_broken_images] Starting test: test_broken_images.
+2025-10-28 09:32:29,120 - INFO - [test_broken_images] xdist worker is: gw2
+2025-10-28 09:32:29,121 - INFO - [test_broken_images] ====== WebDriver manager ======
+2025-10-28 09:32:29,245 - INFO - [test_broken_images] Get LATEST chromedriver version for google-chrome
+2025-10-28 09:32:29,314 - INFO - [test_broken_images] Get LATEST chromedriver version for google-chrome
+2025-10-28 09:32:29,378 - INFO - [test_broken_images] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/141.0.7390.122/chromedriver-linux64/chromedriver] found in cache
+2025-10-28 09:32:29,966 - INFO - [test_broken_images] Started recording: tests_recordings/gw2/test_broken_images_20251028_093229/test_broken_images_20251028_093229.mp4
+2025-10-28 09:32:29,967 - INFO - [test_broken_images] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-28 09:32:30,488 - INFO - [test_broken_images] Navigation completed.
+2025-10-28 09:32:30,489 - INFO - [test_broken_images] Waiting for page to load with indicator ('css selector', 'h1.heading') for 10s.
+2025-10-28 09:32:30,641 - WARNING - [test_broken_images] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-28 09:32:30,655 - INFO - [test_broken_images] Page loaded successfully with indicator ('css selector', 'h1.heading').
+2025-10-28 09:32:30,884 - INFO - [test_broken_images] Waiting for page to load with indicator ('css selector', 'div.example h3') for 10s.
+2025-10-28 09:32:30,957 - WARNING - [test_broken_images] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-28 09:32:30,966 - INFO - [test_broken_images] Page loaded successfully with indicator ('css selector', 'div.example h3').
+2025-10-28 09:32:30,966 - INFO - [test_broken_images] Getting all image elements.
+2025-10-28 09:32:30,985 - INFO - [test_broken_images] Checking if image is broken.
+2025-10-28 09:32:31,001 - INFO - [test_broken_images] Checking if image is broken.
+2025-10-28 09:32:31,013 - INFO - [test_broken_images] Checking if image is broken.
+2025-10-28 09:32:31,023 - INFO - [test_broken_images] Finished test: test_broken_images (Duration: 0.37s).
+2025-10-28 09:32:31,024 - INFO - [test_broken_images] Stopping video recording...
+2025-10-28 09:32:31,210 - INFO - [test_broken_images] Video created: tests_recordings/gw2/test_broken_images_20251028_093229/test_broken_images_20251028_093229.mp4
+2025-10-28 09:32:31,212 - INFO - [test_broken_images] Quitting driver for browser: chrome.
