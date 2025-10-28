@@ -12,16 +12,16 @@ class TestABTesting:
     @allure.severity(allure.severity_level.NORMAL)
     def test_ab_testing_content(self, page_manager: PageManager, logger):
         with allure.step("Navigate to A/B Testing page"):
-            ab_page = page_manager.get_ab_testing_page()
+            page = page_manager.get_ab_testing_page()
 
         with allure.step("Verify title"):
-            title = ab_page.get_title_text()
+            title = page.get_title_text()
             logger.info(f"Retrieved title: {title}.")
             expected_titles = ["A/B Test Control", "A/B Test Variation 1"]
             assert title in expected_titles, f"Expected title in {expected_titles}, got '{title}'"
 
         with allure.step("Verify paragraph content"):
-            paragraph = ab_page.get_paragraph_text()
+            paragraph = page.get_paragraph_text()
             logger.info(f"Retrieved paragraph: {paragraph}.")
             expected_text = "Also known as split testing"
             assert expected_text in paragraph, f"Expected '{expected_text}' in paragraph, got '{paragraph}'"

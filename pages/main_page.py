@@ -1,4 +1,5 @@
 from pages.base_page import BasePage
+from pages.checkboxes_page import Checkboxes
 from utils.locators import MainPageLocators
 from pages.ab_testing_page import ABTestingPage
 from pages.add_remove_elements_page import AddRemoveElements
@@ -30,3 +31,7 @@ class MainPage(BasePage):
     def click_challenging_dom(self):
         self.click_element(MainPageLocators.CHALLENGING_DOM_LINK)
         return ChallengingDom(self.driver, self.logger)
+
+    def click_checkboxes(self):
+        self.click_element(MainPageLocators.CHECKBOXES_LINK)
+        return Checkboxes(self.driver, self.logger)

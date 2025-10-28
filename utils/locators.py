@@ -12,6 +12,7 @@ class MainPageLocators:
     BASIC_AUTH_LINK = (By.LINK_TEXT, "Basic Auth")
     BROKEN_IMAGES_LINK = (By.LINK_TEXT, "Broken Images")
     CHALLENGING_DOM_LINK = (By.LINK_TEXT, "Challenging DOM")
+    CHECKBOXES_LINK = (By.LINK_TEXT, "Checkboxes")
 
 
 class AbTestingPageLocators:
@@ -50,3 +51,8 @@ class ChallengingDomPageLocators:
         By.XPATH,
         "//th[text()='{column_name}']/ancestor::thead/following::tr//td[text()='{cell_value}']",
     )
+
+
+class CheckboxesPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
+    CHECKBOXES = (By.CSS_SELECTOR, "form#checkboxes input[type='checkbox']")

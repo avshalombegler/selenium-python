@@ -21,12 +21,12 @@ class TestBasicAuth:
     def test_basic_auth(self, page_manager: PageManager, logger, username, password, expected_message):
 
         with allure.step("Navigate to Basic Auth page"):
-            basic_auth_page = page_manager.get_basic_auth_page()
+            page = page_manager.get_basic_auth_page()
 
         with allure.step("Navigate to url based on username and password"):
-            url = basic_auth_page.init_url(username, password)
-            basic_auth_page.navigate_using_url(url)
+            url = page.init_url(username, password)
+            page.navigate_using_url(url)
 
         with allure.step("Verify authentication message"):
-            message = basic_auth_page.get_auth_message()
+            message = page.get_auth_message()
             assert message == expected_message

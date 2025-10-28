@@ -33,3 +33,6 @@ class PageManager:
 
     def get_challenging_dom_page(self):
         return self.main_page.click_challenging_dom()
+
+    def get_checkboxes_page(self):
+        return self.main_page.click_checkboxes()

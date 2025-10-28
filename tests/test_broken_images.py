@@ -14,14 +14,14 @@ class TestBrokenImages:
     def test_broken_images(self, page_manager: PageManager, logger):
         """Verify the correct number of broken and valid images on the page."""
         with allure.step("Navigate to Broken Images page"):
-            broken_images_page = page_manager.get_broken_images_page()
+            page = page_manager.get_broken_images_page()
 
         with allure.step("Get all images"):
-            images = broken_images_page.get_all_images()
+            images = page.get_all_images()
             assert images, "No images found on the page"
 
         with allure.step("Analyze images"):
-            results = [broken_images_page.is_image_broken(img) for img in images]
+            results = [page.is_image_broken(img) for img in images]
 
         broken = [img for img in results if img["is_broken"]]
         valid = [img for img in results if not img["is_broken"]]
