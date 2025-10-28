@@ -6,11 +6,12 @@ from pages.page_manager import PageManager
 @allure.feature("Context Menu")
 @allure.story("Verify Context Menu interactions")
 @pytest.mark.usefixtures("page_manager")
-class TestCheckboxes:
+class TestContextMenu:
+
     EXPECTED_ALERT_TEXT = "You selected a context menu"
 
     @allure.severity(allure.severity_level.NORMAL)
-    def test_each_button_clicks(self, page_manager: PageManager, logger, actions):
+    def test_(self, page_manager: PageManager, logger, actions):
         """Verify Context Menu interactions"""
         page = page_manager.get_context_menu_page()
 
