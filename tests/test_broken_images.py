@@ -7,7 +7,7 @@ from pages.page_manager import PageManager
 @allure.story("Verify the correct number of broken and valid images on the page")
 @pytest.mark.usefixtures("page_manager")
 class TestBrokenImages:
-    
+
     EXPECTED_BROKEN_IMAGES = 2
     EXPECTED_VALID_IMAGES = 1
 

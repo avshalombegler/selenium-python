@@ -11,7 +11,7 @@ class TestContextMenu:
     EXPECTED_ALERT_TEXT = "You selected a context menu"
 
     @allure.severity(allure.severity_level.NORMAL)
-    def test_(self, page_manager: PageManager, logger, actions):
+    def test_context_menu_functionality(self, page_manager: PageManager, logger, actions):
         """Verify Context Menu interactions"""
         page = page_manager.get_context_menu_page()
 

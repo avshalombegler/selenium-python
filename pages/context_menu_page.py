@@ -1,6 +1,12 @@
 import allure
 from pages.base_page import BasePage
 from utils.locators import ContextMenuPageLocators
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import (
+    TimeoutException,
+    NoAlertPresentException,
+)
 
 
 class ContextMenuPage(BasePage):
@@ -21,11 +27,19 @@ class ContextMenuPage(BasePage):
         self.perform_right_click(ContextMenuPageLocators.HOT_SPOT_BOX, actions)
 
     @allure.step("Get context menu alert text")
-    def get_context_menu_alert_text(self):
-        self.logger.info("Get context menu alert text.")
-        return self.driver.switch_to.alert.text
+    def get_context_menu_alert_text(self, timeout=5):
+        self.logger.info("Waiting for context menu alert...")
+        try:
+            alert = WebDriverWait(self.driver, timeout).until(EC.alert_is_present())
+            text = alert.text
+            self.logger.debug(f"Alert text: '{text}'")
+            return text
+        except TimeoutException:
+            self.logger.error("Alert did not appear within timeout")
+            raise NoAlertPresentException("Alert not present after right-click")
 
     @allure.step("Close context menu alert")
     def close_context_menu_alert(self):
         self.logger.info("Close context menu alert.")
-        self.driver.switch_to.alert.accept()
+        alert = WebDriverWait(self.driver, 5).until(EC.alert_is_present())
+        alert.accept()
