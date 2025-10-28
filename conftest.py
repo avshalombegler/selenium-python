@@ -17,7 +17,7 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.common.action_chains import ActionChains
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
-from pages.page_manager import PageManager
+from pages.base.page_manager import PageManager
 from utils.logging_helper import configure_root_logger, set_current_test
 from utils.video_recorder import start_video_recording
 

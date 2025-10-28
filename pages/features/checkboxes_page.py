@@ -1,5 +1,5 @@
 import allure
-from pages.base_page import BasePage
+from pages.base.base_page import BasePage
 from selenium.webdriver.common.by import By
 from utils.locators import CheckboxesPageLocators
 

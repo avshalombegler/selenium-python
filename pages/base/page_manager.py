@@ -1,5 +1,5 @@
 import allure
-from pages.main_page import MainPage
+from pages.common.main_page import MainPage
 from utils.locators import MainPageLocators
 from utils.logging_helper import get_logger
 

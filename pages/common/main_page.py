@@ -1,12 +1,12 @@
-from pages.base_page import BasePage
+from pages.base.base_page import BasePage
 from utils.locators import MainPageLocators
-from pages.checkboxes_page import CheckboxesPage
-from pages.ab_testing_page import ABTestingPage
-from pages.add_remove_elements_page import AddRemoveElementsPage
-from pages.basic_auth_page import BasicAuthPage
-from pages.broken_images_page import BrokenImagesPage
-from pages.challenging_dom_page import ChallengingDomPage
-from pages.context_menu_page import ContextMenuPage
+from pages.features.checkboxes_page import CheckboxesPage
+from pages.features.ab_testing_page import ABTestingPage
+from pages.features.add_remove_elements_page import AddRemoveElementsPage
+from pages.features.basic_auth_page import BasicAuthPage
+from pages.features.broken_images_page import BrokenImagesPage
+from pages.features.challenging_dom_page import ChallengingDomPage
+from pages.features.context_menu_page import ContextMenuPage
 
 
 class MainPage(BasePage):

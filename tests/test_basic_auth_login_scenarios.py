@@ -1,6 +1,6 @@
 import pytest
 import allure
-from pages.page_manager import PageManager
+from pages.base.page_manager import PageManager
 
 
 @allure.feature("Basic Auth")

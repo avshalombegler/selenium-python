@@ -1,5 +1,5 @@
 import allure
-from pages.base_page import BasePage
+from pages.base.base_page import BasePage
 from utils.locators import ContextMenuPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -20,6 +20,7 @@ class ContextMenuPage(BasePage):
     def right_click_outside_hot_spot(self, actions):
         self.logger.info("Perform right-click on page title to verify context menu alert does not activate.")
         self.perform_right_click(ContextMenuPageLocators.PAGE_LOADED_INDICATOR, actions)
+        self.click_element(ContextMenuPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Perform right-click on hot-spot to verify alert activation")
     def right_click_on_hot_spot(self, actions):

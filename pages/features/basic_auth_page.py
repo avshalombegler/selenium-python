@@ -1,6 +1,6 @@
 import allure
 import requests
-from pages.base_page import BasePage
+from pages.base.base_page import BasePage
 from utils.locators import BasicAuthPageLocators
 from selenium.common.exceptions import (
     TimeoutException,
