@@ -7,6 +7,8 @@ from pages.page_manager import PageManager
 @allure.story("Verify Challenging DOM buttons interactions and table content")
 @pytest.mark.usefixtures("page_manager")
 class TestChallengingDom:
+    EDIT_SUFFIX = "challenging_dom#edit"
+    DEL_SUFFIX = "challenging_dom#delete"
     BUTTONS = ["blue", "red", "green"]
     COLUMNS = ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Diceret"]
     CELL_VALUES = ["Iuvaret", "Apeirian", "Adipisci", "Definiebas", "Consequuntur", "Phaedrum"]
@@ -24,7 +26,7 @@ class TestChallengingDom:
             logger.info(f"Clicked {button}")
 
     @allure.severity(allure.severity_level.NORMAL)
-    @pytest.mark.parametrize("col,cell", list(zip(COLUMNS, CELL_VALUES)))
+    @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
     def test_table_content_per_column(self, page_manager: PageManager, logger, col, cell):
         """Verify header and a sample of cell values under each column"""
 
@@ -41,3 +43,21 @@ class TestChallengingDom:
                 expected = f"{cell}{i}"
                 val = challenging_dom_page.get_table_cell_text(col, expected)
                 assert val == expected, f"Cell value '{expected}' under '{col}' not found (got '{val}')"
+
+        with allure.step(f"Test edit and delete buttons"):
+            for i in range(3):
+                with allure.step(f"Click edit button in row '{i}'"):
+                    challenging_dom_page.click_edit_button(i)
+
+                with allure.step(f"Verify URL change"):
+                    expected_url = challenging_dom_page.get_base_url() + self.EDIT_SUFFIX
+                    curr_url = challenging_dom_page.get_current_url()
+                    assert expected_url == curr_url, f"Expected URL '{expected_url}', got '{curr_url}'"
+
+                with allure.step(f"Click delete button in row '{i}'"):
+                    challenging_dom_page.click_delete_button(i)
+
+                with allure.step(f"Verify URL change"):
+                    expected_url = challenging_dom_page.get_base_url() + self.DEL_SUFFIX
+                    curr_url = challenging_dom_page.get_current_url()
+                    assert expected_url == curr_url, f"Expected URL '{expected_url}', got '{curr_url}'"

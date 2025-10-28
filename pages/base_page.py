@@ -9,7 +9,7 @@ from selenium.common.exceptions import (
     ElementClickInterceptedException,
     JavascriptException,
 )
-from config.env_config import SHORT_TIMEOUT, LONG_TIMEOUT
+from config.env_config import SHORT_TIMEOUT, LONG_TIMEOUT, BASE_URL
 from utils.logging_helper import get_logger
 
 
@@ -92,7 +92,7 @@ class BasePage:
                     raise  # Let pytest hook handle screenshot
 
     @allure.step("Get text of element {locator}")
-    def get_dynamic_element_text(self, locator, timeout=None, retry_count=2):
+    def get_dynamic_element_text(self, locator, timeout=None, retry_count=2) -> str:
         """
         Get text with retry for stale elements.
 
@@ -127,7 +127,7 @@ class BasePage:
                 self.logger.error(f"No element found for {locator}: {str(e)}")
                 raise
 
-    def get_number_of_elements(self, locator):
+    def get_number_of_elements(self, locator) -> int:
         self.logger.info(f"Counting elements with locator: {locator}")
         try:
             elements = WebDriverWait(self.driver, self.short_wait).until(
@@ -141,7 +141,7 @@ class BasePage:
             self.logger.debug(f"No elements found with locator {locator} after {SHORT_TIMEOUT}s, returning 0")
             return 0
 
-    def get_all_elements(self, locator):
+    def get_all_elements(self, locator) -> list:
         try:
             elements = WebDriverWait(self.driver, self.short_wait).until(
                 EC.presence_of_all_elements_located(locator),
@@ -173,3 +173,9 @@ class BasePage:
         except JavascriptException as e:
             self.logger.error(f"Failed to get {attr}: {str(e)}")
             return None
+
+    def get_current_url(self) -> str:
+        return self.driver.current_url
+
+    def get_base_url(self):
+        return BASE_URL
