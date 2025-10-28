@@ -22,7 +22,7 @@ class BasePage:
         self.long_wait = LONG_TIMEOUT
 
     def _safe_wait(self, ec_method, locator, timeout=None):
-        """Generic wait with exception handling, no screenshot (handled by pytest hook)"""
+        """Generic wait with exception handling"""
         timeout = timeout or self.short_wait
         wait = WebDriverWait(self.driver, timeout)
         try:
@@ -179,3 +179,16 @@ class BasePage:
 
     def get_base_url(self):
         return BASE_URL
+
+    def is_element_selected(self, locator, retry_count=2):
+        """Click with retry for stale/intercepted"""
+        for attempt in range(retry_count):
+            try:
+                elem = self.wait_for_visibility(locator)
+                state = elem.is_selected()
+                self.logger.debug(f"Element selected state '{state}'")
+                return state
+            except (StaleElementReferenceException, ElementClickInterceptedException) as e:
+                self.logger.warning(f"Click attempt {attempt+1}/{retry_count} failed for {locator}: {str(e)}")
+                if attempt == retry_count - 1:
+                    raise  # Let pytest hook handle screenshot

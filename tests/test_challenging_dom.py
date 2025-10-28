@@ -19,10 +19,10 @@ class TestChallengingDom:
         """Verify each page button can be clicked"""
 
         with allure.step("Navigate to Challenging DOM page"):
-            challenging_dom_page = page_manager.get_challenging_dom_page()
+            page = page_manager.get_challenging_dom_page()
 
         with allure.step(f"Click {button} button"):
-            challenging_dom_page.click_page_button(button)
+            page.click_page_button(button)
             logger.info(f"Clicked {button}")
 
     @allure.severity(allure.severity_level.NORMAL)
