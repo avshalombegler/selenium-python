@@ -7,6 +7,7 @@ from pages.features.basic_auth_page import BasicAuthPage
 from pages.features.broken_images_page import BrokenImagesPage
 from pages.features.challenging_dom_page import ChallengingDomPage
 from pages.features.context_menu_page import ContextMenuPage
+from pages.features.digest_auth_page import DigestAuthPage
 
 
 class MainPage(BasePage):
@@ -40,3 +41,7 @@ class MainPage(BasePage):
     def click_context_menu(self) -> ContextMenuPage:
         self.click_element(MainPageLocators.CONTEXT_MENU_LINK)
         return ContextMenuPage(self.driver, self.logger)
+
+    def get_digest_auth(self, url) -> DigestAuthPage:
+        self.navigate_to(url)
+        return DigestAuthPage(self.driver, self.logger)

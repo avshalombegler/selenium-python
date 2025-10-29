@@ -55,3 +55,11 @@ class PageManager:
     def get_context_menu_page(self, page_name="Context Menu"):
         self.logger.info(f"Navigating to {page_name} page")
         return self.main_page.click_context_menu()
+
+    @allure.step("Navigate to {page_name} page")
+    def get_digest_auth_page(self, username: str, password: str, page_name="Digest Authentication"):
+        self.logger.info(f"Navigating to {page_name} page")
+        if not username or not password:
+            raise ValueError(f"Invalid credentials: username='{username}', password='{password or ''}'")
+        url = f"https://{username}:{password}@the-internet.herokuapp.com/digest_auth"
+        return self.main_page.get_digest_auth(url)
