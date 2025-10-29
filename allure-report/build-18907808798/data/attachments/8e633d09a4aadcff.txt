@@ -1,0 +1,42 @@
+2025-10-29 12:29:09,150 - INFO - [test_table_content_per_column[Sit-Definiebas]] Starting test: test_table_content_per_column[Sit-Definiebas].
+2025-10-29 12:29:09,150 - INFO - [test_table_content_per_column[Sit-Definiebas]] xdist worker is: gw0
+2025-10-29 12:29:09,150 - INFO - [test_table_content_per_column[Sit-Definiebas]] ====== WebDriver manager ======
+2025-10-29 12:29:09,240 - INFO - [test_table_content_per_column[Sit-Definiebas]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:29:09,326 - INFO - [test_table_content_per_column[Sit-Definiebas]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:29:09,412 - INFO - [test_table_content_per_column[Sit-Definiebas]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-29 12:29:10,074 - INFO - [test_table_content_per_column[Sit-Definiebas]] Started recording: tests_recordings/gw0/test_table_content_per_column[Sit-Definiebas]_20251029_122910/test_table_content_per_column[Sit-Definiebas]_20251029_122910.mp4
+2025-10-29 12:29:10,074 - INFO - [test_table_content_per_column[Sit-Definiebas]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-29 12:29:10,527 - INFO - [test_table_content_per_column[Sit-Definiebas]] Navigation completed.
+2025-10-29 12:29:10,527 - INFO - [test_table_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-29 12:29:10,671 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:10,682 - INFO - [test_table_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-29 12:29:10,685 - INFO - [test_table_content_per_column[Sit-Definiebas]] Navigating to Challenging DOM page
+2025-10-29 12:29:10,801 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:11,028 - INFO - [test_table_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-10-29 12:29:11,227 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:11,238 - INFO - [test_table_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-10-29 12:29:11,238 - INFO - [test_table_content_per_column[Sit-Definiebas]] Get table head text of column 'Sit'.
+2025-10-29 12:29:11,411 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:11,458 - INFO - [test_table_content_per_column[Sit-Definiebas]] Get table cell text 'Definiebas0' under column 'Sit'.
+2025-10-29 12:29:11,547 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:11,614 - INFO - [test_table_content_per_column[Sit-Definiebas]] Get table cell text 'Definiebas1' under column 'Sit'.
+2025-10-29 12:29:11,702 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:11,762 - INFO - [test_table_content_per_column[Sit-Definiebas]] Get table cell text 'Definiebas2' under column 'Sit'.
+2025-10-29 12:29:11,836 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:11,900 - INFO - [test_table_content_per_column[Sit-Definiebas]] Clicking edit button.
+2025-10-29 12:29:11,971 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:12,166 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:12,167 - INFO - [test_table_content_per_column[Sit-Definiebas]] Click delete button in row {row}.
+2025-10-29 12:29:12,353 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:12,354 - INFO - [test_table_content_per_column[Sit-Definiebas]] Clicking edit button.
+2025-10-29 12:29:12,499 - INFO - [test_table_content_per_column[Sit-Definiebas]] Click delete button in row {row}.
+2025-10-29 12:29:12,512 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:12,643 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:12,644 - INFO - [test_table_content_per_column[Sit-Definiebas]] Clicking edit button.
+2025-10-29 12:29:12,793 - INFO - [test_table_content_per_column[Sit-Definiebas]] Click delete button in row {row}.
+2025-10-29 12:29:12,804 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:12,929 - WARNING - [test_table_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:12,930 - INFO - [test_table_content_per_column[Sit-Definiebas]] Finished test: test_table_content_per_column[Sit-Definiebas] (Duration: 2.25s).
+2025-10-29 12:29:12,932 - INFO - [test_table_content_per_column[Sit-Definiebas]] Stopping video recording...
+2025-10-29 12:29:13,352 - INFO - [test_table_content_per_column[Sit-Definiebas]] Video created: tests_recordings/gw0/test_table_content_per_column[Sit-Definiebas]_20251029_122910/test_table_content_per_column[Sit-Definiebas]_20251029_122910.mp4
+2025-10-29 12:29:13,353 - INFO - [test_table_content_per_column[Sit-Definiebas]] Quitting driver for browser: chrome.

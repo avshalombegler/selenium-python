@@ -1,0 +1,39 @@
+2025-10-29 12:29:13,412 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Starting test: test_table_content_per_column[Amet-Consequuntur].
+2025-10-29 12:29:13,412 - INFO - [test_table_content_per_column[Amet-Consequuntur]] xdist worker is: gw0
+2025-10-29 12:29:13,413 - INFO - [test_table_content_per_column[Amet-Consequuntur]] ====== WebDriver manager ======
+2025-10-29 12:29:13,481 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:29:13,532 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:29:13,585 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-29 12:29:13,892 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Started recording: tests_recordings/gw0/test_table_content_per_column[Amet-Consequuntur]_20251029_122913/test_table_content_per_column[Amet-Consequuntur]_20251029_122913.mp4
+2025-10-29 12:29:13,892 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-29 12:29:14,118 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Navigation completed.
+2025-10-29 12:29:14,119 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-29 12:29:14,211 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:14,219 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-29 12:29:14,221 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Navigating to Challenging DOM page
+2025-10-29 12:29:14,379 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-10-29 12:29:14,469 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:14,475 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-10-29 12:29:14,475 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Get table head text of column 'Amet'.
+2025-10-29 12:29:14,525 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Get table cell text 'Consequuntur0' under column 'Amet'.
+2025-10-29 12:29:14,581 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:14,626 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Get table cell text 'Consequuntur1' under column 'Amet'.
+2025-10-29 12:29:14,699 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:14,723 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Get table cell text 'Consequuntur2' under column 'Amet'.
+2025-10-29 12:29:14,815 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:14,821 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Clicking edit button.
+2025-10-29 12:29:14,961 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:14,962 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Click delete button in row {row}.
+2025-10-29 12:29:15,126 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:15,126 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Clicking edit button.
+2025-10-29 12:29:15,260 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:15,261 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Click delete button in row {row}.
+2025-10-29 12:29:15,395 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Clicking edit button.
+2025-10-29 12:29:15,404 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:15,525 - WARNING - [test_table_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:15,526 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Click delete button in row {row}.
+2025-10-29 12:29:15,659 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:15,660 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Finished test: test_table_content_per_column[Amet-Consequuntur] (Duration: 1.44s).
+2025-10-29 12:29:15,662 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Stopping video recording...
+2025-10-29 12:29:16,032 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Video created: tests_recordings/gw0/test_table_content_per_column[Amet-Consequuntur]_20251029_122913/test_table_content_per_column[Amet-Consequuntur]_20251029_122913.mp4
+2025-10-29 12:29:16,033 - INFO - [test_table_content_per_column[Amet-Consequuntur]] Quitting driver for browser: chrome.

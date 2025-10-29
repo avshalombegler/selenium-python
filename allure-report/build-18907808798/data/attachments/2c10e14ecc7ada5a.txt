@@ -1,0 +1,51 @@
+2025-10-29 12:28:56,753 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Starting test: test_digest_auth_login_scenarios[wrong-admin].
+2025-10-29 12:28:56,753 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] xdist worker is: gw2
+2025-10-29 12:28:56,753 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] ====== WebDriver manager ======
+2025-10-29 12:28:56,842 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:28:56,899 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:28:56,979 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-29 12:28:57,737 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251029_122857/test_digest_auth_login_scenarios[wrong-admin]_20251029_122857.mp4
+2025-10-29 12:28:57,740 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-29 12:28:58,166 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigation completed.
+2025-10-29 12:28:58,166 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-29 12:28:58,317 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:28:58,330 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-29 12:28:58,332 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to Digest Authentication page
+2025-10-29 12:28:58,332 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to URL: https://wrong:admin@the-internet.herokuapp.com/digest_auth.
+2025-10-29 12:28:58,415 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigation completed.
+2025-10-29 12:28:58,499 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:00,093 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:00,575 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:01,612 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:03,670 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:04,203 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:05,761 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:06,280 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:06,798 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:07,356 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:29:08,850 - ERROR - [test_digest_auth_login_scenarios[wrong-admin]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x557ed4fcfaea <unknown>
+#1 0x557ed4a1bcdb <unknown>
+#2 0x557ed4a6e6c4 <unknown>
+#3 0x557ed4a6e901 <unknown>
+#4 0x557ed4abd8b4 <unknown>
+#5 0x557ed4abac87 <unknown>
+#6 0x557ed4a60aca <unknown>
+#7 0x557ed4a617d1 <unknown>
+#8 0x557ed4f96ab9 <unknown>
+#9 0x557ed4f99a8c <unknown>
+#10 0x557ed4f7fd49 <unknown>
+#11 0x557ed4f9a685 <unknown>
+#12 0x557ed4f676c3 <unknown>
+#13 0x557ed4fbc7d8 <unknown>
+#14 0x557ed4fbc9b3 <unknown>
+#15 0x557ed4fcea83 <unknown>
+#16 0x7f368ee9caa4 <unknown>
+#17 0x7f368ef29c6c <unknown>
+
+2025-10-29 12:29:08,853 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Page source: <html><head></head><body></body></html>
+2025-10-29 12:29:08,853 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Finished test: test_digest_auth_login_scenarios[wrong-admin] (Duration: 10.52s).
+2025-10-29 12:29:08,856 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording...
+2025-10-29 12:29:10,564 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251029_122857/test_digest_auth_login_scenarios[wrong-admin]_20251029_122857.mp4
+2025-10-29 12:29:10,565 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Quitting driver for browser: chrome.
