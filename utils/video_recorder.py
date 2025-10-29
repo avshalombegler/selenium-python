@@ -16,7 +16,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-FPS = 10
+FPS = 15
 INTERVAL = 1.0 / FPS
 MIN_FRAME_SIZE = 512
 MAX_FRAMES = 2000

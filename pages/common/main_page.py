@@ -1,0 +1,42 @@
+from pages.base.base_page import BasePage
+from utils.locators import MainPageLocators
+from pages.features.checkboxes_page import CheckboxesPage
+from pages.features.ab_testing_page import ABTestingPage
+from pages.features.add_remove_elements_page import AddRemoveElementsPage
+from pages.features.basic_auth_page import BasicAuthPage
+from pages.features.broken_images_page import BrokenImagesPage
+from pages.features.challenging_dom_page import ChallengingDomPage
+from pages.features.context_menu_page import ContextMenuPage
+
+
+class MainPage(BasePage):
+    def __init__(self, driver, logger=None):
+        super().__init__(driver, logger)
+        # self.wait_for_page_to_load(MainPageLocators.PAGE_LOADED_INDICATOR)
+
+    def click_ab_testing(self) -> ABTestingPage:
+        self.click_element(MainPageLocators.AB_TESTING_LINK)
+        return ABTestingPage(self.driver, self.logger)
+
+    def click_add_remove_elements(self) -> AddRemoveElementsPage:
+        self.click_element(MainPageLocators.ADD_REMOVE_ELEMENTS_LINK)
+        return AddRemoveElementsPage(self.driver, self.logger)
+
+    def get_basic_auth(self) -> BasicAuthPage:
+        return BasicAuthPage(self.driver, self.logger)
+
+    def click_broken_images(self) -> BrokenImagesPage:
+        self.click_element(MainPageLocators.BROKEN_IMAGES_LINK)
+        return BrokenImagesPage(self.driver, self.logger)
+
+    def click_challenging_dom(self) -> ChallengingDomPage:
+        self.click_element(MainPageLocators.CHALLENGING_DOM_LINK)
+        return ChallengingDomPage(self.driver, self.logger)
+
+    def click_checkboxes(self) -> CheckboxesPage:
+        self.click_element(MainPageLocators.CHECKBOXES_LINK)
+        return CheckboxesPage(self.driver, self.logger)
+
+    def click_context_menu(self) -> ContextMenuPage:
+        self.click_element(MainPageLocators.CONTEXT_MENU_LINK)
+        return ContextMenuPage(self.driver, self.logger)

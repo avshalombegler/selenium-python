@@ -1,6 +1,6 @@
 import allure
 import requests
-from pages.base_page import BasePage
+from pages.base.base_page import BasePage
 from utils.locators import BasicAuthPageLocators
 from selenium.common.exceptions import (
     TimeoutException,
@@ -8,26 +8,26 @@ from selenium.common.exceptions import (
 )
 
 
-class BasicAuth(BasePage):
+class BasicAuthPage(BasePage):
     def __init__(self, driver, logger=None):
         super().__init__(driver, logger)
 
-    @allure.step("Initialize URL")
+    @allure.step("Initialize URL based on username and password")
     def init_url(self, username, password):
-        self.logger.info(".")
+        self.logger.info("Initialize URL based on username and password.")
         if username == "" and password == "":
             return "http://the-internet.herokuapp.com/basic_auth"
         else:
             return f"http://{username}:{password}@the-internet.herokuapp.com/basic_auth"
 
-    @allure.step("Navigating to URL: {url}")
+    @allure.step("Navigate to URL: {url}")
     def navigate_using_url(self, url):
-        self.logger.info(".")
+        self.logger.info("Navigate to URL: {url}.")
         self.navigate_to(url)
 
     @allure.step("Get authorization message")
     def get_auth_message(self):
-        self.logger.info("Attempting to get authorization message.")
+        self.logger.info("Get authorization message.")
         try:
             message = self.get_dynamic_element_text(BasicAuthPageLocators.AUTHORIZED_INDICATOR)
             return message

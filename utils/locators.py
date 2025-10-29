@@ -13,6 +13,7 @@ class MainPageLocators:
     BROKEN_IMAGES_LINK = (By.LINK_TEXT, "Broken Images")
     CHALLENGING_DOM_LINK = (By.LINK_TEXT, "Challenging DOM")
     CHECKBOXES_LINK = (By.LINK_TEXT, "Checkboxes")
+    CONTEXT_MENU_LINK = (By.LINK_TEXT, "Context Menu")
 
 
 class AbTestingPageLocators:
@@ -56,3 +57,8 @@ class ChallengingDomPageLocators:
 class CheckboxesPageLocators:
     PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
     CHECKBOXES = (By.CSS_SELECTOR, "form#checkboxes input[type='checkbox']")
+
+
+class ContextMenuPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
+    HOT_SPOT_BOX = (By.CSS_SELECTOR, "div#hot-spot")
