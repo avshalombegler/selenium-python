@@ -27,7 +27,7 @@ root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO
 
 """
 
-Pytest Fixtures - Scope = function
+    Pytest Fixtures - Scope = function
 
 """
 
@@ -35,7 +35,7 @@ Pytest Fixtures - Scope = function
 @pytest.fixture(scope="function")
 def driver(request):
     """
-    Initialize driver at the start of each test.
+    Initialize driver object at the start of each test.
     """
     browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
     root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
@@ -127,6 +127,11 @@ def test_context(request):
 
 @pytest.fixture(scope="function", autouse=True)
 def video_recorder(request, driver, logger):
+    """
+    Automatically records video of the test session using Chrome DevTools Protocol.
+    Recording is enabled only if VIDEO_RECORDING is True in config and driver is Chrome.
+    Skips recording for non-Chrome drivers or when disabled.
+    """
     if not getattr(env_config, "VIDEO_RECORDING", False):
         yield
         return
@@ -149,12 +154,16 @@ def video_recorder(request, driver, logger):
 
 @pytest.fixture(scope="function")
 def actions(driver):
+    """
+    Provides a fresh ActionChains instance for the current WebDriver.
+    Used for performing complex user interactions like drag-and-drop, right-click, etc.
+    """
     return ActionChains(driver)
 
 
 """
 
-Pytest Fixtures - Scope = session
+    Pytest Fixtures - Scope = session
 
 """
 
@@ -169,7 +178,11 @@ def logger():
 
 @pytest.fixture(scope="session", autouse=True)
 def unique_user_data_dir(request):
-    # Robustly determine worker id (xdist sets PYTEST_XDIST_WORKER env var and request.config.workerinput in workers)
+    """
+    Creates and yields a unique Chrome user data directory per test worker/session.
+    Ensures isolation between parallel test runs (xdist) by using worker ID or PID.
+    Directory is created in system temp and stored in config for driver setup.
+    """
     try:
         worker_id = request.config.workerinput.get("workerid")
     except Exception:
@@ -188,7 +201,7 @@ def unique_user_data_dir(request):
 @pytest.fixture(scope="session", autouse=True)
 def clean_allure_report():
     """
-    Cleans Allure Report folder(s) at the start of each session.
+    Cleans Allure Report folder at the start of each session.
     """
     allure_report_dir = Path("reports") / "allure-report"
     lock_file = allure_report_dir / "allure-report.lock"
@@ -234,24 +247,34 @@ def clean_videos_at_start():
 
 """
 
-Pytest Hooks
+    Pytest Hooks
 
 """
 
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
+    """
+    Sets the unique user data directory in pytest config during test setup.
+    Ensures the directory created by the unique_user_data_dir fixture is available
+    globally via config.user_data_dir for driver initialization and cleanup.
+    """
     config.user_data_dir = unique_user_data_dir
 
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_sessionstart(session):
+    """
+    Validates that user_data_dir is set in pytest config at session start.
+    Exits the test run with an error if the directory is missing, preventing
+    driver initialization without isolation.
+    """
     if not hasattr(session.config, "user_data_dir"):
         pytest.exit("User data directory not set.")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item, call):
+def pytest_runtest_makereport(item):
     """
     Pytest hook to handle:
     - Test duration logging.

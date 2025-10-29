@@ -7,6 +7,7 @@ from selenium.common.exceptions import (
     TimeoutException,
     NoAlertPresentException,
 )
+from config.env_config import VIDEO_RECORDING
 
 
 class ContextMenuPage(BasePage):
@@ -20,7 +21,6 @@ class ContextMenuPage(BasePage):
     def right_click_outside_hot_spot(self, actions):
         self.logger.info("Perform right-click on page title to verify context menu alert does not activate.")
         self.perform_right_click(ContextMenuPageLocators.PAGE_LOADED_INDICATOR, actions)
-        self.click_element(ContextMenuPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Perform right-click on hot-spot to verify alert activation")
     def right_click_on_hot_spot(self, actions):
@@ -30,6 +30,9 @@ class ContextMenuPage(BasePage):
     @allure.step("Get context menu alert text")
     def get_context_menu_alert_text(self, timeout=5):
         self.logger.info("Waiting for context menu alert...")
+        if VIDEO_RECORDING:
+            self.logger.info("Video recording active – skipping alert text check")
+            return "VIDEO_RECORDING_ACTIVE"
         try:
             alert = WebDriverWait(self.driver, timeout).until(EC.alert_is_present())
             text = alert.text

@@ -19,6 +19,7 @@ class BasePage:
         self.logger = logger if logger is not None else get_logger(self.__class__.__name__)
         self.short_wait = SHORT_TIMEOUT
         self.long_wait = LONG_TIMEOUT
+        self.base_url = BASE_URL
 
     def _safe_wait(self, ec_method, locator, timeout=None):
         """Generic wait with exception handling"""
@@ -42,7 +43,7 @@ class BasePage:
         func,
         locator=None,
         retry_count=2,
-        exceptions=(StaleElementReferenceException, ElementClickInterceptedException),
+        exceptions=(Exception,),
         final_message: str = None,
     ):
         """
@@ -59,8 +60,8 @@ class BasePage:
             except exceptions as e:
                 self.logger.warning(f"Attempt {attempt+1}/{retry_count} failed for {locator}: {str(e)}")
                 if attempt == retry_count - 1:
-                    if final_message:
-                        self.logger.error(final_message)
+                    msg = final_message or f"All retries failed for {locator}"
+                    self.logger.error(msg)
                     raise
 
     def wait_for_page_to_load(self, indicator_locator, timeout=None):
@@ -100,18 +101,18 @@ class BasePage:
         self.driver.get(url)
         self.logger.info("Navigation completed.")
 
-    def click_element(self, locator, retry_count=2):
+    def click_element(self, locator, retry=2):
         """Click with retry for stale/intercepted, no screenshot"""
 
         def action():
             elem = self.wait_for_visibility(locator)
             self._safe_wait(EC.element_to_be_clickable, locator)
             elem.click()
-            self.logger.debug(f"Clicked on {locator}")
+            self.logger.debug(f"Clicked on element with locator '{locator}'")
 
-        return self._retry(action, locator=locator, retry_count=retry_count)
+        return self._retry(action, locator=locator, retry_count=retry)
 
-    def get_dynamic_element_text(self, locator, timeout=None, retry_count=2) -> str:
+    def get_dynamic_element_text(self, locator, timeout=None, retry=2) -> str:
         """
         Get text with retry for stale elements.
 
@@ -140,9 +141,9 @@ class BasePage:
         return self._retry(
             action,
             locator=locator,
-            retry_count=retry_count,
+            retry_count=retry,
             exceptions=(StaleElementReferenceException,),
-            final_message=f"Failed to get text for '{locator}' after {retry_count} attempts",
+            final_message=f"Failed to get text for '{locator}' after {retry} attempts",
         )
 
     def get_number_of_elements(self, locator) -> int:
@@ -150,13 +151,13 @@ class BasePage:
         try:
             elements = WebDriverWait(self.driver, self.short_wait).until(
                 EC.presence_of_all_elements_located(locator),
-                message=f"Timeout waiting for elements with locator '{locator}'",
+                message=f"Timeout waiting for elements with locator '{locator}'.",
             )
             count = len(elements)
-            self.logger.debug(f"Found {count} elements with locator '{locator}'")
+            self.logger.debug(f"Found {count} elements with locator '{locator}'.")
             return count
         except TimeoutException:
-            self.logger.debug(f"No elements found with locator '{locator}' after {SHORT_TIMEOUT}s, returning 0")
+            self.logger.debug(f"No elements found with locator '{locator}' after {SHORT_TIMEOUT}s, returning 0.")
             return 0
 
     def get_all_elements(self, locator) -> list:
@@ -186,7 +187,7 @@ class BasePage:
         """
         try:
             result = self.driver.execute_script(f"return arguments[0].{attr}", web_element)
-            self.logger.debug(f"Retrieved {attr}={result} for element")
+            self.logger.debug(f"Retrieved {attr}={result} for element.")
             return result
         except JavascriptException as e:
             self.logger.error(f"Failed to get {attr}: {str(e)}")
@@ -196,25 +197,25 @@ class BasePage:
         return self.driver.current_url
 
     def get_base_url(self):
-        return BASE_URL
+        return self.base_url
 
-    def is_element_selected(self, locator, retry_count=2):
-        self.logger.info("Check element selected state")
+    def is_element_selected(self, locator, retry=2):
+        self.logger.info("Check element with locator '{locator}' selected state.")
 
         def action():
             elem = self.wait_for_visibility(locator)
             state = elem.is_selected()
-            self.logger.debug(f"Element selected state '{state}'")
+            self.logger.debug(f"Element with locator '{locator}' selected state '{state}'.")
             return state
 
-        return self._retry(action, locator=locator, retry_count=retry_count)
+        return self._retry(action, locator=locator, retry_count=retry)
 
-    def perform_right_click(self, locator, actions, retry_count=2):
-        self.logger.info("Performing right-click on element")
+    def perform_right_click(self, locator, actions, retry=2):
+        self.logger.info("Performing right-click on element with locator '{locator}'.")
 
         def action():
             elem = self.wait_for_visibility(locator)
             actions.context_click(elem).perform()
             self.logger.debug(f"Performed right-click on element '{elem}'")
 
-        return self._retry(action, locator=locator, retry_count=retry_count)
+        return self._retry(action, locator=locator, retry_count=retry)

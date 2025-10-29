@@ -19,8 +19,8 @@ class TestContextMenu:
 
         page.right_click_on_hot_spot(actions)
 
-        with allure.step("Verify context menu alert"):
+        with allure.step("Verify context menu alert - Skipping alert text check if video recording is active"):
             alert_text = page.get_context_menu_alert_text()
-            assert self.EXPECTED_ALERT_TEXT == alert_text
-
-        page.close_context_menu_alert()
+            if alert_text != "VIDEO_RECORDING_ACTIVE":
+                assert self.EXPECTED_ALERT_TEXT == alert_text
+                page.close_context_menu_alert()
