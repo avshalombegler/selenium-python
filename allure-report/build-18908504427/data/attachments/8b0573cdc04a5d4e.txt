@@ -1,0 +1,29 @@
+2025-10-29 12:53:55,877 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots/gw2.
+2025-10-29 12:53:55,878 - INFO - [] Videos directory cleaned and recreated at: tests_recordings/gw2.
+2025-10-29 12:53:55,878 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Starting test: test_digest_auth_login_scenarios[admin-admin].
+2025-10-29 12:53:55,878 - INFO - [test_digest_auth_login_scenarios[admin-admin]] xdist worker is: gw2
+2025-10-29 12:53:55,879 - INFO - [test_digest_auth_login_scenarios[admin-admin]] ====== WebDriver manager ======
+2025-10-29 12:53:55,965 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:53:56,027 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:53:56,075 - INFO - [test_digest_auth_login_scenarios[admin-admin]] There is no [linux64] chromedriver "142.0.7444.59" for browser google-chrome "142.0.7444" in cache
+2025-10-29 12:53:56,075 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:53:56,217 - INFO - [test_digest_auth_login_scenarios[admin-admin]] WebDriver version 142.0.7444.59 selected
+2025-10-29 12:53:56,225 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.59/linux64/chromedriver-linux64.zip
+2025-10-29 12:53:56,225 - INFO - [test_digest_auth_login_scenarios[admin-admin]] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.59/linux64/chromedriver-linux64.zip
+2025-10-29 12:53:56,283 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Driver downloading response is 200
+2025-10-29 12:53:56,351 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Get LATEST chromedriver version for google-chrome
+2025-10-29 12:53:56,554 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Driver has been saved in cache [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.59]
+2025-10-29 12:53:59,648 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251029_125359/test_digest_auth_login_scenarios[admin-admin]_20251029_125359.mp4
+2025-10-29 12:53:59,650 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-29 12:54:00,301 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-10-29 12:54:00,302 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-29 12:54:00,415 - WARNING - [test_digest_auth_login_scenarios[admin-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:54:00,425 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-29 12:54:00,427 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to Digest Authentication page
+2025-10-29 12:54:00,427 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+2025-10-29 12:54:00,580 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-10-29 12:54:00,661 - WARNING - [test_digest_auth_login_scenarios[admin-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 12:54:00,687 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Finished test: test_digest_auth_login_scenarios[admin-admin] (Duration: 0.26s).
+2025-10-29 12:54:00,689 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording...
+2025-10-29 12:54:01,275 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251029_125359/test_digest_auth_login_scenarios[admin-admin]_20251029_125359.mp4
+2025-10-29 12:54:01,276 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Quitting driver for browser: chrome.
