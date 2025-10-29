@@ -16,7 +16,7 @@ class BasicAuthPage(BasePage):
     def init_url(self, username, password):
         self.logger.info("Initialize URL based on username and password.")
         if username == "" and password == "":
-            return "http://the-internet.herokuapp.com/basic_auth"
+            return self.base_url + "basic_auth"
         else:
             return f"http://{username}:{password}@the-internet.herokuapp.com/basic_auth"
 
@@ -33,7 +33,7 @@ class BasicAuthPage(BasePage):
             return message
         except (NoSuchElementException, TimeoutException):
             try:
-                url = "http://the-internet.herokuapp.com/basic_auth"
+                url = self.base_url + "basic_auth"
                 response = requests.get(url)
                 if response.status_code == 401:
                     return response.text

@@ -14,6 +14,7 @@ class MainPageLocators:
     CHALLENGING_DOM_LINK = (By.LINK_TEXT, "Challenging DOM")
     CHECKBOXES_LINK = (By.LINK_TEXT, "Checkboxes")
     CONTEXT_MENU_LINK = (By.LINK_TEXT, "Context Menu")
+    DIGEST_AUTHENTICATION_LINK = (By.LINK_TEXT, "Digest Authentication")
 
 
 class AbTestingPageLocators:
@@ -62,3 +63,7 @@ class CheckboxesPageLocators:
 class ContextMenuPageLocators:
     PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
     HOT_SPOT_BOX = (By.CSS_SELECTOR, "div#hot-spot")
+
+
+class DigestAuthPageLocators:
+    AUTHORIZED_INDICATOR = (By.CSS_SELECTOR, "div#content p")

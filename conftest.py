@@ -66,6 +66,7 @@ def driver(request):
         chrome_options.add_argument("--disable-gpu")  # If there are GPU related issues
         chrome_options.add_argument("--no-sandbox")  # If there are sandbox related issues
         chrome_options.add_argument("--disable-dev-shm-usage")  # If there are memory related issues
+        chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.notifications": 2})
         if env_config.MAXIMIZED:
             chrome_options.add_argument("--start-maximized")
         if env_config.HEADLESS:
@@ -277,8 +278,8 @@ def pytest_sessionstart(session):
 def pytest_runtest_makereport(item):
     """
     Pytest hook to handle:
-    - Test duration logging.
-    - Screenshot taking on test faliure (Locally and to Allure Report).
+        - Test duration logging.
+        - Screenshot taking on test faliure (Locally and to Allure Report).
     """
     outcome = yield
     report = outcome.get_result()
