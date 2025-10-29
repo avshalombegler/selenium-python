@@ -1,0 +1,38 @@
+2025-10-29 07:24:48,372 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Starting test: test_table_content_per_column[Ipsum-Apeirian].
+2025-10-29 07:24:48,373 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] xdist worker is: gw0
+2025-10-29 07:24:48,373 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] ====== WebDriver manager ======
+2025-10-29 07:24:48,439 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Get LATEST chromedriver version for google-chrome
+2025-10-29 07:24:48,512 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Get LATEST chromedriver version for google-chrome
+2025-10-29 07:24:48,578 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-29 07:24:48,861 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_table_content_per_column[Ipsum-Apeirian]_20251029_072448/test_table_content_per_column[Ipsum-Apeirian]_20251029_072448.mp4
+2025-10-29 07:24:48,862 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-29 07:24:49,162 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-10-29 07:24:49,162 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-29 07:24:49,242 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:49,250 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-29 07:24:49,251 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page
+2025-10-29 07:24:49,425 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-10-29 07:24:49,492 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:49,497 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-10-29 07:24:49,497 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Get table head text of column 'Ipsum'.
+2025-10-29 07:24:49,529 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Get table cell text 'Apeirian0' under column 'Ipsum'.
+2025-10-29 07:24:49,604 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:49,611 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Get table cell text 'Apeirian1' under column 'Ipsum'.
+2025-10-29 07:24:49,651 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Get table cell text 'Apeirian2' under column 'Ipsum'.
+2025-10-29 07:24:49,722 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:49,729 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Clicking edit button.
+2025-10-29 07:24:49,870 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:49,870 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Click delete button in row {row}.
+2025-10-29 07:24:50,020 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:50,020 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Clicking edit button.
+2025-10-29 07:24:50,155 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:50,155 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Click delete button in row {row}.
+2025-10-29 07:24:50,227 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Clicking edit button.
+2025-10-29 07:24:50,291 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:50,356 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Click delete button in row {row}.
+2025-10-29 07:24:50,428 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:50,555 - WARNING - [test_table_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-29 07:24:50,555 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Finished test: test_table_content_per_column[Ipsum-Apeirian] (Duration: 1.30s).
+2025-10-29 07:24:50,557 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-10-29 07:24:50,896 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Video created: tests_recordings/gw0/test_table_content_per_column[Ipsum-Apeirian]_20251029_072448/test_table_content_per_column[Ipsum-Apeirian]_20251029_072448.mp4
+2025-10-29 07:24:50,898 - INFO - [test_table_content_per_column[Ipsum-Apeirian]] Quitting driver for browser: chrome.
