@@ -10,7 +10,7 @@ from pages.features.challenging_dom_page import ChallengingDomPage
 from pages.features.context_menu_page import ContextMenuPage
 from pages.features.digest_auth_page import DigestAuthPage
 from pages.features.drag_and_drop_page import DragAndDropPage
-from pages.features.dropdown_list_page import DropdownListPage
+from pages.features.dynamic_content_page import DynamicContentPage
 
 
 class MainPage(BasePage):
@@ -56,3 +56,7 @@ class MainPage(BasePage):
     def click_dropdown_list(self) -> DropdownListPage:
         self.click_element(MainPageLocators.DROPDOWN_LINK)
         return DropdownListPage(self.driver, self.logger)
+
+    def click_dynamic_content(self) -> DynamicContentPage:
+        self.click_element(MainPageLocators.DYNAMIC_CONTENT_LINK)
+        return DynamicContentPage(self.driver, self.logger)

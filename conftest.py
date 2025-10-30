@@ -205,14 +205,14 @@ def clean_allure_report():
     Cleans Allure Report folder at the start of each session.
     """
     allure_report_dir = Path("reports") / "allure-report"
-    lock_file = allure_report_dir / "allure-report.lock"
     allure_report_dir.parent.mkdir(parents=True, exist_ok=True)
+    lock_file = allure_report_dir / "allure-report.lock"
     # Use a file lock to prevent race conditions in parallel execution
     with FileLock(lock_file):
         if allure_report_dir.exists():
             shutil.rmtree(allure_report_dir, ignore_errors=True)  # Safely remove directory
         allure_report_dir.mkdir(parents=True, exist_ok=True)  # Recreate empty directory
-
+    yield
 
 @pytest.fixture(scope="session", autouse=True)
 def clean_screenshots_at_start():
