@@ -17,6 +17,7 @@ class MainPageLocators:
     DIGEST_AUTHENTICATION_LINK = (By.LINK_TEXT, "Digest Authentication")
     DRAG_AND_DROP_LINK = (By.LINK_TEXT, "Drag and Drop")
     DROPDOWN_LINK = (By.LINK_TEXT, "Dropdown")
+    DYNAMIC_CONTENT_LINK = (By.LINK_TEXT, "Dynamic Content")
 
 
 class AbTestingPageLocators:
@@ -81,3 +82,10 @@ class DropdownListPageLocators:
     PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
     DROPDOWN = (By.CSS_SELECTOR, "select#dropdown")
     OPTION = (By.NAME, "{val}")
+
+
+class DynamicContentPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
+    CONTENT_BLOCKS = (By.CSS_SELECTOR, "#content > .row")
+    IMAGE_IN_BLOCK = (By.CSS_SELECTOR, "div#content div.large-2 img")
+    TEXT_IN_BLOCK = (By.CSS_SELECTOR, "div#content div.large-2 + div.large-10")

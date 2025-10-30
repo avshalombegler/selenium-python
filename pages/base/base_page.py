@@ -219,3 +219,6 @@ class BasePage:
             self.logger.debug(f"Performed right-click on element '{elem}'")
 
         return self._retry(action, locator=locator, retry_count=retry)
+
+    def refresh_page(self):
+        return self.driver.refresh()

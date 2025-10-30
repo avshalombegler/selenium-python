@@ -25,4 +25,4 @@ class TestBasicAuth:
         page.navigate_using_url(url)
 
         message = page.get_auth_message()
-        assert message == expected_message
+        assert message == expected_message, f"Expected '{expected_message}', but got '{message}'"
