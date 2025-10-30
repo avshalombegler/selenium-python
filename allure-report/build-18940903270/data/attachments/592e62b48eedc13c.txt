@@ -1,0 +1,56 @@
+2025-10-30 12:40:55,189 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Starting test: test_digest_auth_login_scenarios[admin-wrong].
+2025-10-30 12:40:55,190 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] xdist worker is: gw2
+2025-10-30 12:40:55,190 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] ====== WebDriver manager ======
+2025-10-30 12:40:55,322 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Get LATEST chromedriver version for google-chrome
+2025-10-30 12:40:55,422 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Get LATEST chromedriver version for google-chrome
+2025-10-30 12:40:55,527 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-30 12:40:56,063 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251030_124056/test_digest_auth_login_scenarios[admin-wrong]_20251030_124056.mp4
+2025-10-30 12:40:56,064 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-30 12:40:56,619 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigation completed.
+2025-10-30 12:40:56,620 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-30 12:40:56,757 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:56,773 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-30 12:40:56,776 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to Digest Authentication page
+2025-10-30 12:40:56,780 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to URL: https://admin:wrong@the-internet.herokuapp.com/digest_auth.
+2025-10-30 12:40:56,933 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigation completed.
+2025-10-30 12:40:57,055 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:57,593 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:58,646 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:00,195 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:00,731 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:01,263 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:02,293 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:02,848 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:03,895 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:04,424 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:05,004 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:05,476 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:05,999 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:06,548 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:07,064 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:07,064 - ERROR - [test_digest_auth_login_scenarios[admin-wrong]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x55b3059b6aea <unknown>
+#1 0x55b305402cdb <unknown>
+#2 0x55b3054556c4 <unknown>
+#3 0x55b305455901 <unknown>
+#4 0x55b3054a48b4 <unknown>
+#5 0x55b3054a1c87 <unknown>
+#6 0x55b305447aca <unknown>
+#7 0x55b3054487d1 <unknown>
+#8 0x55b30597dab9 <unknown>
+#9 0x55b305980a8c <unknown>
+#10 0x55b305966d49 <unknown>
+#11 0x55b305981685 <unknown>
+#12 0x55b30594e6c3 <unknown>
+#13 0x55b3059a37d8 <unknown>
+#14 0x55b3059a39b3 <unknown>
+#15 0x55b3059b5a83 <unknown>
+#16 0x7f50ed49caa4 <unknown>
+#17 0x7f50ed529c6c <unknown>
+
+2025-10-30 12:41:07,067 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page source: <html><head></head><body></body></html>
+2025-10-30 12:41:07,068 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Finished test: test_digest_auth_login_scenarios[admin-wrong] (Duration: 10.29s).
+2025-10-30 12:41:07,069 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording...
+2025-10-30 12:41:08,616 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251030_124056/test_digest_auth_login_scenarios[admin-wrong]_20251030_124056.mp4
+2025-10-30 12:41:08,618 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Quitting driver for browser: chrome.

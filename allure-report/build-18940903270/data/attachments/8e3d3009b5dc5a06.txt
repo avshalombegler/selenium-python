@@ -1,0 +1,56 @@
+2025-10-30 12:40:55,404 - INFO - [test_basic_auth[--Not authorized\n]] Starting test: test_basic_auth[--Not authorized\n].
+2025-10-30 12:40:55,405 - INFO - [test_basic_auth[--Not authorized\n]] xdist worker is: gw1
+2025-10-30 12:40:55,405 - INFO - [test_basic_auth[--Not authorized\n]] ====== WebDriver manager ======
+2025-10-30 12:40:55,516 - INFO - [test_basic_auth[--Not authorized\n]] Get LATEST chromedriver version for google-chrome
+2025-10-30 12:40:55,606 - INFO - [test_basic_auth[--Not authorized\n]] Get LATEST chromedriver version for google-chrome
+2025-10-30 12:40:55,710 - INFO - [test_basic_auth[--Not authorized\n]] Driver [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-30 12:40:56,489 - INFO - [test_basic_auth[--Not authorized\n]] Started recording: tests_recordings/gw1/test_basic_auth[--Not authorized\n]_20251030_124056/test_basic_auth[--Not authorized\n]_20251030_124056.mp4
+2025-10-30 12:40:56,490 - INFO - [test_basic_auth[--Not authorized\n]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-30 12:40:56,909 - INFO - [test_basic_auth[--Not authorized\n]] Navigation completed.
+2025-10-30 12:40:56,909 - INFO - [test_basic_auth[--Not authorized\n]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-30 12:40:57,045 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:57,057 - INFO - [test_basic_auth[--Not authorized\n]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-30 12:40:57,060 - INFO - [test_basic_auth[--Not authorized\n]] Navigating to Basic Auth page
+2025-10-30 12:40:57,060 - INFO - [test_basic_auth[--Not authorized\n]] Initialize URL based on username and password.
+2025-10-30 12:40:57,060 - INFO - [test_basic_auth[--Not authorized\n]] Navigate to URL: {url}.
+2025-10-30 12:40:57,060 - INFO - [test_basic_auth[--Not authorized\n]] Navigating to URL: https://the-internet.herokuapp.com/basic_auth.
+2025-10-30 12:40:57,156 - INFO - [test_basic_auth[--Not authorized\n]] Navigation completed.
+2025-10-30 12:40:57,156 - INFO - [test_basic_auth[--Not authorized\n]] Get authorization message.
+2025-10-30 12:40:57,245 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:57,808 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:58,294 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:59,333 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:40:59,864 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:00,383 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:00,937 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:02,967 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:04,555 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:05,099 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:05,628 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:06,162 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:07,202 - WARNING - [test_basic_auth[--Not authorized\n]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 12:41:07,202 - ERROR - [test_basic_auth[--Not authorized\n]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x5638c1c59aea <unknown>
+#1 0x5638c16a5cdb <unknown>
+#2 0x5638c16f86c4 <unknown>
+#3 0x5638c16f8901 <unknown>
+#4 0x5638c17478b4 <unknown>
+#5 0x5638c1744c87 <unknown>
+#6 0x5638c16eaaca <unknown>
+#7 0x5638c16eb7d1 <unknown>
+#8 0x5638c1c20ab9 <unknown>
+#9 0x5638c1c23a8c <unknown>
+#10 0x5638c1c09d49 <unknown>
+#11 0x5638c1c24685 <unknown>
+#12 0x5638c1bf16c3 <unknown>
+#13 0x5638c1c467d8 <unknown>
+#14 0x5638c1c469b3 <unknown>
+#15 0x5638c1c58a83 <unknown>
+#16 0x7f5532a9caa4 <unknown>
+#17 0x7f5532b29c6c <unknown>
+
+2025-10-30 12:41:07,402 - INFO - [test_basic_auth[--Not authorized\n]] Finished test: test_basic_auth[--Not authorized\n] (Duration: 10.34s).
+2025-10-30 12:41:07,405 - INFO - [test_basic_auth[--Not authorized\n]] Stopping video recording...
+2025-10-30 12:41:09,111 - INFO - [test_basic_auth[--Not authorized\n]] Video created: tests_recordings/gw1/test_basic_auth[--Not authorized\n]_20251030_124056/test_basic_auth[--Not authorized\n]_20251030_124056.mp4
+2025-10-30 12:41:09,113 - INFO - [test_basic_auth[--Not authorized\n]] Quitting driver for browser: chrome.
