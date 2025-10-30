@@ -1,0 +1,41 @@
+2025-10-30 07:48:45,817 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Starting test: test_table_content_per_column[Dolor-Adipisci].
+2025-10-30 07:48:45,817 - INFO - [test_table_content_per_column[Dolor-Adipisci]] xdist worker is: gw0
+2025-10-30 07:48:45,818 - INFO - [test_table_content_per_column[Dolor-Adipisci]] ====== WebDriver manager ======
+2025-10-30 07:48:45,900 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Get LATEST chromedriver version for google-chrome
+2025-10-30 07:48:45,945 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Get LATEST chromedriver version for google-chrome
+2025-10-30 07:48:46,008 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-30 07:48:46,596 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Started recording: tests_recordings/gw0/test_table_content_per_column[Dolor-Adipisci]_20251030_074846/test_table_content_per_column[Dolor-Adipisci]_20251030_074846.mp4
+2025-10-30 07:48:46,596 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-30 07:48:47,239 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Navigation completed.
+2025-10-30 07:48:47,240 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-30 07:48:47,386 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:47,407 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-30 07:48:47,409 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Navigating to Challenging DOM page
+2025-10-30 07:48:47,548 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:47,876 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-10-30 07:48:48,015 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:48,027 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-10-30 07:48:48,028 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Get table head text of column 'Dolor'.
+2025-10-30 07:48:48,165 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:48,183 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Get table cell text 'Adipisci0' under column 'Dolor'.
+2025-10-30 07:48:48,341 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:48,362 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Get table cell text 'Adipisci1' under column 'Dolor'.
+2025-10-30 07:48:48,460 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:48,476 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Get table cell text 'Adipisci2' under column 'Dolor'.
+2025-10-30 07:48:48,600 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:48,614 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Clicking edit button.
+2025-10-30 07:48:48,779 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:48,780 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Click delete button in row {row}.
+2025-10-30 07:48:48,979 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:48,980 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Clicking edit button.
+2025-10-30 07:48:49,177 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Click delete button in row {row}.
+2025-10-30 07:48:49,189 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:49,348 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Clicking edit button.
+2025-10-30 07:48:49,358 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:49,501 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:49,501 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Click delete button in row {row}.
+2025-10-30 07:48:49,662 - WARNING - [test_table_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:49,663 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Finished test: test_table_content_per_column[Dolor-Adipisci] (Duration: 2.25s).
+2025-10-30 07:48:49,664 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Stopping video recording...
+2025-10-30 07:48:50,078 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Video created: tests_recordings/gw0/test_table_content_per_column[Dolor-Adipisci]_20251030_074846/test_table_content_per_column[Dolor-Adipisci]_20251030_074846.mp4
+2025-10-30 07:48:50,080 - INFO - [test_table_content_per_column[Dolor-Adipisci]] Quitting driver for browser: chrome.

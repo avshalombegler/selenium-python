@@ -1,0 +1,28 @@
+2025-10-30 07:48:40,567 - INFO - [test_context_menu_functionality] Starting test: test_context_menu_functionality.
+2025-10-30 07:48:40,568 - INFO - [test_context_menu_functionality] xdist worker is: gw3
+2025-10-30 07:48:40,568 - INFO - [test_context_menu_functionality] ====== WebDriver manager ======
+2025-10-30 07:48:40,649 - INFO - [test_context_menu_functionality] Get LATEST chromedriver version for google-chrome
+2025-10-30 07:48:40,691 - INFO - [test_context_menu_functionality] Get LATEST chromedriver version for google-chrome
+2025-10-30 07:48:40,741 - INFO - [test_context_menu_functionality] Driver [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-30 07:48:41,127 - INFO - [test_context_menu_functionality] Started recording: tests_recordings/gw3/test_context_menu_functionality_20251030_074841/test_context_menu_functionality_20251030_074841.mp4
+2025-10-30 07:48:41,128 - INFO - [test_context_menu_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-30 07:48:41,621 - INFO - [test_context_menu_functionality] Navigation completed.
+2025-10-30 07:48:41,621 - INFO - [test_context_menu_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-30 07:48:41,712 - WARNING - [test_context_menu_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:41,721 - INFO - [test_context_menu_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-30 07:48:41,723 - INFO - [test_context_menu_functionality] Navigating to Context Menu page
+2025-10-30 07:48:42,028 - INFO - [test_context_menu_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-10-30 07:48:42,091 - WARNING - [test_context_menu_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:42,098 - INFO - [test_context_menu_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-10-30 07:48:42,098 - INFO - [test_context_menu_functionality] Perform right-click on page title to verify context menu alert does not activate.
+2025-10-30 07:48:42,098 - INFO - [test_context_menu_functionality] Performing right-click on element with locator '('css selector', 'div.example h3')'.
+2025-10-30 07:48:42,381 - INFO - [test_context_menu_functionality] Perform right-click on hot-spot to verify alert activation.
+2025-10-30 07:48:42,381 - INFO - [test_context_menu_functionality] Performing right-click on element with locator '('css selector', 'div#hot-spot')'.
+2025-10-30 07:48:42,461 - WARNING - [test_context_menu_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:42,748 - INFO - [test_context_menu_functionality] Waiting for context menu alert...
+2025-10-30 07:48:42,749 - INFO - [test_context_menu_functionality] Video recording active – skipping alert text check
+2025-10-30 07:48:42,749 - INFO - [test_context_menu_functionality] Finished test: test_context_menu_functionality (Duration: 1.03s).
+2025-10-30 07:48:42,753 - INFO - [test_context_menu_functionality] Stopping video recording...
+2025-10-30 07:48:42,760 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:48:43,132 - INFO - [test_context_menu_functionality] Video created: tests_recordings/gw3/test_context_menu_functionality_20251030_074841/test_context_menu_functionality_20251030_074841.mp4
+2025-10-30 07:48:43,133 - INFO - [test_context_menu_functionality] Quitting driver for browser: chrome.

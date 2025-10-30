@@ -1,0 +1,31 @@
+2025-10-30 07:49:00,815 - INFO - [test_checkboxes_functionality] Starting test: test_checkboxes_functionality.
+2025-10-30 07:49:00,815 - INFO - [test_checkboxes_functionality] xdist worker is: gw2
+2025-10-30 07:49:00,815 - INFO - [test_checkboxes_functionality] ====== WebDriver manager ======
+2025-10-30 07:49:00,893 - INFO - [test_checkboxes_functionality] Get LATEST chromedriver version for google-chrome
+2025-10-30 07:49:00,938 - INFO - [test_checkboxes_functionality] Get LATEST chromedriver version for google-chrome
+2025-10-30 07:49:00,985 - INFO - [test_checkboxes_functionality] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-30 07:49:01,387 - INFO - [test_checkboxes_functionality] Started recording: tests_recordings/gw2/test_checkboxes_functionality_20251030_074901/test_checkboxes_functionality_20251030_074901.mp4
+2025-10-30 07:49:01,392 - INFO - [test_checkboxes_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-30 07:49:01,914 - INFO - [test_checkboxes_functionality] Navigation completed.
+2025-10-30 07:49:01,914 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-30 07:49:02,025 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:49:02,033 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-30 07:49:02,034 - INFO - [test_checkboxes_functionality] Navigating to Checkboxes page
+2025-10-30 07:49:02,260 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-10-30 07:49:02,360 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:49:02,368 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-10-30 07:49:02,369 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")' selected state.
+2025-10-30 07:49:02,396 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")' selected state.
+2025-10-30 07:49:02,480 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:49:02,480 - INFO - [test_checkboxes_functionality] Set checkbox '0' to 'True'.
+2025-10-30 07:49:02,480 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")' selected state.
+2025-10-30 07:49:02,600 - INFO - [test_checkboxes_functionality] Set checkbox '1' to 'False'.
+2025-10-30 07:49:02,600 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")' selected state.
+2025-10-30 07:49:02,650 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:49:02,727 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")' selected state.
+2025-10-30 07:49:02,781 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 07:49:02,792 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")' selected state.
+2025-10-30 07:49:02,808 - INFO - [test_checkboxes_functionality] Finished test: test_checkboxes_functionality (Duration: 0.77s).
+2025-10-30 07:49:02,809 - INFO - [test_checkboxes_functionality] Stopping video recording...
+2025-10-30 07:49:03,047 - INFO - [test_checkboxes_functionality] Video created: tests_recordings/gw2/test_checkboxes_functionality_20251030_074901/test_checkboxes_functionality_20251030_074901.mp4
+2025-10-30 07:49:03,048 - INFO - [test_checkboxes_functionality] Quitting driver for browser: chrome.
