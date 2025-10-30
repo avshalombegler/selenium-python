@@ -15,6 +15,7 @@ class MainPageLocators:
     CHECKBOXES_LINK = (By.LINK_TEXT, "Checkboxes")
     CONTEXT_MENU_LINK = (By.LINK_TEXT, "Context Menu")
     DIGEST_AUTHENTICATION_LINK = (By.LINK_TEXT, "Digest Authentication")
+    DRAG_AND_DROP_LINK = (By.LINK_TEXT, "Drag and Drop")
 
 
 class AbTestingPageLocators:
@@ -67,3 +68,9 @@ class ContextMenuPageLocators:
 
 class DigestAuthPageLocators:
     AUTHORIZED_INDICATOR = (By.CSS_SELECTOR, "div#content p")
+
+
+class DragAndDropPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
+    BOX = (By.CSS_SELECTOR, "div#column-{box}")
+    BOX_HEADER = (By.CSS_SELECTOR, "div#column-{box} header")

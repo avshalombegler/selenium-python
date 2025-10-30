@@ -200,7 +200,7 @@ class BasePage:
         return self.base_url
 
     def is_element_selected(self, locator, retry=2):
-        self.logger.info("Check element with locator '{locator}' selected state.")
+        self.logger.info(f"Check element with locator '{locator}' selected state.")
 
         def action():
             elem = self.wait_for_visibility(locator)
@@ -211,7 +211,7 @@ class BasePage:
         return self._retry(action, locator=locator, retry_count=retry)
 
     def perform_right_click(self, locator, actions, retry=2):
-        self.logger.info("Performing right-click on element with locator '{locator}'.")
+        self.logger.info(f"Performing right-click on element with locator '{locator}'.")
 
         def action():
             elem = self.wait_for_visibility(locator)
