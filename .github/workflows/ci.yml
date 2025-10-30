@@ -107,7 +107,16 @@ jobs:
 
       - name: Generate Allure report
         if: always()
-        run: allure generate reports/allure-results --clean -o reports/allure-report
+        run: |
+          if [ -d "reports/allure-results" ] && [ "$(ls -A reports/allure-results/*.json 2>/dev/null)" ]; then
+            echo "Generating Allure report..."
+            mkdir -p reports/allure-report
+            allure generate reports/allure-results -o reports/allure-report --clean
+          else
+            echo "No Allure results – creating empty report"
+            mkdir -p reports/allure-report
+            echo "<h1>No test results</h1>" > reports/allure-report/index.html
+          fi
 
       - name: Deploy Allure Report to GitHub Pages
         if: github.ref == 'refs/heads/main'
