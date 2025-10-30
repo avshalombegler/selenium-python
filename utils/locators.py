@@ -16,6 +16,7 @@ class MainPageLocators:
     CONTEXT_MENU_LINK = (By.LINK_TEXT, "Context Menu")
     DIGEST_AUTHENTICATION_LINK = (By.LINK_TEXT, "Digest Authentication")
     DRAG_AND_DROP_LINK = (By.LINK_TEXT, "Drag and Drop")
+    DROPDOWN_LINK = (By.LINK_TEXT, "Dropdown")
 
 
 class AbTestingPageLocators:
@@ -74,3 +75,9 @@ class DragAndDropPageLocators:
     PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
     BOX = (By.CSS_SELECTOR, "div#column-{box}")
     BOX_HEADER = (By.CSS_SELECTOR, "div#column-{box} header")
+
+
+class DropdownListPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
+    DROPDOWN = (By.CSS_SELECTOR, "select#dropdown")
+    OPTION = (By.NAME, "{val}")
