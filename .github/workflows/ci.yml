@@ -100,6 +100,11 @@ jobs:
         run: |
           curl -s -f https://the-internet.herokuapp.com/ || exit 1
 
+      - name: Create reports directories
+        run: |
+          mkdir -p reports/allure-results
+          mkdir -p reports/allure-report
+
       - name: Run Pytest with Allure
         run: |
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
@@ -107,16 +112,7 @@ jobs:
 
       - name: Generate Allure report
         if: always()
-        run: |
-          if [ -d "reports/allure-results" ] && [ "$(ls -A reports/allure-results/*.json 2>/dev/null)" ]; then
-            echo "Generating Allure report..."
-            mkdir -p reports/allure-report
-            allure generate reports/allure-results -o reports/allure-report --clean
-          else
-            echo "No Allure results – creating empty report"
-            mkdir -p reports/allure-report
-            echo "<h1>No test results</h1>" > reports/allure-report/index.html
-          fi
+        run: allure generate reports/allure-results -o reports/allure-report --clean
 
       - name: Deploy Allure Report to GitHub Pages
         if: github.ref == 'refs/heads/main'
