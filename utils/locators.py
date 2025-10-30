@@ -16,6 +16,7 @@ class MainPageLocators:
     CONTEXT_MENU_LINK = (By.LINK_TEXT, "Context Menu")
     DIGEST_AUTHENTICATION_LINK = (By.LINK_TEXT, "Digest Authentication")
     DRAG_AND_DROP_LINK = (By.LINK_TEXT, "Drag and Drop")
+    DROPDOWN_LINK = (By.LINK_TEXT, "Dropdown")
 
 
 class AbTestingPageLocators:
@@ -25,7 +26,7 @@ class AbTestingPageLocators:
 
 
 class AddRemoveElementsPageLocators:
-    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "h3")
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div#content h3")
     ADD_ELEMENT_BTN = (By.CSS_SELECTOR, ".example > button")
     DELETE_BTN = (By.CSS_SELECTOR, "#elements > button:first-child")
     DELETE_BTNS = (By.CSS_SELECTOR, "#elements > button")
@@ -74,3 +75,9 @@ class DragAndDropPageLocators:
     PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
     BOX = (By.CSS_SELECTOR, "div#column-{box}")
     BOX_HEADER = (By.CSS_SELECTOR, "div#column-{box} header")
+
+
+class DropdownListPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, "div.example h3")
+    DROPDOWN = (By.CSS_SELECTOR, "select#dropdown")
+    OPTION = (By.NAME, "{val}")

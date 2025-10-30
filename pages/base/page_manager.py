@@ -68,3 +68,8 @@ class PageManager:
     def get_drag_and_drop_page(self, page_name="Drag and Drop"):
         self.logger.info(f"Navigating to {page_name} page")
         return self.main_page.click_drag_and_drop()
+
+    @allure.step("Navigate to {page_name} page")
+    def get_dropdown_list_page(self, page_name="Dropdown List"):
+        self.logger.info(f"Navigating to {page_name} page")
+        return self.main_page.click_dropdown_list()

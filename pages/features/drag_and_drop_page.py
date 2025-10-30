@@ -12,7 +12,7 @@ class DragAndDropPage(BasePage):
         self.wait_for_page_to_load(DragAndDropPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Get box element")
-    def get_box_element(self, box):
+    def get_box_element(self, box: str):
         self.logger.info("Get box element.")
         locator = DragAndDropPageLocators.BOX[1].format(box=box)
         return self.wait_for_visibility((DragAndDropPageLocators.BOX[0], locator))
@@ -48,9 +48,9 @@ class DragAndDropPage(BasePage):
                 raise
         # Small pause to allow DOM update; get_box_header uses waits but extra safety helps
         time.sleep(0.4)
-        
+
     @allure.step("Get box header")
-    def get_box_header(self, box):
+    def get_box_header(self, box: str):
         self.logger.info("Get box header.")
         locator = DragAndDropPageLocators.BOX_HEADER[1].format(box=box)
         return self.get_dynamic_element_text((DragAndDropPageLocators.BOX_HEADER[0], locator))
