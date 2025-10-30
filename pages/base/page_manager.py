@@ -63,3 +63,8 @@ class PageManager:
             raise ValueError(f"Invalid credentials: username='{username}', password='{password or ''}'")
         url = f"https://{username}:{password}@the-internet.herokuapp.com/digest_auth"
         return self.main_page.get_digest_auth(url)
+
+    @allure.step("Navigate to {page_name} page")
+    def get_drag_and_drop_page(self, page_name="Drag and Drop"):
+        self.logger.info(f"Navigating to {page_name} page")
+        return self.main_page.click_drag_and_drop()
