@@ -1,0 +1,34 @@
+INFO     root:conftest.py:125 Starting test: test_add_remove_elements.
+INFO     WDM:logger.py:11 xdist worker is: gw3
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+INFO     root:conftest.py:148 Started recording: tests_recordings/gw3/test_add_remove_elements_20251030_143445/test_add_remove_elements_20251030_143445.mp4
+INFO     root:base_page.py:100 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:102 Navigation completed.
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:page_manager.py:31 Navigating to Add/Remove Elements page
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+INFO     root:add_remove_elements_page.py:13 Clicking Add Element button.
+INFO     root:add_remove_elements_page.py:13 Clicking Add Element button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:150 Counting elements with locator: '('css selector', '#elements > button')'
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_add_remove_elements.py:23 Found 2 delete buttons.
+INFO     root:add_remove_elements_page.py:19 Clicking Delete Element button.
+INFO     root:add_remove_elements_page.py:19 Clicking Delete Element button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:150 Counting elements with locator: '('css selector', '#elements > button')'
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_add_remove_elements.py:32 Found 0 delete buttons.
+INFO     root:conftest.py:152 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw3/test_add_remove_elements_20251030_143445/test_add_remove_elements_20251030_143445.mp4
+INFO     root:conftest.py:103 Quitting driver for browser: chrome.

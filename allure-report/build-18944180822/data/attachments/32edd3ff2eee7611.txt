@@ -1,0 +1,24 @@
+2025-10-30 14:34:58,766 - INFO - [test_dynamic_content_functionality] Starting test: test_dynamic_content_functionality.
+2025-10-30 14:34:58,766 - INFO - [test_dynamic_content_functionality] xdist worker is: gw3
+2025-10-30 14:34:58,767 - INFO - [test_dynamic_content_functionality] ====== WebDriver manager ======
+2025-10-30 14:34:58,907 - INFO - [test_dynamic_content_functionality] Get LATEST chromedriver version for google-chrome
+2025-10-30 14:34:58,983 - INFO - [test_dynamic_content_functionality] Get LATEST chromedriver version for google-chrome
+2025-10-30 14:34:59,063 - INFO - [test_dynamic_content_functionality] Driver [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-10-30 14:34:59,712 - INFO - [test_dynamic_content_functionality] Started recording: tests_recordings/gw3/test_dynamic_content_functionality_20251030_143459/test_dynamic_content_functionality_20251030_143459.mp4
+2025-10-30 14:34:59,713 - INFO - [test_dynamic_content_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-10-30 14:35:00,009 - INFO - [test_dynamic_content_functionality] Navigation completed.
+2025-10-30 14:35:00,009 - INFO - [test_dynamic_content_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-10-30 14:35:00,121 - WARNING - [test_dynamic_content_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 14:35:00,138 - INFO - [test_dynamic_content_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-10-30 14:35:00,141 - INFO - [test_dynamic_content_functionality] Navigating to Dropdown List page
+2025-10-30 14:35:00,298 - WARNING - [test_dynamic_content_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 14:35:00,506 - INFO - [test_dynamic_content_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-10-30 14:35:00,605 - WARNING - [test_dynamic_content_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 14:35:00,611 - INFO - [test_dynamic_content_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-10-30 14:35:00,725 - WARNING - [test_dynamic_content_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 14:35:00,961 - WARNING - [test_dynamic_content_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 14:35:01,079 - WARNING - [test_dynamic_content_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-10-30 14:35:01,088 - INFO - [test_dynamic_content_functionality] Finished test: test_dynamic_content_functionality (Duration: 0.95s).
+2025-10-30 14:35:01,089 - INFO - [test_dynamic_content_functionality] Stopping video recording...
+2025-10-30 14:35:01,379 - INFO - [test_dynamic_content_functionality] Video created: tests_recordings/gw3/test_dynamic_content_functionality_20251030_143459/test_dynamic_content_functionality_20251030_143459.mp4
+2025-10-30 14:35:01,381 - INFO - [test_dynamic_content_functionality] Quitting driver for browser: chrome.

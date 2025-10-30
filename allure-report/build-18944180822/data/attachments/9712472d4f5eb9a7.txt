@@ -1,0 +1,56 @@
+INFO     root:conftest.py:125 Starting test: test_basic_auth[wrong-wrong-Not authorized\n].
+INFO     WDM:logger.py:11 xdist worker is: gw1
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+INFO     root:conftest.py:148 Started recording: tests_recordings/gw1/test_basic_auth[wrong-wrong-Not authorized\n]_20251030_143445/test_basic_auth[wrong-wrong-Not authorized\n]_20251030_143445.mp4
+INFO     root:base_page.py:100 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:102 Navigation completed.
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:page_manager.py:36 Navigating to Basic Auth page
+INFO     root:basic_auth_page.py:17 Initialize URL based on username and password.
+INFO     root:basic_auth_page.py:25 Navigate to URL: {url}.
+INFO     root:base_page.py:100 Navigating to URL: http://wrong:wrong@the-internet.herokuapp.com/basic_auth.
+INFO     root:base_page.py:102 Navigation completed.
+INFO     root:basic_auth_page.py:30 Get authorization message.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+ERROR    root:base_page.py:32 Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x559905378aea <unknown>
+#1 0x559904dc4cdb <unknown>
+#2 0x559904e176c4 <unknown>
+#3 0x559904e17901 <unknown>
+#4 0x559904e668b4 <unknown>
+#5 0x559904e63c87 <unknown>
+#6 0x559904e09aca <unknown>
+#7 0x559904e0a7d1 <unknown>
+#8 0x55990533fab9 <unknown>
+#9 0x559905342a8c <unknown>
+#10 0x559905328d49 <unknown>
+#11 0x559905343685 <unknown>
+#12 0x5599053106c3 <unknown>
+#13 0x5599053657d8 <unknown>
+#14 0x5599053659b3 <unknown>
+#15 0x559905377a83 <unknown>
+#16 0x7f3127c9caa4 <unknown>
+#17 0x7f3127d29c6c <unknown>
+
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:152 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw1/test_basic_auth[wrong-wrong-Not authorized\n]_20251030_143445/test_basic_auth[wrong-wrong-Not authorized\n]_20251030_143445.mp4
+INFO     root:conftest.py:103 Quitting driver for browser: chrome.
