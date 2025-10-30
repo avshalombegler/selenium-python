@@ -1,4 +1,4 @@
-name: CI for Selenium-Python Tests
+name: CI for Selenium-Pytest-Allure project
 
 on:
   push:
@@ -10,9 +10,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      # fail-fast: false #  continue if a suite fails
       matrix:
         # browser: [chrome, firefox]
         browser: [chrome]
+        # include:
+        #   - suite:
+        #     marker:
+        #     maxfail:
+    
+    # name: ${{ matrix.suite }} tests
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
