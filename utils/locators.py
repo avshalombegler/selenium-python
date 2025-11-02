@@ -18,6 +18,7 @@ class MainPageLocators:
     DRAG_AND_DROP_LINK = (By.LINK_TEXT, "Drag and Drop")
     DROPDOWN_LINK = (By.LINK_TEXT, "Dropdown")
     DYNAMIC_CONTENT_LINK = (By.LINK_TEXT, "Dynamic Content")
+    DYNAMIC_CONTROLS_LINK = (By.LINK_TEXT, "Dynamic Controls")
 
 
 class AbTestingPageLocators:
@@ -89,3 +90,18 @@ class DynamicContentPageLocators:
     CONTENT_BLOCKS = (By.CSS_SELECTOR, "#content > .row")
     IMAGE_IN_BLOCK = (By.CSS_SELECTOR, "div#content div.large-2 img")
     TEXT_IN_BLOCK = (By.CSS_SELECTOR, "div#content div.large-2 + div.large-10")
+
+
+class DynamicControlsPageLocators:
+    PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, ".example h4")
+    WAIT_LOADER = (By.CSS_SELECTOR, "#loading")
+
+    A_CHECKBOX = (By.CSS_SELECTOR, "input[type='checkbox']")
+    REMOVE_BTN = (By.XPATH, "//button[text()='Remove']")
+    ADD_BTN = (By.XPATH, "//button[text()='Add']")
+    REMOVE_ADD_MSG = (By.CSS_SELECTOR, "#checkbox-example #message")
+
+    TEXTBOX = (By.CSS_SELECTOR, "input[type='text']")
+    ENABLE_BTN = (By.XPATH, "//button[text()='Enable']")
+    DISABLE_BTN = (By.XPATH, "//button[text()='Disable']")
+    ENABLE_DISABLE_MSG = (By.CSS_SELECTOR, "#input-example #message")

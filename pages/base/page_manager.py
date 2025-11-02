@@ -78,3 +78,8 @@ class PageManager:
     def get_dynamic_content_page(self, page_name="Dropdown List"):
         self.logger.info(f"Navigating to {page_name} page")
         return self.main_page.click_dynamic_content()
+
+    @allure.step("Navigate to {page_name} page")
+    def get_dynamic_controls_page(self, page_name="Dynamic Controls"):
+        self.logger.info(f"Navigating to {page_name} page")
+        return self.main_page.click_dynamic_controls()

@@ -96,6 +96,11 @@ class BasePage:
         """Wait for element visible"""
         return self._safe_wait(EC.visibility_of_element_located, locator, timeout)
 
+    def wait_for_invisibility(self, locator, timeout=None):
+        """Wait for element invisible"""
+        elem = self.wait_for_visibility(locator, timeout)
+        return self._safe_wait(EC.invisibility_of_element, elem, timeout)
+
     def navigate_to(self, url):
         self.logger.info(f"Navigating to URL: {url}.")
         self.driver.get(url)
@@ -199,13 +204,24 @@ class BasePage:
     def get_base_url(self):
         return self.base_url
 
-    def is_element_selected(self, locator, retry=2) -> bool:
+    def is_element_selected(self, locator, timeout, retry=2) -> bool:
         self.logger.info(f"Check element with locator '{locator}' selected state.")
 
         def action():
-            elem = self.wait_for_visibility(locator)
+            elem = self.wait_for_visibility(locator, timeout)
             state = elem.is_selected()
             self.logger.debug(f"Element with locator '{locator}' selected state '{state}'.")
+            return state
+
+        return self._retry(action, locator=locator, retry_count=retry)
+
+    def is_element_enabled(self, locator, timeout=None, retry=2) -> bool:
+        self.logger.info(f"Check element with locator '{locator}' enabled state.")
+
+        def action():
+            elem = self.wait_for_visibility(locator, timeout)
+            state = elem.is_enabled()
+            self.logger.debug(f"Element with locator '{locator}' enabled state '{state}'.")
             return state
 
         return self._retry(action, locator=locator, retry_count=retry)
@@ -222,3 +238,12 @@ class BasePage:
 
     def refresh_page(self):
         return self.driver.refresh()
+
+    def send_keys_to_element(self, locator, text, retry=2):
+        self.logger.info(f"Send keys '{text}' to element with locator '{locator}'.")
+
+        def action():
+            elem = self.wait_for_visibility(locator)
+            elem.send_keys(text)
+
+        return self._retry(action, locator=locator, retry_count=retry)
