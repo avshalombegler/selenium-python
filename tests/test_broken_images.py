@@ -12,23 +12,23 @@ class TestBrokenImages:
     EXPECTED_VALID_IMAGES = 1
 
     @allure.severity(allure.severity_level.NORMAL)
-    def test_broken_images(self, page_manager: PageManager, logger):
-        """Verify the correct number of broken and valid images on the page."""
+    def test_broken_images_count(self, page_manager: PageManager, logger):
+        """Verify the number of broken images on the page."""
         page = page_manager.get_broken_images_page()
 
-        images = page.get_all_images()
-        assert images, "No images found on the page"
+        broken_count = page.get_broken_images_count()
+        logger.info(f"Found {broken_count} broken images")
+        assert (
+            broken_count == self.EXPECTED_BROKEN_IMAGES
+        ), f"Expected {self.EXPECTED_BROKEN_IMAGES} broken images, found {broken_count}"
 
-        with allure.step("Analyze images"):
-            results = [page.is_image_broken(img) for img in images]
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_valid_images_count(self, page_manager: PageManager, logger):
+        """Verify the number of valid images on the page."""
+        page = page_manager.get_broken_images_page()
 
-        broken = [img for img in results if img["is_broken"]]
-        valid = [img for img in results if not img["is_broken"]]
-
-        with allure.step("Verify image counts"):
-            assert (
-                len(broken) == self.EXPECTED_BROKEN_IMAGES
-            ), f"Expected {self.EXPECTED_BROKEN_IMAGES} broken images, found {len(broken)}"
-            assert (
-                len(valid) == self.EXPECTED_VALID_IMAGES
-            ), f"Expected {self.EXPECTED_VALID_IMAGES} valid images, found {len(valid)}"
+        valid_count = page.get_valid_images_count()
+        logger.info(f"Found {valid_count} valid images")
+        assert (
+            valid_count == self.EXPECTED_VALID_IMAGES
+        ), f"Expected {self.EXPECTED_VALID_IMAGES} valid images, found {valid_count}"

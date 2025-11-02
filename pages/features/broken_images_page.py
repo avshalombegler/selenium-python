@@ -31,3 +31,15 @@ class BrokenImagesPage(BasePage):
         natural_width = self.get_element_attr_js(image, "naturalWidth")
 
         return {"src": src, "is_broken": not natural_width, "natural_width": natural_width}
+
+    @allure.step("Get count of broken images")
+    def get_broken_images_count(self) -> int:
+        images = self.get_all_images()
+        results = [self.is_image_broken(img) for img in images]
+        return len([img for img in results if img["is_broken"]])
+
+    @allure.step("Get count of valid images")
+    def get_valid_images_count(self) -> int:
+        images = self.get_all_images()
+        results = [self.is_image_broken(img) for img in images]
+        return len([img for img in results if not img["is_broken"]])

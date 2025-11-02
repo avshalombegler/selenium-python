@@ -22,3 +22,13 @@ class AddRemoveElementsPage(BasePage):
 
     def count_delete_buttons(self):
         return self.get_number_of_elements(AddRemoveElementsPageLocators.DELETE_BTNS)
+
+    @allure.step("Add {count} elements")
+    def add_elements(self, count: int = 1):
+        for _ in range(count):
+            self.click_add_element()
+
+    @allure.step("Remove all elements")
+    def remove_all_elements(self):
+        while self.count_delete_buttons() > 0:
+            self.click_delete()

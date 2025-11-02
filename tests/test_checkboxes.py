@@ -12,14 +12,14 @@ class TestCheckboxes:
         """Verify checkboxes functionality"""
         page = page_manager.get_checkboxes_page()
 
-        with allure.step("Check checkboxes initial state"):
-            assert not page.is_checkbox_checked(0)
-            assert page.is_checkbox_checked(1)
+        logger.info("Check checkboxes initial state.")
+        assert not page._is_checkbox_checked(0)
+        assert page._is_checkbox_checked(1)
 
-        with allure.step("Set checkboxes new state"):
-            page.set_checkbox(0, True)
-            page.set_checkbox(1, False)
+        logger.info("Set checkboxes new state.")
+        page.set_checkbox(0, True)
+        page.set_checkbox(1, False)
 
-        with allure.step("Check checkboxes new state"):
-            assert page.is_checkbox_checked(0)
-            assert not page.is_checkbox_checked(1)
+        logger.info("Check checkboxes new state.")
+        assert page._is_checkbox_checked(0)
+        assert not page._is_checkbox_checked(1)

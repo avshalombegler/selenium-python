@@ -21,65 +21,41 @@ class PageManager:
     def get_main_page(self):
         return self.main_page
 
-    @allure.step("Navigate to {page_name} page")
-    def get_ab_testing_page(self, page_name="A/B Testing"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_ab_testing()
+    def get_ab_testing_page(self):
+        return self.main_page.click_ab_testing_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_add_remove_elements_page(self, page_name="Add/Remove Elements"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_add_remove_elements()
+    def get_add_remove_elements_page(self):
+        return self.main_page.click_add_remove_elements_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_basic_auth_page(self, page_name="Basic Auth"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.get_basic_auth()
+    def get_basic_auth_page(self):
+        return self.main_page.get_basic_auth_page()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_broken_images_page(self, page_name="Broken Images"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_broken_images()
+    def get_broken_images_page(self):
+        return self.main_page.click_broken_images_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_challenging_dom_page(self, page_name="Challenging DOM"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_challenging_dom()
+    def get_challenging_dom_page(self):
+        return self.main_page.click_challenging_dom_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_checkboxes_page(self, page_name="Checkboxes"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_checkboxes()
+    def get_checkboxes_page(self):
+        return self.main_page.click_checkboxes_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_context_menu_page(self, page_name="Context Menu"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_context_menu()
+    def get_context_menu_page(self):
+        return self.main_page.click_context_menu_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_digest_auth_page(self, username: str, password: str, page_name="Digest Authentication"):
-        self.logger.info(f"Navigating to {page_name} page")
+    def get_digest_auth_page(self, username: str, password: str):
         if not username or not password:
             raise ValueError(f"Invalid credentials: username='{username}', password='{password or ''}'")
         url = f"https://{username}:{password}@the-internet.herokuapp.com/digest_auth"
-        return self.main_page.get_digest_auth(url)
+        return self.main_page.get_digest_auth_page(url)
 
-    @allure.step("Navigate to {page_name} page")
-    def get_drag_and_drop_page(self, page_name="Drag and Drop"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_drag_and_drop()
+    def get_drag_and_drop_page(self):
+        return self.main_page.click_drag_and_drop_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_dropdown_list_page(self, page_name="Dropdown List"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_dropdown_list()
+    def get_dropdown_list_page(self):
+        return self.main_page.click_dropdown_list_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_dynamic_content_page(self, page_name="Dropdown List"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_dynamic_content()
+    def get_dynamic_content_page(self):
+        return self.main_page.click_dynamic_content_link()
 
-    @allure.step("Navigate to {page_name} page")
-    def get_dynamic_controls_page(self, page_name="Dynamic Controls"):
-        self.logger.info(f"Navigating to {page_name} page")
-        return self.main_page.click_dynamic_controls()
+    def get_dynamic_controls_page(self):
+        return self.main_page.click_dynamic_controls_link()
