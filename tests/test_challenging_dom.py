@@ -25,33 +25,36 @@ class TestChallengingDom:
 
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
-    def test_table_content_per_column(self, page_manager: PageManager, logger, col, cell):
-        """Verify header and a sample of cell values under each column"""
+    def test_table_header_per_column(self, page_manager: PageManager, logger, col, cell):
         page = page_manager.get_challenging_dom_page()
 
-        with allure.step(f"Verify header for column '{col}'"):
-            header = page.get_table_head_text(col)
-            assert header == col, f"Table head value '{col}' not found (got '{header}')"
+        header = page.get_table_head_text(col)
+        assert header == col, f"Table head value '{col}' not found (got '{header}')"
 
-        with allure.step(f"Verify cells for column '{col}' contain expected samples"):
-            # check a few sample cell suffixes to ensure content is present
-            for i in range(3):  # reduced repetition for faster tests; expand as needed
-                expected = f"{cell}{i}"
-                val = page.get_table_cell_text(col, expected)
-                assert val == expected, f"Cell value '{expected}' under '{col}' not found (got '{val}')"
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
+    def test_cells_content_per_column(self, page_manager: PageManager, logger, col, cell):
+        page = page_manager.get_challenging_dom_page()
 
-        with allure.step("Test edit and delete buttons"):
-            for i in range(3):
-                page.click_edit_button(i)
+        for i in range(3):  # reduced repetition for faster tests; expand as needed
+            expected = f"{cell}{i}"
+            val = page.get_table_cell_text(col, expected)
+            assert val == expected, f"Cell value '{expected}' under '{col}' not found (got '{val}')"
 
-                with allure.step("Verify URL change"):
-                    expected_url = page.get_base_url() + self.EDIT_SUFFIX
-                    curr_url = page.get_current_url()
-                    assert expected_url == curr_url, f"Expected URL '{expected_url}', got '{curr_url}'"
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
+    def test_table_edit_and_delete_buttons_per_row(self, page_manager: PageManager, logger, col, cell):
+        page = page_manager.get_challenging_dom_page()
 
-                page.click_delete_button(i)
+        for i in range(3):  # reduced repetition for faster tests; expand as needed
+            page.click_edit_button(i)
 
-                with allure.step("Verify URL change"):
-                    expected_url = page.get_base_url() + self.DEL_SUFFIX
-                    curr_url = page.get_current_url()
-                    assert expected_url == curr_url, f"Expected URL '{expected_url}', got '{curr_url}'"
+            expected_url = page.get_base_url() + self.EDIT_SUFFIX
+            curr_url = page.get_current_url()
+            assert expected_url == curr_url, f"Expected URL '{expected_url}', got '{curr_url}'"
+
+            page.click_delete_button(i)
+
+            expected_url = page.get_base_url() + self.DEL_SUFFIX
+            curr_url = page.get_current_url()
+            assert expected_url == curr_url, f"Expected URL '{expected_url}', got '{curr_url}'"

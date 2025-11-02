@@ -10,28 +10,44 @@ class TestDynamicContent:
     """Tests Dynamic Content functionality"""
 
     @allure.severity(allure.severity_level.NORMAL)
-    def test_dynamic_content_functionality(self, page_manager: PageManager, logger):
-        page = page_manager.get_dynamic_content_page()
+    def test_content_changes_after_refresh(self, page_manager: PageManager, logger):
+        logger.info("Test that content changes after page refresh.")
 
+        page = page_manager.get_dynamic_content_page()
         initial_blocks = page.get_all_content_blocks()
 
         page.refresh_page()
-
         refreshed_blocks = page.get_all_content_blocks()
 
-        assert len(initial_blocks) == 3, "Expected 3 content blocks"
-        assert len(refreshed_blocks) == 3, "Expected 3 blocks after refresh"
+        logger.info("Validating initial content blocks structure and count.")
+        self._validate_blocks_count(initial_blocks)
+        self._validate_blocks_structure(initial_blocks)
 
-        for blocks in [initial_blocks, refreshed_blocks]:
-                for block in blocks:
-                    assert block["image"].startswith("http"), "Invalid image URL"
-                    assert block["text"].strip(), "Empty text in block"
+        logger.info("Validating refreshed content blocks structure and count.")
+        self._validate_blocks_count(refreshed_blocks)
+        self._validate_blocks_structure(refreshed_blocks)
 
-        changed_blocks = 0
-        for i in range(3):
-            if (initial_blocks[i]["image"] != refreshed_blocks[i]["image"] or
-                initial_blocks[i]["text"] != refreshed_blocks[i]["text"]):
-                changed_blocks += 1
+        logger.info("Comparing content changes after refresh.")
+        changed_count = self._count_changed_blocks(initial_blocks, refreshed_blocks)
+        assert 0 < changed_count <= 3, f"Expected 1-3 blocks to change, got {changed_count}"
 
-        assert changed_blocks > 0, "No content changed after refresh"
-        assert changed_blocks <= 3, "Expected 1-3 blocks to change"
+    def _validate_blocks_count(self, blocks):
+        """Validate that we have exactly 3 content blocks"""
+        assert len(blocks) == 3, f"Expected 3 content blocks, got {len(blocks)}"
+
+    def _validate_blocks_structure(self, blocks):
+        """Validate structure of each content block"""
+        for block in blocks:
+            assert block["image"].startswith("http"), "Invalid image URL"
+            assert block["text"].strip(), "Empty text in block"
+
+    def _count_changed_blocks(self, initial_blocks, refreshed_blocks) -> int:
+        """Count how many blocks changed between refreshes"""
+        return sum(
+            1
+            for i in range(3)
+            if (
+                initial_blocks[i]["image"] != refreshed_blocks[i]["image"]
+                or initial_blocks[i]["text"] != refreshed_blocks[i]["text"]
+            )
+        )

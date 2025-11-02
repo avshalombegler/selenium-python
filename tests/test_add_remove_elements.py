@@ -10,24 +10,24 @@ class TestAddRemoveElements:
     """Tests for add/remove elements page functionality"""
 
     @allure.severity(allure.severity_level.NORMAL)
-    def test_add_remove_elements(self, page_manager: PageManager, logger):
-        """Verify adding two elements and removing them, checking counts"""
+    def test_add_elements(self, page_manager: PageManager, logger):
         page = page_manager.get_add_remove_elements_page()
 
-        with allure.step("Add two elements"):
-            for _ in range(2):
-                page.click_add_element()
+        logger.info("Add two elements")
+        page.add_elements(2)
+        count = page.count_delete_buttons()
+        logger.info(f"Found {count} delete buttons.")
+        assert count == 2, f"Expected 2 delete buttons, got {count}"
 
-        with allure.step("Verify 2 delete buttons exist"):
-            count = page.count_delete_buttons()
-            logger.info(f"Found {count} delete buttons.")
-            assert count == 2, f"Expected 2 delete buttons, got {count}"
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_remove_elements(self, page_manager: PageManager, logger):
+        page = page_manager.get_add_remove_elements_page()
 
-        with allure.step("Remove all elements"):
-            for _ in range(2):
-                page.click_delete()
+        logger.info("Ensure there are elements to remove")
+        page.add_elements(2)
 
-        with allure.step("Verify no delete buttons remain"):
-            count = page.count_delete_buttons()
-            logger.info(f"Found {count} delete buttons.")
-            assert count == 0, f"Expected 0 delete buttons, got {count}"
+        logger.info("Remove all elements")
+        page.remove_all_elements()
+        count = page.count_delete_buttons()
+        logger.info(f"Found {count} delete buttons.")
+        assert count == 0, f"Expected 0 delete buttons, got {count}"

@@ -7,20 +7,28 @@ from pages.base.page_manager import PageManager
 @allure.story("Verify Context Menu interactions")
 @pytest.mark.usefixtures("page_manager")
 class TestContextMenu:
+    """Tests for context menu functionality"""
 
     EXPECTED_ALERT_TEXT = "You selected a context menu"
 
     @allure.severity(allure.severity_level.NORMAL)
-    def test_context_menu_functionality(self, page_manager: PageManager, logger, actions):
-        """Verify Context Menu interactions"""
+    def test_right_click_outside_hotspot(self, page_manager: PageManager, logger, actions):
+        """Verify right-click outside hot spot area"""
         page = page_manager.get_context_menu_page()
 
-        page.right_click_outside_hot_spot(actions)
+        logger.info("Testing right-click outside hot spot")
+        result = page.right_click_outside_hot_spot(actions)
+        assert not result.alert_present, "Alert should not appear when clicking outside hot spot"
 
-        page.right_click_on_hot_spot(actions)
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_right_click_on_hotspot(self, page_manager: PageManager, logger, actions):
+        """Verify right-click on hot spot area"""
+        page = page_manager.get_context_menu_page()
 
-        with allure.step("Verify context menu alert - Skipping alert text check if video recording is active"):
-            alert_text = page.get_context_menu_alert_text()
-            if alert_text != "VIDEO_RECORDING_ACTIVE":
-                assert self.EXPECTED_ALERT_TEXT == alert_text
-                page.close_context_menu_alert()
+        logger.info("Testing right-click on hot spot")
+        alert_text = page.right_click_on_hot_spot_and_get_alert_text(actions)
+
+        if alert_text != "VIDEO_RECORDING_ACTIVE":
+            assert (
+                alert_text == self.EXPECTED_ALERT_TEXT
+            ), f"Expected alert text '{self.EXPECTED_ALERT_TEXT}', got '{alert_text}'"

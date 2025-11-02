@@ -214,6 +214,7 @@ def clean_allure_report():
         allure_report_dir.mkdir(parents=True, exist_ok=True)  # Recreate empty directory
     yield
 
+
 @pytest.fixture(scope="session", autouse=True)
 def clean_screenshots_at_start():
     """
