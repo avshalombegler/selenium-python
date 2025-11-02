@@ -11,23 +11,7 @@ class CheckboxesPage(BasePage):
         super().__init__(driver, logger)
         self.wait_for_page_to_load(CheckboxesPageLocators.PAGE_LOADED_INDICATOR)
 
-    @allure.step("Set checkbox '{index}' to '{should_be_checked}'")
-    def set_checkbox(self, index: int, should_be_checked: bool):
-        self.logger.info(f"Set checkbox '{index}' to '{should_be_checked}'.")
-        if self.is_checkbox_checked(index) != should_be_checked:
-            self.click_checkbox(index)
-
-    @allure.step("Check if checkbox {index} is checked")
-    def is_checkbox_checked(self, index: int) -> bool:
-        locator = self.get_checkbox_locator(index)
-        return self.is_element_selected(locator)
-
-    @allure.step("Click checkbox {index}")
-    def click_checkbox(self, index: int):
-        locator = self.get_checkbox_locator(index)
-        self.click_element(locator)
-
-    def get_checkbox_locator(self, index: int):
+    def _get_checkbox_locator(self, index: int):
         """
         Returns a locator for the checkbox at the given index (0-based).
         Example: index=0 → first checkbox, index=1 → second checkbox
@@ -44,3 +28,19 @@ class CheckboxesPage(BasePage):
         dynamic_selector = f"{value}:nth-of-type({index + 1})"
 
         return (By.CSS_SELECTOR, dynamic_selector)
+
+    @allure.step("Click checkbox {index}")
+    def _click_checkbox(self, index: int):
+        locator = self._get_checkbox_locator(index)
+        self.click_element(locator)
+
+    @allure.step("Check if checkbox {index} is checked")
+    def _is_checkbox_checked(self, index: int) -> bool:
+        locator = self._get_checkbox_locator(index)
+        return self.is_element_selected(locator)
+
+    @allure.step("Set checkbox '{index}' to '{should_be_checked}'")
+    def set_checkbox(self, index: int, should_be_checked: bool):
+        self.logger.info(f"Set checkbox '{index}' to '{should_be_checked}'.")
+        if self._is_checkbox_checked(index) != should_be_checked:
+            self._click_checkbox(index)

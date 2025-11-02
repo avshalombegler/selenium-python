@@ -38,9 +38,6 @@ class ContextMenuPage(BasePage):
     @allure.step("Get context menu alert text")
     def get_context_menu_alert_text(self, timeout=5):
         self.logger.info("Waiting for context menu alert...")
-        if VIDEO_RECORDING:
-            self.logger.info("Video recording active – skipping alert text check")
-            return "VIDEO_RECORDING_ACTIVE"
         try:
             alert = WebDriverWait(self.driver, timeout).until(EC.alert_is_present())
             text = alert.text
@@ -63,6 +60,9 @@ class ContextMenuPage(BasePage):
 
     @allure.step("Right click on hot spot area and get alert text")
     def right_click_on_hot_spot_and_get_alert_text(self, actions: ActionChains) -> str:
+        if VIDEO_RECORDING:
+            self.logger.info("Video recording active – skipping alert text check")
+            return "VIDEO_RECORDING_ACTIVE"
         self._perform_right_click_on_hotspot(actions)
         alert_text = self.get_context_menu_alert_text()
         self.close_context_menu_alert()
