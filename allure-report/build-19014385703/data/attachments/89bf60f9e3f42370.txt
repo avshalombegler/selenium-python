@@ -1,0 +1,21 @@
+2025-11-02 15:35:06,366 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Starting test: test_table_header_per_column[Ipsum-Apeirian].
+2025-11-02 15:35:06,366 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] xdist worker is: gw0
+2025-11-02 15:35:06,366 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] ====== WebDriver manager ======
+2025-11-02 15:35:06,442 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:06,477 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:06,512 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:06,833 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_table_header_per_column[Ipsum-Apeirian]_20251102_153506/test_table_header_per_column[Ipsum-Apeirian]_20251102_153506.mp4
+2025-11-02 15:35:06,834 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:07,108 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-02 15:35:07,108 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:07,196 - WARNING - [test_table_header_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:07,203 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:07,204 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-02 15:35:07,397 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:07,503 - WARNING - [test_table_header_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:07,509 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:07,510 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Get table head text of column 'Ipsum'.
+2025-11-02 15:35:07,546 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Finished test: test_table_header_per_column[Ipsum-Apeirian] (Duration: 0.34s).
+2025-11-02 15:35:07,547 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-11-02 15:35:07,740 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Video created: tests_recordings/gw0/test_table_header_per_column[Ipsum-Apeirian]_20251102_153506/test_table_header_per_column[Ipsum-Apeirian]_20251102_153506.mp4
+2025-11-02 15:35:07,742 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Quitting driver for browser: chrome.

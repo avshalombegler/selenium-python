@@ -1,0 +1,32 @@
+2025-11-02 15:35:44,696 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Starting test: test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum].
+2025-11-02 15:35:44,696 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] xdist worker is: gw0
+2025-11-02 15:35:44,696 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] ====== WebDriver manager ======
+2025-11-02 15:35:44,763 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:44,798 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:44,843 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:45,122 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Started recording: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]_20251102_153545/test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]_20251102_153545.mp4
+2025-11-02 15:35:45,122 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:45,382 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Navigation completed.
+2025-11-02 15:35:45,382 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:45,455 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:45,463 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:45,464 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Navigating to Challenging DOM page.
+2025-11-02 15:35:45,640 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:45,709 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:45,715 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:45,715 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Clicking edit button.
+2025-11-02 15:35:45,860 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:45,860 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Click delete button in row {row}.
+2025-11-02 15:35:46,013 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:46,013 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Clicking edit button.
+2025-11-02 15:35:46,178 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Click delete button in row {row}.
+2025-11-02 15:35:46,192 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:46,339 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:46,339 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Clicking edit button.
+2025-11-02 15:35:46,547 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Click delete button in row {row}.
+2025-11-02 15:35:46,569 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:46,776 - WARNING - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:46,777 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Finished test: test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum] (Duration: 1.31s).
+2025-11-02 15:35:46,778 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Stopping video recording...
+2025-11-02 15:35:47,145 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Video created: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]_20251102_153545/test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]_20251102_153545.mp4
+2025-11-02 15:35:47,148 - INFO - [test_table_edit_and_delete_buttons_per_row[Diceret-Phaedrum]] Quitting driver for browser: chrome.

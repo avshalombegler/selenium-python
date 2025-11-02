@@ -1,0 +1,28 @@
+2025-11-02 15:35:37,353 - INFO - [test_content_changes_after_refresh] Starting test: test_content_changes_after_refresh.
+2025-11-02 15:35:37,355 - INFO - [test_content_changes_after_refresh] xdist worker is: gw1
+2025-11-02 15:35:37,356 - INFO - [test_content_changes_after_refresh] ====== WebDriver manager ======
+2025-11-02 15:35:37,506 - INFO - [test_content_changes_after_refresh] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:37,585 - INFO - [test_content_changes_after_refresh] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:37,674 - INFO - [test_content_changes_after_refresh] Driver [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:38,256 - INFO - [test_content_changes_after_refresh] Started recording: tests_recordings/gw1/test_content_changes_after_refresh_20251102_153538/test_content_changes_after_refresh_20251102_153538.mp4
+2025-11-02 15:35:38,257 - INFO - [test_content_changes_after_refresh] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:38,668 - INFO - [test_content_changes_after_refresh] Navigation completed.
+2025-11-02 15:35:38,668 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:38,776 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:38,787 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:38,789 - INFO - [test_content_changes_after_refresh] Test that content changes after page refresh.
+2025-11-02 15:35:38,789 - INFO - [test_content_changes_after_refresh] Navigating to Dynamic Content page.
+2025-11-02 15:35:38,898 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:39,062 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:39,152 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:39,160 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:39,264 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:39,489 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:39,607 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:39,619 - INFO - [test_content_changes_after_refresh] Validating initial content blocks structure and count.
+2025-11-02 15:35:39,619 - INFO - [test_content_changes_after_refresh] Validating refreshed content blocks structure and count.
+2025-11-02 15:35:39,619 - INFO - [test_content_changes_after_refresh] Comparing content changes after refresh.
+2025-11-02 15:35:39,619 - INFO - [test_content_changes_after_refresh] Finished test: test_content_changes_after_refresh (Duration: 0.83s).
+2025-11-02 15:35:39,620 - INFO - [test_content_changes_after_refresh] Stopping video recording...
+2025-11-02 15:35:39,926 - INFO - [test_content_changes_after_refresh] Video created: tests_recordings/gw1/test_content_changes_after_refresh_20251102_153538/test_content_changes_after_refresh_20251102_153538.mp4
+2025-11-02 15:35:39,928 - INFO - [test_content_changes_after_refresh] Quitting driver for browser: chrome.

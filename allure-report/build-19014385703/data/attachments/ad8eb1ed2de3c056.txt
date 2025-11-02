@@ -1,0 +1,26 @@
+2025-11-02 15:35:30,944 - INFO - [test_drag_and_drop_functionality[Option 2]] Starting test: test_drag_and_drop_functionality[Option 2].
+2025-11-02 15:35:30,945 - INFO - [test_drag_and_drop_functionality[Option 2]] xdist worker is: gw2
+2025-11-02 15:35:30,945 - INFO - [test_drag_and_drop_functionality[Option 2]] ====== WebDriver manager ======
+2025-11-02 15:35:31,046 - INFO - [test_drag_and_drop_functionality[Option 2]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:31,096 - INFO - [test_drag_and_drop_functionality[Option 2]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:31,149 - INFO - [test_drag_and_drop_functionality[Option 2]] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:31,644 - INFO - [test_drag_and_drop_functionality[Option 2]] Started recording: tests_recordings/gw2/test_drag_and_drop_functionality[Option 2]_20251102_153531/test_drag_and_drop_functionality[Option 2]_20251102_153531.mp4
+2025-11-02 15:35:31,645 - INFO - [test_drag_and_drop_functionality[Option 2]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:32,070 - INFO - [test_drag_and_drop_functionality[Option 2]] Navigation completed.
+2025-11-02 15:35:32,070 - INFO - [test_drag_and_drop_functionality[Option 2]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:32,175 - WARNING - [test_drag_and_drop_functionality[Option 2]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,185 - INFO - [test_drag_and_drop_functionality[Option 2]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:32,187 - INFO - [test_drag_and_drop_functionality[Option 2]] Navigating to Dropdown List page.
+2025-11-02 15:35:32,385 - INFO - [test_drag_and_drop_functionality[Option 2]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:32,478 - WARNING - [test_drag_and_drop_functionality[Option 2]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,487 - INFO - [test_drag_and_drop_functionality[Option 2]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:32,487 - INFO - [test_drag_and_drop_functionality[Option 2]] Select 'Option 2' and verify selection.
+2025-11-02 15:35:32,487 - INFO - [test_drag_and_drop_functionality[Option 2]] Selecting option: 'Option 2'
+2025-11-02 15:35:32,596 - WARNING - [test_drag_and_drop_functionality[Option 2]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,662 - INFO - [test_drag_and_drop_functionality[Option 2]] Checking if option 'Option 2' is selected
+2025-11-02 15:35:32,781 - WARNING - [test_drag_and_drop_functionality[Option 2]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,911 - WARNING - [test_drag_and_drop_functionality[Option 2]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,912 - INFO - [test_drag_and_drop_functionality[Option 2]] Finished test: test_drag_and_drop_functionality[Option 2] (Duration: 0.73s).
+2025-11-02 15:35:32,913 - INFO - [test_drag_and_drop_functionality[Option 2]] Stopping video recording...
+2025-11-02 15:35:33,160 - INFO - [test_drag_and_drop_functionality[Option 2]] Video created: tests_recordings/gw2/test_drag_and_drop_functionality[Option 2]_20251102_153531/test_drag_and_drop_functionality[Option 2]_20251102_153531.mp4
+2025-11-02 15:35:33,161 - INFO - [test_drag_and_drop_functionality[Option 2]] Quitting driver for browser: chrome.

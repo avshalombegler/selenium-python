@@ -1,0 +1,22 @@
+2025-11-02 15:35:09,229 - INFO - [test_table_header_per_column[Sit-Definiebas]] Starting test: test_table_header_per_column[Sit-Definiebas].
+2025-11-02 15:35:09,230 - INFO - [test_table_header_per_column[Sit-Definiebas]] xdist worker is: gw0
+2025-11-02 15:35:09,230 - INFO - [test_table_header_per_column[Sit-Definiebas]] ====== WebDriver manager ======
+2025-11-02 15:35:09,314 - INFO - [test_table_header_per_column[Sit-Definiebas]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:09,365 - INFO - [test_table_header_per_column[Sit-Definiebas]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:09,411 - INFO - [test_table_header_per_column[Sit-Definiebas]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:09,826 - INFO - [test_table_header_per_column[Sit-Definiebas]] Started recording: tests_recordings/gw0/test_table_header_per_column[Sit-Definiebas]_20251102_153509/test_table_header_per_column[Sit-Definiebas]_20251102_153509.mp4
+2025-11-02 15:35:09,827 - INFO - [test_table_header_per_column[Sit-Definiebas]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:10,323 - INFO - [test_table_header_per_column[Sit-Definiebas]] Navigation completed.
+2025-11-02 15:35:10,323 - INFO - [test_table_header_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:10,437 - WARNING - [test_table_header_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:10,446 - INFO - [test_table_header_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:10,447 - INFO - [test_table_header_per_column[Sit-Definiebas]] Navigating to Challenging DOM page.
+2025-11-02 15:35:10,660 - INFO - [test_table_header_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:10,810 - WARNING - [test_table_header_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:10,818 - INFO - [test_table_header_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:10,819 - INFO - [test_table_header_per_column[Sit-Definiebas]] Get table head text of column 'Sit'.
+2025-11-02 15:35:10,926 - WARNING - [test_table_header_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:10,949 - INFO - [test_table_header_per_column[Sit-Definiebas]] Finished test: test_table_header_per_column[Sit-Definiebas] (Duration: 0.50s).
+2025-11-02 15:35:10,950 - INFO - [test_table_header_per_column[Sit-Definiebas]] Stopping video recording...
+2025-11-02 15:35:11,241 - INFO - [test_table_header_per_column[Sit-Definiebas]] Video created: tests_recordings/gw0/test_table_header_per_column[Sit-Definiebas]_20251102_153509/test_table_header_per_column[Sit-Definiebas]_20251102_153509.mp4
+2025-11-02 15:35:11,242 - INFO - [test_table_header_per_column[Sit-Definiebas]] Quitting driver for browser: chrome.

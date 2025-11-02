@@ -1,0 +1,24 @@
+2025-11-02 15:35:17,352 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Starting test: test_cells_content_per_column[Lorem-Iuvaret].
+2025-11-02 15:35:17,352 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] xdist worker is: gw0
+2025-11-02 15:35:17,352 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] ====== WebDriver manager ======
+2025-11-02 15:35:17,426 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:17,470 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:17,531 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:17,884 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251102_153517/test_cells_content_per_column[Lorem-Iuvaret]_20251102_153517.mp4
+2025-11-02 15:35:17,884 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:18,166 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigation completed.
+2025-11-02 15:35:18,166 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:18,259 - WARNING - [test_cells_content_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:18,266 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:18,268 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigating to Challenging DOM page.
+2025-11-02 15:35:18,469 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:18,568 - WARNING - [test_cells_content_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:18,576 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:18,576 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Get table cell text 'Iuvaret0' under column 'Lorem'.
+2025-11-02 15:35:18,620 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Get table cell text 'Iuvaret1' under column 'Lorem'.
+2025-11-02 15:35:18,682 - WARNING - [test_cells_content_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:18,695 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Get table cell text 'Iuvaret2' under column 'Lorem'.
+2025-11-02 15:35:18,733 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Finished test: test_cells_content_per_column[Lorem-Iuvaret] (Duration: 0.47s).
+2025-11-02 15:35:18,734 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Stopping video recording...
+2025-11-02 15:35:18,922 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Video created: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251102_153517/test_cells_content_per_column[Lorem-Iuvaret]_20251102_153517.mp4
+2025-11-02 15:35:18,924 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Quitting driver for browser: chrome.

@@ -1,0 +1,32 @@
+2025-11-02 15:35:40,128 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Starting test: test_table_edit_and_delete_buttons_per_row[Sit-Definiebas].
+2025-11-02 15:35:40,128 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] xdist worker is: gw0
+2025-11-02 15:35:40,128 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] ====== WebDriver manager ======
+2025-11-02 15:35:40,199 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:40,240 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:40,284 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:40,567 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Started recording: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]_20251102_153540/test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]_20251102_153540.mp4
+2025-11-02 15:35:40,568 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:40,842 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Navigation completed.
+2025-11-02 15:35:40,843 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:40,906 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:40,913 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:40,914 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Navigating to Challenging DOM page.
+2025-11-02 15:35:41,081 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:41,174 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:41,180 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:41,180 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Clicking edit button.
+2025-11-02 15:35:41,321 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:41,321 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Click delete button in row {row}.
+2025-11-02 15:35:41,470 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Clicking edit button.
+2025-11-02 15:35:41,482 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:41,606 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:41,606 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Click delete button in row {row}.
+2025-11-02 15:35:41,741 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Clicking edit button.
+2025-11-02 15:35:41,751 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:41,879 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Click delete button in row {row}.
+2025-11-02 15:35:41,888 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:42,009 - WARNING - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:42,010 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Finished test: test_table_edit_and_delete_buttons_per_row[Sit-Definiebas] (Duration: 1.10s).
+2025-11-02 15:35:42,011 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Stopping video recording...
+2025-11-02 15:35:42,327 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Video created: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]_20251102_153540/test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]_20251102_153540.mp4
+2025-11-02 15:35:42,329 - INFO - [test_table_edit_and_delete_buttons_per_row[Sit-Definiebas]] Quitting driver for browser: chrome.

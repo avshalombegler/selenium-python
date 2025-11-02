@@ -1,0 +1,35 @@
+2025-11-02 15:35:29,150 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Starting test: test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret].
+2025-11-02 15:35:29,151 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] xdist worker is: gw0
+2025-11-02 15:35:29,151 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] ====== WebDriver manager ======
+2025-11-02 15:35:29,260 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:29,330 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:29,403 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:29,898 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Started recording: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251102_153529/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251102_153529.mp4
+2025-11-02 15:35:29,899 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:30,214 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Navigation completed.
+2025-11-02 15:35:30,214 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:30,285 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:30,295 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:30,297 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Navigating to Challenging DOM page.
+2025-11-02 15:35:30,492 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:30,610 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:30,619 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:30,620 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Clicking edit button.
+2025-11-02 15:35:30,848 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:30,848 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Click delete button in row {row}.
+2025-11-02 15:35:31,070 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:31,079 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Clicking edit button.
+2025-11-02 15:35:31,158 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:31,417 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:31,417 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Click delete button in row {row}.
+2025-11-02 15:35:31,563 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:31,784 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:31,785 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Clicking edit button.
+2025-11-02 15:35:31,956 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,148 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,149 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Click delete button in row {row}.
+2025-11-02 15:35:32,328 - WARNING - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:32,328 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Finished test: test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret] (Duration: 2.03s).
+2025-11-02 15:35:32,330 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Stopping video recording...
+2025-11-02 15:35:32,816 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Video created: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251102_153529/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251102_153529.mp4
+2025-11-02 15:35:32,817 - INFO - [test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]] Quitting driver for browser: chrome.

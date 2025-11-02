@@ -1,0 +1,37 @@
+2025-11-02 15:34:55,204 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-02 15:34:55,205 - INFO - [] Videos directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-02 15:34:55,206 - INFO - [test_add_elements] Starting test: test_add_elements.
+2025-11-02 15:34:55,206 - INFO - [test_add_elements] xdist worker is: gw3
+2025-11-02 15:34:55,206 - INFO - [test_add_elements] ====== WebDriver manager ======
+2025-11-02 15:34:55,312 - INFO - [test_add_elements] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:34:55,386 - INFO - [test_add_elements] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:34:55,436 - INFO - [test_add_elements] There is no [linux64] chromedriver "142.0.7444.59" for browser google-chrome "142.0.7444" in cache
+2025-11-02 15:34:55,437 - INFO - [test_add_elements] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:34:55,594 - INFO - [test_add_elements] WebDriver version 142.0.7444.59 selected
+2025-11-02 15:34:55,602 - INFO - [test_add_elements] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.59/linux64/chromedriver-linux64.zip
+2025-11-02 15:34:55,603 - INFO - [test_add_elements] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.59/linux64/chromedriver-linux64.zip
+2025-11-02 15:34:55,672 - INFO - [test_add_elements] Driver downloading response is 200
+2025-11-02 15:34:55,753 - INFO - [test_add_elements] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:34:55,953 - INFO - [test_add_elements] Driver has been saved in cache [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.59]
+2025-11-02 15:34:58,426 - INFO - [test_add_elements] Started recording: tests_recordings/gw3/test_add_elements_20251102_153458/test_add_elements_20251102_153458.mp4
+2025-11-02 15:34:58,427 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:34:58,882 - INFO - [test_add_elements] Navigation completed.
+2025-11-02 15:34:58,882 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:34:59,002 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:34:59,015 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:34:59,017 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-02 15:34:59,168 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:34:59,359 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-02 15:34:59,463 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:34:59,473 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-02 15:34:59,473 - INFO - [test_add_elements] Add two elements
+2025-11-02 15:34:59,474 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-02 15:34:59,589 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-02 15:34:59,707 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:34:59,810 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'
+2025-11-02 15:34:59,896 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:34:59,896 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-02 15:34:59,897 - INFO - [test_add_elements] Finished test: test_add_elements (Duration: 0.88s).
+2025-11-02 15:34:59,897 - INFO - [test_add_elements] Stopping video recording...
+2025-11-02 15:35:00,233 - INFO - [test_add_elements] Video created: tests_recordings/gw3/test_add_elements_20251102_153458/test_add_elements_20251102_153458.mp4
+2025-11-02 15:35:00,235 - INFO - [test_add_elements] Quitting driver for browser: chrome.

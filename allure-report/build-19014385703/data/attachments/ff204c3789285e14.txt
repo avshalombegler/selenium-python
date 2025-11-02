@@ -1,0 +1,23 @@
+2025-11-02 15:35:00,658 - INFO - [test_each_button_clicks[red]] Starting test: test_each_button_clicks[red].
+2025-11-02 15:35:00,658 - INFO - [test_each_button_clicks[red]] xdist worker is: gw0
+2025-11-02 15:35:00,658 - INFO - [test_each_button_clicks[red]] ====== WebDriver manager ======
+2025-11-02 15:35:00,788 - INFO - [test_each_button_clicks[red]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:00,900 - INFO - [test_each_button_clicks[red]] Get LATEST chromedriver version for google-chrome
+2025-11-02 15:35:01,017 - INFO - [test_each_button_clicks[red]] Driver [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.59/chromedriver-linux64/chromedriver] found in cache
+2025-11-02 15:35:01,736 - INFO - [test_each_button_clicks[red]] Started recording: tests_recordings/gw0/test_each_button_clicks[red]_20251102_153501/test_each_button_clicks[red]_20251102_153501.mp4
+2025-11-02 15:35:01,737 - INFO - [test_each_button_clicks[red]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-02 15:35:02,071 - INFO - [test_each_button_clicks[red]] Navigation completed.
+2025-11-02 15:35:02,071 - INFO - [test_each_button_clicks[red]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-02 15:35:02,172 - WARNING - [test_each_button_clicks[red]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:02,181 - INFO - [test_each_button_clicks[red]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-02 15:35:02,183 - INFO - [test_each_button_clicks[red]] Navigating to Challenging DOM page.
+2025-11-02 15:35:02,447 - INFO - [test_each_button_clicks[red]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-02 15:35:02,534 - WARNING - [test_each_button_clicks[red]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:02,541 - INFO - [test_each_button_clicks[red]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-02 15:35:02,542 - INFO - [test_each_button_clicks[red]] Click red button.
+2025-11-02 15:35:02,724 - INFO - [test_each_button_clicks[red]] Clicked red
+2025-11-02 15:35:02,725 - INFO - [test_each_button_clicks[red]] Finished test: test_each_button_clicks[red] (Duration: 0.54s).
+2025-11-02 15:35:02,726 - INFO - [test_each_button_clicks[red]] Stopping video recording...
+2025-11-02 15:35:02,812 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-02 15:35:03,082 - INFO - [test_each_button_clicks[red]] Video created: tests_recordings/gw0/test_each_button_clicks[red]_20251102_153501/test_each_button_clicks[red]_20251102_153501.mp4
+2025-11-02 15:35:03,084 - INFO - [test_each_button_clicks[red]] Quitting driver for browser: chrome.
