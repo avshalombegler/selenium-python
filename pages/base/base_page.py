@@ -204,7 +204,7 @@ class BasePage:
     def get_base_url(self):
         return self.base_url
 
-    def is_element_selected(self, locator, timeout, retry=2) -> bool:
+    def is_element_selected(self, locator, timeout=None, retry=2) -> bool:
         self.logger.info(f"Check element with locator '{locator}' selected state.")
 
         def action():
