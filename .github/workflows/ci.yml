@@ -116,26 +116,6 @@ jobs:
           allure generate reports/allure-results -o reports/allure-report
           sleep 2
 
-      - name: Deploy Allure Report to GitHub Pages
-        if: github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: reports/allure-report
-          destination_dir: allure-report/build-${{ github.run_id }}
-          keep_files: true
-
-      - name: Clean old Allure Reports
-        if: github.ref == 'refs/heads/main'
-        continue-on-error: true
-        run: |
-          git fetch origin gh-pages:gh-pages || true
-          git checkout gh-pages || git checkout -b gh-pages
-          find allure-report -type d -name "build-*" -mtime +7 -exec rm -rf {} +
-          git add .
-          git commit -m "Clean Allure reports older than 7 days" || echo "No old reports to clean"
-          git push origin gh-pages
-
       - name: Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
@@ -147,7 +127,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report-${{ matrix.browser }}-${{ github.run_id }}
+          name: allure-report-latest
           path: reports/allure-report/
 
       - name: Upload Videos
@@ -163,3 +143,41 @@ jobs:
         with:
           name: test-screenshots-${{ matrix.browser }}-${{ github.run_id }}
           path: tests_screenshots/
+  
+  deploy:
+    needs: test
+    if: github.ref == 'refs/heads/main' && success()
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Download Allure Report
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report-latest
+          path: reports/allure-report
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: reports/allure-report
+          destination_dir: allure-report/build-${{ github.run_id }}
+
+  clean:
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+
+      - name: Clean old reports
+        run: |
+          find . -type d -name "build-*" -mtime +7 -exec rm -rf {} +
+          git add .
+          git commit -m "Clean old Allure builds" || echo "No changes"
+          git push
