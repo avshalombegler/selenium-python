@@ -7,7 +7,7 @@ from pages.base.page_manager import PageManager
 @allure.story("Tests Dynamic Content functionality")
 @pytest.mark.usefixtures("page_manager")
 class TestDynamicContent:
-    """Tests Dynamic Content functionality"""
+    """Tests for Dynamic Content functionality"""
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)

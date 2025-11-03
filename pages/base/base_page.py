@@ -101,6 +101,22 @@ class BasePage:
         elem = self.wait_for_visibility(locator, timeout)
         return self._safe_wait(EC.invisibility_of_element, elem, timeout)
 
+    def wait_for_loader(self, locator, timeout=None) -> bool:
+        """
+        Wait for loading indicator to appear and disappear.
+        Returns True if loader completed normally, False if timeout occurred.
+        """
+        self.logger.info("Waiting for loader to disappear.")
+        try:
+            # Split timeout between appearing and disappearing
+            half_timeout = max(timeout / 2, 1)  # At least 1 second each
+            self.wait_for_visibility(locator, timeout=half_timeout)
+            self.wait_for_invisibility(locator, timeout=half_timeout)
+            return True
+        except TimeoutException as e:
+            self.logger.warning(f"Loader timeout after {timeout}s: {str(e)}")
+            return False
+
     def navigate_to(self, url):
         self.logger.info(f"Navigating to URL: {url}.")
         self.driver.get(url)

@@ -15,14 +15,16 @@ class TestDragAndDrop:
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_drag_and_drop_functionality(self, page_manager: PageManager, logger, actions):
+        logger.info("Tests Drag and Drop functionality.")
         page = page_manager.get_drag_and_drop_page()
 
-        logger.info("Get box elements for drag and drop.")
+        logger.info("Getting box elements for drag and drop.")
         src = page.get_box_element(self.BOX_A.lower())
         dst = page.get_box_element(self.BOX_B.lower())
 
+        logger.info("Performing drag and drop on box element.")
         page.drag_and_drop_box(actions, src, dst)
 
-        logger.info("Verify drag and drop action.")
+        logger.info("Verifying drag and drop action succeeded.")
         assert page.get_box_header(self.BOX_A.lower()) == self.BOX_B
         assert page.get_box_header(self.BOX_B.lower()) == self.BOX_A

@@ -1,6 +1,6 @@
 import allure
 from pages.base.base_page import BasePage
-from utils.locators import DynamicContentPageLocators
+from pages.features.dynamic_content.locators import DynamicContentPageLocators
 
 
 class DynamicContentPage(BasePage):

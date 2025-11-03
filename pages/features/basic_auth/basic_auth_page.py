@@ -2,11 +2,6 @@ import allure
 import requests
 from bs4 import BeautifulSoup
 from pages.base.base_page import BasePage
-from utils.locators import BasicAuthPageLocators
-from selenium.common.exceptions import (
-    TimeoutException,
-    NoSuchElementException,
-)
 
 
 class BasicAuthPage(BasePage):

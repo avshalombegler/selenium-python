@@ -12,9 +12,10 @@ class TestAddRemoveElements:
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_add_elements(self, page_manager: PageManager, logger):
+        logger.info("Tests for add elements.")
         page = page_manager.get_add_remove_elements_page()
 
-        logger.info("Add two elements")
+        logger.info("Add two elements.")
         page.add_elements(2)
         count = page.count_delete_buttons()
         logger.info(f"Found {count} delete buttons.")
@@ -23,6 +24,7 @@ class TestAddRemoveElements:
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_remove_elements(self, page_manager: PageManager, logger):
+        logger.info("Tests for remove elements.")
         page = page_manager.get_add_remove_elements_page()
 
         logger.info("Ensure there are elements to remove")
