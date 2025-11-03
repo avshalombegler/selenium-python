@@ -14,6 +14,7 @@ class TestChallengingDom:
     COLUMNS = ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Diceret"]
     CELL_VALUES = ["Iuvaret", "Apeirian", "Adipisci", "Definiebas", "Consequuntur", "Phaedrum"]
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("button", BUTTONS)
     def test_each_button_clicks(self, page_manager: PageManager, logger, button):
@@ -23,6 +24,7 @@ class TestChallengingDom:
         page.click_page_button(button)
         logger.info(f"Clicked {button}")
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
     def test_table_header_per_column(self, page_manager: PageManager, logger, col, cell):
@@ -31,6 +33,7 @@ class TestChallengingDom:
         header = page.get_table_head_text(col)
         assert header == col, f"Table head value '{col}' not found (got '{header}')"
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
     def test_cells_content_per_column(self, page_manager: PageManager, logger, col, cell):
@@ -41,6 +44,7 @@ class TestChallengingDom:
             val = page.get_table_cell_text(col, expected)
             assert val == expected, f"Cell value '{expected}' under '{col}' not found (got '{val}')"
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
     def test_table_edit_and_delete_buttons_per_row(self, page_manager: PageManager, logger, col, cell):

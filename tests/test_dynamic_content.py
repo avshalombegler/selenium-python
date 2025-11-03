@@ -9,6 +9,7 @@ from pages.base.page_manager import PageManager
 class TestDynamicContent:
     """Tests Dynamic Content functionality"""
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_content_changes_after_refresh(self, page_manager: PageManager, logger):
         logger.info("Test that content changes after page refresh.")

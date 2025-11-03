@@ -33,6 +33,80 @@ root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO
 
 
 @pytest.fixture(scope="function")
+def page_manager(driver, logger):
+    """
+    Initialize PageManager object with driver and logger.
+    """
+    return PageManager(driver, logger)
+
+
+@pytest.fixture(scope="function", autouse=True)
+def ui_test(page_manager, request):
+    """
+    Navigate to base URL only for UI tests.
+    Use: add @pytest.mark.ui to tests.
+    """
+    if request.node.get_closest_marker("ui"):
+        with allure.step(f"Navigate to base URL: {env_config.BASE_URL}"):
+            page_manager.navigate_to_base_url(env_config.BASE_URL)
+    yield
+
+
+@pytest.fixture(scope="function", autouse=True)
+def test_context(request):
+    """
+    Sets current test name at the start of each test for logging purposes.
+    """
+    test_name = request.node.name
+    set_current_test(test_name)
+    root_logger.info(f"Starting test: {test_name}.")
+    yield
+
+
+@pytest.fixture(scope="function", autouse=True)
+def video_recorder(request, driver, logger):
+    """
+    Automatically records video of the test session using Chrome DevTools Protocol.
+    Recording is enabled only if VIDEO_RECORDING is True in config and driver is Chrome.
+    Skips recording for non-Chrome drivers or when disabled.
+    """
+    if not getattr(env_config, "VIDEO_RECORDING", False):
+        yield
+        return
+
+    if not isinstance(driver, webdriver.Chrome):
+        yield
+        return
+
+    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
+    test_name = request.node.name.replace(":", "_").replace("/", "_")
+
+    stop_func, video_path = start_video_recording(driver, test_name, worker_id)
+    logger.info(f"Started recording: {video_path}")
+
+    yield
+
+    logger.info("Stopping video recording...")
+    stop_func()
+
+
+@pytest.fixture(scope="function")
+def actions(driver):
+    """
+    Provides a fresh ActionChains instance for the current WebDriver.
+    Used for performing complex user interactions like drag-and-drop, right-click, etc.
+    """
+    return ActionChains(driver)
+
+
+"""
+
+    Pytest Fixtures - Scope = session
+
+"""
+
+
+@pytest.fixture(scope="session")
 def driver(request):
     """
     Initialize driver object at the start of each test.
@@ -102,71 +176,6 @@ def driver(request):
     finally:
         root_logger.info(f"Quitting driver for browser: {browser}.")
         driver.quit()
-
-
-@pytest.fixture(scope="function")
-def page_manager(driver, logger):
-    """
-    Initialize PageManager object with driver and logger.
-    Navigates to BASE_URL at the start of each test.
-    """
-    pm = PageManager(driver, logger)
-    pm.navigate_to_base_url(env_config.BASE_URL)
-    return pm
-
-
-@pytest.fixture(scope="function", autouse=True)
-def test_context(request):
-    """
-    Sets current test name at the start of each test for logging purposes.
-    """
-    test_name = request.node.name
-    set_current_test(test_name)
-    root_logger.info(f"Starting test: {test_name}.")
-    yield
-
-
-@pytest.fixture(scope="function", autouse=True)
-def video_recorder(request, driver, logger):
-    """
-    Automatically records video of the test session using Chrome DevTools Protocol.
-    Recording is enabled only if VIDEO_RECORDING is True in config and driver is Chrome.
-    Skips recording for non-Chrome drivers or when disabled.
-    """
-    if not getattr(env_config, "VIDEO_RECORDING", False):
-        yield
-        return
-
-    if not isinstance(driver, webdriver.Chrome):
-        yield
-        return
-
-    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
-    test_name = request.node.name.replace(":", "_").replace("/", "_")
-
-    stop_func, video_path = start_video_recording(driver, test_name, worker_id)
-    logger.info(f"Started recording: {video_path}")
-
-    yield
-
-    logger.info("Stopping video recording...")
-    stop_func()
-
-
-@pytest.fixture(scope="function")
-def actions(driver):
-    """
-    Provides a fresh ActionChains instance for the current WebDriver.
-    Used for performing complex user interactions like drag-and-drop, right-click, etc.
-    """
-    return ActionChains(driver)
-
-
-"""
-
-    Pytest Fixtures - Scope = session
-
-"""
 
 
 @pytest.fixture(scope="session")
