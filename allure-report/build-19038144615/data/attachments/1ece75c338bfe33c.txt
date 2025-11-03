@@ -1,0 +1,16 @@
+2025-11-03 14:36:03,307 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Starting test: test_table_header_per_column[Lorem-Iuvaret].
+2025-11-03 14:36:03,308 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-03 14:36:03,422 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Navigation completed.
+2025-11-03 14:36:03,423 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-03 14:36:03,461 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-03 14:36:03,463 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Started recording: tests_recordings/gw0/test_table_header_per_column[Lorem-Iuvaret]_20251103_143603/test_table_header_per_column[Lorem-Iuvaret]_20251103_143603.mp4
+2025-11-03 14:36:03,465 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Verify table head text per column.
+2025-11-03 14:36:03,465 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Navigating to Challenging DOM page.
+2025-11-03 14:36:03,545 - WARNING - [test_table_header_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:03,779 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-03 14:36:03,863 - WARNING - [test_table_header_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:03,869 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-03 14:36:03,869 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Getting table head text of column 'Lorem'.
+2025-11-03 14:36:03,899 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Finished test: test_table_header_per_column[Lorem-Iuvaret] (Duration: 0.43s).
+2025-11-03 14:36:03,901 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Stopping video recording...
+2025-11-03 14:36:04,088 - INFO - [test_table_header_per_column[Lorem-Iuvaret]] Video created: tests_recordings/gw0/test_table_header_per_column[Lorem-Iuvaret]_20251103_143603/test_table_header_per_column[Lorem-Iuvaret]_20251103_143603.mp4

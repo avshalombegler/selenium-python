@@ -1,0 +1,16 @@
+2025-11-03 14:36:04,093 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Starting test: test_table_header_per_column[Ipsum-Apeirian].
+2025-11-03 14:36:04,094 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-03 14:36:04,219 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-03 14:36:04,219 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-03 14:36:04,236 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-03 14:36:04,237 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_table_header_per_column[Ipsum-Apeirian]_20251103_143604/test_table_header_per_column[Ipsum-Apeirian]_20251103_143604.mp4
+2025-11-03 14:36:04,240 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Verify table head text per column.
+2025-11-03 14:36:04,240 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-03 14:36:04,313 - WARNING - [test_table_header_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:04,517 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-03 14:36:04,600 - WARNING - [test_table_header_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:04,605 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-03 14:36:04,605 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Getting table head text of column 'Ipsum'.
+2025-11-03 14:36:04,628 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Finished test: test_table_header_per_column[Ipsum-Apeirian] (Duration: 0.39s).
+2025-11-03 14:36:04,629 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-11-03 14:36:04,806 - INFO - [test_table_header_per_column[Ipsum-Apeirian]] Video created: tests_recordings/gw0/test_table_header_per_column[Ipsum-Apeirian]_20251103_143604/test_table_header_per_column[Ipsum-Apeirian]_20251103_143604.mp4

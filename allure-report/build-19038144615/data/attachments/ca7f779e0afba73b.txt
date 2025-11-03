@@ -1,0 +1,24 @@
+INFO     root:conftest.py:62 Starting test: test_example_2.
+INFO     root:base_page.py:121 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:123 Navigation completed.
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:conftest.py:85 Started recording: tests_recordings/gw1/test_example_2_20251103_143637/test_example_2_20251103_143637.mp4
+INFO     root:test_dynamic_loading.py:27 Tests Dynamic Loading - Example 2.
+INFO     root:main_page.py:114 Navigating to Dynamic Loading page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:dynamic_loading_page.py:24 Navigating to Example 2: Element rendered after the fact page.
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', '.example h4')'.
+INFO     root:test_dynamic_loading.py:30 Clicking start button.
+INFO     root:base_page.py:109 Waiting for loader to disappear.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dynamic_loading.py:33 Verifying success message.
+INFO     root:conftest.py:89 Stopping video recording...
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw1/test_example_2_20251103_143637/test_example_2_20251103_143637.mp4
+INFO     root:conftest.py:177 Quitting driver for browser: chrome.

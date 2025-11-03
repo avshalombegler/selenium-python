@@ -1,0 +1,71 @@
+INFO     root:conftest.py:62 Starting test: test_checkbox_remove_and_add.
+INFO     root:base_page.py:121 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:123 Navigation completed.
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:conftest.py:85 Started recording: tests_recordings/gw1/test_checkbox_remove_and_add_20251103_143603/test_checkbox_remove_and_add_20251103_143603.mp4
+INFO     root:test_dynamic_controls.py:16 Test Remove/add checkbox area.
+INFO     root:main_page.py:106 Navigating to Dynamic Controls page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', '.example h4')'.
+INFO     root:test_dynamic_controls.py:19 Checking if checkbox is present.
+INFO     root:test_dynamic_controls.py:22 Clicking remove button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:109 Waiting for loader to disappear.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dynamic_controls.py:25 Checking if checkbox absent.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+ERROR    root:base_page.py:32 Timeout after 10s for locator ('css selector', "input[type='checkbox']"): Message: 
+Stacktrace:
+#0 0x55a90a8aaaea <unknown>
+#1 0x55a90a2f6cdb <unknown>
+#2 0x55a90a3496c4 <unknown>
+#3 0x55a90a349901 <unknown>
+#4 0x55a90a3988b4 <unknown>
+#5 0x55a90a395c87 <unknown>
+#6 0x55a90a33baca <unknown>
+#7 0x55a90a33c7d1 <unknown>
+#8 0x55a90a871ab9 <unknown>
+#9 0x55a90a874a8c <unknown>
+#10 0x55a90a85ad49 <unknown>
+#11 0x55a90a875685 <unknown>
+#12 0x55a90a8426c3 <unknown>
+#13 0x55a90a8977d8 <unknown>
+#14 0x55a90a8979b3 <unknown>
+#15 0x55a90a8a9a83 <unknown>
+#16 0x7f524069caa4 <unknown>
+#17 0x7f5240729c6c <unknown>
+
+INFO     root:test_dynamic_controls.py:28 Verifying remove message text.
+INFO     root:test_dynamic_controls.py:31 Clicking add button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:109 Waiting for loader to disappear.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dynamic_controls.py:34 Checking if checkbox is present.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dynamic_controls.py:37 Verifying add message text.
+INFO     root:conftest.py:89 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw1/test_checkbox_remove_and_add_20251103_143603/test_checkbox_remove_and_add_20251103_143603.mp4

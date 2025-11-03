@@ -1,0 +1,26 @@
+INFO     root:conftest.py:62 Starting test: test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret].
+INFO     root:base_page.py:121 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:123 Navigation completed.
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:conftest.py:85 Started recording: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251103_143614/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251103_143614.mp4
+INFO     root:test_challenging_dom.py:56 Verify edit and delete buttons per row are clickable.
+INFO     root:main_page.py:43 Navigating to Challenging DOM page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:60 Clicking edit button in row {i}.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:67 Click delete button in row {i}.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:60 Clicking edit button in row {i}.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:67 Click delete button in row {i}.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:60 Clicking edit button in row {i}.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:67 Click delete button in row {i}.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:89 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251103_143614/test_table_edit_and_delete_buttons_per_row[Lorem-Iuvaret]_20251103_143614.mp4

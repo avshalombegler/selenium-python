@@ -1,0 +1,43 @@
+2025-11-03 14:36:00,617 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Starting test: test_digest_auth_login_scenarios[wrong-admin].
+2025-11-03 14:36:00,618 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251103_143600/test_digest_auth_login_scenarios[wrong-admin]_20251103_143600.mp4
+2025-11-03 14:36:00,620 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Tests for Digest Authentication scenarios.
+2025-11-03 14:36:00,621 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to Digest Authentication page.
+2025-11-03 14:36:00,621 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to URL: https://wrong:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-03 14:36:00,840 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigation completed.
+2025-11-03 14:36:00,840 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Check if login succeeded.
+2025-11-03 14:36:00,922 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:01,973 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:03,032 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:04,074 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:04,596 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:05,155 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:07,188 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:09,241 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:10,286 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:10,888 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:10,889 - ERROR - [test_digest_auth_login_scenarios[wrong-admin]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x55e963bc4aea <unknown>
+#1 0x55e963610cdb <unknown>
+#2 0x55e9636636c4 <unknown>
+#3 0x55e963663901 <unknown>
+#4 0x55e9636b28b4 <unknown>
+#5 0x55e9636afc87 <unknown>
+#6 0x55e963655aca <unknown>
+#7 0x55e9636567d1 <unknown>
+#8 0x55e963b8bab9 <unknown>
+#9 0x55e963b8ea8c <unknown>
+#10 0x55e963b74d49 <unknown>
+#11 0x55e963b8f685 <unknown>
+#12 0x55e963b5c6c3 <unknown>
+#13 0x55e963bb17d8 <unknown>
+#14 0x55e963bb19b3 <unknown>
+#15 0x55e963bc3a83 <unknown>
+#16 0x7ff93e89caa4 <unknown>
+#17 0x7ff93e929c6c <unknown>
+
+2025-11-03 14:36:10,900 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Page source: <html><head></head><body></body></html>
+2025-11-03 14:36:10,901 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Finished test: test_digest_auth_login_scenarios[wrong-admin] (Duration: 10.28s).
+2025-11-03 14:36:10,903 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording...
+2025-11-03 14:36:10,960 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:12,400 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251103_143600/test_digest_auth_login_scenarios[wrong-admin]_20251103_143600.mp4

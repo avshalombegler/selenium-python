@@ -1,0 +1,17 @@
+2025-11-03 14:36:02,221 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green].
+2025-11-03 14:36:02,222 - INFO - [test_each_button_clicks[green]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-03 14:36:02,331 - INFO - [test_each_button_clicks[green]] Navigation completed.
+2025-11-03 14:36:02,331 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-03 14:36:02,345 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-03 14:36:02,347 - INFO - [test_each_button_clicks[green]] Started recording: tests_recordings/gw0/test_each_button_clicks[green]_20251103_143602/test_each_button_clicks[green]_20251103_143602.mp4
+2025-11-03 14:36:02,348 - INFO - [test_each_button_clicks[green]] Verify each button in page is clickable.
+2025-11-03 14:36:02,349 - INFO - [test_each_button_clicks[green]] Navigating to Challenging DOM page.
+2025-11-03 14:36:02,435 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:02,632 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-03 14:36:02,736 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:02,744 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-03 14:36:02,744 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-11-03 14:36:02,974 - INFO - [test_each_button_clicks[green]] Finished test: test_each_button_clicks[green] (Duration: 0.63s).
+2025-11-03 14:36:02,976 - INFO - [test_each_button_clicks[green]] Stopping video recording...
+2025-11-03 14:36:03,064 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 14:36:03,301 - INFO - [test_each_button_clicks[green]] Video created: tests_recordings/gw0/test_each_button_clicks[green]_20251103_143602/test_each_button_clicks[green]_20251103_143602.mp4
