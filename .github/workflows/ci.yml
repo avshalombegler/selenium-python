@@ -112,7 +112,9 @@ jobs:
 
       - name: Generate Allure Report
         if: always()
-        run: allure generate reports/allure-results -o reports/allure-report --clean
+        run: |
+          allure generate reports/allure-results -o reports/allure-report
+          sleep 2
 
       - name: Deploy Allure Report to GitHub Pages
         if: github.ref == 'refs/heads/main'
@@ -127,11 +129,11 @@ jobs:
         if: github.ref == 'refs/heads/main'
         continue-on-error: true
         run: |
-          git fetch origin gh-pages:gh-pages || echo "No existing gh-pages branch"
+          git fetch origin gh-pages:gh-pages || true
           git checkout gh-pages || git checkout -b gh-pages
-          find . -type d -name "build-*" -mtime +7 -exec rm -rf {} +
+          find allure-report -type d -name "build-*" -mtime +7 -exec rm -rf {} +
           git add .
-          git commit -m "Clean old Allure builds" || echo "Nothing to clean"
+          git commit -m "Clean Allure reports older than 7 days" || echo "No old reports to clean"
           git push origin gh-pages
 
       - name: Upload Allure Results
