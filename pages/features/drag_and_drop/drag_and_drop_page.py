@@ -1,7 +1,7 @@
 import allure
 import time
 from pages.base.base_page import BasePage
-from utils.locators import DragAndDropPageLocators
+from pages.features.drag_and_drop.locators import DragAndDropPageLocators
 
 
 class DragAndDropPage(BasePage):
@@ -13,13 +13,11 @@ class DragAndDropPage(BasePage):
 
     @allure.step("Get box element")
     def get_box_element(self, box: str):
-        self.logger.info("Get box element.")
         locator = DragAndDropPageLocators.BOX[1].format(box=box)
         return self.wait_for_visibility((DragAndDropPageLocators.BOX[0], locator))
 
     @allure.step("Perform drag and drop on box")
     def drag_and_drop_box(self, actions, source, target):
-        self.logger.info("Perform drag and drop on box.")
         try:
             # Try ActionChains first
             actions.drag_and_drop(source, target).perform()
@@ -51,6 +49,5 @@ class DragAndDropPage(BasePage):
 
     @allure.step("Get box header")
     def get_box_header(self, box: str):
-        self.logger.info("Get box header.")
         locator = DragAndDropPageLocators.BOX_HEADER[1].format(box=box)
         return self.get_dynamic_element_text((DragAndDropPageLocators.BOX_HEADER[0], locator))

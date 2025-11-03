@@ -1,6 +1,6 @@
 import allure
-from pages.common.main_page import MainPage
-from utils.locators import MainPageLocators
+from pages.common.main_page.main_page import MainPage
+from pages.common.main_page.locators import MainPageLocators
 from utils.logging_helper import get_logger
 
 
@@ -56,3 +56,6 @@ class PageManager:
 
     def get_dynamic_controls_page(self):
         return self.main_page.click_dynamic_controls_link()
+
+    def get_dynamic_loading_page(self):
+        return self.main_page.click_dynamic_loading_link()

@@ -1,6 +1,6 @@
 import allure
 from pages.base.base_page import BasePage
-from utils.locators import ChallengingDomPageLocators
+from pages.features.challenging_dom.locators import ChallengingDomPageLocators
 
 
 class ChallengingDomPage(BasePage):
@@ -11,13 +11,12 @@ class ChallengingDomPage(BasePage):
         self.wait_for_page_to_load(ChallengingDomPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Click {button_color} button")
-    def click_page_button(self, button_color: str):
+    def click_colored_button(self, button_color: str):
         """
         Click one of the page buttons. Case-insensitive.
 
         Returns self for fluent usage.
         """
-        self.logger.info(f"Click {button_color} button.")
         mapping = {
             "blue": ChallengingDomPageLocators.BLUE_BTN,
             "red": ChallengingDomPageLocators.RED_BTN,
@@ -36,7 +35,6 @@ class ChallengingDomPage(BasePage):
         Return header text for the requested column name (exact match) or None.
         This searches the thead th elements instead of relying purely on dynamic XPATHs.
         """
-        self.logger.info(f"Get table head text of column '{col}'.")
         # Locate header elements directly for stability
         headers = self.get_all_elements(ChallengingDomPageLocators.TABLE_HEADERS_TEXT)
         if not headers:
@@ -50,7 +48,6 @@ class ChallengingDomPage(BasePage):
 
     @allure.step("Get table cell text '{cell}' under column '{col}'")
     def get_table_cell_text(self, col: str, cell: str):
-        self.logger.info(f"Get table cell text '{cell}' under column '{col}'.")
         headers = self.get_all_elements(ChallengingDomPageLocators.TABLE_HEADERS_TEXT)
         if not headers:
             # fallback to XPath approach
@@ -70,12 +67,10 @@ class ChallengingDomPage(BasePage):
 
     @allure.step("Click edit button in row {row}")
     def click_edit_button(self, row):
-        self.logger.info("Clicking edit button.")
         xpath = ChallengingDomPageLocators.EDIT_BTN[1].format(row_num=row)
         self.click_element((ChallengingDomPageLocators.EDIT_BTN[0], xpath))
 
     @allure.step("Click delete button in row {row}")
     def click_delete_button(self, row):
-        self.logger.info("Click delete button in row {row}.")
         xpath = ChallengingDomPageLocators.DEL_BTN[1].format(row_num=row)
         self.click_element((ChallengingDomPageLocators.DEL_BTN[0], xpath))

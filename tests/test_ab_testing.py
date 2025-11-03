@@ -12,6 +12,7 @@ class TestABTesting:
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_ab_testing_content(self, page_manager: PageManager, logger):
+        logger.info("Tests for verifying title and paragraph content of page")
         page = page_manager.get_ab_testing_page()
 
         title = page.get_title_text()

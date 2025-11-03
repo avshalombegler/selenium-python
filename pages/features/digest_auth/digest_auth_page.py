@@ -1,6 +1,6 @@
 import allure
 from pages.base.base_page import BasePage
-from utils.locators import DigestAuthPageLocators
+from pages.features.digest_auth.locators import DigestAuthPageLocators
 from selenium.common.exceptions import (
     TimeoutException,
 )
@@ -11,19 +11,6 @@ class DigestAuthPage(BasePage):
 
     def __init__(self, driver, logger=None):
         super().__init__(driver, logger)
-
-    @allure.step("Initialize URL based on username and password")
-    def init_url(self, username, password):
-        self.logger.info("Initialize URL based on username and password.")
-        if username == "" and password == "":
-            return self.base_url + "digest_auth"
-        else:
-            return f"http://{username}:{password}@the-internet.herokuapp.com/digest_auth"
-
-    @allure.step("Navigate to URL: {url}")
-    def navigate_using_url(self, url):
-        self.logger.info("Navigate to URL: {url}.")
-        self.navigate_to(url)
 
     @allure.step("Check if login succeeded")
     def is_login_successful(self):

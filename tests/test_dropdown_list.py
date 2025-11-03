@@ -15,7 +15,11 @@ class TestDragAndDrop:
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("option", OPTIONS)
     def test_drag_and_drop_functionality(self, page_manager: PageManager, logger, option):
+        logger.info("Tests Dropdown List functionality.")
         page = page_manager.get_dropdown_list_page()
-        logger.info(f"Select '{option}' and verify selection.")
+
+        logger.info(f"Selecting option '{option}' from dropdown.")
         page.select_dropdown_option(option)
+
+        logger.info(f"Verifying option '{option}' selected.")
         assert page.get_is_option_selected(option), f"Expected '{option}' to be selected, but it's not"

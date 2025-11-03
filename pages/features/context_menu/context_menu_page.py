@@ -1,7 +1,7 @@
 import allure
 from dataclasses import dataclass
 from pages.base.base_page import BasePage
-from utils.locators import ContextMenuPageLocators
+from pages.features.context_menu.locators import ContextMenuPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
@@ -36,7 +36,7 @@ class ContextMenuPage(BasePage):
         self.perform_right_click(ContextMenuPageLocators.HOT_SPOT_BOX, actions)
 
     @allure.step("Get context menu alert text")
-    def get_context_menu_alert_text(self, timeout=5):
+    def _get_context_menu_alert_text(self, timeout=5):
         self.logger.info("Waiting for context menu alert...")
         try:
             alert = WebDriverWait(self.driver, timeout).until(EC.alert_is_present())
@@ -48,7 +48,7 @@ class ContextMenuPage(BasePage):
             raise NoAlertPresentException("Alert not present after right-click")
 
     @allure.step("Close context menu alert")
-    def close_context_menu_alert(self):
+    def _close_context_menu_alert(self):
         self.logger.info("Close context menu alert.")
         alert = WebDriverWait(self.driver, 5).until(EC.alert_is_present())
         alert.accept()
@@ -64,6 +64,6 @@ class ContextMenuPage(BasePage):
             self.logger.info("Video recording active – skipping alert text check")
             return "VIDEO_RECORDING_ACTIVE"
         self._perform_right_click_on_hotspot(actions)
-        alert_text = self.get_context_menu_alert_text()
-        self.close_context_menu_alert()
+        alert_text = self._get_context_menu_alert_text()
+        self._close_context_menu_alert()
         return alert_text

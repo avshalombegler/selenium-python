@@ -1,0 +1,20 @@
+import allure
+from pages.base.base_page import BasePage
+from pages.features.dynamic_loading.locators import Example2PageLocators
+
+
+class Example2Page(BasePage):
+    """Page object for the Dynamic Content page containing methods to interact with and validate page functionality"""
+
+    def __init__(self, driver, logger=None):
+        super().__init__(driver, logger)
+        self.wait_for_page_to_load(Example2PageLocators.PAGE_LOADED_INDICATOR)
+
+    @allure.step("Click start button")
+    def click_start_button(self, timeout: int = 10):
+        self.click_element(Example2PageLocators.START_BTN)
+        self.wait_for_loader(Example2PageLocators.WAIT_LOADER, timeout=timeout)
+
+    @allure.step("Get success message")
+    def get_success_message(self):
+        return self.get_dynamic_element_text(Example2PageLocators.SUCCESS_MSG)
