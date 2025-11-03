@@ -9,6 +9,7 @@ from pages.base.page_manager import PageManager
 class TestAddRemoveElements:
     """Tests for add/remove elements page functionality"""
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_add_elements(self, page_manager: PageManager, logger):
         page = page_manager.get_add_remove_elements_page()
@@ -19,6 +20,7 @@ class TestAddRemoveElements:
         logger.info(f"Found {count} delete buttons.")
         assert count == 2, f"Expected 2 delete buttons, got {count}"
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_remove_elements(self, page_manager: PageManager, logger):
         page = page_manager.get_add_remove_elements_page()

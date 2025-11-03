@@ -110,9 +110,11 @@ jobs:
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
             pytest tests/ -v -n auto --dist=loadfile --alluredir=reports/allure-results
 
-      - name: Generate Allure report
+      - name: Generate Allure Report
         if: always()
-        run: allure generate reports/allure-results -o reports/allure-report --clean
+        run: |
+          allure generate reports/allure-results -o reports/allure-report
+          sleep 2
 
       - name: Deploy Allure Report to GitHub Pages
         if: github.ref == 'refs/heads/main'
@@ -122,34 +124,16 @@ jobs:
           publish_dir: reports/allure-report
           destination_dir: allure-report/build-${{ github.run_id }}
           keep_files: true
-          exclude_assets: |
-            **/__pycache__/**
-            **/*.pyc
-            .env
-            config/**
-            pages/**
-            tests/**
-            utils/**
-            reports/**
-            tests_recordings/**
-            tests_screenshots/**
-            test_logs.log
-        # Deploys only allure-report directory to gh-pages, excluding unnecessary files
 
       - name: Clean old Allure Reports
         if: github.ref == 'refs/heads/main'
+        continue-on-error: true
         run: |
-          git fetch origin gh-pages:gh-pages || echo "No existing gh-pages branch"
+          git fetch origin gh-pages:gh-pages || true
           git checkout gh-pages || git checkout -b gh-pages
-          find . -type d -name "__pycache__" -exec rm -rf {} +
-          find . -name "*.pyc" -exec rm -f {} +
-          rm -f .env
-          rm -rf config pages tests utils tests_recordings tests_screenshots reports
-          rm -f *.lock test_logs.log
+          find allure-report -type d -name "build-*" -mtime +7 -exec rm -rf {} +
           git add .
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m "Clean old Allure reports and remove unnecessary files" || echo "No changes to commit"
+          git commit -m "Clean Allure reports older than 7 days" || echo "No old reports to clean"
           git push origin gh-pages
 
       - name: Upload Allure Results

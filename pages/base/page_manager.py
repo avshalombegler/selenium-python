@@ -12,13 +12,10 @@ class PageManager:
         self.logger = logger if logger is not None else get_logger(__name__)
         self.main_page = MainPage(driver, self.logger)
 
-    @allure.step("Navigate to base url")
+    @allure.step("Navigate to base URL: {url}")
     def navigate_to_base_url(self, url):
         self.main_page.navigate_to(url)
         self.main_page.wait_for_page_to_load(MainPageLocators.PAGE_LOADED_INDICATOR)
-        return self.main_page
-
-    def get_main_page(self):
         return self.main_page
 
     def get_ab_testing_page(self):

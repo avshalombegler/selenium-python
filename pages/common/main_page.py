@@ -10,7 +10,7 @@ class MainPage(BasePage):
 
     @allure.step("Navigate to {page_name} page")
     def click_ab_testing_link(self, page_name="A/B Testing"):
-        self.logger.info(f"Navigating to {page_name} page")
+        self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.AB_TESTING_LINK)
         from pages.features.ab_testing_page import ABTestingPage
 

@@ -7,6 +7,8 @@ from pages.base.page_manager import PageManager
 @allure.story("Verify Checkboxes interactions")
 @pytest.mark.usefixtures("page_manager")
 class TestCheckboxes:
+
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_checkboxes_functionality(self, page_manager: PageManager, logger):
         """Verify checkboxes functionality"""

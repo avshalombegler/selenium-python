@@ -12,6 +12,7 @@ class TestDragAndDrop:
     BOX_A = "A"
     BOX_B = "B"
 
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_drag_and_drop_functionality(self, page_manager: PageManager, logger, actions):
         page = page_manager.get_drag_and_drop_page()

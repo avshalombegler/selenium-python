@@ -26,7 +26,7 @@ class BasePage:
         timeout = timeout or self.short_wait
         wait = WebDriverWait(self.driver, timeout)
         try:
-            self.logger.debug(f"Waiting for {ec_method.__name__} on locator {locator} with timeout {timeout}s")
+            self.logger.debug(f"Waiting for {ec_method.__name__} on locator {locator} with timeout {timeout}s.")
             return wait.until(ec_method(locator))
         except TimeoutException as e:
             self.logger.error(f"Timeout after {timeout}s for locator {locator}: {str(e)}")
@@ -113,7 +113,7 @@ class BasePage:
             elem = self.wait_for_visibility(locator)
             self._safe_wait(EC.element_to_be_clickable, locator)
             elem.click()
-            self.logger.debug(f"Clicked on element with locator '{locator}'")
+            self.logger.debug(f"Clicked on element with locator '{locator}'.")
 
         return self._retry(action, locator=locator, retry_count=retry)
 
@@ -136,10 +136,10 @@ class BasePage:
         timeout = timeout or self.long_wait
 
         def action():
-            self.logger.debug(f"Waiting for '{locator}' visibility")
+            self.logger.debug(f"Waiting for '{locator}' visibility.")
             elem = self.wait_for_visibility(locator, timeout)
             text = elem.text
-            self.logger.debug(f"Retrieved text: {text}")
+            self.logger.debug(f"Retrieved text: '{text}'.")
             return text
 
         # Only retry on stale element; other exceptions should propagate immediately
@@ -152,7 +152,7 @@ class BasePage:
         )
 
     def get_number_of_elements(self, locator) -> int:
-        self.logger.info(f"Counting elements with locator: '{locator}'")
+        self.logger.info(f"Counting elements with locator: '{locator}'.")
         try:
             elements = WebDriverWait(self.driver, self.short_wait).until(
                 EC.presence_of_all_elements_located(locator),
@@ -232,7 +232,7 @@ class BasePage:
         def action():
             elem = self.wait_for_visibility(locator)
             actions.context_click(elem).perform()
-            self.logger.debug(f"Performed right-click on element '{elem}'")
+            self.logger.debug(f"Performed right-click on element '{elem}'.")
 
         return self._retry(action, locator=locator, retry_count=retry)
 

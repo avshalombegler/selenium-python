@@ -10,19 +10,23 @@ class TestBasicAuth:
     """Tests basic autorization login scenatios"""
 
     @pytest.mark.parametrize(
-        "username, password, expected_message",
+        "username, password, expected_status_code, expected_message",
         [
-            ("admin", "admin", "Congratulations! You must have the proper credentials."),
-            ("wrong", "wrong", "Not authorized\n"),
-            ("", "", "Not authorized\n"),
+            ("admin", "admin", 200, "Congratulations! You must have the proper credentials."),
+            ("wrong", "wrong", 401, "Not authorized\n"),
+            ("", "", 401, "Not authorized\n"),
         ],
     )
     @allure.severity(allure.severity_level.NORMAL)
-    def test_basic_auth(self, page_manager: PageManager, logger, username, password, expected_message):
+    def test_basic_auth(self, page_manager: PageManager, logger, username, password, expected_status_code, expected_message):
         page = page_manager.get_basic_auth_page()
 
+        logger.info("Initialize URL based on username and password.")
         url = page.init_url(username, password)
-        page.navigate_using_url(url)
 
-        message = page.get_auth_message()
-        assert message == expected_message, f"Expected '{expected_message}', but got '{message}'"
+        logger.info("Get status code and authorization message.")
+        status_code, message = page.get_status_code_and_auth_message(url)
+        
+        logger.info("Validate status code and authorization message.")
+        assert expected_status_code == status_code
+        assert expected_message in message
