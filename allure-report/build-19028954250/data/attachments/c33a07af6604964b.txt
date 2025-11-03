@@ -1,0 +1,65 @@
+INFO     root:conftest.py:62 Starting test: test_checkbox_remove_and_add.
+INFO     root:base_page.py:105 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:107 Navigation completed.
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:conftest.py:85 Started recording: tests_recordings/gw1/test_checkbox_remove_and_add_20251103_085748/test_checkbox_remove_and_add_20251103_085748.mp4
+INFO     root:main_page.py:107 Navigating to Dynamic Controls page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:82 Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:87 Page loaded successfully with indicator '('css selector', '.example h4')'.
+INFO     root:test_dynamic_controls.py:18 Test Remove/add checkbox area.
+INFO     root:dynamic_controls_page.py:47 Check if checkbox is present or absent.
+INFO     root:dynamic_controls_page.py:33 Click remove button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:dynamic_controls_page.py:20 Waiting for loader to disappear.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:dynamic_controls_page.py:47 Check if checkbox is present or absent.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+ERROR    root:base_page.py:32 Timeout after 10s for locator ('css selector', "input[type='checkbox']"): Message: 
+Stacktrace:
+#0 0x55915e023aea <unknown>
+#1 0x55915da6fcdb <unknown>
+#2 0x55915dac26c4 <unknown>
+#3 0x55915dac2901 <unknown>
+#4 0x55915db118b4 <unknown>
+#5 0x55915db0ec87 <unknown>
+#6 0x55915dab4aca <unknown>
+#7 0x55915dab57d1 <unknown>
+#8 0x55915dfeaab9 <unknown>
+#9 0x55915dfeda8c <unknown>
+#10 0x55915dfd3d49 <unknown>
+#11 0x55915dfee685 <unknown>
+#12 0x55915dfbb6c3 <unknown>
+#13 0x55915e0107d8 <unknown>
+#14 0x55915e0109b3 <unknown>
+#15 0x55915e022a83 <unknown>
+#16 0x7f3f0849caa4 <unknown>
+#17 0x7f3f08529c6c <unknown>
+
+INFO     root:dynamic_controls_page.py:75 Get Remove/add message text.
+INFO     root:dynamic_controls_page.py:40 Click add button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:dynamic_controls_page.py:20 Waiting for loader to disappear.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:dynamic_controls_page.py:47 Check if checkbox is present or absent.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:dynamic_controls_page.py:75 Get Remove/add message text.
+INFO     root:conftest.py:89 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:95 Video created: tests_recordings/gw1/test_checkbox_remove_and_add_20251103_085748/test_checkbox_remove_and_add_20251103_085748.mp4

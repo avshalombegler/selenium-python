@@ -1,0 +1,19 @@
+2025-11-03 08:57:55,011 - INFO - [test_valid_images_count] Starting test: test_valid_images_count.
+2025-11-03 08:57:55,011 - INFO - [test_valid_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-03 08:57:55,069 - INFO - [test_valid_images_count] Navigation completed.
+2025-11-03 08:57:55,070 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-03 08:57:55,089 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-03 08:57:55,091 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw3/test_valid_images_count_20251103_085755/test_valid_images_count_20251103_085755.mp4
+2025-11-03 08:57:55,094 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-03 08:57:55,175 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 08:57:55,336 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-03 08:57:55,425 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 08:57:55,432 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-03 08:57:55,433 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-03 08:57:55,447 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-03 08:57:55,458 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-03 08:57:55,466 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-03 08:57:55,475 - INFO - [test_valid_images_count] Found 1 valid images
+2025-11-03 08:57:55,475 - INFO - [test_valid_images_count] Finished test: test_valid_images_count (Duration: 0.38s).
+2025-11-03 08:57:55,476 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-03 08:57:55,624 - INFO - [test_valid_images_count] Video created: tests_recordings/gw3/test_valid_images_count_20251103_085755/test_valid_images_count_20251103_085755.mp4

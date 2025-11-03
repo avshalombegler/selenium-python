@@ -1,0 +1,19 @@
+2025-11-03 08:57:54,440 - INFO - [test_broken_images_count] Starting test: test_broken_images_count.
+2025-11-03 08:57:54,442 - INFO - [test_broken_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-03 08:57:54,492 - INFO - [test_broken_images_count] Navigation completed.
+2025-11-03 08:57:54,492 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-03 08:57:54,512 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-03 08:57:54,514 - INFO - [test_broken_images_count] Started recording: tests_recordings/gw3/test_broken_images_count_20251103_085754/test_broken_images_count_20251103_085754.mp4
+2025-11-03 08:57:54,515 - INFO - [test_broken_images_count] Navigating to Broken Images page.
+2025-11-03 08:57:54,586 - WARNING - [test_broken_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 08:57:54,687 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-03 08:57:54,779 - WARNING - [test_broken_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-03 08:57:54,785 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-03 08:57:54,786 - INFO - [test_broken_images_count] Get all image elements.
+2025-11-03 08:57:54,798 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-03 08:57:54,811 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-03 08:57:54,820 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-03 08:57:54,829 - INFO - [test_broken_images_count] Found 2 broken images
+2025-11-03 08:57:54,829 - INFO - [test_broken_images_count] Finished test: test_broken_images_count (Duration: 0.31s).
+2025-11-03 08:57:54,830 - INFO - [test_broken_images_count] Stopping video recording...
+2025-11-03 08:57:55,005 - INFO - [test_broken_images_count] Video created: tests_recordings/gw3/test_broken_images_count_20251103_085754/test_broken_images_count_20251103_085754.mp4
