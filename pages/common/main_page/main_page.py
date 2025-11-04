@@ -1,6 +1,7 @@
 import allure
 from pages.base.base_page import BasePage
 from pages.common.main_page.locators import MainPageLocators
+from pages.features.entry_ad.entry_ad_page import EntryAdPage
 
 
 class MainPage(BasePage):
@@ -116,3 +117,11 @@ class MainPage(BasePage):
         from pages.features.dynamic_loading.dynamic_loading_page import DynamicLoadingPage
 
         return DynamicLoadingPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_entry_ad_link(self, page_name="Entry Ad"):
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.ENTRY_AD_LINK)
+        from pages.features.entry_ad.entry_ad_page import EntryAdPage
+
+        return EntryAdPage(self.driver, self.logger)

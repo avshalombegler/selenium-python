@@ -21,3 +21,4 @@ class MainPageLocators:
     DYNAMIC_CONTENT_LINK = (By.LINK_TEXT, "Dynamic Content")
     DYNAMIC_CONTROLS_LINK = (By.LINK_TEXT, "Dynamic Controls")
     DYNAMIC_LOADING_LINK = (By.LINK_TEXT, "Dynamic Loading")
+    ENTRY_AD_LINK = (By.LINK_TEXT, "Entry Ad")

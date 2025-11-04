@@ -242,6 +242,14 @@ class BasePage:
 
         return self._retry(action, locator=locator, retry_count=retry)
 
+    def is_element_visible(self, locator, timeout=None) -> bool:
+        """Check if element is visible (in DOM + displayed)"""
+        try:
+            self._safe_wait(EC.visibility_of_element_located, locator, timeout)
+            return True
+        except TimeoutException:
+            return False
+
     def perform_right_click(self, locator, actions, retry=2):
         self.logger.info(f"Performing right-click on element with locator '{locator}'.")
 
