@@ -59,3 +59,6 @@ class PageManager:
 
     def get_dynamic_loading_page(self):
         return self.main_page.click_dynamic_loading_link()
+
+    def get_entry_ad_page(self):
+        return self.main_page.click_entry_ad_link()
