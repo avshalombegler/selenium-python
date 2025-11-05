@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Add/Remove Elements")
@@ -11,7 +16,7 @@ class TestAddRemoveElements:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_add_elements(self, page_manager: PageManager, logger):
+    def test_add_elements(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Tests for add elements.")
         page = page_manager.get_add_remove_elements_page()
 
@@ -23,7 +28,7 @@ class TestAddRemoveElements:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_remove_elements(self, page_manager: PageManager, logger):
+    def test_remove_elements(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Tests for remove elements.")
         page = page_manager.get_add_remove_elements_page()
 

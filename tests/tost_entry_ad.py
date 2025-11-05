@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Entry Ad")
@@ -11,7 +16,7 @@ class TestEntryAd:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_modal_window_functionality(self, page_manager: PageManager, logger):
+    def test_modal_window_functionality(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Tests Entry Ad.")
         page = page_manager.get_entry_ad_page()
 

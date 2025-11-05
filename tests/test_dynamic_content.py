@@ -1,6 +1,12 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
+    from selenium.webdriver.common.action_chains import ActionChains
 
 
 @allure.feature("Dynamic Content")
@@ -11,7 +17,7 @@ class TestDynamicContent:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_content_changes_after_refresh(self, page_manager: PageManager, logger):
+    def test_content_changes_after_refresh(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Test that content changes after page refresh.")
 
         page = page_manager.get_dynamic_content_page()
@@ -32,17 +38,17 @@ class TestDynamicContent:
         changed_count = self._count_changed_blocks(initial_blocks, refreshed_blocks)
         assert 0 < changed_count <= 3, f"Expected 1-3 blocks to change, got {changed_count}"
 
-    def _validate_blocks_count(self, blocks):
+    def _validate_blocks_count(self, blocks: list) -> None:
         """Validate that we have exactly 3 content blocks"""
         assert len(blocks) == 3, f"Expected 3 content blocks, got {len(blocks)}"
 
-    def _validate_blocks_structure(self, blocks):
+    def _validate_blocks_structure(self, blocks: list) -> None:
         """Validate structure of each content block"""
         for block in blocks:
             assert block["image"].startswith("http"), "Invalid image URL"
             assert block["text"].strip(), "Empty text in block"
 
-    def _count_changed_blocks(self, initial_blocks, refreshed_blocks) -> int:
+    def _count_changed_blocks(self, initial_blocks: list, refreshed_blocks: list) -> int:
         """Count how many blocks changed between refreshes"""
         return sum(
             1

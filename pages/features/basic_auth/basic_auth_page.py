@@ -1,11 +1,18 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 import requests
 from bs4 import BeautifulSoup
 from pages.base.base_page import BasePage
 
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from logging import Logger
+    from typing import Any
+
 
 class BasicAuthPage(BasePage):
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
 
     def _extract_message_from_response(self, response_text: str) -> str:
@@ -14,14 +21,14 @@ class BasicAuthPage(BasePage):
         return message_tag.get_text(strip=True) if message_tag else ""
 
     @allure.step("Initialize URL based on username and password")
-    def init_url(self, username, password):
+    def init_url(self, username: str, password: str) -> str:
         if username == "" and password == "":
             return self.base_url + "basic_auth"
         else:
             return f"http://{username}:{password}@the-internet.herokuapp.com/basic_auth"
 
     @allure.step("Get status code and authorization message")
-    def get_status_code_and_auth_message(self, url):
+    def get_status_code_and_auth_message(self, url: str) -> tuple[int, str | Any]:
         response = requests.get(url)
         if response.status_code == 401:
             message = response.text

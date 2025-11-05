@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Dynamic Loading")
@@ -11,7 +16,7 @@ class TestDynamicLoading:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_example_1(self, page_manager: PageManager, logger):
+    def test_example_1(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Tests Dynamic Loading - Example 1.")
         page = page_manager.get_dynamic_loading_page().click_example_1_link()
 
@@ -23,7 +28,7 @@ class TestDynamicLoading:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_example_2(self, page_manager: PageManager, logger):
+    def test_example_2(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Tests Dynamic Loading - Example 2.")
         page = page_manager.get_dynamic_loading_page().click_example_2_link()
 

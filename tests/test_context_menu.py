@@ -1,6 +1,12 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
+    from selenium.webdriver.common.action_chains import ActionChains
 
 
 @allure.feature("Context Menu")
@@ -13,7 +19,9 @@ class TestContextMenu:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_right_click_outside_hotspot(self, page_manager: PageManager, logger, actions):
+    def test_right_click_outside_hotspot(
+        self, page_manager: PageManager, logger: Logger, actions: ActionChains
+    ) -> None:
         """Verify right-click outside hot spot area"""
         page = page_manager.get_context_menu_page()
 
@@ -23,7 +31,7 @@ class TestContextMenu:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_right_click_on_hotspot(self, page_manager: PageManager, logger, actions):
+    def test_right_click_on_hotspot(self, page_manager: PageManager, logger: Logger, actions: ActionChains) -> None:
         """Verify right-click on hot spot area"""
         page = page_manager.get_context_menu_page()
 

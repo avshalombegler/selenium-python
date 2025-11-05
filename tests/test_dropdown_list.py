@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Dropdown List")
@@ -14,7 +19,7 @@ class TestDragAndDrop:
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("option", OPTIONS)
-    def test_drag_and_drop_functionality(self, page_manager: PageManager, logger, option):
+    def test_drag_and_drop_functionality(self, page_manager: PageManager, logger: Logger, option: str) -> None:
         logger.info("Tests Dropdown List functionality.")
         page = page_manager.get_dropdown_list_page()
 

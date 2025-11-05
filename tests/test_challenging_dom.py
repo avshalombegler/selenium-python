@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Challenging DOM")
@@ -18,7 +23,7 @@ class TestChallengingDom:
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("button", BUTTONS)
-    def test_each_button_clicks(self, page_manager: PageManager, logger, button):
+    def test_each_button_clicks(self, page_manager: PageManager, logger: Logger, button: str) -> None:
         logger.info("Verify each button in page is clickable.")
         page = page_manager.get_challenging_dom_page()
 
@@ -27,8 +32,8 @@ class TestChallengingDom:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
-    def test_table_header_per_column(self, page_manager: PageManager, logger, col, cell):
+    @pytest.mark.parametrize("col", COLUMNS)
+    def test_table_header_per_column(self, page_manager: PageManager, logger: Logger, col: str) -> None:
         logger.info("Verify table head text per column.")
         page = page_manager.get_challenging_dom_page()
 
@@ -39,7 +44,7 @@ class TestChallengingDom:
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
-    def test_cells_content_per_column(self, page_manager: PageManager, logger, col, cell):
+    def test_cells_content_per_column(self, page_manager: PageManager, logger: Logger, col: str, cell: str) -> None:
         logger.info("Verify cell content per column.")
         page = page_manager.get_challenging_dom_page()
 
@@ -51,8 +56,7 @@ class TestChallengingDom:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
-    def test_table_edit_and_delete_buttons_per_row(self, page_manager: PageManager, logger, col, cell):
+    def test_table_edit_and_delete_buttons_per_row(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Verify edit and delete buttons per row are clickable.")
         page = page_manager.get_challenging_dom_page()
 

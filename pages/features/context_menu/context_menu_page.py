@@ -1,9 +1,10 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 from dataclasses import dataclass
 from pages.base.base_page import BasePage
 from pages.features.context_menu.locators import ContextMenuPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import (
     TimeoutException,
@@ -11,32 +12,37 @@ from selenium.common.exceptions import (
 )
 from config.env_config import VIDEO_RECORDING
 
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from selenium.webdriver.common.action_chains import ActionChains
+    from logging import Logger
+
 
 @dataclass
 class ClickResult:
     alert_present: bool
-    alert_text: str = None
+    alert_text: str = ""
 
 
 class ContextMenuPage(BasePage):
     """Page object for the Context Menu page containing methods to interact with and validate page context menu"""
 
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
         self.wait_for_page_to_load(ContextMenuPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Perform right-click on page title to verify context menu alert does not activate")
-    def _perform_right_click_outside(self, actions):
+    def _perform_right_click_outside(self, actions: ActionChains) -> None:
         self.logger.info("Perform right-click on page title to verify context menu alert does not activate.")
         self.perform_right_click(ContextMenuPageLocators.PAGE_LOADED_INDICATOR, actions)
 
     @allure.step("Perform right-click on hot-spot to verify alert activation")
-    def _perform_right_click_on_hotspot(self, actions):
+    def _perform_right_click_on_hotspot(self, actions: ActionChains) -> None:
         self.logger.info("Perform right-click on hot-spot to verify alert activation.")
         self.perform_right_click(ContextMenuPageLocators.HOT_SPOT_BOX, actions)
 
     @allure.step("Get context menu alert text")
-    def _get_context_menu_alert_text(self, timeout=5):
+    def _get_context_menu_alert_text(self, timeout: int = 5) -> str:
         self.logger.info("Waiting for context menu alert...")
         try:
             alert = WebDriverWait(self.driver, timeout).until(EC.alert_is_present())
@@ -48,7 +54,7 @@ class ContextMenuPage(BasePage):
             raise NoAlertPresentException("Alert not present after right-click")
 
     @allure.step("Close context menu alert")
-    def _close_context_menu_alert(self):
+    def _close_context_menu_alert(self) -> None:
         self.logger.info("Close context menu alert.")
         alert = WebDriverWait(self.driver, 5).until(EC.alert_is_present())
         alert.accept()

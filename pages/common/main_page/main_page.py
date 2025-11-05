@@ -1,15 +1,35 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 from pages.base.base_page import BasePage
 from pages.common.main_page.locators import MainPageLocators
+from pages.features.ab_testing.ab_testing_page import ABTestingPage
+from pages.features.add_remove_elements.add_remove_elements_page import AddRemoveElementsPage
+from pages.features.basic_auth.basic_auth_page import BasicAuthPage
+from pages.features.broken_images.broken_images_page import BrokenImagesPage
+from pages.features.challenging_dom.challenging_dom_page import ChallengingDomPage
+from pages.features.checkboxes.checkboxes_page import CheckboxesPage
+from pages.features.context_menu.context_menu_page import ContextMenuPage
+from pages.features.digest_auth.digest_auth_page import DigestAuthPage
+from pages.features.drag_and_drop.drag_and_drop_page import DragAndDropPage
+from pages.features.dropdown_list.dropdown_list_page import DropdownListPage
+from pages.features.dynamic_content.dynamic_content_page import DynamicContentPage
+from pages.features.dynamic_controls.dynamic_controls_page import DynamicControlsPage
+from pages.features.dynamic_loading.dynamic_loading_page import DynamicLoadingPage
 from pages.features.entry_ad.entry_ad_page import EntryAdPage
+from pages.features.exit_intent.exit_intent_page import ExitIntentPage
+
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from logging import Logger
 
 
 class MainPage(BasePage):
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_ab_testing_link(self, page_name="A/B Testing"):
+    def click_ab_testing_link(self, page_name: str = "A/B Testing") -> ABTestingPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.AB_TESTING_LINK)
         from pages.features.ab_testing.ab_testing_page import ABTestingPage
@@ -17,7 +37,7 @@ class MainPage(BasePage):
         return ABTestingPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_add_remove_elements_link(self, page_name="Add/Remove Elements"):
+    def click_add_remove_elements_link(self, page_name: str = "Add/Remove Elements") -> AddRemoveElementsPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.ADD_REMOVE_ELEMENTS_LINK)
         from pages.features.add_remove_elements.add_remove_elements_page import AddRemoveElementsPage
@@ -25,14 +45,14 @@ class MainPage(BasePage):
         return AddRemoveElementsPage(self.driver, self.logger)
 
     @allure.step("Returning object of {page_name} page")
-    def get_basic_auth_page(self, page_name="Basic Auth"):
+    def get_basic_auth_page(self, page_name: str = "Basic Auth") -> BasicAuthPage:
         self.logger.info(f"Returning object of {page_name} page.")
         from pages.features.basic_auth.basic_auth_page import BasicAuthPage
 
         return BasicAuthPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_broken_images_link(self, page_name="Broken Images"):
+    def click_broken_images_link(self, page_name: str = "Broken Images") -> BrokenImagesPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.BROKEN_IMAGES_LINK)
         from pages.features.broken_images.broken_images_page import BrokenImagesPage
@@ -40,7 +60,7 @@ class MainPage(BasePage):
         return BrokenImagesPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_challenging_dom_link(self, page_name="Challenging DOM"):
+    def click_challenging_dom_link(self, page_name: str = "Challenging DOM") -> ChallengingDomPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.CHALLENGING_DOM_LINK)
         from pages.features.challenging_dom.challenging_dom_page import ChallengingDomPage
@@ -48,7 +68,7 @@ class MainPage(BasePage):
         return ChallengingDomPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_checkboxes_link(self, page_name="Checkboxes"):
+    def click_checkboxes_link(self, page_name: str = "Checkboxes") -> CheckboxesPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.CHECKBOXES_LINK)
         from pages.features.checkboxes.checkboxes_page import CheckboxesPage
@@ -56,7 +76,7 @@ class MainPage(BasePage):
         return CheckboxesPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_context_menu_link(self, page_name="Context Menu"):
+    def click_context_menu_link(self, page_name: str = "Context Menu") -> ContextMenuPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.CONTEXT_MENU_LINK)
         from pages.features.context_menu.context_menu_page import ContextMenuPage
@@ -64,7 +84,7 @@ class MainPage(BasePage):
         return ContextMenuPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def get_digest_auth_page(self, url, page_name="Digest Authentication"):
+    def get_digest_auth_page(self, url: str, page_name: str = "Digest Authentication") -> DigestAuthPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.navigate_to(url)
         from pages.features.digest_auth.digest_auth_page import DigestAuthPage
@@ -72,7 +92,7 @@ class MainPage(BasePage):
         return DigestAuthPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_drag_and_drop_link(self, page_name="Drag and Drop"):
+    def click_drag_and_drop_link(self, page_name: str = "Drag and Drop") -> DragAndDropPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.DRAG_AND_DROP_LINK)
         from pages.features.drag_and_drop.drag_and_drop_page import DragAndDropPage
@@ -80,7 +100,7 @@ class MainPage(BasePage):
         return DragAndDropPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_dropdown_list_link(self, page_name="Dropdown List"):
+    def click_dropdown_list_link(self, page_name: str = "Dropdown List") -> DropdownListPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.DROPDOWN_LINK)
         from pages.features.dropdown_list.dropdown_list_page import DropdownListPage
@@ -88,7 +108,7 @@ class MainPage(BasePage):
         return DropdownListPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_dynamic_content_link(self, page_name="Dynamic Content"):
+    def click_dynamic_content_link(self, page_name: str = "Dynamic Content") -> DynamicContentPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.DYNAMIC_CONTENT_LINK)
         from pages.features.dynamic_content.dynamic_content_page import DynamicContentPage
@@ -96,14 +116,14 @@ class MainPage(BasePage):
         return DynamicContentPage(self.driver, self.logger)
 
     @allure.step("Return object of {page_name} page")
-    def get_dynamic_content_page(self, page_name="Dynamic Content"):
+    def get_dynamic_content_page(self, page_name: str = "Dynamic Content") -> DynamicContentPage:
         self.logger.info(f"Returning object of {page_name} page.")
         from pages.features.dynamic_content.dynamic_content_page import DynamicContentPage
 
         return DynamicContentPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_dynamic_controls_link(self, page_name="Dynamic Controls"):
+    def click_dynamic_controls_link(self, page_name: str = "Dynamic Controls") -> DynamicControlsPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.DYNAMIC_CONTROLS_LINK)
         from pages.features.dynamic_controls.dynamic_controls_page import DynamicControlsPage
@@ -111,7 +131,7 @@ class MainPage(BasePage):
         return DynamicControlsPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_dynamic_loading_link(self, page_name="Dynamic Loading"):
+    def click_dynamic_loading_link(self, page_name: str = "Dynamic Loading") -> DynamicLoadingPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.DYNAMIC_LOADING_LINK)
         from pages.features.dynamic_loading.dynamic_loading_page import DynamicLoadingPage
@@ -119,9 +139,17 @@ class MainPage(BasePage):
         return DynamicLoadingPage(self.driver, self.logger)
 
     @allure.step("Navigate to {page_name} page")
-    def click_entry_ad_link(self, page_name="Entry Ad"):
+    def click_entry_ad_link(self, page_name: str = "Entry Ad") -> EntryAdPage:
         self.logger.info(f"Navigating to {page_name} page.")
         self.click_element(MainPageLocators.ENTRY_AD_LINK)
         from pages.features.entry_ad.entry_ad_page import EntryAdPage
 
         return EntryAdPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_exit_intent_link(self, page_name: str = "Exit Intent") -> ExitIntentPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.EXIT_INTENT_LINK)
+        from pages.features.exit_intent.exit_intent_page import ExitIntentPage
+
+        return ExitIntentPage(self.driver, self.logger)

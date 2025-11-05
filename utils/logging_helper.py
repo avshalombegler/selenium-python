@@ -63,7 +63,7 @@ def configure_root_logger(log_file: str = "test_logs.log", level: int = logging.
     return logger
 
 
-def set_current_test(name: Optional[str]):
+def set_current_test(name: Optional[str]) -> None:
     """
     Set the current test name for logging. Pass None or empty string to clear.
     """

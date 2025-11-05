@@ -1,24 +1,30 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 from pages.base.base_page import BasePage
 from pages.features.dynamic_controls.locators import DynamicControlsPageLocators
 from selenium.common.exceptions import TimeoutException
 
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from logging import Logger
+
 
 class DynamicControlsPage(BasePage):
     """Page object for the Dynamic Content page containing methods to interact with and validate page functionality"""
 
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
         self.wait_for_page_to_load(DynamicControlsPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Click remove button")
-    def click_remove_button(self, timeout: int = 10):
+    def click_remove_button(self, timeout: int = 10) -> None:
         self.click_element(DynamicControlsPageLocators.REMOVE_BTN)
         if not self.wait_for_loader(DynamicControlsPageLocators.WAIT_LOADER, timeout=timeout):
             self.logger.warning("Loader did not complete normally, continuing test...")
 
     @allure.step("Click add button")
-    def click_add_button(self, timeout: int = 10):
+    def click_add_button(self, timeout: int = 10) -> None:
         self.click_element(DynamicControlsPageLocators.ADD_BTN)
         if not self.wait_for_loader(DynamicControlsPageLocators.WAIT_LOADER, timeout=timeout):
             self.logger.warning("Loader did not complete normally, continuing test...")
@@ -32,13 +38,13 @@ class DynamicControlsPage(BasePage):
             return False
 
     @allure.step("Click enable button")
-    def click_enable_button(self, timeout: int = 10):
+    def click_enable_button(self, timeout: int = 10) -> None:
         self.click_element(DynamicControlsPageLocators.ENABLE_BTN)
         if not self.wait_for_loader(DynamicControlsPageLocators.WAIT_LOADER, timeout=timeout):
             self.logger.warning("Loader did not complete normally, continuing test...")
 
     @allure.step("Click disable button")
-    def click_disable_button(self, timeout: int = 10):
+    def click_disable_button(self, timeout: int = 10) -> None:
         self.click_element(DynamicControlsPageLocators.DISABLE_BTN)
         if not self.wait_for_loader(DynamicControlsPageLocators.WAIT_LOADER, timeout=timeout):
             self.logger.warning("Loader did not complete normally, continuing test...")

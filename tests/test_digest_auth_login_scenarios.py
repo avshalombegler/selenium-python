@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Digest Authentication")
@@ -18,7 +23,9 @@ class TestDigestAuth:
         ],
     )
     @allure.severity(allure.severity_level.NORMAL)
-    def test_digest_auth_login_scenarios(self, page_manager: PageManager, logger, username, password):
+    def test_digest_auth_login_scenarios(
+        self, page_manager: PageManager, logger: Logger, username: str, password: str
+    ) -> None:
         logger.info("Tests for Digest Authentication scenarios.")
         page = page_manager.get_digest_auth_page(username, password)
 

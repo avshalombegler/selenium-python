@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("A/B Testing")
@@ -11,7 +16,7 @@ class TestABTesting:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_ab_testing_content(self, page_manager: PageManager, logger):
+    def test_ab_testing_content(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Tests for verifying title and paragraph content of page")
         page = page_manager.get_ab_testing_page()
 

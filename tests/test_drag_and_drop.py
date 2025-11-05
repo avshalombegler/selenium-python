@@ -1,6 +1,12 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
+    from selenium.webdriver.common.action_chains import ActionChains
 
 
 @allure.feature("Drag and Drop")
@@ -14,7 +20,9 @@ class TestDragAndDrop:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_drag_and_drop_functionality(self, page_manager: PageManager, logger, actions):
+    def test_drag_and_drop_functionality(
+        self, page_manager: PageManager, logger: Logger, actions: ActionChains
+    ) -> None:
         logger.info("Tests Drag and Drop functionality.")
         page = page_manager.get_drag_and_drop_page()
 

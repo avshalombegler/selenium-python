@@ -1,17 +1,23 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 from pages.base.base_page import BasePage
 from pages.features.challenging_dom.locators import ChallengingDomPageLocators
+
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from logging import Logger
 
 
 class ChallengingDomPage(BasePage):
     """Page object for the Challenging DOM page containing methods to interact with and validate page web elements."""
 
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
         self.wait_for_page_to_load(ChallengingDomPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Click {button_color} button")
-    def click_colored_button(self, button_color: str):
+    def click_colored_button(self, button_color: str) -> None:
         """
         Click one of the page buttons. Case-insensitive.
 
@@ -23,14 +29,13 @@ class ChallengingDomPage(BasePage):
             "green": ChallengingDomPageLocators.GREEN_BTN,
         }
         btn = mapping.get(button_color.lower())
-        if not btn:
+        if btn is None:
             self.logger.warning(f"Unknown button color requested: {button_color}")
-            return self
+            return
         self.click_element(btn)
-        return self
 
     @allure.step("Get table head text of column '{col}'")
-    def get_table_head_text(self, col):
+    def get_table_head_text(self, col: str) -> None | str:
         """
         Return header text for the requested column name (exact match) or None.
         This searches the thead th elements instead of relying purely on dynamic XPATHs.
@@ -47,7 +52,7 @@ class ChallengingDomPage(BasePage):
         return self.get_dynamic_element_text((ChallengingDomPageLocators.TABLE_HEAD_TEXT[0], xpath))
 
     @allure.step("Get table cell text '{cell}' under column '{col}'")
-    def get_table_cell_text(self, col: str, cell: str):
+    def get_table_cell_text(self, col: str, cell: str) -> str | None:
         headers = self.get_all_elements(ChallengingDomPageLocators.TABLE_HEADERS_TEXT)
         if not headers:
             # fallback to XPath approach
@@ -66,11 +71,11 @@ class ChallengingDomPage(BasePage):
         return self.get_dynamic_element_text((ChallengingDomPageLocators.TABLE_CELL_TEXT[0], xpath))
 
     @allure.step("Click edit button in row {row}")
-    def click_edit_button(self, row):
+    def click_edit_button(self, row: int) -> None:
         xpath = ChallengingDomPageLocators.EDIT_BTN[1].format(row_num=row)
         self.click_element((ChallengingDomPageLocators.EDIT_BTN[0], xpath))
 
     @allure.step("Click delete button in row {row}")
-    def click_delete_button(self, row):
+    def click_delete_button(self, row: int) -> None:
         xpath = ChallengingDomPageLocators.DEL_BTN[1].format(row_num=row)
         self.click_element((ChallengingDomPageLocators.DEL_BTN[0], xpath))

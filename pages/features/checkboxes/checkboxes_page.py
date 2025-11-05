@@ -1,17 +1,23 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 from pages.base.base_page import BasePage
 from selenium.webdriver.common.by import By
 from pages.features.checkboxes.locators import CheckboxesPageLocators
 
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from logging import Logger
+
 
 class CheckboxesPage(BasePage):
     """Page object for the Checkboxes page containing methods to interact with and validate checkboxes."""
 
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
         self.wait_for_page_to_load(CheckboxesPageLocators.PAGE_LOADED_INDICATOR)
 
-    def _get_checkbox_locator(self, index: int):
+    def _get_checkbox_locator(self, index: int) -> tuple[str, str]:
         """
         Returns a locator for the checkbox at the given index (0-based).
         Example: index=0 → first checkbox, index=1 → second checkbox
@@ -30,7 +36,7 @@ class CheckboxesPage(BasePage):
         return (By.CSS_SELECTOR, dynamic_selector)
 
     @allure.step("Click checkbox {index}")
-    def _click_checkbox(self, index: int):
+    def _click_checkbox(self, index: int) -> None:
         locator = self._get_checkbox_locator(index)
         self.click_element(locator)
 
@@ -40,7 +46,7 @@ class CheckboxesPage(BasePage):
         return self.is_element_selected(locator)
 
     @allure.step("Set checkbox '{index}' to '{should_be_checked}'")
-    def set_checkbox(self, index: int, should_be_checked: bool):
+    def set_checkbox(self, index: int, should_be_checked: bool) -> None:
         self.logger.info(f"Set checkbox '{index}' to '{should_be_checked}'.")
         if self.is_checkbox_checked(index) != should_be_checked:
             self._click_checkbox(index)

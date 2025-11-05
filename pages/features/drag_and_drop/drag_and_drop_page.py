@@ -1,23 +1,31 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 import time
 from pages.base.base_page import BasePage
 from pages.features.drag_and_drop.locators import DragAndDropPageLocators
 
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from selenium.webdriver.remote.webelement import WebElement
+    from selenium.webdriver.common.action_chains import ActionChains
+    from logging import Logger
+
 
 class DragAndDropPage(BasePage):
     """Page object for the Drag and Drop page containing methods to interact with and validate page functionality"""
 
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
         self.wait_for_page_to_load(DragAndDropPageLocators.PAGE_LOADED_INDICATOR)
 
     @allure.step("Get box element")
-    def get_box_element(self, box: str):
+    def get_box_element(self, box: str) -> WebElement:
         locator = DragAndDropPageLocators.BOX[1].format(box=box)
         return self.wait_for_visibility((DragAndDropPageLocators.BOX[0], locator))
 
     @allure.step("Perform drag and drop on box")
-    def drag_and_drop_box(self, actions, source, target):
+    def drag_and_drop_box(self, actions: ActionChains, source: WebElement, target: WebElement) -> None:
         try:
             # Try ActionChains first
             actions.drag_and_drop(source, target).perform()
@@ -48,6 +56,6 @@ class DragAndDropPage(BasePage):
         time.sleep(0.4)
 
     @allure.step("Get box header")
-    def get_box_header(self, box: str):
+    def get_box_header(self, box: str) -> str:
         locator = DragAndDropPageLocators.BOX_HEADER[1].format(box=box)
         return self.get_dynamic_element_text((DragAndDropPageLocators.BOX_HEADER[0], locator))

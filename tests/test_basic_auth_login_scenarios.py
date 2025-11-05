@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Basic Auth")
@@ -19,8 +24,14 @@ class TestBasicAuth:
     )
     @allure.severity(allure.severity_level.NORMAL)
     def test_basic_auth(
-        self, page_manager: PageManager, logger, username, password, expected_status_code, expected_message
-    ):
+        self,
+        page_manager: PageManager,
+        logger: Logger,
+        username: str,
+        password: str,
+        expected_status_code: int,
+        expected_message: str,
+    ) -> None:
         logger.info("Tests basic autorization login scenatios.")
         page = page_manager.get_basic_auth_page()
 

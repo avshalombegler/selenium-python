@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Dynamic Controls")
@@ -12,7 +17,7 @@ class TestDynamicControls:
     @pytest.mark.ui
     @pytest.mark.flaky(reruns=2)
     @allure.severity(allure.severity_level.NORMAL)
-    def test_checkbox_remove_and_add(self, page_manager: PageManager, logger):
+    def test_checkbox_remove_and_add(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Test Remove/add checkbox area.")
         page = page_manager.get_dynamic_controls_page()
 
@@ -40,7 +45,7 @@ class TestDynamicControls:
     @pytest.mark.ui
     @pytest.mark.flaky(reruns=2)
     @allure.severity(allure.severity_level.NORMAL)
-    def test_textbox_enable_and_disable(self, page_manager: PageManager, logger):
+    def test_textbox_enable_and_disable(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Test Enable/disable textbox area.")
         page = page_manager.get_dynamic_controls_page()
 

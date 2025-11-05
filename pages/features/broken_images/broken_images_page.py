@@ -1,12 +1,19 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import allure
 from pages.base.base_page import BasePage
 from pages.features.broken_images.locators import BrokenImagesPageLocators
+
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from selenium.webdriver.remote.webelement import WebElement
+    from logging import Logger
 
 
 class BrokenImagesPage(BasePage):
     """Page object for the Broken Images page containing methods to interact with and validate images."""
 
-    def __init__(self, driver, logger=None):
+    def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)
         self.wait_for_page_to_load(BrokenImagesPageLocators.PAGE_LOADED_INDICATOR)
 
@@ -16,7 +23,7 @@ class BrokenImagesPage(BasePage):
         return self.get_all_elements(BrokenImagesPageLocators.IMAGES)
 
     @allure.step("Check if image is broken")
-    def _is_image_broken(self, image) -> dict:
+    def _is_image_broken(self, image: WebElement) -> dict:
         """
         Check if an image is broken by verifying its natural width.
 

@@ -1,6 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import pytest
 import allure
-from pages.base.page_manager import PageManager
+
+if TYPE_CHECKING:
+    from pages.base.page_manager import PageManager
+    from logging import Logger
 
 
 @allure.feature("Broken Images")
@@ -14,7 +19,7 @@ class TestBrokenImages:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_broken_images_count(self, page_manager: PageManager, logger):
+    def test_broken_images_count(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Verify broken images count.")
         page = page_manager.get_broken_images_page()
 
@@ -27,7 +32,7 @@ class TestBrokenImages:
 
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
-    def test_valid_images_count(self, page_manager: PageManager, logger):
+    def test_valid_images_count(self, page_manager: PageManager, logger: Logger) -> None:
         logger.info("Verify valid images count.")
         page = page_manager.get_broken_images_page()
 
