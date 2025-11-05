@@ -1,0 +1,19 @@
+2025-11-05 14:02:13,645 - INFO - [test_drag_and_drop_functionality[Option 1]] Starting test: test_drag_and_drop_functionality[Option 1].
+2025-11-05 14:02:13,646 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-05 14:02:13,764 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigation completed.
+2025-11-05 14:02:13,765 - INFO - [test_drag_and_drop_functionality[Option 1]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-05 14:02:13,785 - INFO - [test_drag_and_drop_functionality[Option 1]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-05 14:02:13,786 - INFO - [test_drag_and_drop_functionality[Option 1]] Started recording: tests_recordings/gw1/test_drag_and_drop_functionality[Option 1]_20251105_140213/test_drag_and_drop_functionality[Option 1]_20251105_140213.mp4
+2025-11-05 14:02:13,788 - INFO - [test_drag_and_drop_functionality[Option 1]] Tests Dropdown List functionality.
+2025-11-05 14:02:13,788 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigating to Dropdown List page.
+2025-11-05 14:02:13,892 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:14,029 - INFO - [test_drag_and_drop_functionality[Option 1]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-05 14:02:14,085 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:14,091 - INFO - [test_drag_and_drop_functionality[Option 1]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-05 14:02:14,091 - INFO - [test_drag_and_drop_functionality[Option 1]] Selecting option 'Option 1' from dropdown.
+2025-11-05 14:02:14,182 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:14,201 - INFO - [test_drag_and_drop_functionality[Option 1]] Verifying option 'Option 1' selected.
+2025-11-05 14:02:14,253 - INFO - [test_drag_and_drop_functionality[Option 1]] Finished test: test_drag_and_drop_functionality[Option 1] (Duration: 0.46s).
+2025-11-05 14:02:14,254 - INFO - [test_drag_and_drop_functionality[Option 1]] Stopping video recording...
+2025-11-05 14:02:14,299 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:14,513 - INFO - [test_drag_and_drop_functionality[Option 1]] Video created: tests_recordings/gw1/test_drag_and_drop_functionality[Option 1]_20251105_140213/test_drag_and_drop_functionality[Option 1]_20251105_140213.mp4

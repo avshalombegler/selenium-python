@@ -1,0 +1,20 @@
+2025-11-05 14:02:03,179 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality.
+2025-11-05 14:02:03,179 - INFO - [test_drag_and_drop_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-05 14:02:03,264 - INFO - [test_drag_and_drop_functionality] Navigation completed.
+2025-11-05 14:02:03,264 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-05 14:02:03,288 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-05 14:02:03,289 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw3/test_drag_and_drop_functionality_20251105_140203/test_drag_and_drop_functionality_20251105_140203.mp4
+2025-11-05 14:02:03,291 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-05 14:02:03,291 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-05 14:02:03,385 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:03,554 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-05 14:02:03,647 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:03,655 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-05 14:02:03,655 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-05 14:02:03,687 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-05 14:02:04,265 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:04,612 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-05 14:02:04,659 - INFO - [test_drag_and_drop_functionality] Finished test: test_drag_and_drop_functionality (Duration: 1.37s).
+2025-11-05 14:02:04,661 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-05 14:02:04,875 - INFO - [test_drag_and_drop_functionality] Video created: tests_recordings/gw3/test_drag_and_drop_functionality_20251105_140203/test_drag_and_drop_functionality_20251105_140203.mp4
+2025-11-05 14:02:04,878 - INFO - [test_drag_and_drop_functionality] Quitting driver for browser: chrome.

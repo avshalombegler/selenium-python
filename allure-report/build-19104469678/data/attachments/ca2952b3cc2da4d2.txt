@@ -1,0 +1,21 @@
+2025-11-05 14:01:59,748 - INFO - [test_valid_images_count] Starting test: test_valid_images_count.
+2025-11-05 14:01:59,749 - INFO - [test_valid_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-05 14:01:59,828 - INFO - [test_valid_images_count] Navigation completed.
+2025-11-05 14:01:59,828 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-05 14:01:59,850 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-05 14:01:59,851 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw3/test_valid_images_count_20251105_140159/test_valid_images_count_20251105_140159.mp4
+2025-11-05 14:01:59,852 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-05 14:01:59,853 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-05 14:01:59,941 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:00,142 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-05 14:02:00,235 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-05 14:02:00,246 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-05 14:02:00,246 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-05 14:02:00,247 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-05 14:02:00,255 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-05 14:02:00,264 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-05 14:02:00,273 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-05 14:02:00,297 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-05 14:02:00,299 - INFO - [test_valid_images_count] Finished test: test_valid_images_count (Duration: 0.45s).
+2025-11-05 14:02:00,301 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-05 14:02:00,891 - INFO - [test_valid_images_count] Video created: tests_recordings/gw3/test_valid_images_count_20251105_140159/test_valid_images_count_20251105_140159.mp4
