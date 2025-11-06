@@ -192,7 +192,7 @@ jobs:
 
       - name: Clean old reports
         run: |
-          find reports/ -type d -name "allure-report*" -mtime +7 -exec rm -rf {} +
+          find . -type d -name "allure-report*" -mtime +7 +
           git add .
           git commit -m "Clean old Allure reports" || echo "No changes"
           git push
