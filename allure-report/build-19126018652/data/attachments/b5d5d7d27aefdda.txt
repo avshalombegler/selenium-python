@@ -1,0 +1,26 @@
+2025-11-06 05:42:30,078 - INFO - [test_example_2] Starting test: test_example_2.
+2025-11-06 05:42:30,079 - INFO - [test_example_2] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 05:42:30,188 - INFO - [test_example_2] Navigation completed.
+2025-11-06 05:42:30,189 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 05:42:30,206 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 05:42:30,208 - INFO - [test_example_2] Started recording: tests_recordings/gw1/test_example_2_20251106_054230/test_example_2_20251106_054230.mp4
+2025-11-06 05:42:30,209 - INFO - [test_example_2] Tests Dynamic Loading - Example 2.
+2025-11-06 05:42:30,209 - INFO - [test_example_2] Navigating to Dynamic Loading page.
+2025-11-06 05:42:30,265 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 05:42:30,433 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-06 05:42:30,512 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 05:42:30,518 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-06 05:42:30,518 - INFO - [test_example_2] Navigating to Example 2: Element rendered after the fact page.
+2025-11-06 05:42:30,693 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-06 05:42:30,765 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 05:42:30,770 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-06 05:42:30,770 - INFO - [test_example_2] Clicking start button.
+2025-11-06 05:42:30,834 - INFO - [test_example_2] Waiting for loader to disappear.
+2025-11-06 05:42:30,894 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 05:42:34,992 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 05:42:36,010 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 05:42:36,010 - INFO - [test_example_2] Verifying success message.
+2025-11-06 05:42:36,027 - INFO - [test_example_2] Finished test: test_example_2 (Duration: 5.82s).
+2025-11-06 05:42:36,027 - INFO - [test_example_2] Stopping video recording...
+2025-11-06 05:42:36,729 - INFO - [test_example_2] Video created: tests_recordings/gw1/test_example_2_20251106_054230/test_example_2_20251106_054230.mp4
+2025-11-06 05:42:36,731 - INFO - [test_example_2] Quitting driver for browser: chrome.
