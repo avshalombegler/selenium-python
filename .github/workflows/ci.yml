@@ -17,9 +17,9 @@ jobs:
     strategy:
       fail-fast: false # Continue running other jobs if one fails
       matrix:
-        # browser: [chrome, firefox]
+        browser: [chrome, firefox]
         # browser: [chrome]
-        browser: [firefox]
+        # browser: [firefox]
         include:
           - suite: ui
     
