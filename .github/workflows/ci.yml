@@ -6,24 +6,30 @@ on:
   pull_request:
     branches: [ main ]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     strategy:
-      # fail-fast: false #  continue if a suite fails
+      fail-fast: false #  continue if a browser fails
       matrix:
         # browser: [chrome, firefox]
         browser: [chrome]
-        # include:
-        #   - suite:
-        #     marker:
-        #     maxfail:
+        include:
+          - suite: ui
     
-    # name: ${{ matrix.suite }} tests
+    name: ${{ matrix.suite }} tests
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      - name: Update APT package lists
+        run: sudo apt-get update
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -34,54 +40,44 @@ jobs:
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          restore-keys: ${{ runner.os }}-pip-
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Cache apt packages
+      - name: Cache APT packages
         uses: actions/cache@v3
         with:
           path: /var/cache/apt
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/ci.yml') }}
+          key: ${{ runner.os }}-apt-${{ hashFiles('.github/workflows/ci.yml') }}
           restore-keys: ${{ runner.os }}-apt-
 
-      - name: Install browsers and drivers
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg xvfb libx11-6 libxcb1 libxcomposite1 libxcursor1 libxext6 libxfixes3 libxi6 libxrender1
-          if [ "${{ matrix.browser }}" = "chrome" ]; then
-            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-            sudo dpkg -i google-chrome-stable_current_amd64.deb
-            sudo apt-get install -f -y  # Fix missing dependencies
-            rm google-chrome-stable_current_amd64.deb
-          elif [ "${{ matrix.browser }}" = "firefox" ]; then
-            # Install Firefox
-            sudo apt-get install -y firefox
-            # Install latest geckodriver
-            GECKO_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r '.tag_name')
-            wget https://github.com/mozilla/geckodriver/releases/download/${GECKO_VERSION}/geckodriver-${GECKO_VERSION}-linux64.tar.gz
-            tar -xzf geckodriver-${GECKO_VERSION}-linux64.tar.gz
-            sudo mv geckodriver /usr/local/bin/
-            sudo chmod +x /usr/local/bin/geckodriver
-            # Verify installations
-            geckodriver --version
-            firefox --version
-          fi
+      - name: Setup Chrome
+        if: matrix.browser == 'chrome'
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Setup Firefox
+        if: matrix.browser == 'firefox'
+        uses: browser-actions/setup-firefox@v1
+
+      - name: Cache Allure
+        uses: actions/cache@v3
+        with:
+          path: /usr/local/allure
+          key: ${{ runner.os }}-allure-2.35.1
 
       - name: Install Java and Allure Commandline
         run: |
-          sudo apt-get update
           sudo apt-get install -y unzip curl openjdk-11-jre-headless
-          curl -L -o /tmp/allure.zip https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
-          sudo unzip -q /tmp/allure.zip -d /tmp
-          sudo rm -rf /usr/local/allure
-          sudo mv /tmp/allure-2.35.1 /usr/local/allure
-          sudo chmod -R +x /usr/local/allure/bin
-          sudo ln -sf /usr/local/allure/bin/allure /usr/local/bin/allure
+          if [ ! -d "/usr/local/allure" ]; then  # Only install if not cached
+            curl -L -o /tmp/allure.zip https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
+            sudo unzip -q /tmp/allure.zip -d /tmp
+            sudo mv /tmp/allure-2.35.1 /usr/local/allure
+            sudo chmod -R +x /usr/local/allure/bin
+            sudo ln -sf /usr/local/allure/bin/allure /usr/local/bin/allure
+          fi
           allure --version
 
       - name: Create .env file
@@ -97,18 +93,23 @@ jobs:
           echo "PASSWORD=${{ secrets.TEST_PASSWORD }}" >> .env
 
       - name: Check website availability
-        run: |
-          curl -s -f https://the-internet.herokuapp.com/ || exit 1
+        run: curl -s -f https://the-internet.herokuapp.com/ || exit 1
 
       - name: Create reports directories
-        run: |
-          mkdir -p reports/allure-results
-          mkdir -p reports/allure-report
+        run: mkdir -p reports/allure-results reports/allure-report
 
       - name: Run Pytest with Allure
+        continue-on-error: true
+        id: pytest
         run: |
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
             pytest tests/ -v -n auto --dist=loadfile --alluredir=reports/allure-results
+
+      - name: Retry Failed Tests
+        if: steps.pytest.outcome == 'failure'
+        run: |
+          PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
+            pytest tests/ -v --last-failed --alluredir=reports/allure-results
 
       - name: Generate Allure Report
         if: always()
@@ -122,6 +123,7 @@ jobs:
         with:
           name: allure-results-${{ matrix.browser }}-${{ github.run_id }}
           path: reports/allure-results/
+          retention-days: 7
 
       - name: Upload Allure Report
         if: always()
@@ -129,6 +131,7 @@ jobs:
         with:
           name: allure-report-latest
           path: reports/allure-report/
+          retention-days: 7
 
       - name: Upload Videos
         if: always()
@@ -136,6 +139,7 @@ jobs:
         with:
           name: test-videos-${{ matrix.browser }}-${{ github.run_id }}
           path: tests_recordings/
+          retention-days: 7
 
       - name: Upload Screenshots
         if: always()
@@ -143,16 +147,19 @@ jobs:
         with:
           name: test-screenshots-${{ matrix.browser }}-${{ github.run_id }}
           path: tests_screenshots/
+          retention-days: 7
   
   deploy:
     needs: test
     if: github.ref == 'refs/heads/main' && success()
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    timeout-minutes: 10
     steps:
-
       - name: Create reports directory
-        run: |
-          mkdir -p reports/allure-report
+        run: mkdir -p reports/allure-report
       
       - name: Download Allure Report
         if: always()
@@ -166,22 +173,26 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports/allure-report
-          destination_dir: allure-report/build-${{ github.run_id }}
 
   clean:
     needs: deploy
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-
       - name: Checkout gh-pages
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
+      
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
       - name: Clean old reports
         run: |
-          find . -type d -name "build-*" -mtime +7 -exec rm -rf {} +
+          find reports/ -type d -name "allure-report*" -mtime +7 -exec rm -rf {} +
           git add .
-          git commit -m "Clean old Allure builds" || echo "No changes"
+          git commit -m "Clean old Allure reports" || echo "No changes"
           git push
