@@ -60,13 +60,22 @@ def build_chrome_options(user_data_dir: Path, debug_port: int) -> ChromeOptions:
 
 def build_firefox_options(user_data_dir: Path, debug_port: int) -> FirefoxOptions:
     options = FirefoxOptions()
-    options.add_argument(f"--user-data-dir={user_data_dir}")
-    options.add_argument(f"--remote-debugging-port={debug_port}")
+
+    # Set custom profile directory for isolation
+    profile = webdriver.FirefoxProfile(str(user_data_dir))  # Create profile from the directory
+    options.profile = profile
+
+    # Note: --remote-debugging-port is not supported for Firefox; removed to avoid errors
+    # options.add_argument(f"--remote-debugging-port={debug_port}")
+
+    # Other preferences
     options.set_preference("dom.webdriver.enabled", False)
     options.set_preference("dom.push.enabled", False)
     options.set_preference("javascript.enabled", True)
+
     if env_config.HEADLESS:
         options.add_argument("--headless=new")
+
     return options
 
 
@@ -167,10 +176,6 @@ def video_recorder(request: FixtureRequest, driver: WebDriver) -> Generator[None
         yield
         return
 
-    if not isinstance(driver, webdriver.Chrome):
-        yield
-        return
-
     worker_id = get_worker_id()
     test_name = request.node.name.replace(":", "_").replace("/", "_")
 
@@ -219,14 +224,11 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
             chrome_service = ChromeService(ChromeDriverManager().install())
             chrome_options = build_chrome_options(user_data_dir, debug_port)
             driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
-            # Ensure even viewport size
-            try:
-                driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
-            except Exception:
-                pass  # Ignore if not supported
 
         elif browser == "firefox":
-            firefox_service = FirefoxService(GeckoDriverManager().install())  # Use separate variable
+            # firefox_service = FirefoxService(GeckoDriverManager().install())
+            gecko_path = r"C:\\Users\\Avshalom\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe"
+            firefox_service = FirefoxService(executable_path=gecko_path)
             firefox_options = build_firefox_options(user_data_dir, debug_port)
             driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
             if env_config.MAXIMIZED:
@@ -234,6 +236,12 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
 
         else:
             raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
+
+        # Ensure even viewport size
+        try:
+            driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
+        except Exception:
+            pass  # Ignore if not supported
 
     except Exception as e:
         root_logger.error(f"Failed to initialize {browser} driver: {str(e)}")
