@@ -1,0 +1,22 @@
+2025-11-06 07:08:04,202 - INFO - [test_broken_images_count] Starting test: test_broken_images_count.
+2025-11-06 07:08:04,203 - INFO - [test_broken_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 07:08:04,279 - INFO - [test_broken_images_count] Navigation completed.
+2025-11-06 07:08:04,279 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 07:08:04,302 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 07:08:04,303 - INFO - [test_broken_images_count] Started recording: tests_recordings/gw3/test_broken_images_count_20251106_070804/test_broken_images_count_20251106_070804.mp4
+2025-11-06 07:08:04,305 - INFO - [test_broken_images_count] Verify broken images count.
+2025-11-06 07:08:04,305 - INFO - [test_broken_images_count] Navigating to Broken Images page.
+2025-11-06 07:08:04,374 - WARNING - [test_broken_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:04,599 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 07:08:04,712 - WARNING - [test_broken_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:04,719 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 07:08:04,720 - INFO - [test_broken_images_count] Getting broken images count.
+2025-11-06 07:08:04,720 - INFO - [test_broken_images_count] Get all image elements.
+2025-11-06 07:08:04,735 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-06 07:08:04,750 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-06 07:08:04,761 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-06 07:08:04,771 - INFO - [test_broken_images_count] Found 2 broken images.
+2025-11-06 07:08:04,771 - INFO - [test_broken_images_count] Finished test: test_broken_images_count (Duration: 0.47s).
+2025-11-06 07:08:04,772 - INFO - [test_broken_images_count] Stopping video recording...
+2025-11-06 07:08:04,847 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:04,915 - ERROR - [test_broken_images_count] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

@@ -1,0 +1,53 @@
+2025-11-06 07:08:17,168 - INFO - [test_checkbox_remove_and_add] Starting test: test_checkbox_remove_and_add.
+2025-11-06 07:08:17,168 - INFO - [test_checkbox_remove_and_add] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 07:08:17,311 - INFO - [test_checkbox_remove_and_add] Navigation completed.
+2025-11-06 07:08:17,311 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 07:08:17,329 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 07:08:17,330 - INFO - [test_checkbox_remove_and_add] Started recording: tests_recordings/gw2/test_checkbox_remove_and_add_20251106_070817/test_checkbox_remove_and_add_20251106_070817.mp4
+2025-11-06 07:08:17,331 - INFO - [test_checkbox_remove_and_add] Test Remove/add checkbox area.
+2025-11-06 07:08:17,332 - INFO - [test_checkbox_remove_and_add] Navigating to Dynamic Controls page.
+2025-11-06 07:08:17,427 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:17,605 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-06 07:08:17,725 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:17,731 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-06 07:08:17,731 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-06 07:08:17,745 - INFO - [test_checkbox_remove_and_add] Clicking remove button.
+2025-11-06 07:08:17,815 - INFO - [test_checkbox_remove_and_add] Waiting for loader to disappear.
+2025-11-06 07:08:17,907 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:20,961 - INFO - [test_checkbox_remove_and_add] Checking if checkbox absent.
+2025-11-06 07:08:22,033 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:22,532 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:23,040 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:26,132 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:26,639 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:30,238 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:31,258 - ERROR - [test_checkbox_remove_and_add] Timeout after 10s for locator ('css selector', "input[type='checkbox']"): Message: 
+Stacktrace:
+#0 0x55fb066c7aca <unknown>
+#1 0x55fb06113cdb <unknown>
+#2 0x55fb061666c4 <unknown>
+#3 0x55fb06166901 <unknown>
+#4 0x55fb061b58b4 <unknown>
+#5 0x55fb061b2c87 <unknown>
+#6 0x55fb06158aca <unknown>
+#7 0x55fb061597d1 <unknown>
+#8 0x55fb0668ea99 <unknown>
+#9 0x55fb06691a6c <unknown>
+#10 0x55fb06677d29 <unknown>
+#11 0x55fb06692665 <unknown>
+#12 0x55fb0665f6a3 <unknown>
+#13 0x55fb066b47b8 <unknown>
+#14 0x55fb066b4993 <unknown>
+#15 0x55fb066c6a63 <unknown>
+#16 0x7fbd4669caa4 <unknown>
+#17 0x7fbd46729c6c <unknown>
+
+2025-11-06 07:08:31,258 - INFO - [test_checkbox_remove_and_add] Verifying remove message text.
+2025-11-06 07:08:31,281 - INFO - [test_checkbox_remove_and_add] Clicking add button.
+2025-11-06 07:08:31,348 - INFO - [test_checkbox_remove_and_add] Waiting for loader to disappear.
+2025-11-06 07:08:31,403 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:08:34,456 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-06 07:08:34,466 - INFO - [test_checkbox_remove_and_add] Verifying add message text.
+2025-11-06 07:08:34,482 - INFO - [test_checkbox_remove_and_add] Finished test: test_checkbox_remove_and_add (Duration: 17.15s).
+2025-11-06 07:08:34,482 - INFO - [test_checkbox_remove_and_add] Stopping video recording...
+2025-11-06 07:08:34,502 - ERROR - [test_checkbox_remove_and_add] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
