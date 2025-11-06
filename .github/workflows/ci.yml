@@ -114,7 +114,8 @@ jobs:
       - name: Generate Allure Report
         if: always()
         run: |
-          allure generate reports/allure-results -o reports/allure-report
+          mkdir -p reports/allure-report/build-${{ github.run_id }}
+          allure generate reports/allure-results -o reports/allure-report/build-${{ github.run_id }}
           sleep 2
 
       - name: Upload Allure Results
@@ -192,7 +193,7 @@ jobs:
 
       - name: Clean old reports
         run: |
-          find . -type d -name "allure-report*" -mtime +7
+          find reports/allure-report/ -type d -name "build-*" -mtime +7 -exec rm -rf {} +
           git add .
           git commit -m "Clean old Allure reports" || echo "No changes"
           git push
