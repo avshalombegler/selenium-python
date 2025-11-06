@@ -1,0 +1,16 @@
+2025-11-06 09:09:00,926 - INFO - [test_table_header_per_column[Lorem]] Starting test: test_table_header_per_column[Lorem].
+2025-11-06 09:09:00,926 - INFO - [test_table_header_per_column[Lorem]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 09:09:01,030 - INFO - [test_table_header_per_column[Lorem]] Navigation completed.
+2025-11-06 09:09:01,030 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 09:09:01,044 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 09:09:01,045 - INFO - [test_table_header_per_column[Lorem]] Started recording: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251106_090901/test_table_header_per_column[Lorem]_20251106_090901.mp4
+2025-11-06 09:09:01,046 - INFO - [test_table_header_per_column[Lorem]] Verify table head text per column.
+2025-11-06 09:09:01,047 - INFO - [test_table_header_per_column[Lorem]] Navigating to Challenging DOM page.
+2025-11-06 09:09:01,121 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 09:09:01,312 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 09:09:01,392 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 09:09:01,397 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 09:09:01,397 - INFO - [test_table_header_per_column[Lorem]] Getting table head text of column 'Lorem'.
+2025-11-06 09:09:01,421 - INFO - [test_table_header_per_column[Lorem]] Finished test: test_table_header_per_column[Lorem] (Duration: 0.37s).
+2025-11-06 09:09:01,422 - INFO - [test_table_header_per_column[Lorem]] Stopping video recording...
+2025-11-06 09:09:01,457 - ERROR - [test_table_header_per_column[Lorem]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

@@ -1,0 +1,22 @@
+2025-11-06 09:08:27,369 - INFO - [test_valid_images_count] Starting test: test_valid_images_count.
+2025-11-06 09:08:27,370 - INFO - [test_valid_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 09:08:27,474 - INFO - [test_valid_images_count] Navigation completed.
+2025-11-06 09:08:27,475 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 09:08:27,488 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 09:08:27,489 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw3/test_valid_images_count_20251106_090827/test_valid_images_count_20251106_090827.mp4
+2025-11-06 09:08:27,490 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-06 09:08:27,491 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-06 09:08:27,574 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 09:08:27,792 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 09:08:27,873 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 09:08:27,878 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 09:08:27,878 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-06 09:08:27,878 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-06 09:08:27,887 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 09:08:27,895 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 09:08:27,903 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 09:08:27,911 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-06 09:08:27,911 - INFO - [test_valid_images_count] Finished test: test_valid_images_count (Duration: 0.42s).
+2025-11-06 09:08:27,912 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-06 09:08:27,936 - ERROR - [test_valid_images_count] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-06 09:08:27,937 - INFO - [test_valid_images_count] Quitting driver for browser: chrome.

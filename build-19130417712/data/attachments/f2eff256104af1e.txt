@@ -1,0 +1,26 @@
+2025-11-06 09:08:57,085 - INFO - [] Directory cleaned and recreated at: reports/allure-report.
+2025-11-06 09:08:57,086 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-06 09:08:57,088 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-06 09:08:57,089 - INFO - [] xdist worker is: gw1
+2025-11-06 09:08:57,090 - INFO - [] ====== WebDriver manager ======
+2025-11-06 09:08:57,182 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 09:08:57,233 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 09:08:57,278 - INFO - [] Driver [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.61/chromedriver-linux64/chromedriver] found in cache
+2025-11-06 09:08:57,856 - INFO - [test_right_click_outside_hotspot] Starting test: test_right_click_outside_hotspot.
+2025-11-06 09:08:57,857 - INFO - [test_right_click_outside_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 09:08:58,264 - INFO - [test_right_click_outside_hotspot] Navigation completed.
+2025-11-06 09:08:58,264 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 09:08:58,301 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 09:08:58,302 - INFO - [test_right_click_outside_hotspot] Started recording: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_090858/test_right_click_outside_hotspot_20251106_090858.mp4
+2025-11-06 09:08:58,306 - INFO - [test_right_click_outside_hotspot] Navigating to Context Menu page.
+2025-11-06 09:08:58,389 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 09:08:58,620 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 09:08:58,715 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 09:08:58,726 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 09:08:58,726 - INFO - [test_right_click_outside_hotspot] Testing right-click outside hot spot
+2025-11-06 09:08:58,727 - INFO - [test_right_click_outside_hotspot] Perform right-click on page title to verify context menu alert does not activate.
+2025-11-06 09:08:58,727 - INFO - [test_right_click_outside_hotspot] Performing right-click on element with locator '('css selector', 'div.example h3')'.
+2025-11-06 09:08:59,056 - INFO - [test_right_click_outside_hotspot] Finished test: test_right_click_outside_hotspot (Duration: 0.75s).
+2025-11-06 09:08:59,058 - INFO - [test_right_click_outside_hotspot] Stopping video recording...
+2025-11-06 09:08:59,102 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 09:08:59,170 - ERROR - [test_right_click_outside_hotspot] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

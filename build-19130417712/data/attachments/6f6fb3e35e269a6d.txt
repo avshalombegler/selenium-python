@@ -1,0 +1,25 @@
+2025-11-06 09:08:02,724 - INFO - [] Directory cleaned and recreated at: reports/allure-report.
+2025-11-06 09:08:02,725 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-06 09:08:02,733 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-06 09:08:02,734 - INFO - [] xdist worker is: gw1
+2025-11-06 09:08:02,734 - INFO - [] ====== WebDriver manager ======
+2025-11-06 09:08:05,010 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 09:08:05,067 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 09:08:05,119 - INFO - [] There is no [linux64] chromedriver "142.0.7444.61" for browser google-chrome "142.0.7444" in cache
+2025-11-06 09:08:05,119 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 09:08:05,279 - INFO - [] WebDriver version 142.0.7444.61 selected
+2025-11-06 09:08:05,288 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.61/linux64/chromedriver-linux64.zip
+2025-11-06 09:08:05,288 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.61/linux64/chromedriver-linux64.zip
+2025-11-06 09:08:05,347 - INFO - [] Driver downloading response is 200
+2025-11-06 09:08:05,424 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 09:08:05,611 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.61]
+2025-11-06 09:08:17,405 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.].
+2025-11-06 09:08:17,428 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Started recording: tests_recordings/gw1/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251106_090817/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251106_090817.mp4
+2025-11-06 09:08:17,433 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-06 09:08:17,434 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-06 09:08:17,439 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-06 09:08:17,439 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-06 09:08:17,632 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-06 09:08:17,636 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Finished test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.20s).
+2025-11-06 09:08:17,640 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Stopping video recording...
+2025-11-06 09:08:17,754 - ERROR - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
