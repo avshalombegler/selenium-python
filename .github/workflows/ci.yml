@@ -119,18 +119,11 @@ jobs:
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
             pytest tests/ -v --last-failed --alluredir=reports/allure-results
 
-      - name: Create Allure Environment Properties
-        if: always()
-        run: |
-          echo "Browser=${{ matrix.browser }}" > reports/allure-results/environment.properties
-          echo "Run ID=${{ github.run_id }}" >> reports/allure-results/environment.properties
-          echo "Suite=${{ matrix.suite }}" >> reports/allure-results/environment.properties
-          # Add more properties as needed, e.g., OS, Python version, etc.
-
       - name: Generate Allure Report
         if: always()
         run: |
           mkdir -p reports/allure-report/build-${{ github.run_id }}
+          echo "allure.report.title=Allure Report - ${{ matrix.browser }}" > reports/allure-results/allure.properties
           allure generate --clean reports/allure-results -o reports/allure-report/build-${{ github.run_id }}
           sleep 2
 
