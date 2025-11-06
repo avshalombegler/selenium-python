@@ -149,6 +149,10 @@ jobs:
     if: github.ref == 'refs/heads/main' && success()
     runs-on: ubuntu-latest
     steps:
+
+      - name: Create reports directory
+        run: |
+          mkdir -p reports/allure-report
       
       - name: Download Allure Report
         if: always()
