@@ -1,0 +1,18 @@
+INFO     root:conftest.py:71 Starting test: test_drag_and_drop_functionality[Option 2].
+INFO     root:base_page.py:177 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:179 Navigation completed.
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:conftest.py:94 Started recording: tests_recordings/gw1/test_drag_and_drop_functionality[Option 2]_20251106_065948/test_drag_and_drop_functionality[Option 2]_20251106_065948.mp4
+INFO     root:test_dropdown_list.py:23 Tests Dropdown List functionality.
+INFO     root:main_page.py:104 Navigating to Dropdown List page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_dropdown_list.py:26 Selecting option 'Option 2' from dropdown.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dropdown_list.py:29 Verifying option 'Option 2' selected.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:98 Stopping video recording...
+ERROR    utils.video_recorder:video_recorder.py:109 ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

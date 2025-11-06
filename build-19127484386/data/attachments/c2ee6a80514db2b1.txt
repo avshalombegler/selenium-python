@@ -1,0 +1,20 @@
+2025-11-06 06:59:54,685 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Starting test: test_cells_content_per_column[Amet-Consequuntur].
+2025-11-06 06:59:54,686 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:59:54,761 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigation completed.
+2025-11-06 06:59:54,762 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:59:54,779 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:59:54,781 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251106_065954/test_cells_content_per_column[Amet-Consequuntur]_20251106_065954.mp4
+2025-11-06 06:59:54,782 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Verify cell content per column.
+2025-11-06 06:59:54,783 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigating to Challenging DOM page.
+2025-11-06 06:59:54,848 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:59:55,036 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:59:55,125 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:59:55,132 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:59:55,132 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-06 06:59:55,245 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:59:55,246 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-06 06:59:55,308 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-06 06:59:55,367 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:59:55,418 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Finished test: test_cells_content_per_column[Amet-Consequuntur] (Duration: 0.64s).
+2025-11-06 06:59:55,420 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Stopping video recording...
+2025-11-06 06:59:55,432 - ERROR - [test_cells_content_per_column[Amet-Consequuntur]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
