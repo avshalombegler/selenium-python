@@ -1,0 +1,20 @@
+2025-11-06 06:38:47,436 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Starting test: test_cells_content_per_column[Sit-Definiebas].
+2025-11-06 06:38:47,437 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:38:47,496 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigation completed.
+2025-11-06 06:38:47,496 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:38:47,511 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:38:47,513 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_063847/test_cells_content_per_column[Sit-Definiebas]_20251106_063847.mp4
+2025-11-06 06:38:47,515 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Verify cell content per column.
+2025-11-06 06:38:47,515 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to Challenging DOM page.
+2025-11-06 06:38:47,583 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:47,723 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:38:47,813 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:47,819 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:38:47,819 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 06:38:47,878 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 06:38:47,928 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:47,969 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 06:38:48,046 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:48,070 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Finished test: test_cells_content_per_column[Sit-Definiebas] (Duration: 0.56s).
+2025-11-06 06:38:48,071 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Stopping video recording...
+2025-11-06 06:38:48,111 - ERROR - [test_cells_content_per_column[Sit-Definiebas]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

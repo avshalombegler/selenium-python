@@ -1,0 +1,42 @@
+2025-11-06 06:38:40,578 - INFO - [test_remove_elements] Starting test: test_remove_elements.
+2025-11-06 06:38:40,579 - INFO - [test_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:38:40,627 - INFO - [test_remove_elements] Navigation completed.
+2025-11-06 06:38:40,627 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:38:40,659 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:38:40,663 - INFO - [test_remove_elements] Started recording: tests_recordings/gw3/test_remove_elements_20251106_063840/test_remove_elements_20251106_063840.mp4
+2025-11-06 06:38:40,665 - INFO - [test_remove_elements] Tests for remove elements.
+2025-11-06 06:38:40,666 - INFO - [test_remove_elements] Navigating to Add/Remove Elements page.
+2025-11-06 06:38:40,749 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:40,874 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-06 06:38:40,978 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:40,985 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-06 06:38:40,985 - INFO - [test_remove_elements] Ensure there are elements to remove
+2025-11-06 06:38:40,986 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-06 06:38:41,088 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-06 06:38:41,199 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:41,309 - INFO - [test_remove_elements] Remove all elements
+2025-11-06 06:38:41,309 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-06 06:38:41,310 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-06 06:38:41,400 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:41,401 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-06 06:38:41,598 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:41,599 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-06 06:38:41,599 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-06 06:38:41,608 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-06 06:38:41,682 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:41,795 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-06 06:38:41,796 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-06 06:38:41,871 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:42,917 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:43,941 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:44,504 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:45,011 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-06 06:38:45,011 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-06 06:38:45,541 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:46,171 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:46,777 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:48,345 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:48,346 - INFO - [test_remove_elements] Found 0 delete buttons.
+2025-11-06 06:38:48,346 - INFO - [test_remove_elements] Finished test: test_remove_elements (Duration: 7.68s).
+2025-11-06 06:38:48,347 - INFO - [test_remove_elements] Stopping video recording...
+2025-11-06 06:38:48,408 - ERROR - [test_remove_elements] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

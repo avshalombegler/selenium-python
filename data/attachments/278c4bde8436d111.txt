@@ -1,0 +1,33 @@
+2025-11-06 06:39:18,042 - INFO - [test_textbox_enable_and_disable] Starting test: test_textbox_enable_and_disable.
+2025-11-06 06:39:18,043 - INFO - [test_textbox_enable_and_disable] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:39:18,080 - INFO - [test_textbox_enable_and_disable] Navigation completed.
+2025-11-06 06:39:18,080 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:39:18,099 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:39:18,100 - INFO - [test_textbox_enable_and_disable] Started recording: tests_recordings/gw2/test_textbox_enable_and_disable_20251106_063918/test_textbox_enable_and_disable_20251106_063918.mp4
+2025-11-06 06:39:18,101 - INFO - [test_textbox_enable_and_disable] Test Enable/disable textbox area.
+2025-11-06 06:39:18,101 - INFO - [test_textbox_enable_and_disable] Navigating to Dynamic Controls page.
+2025-11-06 06:39:18,158 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:39:18,261 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-06 06:39:18,340 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:39:18,346 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-06 06:39:18,346 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-06 06:39:18,346 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-06 06:39:18,365 - INFO - [test_textbox_enable_and_disable] Clicking enable button.
+2025-11-06 06:39:18,442 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-06 06:39:18,506 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:39:21,561 - INFO - [test_textbox_enable_and_disable] Checking if textbox is enabled.
+2025-11-06 06:39:21,561 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-06 06:39:21,577 - INFO - [test_textbox_enable_and_disable] Get enable message text.
+2025-11-06 06:39:21,597 - INFO - [test_textbox_enable_and_disable] Clicking disable button.
+2025-11-06 06:39:21,705 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:39:21,748 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-06 06:39:21,868 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:39:24,352 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:39:24,813 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-06 06:39:24,813 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-06 06:39:24,890 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:39:24,896 - INFO - [test_textbox_enable_and_disable] Get disable message text.
+2025-11-06 06:39:24,913 - INFO - [test_textbox_enable_and_disable] Finished test: test_textbox_enable_and_disable (Duration: 6.81s).
+2025-11-06 06:39:24,913 - INFO - [test_textbox_enable_and_disable] Stopping video recording...
+2025-11-06 06:39:24,955 - ERROR - [test_textbox_enable_and_disable] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-06 06:39:24,964 - INFO - [test_textbox_enable_and_disable] Quitting driver for browser: chrome.

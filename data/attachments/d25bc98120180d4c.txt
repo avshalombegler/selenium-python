@@ -1,0 +1,16 @@
+2025-11-06 06:38:40,905 - INFO - [test_right_click_on_hotspot] Starting test: test_right_click_on_hotspot.
+2025-11-06 06:38:40,905 - INFO - [test_right_click_on_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:38:40,967 - INFO - [test_right_click_on_hotspot] Navigation completed.
+2025-11-06 06:38:40,967 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:38:40,987 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:38:40,989 - INFO - [test_right_click_on_hotspot] Started recording: tests_recordings/gw1/test_right_click_on_hotspot_20251106_063840/test_right_click_on_hotspot_20251106_063840.mp4
+2025-11-06 06:38:40,991 - INFO - [test_right_click_on_hotspot] Navigating to Context Menu page.
+2025-11-06 06:38:41,077 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:41,238 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:38:41,299 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:38:41,305 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:38:41,305 - INFO - [test_right_click_on_hotspot] Testing right-click on hot spot
+2025-11-06 06:38:41,305 - INFO - [test_right_click_on_hotspot] Video recording active – skipping alert text check
+2025-11-06 06:38:41,306 - INFO - [test_right_click_on_hotspot] Finished test: test_right_click_on_hotspot (Duration: 0.32s).
+2025-11-06 06:38:41,306 - INFO - [test_right_click_on_hotspot] Stopping video recording...
+2025-11-06 06:38:41,361 - ERROR - [test_right_click_on_hotspot] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
