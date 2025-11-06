@@ -26,34 +26,88 @@ class DragAndDropPage(BasePage):
 
     @allure.step("Perform drag and drop on box")
     def drag_and_drop_box(self, actions: ActionChains, source: WebElement, target: WebElement) -> None:
-        try:
-            # Try ActionChains first
-            actions.drag_and_drop(source, target).perform()
-        except Exception as e:
-            # Fallback to an HTML5 JS-based drag/drop if ActionChains fails
-            self.logger.warning(f"ActionChains drag_and_drop failed: {e}. Falling back to JS HTML5 drag-and-drop.")
-            js = (
-                "function simulateDragDrop(source, target) {"
-                "  var dataTransfer = { data: {}, setData: function(k,v){this.data[k]=v;}, getData: function(k){return this.data[k];} };"
-                "  function emit(el, type) {"
-                "    var evt = document.createEvent('CustomEvent');"
-                "    evt.initCustomEvent(type, true, true, null);"
-                "    evt.dataTransfer = dataTransfer;"
-                "    el.dispatchEvent(evt);"
-                "  }"
-                "  emit(source, 'dragstart');"
-                "  emit(target, 'drop');"
-                "  emit(source, 'dragend');"
-                "}"
-                "simulateDragDrop(arguments[0], arguments[1]);"
-            )
+        # Check if the driver is Firefox; if so, skip ActionChains and use JS directly
+        is_firefox = "firefox" in self.driver.name.lower()
+        
+        if not is_firefox:
             try:
-                self.driver.execute_script(js, source, target)
-            except Exception as e2:
-                self.logger.error(f"JS drag_and_drop fallback failed: {e2}")
-                raise
-        # Small pause to allow DOM update; get_box_header uses waits but extra safety helps
-        time.sleep(0.4)
+                # Try ActionChains first for Chrome/other browsers
+                actions.drag_and_drop(source, target).perform()
+                self.logger.info("Drag and drop completed using ActionChains.")
+                time.sleep(0.4)  # Allow DOM update
+                return
+            except Exception as e:
+                self.logger.warning(f"ActionChains drag_and_drop failed: {e}. Falling back to JS.")
+        
+        # Fallback to improved JS simulation for Firefox or if ActionChains failed
+        self._js_drag_and_drop(source, target)
+
+    def _js_drag_and_drop(self, source: WebElement, target: WebElement) -> None:
+        """Improved JS-based drag and drop simulation using HTML5 events."""
+        js = """
+        function simulateHTML5DragDrop(source, target) {
+            // Create a DataTransfer object if supported, else a simple mock
+            var dataTransfer = null;
+            try {
+                dataTransfer = new DataTransfer();
+            } catch (e) {
+                dataTransfer = {
+                    data: {},
+                    setData: function(key, val) { this.data[key] = val; },
+                    getData: function(key) { return this.data[key]; },
+                    effectAllowed: 'move',
+                    dropEffect: 'move'
+                };
+            }
+            
+            // Dispatch dragstart on source
+            var dragStartEvent = new DragEvent('dragstart', {
+                bubbles: true,
+                cancelable: true,
+                dataTransfer: dataTransfer
+            });
+            source.dispatchEvent(dragStartEvent);
+            
+            // Dispatch dragenter and dragover on target to prepare for drop
+            var dragEnterEvent = new DragEvent('dragenter', {
+                bubbles: true,
+                cancelable: true,
+                dataTransfer: dataTransfer
+            });
+            target.dispatchEvent(dragEnterEvent);
+            
+            var dragOverEvent = new DragEvent('dragover', {
+                bubbles: true,
+                cancelable: true,
+                dataTransfer: dataTransfer
+            });
+            target.dispatchEvent(dragOverEvent);
+            
+            // Dispatch drop on target
+            var dropEvent = new DragEvent('drop', {
+                bubbles: true,
+                cancelable: true,
+                dataTransfer: dataTransfer
+            });
+            target.dispatchEvent(dropEvent);
+            
+            // Dispatch dragend on source
+            var dragEndEvent = new DragEvent('dragend', {
+                bubbles: true,
+                cancelable: true,
+                dataTransfer: dataTransfer
+            });
+            source.dispatchEvent(dragEndEvent);
+        }
+        simulateHTML5DragDrop(arguments[0], arguments[1]);
+        """
+        try:
+            self.driver.execute_script(js, source, target)
+            self.logger.info("Drag and drop completed using JS simulation.")
+        except Exception as e:
+            self.logger.error(f"JS drag_and_drop failed: {e}")
+            raise
+        time.sleep(0.4)  # Allow DOM update
 
     @allure.step("Get box header")
     def get_box_header(self, box: str) -> str:

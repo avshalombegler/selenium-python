@@ -5,6 +5,7 @@ from pages.base.base_page import BasePage
 from pages.features.digest_auth.locators import DigestAuthPageLocators
 from selenium.common.exceptions import (
     TimeoutException,
+    UnexpectedAlertPresentException,
 )
 
 if TYPE_CHECKING:
@@ -23,7 +24,7 @@ class DigestAuthPage(BasePage):
         try:
             self.get_dynamic_element_text(DigestAuthPageLocators.AUTHORIZED_INDICATOR)
             return True
-        except TimeoutException:
+        except (TimeoutException, UnexpectedAlertPresentException):
             return False
 
     @allure.step("Get page source for debug")
