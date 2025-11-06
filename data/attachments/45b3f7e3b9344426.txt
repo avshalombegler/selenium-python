@@ -1,0 +1,27 @@
+2025-11-06 06:43:29,610 - INFO - [test_example_2] Starting test: test_example_2.
+2025-11-06 06:43:29,611 - INFO - [test_example_2] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:43:29,684 - INFO - [test_example_2] Navigation completed.
+2025-11-06 06:43:29,685 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:43:29,717 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:43:29,719 - INFO - [test_example_2] Started recording: tests_recordings/gw1/test_example_2_20251106_064329/test_example_2_20251106_064329.mp4
+2025-11-06 06:43:29,720 - INFO - [test_example_2] Tests Dynamic Loading - Example 2.
+2025-11-06 06:43:29,721 - INFO - [test_example_2] Navigating to Dynamic Loading page.
+2025-11-06 06:43:29,788 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:29,982 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-06 06:43:30,085 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:30,094 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-06 06:43:30,095 - INFO - [test_example_2] Navigating to Example 2: Element rendered after the fact page.
+2025-11-06 06:43:30,302 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-06 06:43:30,369 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:30,378 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-06 06:43:30,379 - INFO - [test_example_2] Clicking start button.
+2025-11-06 06:43:30,486 - INFO - [test_example_2] Waiting for loader to disappear.
+2025-11-06 06:43:30,570 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:31,196 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:32,691 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:35,237 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:35,744 - INFO - [test_example_2] Verifying success message.
+2025-11-06 06:43:35,807 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:35,808 - INFO - [test_example_2] Finished test: test_example_2 (Duration: 6.09s).
+2025-11-06 06:43:35,809 - INFO - [test_example_2] Stopping video recording...
+2025-11-06 06:43:35,871 - ERROR - [test_example_2] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

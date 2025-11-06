@@ -1,0 +1,17 @@
+2025-11-06 06:43:21,830 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green].
+2025-11-06 06:43:21,830 - INFO - [test_each_button_clicks[green]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:43:21,901 - INFO - [test_each_button_clicks[green]] Navigation completed.
+2025-11-06 06:43:21,901 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:43:21,925 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:43:21,927 - INFO - [test_each_button_clicks[green]] Started recording: tests_recordings/gw0/test_each_button_clicks[green]_20251106_064321/test_each_button_clicks[green]_20251106_064321.mp4
+2025-11-06 06:43:21,929 - INFO - [test_each_button_clicks[green]] Verify each button in page is clickable.
+2025-11-06 06:43:21,929 - INFO - [test_each_button_clicks[green]] Navigating to Challenging DOM page.
+2025-11-06 06:43:22,004 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:22,189 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:43:22,298 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:22,305 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:43:22,305 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-11-06 06:43:22,475 - INFO - [test_each_button_clicks[green]] Finished test: test_each_button_clicks[green] (Duration: 0.55s).
+2025-11-06 06:43:22,477 - INFO - [test_each_button_clicks[green]] Stopping video recording...
+2025-11-06 06:43:22,572 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:22,640 - ERROR - [test_each_button_clicks[green]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

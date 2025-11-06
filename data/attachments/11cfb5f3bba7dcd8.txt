@@ -1,0 +1,22 @@
+2025-11-06 06:43:36,307 - INFO - [test_content_changes_after_refresh] Starting test: test_content_changes_after_refresh.
+2025-11-06 06:43:36,308 - INFO - [test_content_changes_after_refresh] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:43:36,356 - INFO - [test_content_changes_after_refresh] Navigation completed.
+2025-11-06 06:43:36,356 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:43:36,375 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:43:36,376 - INFO - [test_content_changes_after_refresh] Started recording: tests_recordings/gw1/test_content_changes_after_refresh_20251106_064336/test_content_changes_after_refresh_20251106_064336.mp4
+2025-11-06 06:43:36,378 - INFO - [test_content_changes_after_refresh] Test that content changes after page refresh.
+2025-11-06 06:43:36,378 - INFO - [test_content_changes_after_refresh] Navigating to Dynamic Content page.
+2025-11-06 06:43:36,450 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:36,584 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:43:36,665 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:36,670 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:43:36,774 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:36,927 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:36,994 - INFO - [test_content_changes_after_refresh] Validating initial content blocks structure and count.
+2025-11-06 06:43:36,994 - INFO - [test_content_changes_after_refresh] Validating refreshed content blocks structure and count.
+2025-11-06 06:43:36,994 - INFO - [test_content_changes_after_refresh] Comparing content changes after refresh.
+2025-11-06 06:43:36,995 - INFO - [test_content_changes_after_refresh] Finished test: test_content_changes_after_refresh (Duration: 0.62s).
+2025-11-06 06:43:36,996 - INFO - [test_content_changes_after_refresh] Stopping video recording...
+2025-11-06 06:43:37,043 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:37,112 - ERROR - [test_content_changes_after_refresh] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-06 06:43:37,114 - INFO - [test_content_changes_after_refresh] Quitting driver for browser: chrome.

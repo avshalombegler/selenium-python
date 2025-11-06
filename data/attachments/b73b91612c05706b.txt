@@ -1,0 +1,22 @@
+2025-11-06 06:43:29,196 - INFO - [test_valid_images_count] Starting test: test_valid_images_count.
+2025-11-06 06:43:29,197 - INFO - [test_valid_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:43:29,276 - INFO - [test_valid_images_count] Navigation completed.
+2025-11-06 06:43:29,277 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:43:29,305 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:43:29,306 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw3/test_valid_images_count_20251106_064329/test_valid_images_count_20251106_064329.mp4
+2025-11-06 06:43:29,308 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-06 06:43:29,308 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-06 06:43:29,406 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:29,566 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:43:29,684 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:29,697 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:43:29,697 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-06 06:43:29,697 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-06 06:43:29,714 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 06:43:29,725 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 06:43:29,734 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 06:43:29,747 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-06 06:43:29,748 - INFO - [test_valid_images_count] Finished test: test_valid_images_count (Duration: 0.44s).
+2025-11-06 06:43:29,749 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-06 06:43:29,795 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:29,866 - ERROR - [test_valid_images_count] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

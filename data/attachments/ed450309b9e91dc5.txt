@@ -1,0 +1,16 @@
+2025-11-06 06:43:24,253 - INFO - [test_table_header_per_column[Sit]] Starting test: test_table_header_per_column[Sit].
+2025-11-06 06:43:24,253 - INFO - [test_table_header_per_column[Sit]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:43:24,327 - INFO - [test_table_header_per_column[Sit]] Navigation completed.
+2025-11-06 06:43:24,327 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:43:24,340 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:43:24,342 - INFO - [test_table_header_per_column[Sit]] Started recording: tests_recordings/gw0/test_table_header_per_column[Sit]_20251106_064324/test_table_header_per_column[Sit]_20251106_064324.mp4
+2025-11-06 06:43:24,343 - INFO - [test_table_header_per_column[Sit]] Verify table head text per column.
+2025-11-06 06:43:24,344 - INFO - [test_table_header_per_column[Sit]] Navigating to Challenging DOM page.
+2025-11-06 06:43:24,433 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:24,890 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:43:24,983 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:24,989 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:43:24,989 - INFO - [test_table_header_per_column[Sit]] Getting table head text of column 'Sit'.
+2025-11-06 06:43:25,029 - INFO - [test_table_header_per_column[Sit]] Finished test: test_table_header_per_column[Sit] (Duration: 0.69s).
+2025-11-06 06:43:25,031 - INFO - [test_table_header_per_column[Sit]] Stopping video recording...
+2025-11-06 06:43:25,047 - ERROR - [test_table_header_per_column[Sit]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

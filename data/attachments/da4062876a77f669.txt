@@ -1,0 +1,17 @@
+2025-11-06 06:43:20,986 - INFO - [test_each_button_clicks[red]] Starting test: test_each_button_clicks[red].
+2025-11-06 06:43:20,986 - INFO - [test_each_button_clicks[red]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:43:21,049 - INFO - [test_each_button_clicks[red]] Navigation completed.
+2025-11-06 06:43:21,050 - INFO - [test_each_button_clicks[red]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:43:21,074 - INFO - [test_each_button_clicks[red]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:43:21,076 - INFO - [test_each_button_clicks[red]] Started recording: tests_recordings/gw0/test_each_button_clicks[red]_20251106_064321/test_each_button_clicks[red]_20251106_064321.mp4
+2025-11-06 06:43:21,078 - INFO - [test_each_button_clicks[red]] Verify each button in page is clickable.
+2025-11-06 06:43:21,078 - INFO - [test_each_button_clicks[red]] Navigating to Challenging DOM page.
+2025-11-06 06:43:21,149 - WARNING - [test_each_button_clicks[red]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:21,329 - INFO - [test_each_button_clicks[red]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:43:21,465 - WARNING - [test_each_button_clicks[red]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:21,472 - INFO - [test_each_button_clicks[red]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:43:21,472 - INFO - [test_each_button_clicks[red]] Clicking red button.
+2025-11-06 06:43:21,672 - INFO - [test_each_button_clicks[red]] Finished test: test_each_button_clicks[red] (Duration: 0.59s).
+2025-11-06 06:43:21,679 - INFO - [test_each_button_clicks[red]] Stopping video recording...
+2025-11-06 06:43:21,756 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:21,825 - ERROR - [test_each_button_clicks[red]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

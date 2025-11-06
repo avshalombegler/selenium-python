@@ -1,0 +1,37 @@
+2025-11-06 06:43:05,175 - INFO - [] Screenshots directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-06 06:43:05,176 - INFO - [] Videos directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-06 06:43:05,177 - INFO - [] xdist worker is: gw3
+2025-11-06 06:43:05,177 - INFO - [] ====== WebDriver manager ======
+2025-11-06 06:43:06,620 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 06:43:06,716 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 06:43:06,782 - INFO - [] There is no [linux64] chromedriver "142.0.7444.61" for browser google-chrome "142.0.7444" in cache
+2025-11-06 06:43:06,782 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 06:43:06,966 - INFO - [] WebDriver version 142.0.7444.61 selected
+2025-11-06 06:43:06,975 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.61/linux64/chromedriver-linux64.zip
+2025-11-06 06:43:06,976 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.61/linux64/chromedriver-linux64.zip
+2025-11-06 06:43:07,042 - INFO - [] Driver downloading response is 200
+2025-11-06 06:43:07,133 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 06:43:07,347 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.61]
+2025-11-06 06:43:19,203 - INFO - [test_add_elements] Starting test: test_add_elements.
+2025-11-06 06:43:19,204 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:43:19,789 - INFO - [test_add_elements] Navigation completed.
+2025-11-06 06:43:19,789 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:43:19,857 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:43:19,861 - INFO - [test_add_elements] Started recording: tests_recordings/gw3/test_add_elements_20251106_064319/test_add_elements_20251106_064319.mp4
+2025-11-06 06:43:19,863 - INFO - [test_add_elements] Tests for add elements.
+2025-11-06 06:43:19,865 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-06 06:43:19,968 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:20,325 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-06 06:43:20,461 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:20,470 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-06 06:43:20,470 - INFO - [test_add_elements] Add two elements.
+2025-11-06 06:43:20,471 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-06 06:43:20,667 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-06 06:43:20,764 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:20,850 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-06 06:43:20,851 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-06 06:43:20,915 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:43:20,915 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-06 06:43:20,915 - INFO - [test_add_elements] Finished test: test_add_elements (Duration: 1.05s).
+2025-11-06 06:43:20,916 - INFO - [test_add_elements] Stopping video recording...
+2025-11-06 06:43:20,974 - ERROR - [test_add_elements] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
