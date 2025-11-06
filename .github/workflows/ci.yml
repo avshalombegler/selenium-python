@@ -105,6 +105,10 @@ jobs:
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
             pytest tests/ -v -n auto --dist=loadfile --alluredir=reports/allure-results
 
+      - name: Clean Allure Report Directory
+        if: steps.pytest.outcome == 'failure'
+        run: rm -rf reports/allure-report/*
+
       - name: Retry Failed Tests
         if: steps.pytest.outcome == 'failure'
         run: |
@@ -115,7 +119,7 @@ jobs:
         if: always()
         run: |
           mkdir -p reports/allure-report/build-${{ github.run_id }}
-          allure generate reports/allure-results -o reports/allure-report/build-${{ github.run_id }}
+          allure generate --clean reports/allure-results -o reports/allure-report/build-${{ github.run_id }}
           sleep 2
 
       - name: Upload Allure Results
