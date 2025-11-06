@@ -1,0 +1,32 @@
+2025-11-06 13:16:27,105 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality.
+2025-11-06 13:16:27,106 - INFO - [test_drag_and_drop_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:16:27,191 - INFO - [test_drag_and_drop_functionality] Navigation completed.
+2025-11-06 13:16:27,191 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:16:27,206 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:16:27,207 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:16:27,208 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/test_drag_and_drop_functionality_20251106_131627.mp4
+2025-11-06 13:16:27,209 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-06 13:16:27,209 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-06 13:16:27,301 - INFO - [] Saved frame 0: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/frames/frame_000000.png
+2025-11-06 13:16:27,309 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:27,473 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 13:16:27,554 - INFO - [] Saved frame 1: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/frames/frame_000001.png
+2025-11-06 13:16:27,557 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:27,564 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 13:16:27,564 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-06 13:16:27,596 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-06 13:16:28,141 - INFO - [test_drag_and_drop_functionality] Drag and drop completed using ActionChains.
+2025-11-06 13:16:28,206 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:28,206 - INFO - [] Saved frame 2: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/frames/frame_000002.png
+2025-11-06 13:16:28,332 - INFO - [] Saved frame 3: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/frames/frame_000003.png
+2025-11-06 13:16:28,461 - INFO - [] Saved frame 4: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/frames/frame_000004.png
+2025-11-06 13:16:28,542 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-06 13:16:28,586 - INFO - [] Saved frame 5: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/frames/frame_000005.png
+2025-11-06 13:16:28,593 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:28,638 - INFO - [test_drag_and_drop_functionality] Finished test: test_drag_and_drop_functionality (Duration: 1.43s).
+2025-11-06 13:16:28,639 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-06 13:16:28,640 - INFO - [test_drag_and_drop_functionality] Stopping video recording and assembling.
+2025-11-06 13:16:28,653 - INFO - [test_drag_and_drop_functionality] Thread joined. Frames dir: tests_recordings/gw2/test_drag_and_drop_functionality_20251106_131627/frames
+2025-11-06 13:16:28,654 - INFO - [test_drag_and_drop_functionality] Found 6 valid frames.
+2025-11-06 13:16:28,654 - ERROR - [test_drag_and_drop_functionality] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-06 13:16:28,656 - INFO - [test_drag_and_drop_functionality] Quitting driver for browser: chrome.

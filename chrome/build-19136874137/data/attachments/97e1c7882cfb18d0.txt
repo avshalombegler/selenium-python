@@ -1,0 +1,73 @@
+2025-11-06 13:16:19,353 - INFO - [test_example_1] Starting test: test_example_1.
+2025-11-06 13:16:19,353 - INFO - [test_example_1] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:16:19,440 - INFO - [test_example_1] Navigation completed.
+2025-11-06 13:16:19,441 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:16:19,462 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:16:19,463 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:16:19,464 - INFO - [test_example_1] Started recording: tests_recordings/gw1/test_example_1_20251106_131619/test_example_1_20251106_131619.mp4
+2025-11-06 13:16:19,465 - INFO - [test_example_1] Tests Dynamic Loading - Example 1.
+2025-11-06 13:16:19,465 - INFO - [test_example_1] Navigating to Dynamic Loading page.
+2025-11-06 13:16:19,572 - INFO - [] Saved frame 0: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000000.png
+2025-11-06 13:16:19,582 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:19,756 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-06 13:16:19,861 - INFO - [] Saved frame 1: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000001.png
+2025-11-06 13:16:19,869 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:19,874 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-06 13:16:19,874 - INFO - [test_example_1] Navigating to Example 1: Element on page that is hidden page.
+2025-11-06 13:16:20,072 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-06 13:16:20,168 - INFO - [] Saved frame 2: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000002.png
+2025-11-06 13:16:20,174 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:20,180 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-06 13:16:20,180 - INFO - [test_example_1] Clicking start button.
+2025-11-06 13:16:20,264 - INFO - [test_example_1] Waiting for loader to disappear.
+2025-11-06 13:16:20,338 - INFO - [] Saved frame 3: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000003.png
+2025-11-06 13:16:20,348 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:20,474 - INFO - [] Saved frame 4: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000004.png
+2025-11-06 13:16:20,642 - INFO - [] Saved frame 5: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000005.png
+2025-11-06 13:16:20,784 - INFO - [] Saved frame 6: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000006.png
+2025-11-06 13:16:20,922 - INFO - [] Saved frame 7: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000007.png
+2025-11-06 13:16:20,925 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:21,046 - INFO - [] Saved frame 8: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000008.png
+2025-11-06 13:16:21,434 - INFO - [] Saved frame 9: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000009.png
+2025-11-06 13:16:21,443 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:21,567 - INFO - [] Saved frame 10: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000010.png
+2025-11-06 13:16:21,708 - INFO - [] Saved frame 11: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000011.png
+2025-11-06 13:16:21,842 - INFO - [] Saved frame 12: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000012.png
+2025-11-06 13:16:21,971 - INFO - [] Saved frame 13: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000013.png
+2025-11-06 13:16:21,975 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:22,096 - INFO - [] Saved frame 14: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000014.png
+2025-11-06 13:16:22,225 - INFO - [] Saved frame 15: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000015.png
+2025-11-06 13:16:22,356 - INFO - [] Saved frame 16: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000016.png
+2025-11-06 13:16:22,493 - INFO - [] Saved frame 17: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000017.png
+2025-11-06 13:16:22,496 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:22,634 - INFO - [] Saved frame 18: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000018.png
+2025-11-06 13:16:22,799 - INFO - [] Saved frame 19: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000019.png
+2025-11-06 13:16:22,933 - INFO - [] Saved frame 20: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000020.png
+2025-11-06 13:16:23,065 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:23,066 - INFO - [] Saved frame 21: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000021.png
+2025-11-06 13:16:23,237 - INFO - [] Saved frame 22: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000022.png
+2025-11-06 13:16:23,385 - INFO - [] Saved frame 23: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000023.png
+2025-11-06 13:16:23,534 - INFO - [] Saved frame 24: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000024.png
+2025-11-06 13:16:23,538 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:23,691 - INFO - [] Saved frame 25: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000025.png
+2025-11-06 13:16:23,839 - INFO - [] Saved frame 26: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000026.png
+2025-11-06 13:16:23,963 - INFO - [] Saved frame 27: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000027.png
+2025-11-06 13:16:24,137 - INFO - [] Saved frame 28: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000028.png
+2025-11-06 13:16:24,141 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:24,273 - INFO - [] Saved frame 29: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000029.png
+2025-11-06 13:16:24,404 - INFO - [] Saved frame 30: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000030.png
+2025-11-06 13:16:24,552 - INFO - [] Saved frame 31: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000031.png
+2025-11-06 13:16:24,757 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:24,757 - INFO - [] Saved frame 32: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000032.png
+2025-11-06 13:16:24,895 - INFO - [] Saved frame 33: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000033.png
+2025-11-06 13:16:25,040 - INFO - [] Saved frame 34: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000034.png
+2025-11-06 13:16:25,165 - INFO - [] Saved frame 35: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000035.png
+2025-11-06 13:16:25,300 - INFO - [] Saved frame 36: tests_recordings/gw1/test_example_1_20251106_131619/frames/frame_000036.png
+2025-11-06 13:16:25,303 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:25,303 - INFO - [test_example_1] Verifying success message.
+2025-11-06 13:16:25,346 - INFO - [test_example_1] Finished test: test_example_1 (Duration: 5.88s).
+2025-11-06 13:16:25,347 - INFO - [test_example_1] Stopping video recording...
+2025-11-06 13:16:25,347 - INFO - [test_example_1] Stopping video recording and assembling.
+2025-11-06 13:16:25,367 - INFO - [test_example_1] Thread joined. Frames dir: tests_recordings/gw1/test_example_1_20251106_131619/frames
+2025-11-06 13:16:25,368 - INFO - [test_example_1] Found 37 valid frames.
+2025-11-06 13:16:25,369 - ERROR - [test_example_1] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

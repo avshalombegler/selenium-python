@@ -1,0 +1,28 @@
+2025-11-06 13:16:26,766 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Starting test: test_cells_content_per_column[Ipsum-Apeirian].
+2025-11-06 13:16:26,766 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:16:26,861 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-06 13:16:26,861 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:16:26,877 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:16:26,878 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:16:26,879 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_131626/test_cells_content_per_column[Ipsum-Apeirian]_20251106_131626.mp4
+2025-11-06 13:16:26,880 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Verify cell content per column.
+2025-11-06 13:16:26,881 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-06 13:16:26,992 - INFO - [] Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_131626/frames/frame_000000.png
+2025-11-06 13:16:26,998 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:27,699 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 13:16:27,817 - INFO - [] Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_131626/frames/frame_000001.png
+2025-11-06 13:16:27,818 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:27,824 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 13:16:27,824 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 13:16:27,867 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 13:16:27,971 - INFO - [] Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_131626/frames/frame_000002.png
+2025-11-06 13:16:27,973 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:27,999 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 13:16:28,043 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Finished test: test_cells_content_per_column[Ipsum-Apeirian] (Duration: 1.16s).
+2025-11-06 13:16:28,046 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-11-06 13:16:28,046 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording and assembling.
+2025-11-06 13:16:28,119 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:28,120 - INFO - [] Saved frame 3: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_131626/frames/frame_000003.png
+2025-11-06 13:16:28,187 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_131626/frames
+2025-11-06 13:16:28,187 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Found 4 valid frames.
+2025-11-06 13:16:28,188 - ERROR - [test_cells_content_per_column[Ipsum-Apeirian]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

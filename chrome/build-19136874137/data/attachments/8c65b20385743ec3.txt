@@ -1,0 +1,45 @@
+INFO     root:conftest.py:94 Directory cleaned and recreated at: reports/allure-report.
+INFO     root:conftest.py:94 Directory cleaned and recreated at: tests_screenshots/gw2.
+INFO     root:conftest.py:94 Directory cleaned and recreated at: tests_recordings/gw2.
+INFO     WDM:logger.py:11 xdist worker is: gw2
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 There is no [linux64] chromedriver "142.0.7444.61" for browser google-chrome "142.0.7444" in cache
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 WebDriver version 142.0.7444.61 selected
+INFO     WDM:logger.py:11 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.61/linux64/chromedriver-linux64.zip
+INFO     WDM:logger.py:11 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.61/linux64/chromedriver-linux64.zip
+INFO     WDM:logger.py:11 Driver downloading response is 200
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver has been saved in cache [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.61]
+INFO     root:conftest.py:164 Starting test: test_add_elements.
+INFO     root:base_page.py:177 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:179 Navigation completed.
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:51 Capture loop started for Firefox.
+INFO     root:conftest.py:183 Started recording: tests_recordings/gw2/test_add_elements_20251106_131615/test_add_elements_20251106_131615.mp4
+INFO     root:test_add_remove_elements.py:20 Tests for add elements.
+INFO     root:main_page.py:41 Navigating to Add/Remove Elements page.
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 0: tests_recordings/gw2/test_add_elements_20251106_131615/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 1: tests_recordings/gw2/test_add_elements_20251106_131615/frames/frame_000001.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+INFO     root:test_add_remove_elements.py:23 Add two elements.
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 2: tests_recordings/gw2/test_add_elements_20251106_131615/frames/frame_000002.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:add_remove_elements_page.py:28 Counting Delete Element button(s).
+INFO     root:base_page.py:231 Counting elements with locator: '('css selector', '#elements > button')'.
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 3: tests_recordings/gw2/test_add_elements_20251106_131615/frames/frame_000003.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_add_remove_elements.py:26 Found 2 delete buttons.
+INFO     root:conftest.py:187 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:85 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:88 Thread joined. Frames dir: tests_recordings/gw2/test_add_elements_20251106_131615/frames
+INFO     utils.video_recorder:video_recorder.py:92 Found 4 valid frames.
+ERROR    utils.video_recorder:video_recorder.py:122 ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

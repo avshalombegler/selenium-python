@@ -1,0 +1,26 @@
+2025-11-06 13:16:09,005 - INFO - [test_table_header_per_column[Lorem]] Starting test: test_table_header_per_column[Lorem].
+2025-11-06 13:16:09,005 - INFO - [test_table_header_per_column[Lorem]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:16:09,076 - INFO - [test_table_header_per_column[Lorem]] Navigation completed.
+2025-11-06 13:16:09,076 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:16:09,088 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:16:09,089 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:16:09,089 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:16:09,090 - INFO - [test_table_header_per_column[Lorem]] Started recording: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251106_131609/test_table_header_per_column[Lorem]_20251106_131609.mp4
+2025-11-06 13:16:09,091 - INFO - [test_table_header_per_column[Lorem]] Verify table head text per column.
+2025-11-06 13:16:09,092 - INFO - [test_table_header_per_column[Lorem]] Navigating to Challenging DOM page.
+2025-11-06 13:16:09,123 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 13:16:09,123 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251106_131609/frames/frame_000000.png
+2025-11-06 13:16:09,146 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:09,190 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:16:09,343 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 13:16:09,397 - INFO - [] Raw screenshot size: 171546 bytes.
+2025-11-06 13:16:09,398 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251106_131609/frames/frame_000001.png
+2025-11-06 13:16:09,399 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:16:09,408 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 13:16:09,409 - INFO - [test_table_header_per_column[Lorem]] Getting table head text of column 'Lorem'.
+2025-11-06 13:16:09,429 - INFO - [test_table_header_per_column[Lorem]] Finished test: test_table_header_per_column[Lorem] (Duration: 0.34s).
+2025-11-06 13:16:09,431 - INFO - [test_table_header_per_column[Lorem]] Stopping video recording...
+2025-11-06 13:16:09,432 - INFO - [test_table_header_per_column[Lorem]] Stopping video recording and assembling.
+2025-11-06 13:16:09,465 - INFO - [test_table_header_per_column[Lorem]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251106_131609/frames
+2025-11-06 13:16:09,466 - INFO - [test_table_header_per_column[Lorem]] Found 2 valid frames.
+2025-11-06 13:16:09,467 - ERROR - [test_table_header_per_column[Lorem]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
