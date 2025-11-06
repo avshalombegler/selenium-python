@@ -1,0 +1,35 @@
+2025-11-06 13:46:47,672 - INFO - [test_right_click_outside_hotspot] Starting test: test_right_click_outside_hotspot.
+2025-11-06 13:46:47,673 - INFO - [test_right_click_outside_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:46:48,675 - INFO - [test_right_click_outside_hotspot] Navigation completed.
+2025-11-06 13:46:48,675 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:46:48,739 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:46:48,741 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:46:48,741 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:46:48,743 - INFO - [test_right_click_outside_hotspot] Started recording: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_134648/test_right_click_outside_hotspot_20251106_134648.mp4
+2025-11-06 13:46:48,749 - INFO - [test_right_click_outside_hotspot] Navigating to Context Menu page.
+2025-11-06 13:46:48,864 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 13:46:48,865 - INFO - [] Saved frame 0: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_134648/frames/frame_000000.png
+2025-11-06 13:46:48,924 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:46:48,933 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:46:49,051 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 13:46:49,051 - INFO - [] Saved frame 1: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_134648/frames/frame_000001.png
+2025-11-06 13:46:49,100 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:46:49,119 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:46:49,374 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 13:46:49,461 - INFO - [] Raw screenshot size: 69828 bytes.
+2025-11-06 13:46:49,461 - INFO - [] Saved frame 2: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_134648/frames/frame_000002.png
+2025-11-06 13:46:49,462 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:46:49,468 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 13:46:49,468 - INFO - [test_right_click_outside_hotspot] Testing right-click outside hot spot
+2025-11-06 13:46:49,469 - INFO - [test_right_click_outside_hotspot] Perform right-click on page title to verify context menu alert does not activate.
+2025-11-06 13:46:49,469 - INFO - [test_right_click_outside_hotspot] Performing right-click on element with locator '('css selector', 'div.example h3')'.
+2025-11-06 13:46:49,528 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:46:49,795 - INFO - [test_right_click_outside_hotspot] Finished test: test_right_click_outside_hotspot (Duration: 1.05s).
+2025-11-06 13:46:49,796 - INFO - [test_right_click_outside_hotspot] Stopping video recording...
+2025-11-06 13:46:49,796 - INFO - [test_right_click_outside_hotspot] Stopping video recording and assembling.
+2025-11-06 13:46:49,877 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:46:49,878 - INFO - [] Raw screenshot size: 69828 bytes.
+2025-11-06 13:46:49,878 - INFO - [] Saved frame 3: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_134648/frames/frame_000003.png
+2025-11-06 13:46:49,945 - INFO - [test_right_click_outside_hotspot] Thread joined. Frames dir: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_134648/frames
+2025-11-06 13:46:49,946 - INFO - [test_right_click_outside_hotspot] Found 4 valid frames.
+2025-11-06 13:46:49,946 - ERROR - [test_right_click_outside_hotspot] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

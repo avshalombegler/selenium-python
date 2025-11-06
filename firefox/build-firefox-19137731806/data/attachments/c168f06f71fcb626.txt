@@ -1,0 +1,38 @@
+2025-11-06 13:46:38,400 - INFO - [] Directory cleaned and recreated at: reports/allure-report.
+2025-11-06 13:46:38,401 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-06 13:46:38,402 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-06 13:46:38,403 - INFO - [] xdist worker is: gw2
+2025-11-06 13:46:38,403 - INFO - [] ====== WebDriver manager ======
+2025-11-06 13:46:38,473 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-06 13:46:38,733 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-06 13:46:38,927 - INFO - [] There is no [linux64] geckodriver "v0.36.0" for browser firefox "144.0" in cache
+2025-11-06 13:46:38,928 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-06 13:46:39,130 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-06 13:46:39,391 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-06 13:46:39,744 - INFO - [] Driver downloading response is 200
+2025-11-06 13:46:39,927 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-06 13:46:40,237 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw2/drivers/geckodriver/linux64/v0.36.0]
+2025-11-06 13:46:46,279 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Starting test: test_digest_auth_login_scenarios[admin-admin].
+2025-11-06 13:46:46,281 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:46:46,281 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:46:46,299 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251106_134646/test_digest_auth_login_scenarios[admin-admin]_20251106_134646.mp4
+2025-11-06 13:46:46,301 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Tests for Digest Authentication scenarios.
+2025-11-06 13:46:46,317 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to Digest Authentication page.
+2025-11-06 13:46:46,318 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-06 13:46:46,431 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 13:46:46,431 - INFO - [] Saved frame 0: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251106_134646/frames/frame_000000.png
+2025-11-06 13:46:46,501 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:46:47,528 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-11-06 13:46:47,528 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Check if login succeeded.
+2025-11-06 13:46:47,678 - INFO - [] Raw screenshot size: 59366 bytes.
+2025-11-06 13:46:47,678 - INFO - [] Saved frame 1: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251106_134646/frames/frame_000001.png
+2025-11-06 13:46:47,753 - INFO - [] Using Firefox screenshot method.
+2025-11-06 13:46:47,929 - INFO - [] Raw screenshot size: 59366 bytes.
+2025-11-06 13:46:47,931 - INFO - [] Saved frame 2: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251106_134646/frames/frame_000002.png
+2025-11-06 13:46:47,955 - WARNING - [test_digest_auth_login_scenarios[admin-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:46:47,981 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Finished test: test_digest_auth_login_scenarios[admin-admin] (Duration: 1.68s).
+2025-11-06 13:46:47,984 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording...
+2025-11-06 13:46:47,988 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording and assembling.
+2025-11-06 13:46:48,000 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251106_134646/frames
+2025-11-06 13:46:48,003 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Found 3 valid frames.
+2025-11-06 13:46:48,005 - ERROR - [test_digest_auth_login_scenarios[admin-admin]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

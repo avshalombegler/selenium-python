@@ -1,0 +1,16 @@
+2025-11-06 13:46:44,408 - INFO - [test_basic_auth[--401-Not authorized\n]] Starting test: test_basic_auth[--401-Not authorized\n].
+2025-11-06 13:46:44,409 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:46:44,409 - INFO - [test_basic_auth[--401-Not authorized\n]] Started recording: tests_recordings/gw1/test_basic_auth[--401-Not authorized\n]_20251106_134644/test_basic_auth[--401-Not authorized\n]_20251106_134644.mp4
+2025-11-06 13:46:44,412 - INFO - [test_basic_auth[--401-Not authorized\n]] Tests basic autorization login scenatios.
+2025-11-06 13:46:44,412 - INFO - [test_basic_auth[--401-Not authorized\n]] Returning object of Basic Auth page.
+2025-11-06 13:46:44,412 - INFO - [test_basic_auth[--401-Not authorized\n]] Initialize URL based on username and password.
+2025-11-06 13:46:44,412 - INFO - [test_basic_auth[--401-Not authorized\n]] Get status code and authorization message.
+2025-11-06 13:46:44,467 - INFO - [] Saved frame 0: tests_recordings/gw1/test_basic_auth[--401-Not authorized\n]_20251106_134644/frames/frame_000000.png
+2025-11-06 13:46:44,606 - INFO - [] Saved frame 1: tests_recordings/gw1/test_basic_auth[--401-Not authorized\n]_20251106_134644/frames/frame_000001.png
+2025-11-06 13:46:44,663 - INFO - [test_basic_auth[--401-Not authorized\n]] Validate status code and authorization message.
+2025-11-06 13:46:44,664 - INFO - [test_basic_auth[--401-Not authorized\n]] Finished test: test_basic_auth[--401-Not authorized\n] (Duration: 0.25s).
+2025-11-06 13:46:44,666 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording...
+2025-11-06 13:46:44,666 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording and assembling.
+2025-11-06 13:46:44,673 - INFO - [test_basic_auth[--401-Not authorized\n]] Thread joined. Frames dir: tests_recordings/gw1/test_basic_auth[--401-Not authorized\n]_20251106_134644/frames
+2025-11-06 13:46:44,673 - INFO - [test_basic_auth[--401-Not authorized\n]] Found 2 valid frames.
+2025-11-06 13:46:44,674 - ERROR - [test_basic_auth[--401-Not authorized\n]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

@@ -1,0 +1,35 @@
+2025-11-06 13:47:23,795 - INFO - [] Directory cleaned and recreated at: reports/allure-report.
+2025-11-06 13:47:23,796 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-06 13:47:23,801 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-06 13:47:23,802 - INFO - [] xdist worker is: gw2
+2025-11-06 13:47:23,802 - INFO - [] ====== WebDriver manager ======
+2025-11-06 13:47:23,888 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 13:47:23,987 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-06 13:47:24,101 - INFO - [] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.61/chromedriver-linux64/chromedriver] found in cache
+2025-11-06 13:47:24,731 - INFO - [test_drag_and_drop_functionality[Option 1]] Starting test: test_drag_and_drop_functionality[Option 1].
+2025-11-06 13:47:24,731 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:47:25,083 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigation completed.
+2025-11-06 13:47:25,083 - INFO - [test_drag_and_drop_functionality[Option 1]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:47:25,115 - INFO - [test_drag_and_drop_functionality[Option 1]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:47:25,116 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:47:25,117 - INFO - [test_drag_and_drop_functionality[Option 1]] Started recording: tests_recordings/gw2/test_drag_and_drop_functionality[Option 1]_20251106_134725/test_drag_and_drop_functionality[Option 1]_20251106_134725.mp4
+2025-11-06 13:47:25,121 - INFO - [test_drag_and_drop_functionality[Option 1]] Tests Dropdown List functionality.
+2025-11-06 13:47:25,122 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigating to Dropdown List page.
+2025-11-06 13:47:25,237 - INFO - [] Saved frame 0: tests_recordings/gw2/test_drag_and_drop_functionality[Option 1]_20251106_134725/frames/frame_000000.png
+2025-11-06 13:47:25,248 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:47:25,431 - INFO - [test_drag_and_drop_functionality[Option 1]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 13:47:25,524 - INFO - [] Saved frame 1: tests_recordings/gw2/test_drag_and_drop_functionality[Option 1]_20251106_134725/frames/frame_000001.png
+2025-11-06 13:47:25,531 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:47:25,537 - INFO - [test_drag_and_drop_functionality[Option 1]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 13:47:25,537 - INFO - [test_drag_and_drop_functionality[Option 1]] Selecting option 'Option 1' from dropdown.
+2025-11-06 13:47:25,650 - INFO - [] Saved frame 2: tests_recordings/gw2/test_drag_and_drop_functionality[Option 1]_20251106_134725/frames/frame_000002.png
+2025-11-06 13:47:25,657 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:47:25,684 - INFO - [test_drag_and_drop_functionality[Option 1]] Verifying option 'Option 1' selected.
+2025-11-06 13:47:25,796 - INFO - [] Saved frame 3: tests_recordings/gw2/test_drag_and_drop_functionality[Option 1]_20251106_134725/frames/frame_000003.png
+2025-11-06 13:47:25,800 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:47:25,817 - INFO - [test_drag_and_drop_functionality[Option 1]] Finished test: test_drag_and_drop_functionality[Option 1] (Duration: 0.70s).
+2025-11-06 13:47:25,819 - INFO - [test_drag_and_drop_functionality[Option 1]] Stopping video recording...
+2025-11-06 13:47:25,819 - INFO - [test_drag_and_drop_functionality[Option 1]] Stopping video recording and assembling.
+2025-11-06 13:47:25,863 - INFO - [test_drag_and_drop_functionality[Option 1]] Thread joined. Frames dir: tests_recordings/gw2/test_drag_and_drop_functionality[Option 1]_20251106_134725/frames
+2025-11-06 13:47:25,863 - INFO - [test_drag_and_drop_functionality[Option 1]] Found 4 valid frames.
+2025-11-06 13:47:25,864 - ERROR - [test_drag_and_drop_functionality[Option 1]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
