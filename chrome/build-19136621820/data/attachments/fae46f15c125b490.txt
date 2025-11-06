@@ -1,0 +1,26 @@
+2025-11-06 13:07:01,080 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Starting test: test_cells_content_per_column[Ipsum-Apeirian].
+2025-11-06 13:07:01,081 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:07:01,141 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-06 13:07:01,141 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:07:01,165 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:07:01,167 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:07:01,169 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_130701/test_cells_content_per_column[Ipsum-Apeirian]_20251106_130701.mp4
+2025-11-06 13:07:01,170 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Verify cell content per column.
+2025-11-06 13:07:01,170 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-06 13:07:01,264 - INFO - [] Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_130701/frames/frame_000000.png
+2025-11-06 13:07:01,268 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:07:01,445 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 13:07:01,552 - INFO - [] Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_130701/frames/frame_000001.png
+2025-11-06 13:07:01,554 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:07:01,561 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 13:07:01,561 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 13:07:01,600 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 13:07:01,687 - INFO - [] Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_130701/frames/frame_000002.png
+2025-11-06 13:07:01,688 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:07:01,694 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 13:07:01,744 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Finished test: test_cells_content_per_column[Ipsum-Apeirian] (Duration: 0.57s).
+2025-11-06 13:07:01,745 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-11-06 13:07:01,745 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording and assembling.
+2025-11-06 13:07:01,754 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_130701/frames
+2025-11-06 13:07:01,755 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Found 3 valid frames.
+2025-11-06 13:07:01,755 - ERROR - [test_cells_content_per_column[Ipsum-Apeirian]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

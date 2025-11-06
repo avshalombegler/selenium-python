@@ -1,0 +1,28 @@
+2025-11-06 13:07:02,526 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Starting test: test_cells_content_per_column[Sit-Definiebas].
+2025-11-06 13:07:02,527 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 13:07:02,599 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigation completed.
+2025-11-06 13:07:02,599 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 13:07:02,613 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 13:07:02,614 - INFO - [] Capture loop started for Firefox.
+2025-11-06 13:07:02,614 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_130702/test_cells_content_per_column[Sit-Definiebas]_20251106_130702.mp4
+2025-11-06 13:07:02,616 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Verify cell content per column.
+2025-11-06 13:07:02,617 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to Challenging DOM page.
+2025-11-06 13:07:02,717 - INFO - [] Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_130702/frames/frame_000000.png
+2025-11-06 13:07:02,720 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:07:02,913 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 13:07:03,004 - INFO - [] Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_130702/frames/frame_000001.png
+2025-11-06 13:07:03,006 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:07:03,013 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 13:07:03,013 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 13:07:03,143 - INFO - [] Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_130702/frames/frame_000002.png
+2025-11-06 13:07:03,147 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:07:03,161 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 13:07:03,295 - INFO - [] Saved frame 3: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_130702/frames/frame_000003.png
+2025-11-06 13:07:03,299 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 13:07:03,300 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 13:07:03,360 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Finished test: test_cells_content_per_column[Sit-Definiebas] (Duration: 0.74s).
+2025-11-06 13:07:03,362 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Stopping video recording...
+2025-11-06 13:07:03,362 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Stopping video recording and assembling.
+2025-11-06 13:07:03,362 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_130702/frames
+2025-11-06 13:07:03,362 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Found 4 valid frames.
+2025-11-06 13:07:03,363 - ERROR - [test_cells_content_per_column[Sit-Definiebas]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
