@@ -1,3 +1,5 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING, Generator
 import os
 import shutil
 import logging
@@ -21,6 +23,13 @@ from pages.base.page_manager import PageManager
 from utils.logging_helper import configure_root_logger, set_current_test
 from utils.video_recorder import start_video_recording
 
+if TYPE_CHECKING:
+    from selenium.webdriver.chrome.webdriver import WebDriver
+
+    # from selenium.webdriver.firefox.webdriver import WebDriver
+    from _pytest.fixtures import FixtureRequest
+    from logging import Logger
+
 # Configure root logger once for the test session
 root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO)
 
@@ -33,7 +42,7 @@ root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO
 
 
 @pytest.fixture(scope="function")
-def page_manager(driver, logger):
+def page_manager(driver: WebDriver, logger: Logger) -> PageManager:
     """
     Initialize PageManager object with driver and logger.
     """
@@ -41,7 +50,7 @@ def page_manager(driver, logger):
 
 
 @pytest.fixture(scope="function", autouse=True)
-def ui_test(page_manager, request):
+def ui_test(page_manager: PageManager, request: FixtureRequest) -> Generator[None, None, None]:
     """
     Navigate to base URL only for UI tests.
     Use: add @pytest.mark.ui to tests.
@@ -53,7 +62,7 @@ def ui_test(page_manager, request):
 
 
 @pytest.fixture(scope="function", autouse=True)
-def test_context(request):
+def test_context(request: FixtureRequest) -> Generator[None, None, None]:
     """
     Sets current test name at the start of each test for logging purposes.
     """
@@ -64,7 +73,7 @@ def test_context(request):
 
 
 @pytest.fixture(scope="function", autouse=True)
-def video_recorder(request, driver, logger):
+def video_recorder(request: FixtureRequest, driver: WebDriver, logger: Logger) -> Generator[None, None, None]:
     """
     Automatically records video of the test session using Chrome DevTools Protocol.
     Recording is enabled only if VIDEO_RECORDING is True in config and driver is Chrome.
@@ -91,7 +100,7 @@ def video_recorder(request, driver, logger):
 
 
 @pytest.fixture(scope="function")
-def actions(driver):
+def actions(driver: WebDriver) -> ActionChains:
     """
     Provides a fresh ActionChains instance for the current WebDriver.
     Used for performing complex user interactions like drag-and-drop, right-click, etc.
@@ -107,7 +116,7 @@ def actions(driver):
 
 
 @pytest.fixture(scope="session")
-def driver(request):
+def driver(request: FixtureRequest) -> Generator[WebDriver | WebDriver, None, None]:
     """
     Initialize driver object at the start of each test.
     """
@@ -156,17 +165,17 @@ def driver(request):
             # ignore if not supported in current environment
             pass
 
-    elif browser == "firefox":
-        firefox_options = FirefoxOptions()
-        firefox_options.set_preference("dom.webdriver.enabled", False)
-        firefox_options.set_preference("dom.push.enabled", False)
-        firefox_options.set_preference("javascript.enabled", True)
-        if env_config.HEADLESS:
-            firefox_options.add_argument("--headless=new")
-        service = FirefoxService(GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=service, options=firefox_options)
-        if env_config.MAXIMIZED:
-            driver.maximize_window()
+    # elif browser == "firefox":
+    #     firefox_options = FirefoxOptions()
+    #     firefox_options.set_preference("dom.webdriver.enabled", False)
+    #     firefox_options.set_preference("dom.push.enabled", False)
+    #     firefox_options.set_preference("javascript.enabled", True)
+    #     if env_config.HEADLESS:
+    #         firefox_options.add_argument("--headless=new")
+    #     service = FirefoxService(GeckoDriverManager().install())
+    #     driver = webdriver.Firefox(service=service, options=firefox_options)
+    #     if env_config.MAXIMIZED:
+    #         driver.maximize_window()
 
     else:
         raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
@@ -179,7 +188,7 @@ def driver(request):
 
 
 @pytest.fixture(scope="session")
-def logger():
+def logger() -> logging.Logger:
     """
     Makes the root logger accessible to other files.
     """
@@ -187,14 +196,14 @@ def logger():
 
 
 @pytest.fixture(scope="session", autouse=True)
-def unique_user_data_dir(request):
+def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]:
     """
     Creates and yields a unique Chrome user data directory per test worker/session.
     Ensures isolation between parallel test runs (xdist) by using worker ID or PID.
     Directory is created in system temp and stored in config for driver setup.
     """
     try:
-        worker_id = request.config.workerinput.get("workerid")
+        worker_id = request.config.workerinput.get("workerid")  # type: ignore[attr-defined]
     except Exception:
         worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
 
@@ -204,12 +213,12 @@ def unique_user_data_dir(request):
 
     user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker_id}"
     user_data_dir.mkdir(parents=True, exist_ok=True)
-    request.config.user_data_dir = user_data_dir
+    request.config.user_data_dir = user_data_dir  # type: ignore[attr-defined]
     yield
 
 
 @pytest.fixture(scope="session", autouse=True)
-def clean_allure_report():
+def clean_allure_report() -> Generator[None, None, None]:
     """
     Cleans Allure Report folder at the start of each session.
     """
@@ -225,7 +234,7 @@ def clean_allure_report():
 
 
 @pytest.fixture(scope="session", autouse=True)
-def clean_screenshots_at_start():
+def clean_screenshots_at_start() -> None:
     """
     Cleans tests screenshots folder at the start of each session.
     """
@@ -241,7 +250,7 @@ def clean_screenshots_at_start():
 
 
 @pytest.fixture(scope="session", autouse=True)
-def clean_videos_at_start():
+def clean_videos_at_start() -> None:
     """
     Cleans tests recordings folder at the start of each session.
     """
@@ -264,17 +273,17 @@ def clean_videos_at_start():
 
 
 @pytest.hookimpl(tryfirst=True)
-def pytest_configure(config):
+def pytest_configure(config: "pytest.Config") -> None:
     """
     Sets the unique user data directory in pytest config during test setup.
     Ensures the directory created by the unique_user_data_dir fixture is available
     globally via config.user_data_dir for driver initialization and cleanup.
     """
-    config.user_data_dir = unique_user_data_dir
+    config.user_data_dir = unique_user_data_dir  # type: ignore[attr-defined]
 
 
 @pytest.hookimpl(tryfirst=True)
-def pytest_sessionstart(session):
+def pytest_sessionstart(session: "pytest.Session") -> None:
     """
     Validates that user_data_dir is set in pytest config at session start.
     Exits the test run with an error if the directory is missing, preventing
@@ -285,21 +294,21 @@ def pytest_sessionstart(session):
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item):
+def pytest_runtest_makereport(item: "pytest.Item") -> Generator[None, None, None]:
     """
     Pytest hook to handle:
         - Test duration logging.
         - Screenshot taking on test faliure (Locally and to Allure Report).
     """
     outcome = yield
-    report = outcome.get_result()
+    report = outcome.get_result()  # type: ignore[attr-defined]
 
     if report.when == "call":
         test_name = item.name
         duration = report.duration if hasattr(report, "duration") else 0
         root_logger.info(f"Finished test: {test_name} (Duration: {duration:.2f}s).")
 
-        driver = item.funcargs.get("driver")
+        driver = item.funcargs.get("driver")  # type: ignore[attr-defined]
         if report.failed and driver:
             root_logger.info(f"Test {test_name} failed, capturing screenshot.")
             # Use worker ID to create unique screenshot directory for each parallel worker

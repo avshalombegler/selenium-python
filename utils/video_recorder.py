@@ -4,6 +4,8 @@ Supports parallel execution, headless mode, and CI environments.
 Requires: ffmpeg, filelock, selenium, pytest-xdist.
 """
 
+from __future__ import annotations
+from typing import TYPE_CHECKING, Callable
 import threading
 import time
 import base64
@@ -14,6 +16,10 @@ from filelock import FileLock
 import allure
 import logging
 
+if TYPE_CHECKING:
+    from selenium.webdriver.chrome.webdriver import WebDriver
+    from logging import Logger
+
 logger = logging.getLogger(__name__)
 
 FPS = 15
@@ -23,7 +29,9 @@ MAX_FRAMES = 2000
 JPEG_QUALITY = 80
 
 
-def start_video_recording(driver, test_name, worker_id="local"):
+def start_video_recording(
+    driver: WebDriver, test_name: Logger, worker_id: str = "local"
+) -> tuple[Callable[[], None], str]:
     """
     Starts background video recording for a test.
     Returns: (stop_func, video_path)
@@ -38,7 +46,7 @@ def start_video_recording(driver, test_name, worker_id="local"):
 
     stop_event = threading.Event()
 
-    def capture_loop():
+    def capture_loop() -> None:
         idx = 0
         while not stop_event.is_set():
             try:
@@ -63,7 +71,7 @@ def start_video_recording(driver, test_name, worker_id="local"):
     thread = threading.Thread(target=capture_loop, daemon=True)
     thread.start()
 
-    def stop_and_assemble():
+    def stop_and_assemble() -> None:
         stop_event.set()
         thread.join(timeout=5)
 
