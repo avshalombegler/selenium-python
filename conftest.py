@@ -6,7 +6,6 @@ import logging
 import tempfile
 import pytest
 import allure
-import time
 import config.env_config as env_config
 from pathlib import Path
 from filelock import FileLock
@@ -24,11 +23,12 @@ from utils.logging_helper import configure_root_logger, set_current_test
 from utils.video_recorder import start_video_recording
 
 if TYPE_CHECKING:
-    from selenium.webdriver.chrome.webdriver import WebDriver
-
-    # from selenium.webdriver.firefox.webdriver import WebDriver
+    from selenium.webdriver.remote.webdriver import WebDriver
     from _pytest.fixtures import FixtureRequest
     from logging import Logger
+
+DEBUG_PORT_BASE = 9222
+WINDOW_WIDTH, WINDOW_HEIGHT = 1920, 1080
 
 # Configure root logger once for the test session
 root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO)
@@ -36,7 +36,91 @@ root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO
 
 """
 
-    Pytest Fixtures - Scope = function
+Helper Functions
+
+"""
+
+
+def build_chrome_options(user_data_dir: Path, debug_port: int) -> ChromeOptions:
+    options = ChromeOptions()
+    options.add_argument(f"--user-data-dir={user_data_dir}")  # Use the per-worker user-data-dir
+    options.add_argument(f"--remote-debugging-port={debug_port}")  # avoid DevTools port collisions between workers
+    options.add_argument("--disable-popup-blocking")
+    options.add_argument("--disable-notifications")
+    options.add_argument("--disable-gpu")  # If there are GPU related issues
+    options.add_argument("--no-sandbox")  # If there are sandbox related issues
+    options.add_argument("--disable-dev-shm-usage")  # If there are memory related issues
+    options.add_experimental_option("prefs", {"profile.default_content_setting_values.notifications": 2})
+    if env_config.MAXIMIZED:
+        options.add_argument("--start-maximized")
+    if env_config.HEADLESS:
+        options.add_argument("--headless=new")
+    return options
+
+
+def build_firefox_options(user_data_dir: Path, debug_port: int) -> FirefoxOptions:
+    options = FirefoxOptions()
+    options.add_argument(f"--user-data-dir={user_data_dir}")
+    options.add_argument(f"--remote-debugging-port={debug_port}")
+    options.set_preference("dom.webdriver.enabled", False)
+    options.set_preference("dom.push.enabled", False)
+    options.set_preference("javascript.enabled", True)
+    if env_config.HEADLESS:
+        options.add_argument("--headless=new")
+    return options
+
+
+def get_worker_id() -> str:
+    return os.environ.get("PYTEST_XDIST_WORKER", "local") or f"local_{os.getpid()}"
+
+
+def clean_directory(dir_path: Path, lock_suffix: str = "lock") -> None:
+    """Helper to clean and recreate a directory with file locking."""
+    lock_file = dir_path / f"{lock_suffix}.lock"
+    dir_path.mkdir(parents=True, exist_ok=True)
+    with FileLock(lock_file):
+        if dir_path.exists():
+            shutil.rmtree(dir_path, ignore_errors=True)
+        dir_path.mkdir(parents=True, exist_ok=True)
+        root_logger.info(f"Directory cleaned and recreated at: {dir_path}.")
+
+
+def save_screenshot_on_failure(driver: WebDriver, test_name: str) -> None:
+    root_logger.info(f"Test {test_name} failed, capturing screenshot.")
+    # Use worker ID to create unique screenshot directory for each parallel worker
+    worker_id = get_worker_id()
+    screenshot_dir = Path("tests_screenshots") / worker_id
+    screenshot_filename = (
+        f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_" f"{test_name.replace(':', '_').replace('/', '_')}.png"
+    )
+    screenshot_path = Path(screenshot_dir) / screenshot_filename
+    lock_file = Path(screenshot_dir) / f"{worker_id}.lock"
+
+    try:
+        # Ensure directory exists before creating/using the lock
+        screenshot_dir.mkdir(parents=True, exist_ok=True)
+        # Acquire a lock inside the existing directory while writing the screenshot
+        with FileLock(lock_file):
+            root_logger.debug(f"Attempting to save screenshot to: {screenshot_path}.")
+            driver.save_screenshot(screenshot_path)
+        root_logger.info(f"Screenshot saved successfully to: {screenshot_path}.")
+        if allure is not None:
+            try:
+                allure.attach.file(
+                    screenshot_path,
+                    name=f"Failed_Screenshot_{test_name}",
+                    attachment_type=allure.attachment_type.PNG,
+                )
+                root_logger.info(f"Screenshot attached to Allure report for {test_name}.")
+            except Exception as e:
+                root_logger.warning(f"Failed to attach screenshot to Allure report: {str(e)}.")
+    except Exception as e:
+        root_logger.error(f"Failed to save screenshot to {screenshot_path}: {str(e)}.")
+
+
+"""
+
+Pytest Fixtures
 
 """
 
@@ -73,7 +157,7 @@ def test_context(request: FixtureRequest) -> Generator[None, None, None]:
 
 
 @pytest.fixture(scope="function", autouse=True)
-def video_recorder(request: FixtureRequest, driver: WebDriver, logger: Logger) -> Generator[None, None, None]:
+def video_recorder(request: FixtureRequest, driver: WebDriver) -> Generator[None, None, None]:
     """
     Automatically records video of the test session using Chrome DevTools Protocol.
     Recording is enabled only if VIDEO_RECORDING is True in config and driver is Chrome.
@@ -87,15 +171,15 @@ def video_recorder(request: FixtureRequest, driver: WebDriver, logger: Logger) -
         yield
         return
 
-    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
+    worker_id = get_worker_id()
     test_name = request.node.name.replace(":", "_").replace("/", "_")
 
     stop_func, video_path = start_video_recording(driver, test_name, worker_id)
-    logger.info(f"Started recording: {video_path}")
+    root_logger.info(f"Started recording: {video_path}")
 
     yield
 
-    logger.info("Stopping video recording...")
+    root_logger.info("Stopping video recording...")
     stop_func()
 
 
@@ -108,77 +192,52 @@ def actions(driver: WebDriver) -> ActionChains:
     return ActionChains(driver)
 
 
-"""
-
-    Pytest Fixtures - Scope = session
-
-"""
-
-
 @pytest.fixture(scope="session")
-def driver(request: FixtureRequest) -> Generator[WebDriver | WebDriver, None, None]:
+def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
     """
     Initialize driver object at the start of each test.
     """
     browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
     root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
 
-    # try to get the user_data_dir that was set by unique_user_data_dir; if missing create a temp one
+    # Get user_data_dir that was set by unique_user_data_dir
     user_data_dir = getattr(request.config, "user_data_dir", None)
-    if not user_data_dir:
-        # per-test fallback
-        worker = os.environ.get("PYTEST_XDIST_WORKER", f"local_{os.getpid()}")
-        user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker}_{int(time.time())}"
-        user_data_dir.mkdir(parents=True, exist_ok=True)
+    if user_data_dir is None:
+        raise RuntimeError("user_data_dir not set by unique_user_data_dir fixture.")
+    user_data_dir = Path(user_data_dir)
     root_logger.debug(f"Using user_data_dir: {user_data_dir}")
 
-    # compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
+    # Compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
     worker_token = os.environ.get("PYTEST_XDIST_WORKER", str(os.getpid()))
     port_suffix = int("".join(ch for ch in worker_token if ch.isdigit()) or "0") % 1000
-    debug_port = 9222 + port_suffix  # keep port in reasonable range
+    debug_port = DEBUG_PORT_BASE + port_suffix  # keep port in reasonable range
     root_logger.debug(f"Using debug_port: {debug_port}")
 
-    if browser == "chrome":
-        chrome_options = ChromeOptions()
-        chrome_options.add_argument(f"--user-data-dir={user_data_dir}")  # Use the per-worker user-data-dir
-        chrome_options.add_argument(
-            f"--remote-debugging-port={debug_port}"
-        )  # avoid DevTools port collisions between workers
-        chrome_options.add_argument("--disable-popup-blocking")
-        chrome_options.add_argument("--disable-notifications")
-        chrome_options.add_argument("--disable-gpu")  # If there are GPU related issues
-        chrome_options.add_argument("--no-sandbox")  # If there are sandbox related issues
-        chrome_options.add_argument("--disable-dev-shm-usage")  # If there are memory related issues
-        chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.notifications": 2})
-        if env_config.MAXIMIZED:
-            chrome_options.add_argument("--start-maximized")
-        if env_config.HEADLESS:
-            chrome_options.add_argument("--headless=new")
+    try:
+        driver: WebDriver
+        if browser == "chrome":
+            chrome_service = ChromeService(ChromeDriverManager().install())
+            chrome_options = build_chrome_options(user_data_dir, debug_port)
+            driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+            # Ensure even viewport size
+            try:
+                driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
+            except Exception:
+                pass  # Ignore if not supported
 
-        service = ChromeService(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=chrome_options)
+        elif browser == "firefox":
+            firefox_service = FirefoxService(GeckoDriverManager().install())  # Use separate variable
+            firefox_options = build_firefox_options(user_data_dir, debug_port)
+            driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
+            if env_config.MAXIMIZED:
+                driver.maximize_window()
 
-        # Ensure even viewport size to avoid odd-dimension frames (helps ffmpeg/libx264)
-        try:
-            driver.set_window_size(1920, 1080)  # use even width/height appropriate for CI
-        except Exception:
-            # ignore if not supported in current environment
-            pass
+        else:
+            raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
 
-    # elif browser == "firefox":
-    #     firefox_options = FirefoxOptions()
-    #     firefox_options.set_preference("dom.webdriver.enabled", False)
-    #     firefox_options.set_preference("dom.push.enabled", False)
-    #     firefox_options.set_preference("javascript.enabled", True)
-    #     if env_config.HEADLESS:
-    #         firefox_options.add_argument("--headless=new")
-    #     service = FirefoxService(GeckoDriverManager().install())
-    #     driver = webdriver.Firefox(service=service, options=firefox_options)
-    #     if env_config.MAXIMIZED:
-    #         driver.maximize_window()
-
-    else:
-        raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
+    except Exception as e:
+        root_logger.error(f"Failed to initialize {browser} driver: {str(e)}")
+        raise
 
     try:
         yield driver
@@ -205,11 +264,7 @@ def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]
     try:
         worker_id = request.config.workerinput.get("workerid")  # type: ignore[attr-defined]
     except Exception:
-        worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
-
-    # Fallback to a safe string and ensure unique per worker
-    if not worker_id:
-        worker_id = f"local_{os.getpid()}"
+        worker_id = get_worker_id()
 
     user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker_id}"
     user_data_dir.mkdir(parents=True, exist_ok=True)
@@ -219,55 +274,28 @@ def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]
 
 @pytest.fixture(scope="session", autouse=True)
 def clean_allure_report() -> Generator[None, None, None]:
-    """
-    Cleans Allure Report folder at the start of each session.
-    """
     allure_report_dir = Path("reports") / "allure-report"
-    allure_report_dir.parent.mkdir(parents=True, exist_ok=True)
-    lock_file = allure_report_dir / "allure-report.lock"
-    # Use a file lock to prevent race conditions in parallel execution
-    with FileLock(lock_file):
-        if allure_report_dir.exists():
-            shutil.rmtree(allure_report_dir, ignore_errors=True)  # Safely remove directory
-        allure_report_dir.mkdir(parents=True, exist_ok=True)  # Recreate empty directory
+    clean_directory(allure_report_dir, "allure-report")
     yield
 
 
 @pytest.fixture(scope="session", autouse=True)
 def clean_screenshots_at_start() -> None:
-    """
-    Cleans tests screenshots folder at the start of each session.
-    """
-    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
+    worker_id = get_worker_id()
     screenshots_dir = Path("tests_screenshots") / worker_id
-    lock_file = screenshots_dir / f"{worker_id}.lock"
-    screenshots_dir.mkdir(parents=True, exist_ok=True)
-    with FileLock(lock_file):
-        if screenshots_dir.exists():
-            shutil.rmtree(screenshots_dir, ignore_errors=True)
-        screenshots_dir.mkdir(parents=True, exist_ok=True)
-        root_logger.info(f"Screenshots directory cleaned and recreated at: {screenshots_dir}.")
+    clean_directory(screenshots_dir, worker_id)
 
 
 @pytest.fixture(scope="session", autouse=True)
 def clean_videos_at_start() -> None:
-    """
-    Cleans tests recordings folder at the start of each session.
-    """
-    worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
+    worker_id = get_worker_id()
     videos_dir = Path("tests_recordings") / worker_id
-    lock_file = videos_dir / f"{worker_id}.lock"
-    videos_dir.mkdir(parents=True, exist_ok=True)
-    with FileLock(lock_file):
-        if videos_dir.exists():
-            shutil.rmtree(videos_dir, ignore_errors=True)
-        videos_dir.mkdir(parents=True, exist_ok=True)
-        root_logger.info(f"Videos directory cleaned and recreated at: {videos_dir}.")
+    clean_directory(videos_dir, worker_id)
 
 
 """
 
-    Pytest Hooks
+Pytest Hooks
 
 """
 
@@ -310,36 +338,7 @@ def pytest_runtest_makereport(item: "pytest.Item") -> Generator[None, None, None
 
         driver = item.funcargs.get("driver")  # type: ignore[attr-defined]
         if report.failed and driver:
-            root_logger.info(f"Test {test_name} failed, capturing screenshot.")
-            # Use worker ID to create unique screenshot directory for each parallel worker
-            worker_id = os.environ.get("PYTEST_XDIST_WORKER", "local")
-            screenshot_dir = Path("tests_screenshots") / worker_id
-            screenshot_filename = (
-                f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_" f"{test_name.replace(':', '_').replace('/', '_')}.png"
-            )
-            screenshot_path = Path(screenshot_dir) / screenshot_filename
-            lock_file = Path(screenshot_dir) / f"{worker_id}.lock"
-
-            try:
-                # Ensure directory exists before creating/using the lock
-                os.makedirs(screenshot_dir, exist_ok=True)
-                # Acquire a lock inside the existing directory while writing the screenshot
-                with FileLock(lock_file):
-                    root_logger.debug(f"Attempting to save screenshot to: {screenshot_path}.")
-                    driver.save_screenshot(screenshot_path)
-                root_logger.info(f"Screenshot saved successfully to: {screenshot_path}.")
-                if allure:
-                    try:
-                        allure.attach.file(
-                            screenshot_path,
-                            name=f"Failed_Screenshot_{test_name}",
-                            attachment_type=allure.attachment_type.PNG,
-                        )
-                        root_logger.info(f"Screenshot attached to Allure report for {test_name}.")
-                    except Exception as e:
-                        root_logger.warning(f"Failed to attach screenshot to Allure report: {str(e)}.")
-            except Exception as e:
-                root_logger.error(f"Failed to save screenshot to {screenshot_path}: {str(e)}.")
+            save_screenshot_on_failure(driver, test_name)
 
     if report.when == "teardown":
         set_current_test(None)

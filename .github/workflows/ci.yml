@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 30
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false #  continue if a browser fails
+      fail-fast: false # Continue running other jobs if one fails
       matrix:
         # browser: [chrome, firefox]
         browser: [chrome]
