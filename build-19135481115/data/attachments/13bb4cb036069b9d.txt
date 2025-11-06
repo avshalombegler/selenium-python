@@ -1,0 +1,28 @@
+2025-11-06 12:23:24,817 - INFO - [test_valid_images_count] Starting test: test_valid_images_count.
+2025-11-06 12:23:24,818 - INFO - [test_valid_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 12:23:24,903 - INFO - [test_valid_images_count] Navigation completed.
+2025-11-06 12:23:24,903 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 12:23:24,917 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 12:23:24,918 - INFO - [] Capture loop started for Firefox.
+2025-11-06 12:23:24,918 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw3/test_valid_images_count_20251106_122324/test_valid_images_count_20251106_122324.mp4
+2025-11-06 12:23:24,920 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-06 12:23:24,920 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-06 12:23:24,993 - INFO - [] Saved frame 0: tests_recordings/gw3/test_valid_images_count_20251106_122324/frames/frame_000000.png
+2025-11-06 12:23:24,995 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:23:25,167 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 12:23:25,253 - INFO - [] Saved frame 1: tests_recordings/gw3/test_valid_images_count_20251106_122324/frames/frame_000001.png
+2025-11-06 12:23:25,257 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:23:25,262 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 12:23:25,263 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-06 12:23:25,263 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-06 12:23:25,271 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 12:23:25,279 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 12:23:25,286 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-06 12:23:25,292 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-06 12:23:25,293 - INFO - [test_valid_images_count] Finished test: test_valid_images_count (Duration: 0.37s).
+2025-11-06 12:23:25,293 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-06 12:23:25,294 - INFO - [test_valid_images_count] Stopping video recording and assembling.
+2025-11-06 12:23:25,320 - INFO - [test_valid_images_count] Thread joined. Frames dir: tests_recordings/gw3/test_valid_images_count_20251106_122324/frames
+2025-11-06 12:23:25,320 - INFO - [test_valid_images_count] Found 2 valid frames.
+2025-11-06 12:23:25,320 - ERROR - [test_valid_images_count] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-06 12:23:25,322 - INFO - [test_valid_images_count] Quitting driver for browser: chrome.

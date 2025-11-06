@@ -1,0 +1,22 @@
+2025-11-06 12:24:00,593 - INFO - [test_table_header_per_column[Diceret]] Starting test: test_table_header_per_column[Diceret].
+2025-11-06 12:24:00,594 - INFO - [test_table_header_per_column[Diceret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 12:24:00,677 - INFO - [test_table_header_per_column[Diceret]] Navigation completed.
+2025-11-06 12:24:00,678 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 12:24:00,689 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 12:24:00,689 - INFO - [] Capture loop started for Firefox.
+2025-11-06 12:24:00,690 - INFO - [test_table_header_per_column[Diceret]] Started recording: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251106_122400/test_table_header_per_column[Diceret]_20251106_122400.mp4
+2025-11-06 12:24:00,692 - INFO - [test_table_header_per_column[Diceret]] Verify table head text per column.
+2025-11-06 12:24:00,692 - INFO - [test_table_header_per_column[Diceret]] Navigating to Challenging DOM page.
+2025-11-06 12:24:00,769 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251106_122400/frames/frame_000000.png
+2025-11-06 12:24:00,772 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:24:00,933 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 12:24:01,023 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251106_122400/frames/frame_000001.png
+2025-11-06 12:24:01,025 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:24:01,030 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 12:24:01,030 - INFO - [test_table_header_per_column[Diceret]] Getting table head text of column 'Diceret'.
+2025-11-06 12:24:01,070 - INFO - [test_table_header_per_column[Diceret]] Finished test: test_table_header_per_column[Diceret] (Duration: 0.38s).
+2025-11-06 12:24:01,071 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording...
+2025-11-06 12:24:01,071 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording and assembling.
+2025-11-06 12:24:01,090 - INFO - [test_table_header_per_column[Diceret]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251106_122400/frames
+2025-11-06 12:24:01,091 - INFO - [test_table_header_per_column[Diceret]] Found 2 valid frames.
+2025-11-06 12:24:01,091 - ERROR - [test_table_header_per_column[Diceret]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
