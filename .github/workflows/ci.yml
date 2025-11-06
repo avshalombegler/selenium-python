@@ -98,6 +98,9 @@ jobs:
       - name: Create reports directories
         run: mkdir -p reports/allure-results reports/allure-report
 
+      - name: Create additional directories
+        run: mkdir -p tests_recordings tests_screenshots
+
       - name: Run Pytest with Allure
         continue-on-error: true
         id: pytest
