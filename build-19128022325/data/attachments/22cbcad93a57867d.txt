@@ -1,0 +1,20 @@
+2025-11-06 07:24:27,346 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality.
+2025-11-06 07:24:27,347 - INFO - [test_drag_and_drop_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 07:24:27,439 - INFO - [test_drag_and_drop_functionality] Navigation completed.
+2025-11-06 07:24:27,440 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 07:24:27,457 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 07:24:27,459 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw3/test_drag_and_drop_functionality_20251106_072427/test_drag_and_drop_functionality_20251106_072427.mp4
+2025-11-06 07:24:27,461 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-06 07:24:27,461 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-06 07:24:27,559 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:27,732 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 07:24:27,815 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:27,823 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 07:24:27,823 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-06 07:24:27,868 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-06 07:24:28,474 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:28,820 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-06 07:24:28,846 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:28,885 - INFO - [test_drag_and_drop_functionality] Finished test: test_drag_and_drop_functionality (Duration: 1.42s).
+2025-11-06 07:24:28,886 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-06 07:24:28,892 - ERROR - [test_drag_and_drop_functionality] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

@@ -1,0 +1,15 @@
+INFO     root:conftest.py:71 Starting test: test_right_click_on_hotspot.
+INFO     root:base_page.py:177 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:179 Navigation completed.
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:conftest.py:94 Started recording: tests_recordings/gw1/test_right_click_on_hotspot_20251106_072418/test_right_click_on_hotspot_20251106_072418.mp4
+INFO     root:main_page.py:80 Navigating to Context Menu page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_context_menu.py:38 Testing right-click on hot spot
+INFO     root:context_menu_page.py:70 Video recording active – skipping alert text check
+INFO     root:conftest.py:98 Stopping video recording...
+ERROR    utils.video_recorder:video_recorder.py:109 ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

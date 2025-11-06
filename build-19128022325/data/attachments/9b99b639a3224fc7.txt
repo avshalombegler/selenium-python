@@ -1,0 +1,41 @@
+2025-11-06 07:24:26,986 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Starting test: test_digest_auth_login_scenarios[admin-wrong].
+2025-11-06 07:24:26,989 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251106_072426/test_digest_auth_login_scenarios[admin-wrong]_20251106_072426.mp4
+2025-11-06 07:24:26,990 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Tests for Digest Authentication scenarios.
+2025-11-06 07:24:26,991 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to Digest Authentication page.
+2025-11-06 07:24:26,991 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to URL: https://admin:wrong@the-internet.herokuapp.com/digest_auth.
+2025-11-06 07:24:27,178 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigation completed.
+2025-11-06 07:24:27,178 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Check if login succeeded.
+2025-11-06 07:24:27,324 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:27,886 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:28,398 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:29,437 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:29,966 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:32,569 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:33,064 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:33,572 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:37,174 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 07:24:37,685 - ERROR - [test_digest_auth_login_scenarios[admin-wrong]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x558f7500aaca <unknown>
+#1 0x558f74a56cdb <unknown>
+#2 0x558f74aa96c4 <unknown>
+#3 0x558f74aa9901 <unknown>
+#4 0x558f74af88b4 <unknown>
+#5 0x558f74af5c87 <unknown>
+#6 0x558f74a9baca <unknown>
+#7 0x558f74a9c7d1 <unknown>
+#8 0x558f74fd1a99 <unknown>
+#9 0x558f74fd4a6c <unknown>
+#10 0x558f74fbad29 <unknown>
+#11 0x558f74fd5665 <unknown>
+#12 0x558f74fa26a3 <unknown>
+#13 0x558f74ff77b8 <unknown>
+#14 0x558f74ff7993 <unknown>
+#15 0x558f75009a63 <unknown>
+#16 0x7fe83d29caa4 <unknown>
+#17 0x7fe83d329c6c <unknown>
+
+2025-11-06 07:24:37,687 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page source: <html><head></head><body></body></html>
+2025-11-06 07:24:37,688 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Finished test: test_digest_auth_login_scenarios[admin-wrong] (Duration: 10.70s).
+2025-11-06 07:24:37,689 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording...
+2025-11-06 07:24:37,737 - ERROR - [test_digest_auth_login_scenarios[admin-wrong]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
