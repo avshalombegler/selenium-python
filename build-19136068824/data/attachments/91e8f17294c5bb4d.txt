@@ -1,0 +1,320 @@
+2025-11-06 12:45:43,673 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Starting test: test_digest_auth_login_scenarios[wrong-admin].
+2025-11-06 12:45:43,674 - INFO - [] Capture loop started for Firefox.
+2025-11-06 12:45:43,675 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:43,676 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543.mp4
+2025-11-06 12:45:43,682 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Tests for Digest Authentication scenarios.
+2025-11-06 12:45:43,683 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to Digest Authentication page.
+2025-11-06 12:45:43,683 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to URL: https://wrong:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-06 12:45:43,742 - INFO - [] Raw screenshot size: 59366 bytes.
+2025-11-06 12:45:43,742 - INFO - [] Saved frame 0: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000000.png
+2025-11-06 12:45:43,810 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,013 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigation completed.
+2025-11-06 12:45:44,013 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Check if login succeeded.
+2025-11-06 12:45:44,126 - ERROR - [] Capture error: Alert Text: This site is asking you to sign in.
+Message: Unexpected promptUserAndPass dialog detected. Performed handler "dismiss"
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:927:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:3233:11
+
+2025-11-06 12:45:44,135 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:44,193 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,244 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:44,244 - INFO - [] Saved frame 1: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000001.png
+2025-11-06 12:45:44,312 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,383 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:44,384 - INFO - [] Saved frame 2: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000002.png
+2025-11-06 12:45:44,453 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,527 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:44,527 - INFO - [] Saved frame 3: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000003.png
+2025-11-06 12:45:44,594 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,626 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:44,626 - INFO - [] Saved frame 4: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000004.png
+2025-11-06 12:45:44,693 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,752 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:44,753 - INFO - [] Saved frame 5: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000005.png
+2025-11-06 12:45:44,820 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,864 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:44,864 - INFO - [] Saved frame 6: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000006.png
+2025-11-06 12:45:44,931 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:44,995 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:44,996 - INFO - [] Saved frame 7: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000007.png
+2025-11-06 12:45:45,063 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,101 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,102 - INFO - [] Saved frame 8: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000008.png
+2025-11-06 12:45:45,170 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,298 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,299 - INFO - [] Saved frame 9: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000009.png
+2025-11-06 12:45:45,366 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,409 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,409 - INFO - [] Saved frame 10: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000010.png
+2025-11-06 12:45:45,476 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,531 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,532 - INFO - [] Saved frame 11: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000011.png
+2025-11-06 12:45:45,602 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,656 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,656 - INFO - [] Saved frame 12: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000012.png
+2025-11-06 12:45:45,657 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:45,723 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,766 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,766 - INFO - [] Saved frame 13: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000013.png
+2025-11-06 12:45:45,833 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,886 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,887 - INFO - [] Saved frame 14: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000014.png
+2025-11-06 12:45:45,955 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,995 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:45,996 - INFO - [] Saved frame 15: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000015.png
+2025-11-06 12:45:46,063 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,120 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,121 - INFO - [] Saved frame 16: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000016.png
+2025-11-06 12:45:46,187 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,272 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,273 - INFO - [] Saved frame 17: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000017.png
+2025-11-06 12:45:46,341 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,405 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,405 - INFO - [] Saved frame 18: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000018.png
+2025-11-06 12:45:46,472 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,503 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,504 - INFO - [] Saved frame 19: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000019.png
+2025-11-06 12:45:46,571 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,610 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,611 - INFO - [] Saved frame 20: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000020.png
+2025-11-06 12:45:46,678 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,749 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,750 - INFO - [] Saved frame 21: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000021.png
+2025-11-06 12:45:46,817 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,891 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,892 - INFO - [] Saved frame 22: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000022.png
+2025-11-06 12:45:46,959 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,998 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:46,999 - INFO - [] Saved frame 23: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000023.png
+2025-11-06 12:45:47,068 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,126 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,126 - INFO - [] Saved frame 24: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000024.png
+2025-11-06 12:45:47,193 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,265 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,266 - INFO - [] Saved frame 25: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000025.png
+2025-11-06 12:45:47,333 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,370 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,371 - INFO - [] Saved frame 26: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000026.png
+2025-11-06 12:45:47,438 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,484 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,484 - INFO - [] Saved frame 27: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000027.png
+2025-11-06 12:45:47,552 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,585 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,585 - INFO - [] Saved frame 28: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000028.png
+2025-11-06 12:45:47,653 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,699 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,700 - INFO - [] Saved frame 29: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000029.png
+2025-11-06 12:45:47,702 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:47,767 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,810 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,810 - INFO - [] Saved frame 30: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000030.png
+2025-11-06 12:45:47,877 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:47,918 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:47,919 - INFO - [] Saved frame 31: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000031.png
+2025-11-06 12:45:47,987 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,028 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,029 - INFO - [] Saved frame 32: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000032.png
+2025-11-06 12:45:48,096 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,143 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,143 - INFO - [] Saved frame 33: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000033.png
+2025-11-06 12:45:48,210 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,297 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,298 - INFO - [] Saved frame 34: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000034.png
+2025-11-06 12:45:48,365 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,406 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,406 - INFO - [] Saved frame 35: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000035.png
+2025-11-06 12:45:48,473 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,520 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,521 - INFO - [] Saved frame 36: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000036.png
+2025-11-06 12:45:48,588 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,620 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,621 - INFO - [] Saved frame 37: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000037.png
+2025-11-06 12:45:48,688 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,730 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,730 - INFO - [] Saved frame 38: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000038.png
+2025-11-06 12:45:48,732 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:48,797 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,826 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,827 - INFO - [] Saved frame 39: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000039.png
+2025-11-06 12:45:48,893 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:48,929 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:48,930 - INFO - [] Saved frame 40: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000040.png
+2025-11-06 12:45:48,997 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,028 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,028 - INFO - [] Saved frame 41: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000041.png
+2025-11-06 12:45:49,095 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,152 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,153 - INFO - [] Saved frame 42: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000042.png
+2025-11-06 12:45:49,220 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,260 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,261 - INFO - [] Saved frame 43: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000043.png
+2025-11-06 12:45:49,264 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:49,328 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,360 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,361 - INFO - [] Saved frame 44: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000044.png
+2025-11-06 12:45:49,431 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,486 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,486 - INFO - [] Saved frame 45: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000045.png
+2025-11-06 12:45:49,553 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,587 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,587 - INFO - [] Saved frame 46: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000046.png
+2025-11-06 12:45:49,654 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,680 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,680 - INFO - [] Saved frame 47: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000047.png
+2025-11-06 12:45:49,747 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,780 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,780 - INFO - [] Saved frame 48: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000048.png
+2025-11-06 12:45:49,782 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:49,847 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,888 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,888 - INFO - [] Saved frame 49: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000049.png
+2025-11-06 12:45:49,955 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:49,995 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:49,995 - INFO - [] Saved frame 50: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000050.png
+2025-11-06 12:45:50,062 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,088 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,088 - INFO - [] Saved frame 51: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000051.png
+2025-11-06 12:45:50,155 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,185 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,186 - INFO - [] Saved frame 52: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000052.png
+2025-11-06 12:45:50,252 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,281 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,281 - INFO - [] Saved frame 53: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000053.png
+2025-11-06 12:45:50,349 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,391 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,391 - INFO - [] Saved frame 54: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000054.png
+2025-11-06 12:45:50,458 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,496 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,497 - INFO - [] Saved frame 55: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000055.png
+2025-11-06 12:45:50,564 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,593 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,594 - INFO - [] Saved frame 56: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000056.png
+2025-11-06 12:45:50,660 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,697 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,697 - INFO - [] Saved frame 57: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000057.png
+2025-11-06 12:45:50,764 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,807 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,808 - INFO - [] Saved frame 58: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000058.png
+2025-11-06 12:45:50,809 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:50,875 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:50,910 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:50,911 - INFO - [] Saved frame 59: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000059.png
+2025-11-06 12:45:50,977 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,016 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,017 - INFO - [] Saved frame 60: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000060.png
+2025-11-06 12:45:51,084 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,111 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,112 - INFO - [] Saved frame 61: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000061.png
+2025-11-06 12:45:51,179 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,210 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,211 - INFO - [] Saved frame 62: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000062.png
+2025-11-06 12:45:51,278 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,317 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,317 - INFO - [] Saved frame 63: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000063.png
+2025-11-06 12:45:51,320 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:51,385 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,425 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,425 - INFO - [] Saved frame 64: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000064.png
+2025-11-06 12:45:51,492 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,531 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,531 - INFO - [] Saved frame 65: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000065.png
+2025-11-06 12:45:51,598 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,637 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,638 - INFO - [] Saved frame 66: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000066.png
+2025-11-06 12:45:51,705 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,750 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,750 - INFO - [] Saved frame 67: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000067.png
+2025-11-06 12:45:51,817 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,856 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,856 - INFO - [] Saved frame 68: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000068.png
+2025-11-06 12:45:51,860 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:51,923 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:51,967 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:51,968 - INFO - [] Saved frame 69: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000069.png
+2025-11-06 12:45:52,035 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,066 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,067 - INFO - [] Saved frame 70: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000070.png
+2025-11-06 12:45:52,134 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,180 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,180 - INFO - [] Saved frame 71: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000071.png
+2025-11-06 12:45:52,247 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,282 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,282 - INFO - [] Saved frame 72: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000072.png
+2025-11-06 12:45:52,349 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,378 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,378 - INFO - [] Saved frame 73: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000073.png
+2025-11-06 12:45:52,380 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:52,445 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,490 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,491 - INFO - [] Saved frame 74: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000074.png
+2025-11-06 12:45:52,558 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,601 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,602 - INFO - [] Saved frame 75: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000075.png
+2025-11-06 12:45:52,669 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,699 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,700 - INFO - [] Saved frame 76: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000076.png
+2025-11-06 12:45:52,767 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,813 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,813 - INFO - [] Saved frame 77: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000077.png
+2025-11-06 12:45:52,880 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:52,927 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:52,927 - INFO - [] Saved frame 78: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000078.png
+2025-11-06 12:45:52,931 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:52,996 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,041 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,042 - INFO - [] Saved frame 79: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000079.png
+2025-11-06 12:45:53,109 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,137 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,138 - INFO - [] Saved frame 80: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000080.png
+2025-11-06 12:45:53,205 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,258 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,259 - INFO - [] Saved frame 81: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000081.png
+2025-11-06 12:45:53,326 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,366 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,366 - INFO - [] Saved frame 82: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000082.png
+2025-11-06 12:45:53,434 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,508 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:53,508 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,509 - INFO - [] Saved frame 83: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000083.png
+2025-11-06 12:45:53,576 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,628 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,628 - INFO - [] Saved frame 84: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000084.png
+2025-11-06 12:45:53,697 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,737 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,737 - INFO - [] Saved frame 85: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000085.png
+2025-11-06 12:45:53,806 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,850 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,850 - INFO - [] Saved frame 86: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000086.png
+2025-11-06 12:45:53,917 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:53,955 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:53,955 - INFO - [] Saved frame 87: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000087.png
+2025-11-06 12:45:53,956 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:54,022 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:54,077 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:54,078 - INFO - [] Saved frame 88: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000088.png
+2025-11-06 12:45:54,145 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:54,187 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:54,187 - INFO - [] Saved frame 89: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000089.png
+2025-11-06 12:45:54,254 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:54,285 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:54,285 - INFO - [] Saved frame 90: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000090.png
+2025-11-06 12:45:54,354 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:54,412 - INFO - [] Raw screenshot size: 33783 bytes.
+2025-11-06 12:45:54,413 - INFO - [] Saved frame 91: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames/frame_000091.png
+2025-11-06 12:45:54,460 - ERROR - [test_digest_auth_login_scenarios[wrong-admin]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-11-06 12:45:54,465 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Page source: <html><head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head><body><pre></pre></body></html>
+2025-11-06 12:45:54,466 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Finished test: test_digest_auth_login_scenarios[wrong-admin] (Duration: 10.78s).
+2025-11-06 12:45:54,469 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording...
+2025-11-06 12:45:54,469 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording and assembling.
+2025-11-06 12:45:54,482 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251106_124543/frames
+2025-11-06 12:45:54,488 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Found 92 valid frames.
+2025-11-06 12:45:54,491 - ERROR - [test_digest_auth_login_scenarios[wrong-admin]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

@@ -1,0 +1,34 @@
+2025-11-06 12:45:45,703 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green].
+2025-11-06 12:45:45,704 - INFO - [test_each_button_clicks[green]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 12:45:45,802 - INFO - [test_each_button_clicks[green]] Navigation completed.
+2025-11-06 12:45:45,802 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 12:45:45,810 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 12:45:45,811 - INFO - [] Capture loop started for Firefox.
+2025-11-06 12:45:45,811 - INFO - [test_each_button_clicks[green]] Started recording: tests_recordings/gw0/test_each_button_clicks[green]_20251106_124545/test_each_button_clicks[green]_20251106_124545.mp4
+2025-11-06 12:45:45,811 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:45,813 - INFO - [test_each_button_clicks[green]] Verify each button in page is clickable.
+2025-11-06 12:45:45,813 - INFO - [test_each_button_clicks[green]] Navigating to Challenging DOM page.
+2025-11-06 12:45:45,897 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 12:45:45,898 - INFO - [] Saved frame 0: tests_recordings/gw0/test_each_button_clicks[green]_20251106_124545/frames/frame_000000.png
+2025-11-06 12:45:45,927 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:45,965 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,010 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 12:45:46,010 - INFO - [] Saved frame 1: tests_recordings/gw0/test_each_button_clicks[green]_20251106_124545/frames/frame_000001.png
+2025-11-06 12:45:46,011 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:46,077 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,141 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 12:45:46,194 - INFO - [] Raw screenshot size: 170721 bytes.
+2025-11-06 12:45:46,194 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:46,196 - INFO - [] Saved frame 2: tests_recordings/gw0/test_each_button_clicks[green]_20251106_124545/frames/frame_000002.png
+2025-11-06 12:45:46,204 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 12:45:46,204 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-11-06 12:45:46,263 - INFO - [] Using Firefox screenshot method.
+2025-11-06 12:45:46,362 - INFO - [test_each_button_clicks[green]] Finished test: test_each_button_clicks[green] (Duration: 0.55s).
+2025-11-06 12:45:46,363 - INFO - [test_each_button_clicks[green]] Stopping video recording...
+2025-11-06 12:45:46,363 - INFO - [test_each_button_clicks[green]] Stopping video recording and assembling.
+2025-11-06 12:45:46,431 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 12:45:46,433 - INFO - [] Raw screenshot size: 170987 bytes.
+2025-11-06 12:45:46,433 - INFO - [] Saved frame 3: tests_recordings/gw0/test_each_button_clicks[green]_20251106_124545/frames/frame_000003.png
+2025-11-06 12:45:46,500 - INFO - [test_each_button_clicks[green]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[green]_20251106_124545/frames
+2025-11-06 12:45:46,501 - INFO - [test_each_button_clicks[green]] Found 4 valid frames.
+2025-11-06 12:45:46,502 - ERROR - [test_each_button_clicks[green]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
