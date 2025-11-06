@@ -1,0 +1,16 @@
+2025-11-06 06:47:43,464 - INFO - [test_table_header_per_column[Ipsum]] Starting test: test_table_header_per_column[Ipsum].
+2025-11-06 06:47:43,465 - INFO - [test_table_header_per_column[Ipsum]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:47:43,540 - INFO - [test_table_header_per_column[Ipsum]] Navigation completed.
+2025-11-06 06:47:43,540 - INFO - [test_table_header_per_column[Ipsum]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:47:43,565 - INFO - [test_table_header_per_column[Ipsum]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:47:43,567 - INFO - [test_table_header_per_column[Ipsum]] Started recording: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251106_064743/test_table_header_per_column[Ipsum]_20251106_064743.mp4
+2025-11-06 06:47:43,569 - INFO - [test_table_header_per_column[Ipsum]] Verify table head text per column.
+2025-11-06 06:47:43,569 - INFO - [test_table_header_per_column[Ipsum]] Navigating to Challenging DOM page.
+2025-11-06 06:47:43,642 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:43,808 - INFO - [test_table_header_per_column[Ipsum]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:47:43,897 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:43,902 - INFO - [test_table_header_per_column[Ipsum]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:47:43,903 - INFO - [test_table_header_per_column[Ipsum]] Getting table head text of column 'Ipsum'.
+2025-11-06 06:47:43,930 - INFO - [test_table_header_per_column[Ipsum]] Finished test: test_table_header_per_column[Ipsum] (Duration: 0.36s).
+2025-11-06 06:47:43,931 - INFO - [test_table_header_per_column[Ipsum]] Stopping video recording...
+2025-11-06 06:47:43,961 - ERROR - [test_table_header_per_column[Ipsum]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

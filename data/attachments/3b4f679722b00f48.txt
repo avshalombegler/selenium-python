@@ -1,0 +1,20 @@
+2025-11-06 06:47:47,283 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Starting test: test_cells_content_per_column[Dolor-Adipisci].
+2025-11-06 06:47:47,283 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:47:47,350 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigation completed.
+2025-11-06 06:47:47,350 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:47:47,366 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:47:47,368 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_064747/test_cells_content_per_column[Dolor-Adipisci]_20251106_064747.mp4
+2025-11-06 06:47:47,370 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Verify cell content per column.
+2025-11-06 06:47:47,370 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigating to Challenging DOM page.
+2025-11-06 06:47:47,423 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:47,577 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:47:47,659 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:47,664 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:47:47,665 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 06:47:47,715 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 06:47:47,774 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:47,801 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 06:47:47,891 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:47,898 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Finished test: test_cells_content_per_column[Dolor-Adipisci] (Duration: 0.53s).
+2025-11-06 06:47:47,899 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Stopping video recording...
+2025-11-06 06:47:47,957 - ERROR - [test_cells_content_per_column[Dolor-Adipisci]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

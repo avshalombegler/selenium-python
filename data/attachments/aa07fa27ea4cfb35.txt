@@ -1,0 +1,19 @@
+2025-11-06 06:47:46,702 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Starting test: test_cells_content_per_column[Ipsum-Apeirian].
+2025-11-06 06:47:46,703 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:47:46,768 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-06 06:47:46,769 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:47:46,788 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:47:46,790 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251106_064746/test_cells_content_per_column[Ipsum-Apeirian]_20251106_064746.mp4
+2025-11-06 06:47:46,791 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Verify cell content per column.
+2025-11-06 06:47:46,791 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-06 06:47:46,865 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:47,012 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:47:47,100 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:47,105 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:47:47,105 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 06:47:47,144 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 06:47:47,212 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:47,220 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-06 06:47:47,254 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Finished test: test_cells_content_per_column[Ipsum-Apeirian] (Duration: 0.46s).
+2025-11-06 06:47:47,255 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-11-06 06:47:47,279 - ERROR - [test_cells_content_per_column[Ipsum-Apeirian]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

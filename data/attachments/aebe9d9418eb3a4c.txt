@@ -1,0 +1,18 @@
+2025-11-06 06:47:40,730 - INFO - [test_right_click_outside_hotspot] Starting test: test_right_click_outside_hotspot.
+2025-11-06 06:47:40,730 - INFO - [test_right_click_outside_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 06:47:41,085 - INFO - [test_right_click_outside_hotspot] Navigation completed.
+2025-11-06 06:47:41,085 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 06:47:41,119 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 06:47:41,121 - INFO - [test_right_click_outside_hotspot] Started recording: tests_recordings/gw1/test_right_click_outside_hotspot_20251106_064741/test_right_click_outside_hotspot_20251106_064741.mp4
+2025-11-06 06:47:41,123 - INFO - [test_right_click_outside_hotspot] Navigating to Context Menu page.
+2025-11-06 06:47:41,183 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:41,350 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 06:47:41,412 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:41,418 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 06:47:41,418 - INFO - [test_right_click_outside_hotspot] Testing right-click outside hot spot
+2025-11-06 06:47:41,418 - INFO - [test_right_click_outside_hotspot] Perform right-click on page title to verify context menu alert does not activate.
+2025-11-06 06:47:41,418 - INFO - [test_right_click_outside_hotspot] Performing right-click on element with locator '('css selector', 'div.example h3')'.
+2025-11-06 06:47:41,766 - INFO - [test_right_click_outside_hotspot] Finished test: test_right_click_outside_hotspot (Duration: 0.64s).
+2025-11-06 06:47:41,768 - INFO - [test_right_click_outside_hotspot] Stopping video recording...
+2025-11-06 06:47:41,810 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 06:47:41,878 - ERROR - [test_right_click_outside_hotspot] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
