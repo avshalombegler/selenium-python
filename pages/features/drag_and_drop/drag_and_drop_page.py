@@ -28,7 +28,7 @@ class DragAndDropPage(BasePage):
     def drag_and_drop_box(self, actions: ActionChains, source: WebElement, target: WebElement) -> None:
         # Check if the driver is Firefox; if so, skip ActionChains and use JS directly
         is_firefox = "firefox" in self.driver.name.lower()
-        
+
         if not is_firefox:
             try:
                 # Try ActionChains first for Chrome/other browsers
@@ -38,7 +38,7 @@ class DragAndDropPage(BasePage):
                 return
             except Exception as e:
                 self.logger.warning(f"ActionChains drag_and_drop failed: {e}. Falling back to JS.")
-        
+
         # Fallback to improved JS simulation for Firefox or if ActionChains failed
         self._js_drag_and_drop(source, target)
 
