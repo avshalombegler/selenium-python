@@ -1,0 +1,28 @@
+2025-11-06 14:02:16,574 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Starting test: test_cells_content_per_column[Dolor-Adipisci].
+2025-11-06 14:02:16,575 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 14:02:16,651 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigation completed.
+2025-11-06 14:02:16,651 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 14:02:16,674 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 14:02:16,675 - INFO - [] Capture loop started for Firefox.
+2025-11-06 14:02:16,676 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140216/test_cells_content_per_column[Dolor-Adipisci]_20251106_140216.mp4
+2025-11-06 14:02:16,677 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Verify cell content per column.
+2025-11-06 14:02:16,678 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigating to Challenging DOM page.
+2025-11-06 14:02:16,780 - INFO - [] Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140216/frames/frame_000000.png
+2025-11-06 14:02:16,785 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:16,971 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 14:02:17,095 - INFO - [] Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140216/frames/frame_000001.png
+2025-11-06 14:02:17,097 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:17,108 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 14:02:17,108 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 14:02:17,158 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 14:02:17,256 - INFO - [] Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140216/frames/frame_000002.png
+2025-11-06 14:02:17,257 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:17,303 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 14:02:17,408 - INFO - [] Saved frame 3: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140216/frames/frame_000003.png
+2025-11-06 14:02:17,414 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:17,434 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Finished test: test_cells_content_per_column[Dolor-Adipisci] (Duration: 0.76s).
+2025-11-06 14:02:17,436 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Stopping video recording...
+2025-11-06 14:02:17,436 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Stopping video recording and assembling.
+2025-11-06 14:02:17,475 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140216/frames
+2025-11-06 14:02:17,476 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Found 4 valid frames.
+2025-11-06 14:02:17,477 - ERROR - [test_cells_content_per_column[Dolor-Adipisci]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

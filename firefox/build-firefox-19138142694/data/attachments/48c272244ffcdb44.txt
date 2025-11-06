@@ -1,0 +1,36 @@
+2025-11-06 14:02:01,154 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Starting test: test_cells_content_per_column[Dolor-Adipisci].
+2025-11-06 14:02:01,155 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 14:02:01,237 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigation completed.
+2025-11-06 14:02:01,237 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 14:02:01,254 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 14:02:01,255 - INFO - [] Capture loop started for Firefox.
+2025-11-06 14:02:01,255 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:01,255 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140201/test_cells_content_per_column[Dolor-Adipisci]_20251106_140201.mp4
+2025-11-06 14:02:01,257 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Verify cell content per column.
+2025-11-06 14:02:01,258 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Navigating to Challenging DOM page.
+2025-11-06 14:02:01,296 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 14:02:01,297 - INFO - [] Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140201/frames/frame_000000.png
+2025-11-06 14:02:01,321 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:01,364 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:01,512 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 14:02:01,570 - INFO - [] Raw screenshot size: 171683 bytes.
+2025-11-06 14:02:01,570 - INFO - [] Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140201/frames/frame_000001.png
+2025-11-06 14:02:01,586 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:01,602 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 14:02:01,602 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 14:02:01,638 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:01,714 - INFO - [] Raw screenshot size: 171683 bytes.
+2025-11-06 14:02:01,714 - INFO - [] Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140201/frames/frame_000002.png
+2025-11-06 14:02:01,728 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:01,752 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 14:02:01,781 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:01,784 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Getting table cell 'Adipisci' text under column 'Dolor'.
+2025-11-06 14:02:01,832 - INFO - [] Raw screenshot size: 171683 bytes.
+2025-11-06 14:02:01,832 - INFO - [] Saved frame 3: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140201/frames/frame_000003.png
+2025-11-06 14:02:01,836 - WARNING - [test_cells_content_per_column[Dolor-Adipisci]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:01,861 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Finished test: test_cells_content_per_column[Dolor-Adipisci] (Duration: 0.60s).
+2025-11-06 14:02:01,863 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Stopping video recording...
+2025-11-06 14:02:01,863 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Stopping video recording and assembling.
+2025-11-06 14:02:01,899 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Dolor-Adipisci]_20251106_140201/frames
+2025-11-06 14:02:01,899 - INFO - [test_cells_content_per_column[Dolor-Adipisci]] Found 4 valid frames.
+2025-11-06 14:02:01,900 - ERROR - [test_cells_content_per_column[Dolor-Adipisci]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

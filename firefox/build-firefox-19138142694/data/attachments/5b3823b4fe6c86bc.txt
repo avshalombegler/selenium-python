@@ -1,0 +1,35 @@
+2025-11-06 14:02:01,904 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Starting test: test_cells_content_per_column[Sit-Definiebas].
+2025-11-06 14:02:01,904 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 14:02:01,976 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigation completed.
+2025-11-06 14:02:01,977 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 14:02:01,988 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 14:02:01,989 - INFO - [] Capture loop started for Firefox.
+2025-11-06 14:02:01,989 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:01,990 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_140201/test_cells_content_per_column[Sit-Definiebas]_20251106_140201.mp4
+2025-11-06 14:02:01,992 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Verify cell content per column.
+2025-11-06 14:02:01,992 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to Challenging DOM page.
+2025-11-06 14:02:02,030 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 14:02:02,031 - INFO - [] Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_140201/frames/frame_000000.png
+2025-11-06 14:02:02,097 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:02,155 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-06 14:02:02,156 - INFO - [] Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_140201/frames/frame_000001.png
+2025-11-06 14:02:02,175 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:02,223 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:02,304 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 14:02:02,351 - INFO - [] Raw screenshot size: 171431 bytes.
+2025-11-06 14:02:02,351 - INFO - [] Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_140201/frames/frame_000002.png
+2025-11-06 14:02:02,352 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:02,357 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 14:02:02,357 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 14:02:02,389 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 14:02:02,418 - INFO - [] Using Firefox screenshot method.
+2025-11-06 14:02:02,423 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-06 14:02:02,471 - INFO - [] Raw screenshot size: 171431 bytes.
+2025-11-06 14:02:02,472 - WARNING - [test_cells_content_per_column[Sit-Definiebas]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:02,472 - INFO - [] Saved frame 3: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_140201/frames/frame_000003.png
+2025-11-06 14:02:02,502 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Finished test: test_cells_content_per_column[Sit-Definiebas] (Duration: 0.51s).
+2025-11-06 14:02:02,504 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Stopping video recording...
+2025-11-06 14:02:02,504 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Stopping video recording and assembling.
+2025-11-06 14:02:02,539 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251106_140201/frames
+2025-11-06 14:02:02,539 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Found 4 valid frames.
+2025-11-06 14:02:02,540 - ERROR - [test_cells_content_per_column[Sit-Definiebas]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'

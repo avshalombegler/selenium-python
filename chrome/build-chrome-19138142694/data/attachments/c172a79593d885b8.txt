@@ -1,0 +1,22 @@
+2025-11-06 14:02:12,777 - INFO - [test_table_header_per_column[Dolor]] Starting test: test_table_header_per_column[Dolor].
+2025-11-06 14:02:12,777 - INFO - [test_table_header_per_column[Dolor]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-06 14:02:12,854 - INFO - [test_table_header_per_column[Dolor]] Navigation completed.
+2025-11-06 14:02:12,855 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-06 14:02:12,874 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-06 14:02:12,875 - INFO - [] Capture loop started for Firefox.
+2025-11-06 14:02:12,876 - INFO - [test_table_header_per_column[Dolor]] Started recording: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251106_140212/test_table_header_per_column[Dolor]_20251106_140212.mp4
+2025-11-06 14:02:12,877 - INFO - [test_table_header_per_column[Dolor]] Verify table head text per column.
+2025-11-06 14:02:12,878 - INFO - [test_table_header_per_column[Dolor]] Navigating to Challenging DOM page.
+2025-11-06 14:02:12,968 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251106_140212/frames/frame_000000.png
+2025-11-06 14:02:12,973 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:13,136 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-06 14:02:13,254 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251106_140212/frames/frame_000001.png
+2025-11-06 14:02:13,257 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-06 14:02:13,263 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-06 14:02:13,263 - INFO - [test_table_header_per_column[Dolor]] Getting table head text of column 'Dolor'.
+2025-11-06 14:02:13,301 - INFO - [test_table_header_per_column[Dolor]] Finished test: test_table_header_per_column[Dolor] (Duration: 0.42s).
+2025-11-06 14:02:13,302 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording...
+2025-11-06 14:02:13,302 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording and assembling.
+2025-11-06 14:02:13,321 - INFO - [test_table_header_per_column[Dolor]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251106_140212/frames
+2025-11-06 14:02:13,321 - INFO - [test_table_header_per_column[Dolor]] Found 2 valid frames.
+2025-11-06 14:02:13,322 - ERROR - [test_table_header_per_column[Dolor]] ffmpeg failed: [Errno 2] No such file or directory: 'ffmpeg'
