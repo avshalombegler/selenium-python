@@ -48,6 +48,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg
+
       - name: Cache APT packages
         uses: actions/cache@v3
         with:
@@ -122,9 +125,9 @@ jobs:
       - name: Create Allure Environment Properties
         if: always()
         run: |
-          echo "Browser: ${{ matrix.browser }}" > reports/allure-results/environment.properties
-          echo "Run ID: ${{ github.run_id }}" >> reports/allure-results/environment.properties
-          echo "Suite: ${{ matrix.suite }}" >> reports/allure-results/environment.properties
+          echo "Browser=${{ matrix.browser }}" > reports/allure-results/environment.properties
+          echo "Run ID=${{ github.run_id }}" >> reports/allure-results/environment.properties
+          echo "Suite=${{ matrix.suite }}" >> reports/allure-results/environment.properties
           # Add more properties as needed, e.g., OS, Python version, etc.
 
       - name: Generate Allure Report
