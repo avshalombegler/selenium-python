@@ -144,7 +144,7 @@ jobs:
 
       - name: Clean Allure Report Directory
         if: steps.pytest.outcome == 'failure'
-        run: rm -rf reports/allure-report/build-${{ matrix.browser }}-${{ github.run_id }}
+        run: rm -rf reports/allure-report/
 
       - name: Retry Failed Tests
         if: steps.pytest.outcome == 'failure'
