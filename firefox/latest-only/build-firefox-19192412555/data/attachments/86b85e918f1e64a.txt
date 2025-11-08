@@ -1,0 +1,31 @@
+2025-11-08 11:30:50,365 - INFO - [test_right_click_on_hotspot] Starting test: test_right_click_on_hotspot.
+2025-11-08 11:30:50,366 - INFO - [test_right_click_on_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-08 11:30:50,451 - INFO - [test_right_click_on_hotspot] Navigation completed.
+2025-11-08 11:30:50,452 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-08 11:30:50,463 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-08 11:30:50,464 - INFO - [] Capture loop started for Firefox.
+2025-11-08 11:30:50,464 - INFO - [] Using Firefox screenshot method.
+2025-11-08 11:30:50,465 - INFO - [test_right_click_on_hotspot] Started recording: tests_recordings/gw2/test_right_click_on_hotspot_20251108_113050/test_right_click_on_hotspot_20251108_113050.mp4
+2025-11-08 11:30:50,467 - INFO - [test_right_click_on_hotspot] Navigating to Context Menu page.
+2025-11-08 11:30:50,548 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-08 11:30:50,549 - INFO - [] Saved frame 0: tests_recordings/gw2/test_right_click_on_hotspot_20251108_113050/frames/frame_000000.png
+2025-11-08 11:30:50,580 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 11:30:50,615 - INFO - [] Using Firefox screenshot method.
+2025-11-08 11:30:50,694 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-08 11:30:50,695 - INFO - [] Saved frame 1: tests_recordings/gw2/test_right_click_on_hotspot_20251108_113050/frames/frame_000001.png
+2025-11-08 11:30:50,700 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 11:30:50,762 - INFO - [] Using Firefox screenshot method.
+2025-11-08 11:30:50,796 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-08 11:30:50,885 - INFO - [] Raw screenshot size: 69828 bytes.
+2025-11-08 11:30:50,885 - INFO - [] Saved frame 2: tests_recordings/gw2/test_right_click_on_hotspot_20251108_113050/frames/frame_000002.png
+2025-11-08 11:30:50,890 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 11:30:50,891 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-08 11:30:50,891 - INFO - [test_right_click_on_hotspot] Testing right-click on hot spot
+2025-11-08 11:30:50,891 - INFO - [test_right_click_on_hotspot] Video recording active – skipping alert text check
+2025-11-08 11:30:50,892 - INFO - [test_right_click_on_hotspot] Finished test: test_right_click_on_hotspot (Duration: 0.43s).
+2025-11-08 11:30:50,893 - INFO - [test_right_click_on_hotspot] Stopping video recording...
+2025-11-08 11:30:50,893 - INFO - [test_right_click_on_hotspot] Stopping video recording and assembling.
+2025-11-08 11:30:50,952 - INFO - [test_right_click_on_hotspot] Thread joined. Frames dir: tests_recordings/gw2/test_right_click_on_hotspot_20251108_113050/frames
+2025-11-08 11:30:50,952 - INFO - [test_right_click_on_hotspot] Found 3 valid frames.
+2025-11-08 11:30:51,122 - INFO - [test_right_click_on_hotspot] Video created: tests_recordings/gw2/test_right_click_on_hotspot_20251108_113050/test_right_click_on_hotspot_20251108_113050.mp4
+2025-11-08 11:30:51,125 - INFO - [test_right_click_on_hotspot] Quitting driver for browser: firefox.
