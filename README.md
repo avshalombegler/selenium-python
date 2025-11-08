@@ -56,10 +56,18 @@ Note: The Allure CLI is not a Python package; install it from https://docs.qamet
 Tests are automatically run on every push/pull request to `main` using GitHub Actions.
 
 ## Allure Reports
-Test reports are published to GitHub Pages after each CI run on the `main` branch:
-- Latest report: https://avshalombegler.github.io/selenium-python/allure-report/build-<run_id>
-- Find the Run ID in the [Actions tab](https://github.com/avshalombegler/selenium-python/actions).
-- Note: Reports may take up to 10 minutes to appear after a successful run.
+Access the latest Allure reports below (updated automatically after each successful run):
+
+- **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-<RUN_ID>/index.html)
+- **Chrome - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest/build-chrome-<RUN_ID>/index.html)
+- **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-<RUN_ID>/index.html)
+- **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest/build-firefox-<RUN_ID>/index.html)
+
+### Notes
+- Reports are generated for Chrome and Firefox browsers.
+- "Latest Only" shows results from the most recent run without historical trends.
+- "Latest with History" includes merged data from previous runs for trend analysis.
+- If a link doesn't load, check the GitHub Actions run for the latest ID or wait for the workflow to complete.
 
 ## Project layout
 

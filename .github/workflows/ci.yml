@@ -202,6 +202,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports
 
+      - name: Update README with Latest Run ID
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git checkout main
+          sed -i "s/<RUN_ID>/${{ github.run_id }}/g" README.md
+          git add README.md
+          git commit -m "Update README with latest run ID ${{ github.run_id }}" || echo "No changes to commit"
+          git push
+
   clean:
     needs: deploy
     if: github.ref == 'refs/heads/main'
