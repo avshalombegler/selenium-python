@@ -112,6 +112,36 @@ jobs:
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
             pytest tests/ -v -n auto --dist=loadfile --alluredir=reports/allure-results
 
+      - name: Generate Latest-Only Allure Report
+        if: always()
+        run: |
+          mkdir -p reports/allure-report-latest/build-${{ matrix.browser }}-${{ github.run_id }}
+          allure generate --clean reports/allure-results -o reports/allure-report-latest/build-${{ matrix.browser }}-${{ github.run_id }}
+          sleep 2
+
+      - name: Upload Latest-Only Allure Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-${{ matrix.browser }}-latest-only
+          path: reports/allure-report-latest/
+          retention-days: 7 
+
+      - name: Download Previous Allure Results
+        if: always()
+        continue-on-error: true  # Ignore if no previous artifact exists
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-${{ matrix.browser }}-history
+          path: reports/allure-results-history
+
+      - name: Merge Allure History
+        if: always()
+        run: |
+          if [ -d "reports/allure-results-history" ]; then
+            cp -r reports/allure-results-history/* reports/allure-results/ || true
+          fi
+
       - name: Clean Allure Report Directory
         if: steps.pytest.outcome == 'failure'
         run: rm -rf reports/allure-report/build-${{ matrix.browser }}-${{ github.run_id }}
@@ -141,9 +171,9 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-${{ matrix.browser }}-${{ github.run_id }}
+          name: allure-results-${{ matrix.browser }}-history
           path: reports/allure-results/
-          retention-days: 7
+          retention-days: 30
 
       - name: Upload Allure Report
         if: always()
@@ -181,19 +211,33 @@ jobs:
       - name: Create reports directory
         run: mkdir -p reports
       
-      - name: Download Allure Report (Chrome)
+      - name: Download Allure Report (Chrome) - Latest Only
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report-chrome-latest-only
+          path: reports/chrome/latest-only
+      
+      - name: Download Allure Report (Chrome) - Latest with History
         if: always()
         uses: actions/download-artifact@v4
         with:
           name: allure-report-chrome-latest
-          path: reports/chrome
+          path: reports/chrome/latest
       
-      - name: Download Allure Report (Firefox)
+      - name: Download Allure Report (Firefox) - Latest Only
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report-firefox-latest-only
+          path: reports/firefox/latest-only
+      
+      - name: Download Allure Report (Firefox) - Latest with History
         if: always()
         uses: actions/download-artifact@v4
         with:
           name: allure-report-firefox-latest
-          path: reports/firefox
+          path: reports/firefox/latest
 
       - name: Deploy to GitHub Pages
         id: deployment
@@ -230,8 +274,10 @@ jobs:
 
       - name: Clean old reports
         run: |
-          find chrome/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
-          find firefox/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
+          find chrome/latest-only/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
+          find chrome/latest/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
+          find firefox/latest-only/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
+          find firefox/latest/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
           git add .
           git commit -m "Clean old Allure reports" || echo "No changes"
           git push
