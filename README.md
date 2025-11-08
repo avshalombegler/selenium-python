@@ -71,21 +71,18 @@ Access the latest Allure reports below (updated automatically after each success
 
 ## Project layout
 
-- `pages/` - Page Object Model classes
-- `tests/` - Test cases
+- `workflows/` - ci.yml
 - `config/` - Configuration parameters
-- `utils/` - Utilities (locators and helpers)
-- `conftest.py` - Pytest fixtures and session setup
+- `pages/` - Page Object Model classes
 - `reports/` - Test run artifacts and Allure results
-
-## Notes for maintainers
-
-- Tests use the Page Object Model. Keep pages focused on element lookup and actions; assertions belong in tests.
+- `tests/` - Test cases
+- `utils/` - Utilities (locators and helpers)
+- `conftest.py` - Pytest fixtures/hooks and session setup
 
 ## How to extend
 
 - Add new page objects to `pages/` and expose them via `page_manager.py`.
-- Add new fixtures to `conftest.py` for shared setup (browser/session-scoped fixtures are helpful).
+- Add new Pytest fixtures/hooks to `conftest.py` for shared setup (browser/session-scoped fixtures are helpful).
 
 ## Contact
 

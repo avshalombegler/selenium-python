@@ -246,6 +246,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports
 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Update README with Latest Run ID
         run: |
           git config --global user.name "GitHub Actions"
