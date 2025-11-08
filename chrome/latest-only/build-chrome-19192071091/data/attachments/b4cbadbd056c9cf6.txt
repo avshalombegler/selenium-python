@@ -1,0 +1,74 @@
+2025-11-08 10:59:02,631 - INFO - [test_example_1] Starting test: test_example_1.
+2025-11-08 10:59:02,632 - INFO - [test_example_1] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-08 10:59:02,736 - INFO - [test_example_1] Navigation completed.
+2025-11-08 10:59:02,736 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-08 10:59:02,754 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-08 10:59:02,755 - INFO - [] Capture loop started for Firefox.
+2025-11-08 10:59:02,755 - INFO - [test_example_1] Started recording: tests_recordings/gw1/test_example_1_20251108_105902/test_example_1_20251108_105902.mp4
+2025-11-08 10:59:02,756 - INFO - [test_example_1] Tests Dynamic Loading - Example 1.
+2025-11-08 10:59:02,756 - INFO - [test_example_1] Navigating to Dynamic Loading page.
+2025-11-08 10:59:02,852 - INFO - [] Saved frame 0: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000000.png
+2025-11-08 10:59:02,860 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 10:59:03,026 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-08 10:59:03,114 - INFO - [] Saved frame 1: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000001.png
+2025-11-08 10:59:03,119 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 10:59:03,125 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-08 10:59:03,125 - INFO - [test_example_1] Navigating to Example 1: Element on page that is hidden page.
+2025-11-08 10:59:03,298 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-08 10:59:03,391 - INFO - [] Saved frame 2: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000002.png
+2025-11-08 10:59:03,394 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 10:59:03,400 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-08 10:59:03,400 - INFO - [test_example_1] Clicking start button.
+2025-11-08 10:59:03,474 - INFO - [test_example_1] Waiting for loader to disappear.
+2025-11-08 10:59:03,540 - INFO - [] Saved frame 3: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000003.png
+2025-11-08 10:59:03,547 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 10:59:03,690 - INFO - [] Saved frame 4: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000004.png
+2025-11-08 10:59:03,807 - INFO - [] Saved frame 5: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000005.png
+2025-11-08 10:59:03,941 - INFO - [] Saved frame 6: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000006.png
+2025-11-08 10:59:04,074 - INFO - [] Saved frame 7: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000007.png
+2025-11-08 10:59:04,077 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 10:59:04,191 - INFO - [] Saved frame 8: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000008.png
+2025-11-08 10:59:04,308 - INFO - [] Saved frame 9: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000009.png
+2025-11-08 10:59:04,440 - INFO - [] Saved frame 10: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000010.png
+2025-11-08 10:59:04,574 - INFO - [] Saved frame 11: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000011.png
+2025-11-08 10:59:04,691 - INFO - [] Saved frame 12: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000012.png
+2025-11-08 10:59:04,808 - INFO - [] Saved frame 13: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000013.png
+2025-11-08 10:59:04,941 - INFO - [] Saved frame 14: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000014.png
+2025-11-08 10:59:05,074 - INFO - [] Saved frame 15: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000015.png
+2025-11-08 10:59:05,191 - INFO - [] Saved frame 16: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000016.png
+2025-11-08 10:59:05,307 - INFO - [] Saved frame 17: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000017.png
+2025-11-08 10:59:05,441 - INFO - [] Saved frame 18: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000018.png
+2025-11-08 10:59:05,574 - INFO - [] Saved frame 19: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000019.png
+2025-11-08 10:59:05,691 - INFO - [] Saved frame 20: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000020.png
+2025-11-08 10:59:05,808 - INFO - [] Saved frame 21: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000021.png
+2025-11-08 10:59:05,941 - INFO - [] Saved frame 22: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000022.png
+2025-11-08 10:59:06,074 - INFO - [] Saved frame 23: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000023.png
+2025-11-08 10:59:06,191 - INFO - [] Saved frame 24: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000024.png
+2025-11-08 10:59:06,307 - INFO - [] Saved frame 25: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000025.png
+2025-11-08 10:59:06,441 - INFO - [] Saved frame 26: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000026.png
+2025-11-08 10:59:06,574 - INFO - [] Saved frame 27: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000027.png
+2025-11-08 10:59:06,691 - INFO - [] Saved frame 28: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000028.png
+2025-11-08 10:59:06,808 - INFO - [] Saved frame 29: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000029.png
+2025-11-08 10:59:06,941 - INFO - [] Saved frame 30: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000030.png
+2025-11-08 10:59:07,074 - INFO - [] Saved frame 31: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000031.png
+2025-11-08 10:59:07,191 - INFO - [] Saved frame 32: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000032.png
+2025-11-08 10:59:07,307 - INFO - [] Saved frame 33: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000033.png
+2025-11-08 10:59:07,441 - INFO - [] Saved frame 34: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000034.png
+2025-11-08 10:59:07,574 - INFO - [] Saved frame 35: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000035.png
+2025-11-08 10:59:07,691 - INFO - [] Saved frame 36: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000036.png
+2025-11-08 10:59:07,807 - INFO - [] Saved frame 37: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000037.png
+2025-11-08 10:59:07,940 - INFO - [] Saved frame 38: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000038.png
+2025-11-08 10:59:08,074 - INFO - [] Saved frame 39: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000039.png
+2025-11-08 10:59:08,191 - INFO - [] Saved frame 40: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000040.png
+2025-11-08 10:59:08,308 - INFO - [] Saved frame 41: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000041.png
+2025-11-08 10:59:08,440 - INFO - [] Saved frame 42: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000042.png
+2025-11-08 10:59:08,557 - INFO - [] Saved frame 43: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000043.png
+2025-11-08 10:59:08,625 - INFO - [test_example_1] Verifying success message.
+2025-11-08 10:59:08,674 - INFO - [] Saved frame 44: tests_recordings/gw1/test_example_1_20251108_105902/frames/frame_000044.png
+2025-11-08 10:59:08,681 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-08 10:59:08,692 - INFO - [test_example_1] Finished test: test_example_1 (Duration: 5.94s).
+2025-11-08 10:59:08,692 - INFO - [test_example_1] Stopping video recording...
+2025-11-08 10:59:08,692 - INFO - [test_example_1] Stopping video recording and assembling.
+2025-11-08 10:59:08,741 - INFO - [test_example_1] Thread joined. Frames dir: tests_recordings/gw1/test_example_1_20251108_105902/frames
+2025-11-08 10:59:08,742 - INFO - [test_example_1] Found 45 valid frames.
+2025-11-08 10:59:09,497 - INFO - [test_example_1] Video created: tests_recordings/gw1/test_example_1_20251108_105902/test_example_1_20251108_105902.mp4
