@@ -235,7 +235,7 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
 
         elif browser == "firefox":
             firefox_service = FirefoxService(GeckoDriverManager().install())
-            firefox_options = build_firefox_options(user_data_dir, download_directory, debug_port)
+            firefox_options = build_firefox_options(user_data_dir, download_directory)
             driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
             if env_config.MAXIMIZED:
                 driver.maximize_window()
