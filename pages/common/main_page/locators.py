@@ -24,3 +24,4 @@ class MainPageLocators:
     DYNAMIC_LOADING_LINK: Locator = (By.LINK_TEXT, "Dynamic Loading")
     ENTRY_AD_LINK: Locator = (By.LINK_TEXT, "Entry Ad")
     EXIT_INTENT_LINK: Locator = (By.LINK_TEXT, "Exit Intent")
+    FILE_DOWNLOAD_LINK: Locator = (By.LINK_TEXT, "File Download")

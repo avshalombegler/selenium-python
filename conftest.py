@@ -41,7 +41,7 @@ Helper Functions
 """
 
 
-def build_chrome_options(user_data_dir: Path, debug_port: int) -> ChromeOptions:
+def build_chrome_options(user_data_dir: Path, download_directory: Path, debug_port: int) -> ChromeOptions:
     options = ChromeOptions()
     options.add_argument(f"--user-data-dir={user_data_dir}")  # Use the per-worker user-data-dir
     options.add_argument(f"--remote-debugging-port={debug_port}")  # avoid DevTools port collisions between workers
@@ -55,18 +55,31 @@ def build_chrome_options(user_data_dir: Path, debug_port: int) -> ChromeOptions:
         options.add_argument("--start-maximized")
     if env_config.HEADLESS:
         options.add_argument("--headless=new")
+    # Set the preferences for download behavior
+    prefs = {
+        "download.default_directory": str(download_directory.resolve()),
+        "download.prompt_for_download": False,  # Disable the "Save As" prompt
+        "download.directory_upgrade": True,
+        # "plugins.always_open_pdf_externally": True,  # Optional: for handling PDFs
+    }
+    options.add_experimental_option("prefs", prefs)
     return options
 
 
-def build_firefox_options(user_data_dir: Path, debug_port: int) -> FirefoxOptions:
+def build_firefox_options(user_data_dir: Path, download_directory: Path) -> FirefoxOptions:
     options = FirefoxOptions()
 
     # Set custom profile directory for isolation
     profile = webdriver.FirefoxProfile(str(user_data_dir))  # Create profile from the directory
     options.profile = profile
 
-    # Note: --remote-debugging-port is not supported for Firefox; removed to avoid errors
-    # options.add_argument(f"--remote-debugging-port={debug_port}")
+    # Set download preferences to use the custom directory
+    profile.set_preference("browser.download.dir", str(download_directory.resolve()))
+    profile.set_preference("browser.download.folderList", 2)  # 2 = custom location
+    profile.set_preference("browser.download.manager.showWhenStarting", False)
+    profile.set_preference(
+        "browser.helperApps.neverAsk.saveToDisk", "application/octet-stream"
+    )  # Adjust MIME types as needed for your downloads
 
     # Other preferences
     options.set_preference("dom.webdriver.enabled", False)
@@ -81,6 +94,13 @@ def build_firefox_options(user_data_dir: Path, debug_port: int) -> FirefoxOption
 
 def get_worker_id() -> str:
     return os.environ.get("PYTEST_XDIST_WORKER", "local") or f"local_{os.getpid()}"
+
+
+def get_config_path(request: FixtureRequest, attr: str, error_msg: str) -> Path:
+    value = getattr(request.config, attr, None)
+    if value is None:
+        raise RuntimeError(error_msg)
+    return Path(value)
 
 
 def clean_directory(dir_path: Path, lock_suffix: str = "lock") -> None:
@@ -134,6 +154,112 @@ Pytest Fixtures
 """
 
 
+@pytest.fixture(scope="session")
+def logger() -> logging.Logger:
+    """
+    Makes the root logger accessible to other files.
+    """
+    return root_logger
+
+
+@pytest.fixture(scope="session", autouse=True)
+def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]:
+    """
+    Creates and yields a unique Chrome user data directory per test worker/session.
+    Ensures isolation between parallel test runs (xdist) by using worker ID or PID.
+    Directory is created in system temp and stored in config for driver setup.
+    """
+    try:
+        worker_id = request.config.workerinput.get("workerid")  # type: ignore[attr-defined]
+    except Exception:
+        worker_id = get_worker_id()
+
+    user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker_id}"
+    user_data_dir.mkdir(parents=True, exist_ok=True)
+    request.config.user_data_dir = user_data_dir  # type: ignore[attr-defined]
+    yield
+
+
+@pytest.fixture(scope="session", autouse=True)
+def clean_screenshots_at_start() -> None:
+    worker_id = get_worker_id()
+    screenshots_dir = Path("tests_screenshots") / worker_id
+    clean_directory(screenshots_dir, worker_id)
+
+
+@pytest.fixture(scope="session", autouse=True)
+def clean_videos_at_start() -> None:
+    worker_id = get_worker_id()
+    videos_dir = Path("tests_recordings") / worker_id
+    clean_directory(videos_dir, worker_id)
+
+
+@pytest.fixture(scope="session", autouse=True)
+def clean_download_at_start(request: FixtureRequest) -> None:  # Add request param
+    worker_id = get_worker_id()
+    download_dir = Path("download") / worker_id
+    clean_directory(download_dir, worker_id)
+    request.config.download_directory = download_dir  # type: ignore[attr-defined]
+
+
+@pytest.fixture(scope="session")
+def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
+    """
+    Initialize driver object at the start of each test.
+    """
+    browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
+    root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
+
+    # Get download_directory that was set by clean_download_per_test fixture
+    download_directory = get_config_path(
+        request, "download_directory", "download_directory not set by clean_download_per_test fixture."
+    )
+    root_logger.debug(f"Using download_directory: {download_directory}")
+
+    # Get user_data_dir that was set by unique_user_data_dir
+    user_data_dir = get_config_path(request, "user_data_dir", "user_data_dir not set by unique_user_data_dir fixture.")
+    root_logger.debug(f"Using user_data_dir: {user_data_dir}")
+
+    # Compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
+    worker_token = os.environ.get("PYTEST_XDIST_WORKER", str(os.getpid()))
+    port_suffix = int("".join(ch for ch in worker_token if ch.isdigit()) or "0") % 1000
+    debug_port = DEBUG_PORT_BASE + port_suffix  # keep port in reasonable range
+    root_logger.debug(f"Using debug_port: {debug_port}")
+
+    try:
+        driver: WebDriver
+        if browser == "chrome":
+            chrome_service = ChromeService(ChromeDriverManager().install())
+            chrome_options = build_chrome_options(user_data_dir, download_directory, debug_port)
+            driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+
+        elif browser == "firefox":
+            firefox_service = FirefoxService(GeckoDriverManager().install())
+            firefox_options = build_firefox_options(user_data_dir, download_directory, debug_port)
+            driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
+            if env_config.MAXIMIZED:
+                driver.maximize_window()
+
+        else:
+            raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
+
+        # Ensure even viewport size
+        try:
+            driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
+        except Exception:
+            pass  # Ignore if not supported
+
+    except Exception as e:
+        root_logger.error(f"Failed to initialize {browser} driver: {str(e)}")
+        raise
+
+    try:
+        yield driver
+    finally:
+        root_logger.info(f"Quitting driver for browser: {browser}.")
+        driver.quit()
+
+
 @pytest.fixture(scope="function")
 def page_manager(driver: WebDriver, logger: Logger) -> PageManager:
     """
@@ -148,7 +274,7 @@ def ui_test(page_manager: PageManager, request: FixtureRequest) -> Generator[Non
     Navigate to base URL only for UI tests.
     Use: add @pytest.mark.ui to tests.
     """
-    if request.node.get_closest_marker("ui"):
+    if request.node.get_closest_marker("ui") or request.node.get_closest_marker("current"):
         with allure.step(f"Navigate to base URL: {env_config.BASE_URL}"):
             page_manager.navigate_to_base_url(env_config.BASE_URL)
     yield
@@ -197,98 +323,16 @@ def actions(driver: WebDriver) -> ActionChains:
     return ActionChains(driver)
 
 
-@pytest.fixture(scope="session")
-def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
+@pytest.fixture(scope="function")
+def download_directory(request: FixtureRequest) -> Path:
     """
-    Initialize driver object at the start of each test.
+    Provides the download directory path for the current test worker.
+    Ensures the directory is cleaned and ready for use.
     """
-    browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
-    root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
-
-    # Get user_data_dir that was set by unique_user_data_dir
-    user_data_dir = getattr(request.config, "user_data_dir", None)
-    if user_data_dir is None:
-        raise RuntimeError("user_data_dir not set by unique_user_data_dir fixture.")
-    user_data_dir = Path(user_data_dir)
-    root_logger.debug(f"Using user_data_dir: {user_data_dir}")
-
-    # Compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
-    worker_token = os.environ.get("PYTEST_XDIST_WORKER", str(os.getpid()))
-    port_suffix = int("".join(ch for ch in worker_token if ch.isdigit()) or "0") % 1000
-    debug_port = DEBUG_PORT_BASE + port_suffix  # keep port in reasonable range
-    root_logger.debug(f"Using debug_port: {debug_port}")
-
-    try:
-        driver: WebDriver
-        if browser == "chrome":
-            chrome_service = ChromeService(ChromeDriverManager().install())
-            chrome_options = build_chrome_options(user_data_dir, debug_port)
-            driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
-
-        elif browser == "firefox":
-            firefox_service = FirefoxService(GeckoDriverManager().install())
-            firefox_options = build_firefox_options(user_data_dir, debug_port)
-            driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
-            if env_config.MAXIMIZED:
-                driver.maximize_window()
-
-        else:
-            raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
-
-        # Ensure even viewport size
-        try:
-            driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
-        except Exception:
-            pass  # Ignore if not supported
-
-    except Exception as e:
-        root_logger.error(f"Failed to initialize {browser} driver: {str(e)}")
-        raise
-
-    try:
-        yield driver
-    finally:
-        root_logger.info(f"Quitting driver for browser: {browser}.")
-        driver.quit()
-
-
-@pytest.fixture(scope="session")
-def logger() -> logging.Logger:
-    """
-    Makes the root logger accessible to other files.
-    """
-    return root_logger
-
-
-@pytest.fixture(scope="session", autouse=True)
-def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]:
-    """
-    Creates and yields a unique Chrome user data directory per test worker/session.
-    Ensures isolation between parallel test runs (xdist) by using worker ID or PID.
-    Directory is created in system temp and stored in config for driver setup.
-    """
-    try:
-        worker_id = request.config.workerinput.get("workerid")  # type: ignore[attr-defined]
-    except Exception:
-        worker_id = get_worker_id()
-
-    user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker_id}"
-    user_data_dir.mkdir(parents=True, exist_ok=True)
-    request.config.user_data_dir = user_data_dir  # type: ignore[attr-defined]
-    yield
-
-@pytest.fixture(scope="session", autouse=True)
-def clean_screenshots_at_start() -> None:
     worker_id = get_worker_id()
-    screenshots_dir = Path("tests_screenshots") / worker_id
-    clean_directory(screenshots_dir, worker_id)
-
-
-@pytest.fixture(scope="session", autouse=True)
-def clean_videos_at_start() -> None:
-    worker_id = get_worker_id()
-    videos_dir = Path("tests_recordings") / worker_id
-    clean_directory(videos_dir, worker_id)
+    download_dir = Path("download") / worker_id
+    clean_directory(download_dir, worker_id)
+    return download_dir
 
 
 """
@@ -296,27 +340,6 @@ def clean_videos_at_start() -> None:
 Pytest Hooks
 
 """
-
-
-@pytest.hookimpl(tryfirst=True)
-def pytest_configure(config: "pytest.Config") -> None:
-    """
-    Sets the unique user data directory in pytest config during test setup.
-    Ensures the directory created by the unique_user_data_dir fixture is available
-    globally via config.user_data_dir for driver initialization and cleanup.
-    """
-    config.user_data_dir = unique_user_data_dir  # type: ignore[attr-defined]
-
-
-@pytest.hookimpl(tryfirst=True)
-def pytest_sessionstart(session: "pytest.Session") -> None:
-    """
-    Validates that user_data_dir is set in pytest config at session start.
-    Exits the test run with an error if the directory is missing, preventing
-    driver initialization without isolation.
-    """
-    if not hasattr(session.config, "user_data_dir"):
-        pytest.exit("User data directory not set.")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
