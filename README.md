@@ -88,4 +88,3 @@ Access the latest Allure reports below (updated automatically after each success
 
 If you need help, open an issue or contact the repository owner.
 
-
