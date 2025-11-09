@@ -129,11 +129,13 @@ jobs:
 
       - name: Download Previous Allure Results
         if: always()
-        continue-on-error: true  # Ignore if no previous artifact exists
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-results-${{ matrix.browser }}-history
-          path: reports/allure-results-history
+        run: |
+          git fetch origin gh-pages --depth=1
+          mkdir -p reports/allure-results-history
+          if git ls-tree -r origin/gh-pages --name-only | grep -q "history/${{ matrix.browser }}"; then
+            git checkout origin/gh-pages -- history/${{ matrix.browser }} || true
+            cp -r history/${{ matrix.browser }}/* reports/allure-results-history/ || true
+          fi
 
       - name: Merge Allure History
         if: always()
@@ -245,6 +247,18 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports
+
+      - name: Store History in gh-pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git checkout gh-pages
+          mkdir -p history
+          cp -r reports/history/* history/ || true
+          git add history/
+          git commit -m "Update Allure history for run ${{ github.run_id }}" || echo "No changes to history"
+          git push origin gh-pages
+          git checkout main
 
       - name: Checkout repository
         uses: actions/checkout@v4
