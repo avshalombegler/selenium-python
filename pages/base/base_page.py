@@ -1,5 +1,6 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING, Any, Callable, Optional, Tuple, TypeVar, Union, List, cast
+from pathlib import Path
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.remote.webelement import WebElement
@@ -280,6 +281,12 @@ class BasePage:
     def get_base_url(self) -> str:
         return self.base_url
 
+    def get_files_in_directory(self, directory_path: Path) -> list:
+        """
+        Returns a list of file names in the specified directory.
+        """
+        return [item for item in directory_path.iterdir() if item.is_file()]
+
     def is_element_selected(
         self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2
     ) -> bool:
@@ -332,6 +339,22 @@ class BasePage:
         def action() -> None:
             elem = self.wait_for_visibility(locator)
             elem.send_keys(text)
+
+        self._retry(action, locator=locator, retry_count=retry)
+        return None
+
+    def download_file(self, locator: Locator, file_name: str, retry: int = 2) -> None:
+        self.logger.info(f"Download file '{file_name}'.")
+
+        formatted_locaor = (locator[0], locator[1].format(file_name=file_name))
+
+        def action() -> None:
+            link_element = self.wait_for_visibility(formatted_locaor)
+            if link_element:
+                self.click_element(formatted_locaor)
+                self.logger.info(f"Clicked download link for file: {file_name}")
+            else:
+                raise ValueError(f"Download link for file '{file_name}' not found.")
 
         self._retry(action, locator=locator, retry_count=retry)
         return None
