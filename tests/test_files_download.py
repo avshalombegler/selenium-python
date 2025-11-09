@@ -1,5 +1,6 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+import os
 import pytest
 import allure
 
@@ -15,9 +16,9 @@ if TYPE_CHECKING:
 class TestFilesDownload:
     """Tests Files Download functionality"""
 
-    @pytest.mark.current
-    # @pytest.mark.ui
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.skipif(os.getenv("BROWSER") == "firefox", reason="Skipping file download test for Firefox due to slow downloading process")
     def test_files_download_functionality(
         self, page_manager: PageManager, logger: Logger, download_directory: Path
     ) -> None:

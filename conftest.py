@@ -73,18 +73,15 @@ def build_firefox_options(user_data_dir: Path, download_directory: Path) -> Fire
     profile = webdriver.FirefoxProfile(str(user_data_dir))  # Create profile from the directory
     options.profile = profile
 
-    # Set download preferences to use the custom directory
     profile.set_preference("browser.download.dir", str(download_directory.resolve()))
     profile.set_preference("browser.download.folderList", 2)  # 2 = custom location
     profile.set_preference("browser.download.manager.showWhenStarting", False)
-    profile.set_preference(
-        "browser.helperApps.neverAsk.saveToDisk", "application/octet-stream"
-    )  # Adjust MIME types as needed for your downloads
-
-    # Other preferences
-    options.set_preference("dom.webdriver.enabled", False)
-    options.set_preference("dom.push.enabled", False)
-    options.set_preference("javascript.enabled", True)
+    profile.set_preference("browser.download.manager.closeWhenDone", True)  # Close download dialog
+    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream,text/plain,application/pdf")  # Auto-save common types
+    profile.set_preference("browser.download.manager.alertOnEXEOpen", False)
+    profile.set_preference("browser.download.manager.focusWhenStarting", False)
+    profile.set_preference("browser.download.manager.useWindow", False)
+    profile.set_preference("browser.download.manager.showAlertOnComplete", False)
 
     if env_config.HEADLESS:
         options.add_argument("--headless=new")
