@@ -58,10 +58,10 @@ Tests are automatically run on every push/pull request to `main` using GitHub Ac
 ## Allure Reports
 Access the latest Allure reports below (updated automatically after each successful run):
 
-- **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19204675479/index.html)
-- **Chrome - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest/build-chrome-19204675479/index.html)
-- **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19204675479/index.html)
-- **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest/build-firefox-19204675479/index.html)
+- **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19204823847/index.html)
+- **Chrome - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest/build-chrome-19204823847/index.html)
+- **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19204823847/index.html)
+- **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest/build-firefox-19204823847/index.html)
 
 ### Notes
 - Reports are generated for Chrome and Firefox browsers.
