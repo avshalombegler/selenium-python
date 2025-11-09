@@ -60,10 +60,10 @@ def start_video_recording(
                     data = res.get("data")
                     if data:
                         raw = base64.b64decode(data)
-                else:
-                    logger.info("Using Firefox screenshot method.")
-                    raw = driver.get_screenshot_as_png()
-                    logger.info(f"Raw screenshot size: {len(raw)} bytes.")
+                # else:
+                #     logger.info("Using Firefox screenshot method.")
+                #     raw = driver.get_screenshot_as_png()
+                #     logger.info(f"Raw screenshot size: {len(raw)} bytes.")
 
                 if len(raw) > MIN_FRAME_SIZE and (not MAX_FRAMES or idx < MAX_FRAMES):
                     frame_file = frames_dir / f"frame_{idx:06d}.png"
