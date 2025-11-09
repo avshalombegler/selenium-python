@@ -1,0 +1,215 @@
+2025-11-09 08:02:48,812 - INFO - [test_remove_elements] Starting test: test_remove_elements.
+2025-11-09 08:02:48,812 - INFO - [test_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 08:02:48,917 - INFO - [test_remove_elements] Navigation completed.
+2025-11-09 08:02:48,919 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 08:02:48,934 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 08:02:48,935 - INFO - [] Capture loop started for Firefox.
+2025-11-09 08:02:48,935 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:48,935 - INFO - [test_remove_elements] Started recording: tests_recordings/gw3/test_remove_elements_20251109_080248/test_remove_elements_20251109_080248.mp4
+2025-11-09 08:02:48,942 - INFO - [test_remove_elements] Tests for remove elements.
+2025-11-09 08:02:48,942 - INFO - [test_remove_elements] Navigating to Add/Remove Elements page.
+2025-11-09 08:02:49,032 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 08:02:49,032 - INFO - [] Saved frame 0: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000000.png
+2025-11-09 08:02:49,045 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:49,100 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:49,219 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-09 08:02:49,319 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:49,319 - INFO - [] Saved frame 1: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000001.png
+2025-11-09 08:02:49,324 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:49,334 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-09 08:02:49,335 - INFO - [test_remove_elements] Ensure there are elements to remove
+2025-11-09 08:02:49,335 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-09 08:02:49,389 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:49,425 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-09 08:02:49,521 - INFO - [] Raw screenshot size: 60027 bytes.
+2025-11-09 08:02:49,522 - INFO - [] Saved frame 2: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000002.png
+2025-11-09 08:02:49,523 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:49,591 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:49,602 - INFO - [test_remove_elements] Remove all elements
+2025-11-09 08:02:49,602 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-09 08:02:49,602 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-09 08:02:49,691 - INFO - [] Raw screenshot size: 60887 bytes.
+2025-11-09 08:02:49,694 - INFO - [] Saved frame 3: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000003.png
+2025-11-09 08:02:49,696 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:49,696 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-09 08:02:49,764 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:49,827 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-09 08:02:49,827 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-09 08:02:49,900 - INFO - [] Raw screenshot size: 60026 bytes.
+2025-11-09 08:02:49,900 - INFO - [] Saved frame 4: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000004.png
+2025-11-09 08:02:49,902 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:49,902 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-09 08:02:49,970 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:49,983 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-09 08:02:49,983 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-09 08:02:50,066 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:50,067 - INFO - [] Raw screenshot size: 58329 bytes.
+2025-11-09 08:02:50,067 - INFO - [] Saved frame 5: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000005.png
+2025-11-09 08:02:50,135 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:50,176 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:50,177 - INFO - [] Saved frame 6: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000006.png
+2025-11-09 08:02:50,243 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:50,277 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:50,277 - INFO - [] Saved frame 7: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000007.png
+2025-11-09 08:02:50,344 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:50,390 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:50,391 - INFO - [] Saved frame 8: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000008.png
+2025-11-09 08:02:50,459 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:50,537 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:50,538 - INFO - [] Saved frame 9: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000009.png
+2025-11-09 08:02:50,539 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:50,606 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:50,661 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:50,661 - INFO - [] Saved frame 10: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000010.png
+2025-11-09 08:02:50,730 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:50,792 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:50,792 - INFO - [] Saved frame 11: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000011.png
+2025-11-09 08:02:50,859 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:50,968 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:50,968 - INFO - [] Saved frame 12: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000012.png
+2025-11-09 08:02:51,035 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:51,116 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:51,117 - INFO - [] Saved frame 13: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000013.png
+2025-11-09 08:02:51,117 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:51,184 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:51,218 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:51,218 - INFO - [] Saved frame 14: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000014.png
+2025-11-09 08:02:51,287 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:51,341 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:51,342 - INFO - [] Saved frame 15: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000015.png
+2025-11-09 08:02:51,409 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:51,439 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:51,439 - INFO - [] Saved frame 16: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000016.png
+2025-11-09 08:02:51,506 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:51,605 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:51,606 - INFO - [] Saved frame 17: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000017.png
+2025-11-09 08:02:51,673 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:51,726 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:51,726 - INFO - [] Saved frame 18: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000018.png
+2025-11-09 08:02:51,793 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:51,847 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:51,848 - INFO - [] Saved frame 19: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000019.png
+2025-11-09 08:02:51,917 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,008 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,008 - INFO - [] Saved frame 20: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000020.png
+2025-11-09 08:02:52,075 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,189 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,189 - INFO - [] Saved frame 21: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000021.png
+2025-11-09 08:02:52,190 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:52,256 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,293 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,294 - INFO - [] Saved frame 22: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000022.png
+2025-11-09 08:02:52,361 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,412 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,412 - INFO - [] Saved frame 23: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000023.png
+2025-11-09 08:02:52,481 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,535 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,535 - INFO - [] Saved frame 24: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000024.png
+2025-11-09 08:02:52,602 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,644 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,645 - INFO - [] Saved frame 25: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000025.png
+2025-11-09 08:02:52,714 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,812 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,813 - INFO - [] Saved frame 26: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000026.png
+2025-11-09 08:02:52,879 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:52,907 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:52,907 - INFO - [] Saved frame 27: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000027.png
+2025-11-09 08:02:52,974 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,008 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,008 - INFO - [] Saved frame 28: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000028.png
+2025-11-09 08:02:53,075 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,115 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,115 - INFO - [] Saved frame 29: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000029.png
+2025-11-09 08:02:53,182 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,216 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,216 - INFO - [] Saved frame 30: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000030.png
+2025-11-09 08:02:53,217 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:53,217 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-09 08:02:53,217 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-09 08:02:53,283 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,321 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,322 - INFO - [] Saved frame 31: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000031.png
+2025-11-09 08:02:53,389 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,425 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,425 - INFO - [] Saved frame 32: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000032.png
+2025-11-09 08:02:53,492 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,526 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,526 - INFO - [] Saved frame 33: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000033.png
+2025-11-09 08:02:53,593 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,638 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,639 - INFO - [] Saved frame 34: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000034.png
+2025-11-09 08:02:53,706 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,743 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,744 - INFO - [] Saved frame 35: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000035.png
+2025-11-09 08:02:53,745 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:53,811 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,850 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,850 - INFO - [] Saved frame 36: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000036.png
+2025-11-09 08:02:53,917 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:53,958 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:53,958 - INFO - [] Saved frame 37: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000037.png
+2025-11-09 08:02:54,025 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,054 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,054 - INFO - [] Saved frame 38: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000038.png
+2025-11-09 08:02:54,121 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,206 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,206 - INFO - [] Saved frame 39: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000039.png
+2025-11-09 08:02:54,273 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,350 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,351 - INFO - [] Saved frame 40: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000040.png
+2025-11-09 08:02:54,418 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,462 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,464 - INFO - [] Saved frame 41: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000041.png
+2025-11-09 08:02:54,532 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,582 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,583 - INFO - [] Saved frame 42: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000042.png
+2025-11-09 08:02:54,650 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,704 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,704 - INFO - [] Saved frame 43: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000043.png
+2025-11-09 08:02:54,771 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,854 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,855 - INFO - [] Saved frame 44: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000044.png
+2025-11-09 08:02:54,921 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:54,950 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:54,950 - INFO - [] Saved frame 45: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000045.png
+2025-11-09 08:02:55,018 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,102 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,103 - INFO - [] Saved frame 46: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000046.png
+2025-11-09 08:02:55,170 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,240 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,241 - INFO - [] Saved frame 47: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000047.png
+2025-11-09 08:02:55,309 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,356 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,356 - INFO - [] Saved frame 48: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000048.png
+2025-11-09 08:02:55,424 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,459 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,459 - INFO - [] Saved frame 49: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000049.png
+2025-11-09 08:02:55,526 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,567 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,567 - INFO - [] Saved frame 50: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000050.png
+2025-11-09 08:02:55,634 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,710 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,710 - INFO - [] Saved frame 51: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000051.png
+2025-11-09 08:02:55,777 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,845 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,846 - INFO - [] Saved frame 52: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000052.png
+2025-11-09 08:02:55,914 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:55,948 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:55,949 - INFO - [] Saved frame 53: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000053.png
+2025-11-09 08:02:56,016 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:56,055 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:56,056 - INFO - [] Saved frame 54: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000054.png
+2025-11-09 08:02:56,123 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:56,160 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:56,161 - INFO - [] Saved frame 55: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000055.png
+2025-11-09 08:02:56,228 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:02:56,312 - INFO - [] Raw screenshot size: 58293 bytes.
+2025-11-09 08:02:56,312 - INFO - [] Saved frame 56: tests_recordings/gw3/test_remove_elements_20251109_080248/frames/frame_000056.png
+2025-11-09 08:02:56,313 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:02:56,313 - INFO - [test_remove_elements] Found 0 delete buttons.
+2025-11-09 08:02:56,314 - INFO - [test_remove_elements] Finished test: test_remove_elements (Duration: 7.37s).
+2025-11-09 08:02:56,314 - INFO - [test_remove_elements] Stopping video recording...
+2025-11-09 08:02:56,314 - INFO - [test_remove_elements] Stopping video recording and assembling.
+2025-11-09 08:02:56,380 - INFO - [test_remove_elements] Thread joined. Frames dir: tests_recordings/gw3/test_remove_elements_20251109_080248/frames
+2025-11-09 08:02:56,381 - INFO - [test_remove_elements] Found 57 valid frames.
+2025-11-09 08:02:57,439 - INFO - [test_remove_elements] Video created: tests_recordings/gw3/test_remove_elements_20251109_080248/test_remove_elements_20251109_080248.mp4
