@@ -1,0 +1,34 @@
+2025-11-09 07:41:12,269 - INFO - [test_table_header_per_column[Diceret]] Starting test: test_table_header_per_column[Diceret].
+2025-11-09 07:41:12,269 - INFO - [test_table_header_per_column[Diceret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 07:41:12,390 - INFO - [test_table_header_per_column[Diceret]] Navigation completed.
+2025-11-09 07:41:12,392 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 07:41:12,423 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 07:41:12,424 - INFO - [] Capture loop started for Firefox.
+2025-11-09 07:41:12,424 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:12,427 - INFO - [test_table_header_per_column[Diceret]] Started recording: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251109_074112/test_table_header_per_column[Diceret]_20251109_074112.mp4
+2025-11-09 07:41:12,428 - INFO - [test_table_header_per_column[Diceret]] Verify table head text per column.
+2025-11-09 07:41:12,429 - INFO - [test_table_header_per_column[Diceret]] Navigating to Challenging DOM page.
+2025-11-09 07:41:12,499 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 07:41:12,500 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251109_074112/frames/frame_000000.png
+2025-11-09 07:41:12,534 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:12,569 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:12,606 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 07:41:12,607 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:12,608 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251109_074112/frames/frame_000001.png
+2025-11-09 07:41:12,676 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:12,823 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-09 07:41:12,907 - INFO - [] Raw screenshot size: 170915 bytes.
+2025-11-09 07:41:12,908 - INFO - [] Saved frame 2: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251109_074112/frames/frame_000002.png
+2025-11-09 07:41:12,911 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:12,920 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-09 07:41:12,921 - INFO - [test_table_header_per_column[Diceret]] Getting table head text of column 'Diceret'.
+2025-11-09 07:41:12,980 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:13,050 - INFO - [] Raw screenshot size: 170915 bytes.
+2025-11-09 07:41:13,050 - INFO - [] Saved frame 3: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251109_074112/frames/frame_000003.png
+2025-11-09 07:41:13,054 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:13,055 - INFO - [test_table_header_per_column[Diceret]] Finished test: test_table_header_per_column[Diceret] (Duration: 0.63s).
+2025-11-09 07:41:13,056 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording...
+2025-11-09 07:41:13,056 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording and assembling.
+2025-11-09 07:41:13,117 - INFO - [test_table_header_per_column[Diceret]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251109_074112/frames
+2025-11-09 07:41:13,118 - INFO - [test_table_header_per_column[Diceret]] Found 4 valid frames.
+2025-11-09 07:41:13,384 - INFO - [test_table_header_per_column[Diceret]] Video created: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251109_074112/test_table_header_per_column[Diceret]_20251109_074112.mp4

@@ -1,0 +1,39 @@
+2025-11-09 07:40:56,168 - INFO - [] Directory cleaned and recreated at: reports/allure-report.
+2025-11-09 07:40:56,169 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-09 07:40:56,170 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-09 07:40:56,170 - INFO - [] xdist worker is: gw1
+2025-11-09 07:40:56,170 - INFO - [] ====== WebDriver manager ======
+2025-11-09 07:40:56,266 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-09 07:40:56,341 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-09 07:40:56,472 - INFO - [] Driver [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.61/chromedriver-linux64/chromedriver] found in cache
+2025-11-09 07:40:57,146 - INFO - [test_add_elements] Starting test: test_add_elements.
+2025-11-09 07:40:57,147 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 07:40:57,532 - INFO - [test_add_elements] Navigation completed.
+2025-11-09 07:40:57,534 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 07:40:57,601 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 07:40:57,603 - INFO - [] Capture loop started for Firefox.
+2025-11-09 07:40:57,604 - INFO - [test_add_elements] Started recording: tests_recordings/gw1/test_add_elements_20251109_074057/test_add_elements_20251109_074057.mp4
+2025-11-09 07:40:57,607 - INFO - [test_add_elements] Tests for add elements.
+2025-11-09 07:40:57,609 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-09 07:40:57,734 - INFO - [] Saved frame 0: tests_recordings/gw1/test_add_elements_20251109_074057/frames/frame_000000.png
+2025-11-09 07:40:57,748 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:40:58,010 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-09 07:40:58,120 - INFO - [] Saved frame 1: tests_recordings/gw1/test_add_elements_20251109_074057/frames/frame_000001.png
+2025-11-09 07:40:58,129 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:40:58,136 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-09 07:40:58,136 - INFO - [test_add_elements] Add two elements.
+2025-11-09 07:40:58,137 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-09 07:40:58,238 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-09 07:40:58,361 - INFO - [] Saved frame 2: tests_recordings/gw1/test_add_elements_20251109_074057/frames/frame_000002.png
+2025-11-09 07:40:58,365 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:40:58,440 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-09 07:40:58,440 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-09 07:40:58,585 - INFO - [] Saved frame 3: tests_recordings/gw1/test_add_elements_20251109_074057/frames/frame_000003.png
+2025-11-09 07:40:58,596 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:40:58,596 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-09 07:40:58,596 - INFO - [test_add_elements] Finished test: test_add_elements (Duration: 0.99s).
+2025-11-09 07:40:58,597 - INFO - [test_add_elements] Stopping video recording...
+2025-11-09 07:40:58,597 - INFO - [test_add_elements] Stopping video recording and assembling.
+2025-11-09 07:40:58,653 - INFO - [test_add_elements] Thread joined. Frames dir: tests_recordings/gw1/test_add_elements_20251109_074057/frames
+2025-11-09 07:40:58,654 - INFO - [test_add_elements] Found 4 valid frames.
+2025-11-09 07:40:58,968 - INFO - [test_add_elements] Video created: tests_recordings/gw1/test_add_elements_20251109_074057/test_add_elements_20251109_074057.mp4

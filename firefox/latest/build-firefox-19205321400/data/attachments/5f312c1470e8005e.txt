@@ -1,0 +1,241 @@
+2025-11-09 07:41:23,844 - INFO - [test_textbox_enable_and_disable] Starting test: test_textbox_enable_and_disable.
+2025-11-09 07:41:23,844 - INFO - [test_textbox_enable_and_disable] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 07:41:23,900 - INFO - [test_textbox_enable_and_disable] Navigation completed.
+2025-11-09 07:41:23,900 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 07:41:23,908 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 07:41:23,908 - INFO - [] Capture loop started for Firefox.
+2025-11-09 07:41:23,908 - INFO - [test_textbox_enable_and_disable] Started recording: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/test_textbox_enable_and_disable_20251109_074123.mp4
+2025-11-09 07:41:23,909 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:23,910 - INFO - [test_textbox_enable_and_disable] Test Enable/disable textbox area.
+2025-11-09 07:41:23,910 - INFO - [test_textbox_enable_and_disable] Navigating to Dynamic Controls page.
+2025-11-09 07:41:23,940 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 07:41:23,941 - INFO - [] Saved frame 0: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000000.png
+2025-11-09 07:41:23,978 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:24,008 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,050 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 07:41:24,050 - INFO - [] Saved frame 1: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000001.png
+2025-11-09 07:41:24,054 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:24,117 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,127 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-09 07:41:24,158 - INFO - [] Raw screenshot size: 75937 bytes.
+2025-11-09 07:41:24,158 - INFO - [] Saved frame 2: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000002.png
+2025-11-09 07:41:24,158 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:24,165 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-09 07:41:24,165 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-09 07:41:24,165 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-09 07:41:24,173 - INFO - [test_textbox_enable_and_disable] Clicking enable button.
+2025-11-09 07:41:24,225 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,246 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-09 07:41:24,272 - INFO - [] Raw screenshot size: 79904 bytes.
+2025-11-09 07:41:24,272 - INFO - [] Saved frame 3: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000003.png
+2025-11-09 07:41:24,273 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:24,340 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,368 - INFO - [] Raw screenshot size: 79262 bytes.
+2025-11-09 07:41:24,368 - INFO - [] Saved frame 4: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000004.png
+2025-11-09 07:41:24,435 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,461 - INFO - [] Raw screenshot size: 79670 bytes.
+2025-11-09 07:41:24,461 - INFO - [] Saved frame 5: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000005.png
+2025-11-09 07:41:24,528 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,556 - INFO - [] Raw screenshot size: 79837 bytes.
+2025-11-09 07:41:24,557 - INFO - [] Saved frame 6: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000006.png
+2025-11-09 07:41:24,624 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,652 - INFO - [] Raw screenshot size: 79954 bytes.
+2025-11-09 07:41:24,652 - INFO - [] Saved frame 7: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000007.png
+2025-11-09 07:41:24,719 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,748 - INFO - [] Raw screenshot size: 79995 bytes.
+2025-11-09 07:41:24,748 - INFO - [] Saved frame 8: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000008.png
+2025-11-09 07:41:24,815 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,856 - INFO - [] Raw screenshot size: 79976 bytes.
+2025-11-09 07:41:24,856 - INFO - [] Saved frame 9: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000009.png
+2025-11-09 07:41:24,923 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:24,957 - INFO - [] Raw screenshot size: 79911 bytes.
+2025-11-09 07:41:24,957 - INFO - [] Saved frame 10: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000010.png
+2025-11-09 07:41:25,024 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,058 - INFO - [] Raw screenshot size: 79951 bytes.
+2025-11-09 07:41:25,059 - INFO - [] Saved frame 11: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000011.png
+2025-11-09 07:41:25,125 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,160 - INFO - [] Raw screenshot size: 79905 bytes.
+2025-11-09 07:41:25,161 - INFO - [] Saved frame 12: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000012.png
+2025-11-09 07:41:25,228 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,257 - INFO - [] Raw screenshot size: 79904 bytes.
+2025-11-09 07:41:25,257 - INFO - [] Saved frame 13: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000013.png
+2025-11-09 07:41:25,324 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,355 - INFO - [] Raw screenshot size: 79262 bytes.
+2025-11-09 07:41:25,355 - INFO - [] Saved frame 14: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000014.png
+2025-11-09 07:41:25,422 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,463 - INFO - [] Raw screenshot size: 79670 bytes.
+2025-11-09 07:41:25,464 - INFO - [] Saved frame 15: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000015.png
+2025-11-09 07:41:25,531 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,563 - INFO - [] Raw screenshot size: 79837 bytes.
+2025-11-09 07:41:25,563 - INFO - [] Saved frame 16: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000016.png
+2025-11-09 07:41:25,630 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,659 - INFO - [] Raw screenshot size: 79954 bytes.
+2025-11-09 07:41:25,659 - INFO - [] Saved frame 17: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000017.png
+2025-11-09 07:41:25,726 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,756 - INFO - [] Raw screenshot size: 79995 bytes.
+2025-11-09 07:41:25,756 - INFO - [] Saved frame 18: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000018.png
+2025-11-09 07:41:25,823 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,864 - INFO - [] Raw screenshot size: 79976 bytes.
+2025-11-09 07:41:25,864 - INFO - [] Saved frame 19: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000019.png
+2025-11-09 07:41:25,931 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:25,961 - INFO - [] Raw screenshot size: 79911 bytes.
+2025-11-09 07:41:25,962 - INFO - [] Saved frame 20: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000020.png
+2025-11-09 07:41:26,029 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,058 - INFO - [] Raw screenshot size: 79951 bytes.
+2025-11-09 07:41:26,059 - INFO - [] Saved frame 21: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000021.png
+2025-11-09 07:41:26,126 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,164 - INFO - [] Raw screenshot size: 79905 bytes.
+2025-11-09 07:41:26,165 - INFO - [] Saved frame 22: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000022.png
+2025-11-09 07:41:26,231 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,265 - INFO - [] Raw screenshot size: 79904 bytes.
+2025-11-09 07:41:26,265 - INFO - [] Saved frame 23: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000023.png
+2025-11-09 07:41:26,332 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,359 - INFO - [] Raw screenshot size: 79262 bytes.
+2025-11-09 07:41:26,359 - INFO - [] Saved frame 24: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000024.png
+2025-11-09 07:41:26,426 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,454 - INFO - [] Raw screenshot size: 79670 bytes.
+2025-11-09 07:41:26,455 - INFO - [] Saved frame 25: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000025.png
+2025-11-09 07:41:26,522 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,549 - INFO - [] Raw screenshot size: 79837 bytes.
+2025-11-09 07:41:26,550 - INFO - [] Saved frame 26: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000026.png
+2025-11-09 07:41:26,616 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,643 - INFO - [] Raw screenshot size: 79954 bytes.
+2025-11-09 07:41:26,644 - INFO - [] Saved frame 27: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000027.png
+2025-11-09 07:41:26,710 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,737 - INFO - [] Raw screenshot size: 79995 bytes.
+2025-11-09 07:41:26,737 - INFO - [] Saved frame 28: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000028.png
+2025-11-09 07:41:26,804 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,831 - INFO - [] Raw screenshot size: 79976 bytes.
+2025-11-09 07:41:26,832 - INFO - [] Saved frame 29: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000029.png
+2025-11-09 07:41:26,836 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:26,899 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:26,926 - INFO - [] Raw screenshot size: 79911 bytes.
+2025-11-09 07:41:26,926 - INFO - [] Saved frame 30: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000030.png
+2025-11-09 07:41:26,993 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,020 - INFO - [] Raw screenshot size: 79911 bytes.
+2025-11-09 07:41:27,021 - INFO - [] Saved frame 31: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000031.png
+2025-11-09 07:41:27,087 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,125 - INFO - [] Raw screenshot size: 79951 bytes.
+2025-11-09 07:41:27,125 - INFO - [] Saved frame 32: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000032.png
+2025-11-09 07:41:27,192 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,221 - INFO - [] Raw screenshot size: 77905 bytes.
+2025-11-09 07:41:27,221 - INFO - [] Saved frame 33: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000033.png
+2025-11-09 07:41:27,288 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,321 - INFO - [] Raw screenshot size: 77894 bytes.
+2025-11-09 07:41:27,321 - INFO - [] Saved frame 34: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000034.png
+2025-11-09 07:41:27,347 - INFO - [test_textbox_enable_and_disable] Checking if textbox is enabled.
+2025-11-09 07:41:27,347 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-09 07:41:27,354 - INFO - [test_textbox_enable_and_disable] Get enable message text.
+2025-11-09 07:41:27,364 - INFO - [test_textbox_enable_and_disable] Clicking disable button.
+2025-11-09 07:41:27,388 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,436 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-09 07:41:27,462 - INFO - [] Raw screenshot size: 79897 bytes.
+2025-11-09 07:41:27,462 - INFO - [] Saved frame 35: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000035.png
+2025-11-09 07:41:27,463 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:27,529 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,556 - INFO - [] Raw screenshot size: 80036 bytes.
+2025-11-09 07:41:27,556 - INFO - [] Saved frame 36: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000036.png
+2025-11-09 07:41:27,623 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,651 - INFO - [] Raw screenshot size: 80137 bytes.
+2025-11-09 07:41:27,652 - INFO - [] Saved frame 37: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000037.png
+2025-11-09 07:41:27,718 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,745 - INFO - [] Raw screenshot size: 80179 bytes.
+2025-11-09 07:41:27,746 - INFO - [] Saved frame 38: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000038.png
+2025-11-09 07:41:27,813 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,840 - INFO - [] Raw screenshot size: 80159 bytes.
+2025-11-09 07:41:27,840 - INFO - [] Saved frame 39: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000039.png
+2025-11-09 07:41:27,907 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:27,935 - INFO - [] Raw screenshot size: 80108 bytes.
+2025-11-09 07:41:27,935 - INFO - [] Saved frame 40: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000040.png
+2025-11-09 07:41:28,002 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,030 - INFO - [] Raw screenshot size: 80145 bytes.
+2025-11-09 07:41:28,031 - INFO - [] Saved frame 41: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000041.png
+2025-11-09 07:41:28,098 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,125 - INFO - [] Raw screenshot size: 80103 bytes.
+2025-11-09 07:41:28,126 - INFO - [] Saved frame 42: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000042.png
+2025-11-09 07:41:28,192 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,227 - INFO - [] Raw screenshot size: 80103 bytes.
+2025-11-09 07:41:28,228 - INFO - [] Saved frame 43: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000043.png
+2025-11-09 07:41:28,295 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,328 - INFO - [] Raw screenshot size: 79454 bytes.
+2025-11-09 07:41:28,329 - INFO - [] Saved frame 44: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000044.png
+2025-11-09 07:41:28,396 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,425 - INFO - [] Raw screenshot size: 79871 bytes.
+2025-11-09 07:41:28,425 - INFO - [] Saved frame 45: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000045.png
+2025-11-09 07:41:28,492 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,526 - INFO - [] Raw screenshot size: 79871 bytes.
+2025-11-09 07:41:28,526 - INFO - [] Saved frame 46: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000046.png
+2025-11-09 07:41:28,593 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,622 - INFO - [] Raw screenshot size: 80137 bytes.
+2025-11-09 07:41:28,622 - INFO - [] Saved frame 47: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000047.png
+2025-11-09 07:41:28,689 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,718 - INFO - [] Raw screenshot size: 80137 bytes.
+2025-11-09 07:41:28,718 - INFO - [] Saved frame 48: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000048.png
+2025-11-09 07:41:28,785 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,813 - INFO - [] Raw screenshot size: 80179 bytes.
+2025-11-09 07:41:28,813 - INFO - [] Saved frame 49: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000049.png
+2025-11-09 07:41:28,880 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:28,910 - INFO - [] Raw screenshot size: 80159 bytes.
+2025-11-09 07:41:28,910 - INFO - [] Saved frame 50: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000050.png
+2025-11-09 07:41:28,977 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,005 - INFO - [] Raw screenshot size: 80108 bytes.
+2025-11-09 07:41:29,006 - INFO - [] Saved frame 51: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000051.png
+2025-11-09 07:41:29,010 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:29,073 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,101 - INFO - [] Raw screenshot size: 80145 bytes.
+2025-11-09 07:41:29,102 - INFO - [] Saved frame 52: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000052.png
+2025-11-09 07:41:29,169 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,197 - INFO - [] Raw screenshot size: 80103 bytes.
+2025-11-09 07:41:29,197 - INFO - [] Saved frame 53: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000053.png
+2025-11-09 07:41:29,264 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,291 - INFO - [] Raw screenshot size: 80089 bytes.
+2025-11-09 07:41:29,291 - INFO - [] Saved frame 54: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000054.png
+2025-11-09 07:41:29,358 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,386 - INFO - [] Raw screenshot size: 79454 bytes.
+2025-11-09 07:41:29,386 - INFO - [] Saved frame 55: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000055.png
+2025-11-09 07:41:29,453 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,483 - INFO - [] Raw screenshot size: 79871 bytes.
+2025-11-09 07:41:29,483 - INFO - [] Saved frame 56: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000056.png
+2025-11-09 07:41:29,550 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,579 - INFO - [] Raw screenshot size: 80030 bytes.
+2025-11-09 07:41:29,580 - INFO - [] Saved frame 57: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000057.png
+2025-11-09 07:41:29,647 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,675 - INFO - [] Raw screenshot size: 80137 bytes.
+2025-11-09 07:41:29,676 - INFO - [] Saved frame 58: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000058.png
+2025-11-09 07:41:29,742 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,771 - INFO - [] Raw screenshot size: 80179 bytes.
+2025-11-09 07:41:29,772 - INFO - [] Saved frame 59: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000059.png
+2025-11-09 07:41:29,838 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,868 - INFO - [] Raw screenshot size: 80159 bytes.
+2025-11-09 07:41:29,868 - INFO - [] Saved frame 60: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000060.png
+2025-11-09 07:41:29,935 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:29,962 - INFO - [] Raw screenshot size: 80108 bytes.
+2025-11-09 07:41:29,963 - INFO - [] Saved frame 61: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000061.png
+2025-11-09 07:41:30,030 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:30,056 - INFO - [] Raw screenshot size: 80145 bytes.
+2025-11-09 07:41:30,057 - INFO - [] Saved frame 62: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000062.png
+2025-11-09 07:41:30,124 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:30,151 - INFO - [] Raw screenshot size: 80103 bytes.
+2025-11-09 07:41:30,152 - INFO - [] Saved frame 63: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000063.png
+2025-11-09 07:41:30,219 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:30,246 - INFO - [] Raw screenshot size: 80089 bytes.
+2025-11-09 07:41:30,247 - INFO - [] Saved frame 64: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000064.png
+2025-11-09 07:41:30,314 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:30,340 - INFO - [] Raw screenshot size: 79454 bytes.
+2025-11-09 07:41:30,341 - INFO - [] Saved frame 65: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000065.png
+2025-11-09 07:41:30,408 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:30,436 - INFO - [] Raw screenshot size: 79871 bytes.
+2025-11-09 07:41:30,436 - INFO - [] Saved frame 66: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000066.png
+2025-11-09 07:41:30,503 - INFO - [] Using Firefox screenshot method.
+2025-11-09 07:41:30,532 - INFO - [] Raw screenshot size: 80030 bytes.
+2025-11-09 07:41:30,532 - INFO - [] Saved frame 67: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames/frame_000067.png
+2025-11-09 07:41:30,535 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 07:41:30,536 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-09 07:41:30,536 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-09 07:41:30,544 - INFO - [test_textbox_enable_and_disable] Get disable message text.
+2025-11-09 07:41:30,555 - INFO - [test_textbox_enable_and_disable] Finished test: test_textbox_enable_and_disable (Duration: 6.65s).
+2025-11-09 07:41:30,555 - INFO - [test_textbox_enable_and_disable] Stopping video recording...
+2025-11-09 07:41:30,556 - INFO - [test_textbox_enable_and_disable] Stopping video recording and assembling.
+2025-11-09 07:41:30,599 - INFO - [test_textbox_enable_and_disable] Thread joined. Frames dir: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/frames
+2025-11-09 07:41:30,600 - INFO - [test_textbox_enable_and_disable] Found 68 valid frames.
+2025-11-09 07:41:31,431 - INFO - [test_textbox_enable_and_disable] Video created: tests_recordings/gw2/test_textbox_enable_and_disable_20251109_074123/test_textbox_enable_and_disable_20251109_074123.mp4
