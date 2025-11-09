@@ -1,0 +1,28 @@
+2025-11-09 06:13:15,724 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Starting test: test_cells_content_per_column[Lorem-Iuvaret].
+2025-11-09 06:13:15,725 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 06:13:15,848 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigation completed.
+2025-11-09 06:13:15,848 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 06:13:15,864 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 06:13:15,865 - INFO - [] Capture loop started for Firefox.
+2025-11-09 06:13:15,865 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315.mp4
+2025-11-09 06:13:15,867 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Verify cell content per column.
+2025-11-09 06:13:15,867 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigating to Challenging DOM page.
+2025-11-09 06:13:16,030 - INFO - [] Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315/frames/frame_000000.png
+2025-11-09 06:13:16,039 - WARNING - [test_cells_content_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:13:16,402 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-09 06:13:16,588 - INFO - [] Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315/frames/frame_000001.png
+2025-11-09 06:13:16,593 - WARNING - [test_cells_content_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:13:16,604 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-09 06:13:16,605 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Getting table cell 'Iuvaret' text under column 'Lorem'.
+2025-11-09 06:13:16,645 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Getting table cell 'Iuvaret' text under column 'Lorem'.
+2025-11-09 06:13:16,800 - INFO - [] Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315/frames/frame_000002.png
+2025-11-09 06:13:16,806 - WARNING - [test_cells_content_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:13:16,826 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Getting table cell 'Iuvaret' text under column 'Lorem'.
+2025-11-09 06:13:17,005 - INFO - [] Saved frame 3: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315/frames/frame_000003.png
+2025-11-09 06:13:17,008 - WARNING - [test_cells_content_per_column[Lorem-Iuvaret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:13:17,009 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Finished test: test_cells_content_per_column[Lorem-Iuvaret] (Duration: 1.14s).
+2025-11-09 06:13:17,010 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Stopping video recording...
+2025-11-09 06:13:17,010 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Stopping video recording and assembling.
+2025-11-09 06:13:17,072 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315/frames
+2025-11-09 06:13:17,073 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Found 4 valid frames.
+2025-11-09 06:13:17,325 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Video created: tests_recordings/gw0/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315/test_cells_content_per_column[Lorem-Iuvaret]_20251109_061315.mp4
