@@ -162,10 +162,6 @@ jobs:
           echo "Suite=${{ matrix.suite }}" >> reports/allure-results/environment.properties
           # Add more properties as needed, e.g., OS, Python version, etc.
 
-      - name: Remove Allure Lock
-        if: always()
-        run: rm -f reports/allure-report/allure-report.lock
-
       - name: Generate Allure Report
         if: always()
         run: |

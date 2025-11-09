@@ -277,14 +277,6 @@ def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]
     request.config.user_data_dir = user_data_dir  # type: ignore[attr-defined]
     yield
 
-
-@pytest.fixture(scope="session", autouse=True)
-def clean_allure_report() -> Generator[None, None, None]:
-    allure_report_dir = Path("reports") / "allure-report"
-    clean_directory(allure_report_dir, "allure-report")
-    yield
-
-
 @pytest.fixture(scope="session", autouse=True)
 def clean_screenshots_at_start() -> None:
     worker_id = get_worker_id()
