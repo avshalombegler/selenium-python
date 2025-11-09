@@ -248,6 +248,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports
 
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
       - name: Store History in gh-pages
         run: |
           git config --global user.name "GitHub Actions"
@@ -268,7 +273,9 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git checkout main
-          sed -i "s/<RUN_ID>/${{ github.run_id }}/g" README.md
+          # Replace existing run IDs in the URLs with the new one
+          sed -i "s/build-chrome-[0-9]*/build-chrome-${{ github.run_id }}/g" README.md
+          sed -i "s/build-firefox-[0-9]*/build-firefox-${{ github.run_id }}/g" README.md
           git add README.md
           git commit -m "Update README with latest run ID ${{ github.run_id }}" || echo "No changes to commit"
           git push
