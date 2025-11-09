@@ -1,0 +1,188 @@
+2025-11-09 06:53:24,998 - INFO - [test_example_2] Starting test: test_example_2.
+2025-11-09 06:53:24,999 - INFO - [test_example_2] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 06:53:25,257 - INFO - [test_example_2] Navigation completed.
+2025-11-09 06:53:25,257 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 06:53:25,281 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 06:53:25,282 - INFO - [] Capture loop started for Firefox.
+2025-11-09 06:53:25,282 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,283 - INFO - [test_example_2] Started recording: tests_recordings/gw1/test_example_2_20251109_065325/test_example_2_20251109_065325.mp4
+2025-11-09 06:53:25,284 - INFO - [test_example_2] Tests Dynamic Loading - Example 2.
+2025-11-09 06:53:25,285 - INFO - [test_example_2] Navigating to Dynamic Loading page.
+2025-11-09 06:53:25,342 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:53:25,343 - INFO - [] Saved frame 0: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000000.png
+2025-11-09 06:53:25,412 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,530 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:53:25,531 - INFO - [] Saved frame 1: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000001.png
+2025-11-09 06:53:25,537 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:25,600 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,670 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:53:25,671 - INFO - [] Saved frame 2: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000002.png
+2025-11-09 06:53:25,677 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:25,738 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,822 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-09 06:53:25,921 - INFO - [] Raw screenshot size: 96999 bytes.
+2025-11-09 06:53:25,922 - INFO - [] Saved frame 3: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000003.png
+2025-11-09 06:53:25,923 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:25,932 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-09 06:53:25,933 - INFO - [test_example_2] Navigating to Example 2: Element rendered after the fact page.
+2025-11-09 06:53:25,989 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,063 - INFO - [] Raw screenshot size: 96999 bytes.
+2025-11-09 06:53:26,063 - INFO - [] Saved frame 4: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000004.png
+2025-11-09 06:53:26,067 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:26,134 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,217 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-09 06:53:26,294 - INFO - [] Raw screenshot size: 65552 bytes.
+2025-11-09 06:53:26,295 - INFO - [] Saved frame 5: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000005.png
+2025-11-09 06:53:26,296 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:26,307 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-09 06:53:26,307 - INFO - [test_example_2] Clicking start button.
+2025-11-09 06:53:26,362 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,392 - INFO - [test_example_2] Waiting for loader to disappear.
+2025-11-09 06:53:26,473 - INFO - [] Raw screenshot size: 67165 bytes.
+2025-11-09 06:53:26,474 - INFO - [] Saved frame 6: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000006.png
+2025-11-09 06:53:26,474 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:26,541 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,625 - INFO - [] Raw screenshot size: 67608 bytes.
+2025-11-09 06:53:26,626 - INFO - [] Saved frame 7: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000007.png
+2025-11-09 06:53:26,693 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,732 - INFO - [] Raw screenshot size: 67935 bytes.
+2025-11-09 06:53:26,732 - INFO - [] Saved frame 8: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000008.png
+2025-11-09 06:53:26,800 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,853 - INFO - [] Raw screenshot size: 67914 bytes.
+2025-11-09 06:53:26,853 - INFO - [] Saved frame 9: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000009.png
+2025-11-09 06:53:26,920 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,014 - INFO - [] Raw screenshot size: 67860 bytes.
+2025-11-09 06:53:27,014 - INFO - [] Saved frame 10: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000010.png
+2025-11-09 06:53:27,021 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:27,083 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,137 - INFO - [] Raw screenshot size: 67839 bytes.
+2025-11-09 06:53:27,141 - INFO - [] Saved frame 11: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000011.png
+2025-11-09 06:53:27,208 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,247 - INFO - [] Raw screenshot size: 67792 bytes.
+2025-11-09 06:53:27,247 - INFO - [] Saved frame 12: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000012.png
+2025-11-09 06:53:27,314 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,350 - INFO - [] Raw screenshot size: 67795 bytes.
+2025-11-09 06:53:27,351 - INFO - [] Saved frame 13: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000013.png
+2025-11-09 06:53:27,418 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,450 - INFO - [] Raw screenshot size: 67165 bytes.
+2025-11-09 06:53:27,450 - INFO - [] Saved frame 14: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000014.png
+2025-11-09 06:53:27,517 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,562 - INFO - [] Raw screenshot size: 67608 bytes.
+2025-11-09 06:53:27,563 - INFO - [] Saved frame 15: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000015.png
+2025-11-09 06:53:27,568 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:27,630 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,679 - INFO - [] Raw screenshot size: 67768 bytes.
+2025-11-09 06:53:27,680 - INFO - [] Saved frame 16: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000016.png
+2025-11-09 06:53:27,747 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,851 - INFO - [] Raw screenshot size: 67935 bytes.
+2025-11-09 06:53:27,852 - INFO - [] Saved frame 17: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000017.png
+2025-11-09 06:53:27,919 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:27,992 - INFO - [] Raw screenshot size: 67860 bytes.
+2025-11-09 06:53:27,993 - INFO - [] Saved frame 18: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000018.png
+2025-11-09 06:53:28,061 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:28,106 - INFO - [] Raw screenshot size: 67797 bytes.
+2025-11-09 06:53:28,107 - INFO - [] Saved frame 19: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000019.png
+2025-11-09 06:53:28,114 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:28,175 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:28,271 - INFO - [] Raw screenshot size: 67792 bytes.
+2025-11-09 06:53:28,272 - INFO - [] Saved frame 20: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000020.png
+2025-11-09 06:53:28,340 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:28,435 - INFO - [] Raw screenshot size: 67795 bytes.
+2025-11-09 06:53:28,435 - INFO - [] Saved frame 21: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000021.png
+2025-11-09 06:53:28,502 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:28,581 - INFO - [] Raw screenshot size: 67608 bytes.
+2025-11-09 06:53:28,581 - INFO - [] Saved frame 22: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000022.png
+2025-11-09 06:53:28,648 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:28,731 - INFO - [] Raw screenshot size: 67768 bytes.
+2025-11-09 06:53:28,731 - INFO - [] Saved frame 23: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000023.png
+2025-11-09 06:53:28,799 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:28,907 - INFO - [] Raw screenshot size: 67914 bytes.
+2025-11-09 06:53:28,907 - INFO - [] Saved frame 24: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000024.png
+2025-11-09 06:53:28,977 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,021 - INFO - [] Raw screenshot size: 67797 bytes.
+2025-11-09 06:53:29,021 - INFO - [] Saved frame 25: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000025.png
+2025-11-09 06:53:29,088 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,120 - INFO - [] Raw screenshot size: 67839 bytes.
+2025-11-09 06:53:29,121 - INFO - [] Saved frame 26: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000026.png
+2025-11-09 06:53:29,188 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,215 - INFO - [] Raw screenshot size: 67792 bytes.
+2025-11-09 06:53:29,215 - INFO - [] Saved frame 27: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000027.png
+2025-11-09 06:53:29,282 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,321 - INFO - [] Raw screenshot size: 67795 bytes.
+2025-11-09 06:53:29,321 - INFO - [] Saved frame 28: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000028.png
+2025-11-09 06:53:29,388 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,428 - INFO - [] Raw screenshot size: 67165 bytes.
+2025-11-09 06:53:29,429 - INFO - [] Saved frame 29: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000029.png
+2025-11-09 06:53:29,496 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,538 - INFO - [] Raw screenshot size: 67608 bytes.
+2025-11-09 06:53:29,538 - INFO - [] Saved frame 30: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000030.png
+2025-11-09 06:53:29,605 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,633 - INFO - [] Raw screenshot size: 67768 bytes.
+2025-11-09 06:53:29,634 - INFO - [] Saved frame 31: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000031.png
+2025-11-09 06:53:29,701 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,728 - INFO - [] Raw screenshot size: 67935 bytes.
+2025-11-09 06:53:29,729 - INFO - [] Saved frame 32: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000032.png
+2025-11-09 06:53:29,796 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,823 - INFO - [] Raw screenshot size: 67914 bytes.
+2025-11-09 06:53:29,823 - INFO - [] Saved frame 33: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000033.png
+2025-11-09 06:53:29,890 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:29,924 - INFO - [] Raw screenshot size: 67860 bytes.
+2025-11-09 06:53:29,924 - INFO - [] Saved frame 34: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000034.png
+2025-11-09 06:53:29,991 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,020 - INFO - [] Raw screenshot size: 67797 bytes.
+2025-11-09 06:53:30,020 - INFO - [] Saved frame 35: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000035.png
+2025-11-09 06:53:30,087 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,115 - INFO - [] Raw screenshot size: 67839 bytes.
+2025-11-09 06:53:30,115 - INFO - [] Saved frame 36: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000036.png
+2025-11-09 06:53:30,182 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,259 - INFO - [] Raw screenshot size: 67792 bytes.
+2025-11-09 06:53:30,259 - INFO - [] Saved frame 37: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000037.png
+2025-11-09 06:53:30,326 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,353 - INFO - [] Raw screenshot size: 67795 bytes.
+2025-11-09 06:53:30,353 - INFO - [] Saved frame 38: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000038.png
+2025-11-09 06:53:30,420 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,447 - INFO - [] Raw screenshot size: 67165 bytes.
+2025-11-09 06:53:30,447 - INFO - [] Saved frame 39: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000039.png
+2025-11-09 06:53:30,514 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,551 - INFO - [] Raw screenshot size: 67608 bytes.
+2025-11-09 06:53:30,551 - INFO - [] Saved frame 40: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000040.png
+2025-11-09 06:53:30,618 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,649 - INFO - [] Raw screenshot size: 67768 bytes.
+2025-11-09 06:53:30,649 - INFO - [] Saved frame 41: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000041.png
+2025-11-09 06:53:30,716 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,744 - INFO - [] Raw screenshot size: 67935 bytes.
+2025-11-09 06:53:30,744 - INFO - [] Saved frame 42: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000042.png
+2025-11-09 06:53:30,811 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,838 - INFO - [] Raw screenshot size: 67914 bytes.
+2025-11-09 06:53:30,839 - INFO - [] Saved frame 43: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000043.png
+2025-11-09 06:53:30,906 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:30,936 - INFO - [] Raw screenshot size: 67860 bytes.
+2025-11-09 06:53:30,937 - INFO - [] Saved frame 44: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000044.png
+2025-11-09 06:53:31,003 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:31,030 - INFO - [] Raw screenshot size: 67797 bytes.
+2025-11-09 06:53:31,031 - INFO - [] Saved frame 45: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000045.png
+2025-11-09 06:53:31,098 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:31,124 - INFO - [] Raw screenshot size: 67839 bytes.
+2025-11-09 06:53:31,124 - INFO - [] Saved frame 46: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000046.png
+2025-11-09 06:53:31,191 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:31,264 - INFO - [] Raw screenshot size: 67792 bytes.
+2025-11-09 06:53:31,265 - INFO - [] Saved frame 47: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000047.png
+2025-11-09 06:53:31,332 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:31,360 - INFO - [] Raw screenshot size: 67795 bytes.
+2025-11-09 06:53:31,360 - INFO - [] Saved frame 48: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000048.png
+2025-11-09 06:53:31,427 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:31,459 - INFO - [] Raw screenshot size: 67154 bytes.
+2025-11-09 06:53:31,460 - INFO - [] Saved frame 49: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000049.png
+2025-11-09 06:53:31,527 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:31,554 - INFO - [] Raw screenshot size: 67154 bytes.
+2025-11-09 06:53:31,554 - INFO - [] Saved frame 50: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000050.png
+2025-11-09 06:53:31,621 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:31,648 - INFO - [] Raw screenshot size: 67154 bytes.
+2025-11-09 06:53:31,648 - INFO - [] Saved frame 51: tests_recordings/gw1/test_example_2_20251109_065325/frames/frame_000051.png
+2025-11-09 06:53:31,668 - INFO - [test_example_2] Verifying success message.
+2025-11-09 06:53:31,679 - INFO - [test_example_2] Finished test: test_example_2 (Duration: 6.39s).
+2025-11-09 06:53:31,680 - INFO - [test_example_2] Stopping video recording...
+2025-11-09 06:53:31,680 - INFO - [test_example_2] Stopping video recording and assembling.
+2025-11-09 06:53:31,715 - INFO - [test_example_2] Thread joined. Frames dir: tests_recordings/gw1/test_example_2_20251109_065325/frames
+2025-11-09 06:53:31,717 - INFO - [test_example_2] Found 52 valid frames.
+2025-11-09 06:53:32,432 - INFO - [test_example_2] Video created: tests_recordings/gw1/test_example_2_20251109_065325/test_example_2_20251109_065325.mp4

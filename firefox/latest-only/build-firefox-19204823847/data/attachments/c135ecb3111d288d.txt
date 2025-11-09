@@ -1,0 +1,46 @@
+2025-11-09 06:53:25,026 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality.
+2025-11-09 06:53:25,027 - INFO - [test_drag_and_drop_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 06:53:25,248 - INFO - [test_drag_and_drop_functionality] Navigation completed.
+2025-11-09 06:53:25,249 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 06:53:25,285 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 06:53:25,286 - INFO - [] Capture loop started for Firefox.
+2025-11-09 06:53:25,286 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,287 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/test_drag_and_drop_functionality_20251109_065325.mp4
+2025-11-09 06:53:25,290 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-09 06:53:25,290 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-09 06:53:25,394 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:53:25,395 - INFO - [] Saved frame 0: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames/frame_000000.png
+2025-11-09 06:53:25,468 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,587 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:53:25,591 - INFO - [] Saved frame 1: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames/frame_000001.png
+2025-11-09 06:53:25,604 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:25,661 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,762 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:53:25,762 - INFO - [] Saved frame 2: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames/frame_000002.png
+2025-11-09 06:53:25,770 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:25,830 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:25,915 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-09 06:53:26,008 - INFO - [] Raw screenshot size: 57885 bytes.
+2025-11-09 06:53:26,008 - INFO - [] Saved frame 3: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames/frame_000003.png
+2025-11-09 06:53:26,011 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:26,020 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-09 06:53:26,020 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-09 06:53:26,049 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-09 06:53:26,057 - INFO - [test_drag_and_drop_functionality] Drag and drop completed using JS simulation.
+2025-11-09 06:53:26,077 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,170 - INFO - [] Raw screenshot size: 57894 bytes.
+2025-11-09 06:53:26,170 - INFO - [] Saved frame 4: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames/frame_000004.png
+2025-11-09 06:53:26,237 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,318 - INFO - [] Raw screenshot size: 57894 bytes.
+2025-11-09 06:53:26,319 - INFO - [] Saved frame 5: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames/frame_000005.png
+2025-11-09 06:53:26,386 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:53:26,458 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-09 06:53:26,468 - INFO - [] Raw screenshot size: 57894 bytes.
+2025-11-09 06:53:26,468 - INFO - [] Saved frame 6: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames/frame_000006.png
+2025-11-09 06:53:26,470 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:53:26,518 - INFO - [test_drag_and_drop_functionality] Finished test: test_drag_and_drop_functionality (Duration: 1.23s).
+2025-11-09 06:53:26,521 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-09 06:53:26,521 - INFO - [test_drag_and_drop_functionality] Stopping video recording and assembling.
+2025-11-09 06:53:26,536 - INFO - [test_drag_and_drop_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/frames
+2025-11-09 06:53:26,536 - INFO - [test_drag_and_drop_functionality] Found 7 valid frames.
+2025-11-09 06:53:26,833 - INFO - [test_drag_and_drop_functionality] Video created: tests_recordings/gw3/test_drag_and_drop_functionality_20251109_065325/test_drag_and_drop_functionality_20251109_065325.mp4

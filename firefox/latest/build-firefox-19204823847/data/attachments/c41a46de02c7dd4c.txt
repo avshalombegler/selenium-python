@@ -1,0 +1,30 @@
+INFO     root:conftest.py:164 Starting test: test_valid_images_count.
+INFO     root:base_page.py:177 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:179 Navigation completed.
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:51 Capture loop started for Firefox.
+INFO     utils.video_recorder:video_recorder.py:64 Using Firefox screenshot method.
+INFO     root:conftest.py:183 Started recording: tests_recordings/gw3/test_valid_images_count_20251109_065322/test_valid_images_count_20251109_065322.mp4
+INFO     root:test_broken_images.py:36 Verify valid images count.
+INFO     root:main_page.py:56 Navigating to Broken Images page.
+INFO     utils.video_recorder:video_recorder.py:66 Raw screenshot size: 133185 bytes.
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 0: tests_recordings/gw3/test_valid_images_count_20251109_065322/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:64 Using Firefox screenshot method.
+INFO     root:base_page.py:133 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:66 Raw screenshot size: 58895 bytes.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 1: tests_recordings/gw3/test_valid_images_count_20251109_065322/frames/frame_000001.png
+INFO     root:base_page.py:138 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_broken_images.py:39 Getting valid images count.
+INFO     root:broken_images_page.py:22 Get all image elements.
+INFO     root:broken_images_page.py:36 Check if image is broken.
+INFO     root:broken_images_page.py:36 Check if image is broken.
+INFO     root:broken_images_page.py:36 Check if image is broken.
+INFO     root:test_broken_images.py:41 Found 1 valid images.
+INFO     root:conftest.py:187 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:85 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:88 Thread joined. Frames dir: tests_recordings/gw3/test_valid_images_count_20251109_065322/frames
+INFO     utils.video_recorder:video_recorder.py:92 Found 2 valid frames.
+INFO     utils.video_recorder:video_recorder.py:116 Video created: tests_recordings/gw3/test_valid_images_count_20251109_065322/test_valid_images_count_20251109_065322.mp4
