@@ -55,6 +55,10 @@ def start_video_recording(
                 if not getattr(driver, "session_id", None):
                     break
 
+                if not isinstance(driver, webdriver.Chrome):
+                    logger.info("Skipping video recording for non-Chrome browser.")
+                    return
+    
                 if isinstance(driver, webdriver.Chrome):
                     res = driver.execute_cdp_cmd("Page.captureScreenshot", {"format": "png", "fromSurface": True})
                     data = res.get("data")
