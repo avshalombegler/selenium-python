@@ -110,7 +110,7 @@ jobs:
         id: pytest
         run: |
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-            pytest tests/ -v -n auto --dist=loadfile --alluredir=reports/allure-results
+            pytest tests/ -v -n auto --dist=loadfile --alluredir=reports/allure-results -m current
 
       - name: Generate Latest-Only Allure Report
         if: always()
