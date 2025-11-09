@@ -1,0 +1,22 @@
+2025-11-09 06:44:52,791 - INFO - [test_table_header_per_column[Lorem]] Starting test: test_table_header_per_column[Lorem].
+2025-11-09 06:44:52,792 - INFO - [test_table_header_per_column[Lorem]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 06:44:52,842 - INFO - [test_table_header_per_column[Lorem]] Navigation completed.
+2025-11-09 06:44:52,843 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 06:44:52,865 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 06:44:52,866 - INFO - [] Capture loop started for Firefox.
+2025-11-09 06:44:52,867 - INFO - [test_table_header_per_column[Lorem]] Started recording: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251109_064452/test_table_header_per_column[Lorem]_20251109_064452.mp4
+2025-11-09 06:44:52,869 - INFO - [test_table_header_per_column[Lorem]] Verify table head text per column.
+2025-11-09 06:44:52,869 - INFO - [test_table_header_per_column[Lorem]] Navigating to Challenging DOM page.
+2025-11-09 06:44:52,972 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251109_064452/frames/frame_000000.png
+2025-11-09 06:44:52,978 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:44:53,152 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-09 06:44:53,268 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251109_064452/frames/frame_000001.png
+2025-11-09 06:44:53,269 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:44:53,276 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-09 06:44:53,276 - INFO - [test_table_header_per_column[Lorem]] Getting table head text of column 'Lorem'.
+2025-11-09 06:44:53,307 - INFO - [test_table_header_per_column[Lorem]] Finished test: test_table_header_per_column[Lorem] (Duration: 0.44s).
+2025-11-09 06:44:53,308 - INFO - [test_table_header_per_column[Lorem]] Stopping video recording...
+2025-11-09 06:44:53,308 - INFO - [test_table_header_per_column[Lorem]] Stopping video recording and assembling.
+2025-11-09 06:44:53,335 - INFO - [test_table_header_per_column[Lorem]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251109_064452/frames
+2025-11-09 06:44:53,335 - INFO - [test_table_header_per_column[Lorem]] Found 2 valid frames.
+2025-11-09 06:44:53,529 - INFO - [test_table_header_per_column[Lorem]] Video created: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251109_064452/test_table_header_per_column[Lorem]_20251109_064452.mp4

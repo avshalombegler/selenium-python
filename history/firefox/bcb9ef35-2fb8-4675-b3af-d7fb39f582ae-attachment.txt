@@ -1,0 +1,37 @@
+2025-11-09 06:39:20,037 - INFO - [test_content_changes_after_refresh] Starting test: test_content_changes_after_refresh.
+2025-11-09 06:39:20,037 - INFO - [test_content_changes_after_refresh] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 06:39:20,202 - INFO - [test_content_changes_after_refresh] Navigation completed.
+2025-11-09 06:39:20,202 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 06:39:20,218 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 06:39:20,218 - INFO - [] Capture loop started for Firefox.
+2025-11-09 06:39:20,219 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:39:20,219 - INFO - [test_content_changes_after_refresh] Started recording: tests_recordings/gw1/test_content_changes_after_refresh_20251109_063920/test_content_changes_after_refresh_20251109_063920.mp4
+2025-11-09 06:39:20,220 - INFO - [test_content_changes_after_refresh] Test that content changes after page refresh.
+2025-11-09 06:39:20,221 - INFO - [test_content_changes_after_refresh] Navigating to Dynamic Content page.
+2025-11-09 06:39:20,294 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:39:20,295 - INFO - [] Saved frame 0: tests_recordings/gw1/test_content_changes_after_refresh_20251109_063920/frames/frame_000000.png
+2025-11-09 06:39:20,339 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:39:20,361 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:39:20,427 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 06:39:20,428 - INFO - [] Saved frame 1: tests_recordings/gw1/test_content_changes_after_refresh_20251109_063920/frames/frame_000001.png
+2025-11-09 06:39:20,431 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:39:20,495 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:39:20,685 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-09 06:39:20,722 - INFO - [] Raw screenshot size: 151336 bytes.
+2025-11-09 06:39:20,723 - INFO - [] Saved frame 2: tests_recordings/gw1/test_content_changes_after_refresh_20251109_063920/frames/frame_000002.png
+2025-11-09 06:39:20,724 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:39:20,731 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-09 06:39:20,790 - INFO - [] Using Firefox screenshot method.
+2025-11-09 06:39:21,804 - INFO - [] Raw screenshot size: 153769 bytes.
+2025-11-09 06:39:21,804 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 06:39:21,805 - INFO - [] Saved frame 3: tests_recordings/gw1/test_content_changes_after_refresh_20251109_063920/frames/frame_000003.png
+2025-11-09 06:39:21,845 - INFO - [test_content_changes_after_refresh] Validating initial content blocks structure and count.
+2025-11-09 06:39:21,845 - INFO - [test_content_changes_after_refresh] Validating refreshed content blocks structure and count.
+2025-11-09 06:39:21,845 - INFO - [test_content_changes_after_refresh] Comparing content changes after refresh.
+2025-11-09 06:39:21,846 - INFO - [test_content_changes_after_refresh] Finished test: test_content_changes_after_refresh (Duration: 1.63s).
+2025-11-09 06:39:21,846 - INFO - [test_content_changes_after_refresh] Stopping video recording...
+2025-11-09 06:39:21,847 - INFO - [test_content_changes_after_refresh] Stopping video recording and assembling.
+2025-11-09 06:39:21,874 - INFO - [test_content_changes_after_refresh] Thread joined. Frames dir: tests_recordings/gw1/test_content_changes_after_refresh_20251109_063920/frames
+2025-11-09 06:39:21,874 - INFO - [test_content_changes_after_refresh] Found 4 valid frames.
+2025-11-09 06:39:22,133 - INFO - [test_content_changes_after_refresh] Video created: tests_recordings/gw1/test_content_changes_after_refresh_20251109_063920/test_content_changes_after_refresh_20251109_063920.mp4
+2025-11-09 06:39:22,135 - INFO - [test_content_changes_after_refresh] Quitting driver for browser: firefox.
