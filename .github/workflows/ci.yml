@@ -146,7 +146,7 @@ jobs:
 
       - name: Clean Allure Report Directory
         if: steps.pytest.outcome == 'failure'
-        run: rm -rf reports/allure-report/
+        run: rm -rf reports/allure-report/build-*
 
       - name: Retry Failed Tests
         if: steps.pytest.outcome == 'failure'
@@ -161,6 +161,10 @@ jobs:
           echo "Run ID=${{ github.run_id }}" >> reports/allure-results/environment.properties
           echo "Suite=${{ matrix.suite }}" >> reports/allure-results/environment.properties
           # Add more properties as needed, e.g., OS, Python version, etc.
+
+      - name: Remove Allure Lock
+        if: always()
+        run: rm -f reports/allure-report/allure-report.lock
 
       - name: Generate Allure Report
         if: always()
