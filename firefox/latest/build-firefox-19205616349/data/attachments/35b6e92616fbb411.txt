@@ -1,0 +1,50 @@
+2025-11-09 08:10:18,540 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-09 08:10:18,541 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-09 08:10:18,542 - INFO - [] xdist worker is: gw0
+2025-11-09 08:10:18,542 - INFO - [] ====== WebDriver manager ======
+2025-11-09 08:10:18,615 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-09 08:10:18,776 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-09 08:10:18,898 - INFO - [] There is no [linux64] geckodriver "v0.36.0" for browser firefox "144.0" in cache
+2025-11-09 08:10:18,898 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-09 08:10:19,011 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-09 08:10:19,192 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-09 08:10:19,398 - INFO - [] Driver downloading response is 200
+2025-11-09 08:10:19,468 - INFO - [] Get LATEST geckodriver version for 144.0 firefox
+2025-11-09 08:10:19,657 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw0/drivers/geckodriver/linux64/v0.36.0]
+2025-11-09 08:10:26,224 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue].
+2025-11-09 08:10:26,230 - INFO - [test_each_button_clicks[blue]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 08:10:27,047 - INFO - [test_each_button_clicks[blue]] Navigation completed.
+2025-11-09 08:10:27,047 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 08:10:27,101 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 08:10:27,102 - INFO - [] Capture loop started for Firefox.
+2025-11-09 08:10:27,102 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:27,104 - INFO - [test_each_button_clicks[blue]] Started recording: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/test_each_button_clicks[blue]_20251109_081027.mp4
+2025-11-09 08:10:27,107 - INFO - [test_each_button_clicks[blue]] Verify each button in page is clickable.
+2025-11-09 08:10:27,107 - INFO - [test_each_button_clicks[blue]] Navigating to Challenging DOM page.
+2025-11-09 08:10:27,166 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 08:10:27,166 - INFO - [] Saved frame 0: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/frames/frame_000000.png
+2025-11-09 08:10:27,236 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:27,386 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 08:10:27,388 - INFO - [] Saved frame 1: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/frames/frame_000001.png
+2025-11-09 08:10:27,407 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:10:27,456 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:27,576 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 08:10:27,576 - INFO - [] Saved frame 2: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/frames/frame_000002.png
+2025-11-09 08:10:27,587 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:10:27,643 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:28,046 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-09 08:10:28,169 - INFO - [] Raw screenshot size: 172652 bytes.
+2025-11-09 08:10:28,169 - INFO - [] Saved frame 3: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/frames/frame_000003.png
+2025-11-09 08:10:28,188 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:10:28,199 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-09 08:10:28,200 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-11-09 08:10:28,237 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:28,565 - INFO - [test_each_button_clicks[blue]] Finished test: test_each_button_clicks[blue] (Duration: 1.46s).
+2025-11-09 08:10:28,566 - INFO - [test_each_button_clicks[blue]] Stopping video recording...
+2025-11-09 08:10:28,566 - INFO - [test_each_button_clicks[blue]] Stopping video recording and assembling.
+2025-11-09 08:10:28,664 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:10:28,665 - INFO - [] Raw screenshot size: 172418 bytes.
+2025-11-09 08:10:28,665 - INFO - [] Saved frame 4: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/frames/frame_000004.png
+2025-11-09 08:10:28,732 - INFO - [test_each_button_clicks[blue]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/frames
+2025-11-09 08:10:28,732 - INFO - [test_each_button_clicks[blue]] Found 5 valid frames.
+2025-11-09 08:10:29,013 - INFO - [test_each_button_clicks[blue]] Video created: tests_recordings/gw0/test_each_button_clicks[blue]_20251109_081027/test_each_button_clicks[blue]_20251109_081027.mp4

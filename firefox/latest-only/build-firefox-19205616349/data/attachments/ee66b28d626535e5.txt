@@ -1,0 +1,35 @@
+2025-11-09 08:10:39,241 - INFO - [test_valid_images_count] Starting test: test_valid_images_count.
+2025-11-09 08:10:39,242 - INFO - [test_valid_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-09 08:10:39,513 - INFO - [test_valid_images_count] Navigation completed.
+2025-11-09 08:10:39,513 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-09 08:10:39,552 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-09 08:10:39,554 - INFO - [] Capture loop started for Firefox.
+2025-11-09 08:10:39,554 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:39,555 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw3/test_valid_images_count_20251109_081039/test_valid_images_count_20251109_081039.mp4
+2025-11-09 08:10:39,556 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-09 08:10:39,556 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-09 08:10:39,684 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 08:10:39,684 - INFO - [] Saved frame 0: tests_recordings/gw3/test_valid_images_count_20251109_081039/frames/frame_000000.png
+2025-11-09 08:10:39,717 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:10:39,758 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:39,863 - INFO - [] Raw screenshot size: 133185 bytes.
+2025-11-09 08:10:39,863 - INFO - [] Saved frame 1: tests_recordings/gw3/test_valid_images_count_20251109_081039/frames/frame_000001.png
+2025-11-09 08:10:39,869 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:10:39,931 - INFO - [] Using Firefox screenshot method.
+2025-11-09 08:10:40,102 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-09 08:10:40,217 - INFO - [] Raw screenshot size: 58895 bytes.
+2025-11-09 08:10:40,218 - INFO - [] Saved frame 2: tests_recordings/gw3/test_valid_images_count_20251109_081039/frames/frame_000002.png
+2025-11-09 08:10:40,222 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-09 08:10:40,234 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-09 08:10:40,234 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-09 08:10:40,234 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-09 08:10:40,240 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-09 08:10:40,247 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-09 08:10:40,262 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-09 08:10:40,268 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-09 08:10:40,270 - INFO - [test_valid_images_count] Finished test: test_valid_images_count (Duration: 0.71s).
+2025-11-09 08:10:40,270 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-09 08:10:40,271 - INFO - [test_valid_images_count] Stopping video recording and assembling.
+2025-11-09 08:10:40,285 - INFO - [test_valid_images_count] Thread joined. Frames dir: tests_recordings/gw3/test_valid_images_count_20251109_081039/frames
+2025-11-09 08:10:40,285 - INFO - [test_valid_images_count] Found 3 valid frames.
+2025-11-09 08:10:40,529 - INFO - [test_valid_images_count] Video created: tests_recordings/gw3/test_valid_images_count_20251109_081039/test_valid_images_count_20251109_081039.mp4
