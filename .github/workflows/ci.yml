@@ -241,6 +241,18 @@ jobs:
           name: allure-report-firefox-latest
           path: reports/firefox/latest
 
+      - name: Download Allure Results History (Chrome)
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-chrome-history
+          path: reports/history/chrome
+      
+      - name: Download Allure Results History (Firefox)
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-firefox-history
+          path: reports/history/firefox
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
@@ -257,13 +269,11 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git checkout gh-pages
           mkdir -p history
           cp -r reports/history/* history/ || true
           git add history/
           git commit -m "Update Allure history for run ${{ github.run_id }}" || echo "No changes to history"
           git push origin gh-pages
-          git checkout main
 
       - name: Checkout repository
         uses: actions/checkout@v4
