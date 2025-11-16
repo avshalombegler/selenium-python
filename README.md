@@ -14,10 +14,10 @@ It uses the Page Object Model (POM) pattern, pytest for test execution, and Allu
 ## Installation
 
 1. Clone the repository:
-
-git clone https://github.com/avshalombegler/selenium-python.git
-cd selenium-python
-
+    ```
+    git clone https://github.com/avshalombegler/selenium-python.git
+    cd selenium-python
+    ```
 2. Create a virtual environment:
     ```
     python -m venv venv
