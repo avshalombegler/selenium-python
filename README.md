@@ -28,17 +28,17 @@ cd selenium-python
     pip install -r requirements.txt
     ```
 4. Set up environment variables: Create a .env file with:
-```
-BASE_URL=https://the-internet.herokuapp.com/
-BROWSER=chrome
-SHORT_TIMEOUT=3
-LONG_TIMEOUT=10
-VIDEO_RECORDING=True
-HEADLESS=True
-MAXIMIZED=False
-USERNAME=tomsmith
-PASSWORD=SuperSecretPassword!
-```
+    ```
+    BASE_URL=https://the-internet.herokuapp.com/
+    BROWSER=chrome
+    SHORT_TIMEOUT=3
+    LONG_TIMEOUT=10
+    VIDEO_RECORDING=True
+    HEADLESS=True
+    MAXIMIZED=False
+    USERNAME=tomsmith
+    PASSWORD=SuperSecretPassword!
+    ```
 
 Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
 
