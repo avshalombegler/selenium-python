@@ -149,7 +149,8 @@ jobs:
         if: always()
         run: |
           if [ -d "reports/allure-results-history" ]; then
-            cp -r reports/allure-results-history/* reports/allure-results/ || true
+            mkdir -p reports/allure-results/history
+            cp reports/allure-results-history/* reports/allure-results/history/ || true
           fi
 
       - name: Clean Allure Report Directory
