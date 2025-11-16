@@ -1,0 +1,96 @@
+2025-11-16 15:56:26,591 - INFO - [test_textbox_enable_and_disable] Starting test: test_textbox_enable_and_disable.
+2025-11-16 15:56:26,592 - INFO - [test_textbox_enable_and_disable] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 15:56:26,690 - INFO - [test_textbox_enable_and_disable] Navigation completed.
+2025-11-16 15:56:26,690 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 15:56:26,758 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 15:56:26,762 - INFO - [] Capture loop started for Firefox.
+2025-11-16 15:56:26,763 - INFO - [test_textbox_enable_and_disable] Started recording: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/test_textbox_enable_and_disable_20251116_155626.mp4
+2025-11-16 15:56:26,765 - INFO - [test_textbox_enable_and_disable] Test Enable/disable textbox area.
+2025-11-16 15:56:26,765 - INFO - [test_textbox_enable_and_disable] Navigating to Dynamic Controls page.
+2025-11-16 15:56:26,985 - INFO - [] Saved frame 0: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000000.png
+2025-11-16 15:56:27,009 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:27,156 - INFO - [] Saved frame 1: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000001.png
+2025-11-16 15:56:27,346 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-16 15:56:27,451 - INFO - [] Saved frame 2: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000002.png
+2025-11-16 15:56:27,457 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:27,468 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-16 15:56:27,468 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-16 15:56:27,468 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-16 15:56:27,500 - INFO - [test_textbox_enable_and_disable] Clicking enable button.
+2025-11-16 15:56:27,587 - INFO - [] Saved frame 3: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000003.png
+2025-11-16 15:56:27,592 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:27,660 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-16 15:56:27,766 - INFO - [] Saved frame 4: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000004.png
+2025-11-16 15:56:27,771 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:27,900 - INFO - [] Saved frame 5: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000005.png
+2025-11-16 15:56:28,035 - INFO - [] Saved frame 6: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000006.png
+2025-11-16 15:56:28,159 - INFO - [] Saved frame 7: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000007.png
+2025-11-16 15:56:28,295 - INFO - [] Saved frame 8: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000008.png
+2025-11-16 15:56:28,432 - INFO - [] Saved frame 9: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000009.png
+2025-11-16 15:56:28,577 - INFO - [] Saved frame 10: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000010.png
+2025-11-16 15:56:28,711 - INFO - [] Saved frame 11: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000011.png
+2025-11-16 15:56:28,871 - INFO - [] Saved frame 12: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000012.png
+2025-11-16 15:56:28,874 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:28,999 - INFO - [] Saved frame 13: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000013.png
+2025-11-16 15:56:29,143 - INFO - [] Saved frame 14: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000014.png
+2025-11-16 15:56:29,294 - INFO - [] Saved frame 15: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000015.png
+2025-11-16 15:56:29,438 - INFO - [] Saved frame 16: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000016.png
+2025-11-16 15:56:29,441 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:29,561 - INFO - [] Saved frame 17: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000017.png
+2025-11-16 15:56:29,697 - INFO - [] Saved frame 18: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000018.png
+2025-11-16 15:56:29,833 - INFO - [] Saved frame 19: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000019.png
+2025-11-16 15:56:29,962 - INFO - [] Saved frame 20: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000020.png
+2025-11-16 15:56:29,966 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:30,102 - INFO - [] Saved frame 21: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000021.png
+2025-11-16 15:56:30,227 - INFO - [] Saved frame 22: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000022.png
+2025-11-16 15:56:30,364 - INFO - [] Saved frame 23: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000023.png
+2025-11-16 15:56:30,501 - INFO - [] Saved frame 24: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000024.png
+2025-11-16 15:56:30,505 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:30,633 - INFO - [] Saved frame 25: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000025.png
+2025-11-16 15:56:30,789 - INFO - [] Saved frame 26: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000026.png
+2025-11-16 15:56:30,926 - INFO - [] Saved frame 27: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000027.png
+2025-11-16 15:56:31,084 - INFO - [] Saved frame 28: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000028.png
+2025-11-16 15:56:31,086 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:31,087 - INFO - [test_textbox_enable_and_disable] Checking if textbox is enabled.
+2025-11-16 15:56:31,087 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-16 15:56:31,106 - INFO - [test_textbox_enable_and_disable] Get enable message text.
+2025-11-16 15:56:31,127 - INFO - [test_textbox_enable_and_disable] Clicking disable button.
+2025-11-16 15:56:31,211 - INFO - [] Saved frame 29: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000029.png
+2025-11-16 15:56:31,256 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:31,256 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-16 15:56:31,379 - INFO - [] Saved frame 30: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000030.png
+2025-11-16 15:56:31,382 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:31,553 - INFO - [] Saved frame 31: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000031.png
+2025-11-16 15:56:31,679 - INFO - [] Saved frame 32: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000032.png
+2025-11-16 15:56:31,834 - INFO - [] Saved frame 33: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000033.png
+2025-11-16 15:56:31,968 - INFO - [] Saved frame 34: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000034.png
+2025-11-16 15:56:32,091 - INFO - [] Saved frame 35: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000035.png
+2025-11-16 15:56:32,250 - INFO - [] Saved frame 36: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000036.png
+2025-11-16 15:56:32,425 - INFO - [] Saved frame 37: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000037.png
+2025-11-16 15:56:32,431 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:32,581 - INFO - [] Saved frame 38: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000038.png
+2025-11-16 15:56:32,738 - INFO - [] Saved frame 39: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000039.png
+2025-11-16 15:56:32,891 - INFO - [] Saved frame 40: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000040.png
+2025-11-16 15:56:33,028 - INFO - [] Saved frame 41: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000041.png
+2025-11-16 15:56:33,157 - INFO - [] Saved frame 42: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000042.png
+2025-11-16 15:56:33,274 - INFO - [] Saved frame 43: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000043.png
+2025-11-16 15:56:33,391 - INFO - [] Saved frame 44: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000044.png
+2025-11-16 15:56:33,525 - INFO - [] Saved frame 45: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000045.png
+2025-11-16 15:56:33,658 - INFO - [] Saved frame 46: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000046.png
+2025-11-16 15:56:33,775 - INFO - [] Saved frame 47: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000047.png
+2025-11-16 15:56:33,890 - INFO - [] Saved frame 48: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000048.png
+2025-11-16 15:56:34,025 - INFO - [] Saved frame 49: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000049.png
+2025-11-16 15:56:34,157 - INFO - [] Saved frame 50: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000050.png
+2025-11-16 15:56:34,274 - INFO - [] Saved frame 51: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000051.png
+2025-11-16 15:56:34,407 - INFO - [] Saved frame 52: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000052.png
+2025-11-16 15:56:34,457 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-16 15:56:34,457 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-16 15:56:34,473 - INFO - [test_textbox_enable_and_disable] Get disable message text.
+2025-11-16 15:56:34,575 - INFO - [] Saved frame 53: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames/frame_000053.png
+2025-11-16 15:56:34,578 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:34,585 - INFO - [test_textbox_enable_and_disable] Finished test: test_textbox_enable_and_disable (Duration: 7.82s).
+2025-11-16 15:56:34,586 - INFO - [test_textbox_enable_and_disable] Stopping video recording...
+2025-11-16 15:56:34,586 - INFO - [test_textbox_enable_and_disable] Stopping video recording and assembling.
+2025-11-16 15:56:34,642 - INFO - [test_textbox_enable_and_disable] Thread joined. Frames dir: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/frames
+2025-11-16 15:56:34,643 - INFO - [test_textbox_enable_and_disable] Found 54 valid frames.
+2025-11-16 15:56:35,521 - INFO - [test_textbox_enable_and_disable] Video created: tests_recordings/gw1/test_textbox_enable_and_disable_20251116_155626/test_textbox_enable_and_disable_20251116_155626.mp4

@@ -1,0 +1,16 @@
+2025-11-16 15:56:03,123 - INFO - [test_broken_images_count] Starting test: test_broken_images_count.
+2025-11-16 15:56:03,124 - INFO - [test_broken_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 15:56:03,203 - INFO - [test_broken_images_count] Navigation completed.
+2025-11-16 15:56:03,203 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 15:56:03,219 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 15:56:03,221 - INFO - [test_broken_images_count] Verify broken images count.
+2025-11-16 15:56:03,221 - INFO - [test_broken_images_count] Navigating to Broken Images page.
+2025-11-16 15:56:03,405 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-16 15:56:03,414 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-16 15:56:03,414 - INFO - [test_broken_images_count] Getting broken images count.
+2025-11-16 15:56:03,414 - INFO - [test_broken_images_count] Get all image elements.
+2025-11-16 15:56:03,417 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-16 15:56:03,422 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-16 15:56:03,430 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-16 15:56:03,435 - INFO - [test_broken_images_count] Found 2 broken images.
+2025-11-16 15:56:03,436 - INFO - [test_broken_images_count] Finished test: test_broken_images_count (Duration: 0.21s).

@@ -1,0 +1,40 @@
+2025-11-16 15:56:21,273 - INFO - [test_table_edit_and_delete_buttons_per_row] Starting test: test_table_edit_and_delete_buttons_per_row.
+2025-11-16 15:56:21,274 - INFO - [test_table_edit_and_delete_buttons_per_row] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 15:56:21,374 - INFO - [test_table_edit_and_delete_buttons_per_row] Navigation completed.
+2025-11-16 15:56:21,375 - INFO - [test_table_edit_and_delete_buttons_per_row] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 15:56:21,391 - INFO - [test_table_edit_and_delete_buttons_per_row] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 15:56:21,392 - INFO - [] Capture loop started for Firefox.
+2025-11-16 15:56:21,393 - INFO - [test_table_edit_and_delete_buttons_per_row] Started recording: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/test_table_edit_and_delete_buttons_per_row_20251116_155621.mp4
+2025-11-16 15:56:21,394 - INFO - [test_table_edit_and_delete_buttons_per_row] Verify edit and delete buttons per row are clickable.
+2025-11-16 15:56:21,394 - INFO - [test_table_edit_and_delete_buttons_per_row] Navigating to Challenging DOM page.
+2025-11-16 15:56:21,491 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000000.png
+2025-11-16 15:56:21,496 - WARNING - [test_table_edit_and_delete_buttons_per_row] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:21,732 - INFO - [test_table_edit_and_delete_buttons_per_row] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-16 15:56:21,851 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000001.png
+2025-11-16 15:56:21,856 - WARNING - [test_table_edit_and_delete_buttons_per_row] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:21,865 - INFO - [test_table_edit_and_delete_buttons_per_row] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-16 15:56:21,866 - INFO - [test_table_edit_and_delete_buttons_per_row] Clicking edit button in row {i}.
+2025-11-16 15:56:22,055 - INFO - [test_table_edit_and_delete_buttons_per_row] Click delete button in row {i}.
+2025-11-16 15:56:22,057 - INFO - [] Saved frame 2: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000002.png
+2025-11-16 15:56:22,065 - WARNING - [test_table_edit_and_delete_buttons_per_row] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:22,246 - INFO - [] Saved frame 3: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000003.png
+2025-11-16 15:56:22,248 - WARNING - [test_table_edit_and_delete_buttons_per_row] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:22,248 - INFO - [test_table_edit_and_delete_buttons_per_row] Clicking edit button in row {i}.
+2025-11-16 15:56:22,429 - INFO - [test_table_edit_and_delete_buttons_per_row] Click delete button in row {i}.
+2025-11-16 15:56:22,432 - INFO - [] Saved frame 4: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000004.png
+2025-11-16 15:56:22,443 - WARNING - [test_table_edit_and_delete_buttons_per_row] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:22,627 - INFO - [test_table_edit_and_delete_buttons_per_row] Clicking edit button in row {i}.
+2025-11-16 15:56:22,629 - INFO - [] Saved frame 5: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000005.png
+2025-11-16 15:56:22,639 - WARNING - [test_table_edit_and_delete_buttons_per_row] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:22,820 - INFO - [] Saved frame 6: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000006.png
+2025-11-16 15:56:22,820 - WARNING - [test_table_edit_and_delete_buttons_per_row] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:22,821 - INFO - [test_table_edit_and_delete_buttons_per_row] Click delete button in row {i}.
+2025-11-16 15:56:22,996 - INFO - [test_table_edit_and_delete_buttons_per_row] Finished test: test_table_edit_and_delete_buttons_per_row (Duration: 1.60s).
+2025-11-16 15:56:22,996 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:56:22,997 - INFO - [test_table_edit_and_delete_buttons_per_row] Stopping video recording...
+2025-11-16 15:56:22,998 - INFO - [test_table_edit_and_delete_buttons_per_row] Stopping video recording and assembling.
+2025-11-16 15:56:22,998 - INFO - [] Saved frame 7: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames/frame_000007.png
+2025-11-16 15:56:23,065 - INFO - [test_table_edit_and_delete_buttons_per_row] Thread joined. Frames dir: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/frames
+2025-11-16 15:56:23,066 - INFO - [test_table_edit_and_delete_buttons_per_row] Found 8 valid frames.
+2025-11-16 15:56:23,408 - INFO - [test_table_edit_and_delete_buttons_per_row] Video created: tests_recordings/gw0/test_table_edit_and_delete_buttons_per_row_20251116_155621/test_table_edit_and_delete_buttons_per_row_20251116_155621.mp4
+2025-11-16 15:56:23,413 - INFO - [test_table_edit_and_delete_buttons_per_row] Quitting driver for browser: chrome.
