@@ -1,0 +1,57 @@
+2025-11-16 09:27:43,376 - INFO - [] Directory cleaned and recreated at: download/gw1.
+2025-11-16 09:27:43,378 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-16 09:27:43,378 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-16 09:27:43,379 - INFO - [] xdist worker is: gw1
+2025-11-16 09:27:43,379 - INFO - [] ====== WebDriver manager ======
+2025-11-16 09:27:43,455 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 09:27:43,688 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 09:27:43,795 - INFO - [] There is no [linux64] geckodriver "v0.36.0" for browser firefox "145.0" in cache
+2025-11-16 09:27:43,796 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 09:27:43,906 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-16 09:27:44,144 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-16 09:27:44,297 - INFO - [] Driver downloading response is 200
+2025-11-16 09:27:44,353 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 09:27:44,545 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/geckodriver/linux64/v0.36.0]
+2025-11-16 09:27:51,522 - INFO - [test_add_elements] Starting test: test_add_elements.
+2025-11-16 09:27:51,523 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 09:27:52,969 - INFO - [test_add_elements] Navigation completed.
+2025-11-16 09:27:52,969 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 09:27:53,032 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 09:27:53,035 - INFO - [] Capture loop started for Firefox.
+2025-11-16 09:27:53,035 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:27:53,038 - INFO - [test_add_elements] Started recording: tests_recordings/gw1/test_add_elements_20251116_092753/test_add_elements_20251116_092753.mp4
+2025-11-16 09:27:53,040 - INFO - [test_add_elements] Tests for add elements.
+2025-11-16 09:27:53,041 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-16 09:27:53,100 - INFO - [] Raw screenshot size: 141056 bytes.
+2025-11-16 09:27:53,100 - INFO - [] Saved frame 0: tests_recordings/gw1/test_add_elements_20251116_092753/frames/frame_000000.png
+2025-11-16 09:27:53,126 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:53,171 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:27:53,292 - INFO - [] Raw screenshot size: 141056 bytes.
+2025-11-16 09:27:53,292 - INFO - [] Saved frame 1: tests_recordings/gw1/test_add_elements_20251116_092753/frames/frame_000001.png
+2025-11-16 09:27:53,300 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:53,361 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:27:53,566 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-16 09:27:53,682 - INFO - [] Raw screenshot size: 60186 bytes.
+2025-11-16 09:27:53,682 - INFO - [] Saved frame 2: tests_recordings/gw1/test_add_elements_20251116_092753/frames/frame_000002.png
+2025-11-16 09:27:53,689 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:53,703 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-16 09:27:53,703 - INFO - [test_add_elements] Add two elements.
+2025-11-16 09:27:53,706 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-16 09:27:53,752 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:27:53,816 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-16 09:27:53,904 - INFO - [] Raw screenshot size: 61919 bytes.
+2025-11-16 09:27:53,905 - INFO - [] Saved frame 3: tests_recordings/gw1/test_add_elements_20251116_092753/frames/frame_000003.png
+2025-11-16 09:27:53,910 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:53,973 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:27:54,019 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-16 09:27:54,019 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-16 09:27:54,111 - INFO - [] Raw screenshot size: 62765 bytes.
+2025-11-16 09:27:54,111 - INFO - [] Saved frame 4: tests_recordings/gw1/test_add_elements_20251116_092753/frames/frame_000004.png
+2025-11-16 09:27:54,117 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:54,118 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-16 09:27:54,122 - INFO - [test_add_elements] Finished test: test_add_elements (Duration: 1.08s).
+2025-11-16 09:27:54,124 - INFO - [test_add_elements] Stopping video recording...
+2025-11-16 09:27:54,124 - INFO - [test_add_elements] Stopping video recording and assembling.
+2025-11-16 09:27:54,179 - INFO - [test_add_elements] Thread joined. Frames dir: tests_recordings/gw1/test_add_elements_20251116_092753/frames
+2025-11-16 09:27:54,180 - INFO - [test_add_elements] Found 5 valid frames.
+2025-11-16 09:27:54,546 - INFO - [test_add_elements] Video created: tests_recordings/gw1/test_add_elements_20251116_092753/test_add_elements_20251116_092753.mp4

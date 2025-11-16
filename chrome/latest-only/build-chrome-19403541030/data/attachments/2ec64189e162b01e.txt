@@ -1,0 +1,46 @@
+2025-11-16 09:27:46,994 - INFO - [] Directory cleaned and recreated at: download/gw1.
+2025-11-16 09:27:46,995 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-16 09:27:46,996 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-16 09:27:46,997 - INFO - [] xdist worker is: gw1
+2025-11-16 09:27:46,997 - INFO - [] ====== WebDriver manager ======
+2025-11-16 09:27:48,405 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 09:27:48,518 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 09:27:48,608 - INFO - [] There is no [linux64] chromedriver "142.0.7444.162" for browser google-chrome "142.0.7444" in cache
+2025-11-16 09:27:48,608 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 09:27:48,829 - INFO - [] WebDriver version 142.0.7444.162 selected
+2025-11-16 09:27:48,837 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-16 09:27:48,838 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-16 09:27:48,954 - INFO - [] Driver downloading response is 200
+2025-11-16 09:27:49,206 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 09:27:49,431 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.162]
+2025-11-16 09:27:58,286 - INFO - [test_add_elements] Starting test: test_add_elements.
+2025-11-16 09:27:58,286 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 09:27:58,931 - INFO - [test_add_elements] Navigation completed.
+2025-11-16 09:27:58,931 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 09:27:58,974 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 09:27:58,975 - INFO - [] Capture loop started for Firefox.
+2025-11-16 09:27:58,976 - INFO - [test_add_elements] Started recording: tests_recordings/gw1/test_add_elements_20251116_092758/test_add_elements_20251116_092758.mp4
+2025-11-16 09:27:58,979 - INFO - [test_add_elements] Tests for add elements.
+2025-11-16 09:27:58,979 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-16 09:27:59,086 - INFO - [] Saved frame 0: tests_recordings/gw1/test_add_elements_20251116_092758/frames/frame_000000.png
+2025-11-16 09:27:59,100 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:59,308 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-16 09:27:59,409 - INFO - [] Saved frame 1: tests_recordings/gw1/test_add_elements_20251116_092758/frames/frame_000001.png
+2025-11-16 09:27:59,418 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:59,423 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-16 09:27:59,423 - INFO - [test_add_elements] Add two elements.
+2025-11-16 09:27:59,423 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-16 09:27:59,512 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-16 09:27:59,620 - INFO - [] Saved frame 2: tests_recordings/gw1/test_add_elements_20251116_092758/frames/frame_000002.png
+2025-11-16 09:27:59,623 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:59,687 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-16 09:27:59,688 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-16 09:27:59,790 - INFO - [] Saved frame 3: tests_recordings/gw1/test_add_elements_20251116_092758/frames/frame_000003.png
+2025-11-16 09:27:59,797 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:27:59,797 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-16 09:27:59,798 - INFO - [test_add_elements] Finished test: test_add_elements (Duration: 0.82s).
+2025-11-16 09:27:59,799 - INFO - [test_add_elements] Stopping video recording...
+2025-11-16 09:27:59,799 - INFO - [test_add_elements] Stopping video recording and assembling.
+2025-11-16 09:27:59,860 - INFO - [test_add_elements] Thread joined. Frames dir: tests_recordings/gw1/test_add_elements_20251116_092758/frames
+2025-11-16 09:27:59,862 - INFO - [test_add_elements] Found 4 valid frames.
+2025-11-16 09:28:00,180 - INFO - [test_add_elements] Video created: tests_recordings/gw1/test_add_elements_20251116_092758/test_add_elements_20251116_092758.mp4

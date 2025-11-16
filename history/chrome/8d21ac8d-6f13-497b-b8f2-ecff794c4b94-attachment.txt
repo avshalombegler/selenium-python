@@ -1,0 +1,102 @@
+2025-11-16 09:28:00,186 - INFO - [test_remove_elements] Starting test: test_remove_elements.
+2025-11-16 09:28:00,187 - INFO - [test_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 09:28:00,287 - INFO - [test_remove_elements] Navigation completed.
+2025-11-16 09:28:00,288 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 09:28:00,309 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 09:28:00,310 - INFO - [] Capture loop started for Firefox.
+2025-11-16 09:28:00,311 - INFO - [test_remove_elements] Started recording: tests_recordings/gw1/test_remove_elements_20251116_092800/test_remove_elements_20251116_092800.mp4
+2025-11-16 09:28:00,312 - INFO - [test_remove_elements] Tests for remove elements.
+2025-11-16 09:28:00,313 - INFO - [test_remove_elements] Navigating to Add/Remove Elements page.
+2025-11-16 09:28:00,442 - INFO - [] Saved frame 0: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000000.png
+2025-11-16 09:28:00,446 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:00,617 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-16 09:28:00,725 - INFO - [] Saved frame 1: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000001.png
+2025-11-16 09:28:00,735 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:00,740 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-16 09:28:00,741 - INFO - [test_remove_elements] Ensure there are elements to remove
+2025-11-16 09:28:00,741 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-16 09:28:00,824 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-16 09:28:00,952 - INFO - [] Saved frame 2: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000002.png
+2025-11-16 09:28:00,956 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:01,054 - INFO - [test_remove_elements] Remove all elements
+2025-11-16 09:28:01,054 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-16 09:28:01,054 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-16 09:28:01,192 - INFO - [] Saved frame 3: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000003.png
+2025-11-16 09:28:01,199 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:01,200 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-16 09:28:01,343 - INFO - [] Saved frame 4: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000004.png
+2025-11-16 09:28:01,404 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:01,405 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-16 09:28:01,405 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-16 09:28:01,417 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-16 09:28:01,507 - INFO - [] Saved frame 5: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000005.png
+2025-11-16 09:28:01,512 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:01,602 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-16 09:28:01,603 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-16 09:28:01,730 - INFO - [] Saved frame 6: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000006.png
+2025-11-16 09:28:01,734 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:01,872 - INFO - [] Saved frame 7: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000007.png
+2025-11-16 09:28:02,014 - INFO - [] Saved frame 8: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000008.png
+2025-11-16 09:28:02,136 - INFO - [] Saved frame 9: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000009.png
+2025-11-16 09:28:02,264 - INFO - [] Saved frame 10: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000010.png
+2025-11-16 09:28:02,269 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:02,397 - INFO - [] Saved frame 11: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000011.png
+2025-11-16 09:28:02,531 - INFO - [] Saved frame 12: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000012.png
+2025-11-16 09:28:02,654 - INFO - [] Saved frame 13: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000013.png
+2025-11-16 09:28:02,772 - INFO - [] Saved frame 14: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000014.png
+2025-11-16 09:28:02,776 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:02,906 - INFO - [] Saved frame 15: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000015.png
+2025-11-16 09:28:03,046 - INFO - [] Saved frame 16: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000016.png
+2025-11-16 09:28:03,193 - INFO - [] Saved frame 17: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000017.png
+2025-11-16 09:28:03,329 - INFO - [] Saved frame 18: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000018.png
+2025-11-16 09:28:03,332 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:03,476 - INFO - [] Saved frame 19: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000019.png
+2025-11-16 09:28:03,613 - INFO - [] Saved frame 20: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000020.png
+2025-11-16 09:28:03,754 - INFO - [] Saved frame 21: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000021.png
+2025-11-16 09:28:03,892 - INFO - [] Saved frame 22: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000022.png
+2025-11-16 09:28:03,902 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:04,030 - INFO - [] Saved frame 23: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000023.png
+2025-11-16 09:28:04,165 - INFO - [] Saved frame 24: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000024.png
+2025-11-16 09:28:04,305 - INFO - [] Saved frame 25: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000025.png
+2025-11-16 09:28:04,445 - INFO - [] Saved frame 26: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000026.png
+2025-11-16 09:28:04,453 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:04,587 - INFO - [] Saved frame 27: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000027.png
+2025-11-16 09:28:04,718 - INFO - [] Saved frame 28: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000028.png
+2025-11-16 09:28:04,841 - INFO - [] Saved frame 29: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000029.png
+2025-11-16 09:28:04,987 - INFO - [] Saved frame 30: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000030.png
+2025-11-16 09:28:04,992 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:04,992 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-16 09:28:04,992 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-16 09:28:05,122 - INFO - [] Saved frame 31: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000031.png
+2025-11-16 09:28:05,245 - INFO - [] Saved frame 32: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000032.png
+2025-11-16 09:28:05,369 - INFO - [] Saved frame 33: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000033.png
+2025-11-16 09:28:05,491 - INFO - [] Saved frame 34: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000034.png
+2025-11-16 09:28:05,623 - INFO - [] Saved frame 35: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000035.png
+2025-11-16 09:28:05,767 - INFO - [] Saved frame 36: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000036.png
+2025-11-16 09:28:05,902 - INFO - [] Saved frame 37: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000037.png
+2025-11-16 09:28:06,025 - INFO - [] Saved frame 38: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000038.png
+2025-11-16 09:28:06,029 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:06,165 - INFO - [] Saved frame 39: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000039.png
+2025-11-16 09:28:06,296 - INFO - [] Saved frame 40: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000040.png
+2025-11-16 09:28:06,424 - INFO - [] Saved frame 41: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000041.png
+2025-11-16 09:28:06,580 - INFO - [] Saved frame 42: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000042.png
+2025-11-16 09:28:06,592 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:06,775 - INFO - [] Saved frame 43: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000043.png
+2025-11-16 09:28:06,955 - INFO - [] Saved frame 44: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000044.png
+2025-11-16 09:28:07,184 - INFO - [] Saved frame 45: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000045.png
+2025-11-16 09:28:07,190 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:07,313 - INFO - [] Saved frame 46: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000046.png
+2025-11-16 09:28:07,450 - INFO - [] Saved frame 47: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000047.png
+2025-11-16 09:28:07,591 - INFO - [] Saved frame 48: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000048.png
+2025-11-16 09:28:07,780 - INFO - [] Saved frame 49: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000049.png
+2025-11-16 09:28:07,785 - WARNING - [test_remove_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:07,945 - INFO - [] Saved frame 50: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000050.png
+2025-11-16 09:28:08,128 - INFO - [] Saved frame 51: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000051.png
+2025-11-16 09:28:08,272 - INFO - [] Saved frame 52: tests_recordings/gw1/test_remove_elements_20251116_092800/frames/frame_000052.png
+2025-11-16 09:28:08,301 - INFO - [test_remove_elements] Found 0 delete buttons.
+2025-11-16 09:28:08,301 - INFO - [test_remove_elements] Finished test: test_remove_elements (Duration: 7.99s).
+2025-11-16 09:28:08,302 - INFO - [test_remove_elements] Stopping video recording...
+2025-11-16 09:28:08,302 - INFO - [test_remove_elements] Stopping video recording and assembling.
+2025-11-16 09:28:08,350 - INFO - [test_remove_elements] Thread joined. Frames dir: tests_recordings/gw1/test_remove_elements_20251116_092800/frames
+2025-11-16 09:28:08,352 - INFO - [test_remove_elements] Found 53 valid frames.
+2025-11-16 09:28:09,816 - INFO - [test_remove_elements] Video created: tests_recordings/gw1/test_remove_elements_20251116_092800/test_remove_elements_20251116_092800.mp4

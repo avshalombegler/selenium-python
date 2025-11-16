@@ -1,0 +1,300 @@
+2025-11-16 09:28:13,839 - INFO - [test_files_download_functionality] Starting test: test_files_download_functionality.
+2025-11-16 09:28:13,839 - INFO - [test_files_download_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 09:28:13,933 - INFO - [test_files_download_functionality] Navigation completed.
+2025-11-16 09:28:13,933 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 09:28:13,951 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 09:28:13,952 - INFO - [] Capture loop started for Firefox.
+2025-11-16 09:28:13,966 - INFO - [test_files_download_functionality] Started recording: tests_recordings/gw1/test_files_download_functionality_20251116_092813/test_files_download_functionality_20251116_092813.mp4
+2025-11-16 09:28:13,968 - INFO - [test_files_download_functionality] Directory cleaned and recreated at: download/gw1.
+2025-11-16 09:28:13,969 - INFO - [test_files_download_functionality] Tests Files Download.
+2025-11-16 09:28:13,969 - INFO - [test_files_download_functionality] Navigating to File Download page.
+2025-11-16 09:28:14,083 - INFO - [] Saved frame 0: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000000.png
+2025-11-16 09:28:14,092 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:14,266 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-16 09:28:14,400 - INFO - [] Saved frame 1: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000001.png
+2025-11-16 09:28:14,406 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:14,416 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-16 09:28:14,416 - INFO - [test_files_download_functionality] Getring list of downloadable files.
+2025-11-16 09:28:14,568 - INFO - [] Saved frame 2: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000002.png
+2025-11-16 09:28:14,570 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:14,721 - INFO - [] Saved frame 3: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000003.png
+2025-11-16 09:28:14,722 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:14,876 - INFO - [] Saved frame 4: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000004.png
+2025-11-16 09:28:14,876 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:15,046 - INFO - [] Saved frame 5: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000005.png
+2025-11-16 09:28:15,053 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:15,236 - INFO - [] Saved frame 6: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000006.png
+2025-11-16 09:28:15,250 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:15,485 - INFO - [] Saved frame 7: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000007.png
+2025-11-16 09:28:15,486 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:15,699 - INFO - [] Saved frame 8: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000008.png
+2025-11-16 09:28:15,700 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:15,902 - INFO - [] Saved frame 9: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000009.png
+2025-11-16 09:28:15,903 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:16,112 - INFO - [] Saved frame 10: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000010.png
+2025-11-16 09:28:16,113 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:16,280 - INFO - [] Saved frame 11: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000011.png
+2025-11-16 09:28:16,281 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:16,442 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:16,443 - INFO - [] Saved frame 12: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000012.png
+2025-11-16 09:28:16,504 - INFO - [test_files_download_functionality] Downloading all files in page.
+2025-11-16 09:28:16,504 - INFO - [test_files_download_functionality] Download file 'test1-pdf.pdf'.
+2025-11-16 09:28:16,626 - INFO - [] Saved frame 13: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000013.png
+2025-11-16 09:28:16,629 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:16,778 - INFO - [test_files_download_functionality] Clicked download link for file: test1-pdf.pdf
+2025-11-16 09:28:16,778 - INFO - [test_files_download_functionality] Download file '254444.jpeg'.
+2025-11-16 09:28:16,890 - INFO - [] Saved frame 14: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000014.png
+2025-11-16 09:28:16,902 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:17,050 - INFO - [test_files_download_functionality] Clicked download link for file: 254444.jpeg
+2025-11-16 09:28:17,051 - INFO - [test_files_download_functionality] Download file 'THIRD_PARTY_NOTICES.chromedriver'.
+2025-11-16 09:28:17,164 - INFO - [] Saved frame 15: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000015.png
+2025-11-16 09:28:17,173 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:17,315 - INFO - [test_files_download_functionality] Clicked download link for file: THIRD_PARTY_NOTICES.chromedriver
+2025-11-16 09:28:17,316 - INFO - [test_files_download_functionality] Download file 'empty_file.txt'.
+2025-11-16 09:28:17,437 - INFO - [] Saved frame 16: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000016.png
+2025-11-16 09:28:17,453 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:17,610 - INFO - [] Saved frame 17: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000017.png
+2025-11-16 09:28:17,615 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:17,759 - INFO - [test_files_download_functionality] Clicked download link for file: empty_file.txt
+2025-11-16 09:28:17,760 - INFO - [test_files_download_functionality] Download file 'example.json'.
+2025-11-16 09:28:17,898 - INFO - [] Saved frame 18: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000018.png
+2025-11-16 09:28:17,907 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:18,074 - INFO - [test_files_download_functionality] Clicked download link for file: example.json
+2025-11-16 09:28:18,075 - INFO - [test_files_download_functionality] Download file 'my_custom_file.txt'.
+2025-11-16 09:28:18,182 - INFO - [] Saved frame 19: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000019.png
+2025-11-16 09:28:18,197 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:18,343 - INFO - [test_files_download_functionality] Clicked download link for file: my_custom_file.txt
+2025-11-16 09:28:18,343 - INFO - [test_files_download_functionality] Download file '3C18B94B-77C1-48EE-B494-97E110B83B2C.png'.
+2025-11-16 09:28:18,436 - INFO - [] Saved frame 20: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000020.png
+2025-11-16 09:28:18,452 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:18,592 - INFO - [test_files_download_functionality] Clicked download link for file: 3C18B94B-77C1-48EE-B494-97E110B83B2C.png
+2025-11-16 09:28:18,592 - INFO - [test_files_download_functionality] Download file 'chromedriver.exe'.
+2025-11-16 09:28:18,700 - INFO - [] Saved frame 21: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000021.png
+2025-11-16 09:28:18,711 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:18,864 - INFO - [test_files_download_functionality] Clicked download link for file: chromedriver.exe
+2025-11-16 09:28:18,865 - INFO - [test_files_download_functionality] Download file 'test-upload.txt'.
+2025-11-16 09:28:19,004 - INFO - [] Saved frame 22: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000022.png
+2025-11-16 09:28:19,013 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:19,328 - INFO - [] Saved frame 23: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000023.png
+2025-11-16 09:28:19,331 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:19,537 - INFO - [test_files_download_functionality] Clicked download link for file: test-upload.txt
+2025-11-16 09:28:19,537 - INFO - [test_files_download_functionality] Download file 'tempfile11513689941323727313.tmp'.
+2025-11-16 09:28:19,773 - INFO - [] Saved frame 24: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000024.png
+2025-11-16 09:28:19,779 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:20,023 - INFO - [test_files_download_functionality] Clicked download link for file: tempfile11513689941323727313.tmp
+2025-11-16 09:28:20,023 - INFO - [test_files_download_functionality] Download file 'Jpeg_with_exif.jpeg'.
+2025-11-16 09:28:20,356 - INFO - [] Saved frame 25: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000025.png
+2025-11-16 09:28:20,367 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:20,725 - INFO - [] Saved frame 26: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000026.png
+2025-11-16 09:28:20,739 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:21,042 - INFO - [test_files_download_functionality] Clicked download link for file: Jpeg_with_exif.jpeg
+2025-11-16 09:28:21,043 - INFO - [test_files_download_functionality] Download file 'random_data.txt'.
+2025-11-16 09:28:21,186 - INFO - [] Saved frame 27: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000027.png
+2025-11-16 09:28:21,202 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:21,336 - INFO - [test_files_download_functionality] Clicked download link for file: random_data.txt
+2025-11-16 09:28:21,336 - INFO - [test_files_download_functionality] Download file 'Framework Front-End (2).pdf'.
+2025-11-16 09:28:21,426 - INFO - [] Saved frame 28: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000028.png
+2025-11-16 09:28:21,437 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:21,571 - INFO - [test_files_download_functionality] Clicked download link for file: Framework Front-End (2).pdf
+2025-11-16 09:28:21,571 - INFO - [test_files_download_functionality] Download file '2. Cookie.png'.
+2025-11-16 09:28:21,662 - INFO - [] Saved frame 29: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000029.png
+2025-11-16 09:28:21,671 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:21,806 - INFO - [test_files_download_functionality] Clicked download link for file: 2. Cookie.png
+2025-11-16 09:28:21,806 - INFO - [test_files_download_functionality] Download file 'Calls.xlsx'.
+2025-11-16 09:28:21,899 - INFO - [] Saved frame 30: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000030.png
+2025-11-16 09:28:21,910 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:22,039 - INFO - [] Saved frame 31: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000031.png
+2025-11-16 09:28:22,041 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:22,128 - INFO - [test_files_download_functionality] Clicked download link for file: Calls.xlsx
+2025-11-16 09:28:22,129 - INFO - [test_files_download_functionality] Download file '163335499464 (1).pdf'.
+2025-11-16 09:28:22,241 - INFO - [] Saved frame 32: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000032.png
+2025-11-16 09:28:22,248 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:22,367 - INFO - [test_files_download_functionality] Clicked download link for file: 163335499464 (1).pdf
+2025-11-16 09:28:22,368 - INFO - [test_files_download_functionality] Download file 'sample3.pdf'.
+2025-11-16 09:28:22,479 - INFO - [] Saved frame 33: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000033.png
+2025-11-16 09:28:22,486 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:22,605 - INFO - [test_files_download_functionality] Clicked download link for file: sample3.pdf
+2025-11-16 09:28:22,606 - INFO - [test_files_download_functionality] Download file 'bb.txt'.
+2025-11-16 09:28:22,690 - INFO - [] Saved frame 34: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000034.png
+2025-11-16 09:28:22,700 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:22,823 - INFO - [test_files_download_functionality] Clicked download link for file: bb.txt
+2025-11-16 09:28:22,823 - INFO - [test_files_download_functionality] Download file 'sample.png'.
+2025-11-16 09:28:22,907 - INFO - [] Saved frame 35: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000035.png
+2025-11-16 09:28:22,916 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:23,035 - INFO - [test_files_download_functionality] Clicked download link for file: sample.png
+2025-11-16 09:28:23,035 - INFO - [test_files_download_functionality] Download file 'index.html'.
+2025-11-16 09:28:23,125 - INFO - [] Saved frame 36: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000036.png
+2025-11-16 09:28:23,136 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:23,253 - INFO - [test_files_download_functionality] Clicked download link for file: index.html
+2025-11-16 09:28:23,254 - INFO - [test_files_download_functionality] Download file 'example.txt'.
+2025-11-16 09:28:23,341 - INFO - [] Saved frame 37: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000037.png
+2025-11-16 09:28:23,350 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:23,475 - INFO - [test_files_download_functionality] Clicked download link for file: example.txt
+2025-11-16 09:28:23,476 - INFO - [test_files_download_functionality] Download file 'test.xml'.
+2025-11-16 09:28:23,561 - INFO - [] Saved frame 38: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000038.png
+2025-11-16 09:28:23,570 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:23,690 - INFO - [test_files_download_functionality] Clicked download link for file: test.xml
+2025-11-16 09:28:23,690 - INFO - [test_files_download_functionality] Download file 'large-test-file.txt'.
+2025-11-16 09:28:23,773 - INFO - [] Saved frame 39: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000039.png
+2025-11-16 09:28:23,782 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:23,906 - INFO - [test_files_download_functionality] Clicked download link for file: large-test-file.txt
+2025-11-16 09:28:23,907 - INFO - [test_files_download_functionality] Download file 'sample-text.txt'.
+2025-11-16 09:28:23,996 - INFO - [] Saved frame 40: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000040.png
+2025-11-16 09:28:24,004 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:24,130 - INFO - [test_files_download_functionality] Clicked download link for file: sample-text.txt
+2025-11-16 09:28:24,130 - INFO - [test_files_download_functionality] Download file 'testUpload.json'.
+2025-11-16 09:28:24,240 - INFO - [] Saved frame 41: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000041.png
+2025-11-16 09:28:24,250 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:24,372 - INFO - [test_files_download_functionality] Clicked download link for file: testUpload.json
+2025-11-16 09:28:24,373 - INFO - [test_files_download_functionality] Download file 'test.json'.
+2025-11-16 09:28:24,458 - INFO - [] Saved frame 42: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000042.png
+2025-11-16 09:28:24,470 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:24,610 - INFO - [] Saved frame 43: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000043.png
+2025-11-16 09:28:24,694 - INFO - [test_files_download_functionality] Clicked download link for file: test.json
+2025-11-16 09:28:24,694 - INFO - [test_files_download_functionality] Download file 'tempfile10475307631420145927.tmp'.
+2025-11-16 09:28:24,807 - INFO - [] Saved frame 44: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000044.png
+2025-11-16 09:28:24,815 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:24,941 - INFO - [test_files_download_functionality] Clicked download link for file: tempfile10475307631420145927.tmp
+2025-11-16 09:28:24,941 - INFO - [test_files_download_functionality] Download file 'sample-zip-file.zip'.
+2025-11-16 09:28:25,026 - INFO - [] Saved frame 45: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000045.png
+2025-11-16 09:28:25,036 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:25,154 - INFO - [test_files_download_functionality] Clicked download link for file: sample-zip-file.zip
+2025-11-16 09:28:25,155 - INFO - [test_files_download_functionality] Download file 'test-file.txt'.
+2025-11-16 09:28:25,246 - INFO - [] Saved frame 46: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000046.png
+2025-11-16 09:28:25,255 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:25,390 - INFO - [test_files_download_functionality] Clicked download link for file: test-file.txt
+2025-11-16 09:28:25,391 - INFO - [test_files_download_functionality] Download file 'PWFileUpload.png'.
+2025-11-16 09:28:25,476 - INFO - [] Saved frame 47: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000047.png
+2025-11-16 09:28:25,485 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:25,604 - INFO - [test_files_download_functionality] Clicked download link for file: PWFileUpload.png
+2025-11-16 09:28:25,605 - INFO - [test_files_download_functionality] Download file 'birthday-site (2).zip'.
+2025-11-16 09:28:25,691 - INFO - [] Saved frame 48: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000048.png
+2025-11-16 09:28:25,700 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:25,823 - INFO - [test_files_download_functionality] Clicked download link for file: birthday-site (2).zip
+2025-11-16 09:28:25,823 - INFO - [test_files_download_functionality] Download file 'kote.jpg'.
+2025-11-16 09:28:25,910 - INFO - [] Saved frame 49: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000049.png
+2025-11-16 09:28:25,921 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:26,043 - INFO - [test_files_download_functionality] Clicked download link for file: kote.jpg
+2025-11-16 09:28:26,043 - INFO - [test_files_download_functionality] Download file 'New テキスト ドキュメント.txt'.
+2025-11-16 09:28:26,142 - INFO - [] Saved frame 50: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000050.png
+2025-11-16 09:28:26,153 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:26,289 - INFO - [test_files_download_functionality] Clicked download link for file: New テキスト ドキュメント.txt
+2025-11-16 09:28:26,290 - INFO - [test_files_download_functionality] Download file 'Test.txt'.
+2025-11-16 09:28:26,374 - INFO - [] Saved frame 51: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000051.png
+2025-11-16 09:28:26,384 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:26,511 - INFO - [test_files_download_functionality] Clicked download link for file: Test.txt
+2025-11-16 09:28:26,512 - INFO - [test_files_download_functionality] Download file 'test.png'.
+2025-11-16 09:28:26,630 - INFO - [] Saved frame 52: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000052.png
+2025-11-16 09:28:26,638 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:26,779 - INFO - [test_files_download_functionality] Clicked download link for file: test.png
+2025-11-16 09:28:26,780 - INFO - [test_files_download_functionality] Download file 'DocumentPDF.pdf'.
+2025-11-16 09:28:26,890 - INFO - [] Saved frame 53: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000053.png
+2025-11-16 09:28:26,899 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:27,023 - INFO - [test_files_download_functionality] Clicked download link for file: DocumentPDF.pdf
+2025-11-16 09:28:27,024 - INFO - [test_files_download_functionality] Download file 'sampleFile.txt'.
+2025-11-16 09:28:27,109 - INFO - [] Saved frame 54: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000054.png
+2025-11-16 09:28:27,123 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:27,241 - INFO - [test_files_download_functionality] Clicked download link for file: sampleFile.txt
+2025-11-16 09:28:27,241 - INFO - [test_files_download_functionality] Download file 'tmp00_j77ha.docx'.
+2025-11-16 09:28:27,321 - INFO - [] Saved frame 55: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000055.png
+2025-11-16 09:28:27,332 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:27,461 - INFO - [test_files_download_functionality] Clicked download link for file: tmp00_j77ha.docx
+2025-11-16 09:28:27,461 - INFO - [test_files_download_functionality] Download file 'Document PDF.pdf'.
+2025-11-16 09:28:27,560 - INFO - [] Saved frame 56: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000056.png
+2025-11-16 09:28:27,569 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:27,693 - INFO - [test_files_download_functionality] Clicked download link for file: Document PDF.pdf
+2025-11-16 09:28:27,694 - INFO - [test_files_download_functionality] Download file 'selenium-snapshot.png'.
+2025-11-16 09:28:27,779 - INFO - [] Saved frame 57: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000057.png
+2025-11-16 09:28:27,793 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:27,912 - INFO - [test_files_download_functionality] Clicked download link for file: selenium-snapshot.png
+2025-11-16 09:28:27,913 - INFO - [test_files_download_functionality] Download file 'Myfile.pdf'.
+2025-11-16 09:28:28,024 - INFO - [] Saved frame 58: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000058.png
+2025-11-16 09:28:28,034 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:28,159 - INFO - [test_files_download_functionality] Clicked download link for file: Myfile.pdf
+2025-11-16 09:28:28,160 - INFO - [test_files_download_functionality] Download file 'LambdaTest.txt'.
+2025-11-16 09:28:28,240 - INFO - [] Saved frame 59: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000059.png
+2025-11-16 09:28:28,249 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:28,382 - INFO - [test_files_download_functionality] Clicked download link for file: LambdaTest.txt
+2025-11-16 09:28:28,382 - INFO - [test_files_download_functionality] Download file 'aliya.pdf'.
+2025-11-16 09:28:28,500 - INFO - [] Saved frame 60: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000060.png
+2025-11-16 09:28:28,511 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:28,636 - INFO - [test_files_download_functionality] Clicked download link for file: aliya.pdf
+2025-11-16 09:28:28,636 - INFO - [test_files_download_functionality] Download file 'SomeFile.txt'.
+2025-11-16 09:28:28,742 - INFO - [] Saved frame 61: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000061.png
+2025-11-16 09:28:28,762 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:28,920 - INFO - [] Saved frame 62: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000062.png
+2025-11-16 09:28:29,030 - INFO - [test_files_download_functionality] Clicked download link for file: SomeFile.txt
+2025-11-16 09:28:29,030 - INFO - [test_files_download_functionality] Download file 'sample.pdf'.
+2025-11-16 09:28:29,201 - INFO - [] Saved frame 63: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000063.png
+2025-11-16 09:28:29,212 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:29,381 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:29,381 - INFO - [] Saved frame 64: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000064.png
+2025-11-16 09:28:29,499 - INFO - [test_files_download_functionality] Clicked download link for file: sample.pdf
+2025-11-16 09:28:29,499 - INFO - [test_files_download_functionality] Download file 'example.png'.
+2025-11-16 09:28:29,636 - INFO - [] Saved frame 65: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000065.png
+2025-11-16 09:28:29,660 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:29,795 - INFO - [] Saved frame 66: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000066.png
+2025-11-16 09:28:29,804 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:29,908 - INFO - [test_files_download_functionality] Clicked download link for file: example.png
+2025-11-16 09:28:29,909 - INFO - [test_files_download_functionality] Download file 'some-file.txt'.
+2025-11-16 09:28:30,002 - INFO - [] Saved frame 67: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000067.png
+2025-11-16 09:28:30,018 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:30,156 - INFO - [test_files_download_functionality] Clicked download link for file: some-file.txt
+2025-11-16 09:28:30,157 - INFO - [test_files_download_functionality] Download file 'CamScanner 16.07.2025 12.19.pdf'.
+2025-11-16 09:28:30,246 - INFO - [] Saved frame 68: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000068.png
+2025-11-16 09:28:30,259 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:30,397 - INFO - [test_files_download_functionality] Clicked download link for file: CamScanner 16.07.2025 12.19.pdf
+2025-11-16 09:28:30,397 - INFO - [test_files_download_functionality] Download file 'google.png'.
+2025-11-16 09:28:30,511 - INFO - [] Saved frame 69: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000069.png
+2025-11-16 09:28:30,521 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:30,642 - INFO - [test_files_download_functionality] Clicked download link for file: google.png
+2025-11-16 09:28:30,642 - INFO - [test_files_download_functionality] Download file 'LICENSE.chromedriver'.
+2025-11-16 09:28:30,722 - INFO - [] Saved frame 70: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000070.png
+2025-11-16 09:28:30,732 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:30,851 - INFO - [test_files_download_functionality] Clicked download link for file: LICENSE.chromedriver
+2025-11-16 09:28:30,852 - INFO - [test_files_download_functionality] Download file 'BaseTests.java'.
+2025-11-16 09:28:30,938 - INFO - [] Saved frame 71: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000071.png
+2025-11-16 09:28:30,949 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:31,068 - INFO - [test_files_download_functionality] Clicked download link for file: BaseTests.java
+2025-11-16 09:28:31,069 - INFO - [test_files_download_functionality] Download file 'sample.txt'.
+2025-11-16 09:28:31,155 - INFO - [] Saved frame 72: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000072.png
+2025-11-16 09:28:31,173 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:31,299 - INFO - [test_files_download_functionality] Clicked download link for file: sample.txt
+2025-11-16 09:28:31,299 - INFO - [test_files_download_functionality] Download file 'test.csv'.
+2025-11-16 09:28:31,406 - INFO - [] Saved frame 73: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000073.png
+2025-11-16 09:28:31,416 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:31,534 - INFO - [test_files_download_functionality] Clicked download link for file: test.csv
+2025-11-16 09:28:31,535 - INFO - [test_files_download_functionality] Download file 'test_upload.txt'.
+2025-11-16 09:28:31,621 - INFO - [] Saved frame 74: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000074.png
+2025-11-16 09:28:31,631 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:31,750 - INFO - [test_files_download_functionality] Clicked download link for file: test_upload.txt
+2025-11-16 09:28:31,751 - INFO - [test_files_download_functionality] Download file 'testautomationpractice.spec.ts'.
+2025-11-16 09:28:31,838 - INFO - [] Saved frame 75: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000075.png
+2025-11-16 09:28:31,848 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:31,970 - INFO - [test_files_download_functionality] Clicked download link for file: testautomationpractice.spec.ts
+2025-11-16 09:28:31,971 - INFO - [test_files_download_functionality] Download file 'selenide-intro.txt'.
+2025-11-16 09:28:32,055 - INFO - [] Saved frame 76: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000076.png
+2025-11-16 09:28:32,066 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:32,185 - INFO - [test_files_download_functionality] Clicked download link for file: selenide-intro.txt
+2025-11-16 09:28:32,185 - INFO - [test_files_download_functionality] Download file 'test-image.png'.
+2025-11-16 09:28:32,272 - INFO - [] Saved frame 77: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000077.png
+2025-11-16 09:28:32,282 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:32,403 - INFO - [test_files_download_functionality] Clicked download link for file: test-image.png
+2025-11-16 09:28:32,404 - INFO - [test_files_download_functionality] Download file 'zero_bytes_file.txt'.
+2025-11-16 09:28:32,507 - INFO - [] Saved frame 78: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000078.png
+2025-11-16 09:28:32,517 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:32,635 - INFO - [test_files_download_functionality] Clicked download link for file: zero_bytes_file.txt
+2025-11-16 09:28:32,635 - INFO - [test_files_download_functionality] Download file 'large_test_file.txt'.
+2025-11-16 09:28:32,723 - INFO - [] Saved frame 79: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000079.png
+2025-11-16 09:28:32,734 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:32,869 - INFO - [test_files_download_functionality] Clicked download link for file: large_test_file.txt
+2025-11-16 09:28:32,869 - INFO - [test_files_download_functionality] Verifying downloaded files count equals to files in page.
+2025-11-16 09:28:32,870 - INFO - [test_files_download_functionality] Finished test: test_files_download_functionality (Duration: 18.90s).
+2025-11-16 09:28:32,871 - INFO - [test_files_download_functionality] Stopping video recording...
+2025-11-16 09:28:32,871 - INFO - [test_files_download_functionality] Stopping video recording and assembling.
+2025-11-16 09:28:32,954 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:32,955 - INFO - [] Saved frame 80: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames/frame_000080.png
+2025-11-16 09:28:33,022 - INFO - [test_files_download_functionality] Thread joined. Frames dir: tests_recordings/gw1/test_files_download_functionality_20251116_092813/frames
+2025-11-16 09:28:33,023 - INFO - [test_files_download_functionality] Found 81 valid frames.
+2025-11-16 09:28:34,175 - INFO - [test_files_download_functionality] Video created: tests_recordings/gw1/test_files_download_functionality_20251116_092813/test_files_download_functionality_20251116_092813.mp4
+2025-11-16 09:28:34,177 - INFO - [test_files_download_functionality] Quitting driver for browser: chrome.

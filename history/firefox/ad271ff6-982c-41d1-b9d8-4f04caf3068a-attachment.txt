@@ -1,0 +1,30 @@
+2025-11-16 09:28:00,128 - INFO - [test_table_header_per_column[Dolor]] Starting test: test_table_header_per_column[Dolor].
+2025-11-16 09:28:00,129 - INFO - [test_table_header_per_column[Dolor]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 09:28:00,273 - INFO - [test_table_header_per_column[Dolor]] Navigation completed.
+2025-11-16 09:28:00,273 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 09:28:00,287 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 09:28:00,288 - INFO - [] Capture loop started for Firefox.
+2025-11-16 09:28:00,288 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:28:00,289 - INFO - [test_table_header_per_column[Dolor]] Started recording: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_092800/test_table_header_per_column[Dolor]_20251116_092800.mp4
+2025-11-16 09:28:00,291 - INFO - [test_table_header_per_column[Dolor]] Verify table head text per column.
+2025-11-16 09:28:00,291 - INFO - [test_table_header_per_column[Dolor]] Navigating to Challenging DOM page.
+2025-11-16 09:28:00,352 - INFO - [] Raw screenshot size: 141056 bytes.
+2025-11-16 09:28:00,353 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_092800/frames/frame_000000.png
+2025-11-16 09:28:00,380 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:00,420 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:28:00,459 - INFO - [] Raw screenshot size: 141056 bytes.
+2025-11-16 09:28:00,460 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_092800/frames/frame_000001.png
+2025-11-16 09:28:00,460 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:00,527 - INFO - [] Using Firefox screenshot method.
+2025-11-16 09:28:00,991 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-16 09:28:01,040 - INFO - [] Raw screenshot size: 173806 bytes.
+2025-11-16 09:28:01,041 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 09:28:01,043 - INFO - [] Saved frame 2: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_092800/frames/frame_000002.png
+2025-11-16 09:28:01,050 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-16 09:28:01,050 - INFO - [test_table_header_per_column[Dolor]] Getting table head text of column 'Dolor'.
+2025-11-16 09:28:01,084 - INFO - [test_table_header_per_column[Dolor]] Finished test: test_table_header_per_column[Dolor] (Duration: 0.79s).
+2025-11-16 09:28:01,086 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording...
+2025-11-16 09:28:01,086 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording and assembling.
+2025-11-16 09:28:01,110 - INFO - [test_table_header_per_column[Dolor]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_092800/frames
+2025-11-16 09:28:01,110 - INFO - [test_table_header_per_column[Dolor]] Found 3 valid frames.
+2025-11-16 09:28:01,316 - INFO - [test_table_header_per_column[Dolor]] Video created: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_092800/test_table_header_per_column[Dolor]_20251116_092800.mp4
