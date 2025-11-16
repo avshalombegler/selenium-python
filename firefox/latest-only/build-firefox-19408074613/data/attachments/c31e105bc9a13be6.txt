@@ -1,0 +1,30 @@
+2025-11-16 15:46:10,075 - INFO - [] Directory cleaned and recreated at: downloads/gw3.
+2025-11-16 15:46:10,076 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-16 15:46:10,077 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-16 15:46:10,078 - INFO - [] xdist worker is: gw3
+2025-11-16 15:46:10,078 - INFO - [] ====== WebDriver manager ======
+2025-11-16 15:46:10,150 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,216 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,276 - INFO - [] There is no [linux64] geckodriver "v0.36.0" for browser firefox "145.0" in cache
+2025-11-16 15:46:10,276 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,338 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-16 15:46:10,480 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-16 15:46:10,603 - INFO - [] Driver downloading response is 200
+2025-11-16 15:46:10,738 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,883 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw3/drivers/geckodriver/linux64/v0.36.0]
+2025-11-16 15:46:19,503 - INFO - [test_add_elements] Starting test: test_add_elements.
+2025-11-16 15:46:19,504 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 15:46:20,008 - INFO - [test_add_elements] Navigation completed.
+2025-11-16 15:46:20,008 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 15:46:20,189 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 15:46:20,193 - INFO - [test_add_elements] Tests for add elements.
+2025-11-16 15:46:20,194 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-16 15:46:20,803 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-16 15:46:20,874 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-16 15:46:20,874 - INFO - [test_add_elements] Add two elements.
+2025-11-16 15:46:20,875 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-16 15:46:21,077 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-16 15:46:21,244 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-16 15:46:21,244 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-16 15:46:21,252 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-16 15:46:21,253 - INFO - [test_add_elements] Finished test: test_add_elements (Duration: 1.06s).

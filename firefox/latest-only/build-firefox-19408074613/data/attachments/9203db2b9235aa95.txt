@@ -1,0 +1,25 @@
+2025-11-16 15:46:10,075 - INFO - [] Directory cleaned and recreated at: downloads/gw0.
+2025-11-16 15:46:10,077 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-16 15:46:10,078 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-16 15:46:10,079 - INFO - [] xdist worker is: gw0
+2025-11-16 15:46:10,079 - INFO - [] ====== WebDriver manager ======
+2025-11-16 15:46:10,150 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,216 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,277 - INFO - [] There is no [linux64] geckodriver "v0.36.0" for browser firefox "145.0" in cache
+2025-11-16 15:46:10,278 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,339 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-16 15:46:10,480 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-16 15:46:10,605 - INFO - [] Driver downloading response is 200
+2025-11-16 15:46:10,757 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-16 15:46:10,904 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw0/drivers/geckodriver/linux64/v0.36.0]
+2025-11-16 15:46:16,785 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue].
+2025-11-16 15:46:16,786 - INFO - [test_each_button_clicks[blue]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 15:46:17,268 - INFO - [test_each_button_clicks[blue]] Navigation completed.
+2025-11-16 15:46:17,268 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 15:46:17,368 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 15:46:17,374 - INFO - [test_each_button_clicks[blue]] Verify each button in page is clickable.
+2025-11-16 15:46:17,374 - INFO - [test_each_button_clicks[blue]] Navigating to Challenging DOM page.
+2025-11-16 15:46:18,245 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-16 15:46:18,338 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-16 15:46:18,339 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-11-16 15:46:18,853 - INFO - [test_each_button_clicks[blue]] Finished test: test_each_button_clicks[blue] (Duration: 1.48s).

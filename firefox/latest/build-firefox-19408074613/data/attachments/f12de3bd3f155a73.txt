@@ -1,0 +1,15 @@
+INFO     root:conftest.py:290 Starting test: test_example_1.
+INFO     root:base_page.py:178 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_dynamic_loading.py:21 Tests Dynamic Loading - Example 1.
+INFO     root:main_page.py:123 Navigating to Dynamic Loading page.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:dynamic_loading_page.py:23 Navigating to Example 1: Element on page that is hidden page.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', '.example h4')'.
+INFO     root:test_dynamic_loading.py:24 Clicking start button.
+INFO     root:base_page.py:166 Waiting for loader to disappear.
+INFO     root:test_dynamic_loading.py:27 Verifying success message.

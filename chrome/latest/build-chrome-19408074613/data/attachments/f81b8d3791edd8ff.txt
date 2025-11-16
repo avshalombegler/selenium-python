@@ -1,0 +1,22 @@
+2025-11-16 15:46:32,567 - INFO - [test_table_header_per_column[Dolor]] Starting test: test_table_header_per_column[Dolor].
+2025-11-16 15:46:32,568 - INFO - [test_table_header_per_column[Dolor]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 15:46:32,686 - INFO - [test_table_header_per_column[Dolor]] Navigation completed.
+2025-11-16 15:46:32,686 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 15:46:32,698 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 15:46:32,699 - INFO - [] Capture loop started for Firefox.
+2025-11-16 15:46:32,700 - INFO - [test_table_header_per_column[Dolor]] Started recording: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_154632/test_table_header_per_column[Dolor]_20251116_154632.mp4
+2025-11-16 15:46:32,702 - INFO - [test_table_header_per_column[Dolor]] Verify table head text per column.
+2025-11-16 15:46:32,702 - INFO - [test_table_header_per_column[Dolor]] Navigating to Challenging DOM page.
+2025-11-16 15:46:32,802 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_154632/frames/frame_000000.png
+2025-11-16 15:46:32,806 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:46:33,018 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-16 15:46:33,131 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_154632/frames/frame_000001.png
+2025-11-16 15:46:33,134 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 15:46:33,140 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-16 15:46:33,140 - INFO - [test_table_header_per_column[Dolor]] Getting table head text of column 'Dolor'.
+2025-11-16 15:46:33,171 - INFO - [test_table_header_per_column[Dolor]] Finished test: test_table_header_per_column[Dolor] (Duration: 0.47s).
+2025-11-16 15:46:33,172 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording...
+2025-11-16 15:46:33,173 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording and assembling.
+2025-11-16 15:46:33,198 - INFO - [test_table_header_per_column[Dolor]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_154632/frames
+2025-11-16 15:46:33,199 - INFO - [test_table_header_per_column[Dolor]] Found 2 valid frames.
+2025-11-16 15:46:33,391 - INFO - [test_table_header_per_column[Dolor]] Video created: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251116_154632/test_table_header_per_column[Dolor]_20251116_154632.mp4

@@ -1,0 +1,34 @@
+2025-11-16 15:46:23,134 - INFO - [] Directory cleaned and recreated at: downloads/gw1.
+2025-11-16 15:46:23,135 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-16 15:46:23,135 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-16 15:46:23,136 - INFO - [] xdist worker is: gw1
+2025-11-16 15:46:23,137 - INFO - [] ====== WebDriver manager ======
+2025-11-16 15:46:23,315 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 15:46:23,373 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 15:46:23,422 - INFO - [] There is no [linux64] chromedriver "142.0.7444.162" for browser google-chrome "142.0.7444" in cache
+2025-11-16 15:46:23,422 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 15:46:23,582 - INFO - [] WebDriver version 142.0.7444.162 selected
+2025-11-16 15:46:23,591 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-16 15:46:23,592 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-16 15:46:23,656 - INFO - [] Driver downloading response is 200
+2025-11-16 15:46:23,763 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-16 15:46:23,961 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.162]
+2025-11-16 15:46:25,251 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.].
+2025-11-16 15:46:25,263 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 15:46:26,183 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-11-16 15:46:26,183 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 15:46:26,207 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 15:46:26,208 - INFO - [] Capture loop started for Firefox.
+2025-11-16 15:46:26,209 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Started recording: tests_recordings/gw1/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251116_154626/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251116_154626.mp4
+2025-11-16 15:46:26,212 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-16 15:46:26,212 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-16 15:46:26,212 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-16 15:46:26,212 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-16 15:46:26,345 - INFO - [] Saved frame 0: tests_recordings/gw1/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251116_154626/frames/frame_000000.png
+2025-11-16 15:46:26,361 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-16 15:46:26,361 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Finished test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.15s).
+2025-11-16 15:46:26,363 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Stopping video recording...
+2025-11-16 15:46:26,363 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Stopping video recording and assembling.
+2025-11-16 15:46:26,413 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Thread joined. Frames dir: tests_recordings/gw1/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251116_154626/frames
+2025-11-16 15:46:26,414 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Found 1 valid frames.
+2025-11-16 15:46:26,798 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Video created: tests_recordings/gw1/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251116_154626/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251116_154626.mp4
