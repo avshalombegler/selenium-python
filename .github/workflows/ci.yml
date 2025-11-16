@@ -281,6 +281,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports
 
+      - name: Check if latest commit
+        run: |
+          if [ "${{ github.sha }}" != "$(git rev-parse HEAD)" ]; then
+            echo "Not the latest commit, skipping history storage"
+            exit 0
+          fi
+
       - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
@@ -294,6 +301,8 @@ jobs:
             # Clean existing history for this browser to avoid pollution
             rm -rf history/$browser
             mkdir -p history/$browser/history
+            # Add placeholder to ensure empty dirs are committed
+            touch history/$browser/history/.gitkeep
             cp -r reports/history/$browser/history/* history/$browser/history/ || true
           done
           git add history/
