@@ -70,13 +70,13 @@ Access the latest Allure reports below (updated automatically after each success
 ```
 selenium-python/
 ├── .github/workflows/
-│    ├── ci.yml  # GitHub Actions CI workflow configuration
+│    └── ci.yml  # GitHub Actions CI workflow configuration
 ├── config/
-│    ├── env_config.py  # Configuration parameters
+│    └── env_config.py  # Configuration parameters
 ├── pages/  # Page Object Model classes
 │    ├── base/  # Base page classes and page manager
 │    ├── common/  # Common page objects
-│    ├── features/  # Feature-specific page objects
+│    └── features/  # Feature-specific page objects
 ├── reports/  # Test run artifacts and Allure results
 ├── tests/  # Test cases
 ├── utils/  # Utilities and helpers
