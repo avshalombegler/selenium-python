@@ -1,15 +1,26 @@
 
 # Selenium-Python Test Suite
 
-This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.  
-It uses the Page Object Model (POM) pattern, pytest for test execution, and Allure for reporting, with video recordings as attachment.
+A modern, maintainable test automation suite for https://the-internet.herokuapp.com  
+Built with **Page Object Model**, **pytest**, **Allure reporting**, **video recording**, and **GitHub Actions CI/CD**.
+
+## Features
+
+- Clean POM architecture with `BasePage` and `PageManager`
+- Parallel execution via `pytest-xdist`
+- Allure reports with history & trends
+- Automatic video recording (attached to Allure)
+- Multi-browser support (Chrome & Firefox)
+- Headless & headed mode
+- GitHub Actions CI with matrix strategy
+- Allure reports automatically published to GitHub Pages
 
 ## Requirements
 
 - Python 3.10+
 - Git
 - Chrome/Firefox browser
-- WebDriver (managed by webdriver-manager)
+- `webdriver-manager` handles drivers automatically
 
 ## Installation
 
@@ -27,67 +38,80 @@ It uses the Page Object Model (POM) pattern, pytest for test execution, and Allu
     ```
     pip install -r requirements.txt
     ```
-4. Set up environment variables: Create a .env file with:
-    ```
-    BASE_URL=https://the-internet.herokuapp.com/
-    BROWSER=chrome
-    SHORT_TIMEOUT=3
-    LONG_TIMEOUT=10
-    VIDEO_RECORDING=True
-    HEADLESS=True
-    MAXIMIZED=False
-    USERNAME=tomsmith
-    PASSWORD=SuperSecretPassword!
-    ```
 
-Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
+## Environment Variables (.env)
 
-## Running tests
+Create a .env file in the project root:
+```
+BASE_URL=https://the-internet.herokuapp.com/
+BROWSER=chrome       # chrome or firefox
+HEADLESS=True        # True/False
+MAXIMIZED=False
+SHORT_TIMEOUT=3
+LONG_TIMEOUT=10
+VIDEO_RECORDING=True
+USERNAME=tomsmith
+PASSWORD=SuperSecretPassword!
+```
 
-- Run the full pytest suite: `pytest tests`
+Note: Allure CLI is not installed via pip → install separately:
+https://docs.qameta.io/allure/#_get_started
 
-- Run a single test file: `pytest tests\test_test_name.py`
+## Running tests locally
 
-## CI/CD with GitHub Actions
-Tests are automatically run on every push/pull request to `main` using GitHub Actions.
+- Run all tests(sequential):
+    `pytest`
 
-## Allure Reports
-Allure Reports automatically publish on every push/pull request to `main` using GitHub Pages.
+- Run all tests in parallel:
+    `pytest -n auto`
 
-Access the latest Allure reports below (updated automatically after each successful run):
+- Run a specific test file:
+    `pytest .\tests\test_test_name.py`
+
+- Generate Allure results (add this flag to the pytest run command):
+    `--alluredir=reports/allure-results`
+
+- View Allure Report Locally:
+    `allure serve reports/allure-results`
+
+## GitHub Actions CI/CD
+- Runs automatically on every push/PR to main
+- Matrix strategy: Chrome + Firefox (headless)
+- Parallel execution with pytest-xdist
+- Artifacts: Allure results, videos, junit.xml
+- Allure reports automatically deployed to GitHub Pages
+
+## Allure Reports (Live)
+Latest reports are published automatically after every successful CI run:
 
 - **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19404512021/index.html)
 - **Chrome - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest/build-chrome-19404512021/index.html)
 - **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19404512021/index.html)
 - **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest/build-firefox-19404512021/index.html)
 
-**Notes**
-- Reports are generated for Chrome and Firefox browsers separately.
-- "Latest Only" shows results from the most recent run without historical trends.
-- "Latest with History" includes merged data from previous runs for trend analysis.
-
 ## Project layout
 ```
 selenium-python/
-├── .github/workflows/
-│    └── ci.yml  # GitHub Actions CI workflow configuration
-├── config/
-│    └── env_config.py  # Configuration parameters
+├── .github/
+│    └── workflows/ci.yml  # GitHub Actions workflow
+├── config/env_config.py  # Loads .env variables
 ├── pages/  # Page Object Model classes
-│    ├── base/  # Base page classes and page manager
-│    ├── common/  # Common page objects
-│    └── features/  # Feature-specific page objects
-├── reports/  # Test run artifacts and Allure results
+│    ├── base/  # BasePage, PageManager
+│    ├── common/  # Shared components
+│    └── features/  # Page objects per feature
+├── reports/  # Allure results and artifacts
 ├── tests/  # Test cases
-├── utils/  # Utilities and helpers
-├── conftest.py  # pytest fixtures/hooks and session set
-├── pytest.ini  # pytest configuration file
-├── .env  # Environment variables file
+├── utils/  # Helpers (logging, video, etc.)
+├── conftest.py  # Fixtures, hooks, driver setup
+├── pytest.ini  # Pytest configuration
+├── .env  # Environment variables (gitignored)
+├── requirements.txt
 └── README.md
 ```
 
-## How to extend
+## How to Add New Tests
 
-- Add new page objects to `pages/` and expose them via `page_manager.py`.
-- Add new test files to `tests/` for every feature.
-- Add new pytest fixtures/hooks to `conftest.py` for shared setup (browser/session-scoped fixtures are helpful).
+1. Create page object in pages/features/your_feature/your_page.py
+2. Register it in pages/base/page_manager.py
+3. Add test in tests/test_your_feature.py
+4. (Optional) Add @pytest.mark.smoke or other markers
