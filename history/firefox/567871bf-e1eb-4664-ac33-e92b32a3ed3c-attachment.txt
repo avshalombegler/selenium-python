@@ -1,0 +1,17 @@
+2025-11-16 14:49:26,624 - INFO - [test_valid_images_count] Starting test: test_valid_images_count.
+2025-11-16 14:49:26,625 - INFO - [test_valid_images_count] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 14:49:26,739 - INFO - [test_valid_images_count] Navigation completed.
+2025-11-16 14:49:26,739 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 14:49:26,752 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 14:49:26,754 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-16 14:49:26,755 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-16 14:49:26,944 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-16 14:49:26,956 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-16 14:49:26,957 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-16 14:49:26,957 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-16 14:49:26,961 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-16 14:49:26,971 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-16 14:49:26,979 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-16 14:49:26,986 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-16 14:49:26,986 - INFO - [test_valid_images_count] Finished test: test_valid_images_count (Duration: 0.23s).
+2025-11-16 14:49:26,988 - INFO - [test_valid_images_count] Quitting driver for browser: firefox.
