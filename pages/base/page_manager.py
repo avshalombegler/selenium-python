@@ -18,6 +18,7 @@ from pages.features.dynamic_controls.dynamic_controls_page import DynamicControl
 from pages.features.dynamic_loading.dynamic_loading_page import DynamicLoadingPage
 from pages.features.entry_ad.entry_ad_page import EntryAdPage
 from pages.features.exit_intent.exit_intent_page import ExitIntentPage
+from pages.features.files_download.files_download_page import FilesDownloadPage
 from utils.logging_helper import get_logger
 
 if TYPE_CHECKING:
@@ -86,3 +87,6 @@ class PageManager:
 
     def get_exit_intent_page(self) -> ExitIntentPage:
         return self.main_page.click_exit_intent_link()
+
+    def get_file_download_page(self) -> FilesDownloadPage:
+        return self.main_page.click_file_download_link()
