@@ -19,14 +19,14 @@ git clone https://github.com/avshalombegler/selenium-python.git
 cd selenium-python
 
 2. Create a virtual environment:
-
+    ```
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+    ```
 3. Install dependencies:
-
+    ```
     pip install -r requirements.txt
-
+    ```
 4. Set up environment variables: Create a .env file with:
 ```
 BASE_URL=https://the-internet.herokuapp.com/
