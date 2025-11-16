@@ -1,0 +1,24 @@
+INFO     root:conftest.py:290 Starting test: test_remove_elements.
+INFO     root:base_page.py:178 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_add_remove_elements.py:34 Tests for remove elements.
+INFO     root:main_page.py:41 Navigating to Add/Remove Elements page.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+INFO     root:test_add_remove_elements.py:37 Ensure there are elements to remove
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     root:test_add_remove_elements.py:40 Remove all elements
+INFO     root:add_remove_elements_page.py:28 Counting Delete Element button(s).
+INFO     root:base_page.py:232 Counting elements with locator: '('css selector', '#elements > button')'.
+INFO     root:add_remove_elements_page.py:24 Clicking Delete Element button.
+INFO     root:add_remove_elements_page.py:28 Counting Delete Element button(s).
+INFO     root:base_page.py:232 Counting elements with locator: '('css selector', '#elements > button')'.
+INFO     root:add_remove_elements_page.py:24 Clicking Delete Element button.
+INFO     root:add_remove_elements_page.py:28 Counting Delete Element button(s).
+INFO     root:base_page.py:232 Counting elements with locator: '('css selector', '#elements > button')'.
+INFO     root:add_remove_elements_page.py:28 Counting Delete Element button(s).
+INFO     root:base_page.py:232 Counting elements with locator: '('css selector', '#elements > button')'.
+INFO     root:test_add_remove_elements.py:43 Found 0 delete buttons.
