@@ -59,7 +59,7 @@ PASSWORD=SuperSecretPassword!
 
 ## Running tests locally
 
-- Run all tests(sequential):
+- Run all tests (sequential):
     `pytest`
 
 - Run all tests in parallel:
@@ -97,17 +97,17 @@ Latest reports are published automatically after every successful CI run:
 selenium-python/
 ├── .github/
 │    └── workflows/ci.yml  # GitHub Actions workflow
-├── config/env_config.py  # Loads .env variables
-├── pages/  # Page Object Model classes
-│    ├── base/  # BasePage, PageManager
-│    ├── common/  # Shared components
-│    └── features/  # Page objects per feature
-├── reports/  # Allure results and artifacts
-├── tests/  # Test cases
-├── utils/  # Helpers (logging, video, etc.)
-├── conftest.py  # Fixtures, hooks, driver setup
-├── pytest.ini  # Pytest configuration
-├── .env  # Environment variables (gitignored)
+├── config/env_config.py   # Loads .env variables
+├── pages/                 # Page Object Model classes
+│    ├── base/             # BasePage, PageManager
+│    ├── common/           # Shared components
+│    └── features/         # Page objects per feature
+├── reports/               # Allure results and artifacts
+├── tests/                 # Test cases
+├── utils/                 # Helpers (logging, video, etc.)
+├── conftest.py            # Fixtures, hooks, driver setup
+├── pytest.ini             # Pytest configuration
+├── .env                   # Environment variables (gitignored)
 ├── requirements.txt
 └── README.md
 ```
