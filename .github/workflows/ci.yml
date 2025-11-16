@@ -148,9 +148,9 @@ jobs:
       - name: Merge Allure History
         if: always()
         run: |
-          if [ -d "reports/allure-results-history" ]; then
+          if [ -d "reports/allure-results-history/history" ]; then
             mkdir -p reports/allure-results/history
-            cp reports/allure-results-history/* reports/allure-results/history/ || true
+            cp -r reports/allure-results-history/history/* reports/allure-results/history/ || true
           fi
 
       - name: Clean Allure Report Directory
