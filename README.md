@@ -29,15 +29,15 @@ cd selenium-python
 
 4. Set up environment variables: Create a .env file with:
 ```
-    BASE_URL=
-    BROWSER=
-    SHORT_TIMEOUT=
-    LONG_TIMEOUT=
-    VIDEO_RECORDING=
-    HEADLESS=
-    MAXIMIZED=
-    USERNAME=tomsmith
-    PASSWORD=SuperSecretPassword!
+BASE_URL=
+BROWSER=
+SHORT_TIMEOUT=
+LONG_TIMEOUT=
+VIDEO_RECORDING=
+HEADLESS=
+MAXIMIZED=
+USERNAME=tomsmith
+PASSWORD=SuperSecretPassword!
 ```
 
 Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
