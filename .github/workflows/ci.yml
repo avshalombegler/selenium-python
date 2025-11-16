@@ -18,10 +18,10 @@ jobs:
       fail-fast: false # Continue running other jobs if one fails
       matrix:
         browser: [chrome, firefox]
-        # browser: [chrome]
-        # browser: [firefox]
+        workers: [auto]
         include:
           - suite: ui
+            marker: ui
     
     name: ${{ matrix.browser }} ${{ matrix.suite }} tests
     steps:
@@ -110,7 +110,14 @@ jobs:
         id: pytest
         run: |
           PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-            pytest tests/ -v -n auto --dist=loadfile --alluredir=reports/allure-results -m ui
+            pytest \
+              tests/ \
+              -v \
+              -n ${{ matrix.workers }} \
+              --dist=loadfile \
+              --alluredir=reports/allure-results \
+              --junitxml=reports/junit.xml \
+              -m ${{ matrix.marker }}
 
       - name: Generate Latest-Only Allure Report
         if: always()
