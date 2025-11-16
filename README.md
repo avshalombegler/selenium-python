@@ -39,6 +39,9 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
     pip install -r requirements.txt
     ```
 
+Note: Allure CLI is not installed via pip → install separately:
+https://docs.qameta.io/allure/#_get_started
+
 ## Environment Variables (.env)
 
 Create a .env file in the project root:
@@ -53,9 +56,6 @@ VIDEO_RECORDING=True
 USERNAME=tomsmith
 PASSWORD=SuperSecretPassword!
 ```
-
-Note: Allure CLI is not installed via pip → install separately:
-https://docs.qameta.io/allure/#_get_started
 
 ## Running tests locally
 
@@ -73,6 +73,9 @@ https://docs.qameta.io/allure/#_get_started
 
 - View Allure Report Locally:
     `allure serve reports/allure-results`
+
+- Optional: generate a static HTML report (requires Allure CLI):
+    `allure generate reports/allure-results -o reports/allure-report`
 
 ## GitHub Actions CI/CD
 - Runs automatically on every push/PR to main
