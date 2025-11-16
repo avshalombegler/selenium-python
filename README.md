@@ -4,13 +4,6 @@
 This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.
 It uses the Page Object Model (POM) pattern, Pytest for test execution, Allure for reporting, and custom logging for debugging.
 
-## Project status
-
-- Minimal, runnable pytest-based Selenium tests are included under `tests/`.
-- Page objects live in the `pages/` package and are coordinated by `page_manager.py`.
-- Test configuration and fixtures are provided in `conftest.py`.
-- Allure results and a generated HTML report live under `reports/`.
-
 ## Requirements
 
 - Python 3.10+
@@ -36,19 +29,21 @@ cd selenium-python
 
 4. Set up environment variables: Create a .env file with:
 
-    SHORT_TIMEOUT=3
-    LONG_TIMEOUT=10
+    BASE_URL=
+    BROWSER=
+    SHORT_TIMEOUT=
+    LONG_TIMEOUT=
+    VIDEO_RECORDING=
+    HEADLESS=
+    MAXIMIZED=
+    USERNAME=tomsmith
+    PASSWORD=SuperSecretPassword!
 
 ## Running tests
 
 - Run the full pytest suite: `pytest tests`
 
-- Run a single test file: `pytest tests\test_name.py`
-
-- View Allure report: `allure serve reports`
-
-- Then generate the HTML report (requires Allure CLI installed separately):
-`allure generate reports/allure-results -o reports/allure-report`
+- Run a single test file: `pytest tests\test_test_name.py`
 
 Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
 
@@ -64,29 +59,31 @@ Access the latest Allure reports below (updated automatically after each success
 - **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest/build-firefox-19404512021/index.html)
 
 ### Notes
-- Reports are generated for Chrome and Firefox browsers.
+- Reports are generated for Chrome and Firefox browsers separately.
 - "Latest Only" shows results from the most recent run without historical trends.
 - "Latest with History" includes merged data from previous runs for trend analysis.
-- If a link doesn't load, check the GitHub Actions run for the latest ID or wait for the workflow to complete.
 
 ## Project layout
 
-- `workflows/` - ci.yml
-- `config/` - Configuration parameters
-- `pages/` - Page Object Model classes
-- `reports/` - Test run artifacts and Allure results
-- `tests/` - Test cases
-- `utils/` - Utilities (locators and helpers)
-- `conftest.py` - Pytest fixtures/hooks and session setup
+selenium-python/
+├── `.github/workflows/`
+│    ├── `ci.yml` - GitHub Actions CI workflow configuration
+├── `config/` 
+│    ├── `env_config.py` - Configuration parameters
+├── `pages/` - Page Object Model classes
+│    ├── `base/` - Base page classes and page manager
+│    ├── `common/` - Common page objects
+│    ├── `features/` - Feature-specific page objects
+├── `reports/` - Test run artifacts and Allure results
+├── `tests/` - Test cases
+├── `utils/` - Utilities and helpers
+├── `conftest.py` - Pytest fixtures/hooks and session set
+├── `pytest.ini` - Pytest configuration file
+├── `.env` - Environment variables file
+└── README.md
 
 ## How to extend
 
 - Add new page objects to `pages/` and expose them via `page_manager.py`.
 - Add new Pytest fixtures/hooks to `conftest.py` for shared setup (browser/session-scoped fixtures are helpful).
-
-## Contact
-
-If you need help, open an issue or contact the repository owner.
-
-
 
