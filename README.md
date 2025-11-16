@@ -51,6 +51,8 @@ Note: The Allure CLI is not a Python package; install it from https://docs.qamet
 Tests are automatically run on every push/pull request to `main` using GitHub Actions.
 
 ## Allure Reports
+Allure Reports automatically publish  on every push/pull request to `main` using GitHub Pages.
+
 Access the latest Allure reports below (updated automatically after each successful run):
 
 - **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19404512021/index.html)
