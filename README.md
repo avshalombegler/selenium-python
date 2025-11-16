@@ -28,7 +28,7 @@ cd selenium-python
     pip install -r requirements.txt
 
 4. Set up environment variables: Create a .env file with:
-
+```
     BASE_URL=
     BROWSER=
     SHORT_TIMEOUT=
@@ -38,6 +38,7 @@ cd selenium-python
     MAXIMIZED=
     USERNAME=tomsmith
     PASSWORD=SuperSecretPassword!
+```
 
 Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
 
@@ -66,7 +67,7 @@ Access the latest Allure reports below (updated automatically after each success
 - "Latest with History" includes merged data from previous runs for trend analysis.
 
 ## Project layout
-
+```
 selenium-python/
 ├── `.github/workflows/`
 │    ├── `ci.yml` - GitHub Actions CI workflow configuration
@@ -83,6 +84,7 @@ selenium-python/
 ├── `pytest.ini` - Pytest configuration file
 ├── `.env` - Environment variables file
 └── README.md
+```
 
 ## How to extend
 
