@@ -1,7 +1,7 @@
 
 # Selenium-Python Test Suite
 
-This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.
+This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.\
 It uses the Page Object Model (POM) pattern, Pytest for test execution, and Allure for reporting, with video recordings as attachment.
 
 ## Requirements
@@ -60,7 +60,7 @@ Access the latest Allure reports below (updated automatically after each success
 - **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19404512021/index.html)
 - **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest/build-firefox-19404512021/index.html)
 
-### Notes
+**Notes**
 - Reports are generated for Chrome and Firefox browsers separately.
 - "Latest Only" shows results from the most recent run without historical trends.
 - "Latest with History" includes merged data from previous runs for trend analysis.
