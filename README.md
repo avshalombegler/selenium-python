@@ -2,7 +2,7 @@
 # Selenium-Python Test Suite
 
 This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.  
-It uses the Page Object Model (POM) pattern, Pytest for test execution, and Allure for reporting, with video recordings as attachment.
+It uses the Page Object Model (POM) pattern, pytest for test execution, and Allure for reporting, with video recordings as attachment.
 
 ## Requirements
 
@@ -29,13 +29,13 @@ cd selenium-python
 
 4. Set up environment variables: Create a .env file with:
 ```
-BASE_URL=
-BROWSER=
-SHORT_TIMEOUT=
-LONG_TIMEOUT=
-VIDEO_RECORDING=
-HEADLESS=
-MAXIMIZED=
+BASE_URL=https://the-internet.herokuapp.com/
+BROWSER=chrome
+SHORT_TIMEOUT=3
+LONG_TIMEOUT=10
+VIDEO_RECORDING=True
+HEADLESS=True
+MAXIMIZED=False
 USERNAME=tomsmith
 PASSWORD=SuperSecretPassword!
 ```
@@ -80,8 +80,8 @@ selenium-python/
 ├── reports/  # Test run artifacts and Allure results
 ├── tests/  # Test cases
 ├── utils/  # Utilities and helpers
-├── conftest.py  # Pytest fixtures/hooks and session set
-├── pytest.ini  # Pytest configuration file
+├── conftest.py  # pytest fixtures/hooks and session set
+├── pytest.ini  # pytest configuration file
 ├── .env  # Environment variables file
 └── README.md
 ```
@@ -89,5 +89,5 @@ selenium-python/
 ## How to extend
 
 - Add new page objects to `pages/` and expose them via `page_manager.py`.
-- Add new Pytest fixtures/hooks to `conftest.py` for shared setup (browser/session-scoped fixtures are helpful).
-
+- Add new test files to `tests/` for every feature.
+- Add new pytest fixtures/hooks to `conftest.py` for shared setup (browser/session-scoped fixtures are helpful).
