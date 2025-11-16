@@ -150,7 +150,11 @@ jobs:
         run: |
           if [ -d "reports/allure-results-history/history" ]; then
             mkdir -p reports/allure-results/history
-            cp -r reports/allure-results-history/history/* reports/allure-results/history/ || true
+            cp reports/allure-results-history/history/history-trend.json reports/allure-results/history/ || true
+            cp reports/allure-results-history/history/history.json reports/allure-results/history/ || true
+            cp reports/allure-results-history/history/duration-trend.json reports/allure-results/history/ || true
+            cp reports/allure-results-history/history/retry-trend.json reports/allure-results/history/ || true
+            # Add other history files if needed (e.g., for custom widgets)
           fi
 
       - name: Clean Allure Report Directory
