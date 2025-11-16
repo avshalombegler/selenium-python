@@ -39,13 +39,13 @@ cd selenium-python
     USERNAME=tomsmith
     PASSWORD=SuperSecretPassword!
 
+Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
+
 ## Running tests
 
 - Run the full pytest suite: `pytest tests`
 
 - Run a single test file: `pytest tests\test_test_name.py`
-
-Note: The Allure CLI is not a Python package; install it from https://docs.qameta.io/allure/ if needed.
 
 ## CI/CD with GitHub Actions
 Tests are automatically run on every push/pull request to `main` using GitHub Actions.
