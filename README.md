@@ -69,20 +69,20 @@ Access the latest Allure reports below (updated automatically after each success
 ## Project layout
 ```
 selenium-python/
-├── `.github/workflows/`
-│    ├── `ci.yml` - GitHub Actions CI workflow configuration
-├── `config/` 
-│    ├── `env_config.py` - Configuration parameters
-├── `pages/` - Page Object Model classes
-│    ├── `base/` - Base page classes and page manager
-│    ├── `common/` - Common page objects
-│    ├── `features/` - Feature-specific page objects
-├── `reports/` - Test run artifacts and Allure results
-├── `tests/` - Test cases
-├── `utils/` - Utilities and helpers
-├── `conftest.py` - Pytest fixtures/hooks and session set
-├── `pytest.ini` - Pytest configuration file
-├── `.env` - Environment variables file
+├── .github/workflows/
+│    ├── ci.yml  # GitHub Actions CI workflow configuration
+├── config/
+│    ├── env_config.py  # Configuration parameters
+├── pages/  # Page Object Model classes
+│    ├── base/  # Base page classes and page manager
+│    ├── common/  # Common page objects
+│    ├── features/  # Feature-specific page objects
+├── reports/  # Test run artifacts and Allure results
+├── tests/  # Test cases
+├── utils/  # Utilities and helpers
+├── conftest.py  # Pytest fixtures/hooks and session set
+├── pytest.ini  # Pytest configuration file
+├── .env  # Environment variables file
 └── README.md
 ```
 
