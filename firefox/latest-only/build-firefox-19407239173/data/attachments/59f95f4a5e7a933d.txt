@@ -1,0 +1,11 @@
+2025-11-16 14:39:59,684 - INFO - [test_basic_auth[--401-Not authorized\n]] Starting test: test_basic_auth[--401-Not authorized\n].
+2025-11-16 14:39:59,685 - INFO - [test_basic_auth[--401-Not authorized\n]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 14:39:59,881 - INFO - [test_basic_auth[--401-Not authorized\n]] Navigation completed.
+2025-11-16 14:39:59,881 - INFO - [test_basic_auth[--401-Not authorized\n]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 14:39:59,953 - INFO - [test_basic_auth[--401-Not authorized\n]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 14:39:59,956 - INFO - [test_basic_auth[--401-Not authorized\n]] Tests basic autorization login scenatios.
+2025-11-16 14:39:59,956 - INFO - [test_basic_auth[--401-Not authorized\n]] Returning object of Basic Auth page.
+2025-11-16 14:39:59,957 - INFO - [test_basic_auth[--401-Not authorized\n]] Initialize URL based on username and password.
+2025-11-16 14:39:59,957 - INFO - [test_basic_auth[--401-Not authorized\n]] Get status code and authorization message.
+2025-11-16 14:40:00,129 - INFO - [test_basic_auth[--401-Not authorized\n]] Validate status code and authorization message.
+2025-11-16 14:40:00,131 - INFO - [test_basic_auth[--401-Not authorized\n]] Finished test: test_basic_auth[--401-Not authorized\n] (Duration: 0.17s).

@@ -1,0 +1,24 @@
+2025-11-16 14:40:05,810 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green].
+2025-11-16 14:40:05,811 - INFO - [test_each_button_clicks[green]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-16 14:40:05,885 - INFO - [test_each_button_clicks[green]] Navigation completed.
+2025-11-16 14:40:05,885 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-16 14:40:05,902 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-16 14:40:05,903 - INFO - [] Capture loop started for Firefox.
+2025-11-16 14:40:05,903 - INFO - [test_each_button_clicks[green]] Started recording: tests_recordings/gw0/test_each_button_clicks[green]_20251116_144005/test_each_button_clicks[green]_20251116_144005.mp4
+2025-11-16 14:40:05,905 - INFO - [test_each_button_clicks[green]] Verify each button in page is clickable.
+2025-11-16 14:40:05,905 - INFO - [test_each_button_clicks[green]] Navigating to Challenging DOM page.
+2025-11-16 14:40:06,033 - INFO - [] Saved frame 0: tests_recordings/gw0/test_each_button_clicks[green]_20251116_144005/frames/frame_000000.png
+2025-11-16 14:40:06,037 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 14:40:06,229 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-16 14:40:06,341 - INFO - [] Saved frame 1: tests_recordings/gw0/test_each_button_clicks[green]_20251116_144005/frames/frame_000001.png
+2025-11-16 14:40:06,343 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 14:40:06,352 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-16 14:40:06,352 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-11-16 14:40:06,554 - INFO - [test_each_button_clicks[green]] Finished test: test_each_button_clicks[green] (Duration: 0.65s).
+2025-11-16 14:40:06,557 - INFO - [test_each_button_clicks[green]] Stopping video recording...
+2025-11-16 14:40:06,557 - INFO - [test_each_button_clicks[green]] Stopping video recording and assembling.
+2025-11-16 14:40:06,673 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-16 14:40:06,675 - INFO - [] Saved frame 2: tests_recordings/gw0/test_each_button_clicks[green]_20251116_144005/frames/frame_000002.png
+2025-11-16 14:40:06,742 - INFO - [test_each_button_clicks[green]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[green]_20251116_144005/frames
+2025-11-16 14:40:06,742 - INFO - [test_each_button_clicks[green]] Found 3 valid frames.
+2025-11-16 14:40:06,944 - INFO - [test_each_button_clicks[green]] Video created: tests_recordings/gw0/test_each_button_clicks[green]_20251116_144005/test_each_button_clicks[green]_20251116_144005.mp4
