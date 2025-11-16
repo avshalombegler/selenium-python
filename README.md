@@ -1,7 +1,7 @@
 
 # Selenium-Python Test Suite
 
-This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.\
+This project is a Selenium-based test automation framework for testing web applications, specifically targeting https://the-internet.herokuapp.com.  
 It uses the Page Object Model (POM) pattern, Pytest for test execution, and Allure for reporting, with video recordings as attachment.
 
 ## Requirements
