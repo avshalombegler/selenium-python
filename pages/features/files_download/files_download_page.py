@@ -37,5 +37,5 @@ class FilesDownloadPage(BasePage):
         self.download_file(FilesDownloadPageLocators.FILE_NAME_LINK, file_name)
 
     @allure.step("Get number of downloaded files")
-    def get_number_of_downloaded_files(self, download_directory: Path) -> int:
+    def get_number_of_downloaded_files(self, download_directory: Path) -> list:
         return self.get_files_in_directory(download_directory)

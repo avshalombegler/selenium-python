@@ -20,8 +20,9 @@ jobs:
         browser: [chrome, firefox]
         workers: [auto]
         include:
-          - suite: ui
-            marker: ui
+          - suite: full
+            marker: full
+            # marker: current
     
     name: ${{ matrix.browser }} ${{ matrix.suite }} tests
     steps:

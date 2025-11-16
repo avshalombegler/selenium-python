@@ -4,9 +4,10 @@ import os
 import shutil
 import logging
 import tempfile
-import pytest
 import allure
+import pytest
 import config.env_config as env_config
+from _pytest.nodes import Item
 from pathlib import Path
 from filelock import FileLock
 from datetime import datetime
@@ -41,7 +42,7 @@ Helper Functions
 """
 
 
-def build_chrome_options(user_data_dir: Path, download_directory: Path, debug_port: int) -> ChromeOptions:
+def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_port: int) -> ChromeOptions:
     options = ChromeOptions()
     options.add_argument(f"--user-data-dir={user_data_dir}")  # Use the per-worker user-data-dir
     options.add_argument(f"--remote-debugging-port={debug_port}")  # avoid DevTools port collisions between workers
@@ -57,7 +58,7 @@ def build_chrome_options(user_data_dir: Path, download_directory: Path, debug_po
         options.add_argument("--headless=new")
     # Set the preferences for download behavior
     prefs = {
-        "download.default_directory": str(download_directory.resolve()),
+        "download.default_directory": str(downloads_directory.resolve()),
         "download.prompt_for_download": False,  # Disable the "Save As" prompt
         "download.directory_upgrade": True,
         # "plugins.always_open_pdf_externally": True,  # Optional: for handling PDFs
@@ -66,18 +67,20 @@ def build_chrome_options(user_data_dir: Path, download_directory: Path, debug_po
     return options
 
 
-def build_firefox_options(user_data_dir: Path, download_directory: Path) -> FirefoxOptions:
+def build_firefox_options(user_data_dir: Path, downloads_directory: Path) -> FirefoxOptions:
     options = FirefoxOptions()
 
     # Set custom profile directory for isolation
     profile = webdriver.FirefoxProfile(str(user_data_dir))  # Create profile from the directory
     options.profile = profile
 
-    profile.set_preference("browser.download.dir", str(download_directory.resolve()))
+    profile.set_preference("browser.download.dir", str(downloads_directory.resolve()))
     profile.set_preference("browser.download.folderList", 2)  # 2 = custom location
     profile.set_preference("browser.download.manager.showWhenStarting", False)
     profile.set_preference("browser.download.manager.closeWhenDone", True)  # Close download dialog
-    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream,text/plain,application/pdf")  # Auto-save common types
+    profile.set_preference(
+        "browser.helperApps.neverAsk.saveToDisk", "application/octet-stream,text/plain,application/pdf"
+    )  # Auto-save common types
     profile.set_preference("browser.download.manager.alertOnEXEOpen", False)
     profile.set_preference("browser.download.manager.focusWhenStarting", False)
     profile.set_preference("browser.download.manager.useWindow", False)
@@ -192,11 +195,11 @@ def clean_videos_at_start() -> None:
 
 
 @pytest.fixture(scope="session", autouse=True)
-def clean_download_at_start(request: FixtureRequest) -> None:  # Add request param
+def clean_downloads_at_start(request: FixtureRequest) -> None:  # Add request param
     worker_id = get_worker_id()
-    download_dir = Path("download") / worker_id
-    clean_directory(download_dir, worker_id)
-    request.config.download_directory = download_dir  # type: ignore[attr-defined]
+    downloads_dir = Path("downloads") / worker_id
+    clean_directory(downloads_dir, worker_id)
+    request.config.downloads_directory = downloads_dir  # type: ignore[attr-defined]
 
 
 @pytest.fixture(scope="session")
@@ -207,11 +210,11 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
     browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
     root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
 
-    # Get download_directory that was set by clean_download_per_test fixture
-    download_directory = get_config_path(
-        request, "download_directory", "download_directory not set by clean_download_per_test fixture."
+    # Get downloads_directory that was set by clean_downloads_at_start fixture
+    downloads_directory = get_config_path(
+        request, "downloads_directory", "downloads_directory not set by clean_downloads_per_test fixture."
     )
-    root_logger.debug(f"Using download_directory: {download_directory}")
+    root_logger.debug(f"Using downloads_directory: {downloads_directory}")
 
     # Get user_data_dir that was set by unique_user_data_dir
     user_data_dir = get_config_path(request, "user_data_dir", "user_data_dir not set by unique_user_data_dir fixture.")
@@ -227,12 +230,12 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
         driver: WebDriver
         if browser == "chrome":
             chrome_service = ChromeService(ChromeDriverManager().install())
-            chrome_options = build_chrome_options(user_data_dir, download_directory, debug_port)
+            chrome_options = build_chrome_options(user_data_dir, downloads_directory, debug_port)
             driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
         elif browser == "firefox":
             firefox_service = FirefoxService(GeckoDriverManager().install())
-            firefox_options = build_firefox_options(user_data_dir, download_directory)
+            firefox_options = build_firefox_options(user_data_dir, downloads_directory)
             driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
             if env_config.MAXIMIZED:
                 driver.maximize_window()
@@ -295,7 +298,7 @@ def video_recorder(request: FixtureRequest, driver: WebDriver) -> Generator[None
     Recording is enabled only if VIDEO_RECORDING is True in config and driver is Chrome.
     Skips recording for non-Chrome drivers or when disabled.
     """
-    if not getattr(env_config, "VIDEO_RECORDING", False):
+    if not getattr(env_config, "VIDEO_RECORDING", False) or not isinstance(driver, webdriver.Chrome):
         yield
         return
 
@@ -321,15 +324,15 @@ def actions(driver: WebDriver) -> ActionChains:
 
 
 @pytest.fixture(scope="function")
-def download_directory(request: FixtureRequest) -> Path:
+def downloads_directory(request: FixtureRequest) -> Path:
     """
-    Provides the download directory path for the current test worker.
+    Provides the downloads directory path for the current test worker.
     Ensures the directory is cleaned and ready for use.
     """
     worker_id = get_worker_id()
-    download_dir = Path("download") / worker_id
-    clean_directory(download_dir, worker_id)
-    return download_dir
+    downloads_dir = Path("downloads") / worker_id
+    clean_directory(downloads_dir, worker_id)
+    return downloads_dir
 
 
 """
@@ -340,11 +343,12 @@ Pytest Hooks
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item: "pytest.Item") -> Generator[None, None, None]:
+def pytest_runtest_makereport(item: Item) -> Generator[None, None, None]:
     """
     Pytest hook to handle:
         - Test duration logging.
         - Screenshot taking on test faliure (Locally and to Allure Report).
+        - Cleaning downloads directory after successful downloads-related tests.
     """
     outcome = yield
     report = outcome.get_result()  # type: ignore[attr-defined]
@@ -354,9 +358,16 @@ def pytest_runtest_makereport(item: "pytest.Item") -> Generator[None, None, None
         duration = report.duration if hasattr(report, "duration") else 0
         root_logger.info(f"Finished test: {test_name} (Duration: {duration:.2f}s).")
 
-        driver = item.funcargs.get("driver")  # type: ignore[attr-defined]
+        driver = getattr(item, "funcargs", {}).get("driver")
         if report.failed and driver:
             save_screenshot_on_failure(driver, test_name)
+
+        # Only clean downloads directory for successful tests that involve downloads
+        if report.passed and item.get_closest_marker("clean_downloads"):
+            downloads_dir = getattr(item, "funcargs", {}).get("downloads_directory")
+            if downloads_dir and downloads_dir.exists():
+                clean_directory(downloads_dir, get_worker_id())
+                root_logger.info(f"Cleaned downloads directory after successful test: {test_name}.")
 
     if report.when == "teardown":
         set_current_test(None)

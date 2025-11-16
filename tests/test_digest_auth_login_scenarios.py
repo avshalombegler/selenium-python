@@ -22,6 +22,7 @@ class TestDigestAuth:
             ("admin", "wrong"),
         ],
     )
+    @pytest.mark.full
     @allure.severity(allure.severity_level.NORMAL)
     def test_digest_auth_login_scenarios(
         self, page_manager: PageManager, logger: Logger, username: str, password: str

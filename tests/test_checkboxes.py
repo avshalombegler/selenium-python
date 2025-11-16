@@ -14,6 +14,7 @@ if TYPE_CHECKING:
 class TestCheckboxes:
     """Test for verifying checkbox functionality"""
 
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_checkboxes_functionality(self, page_manager: PageManager, logger: Logger) -> None:

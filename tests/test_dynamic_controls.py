@@ -14,6 +14,7 @@ if TYPE_CHECKING:
 class TestDynamicControls:
     """Tests Dynamic Controls functionality"""
 
+    @pytest.mark.full
     @pytest.mark.ui
     @pytest.mark.flaky(reruns=2)
     @allure.severity(allure.severity_level.NORMAL)
@@ -42,6 +43,7 @@ class TestDynamicControls:
         logger.info("Verifying add message text.")
         assert "It's back!" in page.get_remove_add_message()
 
+    @pytest.mark.full
     @pytest.mark.ui
     @pytest.mark.flaky(reruns=2)
     @allure.severity(allure.severity_level.NORMAL)

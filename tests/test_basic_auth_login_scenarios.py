@@ -22,6 +22,8 @@ class TestBasicAuth:
             ("", "", 401, "Not authorized\n"),
         ],
     )
+    @pytest.mark.full
+    @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_basic_auth(
         self,

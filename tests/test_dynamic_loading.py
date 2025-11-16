@@ -14,6 +14,7 @@ if TYPE_CHECKING:
 class TestDynamicLoading:
     """Tests Dynamic Loading functionality"""
 
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_example_1(self, page_manager: PageManager, logger: Logger) -> None:
@@ -26,6 +27,7 @@ class TestDynamicLoading:
         logger.info("Verifying success message.")
         assert "Hello World!" in page.get_success_message()
 
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_example_2(self, page_manager: PageManager, logger: Logger) -> None:

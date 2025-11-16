@@ -13,6 +13,9 @@ pyproject.toml
 # Pytest
 .pytest_cache/
 
+# MyPy
+.mypy_cache/
+
 # Reports
 reports/
 allure-results/
@@ -32,7 +35,7 @@ venv/
 env/
 
 # Downloads folder
-download/
+downloads/
 
 # OS generated files
 .DS_Store

@@ -16,11 +16,16 @@ if TYPE_CHECKING:
 class TestFilesDownload:
     """Tests Files Download functionality"""
 
+    @pytest.mark.full
     @pytest.mark.ui
+    @pytest.mark.clean_downloads
     @allure.severity(allure.severity_level.NORMAL)
-    @pytest.mark.skipif(os.getenv("BROWSER") == "firefox", reason="Skipping file download test for Firefox due to slow downloading process")
+    @pytest.mark.skipif(
+        os.getenv("BROWSER") == "firefox",
+        reason="Skipping file download test for Firefox due to slow downloading process",
+    )
     def test_files_download_functionality(
-        self, page_manager: PageManager, logger: Logger, download_directory: Path
+        self, page_manager: PageManager, logger: Logger, downloads_directory: Path
     ) -> None:
         logger.info("Tests Files Download.")
         page = page_manager.get_file_download_page()
@@ -33,5 +38,4 @@ class TestFilesDownload:
             page.download_file_by_filename(file_name)
 
         logger.info("Verifying downloaded files count equals to files in page.")
-        assert len(file_names) == len(page.get_number_of_downloaded_files(download_directory))
-
+        assert len(file_names) == len(page.get_number_of_downloaded_files(downloads_directory))

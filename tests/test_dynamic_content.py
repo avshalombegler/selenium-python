@@ -15,6 +15,7 @@ if TYPE_CHECKING:
 class TestDynamicContent:
     """Tests for Dynamic Content functionality"""
 
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_content_changes_after_refresh(self, page_manager: PageManager, logger: Logger) -> None:

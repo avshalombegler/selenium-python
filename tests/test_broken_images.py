@@ -17,6 +17,7 @@ class TestBrokenImages:
     EXPECTED_BROKEN_IMAGES = 2
     EXPECTED_VALID_IMAGES = 1
 
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_broken_images_count(self, page_manager: PageManager, logger: Logger) -> None:
@@ -30,6 +31,7 @@ class TestBrokenImages:
             broken_count == self.EXPECTED_BROKEN_IMAGES
         ), f"Expected {self.EXPECTED_BROKEN_IMAGES} broken images, found {broken_count}"
 
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_valid_images_count(self, page_manager: PageManager, logger: Logger) -> None:

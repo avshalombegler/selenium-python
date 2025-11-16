@@ -16,6 +16,7 @@ class TestDragAndDrop:
 
     OPTIONS = ["Option 1", "Option 2"]
 
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("option", OPTIONS)
