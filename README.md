@@ -12,9 +12,11 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [CI/CD](#github-actions-cicd)
-- [Reports](#allure-reports-live)
-- [Contributing](#contributing)
+- [Environment Variables](#environment-variables-(.env))
+- [Running tests locally](#running-tests-locally)
+- [GitHub Actions CI/CD](#github-actions-cicd)
+- [Allure Reports](#allure-reports-live)
+- [Project layout](#project-layout)
 
 ## Features
 - Clean POM architecture with `BasePage` and `PageManager`
