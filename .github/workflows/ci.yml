@@ -187,6 +187,17 @@ jobs:
           allure generate --clean reports/allure-results -o reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}
           sleep 2
 
+      - name: Copy history from generated report
+        if: always()
+        run: |
+          if [ -d "reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}/history" ]; then
+            mkdir -p reports/allure-results/history
+            cp -r reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}/history/* reports/allure-results/history/ || true
+            echo "History copied from generated report"
+          else
+            echo "No history in generated report"
+          fi
+
       - name: Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
