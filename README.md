@@ -63,22 +63,34 @@ PASSWORD=SuperSecretPassword!
 ## Running tests locally
 
 - Run all tests (sequential):
-    `pytest`
+    ```
+    pytest
+    ```
 
 - Run all tests in parallel:
-    `pytest -n auto`
+    ```
+    pytest -n auto
+    ```
 
 - Run a specific test file:
-    `pytest .\tests\test_test_name.py`
+    ```
+    pytest .\tests\test_test_name.py
+    ```
 
 - Generate Allure results (add this flag to the pytest run command):
-    `--alluredir=reports/allure-results`
+    ```
+    --alluredir=reports/allure-results
+    ```
 
 - View Allure Report Locally:
-    `allure serve reports/allure-results`
+    ```
+    allure serve reports/allure-results
+    ```
 
 - Optional: generate a static HTML report (requires Allure CLI):
-    `allure generate reports/allure-results -o reports/allure-report`
+    ```
+    allure generate reports/allure-results -o reports/allure-report
+    ```
 
 ## GitHub Actions CI/CD
 - Runs automatically on every push/PR to main
