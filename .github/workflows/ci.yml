@@ -197,7 +197,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report-${{ matrix.browser }}-latest+history
+          name: allure-report-${{ matrix.browser }}-latest-with-history
           path: reports/allure-report/
           retention-days: 7
 
@@ -240,8 +240,8 @@ jobs:
         if: always()
         uses: actions/download-artifact@v4
         with:
-          name: allure-report-chrome-latest+history
-          path: reports/chrome/latest+history
+          name: allure-report-chrome-latest-with-history
+          path: reports/chrome/latest-with-history
       
       # - name: Download Allure Report (Firefox) - Latest Only
       #   if: always()
@@ -254,8 +254,8 @@ jobs:
       #   if: always()
       #   uses: actions/download-artifact@v4
       #   with:
-      #     name: allure-report-firefox-latest+history
-      #     path: reports/firefox/latest+history
+      #     name: allure-report-firefox-latest-with-history
+      #     path: reports/firefox/latest-with-history
 
       - name: Download Allure Results History (Chrome)
         uses: actions/download-artifact@v4
