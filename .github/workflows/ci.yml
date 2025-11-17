@@ -174,8 +174,10 @@ jobs:
         if: always()
         run: |
           mkdir -p reports/allure-results/history
-          if [ -d "reports/allure-results-history" ]; then
+          if [ -d "reports/allure-results-history" ] && [ "$(ls -A reports/allure-results-history 2>/dev/null)" ]; then
             cp -r reports/allure-results-history/* reports/allure-results/history/ || true
+          else
+            echo "No previous allure-results history to merge."
           fi
 
       - name: Generate Allure Report (Latest-with-History)
@@ -237,21 +239,22 @@ jobs:
           path: reports/chrome/latest-only
         continue-on-error: true
       
-      - name: Download Allure Report (Chrome) -  (Latest-with-History)
+      - name: Download Allure Report (Chrome) - (Latest-with-History)
         if: always()
         uses: actions/download-artifact@v4
         with:
           name: allure-report-chrome-latest-with-history
           path: reports/chrome/latest-with-history
+        continue-on-error: true
       
-      # - name: Download Allure Report (Firefox) - Latest Only
+      # - name: Download Allure Report (Firefox) - (Latest-Only)
       #   if: always()
       #   uses: actions/download-artifact@v4
       #   with:
       #     name: allure-report-firefox-latest-only
       #     path: reports/firefox/latest-only
       
-      # - name: Download Allure Report (Firefox) - Latest with History
+      # - name: Download Allure Report (Firefox) - (Latest-with-History)
       #   if: always()
       #   uses: actions/download-artifact@v4
       #   with:
