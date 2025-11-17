@@ -1,0 +1,13 @@
+2025-11-17 11:38:57,106 - INFO - [test_ab_testing_content] Starting test: test_ab_testing_content.
+2025-11-17 11:38:57,107 - INFO - [test_ab_testing_content] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 11:38:57,220 - INFO - [test_ab_testing_content] Navigation completed.
+2025-11-17 11:38:57,220 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 11:38:57,242 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 11:38:57,244 - INFO - [test_ab_testing_content] Tests for verifying title and paragraph content of page
+2025-11-17 11:38:57,244 - INFO - [test_ab_testing_content] Navigating to A/B Testing page.
+2025-11-17 11:38:57,446 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 11:38:57,461 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 11:38:57,482 - INFO - [test_ab_testing_content] Retrieved title: A/B Test Control.
+2025-11-17 11:38:57,503 - INFO - [test_ab_testing_content] Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+2025-11-17 11:38:57,504 - INFO - [test_ab_testing_content] Finished test: test_ab_testing_content (Duration: 0.26s).
+2025-11-17 11:38:57,507 - INFO - [test_ab_testing_content] Quitting driver for browser: chrome.

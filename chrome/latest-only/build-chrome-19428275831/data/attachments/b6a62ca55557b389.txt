@@ -1,0 +1,29 @@
+2025-11-17 11:38:53,974 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Starting test: test_digest_auth_login_scenarios[admin-wrong].
+2025-11-17 11:38:53,976 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Tests for Digest Authentication scenarios.
+2025-11-17 11:38:53,976 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to Digest Authentication page.
+2025-11-17 11:38:53,976 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to URL: https://admin:wrong@the-internet.herokuapp.com/digest_auth.
+2025-11-17 11:38:54,143 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigation completed.
+2025-11-17 11:38:54,143 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Check if login succeeded.
+2025-11-17 11:39:04,386 - ERROR - [test_digest_auth_login_scenarios[admin-wrong]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x561cd646432a <unknown>
+#1 0x561cd5eb0e4b <unknown>
+#2 0x561cd5f0382b <unknown>
+#3 0x561cd5f03a61 <unknown>
+#4 0x561cd5f52a44 <unknown>
+#5 0x561cd5f4fdf7 <unknown>
+#6 0x561cd5ef5c1a <unknown>
+#7 0x561cd5ef6921 <unknown>
+#8 0x561cd642b239 <unknown>
+#9 0x561cd642e1e8 <unknown>
+#10 0x561cd64144c9 <unknown>
+#11 0x561cd642edb5 <unknown>
+#12 0x561cd63fbe93 <unknown>
+#13 0x561cd6451098 <unknown>
+#14 0x561cd6451273 <unknown>
+#15 0x561cd64632c3 <unknown>
+#16 0x7efee829caa4 <unknown>
+#17 0x7efee8329c6c <unknown>
+
+2025-11-17 11:39:04,388 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page source: <html><head></head><body></body></html>
+2025-11-17 11:39:04,388 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Finished test: test_digest_auth_login_scenarios[admin-wrong] (Duration: 10.41s).

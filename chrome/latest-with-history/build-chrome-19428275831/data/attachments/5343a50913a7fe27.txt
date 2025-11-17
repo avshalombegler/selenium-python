@@ -1,0 +1,198 @@
+INFO     root:conftest.py:290 Starting test: test_files_download_functionality.
+INFO     root:base_page.py:178 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:conftest.py:114 Directory cleaned and recreated at: downloads/gw3.
+INFO     root:test_files_download.py:30 Tests Files Download.
+INFO     root:main_page.py:144 Navigating to File Download page.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_files_download.py:33 Getring list of downloadable files.
+INFO     root:test_files_download.py:36 Downloading all files in page.
+INFO     root:base_page.py:347 Download file 'test_upload.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: test_upload.txt
+INFO     root:base_page.py:347 Download file 'LambdaTest.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: LambdaTest.txt
+INFO     root:base_page.py:347 Download file 'example.json'.
+INFO     root:base_page.py:355 Clicked download link for file: example.json
+INFO     root:base_page.py:347 Download file 'arquivo.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: arquivo.txt
+INFO     root:base_page.py:347 Download file 'image.jpeg'.
+INFO     root:base_page.py:355 Clicked download link for file: image.jpeg
+INFO     root:base_page.py:347 Download file '01.jpg'.
+INFO     root:base_page.py:355 Clicked download link for file: 01.jpg
+INFO     root:base_page.py:347 Download file 'Salary structure.png'.
+INFO     root:base_page.py:355 Clicked download link for file: Salary structure.png
+INFO     root:base_page.py:347 Download file '300.png'.
+INFO     root:base_page.py:355 Clicked download link for file: 300.png
+INFO     root:base_page.py:347 Download file 'Image20251028113924.png'.
+INFO     root:base_page.py:355 Clicked download link for file: Image20251028113924.png
+INFO     root:base_page.py:347 Download file 'download (5).jpg'.
+INFO     root:base_page.py:355 Clicked download link for file: download (5).jpg
+INFO     root:base_page.py:347 Download file 'webdriverIO.png'.
+INFO     root:base_page.py:355 Clicked download link for file: webdriverIO.png
+INFO     root:base_page.py:347 Download file 'test.csv'.
+INFO     root:base_page.py:355 Clicked download link for file: test.csv
+INFO     root:base_page.py:347 Download file 'sample.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: sample.pdf
+INFO     root:base_page.py:347 Download file 'ExportData (1).json'.
+INFO     root:base_page.py:355 Clicked download link for file: ExportData (1).json
+INFO     root:base_page.py:347 Download file 'Demo.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: Demo.txt
+INFO     root:base_page.py:347 Download file 'upload.png'.
+INFO     root:base_page.py:355 Clicked download link for file: upload.png
+INFO     root:base_page.py:347 Download file 'example.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: example.txt
+INFO     root:base_page.py:347 Download file 'sm.jpg'.
+INFO     root:base_page.py:355 Clicked download link for file: sm.jpg
+INFO     root:base_page.py:347 Download file 'drawing.png'.
+INFO     root:base_page.py:355 Clicked download link for file: drawing.png
+INFO     root:base_page.py:347 Download file 'chromedriver.exe'.
+INFO     root:base_page.py:355 Clicked download link for file: chromedriver.exe
+INFO     root:base_page.py:347 Download file 'Screenshot 2025-10-09 093054.png'.
+INFO     root:base_page.py:355 Clicked download link for file: Screenshot 2025-10-09 093054.png
+INFO     root:base_page.py:347 Download file 'test.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: test.txt
+INFO     root:base_page.py:347 Download file 'Monthly Calendar - Cloud & DevOps.png'.
+INFO     root:base_page.py:355 Clicked download link for file: Monthly Calendar - Cloud & DevOps.png
+INFO     root:base_page.py:347 Download file 'targetScreenshot (3).png'.
+INFO     root:base_page.py:355 Clicked download link for file: targetScreenshot (3).png
+INFO     root:base_page.py:347 Download file 'file.json'.
+INFO     root:base_page.py:355 Clicked download link for file: file.json
+INFO     root:base_page.py:347 Download file 'A020BEEE-642C-40CC-A070-AE6AED5FD505.png'.
+INFO     root:base_page.py:355 Clicked download link for file: A020BEEE-642C-40CC-A070-AE6AED5FD505.png
+INFO     root:base_page.py:347 Download file 'learning partner.png'.
+INFO     root:base_page.py:355 Clicked download link for file: learning partner.png
+INFO     root:base_page.py:347 Download file 'test-file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: test-file.txt
+INFO     root:base_page.py:347 Download file 'Sample.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: Sample.pdf
+INFO     root:base_page.py:347 Download file 'SomeFile.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: SomeFile.txt
+INFO     root:base_page.py:347 Download file 'sampleFile.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: sampleFile.txt
+INFO     root:base_page.py:347 Download file 'Yerubandi_Sri_Laxmi_Manasa_CV.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: Yerubandi_Sri_Laxmi_Manasa_CV.pdf
+INFO     root:base_page.py:347 Download file 'TestData.xlsx'.
+INFO     root:base_page.py:355 Clicked download link for file: TestData.xlsx
+INFO     root:base_page.py:347 Download file 'upload-test.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: upload-test.txt
+INFO     root:base_page.py:347 Download file 'TextDoc.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: TextDoc.txt
+INFO     root:base_page.py:347 Download file 'Fee Receipt.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: Fee Receipt.pdf
+INFO     root:base_page.py:347 Download file 'app_liveBug.jpg'.
+INFO     root:base_page.py:355 Clicked download link for file: app_liveBug.jpg
+INFO     root:base_page.py:347 Download file 'prab pic.png'.
+INFO     root:base_page.py:355 Clicked download link for file: prab pic.png
+INFO     root:base_page.py:347 Download file 'wpx.png'.
+INFO     root:base_page.py:355 Clicked download link for file: wpx.png
+INFO     root:base_page.py:347 Download file 'kote.jpg'.
+INFO     root:base_page.py:355 Clicked download link for file: kote.jpg
+INFO     root:base_page.py:347 Download file 'bb.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: bb.txt
+INFO     root:base_page.py:347 Download file 'megadyneBladeHero.jpg'.
+INFO     root:base_page.py:355 Clicked download link for file: megadyneBladeHero.jpg
+INFO     root:base_page.py:347 Download file 'cat.png'.
+INFO     root:base_page.py:355 Clicked download link for file: cat.png
+INFO     root:base_page.py:347 Download file 'Javascript Notes.docx'.
+INFO     root:base_page.py:355 Clicked download link for file: Javascript Notes.docx
+INFO     root:base_page.py:347 Download file 'empty.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: empty.txt
+INFO     root:base_page.py:347 Download file 'testUpload.json'.
+INFO     root:base_page.py:355 Clicked download link for file: testUpload.json
+INFO     root:base_page.py:347 Download file '1746772007968.png'.
+INFO     root:base_page.py:355 Clicked download link for file: 1746772007968.png
+INFO     root:base_page.py:347 Download file 'test1.json'.
+INFO     root:base_page.py:355 Clicked download link for file: test1.json
+INFO     root:base_page.py:347 Download file 'test_file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: test_file.txt
+INFO     root:base_page.py:347 Download file 'some-file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: some-file.txt
+INFO     root:base_page.py:347 Download file 'empty_file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: empty_file.txt
+INFO     root:base_page.py:347 Download file 'test.json'.
+INFO     root:base_page.py:355 Clicked download link for file: test.json
+INFO     root:base_page.py:347 Download file 'sample-zip-file.zip'.
+INFO     root:base_page.py:355 Clicked download link for file: sample-zip-file.zip
+INFO     root:base_page.py:347 Download file '20MB.bin'.
+INFO     root:base_page.py:355 Clicked download link for file: 20MB.bin
+INFO     root:base_page.py:347 Download file 'upload-me.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: upload-me.txt
+INFO     root:base_page.py:347 Download file 'test-upload.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: test-upload.txt
+INFO     root:base_page.py:347 Download file '1746772008427.png'.
+INFO     root:base_page.py:355 Clicked download link for file: 1746772008427.png
+INFO     root:base_page.py:347 Download file 'sample.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: sample.txt
+INFO     root:base_page.py:347 Download file 'ExcelUtility.java'.
+INFO     root:base_page.py:355 Clicked download link for file: ExcelUtility.java
+INFO     root:base_page.py:347 Download file 'TestUpload.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: TestUpload.txt
+INFO     root:base_page.py:347 Download file 'Kurunthokai-Book.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: Kurunthokai-Book.pdf
+INFO     root:base_page.py:347 Download file 'zero_bytes_file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: zero_bytes_file.txt
+INFO     root:base_page.py:347 Download file 'search.png'.
+INFO     root:base_page.py:355 Clicked download link for file: search.png
+INFO     root:base_page.py:347 Download file 'tmpaly450gg.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: tmpaly450gg.txt
+INFO     root:base_page.py:347 Download file 'image.png'.
+INFO     root:base_page.py:355 Clicked download link for file: image.png
+INFO     root:base_page.py:347 Download file 'Image.PNG'.
+INFO     root:base_page.py:355 Clicked download link for file: Image.PNG
+INFO     root:base_page.py:347 Download file 'sample.png'.
+INFO     root:base_page.py:355 Clicked download link for file: sample.png
+INFO     root:base_page.py:347 Download file 'textfile1763218965129.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: textfile1763218965129.txt
+INFO     root:base_page.py:347 Download file '7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: 7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf
+INFO     root:base_page.py:347 Download file 'ABITURIJEDUSABEAlicadeAmpersand.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: ABITURIJEDUSABEAlicadeAmpersand.pdf
+INFO     root:base_page.py:347 Download file 'test1.html'.
+INFO     root:base_page.py:355 Clicked download link for file: test1.html
+INFO     root:base_page.py:347 Download file 'Jpeg_with_exif.jpeg'.
+INFO     root:base_page.py:355 Clicked download link for file: Jpeg_with_exif.jpeg
+INFO     root:base_page.py:347 Download file 'selenium-snapshot.png'.
+INFO     root:base_page.py:355 Clicked download link for file: selenium-snapshot.png
+INFO     root:base_page.py:347 Download file 'PRD 32 - Hotel listing booking.com.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: PRD 32 - Hotel listing booking.com.pdf
+INFO     root:base_page.py:347 Download file 'large_test_file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: large_test_file.txt
+INFO     root:base_page.py:347 Download file 'pic1.jpg'.
+INFO     root:base_page.py:355 Clicked download link for file: pic1.jpg
+INFO     root:base_page.py:347 Download file 'DocumentPDF.pdf'.
+INFO     root:base_page.py:355 Clicked download link for file: DocumentPDF.pdf
+INFO     root:base_page.py:347 Download file 'test.xml'.
+INFO     root:base_page.py:355 Clicked download link for file: test.xml
+INFO     root:base_page.py:347 Download file 'selenide-intro.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: selenide-intro.txt
+INFO     root:base_page.py:347 Download file '4th_Aug_2025.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: 4th_Aug_2025.txt
+INFO     root:base_page.py:347 Download file 'Excel.xlsx'.
+INFO     root:base_page.py:355 Clicked download link for file: Excel.xlsx
+INFO     root:base_page.py:347 Download file 'sample_media_file.png'.
+INFO     root:base_page.py:355 Clicked download link for file: sample_media_file.png
+INFO     root:base_page.py:347 Download file 'test-image.png'.
+INFO     root:base_page.py:355 Clicked download link for file: test-image.png
+INFO     root:base_page.py:347 Download file 'large-test-file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: large-test-file.txt
+INFO     root:base_page.py:347 Download file 'random_data.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: random_data.txt
+INFO     root:base_page.py:347 Download file 'my_custom_file.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: my_custom_file.txt
+INFO     root:base_page.py:347 Download file 'testfile.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: testfile.txt
+INFO     root:base_page.py:347 Download file 'Screenshot.png'.
+INFO     root:base_page.py:355 Clicked download link for file: Screenshot.png
+INFO     root:base_page.py:347 Download file 'playwrightlogo.png'.
+INFO     root:base_page.py:355 Clicked download link for file: playwrightlogo.png
+INFO     root:base_page.py:347 Download file 'screenshot.png'.
+INFO     root:base_page.py:355 Clicked download link for file: screenshot.png
+INFO     root:base_page.py:347 Download file 'tmplmv8ic1i.txt'.
+INFO     root:base_page.py:355 Clicked download link for file: tmplmv8ic1i.txt
+INFO     root:base_page.py:347 Download file 's1.png'.
+INFO     root:base_page.py:355 Clicked download link for file: s1.png
+INFO     root:test_files_download.py:40 Verifying downloaded files count equals to files in page.
+INFO     root:conftest.py:259 Quitting driver for browser: chrome.
