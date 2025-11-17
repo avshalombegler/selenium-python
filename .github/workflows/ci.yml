@@ -332,4 +332,3 @@ jobs:
           git add .
           git commit -m "Clean old Allure reports" || echo "No changes"
           git push
-
