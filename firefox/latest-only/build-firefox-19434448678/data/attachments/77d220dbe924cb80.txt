@@ -1,0 +1,30 @@
+2025-11-17 15:14:09,152 - INFO - [] Directory cleaned and recreated at: downloads/gw1.
+2025-11-17 15:14:09,153 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-17 15:14:09,154 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-17 15:14:09,155 - INFO - [] xdist worker is: gw1
+2025-11-17 15:14:09,155 - INFO - [] ====== WebDriver manager ======
+2025-11-17 15:14:09,229 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 15:14:09,229 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-17 15:14:09,551 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 15:14:09,552 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-17 15:14:09,876 - INFO - [] There is no [linux64] geckodriver "v0.36.0" for browser firefox "145.0" in cache
+2025-11-17 15:14:09,876 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 15:14:09,876 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-17 15:14:10,210 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-17 15:14:10,210 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-17 15:14:10,530 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-17 15:14:10,720 - INFO - [] Driver downloading response is 200
+2025-11-17 15:14:10,820 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 15:14:10,821 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-17 15:14:11,180 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/geckodriver/linux64/v0.36.0]
+2025-11-17 15:14:19,091 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.].
+2025-11-17 15:14:19,092 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 15:14:20,039 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-11-17 15:14:20,039 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 15:14:20,118 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 15:14:20,121 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-17 15:14:20,121 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-17 15:14:20,122 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-17 15:14:20,122 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-17 15:14:20,254 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-17 15:14:20,255 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Finished test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.13s).

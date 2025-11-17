@@ -1,0 +1,40 @@
+2025-11-17 15:15:13,963 - INFO - [test_checkbox_remove_and_add] Starting test: test_checkbox_remove_and_add.
+2025-11-17 15:15:13,964 - INFO - [test_checkbox_remove_and_add] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 15:15:14,060 - INFO - [test_checkbox_remove_and_add] Navigation completed.
+2025-11-17 15:15:14,061 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 15:15:14,074 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 15:15:14,075 - INFO - [test_checkbox_remove_and_add] Test Remove/add checkbox area.
+2025-11-17 15:15:14,076 - INFO - [test_checkbox_remove_and_add] Navigating to Dynamic Controls page.
+2025-11-17 15:15:14,321 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-17 15:15:14,341 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-17 15:15:14,341 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-17 15:15:14,359 - INFO - [test_checkbox_remove_and_add] Clicking remove button.
+2025-11-17 15:15:14,535 - INFO - [test_checkbox_remove_and_add] Waiting for loader to disappear.
+2025-11-17 15:15:17,621 - INFO - [test_checkbox_remove_and_add] Checking if checkbox absent.
+2025-11-17 15:15:27,864 - ERROR - [test_checkbox_remove_and_add] Timeout after 10s for locator ('css selector', "input[type='checkbox']"): Message: 
+Stacktrace:
+#0 0x55de34eb232a <unknown>
+#1 0x55de348fee4b <unknown>
+#2 0x55de3495182b <unknown>
+#3 0x55de34951a61 <unknown>
+#4 0x55de349a0a44 <unknown>
+#5 0x55de3499ddf7 <unknown>
+#6 0x55de34943c1a <unknown>
+#7 0x55de34944921 <unknown>
+#8 0x55de34e79239 <unknown>
+#9 0x55de34e7c1e8 <unknown>
+#10 0x55de34e624c9 <unknown>
+#11 0x55de34e7cdb5 <unknown>
+#12 0x55de34e49e93 <unknown>
+#13 0x55de34e9f098 <unknown>
+#14 0x55de34e9f273 <unknown>
+#15 0x55de34eb12c3 <unknown>
+#16 0x7f9cfc29caa4 <unknown>
+#17 0x7f9cfc329c6c <unknown>
+
+2025-11-17 15:15:27,864 - INFO - [test_checkbox_remove_and_add] Verifying remove message text.
+2025-11-17 15:15:27,882 - INFO - [test_checkbox_remove_and_add] Clicking add button.
+2025-11-17 15:15:27,948 - INFO - [test_checkbox_remove_and_add] Waiting for loader to disappear.
+2025-11-17 15:15:31,008 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-17 15:15:31,018 - INFO - [test_checkbox_remove_and_add] Verifying add message text.
+2025-11-17 15:15:31,034 - INFO - [test_checkbox_remove_and_add] Finished test: test_checkbox_remove_and_add (Duration: 16.96s).
