@@ -1,0 +1,25 @@
+2025-11-17 06:56:09,037 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-17 06:56:09,039 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-17 06:56:09,039 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-17 06:56:09,040 - INFO - [] xdist worker is: gw2
+2025-11-17 06:56:09,040 - INFO - [] ====== WebDriver manager ======
+2025-11-17 06:56:09,115 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 06:56:09,219 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 06:56:09,312 - INFO - [] There is no [linux64] geckodriver "v0.36.0" for browser firefox "145.0" in cache
+2025-11-17 06:56:09,313 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 06:56:09,407 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-17 06:56:09,561 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-17 06:56:09,705 - INFO - [] Driver downloading response is 200
+2025-11-17 06:56:09,746 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 06:56:09,924 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw2/drivers/geckodriver/linux64/v0.36.0]
+2025-11-17 06:56:18,657 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.].
+2025-11-17 06:56:18,661 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 06:56:19,283 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-11-17 06:56:19,284 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 06:56:19,370 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 06:56:19,381 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-17 06:56:19,384 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-17 06:56:19,384 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-17 06:56:19,384 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-17 06:56:19,470 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-17 06:56:19,471 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Finished test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.09s).

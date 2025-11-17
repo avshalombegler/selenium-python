@@ -1,0 +1,10 @@
+INFO     root:conftest.py:290 Starting test: test_each_button_clicks[red].
+INFO     root:base_page.py:178 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_challenging_dom.py:28 Verify each button in page is clickable.
+INFO     root:main_page.py:61 Navigating to Challenging DOM page.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:31 Clicking red button.
