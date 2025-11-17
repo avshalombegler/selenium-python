@@ -102,10 +102,10 @@ PASSWORD=SuperSecretPassword!
 ## Allure Reports (Live)
 Latest reports are published automatically after every successful CI run:
 
-- **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19431938142/)
-- **Chrome - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19431938142/)
-- **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19408184947/)
-- **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19408184947/)
+- **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19432878234/)
+- **Chrome - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19432878234/)
+- **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19432878234/)
+- **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19432878234/)
 
 ## Project layout
 ```
