@@ -190,7 +190,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.browser }}-history
-          path: reports/allure-results/
+          path: reports/allure-results/history
           retention-days: 30
 
       - name: Upload Allure Report (Latest-with-History)
