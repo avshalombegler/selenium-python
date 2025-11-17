@@ -1,0 +1,14 @@
+2025-11-17 12:58:09,618 - INFO - [test_content_changes_after_refresh] Starting test: test_content_changes_after_refresh.
+2025-11-17 12:58:09,619 - INFO - [test_content_changes_after_refresh] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 12:58:09,673 - INFO - [test_content_changes_after_refresh] Navigation completed.
+2025-11-17 12:58:09,674 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 12:58:09,692 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 12:58:09,694 - INFO - [test_content_changes_after_refresh] Test that content changes after page refresh.
+2025-11-17 12:58:09,694 - INFO - [test_content_changes_after_refresh] Navigating to Dynamic Content page.
+2025-11-17 12:58:09,840 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 12:58:09,858 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 12:58:10,082 - INFO - [test_content_changes_after_refresh] Validating initial content blocks structure and count.
+2025-11-17 12:58:10,082 - INFO - [test_content_changes_after_refresh] Validating refreshed content blocks structure and count.
+2025-11-17 12:58:10,082 - INFO - [test_content_changes_after_refresh] Comparing content changes after refresh.
+2025-11-17 12:58:10,083 - INFO - [test_content_changes_after_refresh] Finished test: test_content_changes_after_refresh (Duration: 0.39s).
+2025-11-17 12:58:10,086 - INFO - [test_content_changes_after_refresh] Quitting driver for browser: chrome.

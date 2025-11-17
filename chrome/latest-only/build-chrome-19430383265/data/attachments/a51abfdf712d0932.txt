@@ -1,0 +1,207 @@
+2025-11-17 12:58:09,003 - INFO - [test_files_download_functionality] Starting test: test_files_download_functionality.
+2025-11-17 12:58:09,003 - INFO - [test_files_download_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 12:58:09,045 - INFO - [test_files_download_functionality] Navigation completed.
+2025-11-17 12:58:09,045 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 12:58:09,058 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 12:58:09,059 - INFO - [test_files_download_functionality] Directory cleaned and recreated at: downloads/gw3.
+2025-11-17 12:58:09,060 - INFO - [test_files_download_functionality] Tests Files Download.
+2025-11-17 12:58:09,060 - INFO - [test_files_download_functionality] Navigating to File Download page.
+2025-11-17 12:58:09,178 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-17 12:58:09,198 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-17 12:58:09,198 - INFO - [test_files_download_functionality] Getring list of downloadable files.
+2025-11-17 12:58:10,224 - INFO - [test_files_download_functionality] Downloading all files in page.
+2025-11-17 12:58:10,224 - INFO - [test_files_download_functionality] Download file 'test_upload.txt'.
+2025-11-17 12:58:10,387 - INFO - [test_files_download_functionality] Clicked download link for file: test_upload.txt
+2025-11-17 12:58:10,387 - INFO - [test_files_download_functionality] Download file 'LambdaTest.txt'.
+2025-11-17 12:58:10,490 - INFO - [test_files_download_functionality] Clicked download link for file: LambdaTest.txt
+2025-11-17 12:58:10,490 - INFO - [test_files_download_functionality] Download file 'example.json'.
+2025-11-17 12:58:10,585 - INFO - [test_files_download_functionality] Clicked download link for file: example.json
+2025-11-17 12:58:10,586 - INFO - [test_files_download_functionality] Download file 'arquivo.txt'.
+2025-11-17 12:58:10,681 - INFO - [test_files_download_functionality] Clicked download link for file: arquivo.txt
+2025-11-17 12:58:10,681 - INFO - [test_files_download_functionality] Download file 'image.jpeg'.
+2025-11-17 12:58:10,779 - INFO - [test_files_download_functionality] Clicked download link for file: image.jpeg
+2025-11-17 12:58:10,779 - INFO - [test_files_download_functionality] Download file '01.jpg'.
+2025-11-17 12:58:10,876 - INFO - [test_files_download_functionality] Clicked download link for file: 01.jpg
+2025-11-17 12:58:10,877 - INFO - [test_files_download_functionality] Download file 'Salary structure.png'.
+2025-11-17 12:58:10,976 - INFO - [test_files_download_functionality] Clicked download link for file: Salary structure.png
+2025-11-17 12:58:10,977 - INFO - [test_files_download_functionality] Download file '300.png'.
+2025-11-17 12:58:11,076 - INFO - [test_files_download_functionality] Clicked download link for file: 300.png
+2025-11-17 12:58:11,077 - INFO - [test_files_download_functionality] Download file 'Image20251028113924.png'.
+2025-11-17 12:58:11,176 - INFO - [test_files_download_functionality] Clicked download link for file: Image20251028113924.png
+2025-11-17 12:58:11,177 - INFO - [test_files_download_functionality] Download file 'download (5).jpg'.
+2025-11-17 12:58:11,282 - INFO - [test_files_download_functionality] Clicked download link for file: download (5).jpg
+2025-11-17 12:58:11,283 - INFO - [test_files_download_functionality] Download file 'webdriverIO.png'.
+2025-11-17 12:58:11,394 - INFO - [test_files_download_functionality] Clicked download link for file: webdriverIO.png
+2025-11-17 12:58:11,394 - INFO - [test_files_download_functionality] Download file 'test.csv'.
+2025-11-17 12:58:11,494 - INFO - [test_files_download_functionality] Clicked download link for file: test.csv
+2025-11-17 12:58:11,494 - INFO - [test_files_download_functionality] Download file 'sample.pdf'.
+2025-11-17 12:58:11,593 - INFO - [test_files_download_functionality] Clicked download link for file: sample.pdf
+2025-11-17 12:58:11,593 - INFO - [test_files_download_functionality] Download file 'ExportData (1).json'.
+2025-11-17 12:58:11,693 - INFO - [test_files_download_functionality] Clicked download link for file: ExportData (1).json
+2025-11-17 12:58:11,693 - INFO - [test_files_download_functionality] Download file 'Demo.txt'.
+2025-11-17 12:58:11,843 - INFO - [test_files_download_functionality] Clicked download link for file: Demo.txt
+2025-11-17 12:58:11,843 - INFO - [test_files_download_functionality] Download file 'upload.png'.
+2025-11-17 12:58:11,940 - INFO - [test_files_download_functionality] Clicked download link for file: upload.png
+2025-11-17 12:58:11,941 - INFO - [test_files_download_functionality] Download file 'example.txt'.
+2025-11-17 12:58:12,039 - INFO - [test_files_download_functionality] Clicked download link for file: example.txt
+2025-11-17 12:58:12,039 - INFO - [test_files_download_functionality] Download file 'sm.jpg'.
+2025-11-17 12:58:12,136 - INFO - [test_files_download_functionality] Clicked download link for file: sm.jpg
+2025-11-17 12:58:12,137 - INFO - [test_files_download_functionality] Download file 'drawing.png'.
+2025-11-17 12:58:12,236 - INFO - [test_files_download_functionality] Clicked download link for file: drawing.png
+2025-11-17 12:58:12,237 - INFO - [test_files_download_functionality] Download file 'chromedriver.exe'.
+2025-11-17 12:58:12,336 - INFO - [test_files_download_functionality] Clicked download link for file: chromedriver.exe
+2025-11-17 12:58:12,337 - INFO - [test_files_download_functionality] Download file 'Screenshot 2025-10-09 093054.png'.
+2025-11-17 12:58:12,477 - INFO - [test_files_download_functionality] Clicked download link for file: Screenshot 2025-10-09 093054.png
+2025-11-17 12:58:12,477 - INFO - [test_files_download_functionality] Download file 'test.txt'.
+2025-11-17 12:58:12,577 - INFO - [test_files_download_functionality] Clicked download link for file: test.txt
+2025-11-17 12:58:12,577 - INFO - [test_files_download_functionality] Download file 'Monthly Calendar - Cloud & DevOps.png'.
+2025-11-17 12:58:12,676 - INFO - [test_files_download_functionality] Clicked download link for file: Monthly Calendar - Cloud & DevOps.png
+2025-11-17 12:58:12,676 - INFO - [test_files_download_functionality] Download file 'targetScreenshot (3).png'.
+2025-11-17 12:58:12,780 - INFO - [test_files_download_functionality] Clicked download link for file: targetScreenshot (3).png
+2025-11-17 12:58:12,780 - INFO - [test_files_download_functionality] Download file 'file.json'.
+2025-11-17 12:58:12,880 - INFO - [test_files_download_functionality] Clicked download link for file: file.json
+2025-11-17 12:58:12,880 - INFO - [test_files_download_functionality] Download file 'A020BEEE-642C-40CC-A070-AE6AED5FD505.png'.
+2025-11-17 12:58:12,982 - INFO - [test_files_download_functionality] Clicked download link for file: A020BEEE-642C-40CC-A070-AE6AED5FD505.png
+2025-11-17 12:58:12,982 - INFO - [test_files_download_functionality] Download file 'learning partner.png'.
+2025-11-17 12:58:13,082 - INFO - [test_files_download_functionality] Clicked download link for file: learning partner.png
+2025-11-17 12:58:13,082 - INFO - [test_files_download_functionality] Download file 'test-file.txt'.
+2025-11-17 12:58:13,185 - INFO - [test_files_download_functionality] Clicked download link for file: test-file.txt
+2025-11-17 12:58:13,186 - INFO - [test_files_download_functionality] Download file 'Sample.pdf'.
+2025-11-17 12:58:13,288 - INFO - [test_files_download_functionality] Clicked download link for file: Sample.pdf
+2025-11-17 12:58:13,288 - INFO - [test_files_download_functionality] Download file 'SomeFile.txt'.
+2025-11-17 12:58:13,393 - INFO - [test_files_download_functionality] Clicked download link for file: SomeFile.txt
+2025-11-17 12:58:13,393 - INFO - [test_files_download_functionality] Download file 'sampleFile.txt'.
+2025-11-17 12:58:13,499 - INFO - [test_files_download_functionality] Clicked download link for file: sampleFile.txt
+2025-11-17 12:58:13,500 - INFO - [test_files_download_functionality] Download file 'Yerubandi_Sri_Laxmi_Manasa_CV.pdf'.
+2025-11-17 12:58:13,606 - INFO - [test_files_download_functionality] Clicked download link for file: Yerubandi_Sri_Laxmi_Manasa_CV.pdf
+2025-11-17 12:58:13,607 - INFO - [test_files_download_functionality] Download file 'TestData.xlsx'.
+2025-11-17 12:58:13,709 - INFO - [test_files_download_functionality] Clicked download link for file: TestData.xlsx
+2025-11-17 12:58:13,710 - INFO - [test_files_download_functionality] Download file 'upload-test.txt'.
+2025-11-17 12:58:13,814 - INFO - [test_files_download_functionality] Clicked download link for file: upload-test.txt
+2025-11-17 12:58:13,815 - INFO - [test_files_download_functionality] Download file 'TextDoc.txt'.
+2025-11-17 12:58:13,919 - INFO - [test_files_download_functionality] Clicked download link for file: TextDoc.txt
+2025-11-17 12:58:13,920 - INFO - [test_files_download_functionality] Download file 'Fee Receipt.pdf'.
+2025-11-17 12:58:14,026 - INFO - [test_files_download_functionality] Clicked download link for file: Fee Receipt.pdf
+2025-11-17 12:58:14,026 - INFO - [test_files_download_functionality] Download file 'app_liveBug.jpg'.
+2025-11-17 12:58:14,135 - INFO - [test_files_download_functionality] Clicked download link for file: app_liveBug.jpg
+2025-11-17 12:58:14,136 - INFO - [test_files_download_functionality] Download file 'prab pic.png'.
+2025-11-17 12:58:14,238 - INFO - [test_files_download_functionality] Clicked download link for file: prab pic.png
+2025-11-17 12:58:14,238 - INFO - [test_files_download_functionality] Download file 'wpx.png'.
+2025-11-17 12:58:14,343 - INFO - [test_files_download_functionality] Clicked download link for file: wpx.png
+2025-11-17 12:58:14,344 - INFO - [test_files_download_functionality] Download file 'kote.jpg'.
+2025-11-17 12:58:14,449 - INFO - [test_files_download_functionality] Clicked download link for file: kote.jpg
+2025-11-17 12:58:14,449 - INFO - [test_files_download_functionality] Download file 'bb.txt'.
+2025-11-17 12:58:14,553 - INFO - [test_files_download_functionality] Clicked download link for file: bb.txt
+2025-11-17 12:58:14,554 - INFO - [test_files_download_functionality] Download file 'megadyneBladeHero.jpg'.
+2025-11-17 12:58:14,661 - INFO - [test_files_download_functionality] Clicked download link for file: megadyneBladeHero.jpg
+2025-11-17 12:58:14,661 - INFO - [test_files_download_functionality] Download file 'cat.png'.
+2025-11-17 12:58:14,769 - INFO - [test_files_download_functionality] Clicked download link for file: cat.png
+2025-11-17 12:58:14,769 - INFO - [test_files_download_functionality] Download file 'Javascript Notes.docx'.
+2025-11-17 12:58:14,878 - INFO - [test_files_download_functionality] Clicked download link for file: Javascript Notes.docx
+2025-11-17 12:58:14,879 - INFO - [test_files_download_functionality] Download file 'empty.txt'.
+2025-11-17 12:58:14,993 - INFO - [test_files_download_functionality] Clicked download link for file: empty.txt
+2025-11-17 12:58:14,993 - INFO - [test_files_download_functionality] Download file 'testUpload.json'.
+2025-11-17 12:58:15,105 - INFO - [test_files_download_functionality] Clicked download link for file: testUpload.json
+2025-11-17 12:58:15,105 - INFO - [test_files_download_functionality] Download file '1746772007968.png'.
+2025-11-17 12:58:15,211 - INFO - [test_files_download_functionality] Clicked download link for file: 1746772007968.png
+2025-11-17 12:58:15,212 - INFO - [test_files_download_functionality] Download file 'test1.json'.
+2025-11-17 12:58:15,348 - INFO - [test_files_download_functionality] Clicked download link for file: test1.json
+2025-11-17 12:58:15,348 - INFO - [test_files_download_functionality] Download file 'test_file.txt'.
+2025-11-17 12:58:15,452 - INFO - [test_files_download_functionality] Clicked download link for file: test_file.txt
+2025-11-17 12:58:15,453 - INFO - [test_files_download_functionality] Download file 'some-file.txt'.
+2025-11-17 12:58:15,560 - INFO - [test_files_download_functionality] Clicked download link for file: some-file.txt
+2025-11-17 12:58:15,561 - INFO - [test_files_download_functionality] Download file 'empty_file.txt'.
+2025-11-17 12:58:15,662 - INFO - [test_files_download_functionality] Clicked download link for file: empty_file.txt
+2025-11-17 12:58:15,663 - INFO - [test_files_download_functionality] Download file 'test.json'.
+2025-11-17 12:58:15,764 - INFO - [test_files_download_functionality] Clicked download link for file: test.json
+2025-11-17 12:58:15,764 - INFO - [test_files_download_functionality] Download file 'Testcase1_hubspot-crm.xlsx'.
+2025-11-17 12:58:15,869 - INFO - [test_files_download_functionality] Clicked download link for file: Testcase1_hubspot-crm.xlsx
+2025-11-17 12:58:15,870 - INFO - [test_files_download_functionality] Download file 'sample-zip-file.zip'.
+2025-11-17 12:58:15,976 - INFO - [test_files_download_functionality] Clicked download link for file: sample-zip-file.zip
+2025-11-17 12:58:15,977 - INFO - [test_files_download_functionality] Download file '20MB.bin'.
+2025-11-17 12:58:16,097 - INFO - [test_files_download_functionality] Clicked download link for file: 20MB.bin
+2025-11-17 12:58:16,098 - INFO - [test_files_download_functionality] Download file 'upload-me.txt'.
+2025-11-17 12:58:16,244 - INFO - [test_files_download_functionality] Clicked download link for file: upload-me.txt
+2025-11-17 12:58:16,245 - INFO - [test_files_download_functionality] Download file 'test-upload.txt'.
+2025-11-17 12:58:16,348 - INFO - [test_files_download_functionality] Clicked download link for file: test-upload.txt
+2025-11-17 12:58:16,349 - INFO - [test_files_download_functionality] Download file '1746772008427.png'.
+2025-11-17 12:58:16,458 - INFO - [test_files_download_functionality] Clicked download link for file: 1746772008427.png
+2025-11-17 12:58:16,459 - INFO - [test_files_download_functionality] Download file 'sample.txt'.
+2025-11-17 12:58:16,567 - INFO - [test_files_download_functionality] Clicked download link for file: sample.txt
+2025-11-17 12:58:16,568 - INFO - [test_files_download_functionality] Download file 'ExcelUtility.java'.
+2025-11-17 12:58:16,678 - INFO - [test_files_download_functionality] Clicked download link for file: ExcelUtility.java
+2025-11-17 12:58:16,679 - INFO - [test_files_download_functionality] Download file 'TestUpload.txt'.
+2025-11-17 12:58:16,788 - INFO - [test_files_download_functionality] Clicked download link for file: TestUpload.txt
+2025-11-17 12:58:16,788 - INFO - [test_files_download_functionality] Download file 'Kurunthokai-Book.pdf'.
+2025-11-17 12:58:16,902 - INFO - [test_files_download_functionality] Clicked download link for file: Kurunthokai-Book.pdf
+2025-11-17 12:58:16,902 - INFO - [test_files_download_functionality] Download file 'zero_bytes_file.txt'.
+2025-11-17 12:58:17,019 - INFO - [test_files_download_functionality] Clicked download link for file: zero_bytes_file.txt
+2025-11-17 12:58:17,020 - INFO - [test_files_download_functionality] Download file 'search.png'.
+2025-11-17 12:58:17,130 - INFO - [test_files_download_functionality] Clicked download link for file: search.png
+2025-11-17 12:58:17,130 - INFO - [test_files_download_functionality] Download file 'tmpaly450gg.txt'.
+2025-11-17 12:58:17,239 - INFO - [test_files_download_functionality] Clicked download link for file: tmpaly450gg.txt
+2025-11-17 12:58:17,240 - INFO - [test_files_download_functionality] Download file 'image.png'.
+2025-11-17 12:58:17,349 - INFO - [test_files_download_functionality] Clicked download link for file: image.png
+2025-11-17 12:58:17,349 - INFO - [test_files_download_functionality] Download file 'Image.PNG'.
+2025-11-17 12:58:17,460 - INFO - [test_files_download_functionality] Clicked download link for file: Image.PNG
+2025-11-17 12:58:17,461 - INFO - [test_files_download_functionality] Download file 'sample.png'.
+2025-11-17 12:58:17,573 - INFO - [test_files_download_functionality] Clicked download link for file: sample.png
+2025-11-17 12:58:17,573 - INFO - [test_files_download_functionality] Download file 'textfile1763218965129.txt'.
+2025-11-17 12:58:17,686 - INFO - [test_files_download_functionality] Clicked download link for file: textfile1763218965129.txt
+2025-11-17 12:58:17,686 - INFO - [test_files_download_functionality] Download file '7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf'.
+2025-11-17 12:58:17,804 - INFO - [test_files_download_functionality] Clicked download link for file: 7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf
+2025-11-17 12:58:17,805 - INFO - [test_files_download_functionality] Download file 'ABITURIJEDUSABEAlicadeAmpersand.pdf'.
+2025-11-17 12:58:17,921 - INFO - [test_files_download_functionality] Clicked download link for file: ABITURIJEDUSABEAlicadeAmpersand.pdf
+2025-11-17 12:58:17,922 - INFO - [test_files_download_functionality] Download file 'test1.html'.
+2025-11-17 12:58:18,037 - INFO - [test_files_download_functionality] Clicked download link for file: test1.html
+2025-11-17 12:58:18,038 - INFO - [test_files_download_functionality] Download file 'Jpeg_with_exif.jpeg'.
+2025-11-17 12:58:18,154 - INFO - [test_files_download_functionality] Clicked download link for file: Jpeg_with_exif.jpeg
+2025-11-17 12:58:18,154 - INFO - [test_files_download_functionality] Download file 'selenium-snapshot.png'.
+2025-11-17 12:58:18,271 - INFO - [test_files_download_functionality] Clicked download link for file: selenium-snapshot.png
+2025-11-17 12:58:18,271 - INFO - [test_files_download_functionality] Download file 'PRD 32 - Hotel listing booking.com.pdf'.
+2025-11-17 12:58:18,387 - INFO - [test_files_download_functionality] Clicked download link for file: PRD 32 - Hotel listing booking.com.pdf
+2025-11-17 12:58:18,388 - INFO - [test_files_download_functionality] Download file 'large_test_file.txt'.
+2025-11-17 12:58:18,502 - INFO - [test_files_download_functionality] Clicked download link for file: large_test_file.txt
+2025-11-17 12:58:18,503 - INFO - [test_files_download_functionality] Download file 'pic1.jpg'.
+2025-11-17 12:58:18,619 - INFO - [test_files_download_functionality] Clicked download link for file: pic1.jpg
+2025-11-17 12:58:18,620 - INFO - [test_files_download_functionality] Download file 'DocumentPDF.pdf'.
+2025-11-17 12:58:18,733 - INFO - [test_files_download_functionality] Clicked download link for file: DocumentPDF.pdf
+2025-11-17 12:58:18,733 - INFO - [test_files_download_functionality] Download file 'test.xml'.
+2025-11-17 12:58:18,847 - INFO - [test_files_download_functionality] Clicked download link for file: test.xml
+2025-11-17 12:58:18,847 - INFO - [test_files_download_functionality] Download file 'selenide-intro.txt'.
+2025-11-17 12:58:18,961 - INFO - [test_files_download_functionality] Clicked download link for file: selenide-intro.txt
+2025-11-17 12:58:18,962 - INFO - [test_files_download_functionality] Download file '4th_Aug_2025.txt'.
+2025-11-17 12:58:19,078 - INFO - [test_files_download_functionality] Clicked download link for file: 4th_Aug_2025.txt
+2025-11-17 12:58:19,079 - INFO - [test_files_download_functionality] Download file 'Excel.xlsx'.
+2025-11-17 12:58:19,191 - INFO - [test_files_download_functionality] Clicked download link for file: Excel.xlsx
+2025-11-17 12:58:19,191 - INFO - [test_files_download_functionality] Download file 'sample_media_file.png'.
+2025-11-17 12:58:19,338 - INFO - [test_files_download_functionality] Clicked download link for file: sample_media_file.png
+2025-11-17 12:58:19,338 - INFO - [test_files_download_functionality] Download file 'test-image.png'.
+2025-11-17 12:58:19,488 - INFO - [test_files_download_functionality] Clicked download link for file: test-image.png
+2025-11-17 12:58:19,489 - INFO - [test_files_download_functionality] Download file 'Урок_2.pdf'.
+2025-11-17 12:58:19,643 - INFO - [test_files_download_functionality] Clicked download link for file: Урок_2.pdf
+2025-11-17 12:58:19,644 - INFO - [test_files_download_functionality] Download file 'large-test-file.txt'.
+2025-11-17 12:58:19,773 - INFO - [test_files_download_functionality] Clicked download link for file: large-test-file.txt
+2025-11-17 12:58:19,774 - INFO - [test_files_download_functionality] Download file 'tmp005wbdb_.txt'.
+2025-11-17 12:58:19,899 - INFO - [test_files_download_functionality] Clicked download link for file: tmp005wbdb_.txt
+2025-11-17 12:58:19,899 - INFO - [test_files_download_functionality] Download file 'random_data.txt'.
+2025-11-17 12:58:20,014 - INFO - [test_files_download_functionality] Clicked download link for file: random_data.txt
+2025-11-17 12:58:20,015 - INFO - [test_files_download_functionality] Download file 'my_custom_file.txt'.
+2025-11-17 12:58:20,136 - INFO - [test_files_download_functionality] Clicked download link for file: my_custom_file.txt
+2025-11-17 12:58:20,136 - INFO - [test_files_download_functionality] Download file 'testfile.txt'.
+2025-11-17 12:58:20,251 - INFO - [test_files_download_functionality] Clicked download link for file: testfile.txt
+2025-11-17 12:58:20,251 - INFO - [test_files_download_functionality] Download file 'Screenshot.png'.
+2025-11-17 12:58:20,362 - INFO - [test_files_download_functionality] Clicked download link for file: Screenshot.png
+2025-11-17 12:58:20,363 - INFO - [test_files_download_functionality] Download file 'playwrightlogo.png'.
+2025-11-17 12:58:20,478 - INFO - [test_files_download_functionality] Clicked download link for file: playwrightlogo.png
+2025-11-17 12:58:20,479 - INFO - [test_files_download_functionality] Download file 'screenshot.png'.
+2025-11-17 12:58:20,597 - INFO - [test_files_download_functionality] Clicked download link for file: screenshot.png
+2025-11-17 12:58:20,598 - INFO - [test_files_download_functionality] Download file 'tmplmv8ic1i.txt'.
+2025-11-17 12:58:20,710 - INFO - [test_files_download_functionality] Clicked download link for file: tmplmv8ic1i.txt
+2025-11-17 12:58:20,711 - INFO - [test_files_download_functionality] Download file 's1.png'.
+2025-11-17 12:58:20,833 - INFO - [test_files_download_functionality] Clicked download link for file: s1.png
+2025-11-17 12:58:20,833 - INFO - [test_files_download_functionality] Verifying downloaded files count equals to files in page.
+2025-11-17 12:58:20,835 - INFO - [test_files_download_functionality] Finished test: test_files_download_functionality (Duration: 11.77s).
+2025-11-17 12:58:20,850 - INFO - [test_files_download_functionality] Directory cleaned and recreated at: downloads/gw3.
+2025-11-17 12:58:20,850 - INFO - [test_files_download_functionality] Cleaned downloads directory after successful test: test_files_download_functionality.
+2025-11-17 12:58:20,852 - INFO - [test_files_download_functionality] Quitting driver for browser: chrome.
