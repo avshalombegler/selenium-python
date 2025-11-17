@@ -1,0 +1,22 @@
+2025-11-17 08:38:03,638 - INFO - [test_table_header_per_column[Sit]] Starting test: test_table_header_per_column[Sit].
+2025-11-17 08:38:03,639 - INFO - [test_table_header_per_column[Sit]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 08:38:03,761 - INFO - [test_table_header_per_column[Sit]] Navigation completed.
+2025-11-17 08:38:03,761 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 08:38:03,782 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 08:38:03,783 - INFO - [] Capture loop started for Firefox.
+2025-11-17 08:38:03,784 - INFO - [test_table_header_per_column[Sit]] Started recording: tests_recordings/gw0/test_table_header_per_column[Sit]_20251117_083803/test_table_header_per_column[Sit]_20251117_083803.mp4
+2025-11-17 08:38:03,785 - INFO - [test_table_header_per_column[Sit]] Verify table head text per column.
+2025-11-17 08:38:03,785 - INFO - [test_table_header_per_column[Sit]] Navigating to Challenging DOM page.
+2025-11-17 08:38:03,887 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Sit]_20251117_083803/frames/frame_000000.png
+2025-11-17 08:38:03,892 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:38:04,694 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 08:38:04,806 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Sit]_20251117_083803/frames/frame_000001.png
+2025-11-17 08:38:04,808 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:38:04,814 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 08:38:04,814 - INFO - [test_table_header_per_column[Sit]] Getting table head text of column 'Sit'.
+2025-11-17 08:38:04,857 - INFO - [test_table_header_per_column[Sit]] Finished test: test_table_header_per_column[Sit] (Duration: 1.07s).
+2025-11-17 08:38:04,858 - INFO - [test_table_header_per_column[Sit]] Stopping video recording...
+2025-11-17 08:38:04,858 - INFO - [test_table_header_per_column[Sit]] Stopping video recording and assembling.
+2025-11-17 08:38:04,873 - INFO - [test_table_header_per_column[Sit]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Sit]_20251117_083803/frames
+2025-11-17 08:38:04,874 - INFO - [test_table_header_per_column[Sit]] Found 2 valid frames.
+2025-11-17 08:38:05,065 - INFO - [test_table_header_per_column[Sit]] Video created: tests_recordings/gw0/test_table_header_per_column[Sit]_20251117_083803/test_table_header_per_column[Sit]_20251117_083803.mp4

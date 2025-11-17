@@ -1,0 +1,23 @@
+2025-11-17 08:38:23,686 - INFO - [test_right_click_on_hotspot] Starting test: test_right_click_on_hotspot.
+2025-11-17 08:38:23,686 - INFO - [test_right_click_on_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 08:38:23,815 - INFO - [test_right_click_on_hotspot] Navigation completed.
+2025-11-17 08:38:23,815 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 08:38:23,831 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 08:38:23,832 - INFO - [] Capture loop started for Firefox.
+2025-11-17 08:38:23,832 - INFO - [test_right_click_on_hotspot] Started recording: tests_recordings/gw2/test_right_click_on_hotspot_20251117_083823/test_right_click_on_hotspot_20251117_083823.mp4
+2025-11-17 08:38:23,834 - INFO - [test_right_click_on_hotspot] Navigating to Context Menu page.
+2025-11-17 08:38:23,937 - INFO - [] Saved frame 0: tests_recordings/gw2/test_right_click_on_hotspot_20251117_083823/frames/frame_000000.png
+2025-11-17 08:38:23,941 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:38:24,130 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 08:38:24,226 - INFO - [] Saved frame 1: tests_recordings/gw2/test_right_click_on_hotspot_20251117_083823/frames/frame_000001.png
+2025-11-17 08:38:24,231 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:38:24,236 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 08:38:24,236 - INFO - [test_right_click_on_hotspot] Testing right-click on hot spot
+2025-11-17 08:38:24,237 - INFO - [test_right_click_on_hotspot] Video recording active – skipping alert text check
+2025-11-17 08:38:24,237 - INFO - [test_right_click_on_hotspot] Finished test: test_right_click_on_hotspot (Duration: 0.40s).
+2025-11-17 08:38:24,238 - INFO - [test_right_click_on_hotspot] Stopping video recording...
+2025-11-17 08:38:24,238 - INFO - [test_right_click_on_hotspot] Stopping video recording and assembling.
+2025-11-17 08:38:24,293 - INFO - [test_right_click_on_hotspot] Thread joined. Frames dir: tests_recordings/gw2/test_right_click_on_hotspot_20251117_083823/frames
+2025-11-17 08:38:24,294 - INFO - [test_right_click_on_hotspot] Found 2 valid frames.
+2025-11-17 08:38:24,483 - INFO - [test_right_click_on_hotspot] Video created: tests_recordings/gw2/test_right_click_on_hotspot_20251117_083823/test_right_click_on_hotspot_20251117_083823.mp4
+2025-11-17 08:38:24,486 - INFO - [test_right_click_on_hotspot] Quitting driver for browser: chrome.

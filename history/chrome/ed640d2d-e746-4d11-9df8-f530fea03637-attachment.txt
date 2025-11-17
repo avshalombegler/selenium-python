@@ -1,0 +1,39 @@
+2025-11-17 08:37:42,785 - INFO - [] Directory cleaned and recreated at: downloads/gw0.
+2025-11-17 08:37:42,787 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-17 08:37:42,787 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-17 08:37:42,788 - INFO - [] xdist worker is: gw0
+2025-11-17 08:37:42,789 - INFO - [] ====== WebDriver manager ======
+2025-11-17 08:37:44,326 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 08:37:44,383 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 08:37:44,432 - INFO - [] There is no [linux64] chromedriver "142.0.7444.162" for browser google-chrome "142.0.7444" in cache
+2025-11-17 08:37:44,432 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 08:37:44,621 - INFO - [] WebDriver version 142.0.7444.162 selected
+2025-11-17 08:37:44,629 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-17 08:37:44,630 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-17 08:37:44,681 - INFO - [] Driver downloading response is 200
+2025-11-17 08:37:44,732 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 08:37:44,922 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.162]
+2025-11-17 08:37:54,778 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue].
+2025-11-17 08:37:54,779 - INFO - [test_each_button_clicks[blue]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 08:37:55,937 - INFO - [test_each_button_clicks[blue]] Navigation completed.
+2025-11-17 08:37:55,937 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 08:37:55,972 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 08:37:55,973 - INFO - [] Capture loop started for Firefox.
+2025-11-17 08:37:55,974 - INFO - [test_each_button_clicks[blue]] Started recording: tests_recordings/gw0/test_each_button_clicks[blue]_20251117_083755/test_each_button_clicks[blue]_20251117_083755.mp4
+2025-11-17 08:37:55,976 - INFO - [test_each_button_clicks[blue]] Verify each button in page is clickable.
+2025-11-17 08:37:55,977 - INFO - [test_each_button_clicks[blue]] Navigating to Challenging DOM page.
+2025-11-17 08:37:56,070 - INFO - [] Saved frame 0: tests_recordings/gw0/test_each_button_clicks[blue]_20251117_083755/frames/frame_000000.png
+2025-11-17 08:37:56,082 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:37:56,450 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 08:37:56,613 - INFO - [] Saved frame 1: tests_recordings/gw0/test_each_button_clicks[blue]_20251117_083755/frames/frame_000001.png
+2025-11-17 08:37:56,618 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:37:56,628 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 08:37:56,629 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-11-17 08:37:56,862 - INFO - [test_each_button_clicks[blue]] Finished test: test_each_button_clicks[blue] (Duration: 0.89s).
+2025-11-17 08:37:56,865 - INFO - [test_each_button_clicks[blue]] Stopping video recording...
+2025-11-17 08:37:56,865 - INFO - [test_each_button_clicks[blue]] Stopping video recording and assembling.
+2025-11-17 08:37:56,993 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:37:56,996 - INFO - [] Saved frame 2: tests_recordings/gw0/test_each_button_clicks[blue]_20251117_083755/frames/frame_000002.png
+2025-11-17 08:37:57,063 - INFO - [test_each_button_clicks[blue]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[blue]_20251117_083755/frames
+2025-11-17 08:37:57,063 - INFO - [test_each_button_clicks[blue]] Found 3 valid frames.
+2025-11-17 08:37:57,317 - INFO - [test_each_button_clicks[blue]] Video created: tests_recordings/gw0/test_each_button_clicks[blue]_20251117_083755/test_each_button_clicks[blue]_20251117_083755.mp4
