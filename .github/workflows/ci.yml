@@ -19,8 +19,7 @@ jobs:
     strategy:
       fail-fast: false # Continue running other jobs if one fails
       matrix:
-        # browser: [chrome, firefox]
-        browser: [chrome]
+        browser: [chrome, firefox]
         workers: [auto]
         include:
           - suite: full
@@ -70,9 +69,9 @@ jobs:
         if: matrix.browser == 'chrome'
         uses: browser-actions/setup-chrome@v1
 
-      # - name: Setup Firefox
-      #   if: matrix.browser == 'firefox'
-      #   uses: browser-actions/setup-firefox@v1
+      - name: Setup Firefox
+        if: matrix.browser == 'firefox'
+        uses: browser-actions/setup-firefox@v1
 
       - name: Cache Allure
         uses: actions/cache@v3
@@ -259,19 +258,21 @@ jobs:
           path: reports/chrome/latest-with-history
         continue-on-error: true
       
-      # - name: Download Allure Report (Firefox) - (Latest-Only)
-      #   if: always()
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: allure-report-firefox-latest-only
-      #     path: reports/firefox/latest-only
-      
-      # - name: Download Allure Report (Firefox) - (Latest-with-History)
-      #   if: always()
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: allure-report-firefox-latest-with-history
-      #     path: reports/firefox/latest-with-history
+      - name: Download Allure Report (Firefox) - (Latest-Only)
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report-firefox-latest-only
+          path: reports/firefox/latest-only
+        continue-on-error: true
+
+      - name: Download Allure Report (Firefox) - (Latest-with-History)
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report-firefox-latest-with-history
+          path: reports/firefox/latest-with-history
+        continue-on-error: true
 
       - name: Download Allure Results History (Chrome)
         uses: actions/download-artifact@v4
@@ -280,11 +281,12 @@ jobs:
           path: reports/history/chrome
         continue-on-error: true
       
-      # - name: Download Allure Results History (Firefox)
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: allure-results-firefox-history
-      #     path: reports/history/firefox
+      - name: Download Allure Results History (Firefox)
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-firefox-history
+          path: reports/history/firefox
+        continue-on-error: true
 
       - name: Deploy to GitHub Pages
         id: deployment
@@ -302,13 +304,18 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          mkdir -p history/${{ needs.test.outputs.browser }}
-          # Check if the history artifact directory exists before copying
-          if [ -d "reports/history/${{ needs.test.outputs.browser }}" ]; then
-            cp -r reports/history/${{ needs.test.outputs.browser }}/* history/${{ needs.test.outputs.browser }}/ || true
-          else
-            echo "No history to store for ${{ needs.test.outputs.browser }}"
-          fi
+          
+          # Store history for both browsers
+          for browser in chrome firefox; do
+            mkdir -p history/${browser}
+            if [ -d "reports/history/${browser}" ]; then
+              cp -r reports/history/${browser}/* history/${browser}/ || true
+              echo "Stored history for ${browser}"
+            else
+              echo "No history to store for ${browser}"
+            fi
+          done
+          
           git add history/
           git commit -m "Update Allure history for run ${{ github.run_id }}" || echo "No changes to history"
           git push origin gh-pages
@@ -323,7 +330,7 @@ jobs:
           git checkout main
           # Replace existing run IDs in the URLs with the new one
           sed -i "s/build-chrome-[0-9]*/build-chrome-${{ github.run_id }}/g" README.md
-          # sed -i "s/build-firefox-[0-9]*/build-firefox-${{ github.run_id }}/g" README.md
+          sed -i "s/build-firefox-[0-9]*/build-firefox-${{ github.run_id }}/g" README.md
           git add README.md
           git commit -m "Update README with latest run ID ${{ github.run_id }}" || echo "No changes to commit"
           git push
@@ -348,8 +355,8 @@ jobs:
         run: |
           find chrome/latest-only/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
           find chrome/latest-with-history/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
-          # find firefox/latest-only/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
-          # find firefox/latest-with-history/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
+          find firefox/latest-only/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
+          find firefox/latest-with-history/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
           git add .
           git commit -m "Clean old Allure reports" || echo "No changes"
           git push
