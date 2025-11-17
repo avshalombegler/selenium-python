@@ -1,0 +1,31 @@
+2025-11-17 13:08:07,279 - INFO - [] Directory cleaned and recreated at: downloads/gw3.
+2025-11-17 13:08:07,280 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-17 13:08:07,281 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-17 13:08:07,282 - INFO - [] xdist worker is: gw3
+2025-11-17 13:08:07,282 - INFO - [] ====== WebDriver manager ======
+2025-11-17 13:08:08,604 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:08,661 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:08,711 - INFO - [] There is no [linux64] chromedriver "142.0.7444.162" for browser google-chrome "142.0.7444" in cache
+2025-11-17 13:08:08,711 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:08,866 - INFO - [] WebDriver version 142.0.7444.162 selected
+2025-11-17 13:08:08,874 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-17 13:08:08,874 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-17 13:08:08,938 - INFO - [] Driver downloading response is 200
+2025-11-17 13:08:09,030 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:09,229 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.162]
+2025-11-17 13:08:18,032 - INFO - [test_add_elements] Starting test: test_add_elements.
+2025-11-17 13:08:18,033 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 13:08:19,177 - INFO - [test_add_elements] Navigation completed.
+2025-11-17 13:08:19,177 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 13:08:19,213 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 13:08:19,215 - INFO - [test_add_elements] Tests for add elements.
+2025-11-17 13:08:19,215 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-17 13:08:19,500 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-17 13:08:19,540 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-17 13:08:19,540 - INFO - [test_add_elements] Add two elements.
+2025-11-17 13:08:19,541 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-17 13:08:19,661 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-17 13:08:19,744 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-17 13:08:19,744 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-17 13:08:19,753 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-17 13:08:19,753 - INFO - [test_add_elements] Finished test: test_add_elements (Duration: 0.54s).

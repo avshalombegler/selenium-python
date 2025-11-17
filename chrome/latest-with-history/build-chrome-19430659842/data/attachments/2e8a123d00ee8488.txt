@@ -1,0 +1,22 @@
+2025-11-17 13:08:07,279 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-17 13:08:07,280 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-17 13:08:07,281 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-17 13:08:07,282 - INFO - [] xdist worker is: gw2
+2025-11-17 13:08:07,282 - INFO - [] ====== WebDriver manager ======
+2025-11-17 13:08:08,604 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:08,658 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:08,713 - INFO - [] There is no [linux64] chromedriver "142.0.7444.162" for browser google-chrome "142.0.7444" in cache
+2025-11-17 13:08:08,713 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:08,869 - INFO - [] WebDriver version 142.0.7444.162 selected
+2025-11-17 13:08:08,877 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-17 13:08:08,878 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+2025-11-17 13:08:08,935 - INFO - [] Driver downloading response is 200
+2025-11-17 13:08:08,999 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-17 13:08:09,205 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.162]
+2025-11-17 13:08:18,184 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Starting test: test_digest_auth_login_scenarios[admin-admin].
+2025-11-17 13:08:18,200 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Tests for Digest Authentication scenarios.
+2025-11-17 13:08:18,201 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to Digest Authentication page.
+2025-11-17 13:08:18,201 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-17 13:08:19,227 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-11-17 13:08:19,227 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Check if login succeeded.
+2025-11-17 13:08:19,276 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Finished test: test_digest_auth_login_scenarios[admin-admin] (Duration: 1.08s).
