@@ -1,0 +1,31 @@
+2025-11-17 08:49:48,760 - INFO - [test_content_changes_after_refresh] Starting test: test_content_changes_after_refresh.
+2025-11-17 08:49:48,761 - INFO - [test_content_changes_after_refresh] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 08:49:48,823 - INFO - [test_content_changes_after_refresh] Navigation completed.
+2025-11-17 08:49:48,823 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 08:49:48,845 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 08:49:48,848 - INFO - [] Capture loop started for Firefox.
+2025-11-17 08:49:48,849 - INFO - [test_content_changes_after_refresh] Started recording: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/test_content_changes_after_refresh_20251117_084948.mp4
+2025-11-17 08:49:48,850 - INFO - [test_content_changes_after_refresh] Test that content changes after page refresh.
+2025-11-17 08:49:48,851 - INFO - [test_content_changes_after_refresh] Navigating to Dynamic Content page.
+2025-11-17 08:49:48,950 - INFO - [] Saved frame 0: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/frames/frame_000000.png
+2025-11-17 08:49:48,962 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:49,058 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 08:49:49,211 - INFO - [] Saved frame 1: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/frames/frame_000001.png
+2025-11-17 08:49:49,213 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:49,219 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 08:49:49,354 - INFO - [] Saved frame 2: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/frames/frame_000002.png
+2025-11-17 08:49:49,356 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:49,572 - INFO - [] Saved frame 3: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/frames/frame_000003.png
+2025-11-17 08:49:49,577 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:49,761 - INFO - [] Saved frame 4: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/frames/frame_000004.png
+2025-11-17 08:49:49,770 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:49,787 - INFO - [test_content_changes_after_refresh] Validating initial content blocks structure and count.
+2025-11-17 08:49:49,787 - INFO - [test_content_changes_after_refresh] Validating refreshed content blocks structure and count.
+2025-11-17 08:49:49,787 - INFO - [test_content_changes_after_refresh] Comparing content changes after refresh.
+2025-11-17 08:49:49,788 - INFO - [test_content_changes_after_refresh] Finished test: test_content_changes_after_refresh (Duration: 0.94s).
+2025-11-17 08:49:49,790 - INFO - [test_content_changes_after_refresh] Stopping video recording...
+2025-11-17 08:49:49,790 - INFO - [test_content_changes_after_refresh] Stopping video recording and assembling.
+2025-11-17 08:49:49,830 - INFO - [test_content_changes_after_refresh] Thread joined. Frames dir: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/frames
+2025-11-17 08:49:49,831 - INFO - [test_content_changes_after_refresh] Found 5 valid frames.
+2025-11-17 08:49:50,146 - INFO - [test_content_changes_after_refresh] Video created: tests_recordings/gw3/test_content_changes_after_refresh_20251117_084948/test_content_changes_after_refresh_20251117_084948.mp4
+2025-11-17 08:49:50,149 - INFO - [test_content_changes_after_refresh] Quitting driver for browser: chrome.

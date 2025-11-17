@@ -1,0 +1,31 @@
+2025-11-17 08:49:46,701 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality.
+2025-11-17 08:49:46,702 - INFO - [test_drag_and_drop_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 08:49:46,783 - INFO - [test_drag_and_drop_functionality] Navigation completed.
+2025-11-17 08:49:46,783 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 08:49:46,809 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 08:49:46,810 - INFO - [] Capture loop started for Firefox.
+2025-11-17 08:49:46,811 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/test_drag_and_drop_functionality_20251117_084946.mp4
+2025-11-17 08:49:46,812 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-17 08:49:46,813 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-17 08:49:46,898 - INFO - [] Saved frame 0: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/frames/frame_000000.png
+2025-11-17 08:49:46,908 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:47,136 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 08:49:47,241 - INFO - [] Saved frame 1: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/frames/frame_000001.png
+2025-11-17 08:49:47,247 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:47,261 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 08:49:47,261 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-17 08:49:47,297 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-17 08:49:47,944 - INFO - [test_drag_and_drop_functionality] Drag and drop completed using ActionChains.
+2025-11-17 08:49:47,995 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:47,995 - INFO - [] Saved frame 2: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/frames/frame_000002.png
+2025-11-17 08:49:48,122 - INFO - [] Saved frame 3: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/frames/frame_000003.png
+2025-11-17 08:49:48,249 - INFO - [] Saved frame 4: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/frames/frame_000004.png
+2025-11-17 08:49:48,344 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-17 08:49:48,395 - INFO - [] Saved frame 5: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/frames/frame_000005.png
+2025-11-17 08:49:48,405 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-17 08:49:48,437 - INFO - [test_drag_and_drop_functionality] Finished test: test_drag_and_drop_functionality (Duration: 1.63s).
+2025-11-17 08:49:48,439 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-17 08:49:48,439 - INFO - [test_drag_and_drop_functionality] Stopping video recording and assembling.
+2025-11-17 08:49:48,462 - INFO - [test_drag_and_drop_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/frames
+2025-11-17 08:49:48,462 - INFO - [test_drag_and_drop_functionality] Found 6 valid frames.
+2025-11-17 08:49:48,755 - INFO - [test_drag_and_drop_functionality] Video created: tests_recordings/gw3/test_drag_and_drop_functionality_20251117_084946/test_drag_and_drop_functionality_20251117_084946.mp4
