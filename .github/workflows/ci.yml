@@ -50,6 +50,15 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: ${{ runner.os }}-pip-
 
+      - name: Cache WebDriver
+        uses: actions/cache@v3
+        with:
+          path: ~/.wdm
+          key: ${{ runner.os }}-wdm-${{ matrix.browser }}-${{ hashFiles('.github/workflows/ci.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-wdm-${{ matrix.browser }}-
+            ${{ runner.os }}-wdm-
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -72,6 +81,16 @@ jobs:
       - name: Setup Firefox
         if: matrix.browser == 'firefox'
         uses: browser-actions/setup-firefox@v1
+
+      - name: Install GeckoDriver
+        if: matrix.browser == 'firefox'
+        run: |
+          GECKODRIVER_VERSION=v0.35.0
+          wget -q https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
+          tar -xzf geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
+          sudo mv geckodriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/geckodriver
+          geckodriver --version
 
       - name: Cache Allure
         uses: actions/cache@v3
@@ -102,6 +121,7 @@ jobs:
           echo "MAXIMIZED=False" >> .env
           echo "USERNAME=${{ secrets.TEST_USERNAME }}" >> .env
           echo "PASSWORD=${{ secrets.TEST_PASSWORD }}" >> .env
+          echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
 
       - name: Check website availability
         run: curl -s -f https://the-internet.herokuapp.com/ || exit 1
