@@ -1,0 +1,22 @@
+2025-11-17 12:39:18,794 - INFO - [test_textbox_enable_and_disable] Starting test: test_textbox_enable_and_disable.
+2025-11-17 12:39:18,794 - INFO - [test_textbox_enable_and_disable] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 12:39:18,863 - INFO - [test_textbox_enable_and_disable] Navigation completed.
+2025-11-17 12:39:18,863 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 12:39:18,886 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 12:39:18,888 - INFO - [test_textbox_enable_and_disable] Test Enable/disable textbox area.
+2025-11-17 12:39:18,888 - INFO - [test_textbox_enable_and_disable] Navigating to Dynamic Controls page.
+2025-11-17 12:39:19,036 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-17 12:39:19,049 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-17 12:39:19,049 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-17 12:39:19,049 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-17 12:39:19,073 - INFO - [test_textbox_enable_and_disable] Clicking enable button.
+2025-11-17 12:39:19,160 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-17 12:39:22,246 - INFO - [test_textbox_enable_and_disable] Checking if textbox is enabled.
+2025-11-17 12:39:22,247 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-17 12:39:22,267 - INFO - [test_textbox_enable_and_disable] Get enable message text.
+2025-11-17 12:39:22,303 - INFO - [test_textbox_enable_and_disable] Clicking disable button.
+2025-11-17 12:39:22,403 - INFO - [test_textbox_enable_and_disable] Waiting for loader to disappear.
+2025-11-17 12:39:25,474 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-17 12:39:25,474 - INFO - [test_textbox_enable_and_disable] Check element with locator '('css selector', "input[type='text']")' enabled state.
+2025-11-17 12:39:25,490 - INFO - [test_textbox_enable_and_disable] Get disable message text.
+2025-11-17 12:39:25,506 - INFO - [test_textbox_enable_and_disable] Finished test: test_textbox_enable_and_disable (Duration: 6.62s).
