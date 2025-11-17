@@ -155,9 +155,9 @@ jobs:
       - name: Download Previous Allure Results
         if: always()
         run: |
-          git fetch origin gh-pages --depth=1
+          git fetch origin gh-pages --depth=1 || true
           mkdir -p reports/allure-results-history
-          if git ls-tree -r origin/gh-pages --name-only | grep -q "history/${{ matrix.browser }}"; then
+          if git ls-tree -r origin/gh-pages --name-only 2>/dev/null | grep -q "history/${{ matrix.browser }}"; then
             git checkout origin/gh-pages -- history/${{ matrix.browser }} || true
             cp -r history/${{ matrix.browser }}/* reports/allure-results-history/ || true
           fi
@@ -235,6 +235,7 @@ jobs:
         with:
           name: allure-report-chrome-latest-only
           path: reports/chrome/latest-only
+        continue-on-error: true
       
       - name: Download Allure Report (Chrome) -  (Latest-with-History)
         if: always()
@@ -262,6 +263,7 @@ jobs:
         with:
           name: allure-results-chrome-history
           path: reports/history/chrome
+        continue-on-error: true
       
       # - name: Download Allure Results History (Firefox)
       #   uses: actions/download-artifact@v4
@@ -333,4 +335,3 @@ jobs:
           git commit -m "Clean old Allure reports" || echo "No changes"
           git push
 
-          
