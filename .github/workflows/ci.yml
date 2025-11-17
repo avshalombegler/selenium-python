@@ -185,20 +185,12 @@ jobs:
           allure generate --clean reports/allure-results -o reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}
           sleep 2
 
-      - name: Ensure Allure history folder exists (prevent empty-artifact)
-        if: always()
-        run: |
-          mkdir -p reports/allure-results/history
-          if [ -z "$(ls -A reports/allure-results/history 2>/dev/null)" ]; then
-            echo "no history for run ${{ github.run_id }}" > reports/allure-results/history/.gitkeep
-          fi
-
       - name: Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.browser }}-history
-          path: reports/allure-results/history
+          path: reports/allure-results/
           retention-days: 30
 
       - name: Upload Allure Report (Latest-with-History)
