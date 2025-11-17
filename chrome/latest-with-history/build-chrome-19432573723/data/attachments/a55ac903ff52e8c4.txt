@@ -1,0 +1,17 @@
+2025-11-17 14:14:55,607 - INFO - [test_example_2] Starting test: test_example_2.
+2025-11-17 14:14:55,608 - INFO - [test_example_2] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 14:14:55,706 - INFO - [test_example_2] Navigation completed.
+2025-11-17 14:14:55,706 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 14:14:55,726 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 14:14:55,728 - INFO - [test_example_2] Tests Dynamic Loading - Example 2.
+2025-11-17 14:14:55,728 - INFO - [test_example_2] Navigating to Dynamic Loading page.
+2025-11-17 14:14:55,887 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-17 14:14:55,904 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-17 14:14:55,904 - INFO - [test_example_2] Navigating to Example 2: Element rendered after the fact page.
+2025-11-17 14:14:56,066 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-17 14:14:56,080 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-17 14:14:56,080 - INFO - [test_example_2] Clicking start button.
+2025-11-17 14:14:56,146 - INFO - [test_example_2] Waiting for loader to disappear.
+2025-11-17 14:15:01,230 - INFO - [test_example_2] Verifying success message.
+2025-11-17 14:15:01,246 - INFO - [test_example_2] Finished test: test_example_2 (Duration: 5.52s).
+2025-11-17 14:15:01,249 - INFO - [test_example_2] Quitting driver for browser: chrome.

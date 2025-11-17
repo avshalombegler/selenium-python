@@ -1,0 +1,12 @@
+2025-11-17 14:13:58,198 - INFO - [test_right_click_outside_hotspot] Starting test: test_right_click_outside_hotspot.
+2025-11-17 14:13:58,201 - INFO - [test_right_click_outside_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 14:13:58,383 - INFO - [test_right_click_outside_hotspot] Navigation completed.
+2025-11-17 14:13:58,383 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 14:13:58,422 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 14:13:58,424 - INFO - [test_right_click_outside_hotspot] Navigating to Context Menu page.
+2025-11-17 14:13:58,771 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 14:13:58,786 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 14:13:58,787 - INFO - [test_right_click_outside_hotspot] Testing right-click outside hot spot
+2025-11-17 14:13:58,788 - INFO - [test_right_click_outside_hotspot] Perform right-click on page title to verify context menu alert does not activate.
+2025-11-17 14:13:58,788 - INFO - [test_right_click_outside_hotspot] Performing right-click on element with locator '('css selector', 'div.example h3')'.
+2025-11-17 14:13:59,183 - INFO - [test_right_click_outside_hotspot] Finished test: test_right_click_outside_hotspot (Duration: 0.76s).
