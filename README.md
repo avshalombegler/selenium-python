@@ -1,7 +1,7 @@
 
 # Selenium-Python Test Suite
 
-![CI Status](https://github.com/avshalombegler/selenium-python/workflows/CI/badge.svg)
+[![CI Status](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml/badge.svg)](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml)
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -20,7 +20,6 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - [Troubleshooting](#troubleshooting)
 
 ## Features
-
 - Clean POM architecture with `BasePage` and `PageManager`
 - Parallel execution via `pytest-xdist`
 - Allure reports with history & trends
@@ -48,21 +47,19 @@ Key packages (see `requirements.txt` for full list):
 - `python-dotenv==1.0.0`
 
 ## Installation
-
 1. Clone the repository:
-
     ```
     git clone https://github.com/avshalombegler/selenium-python.git
     cd selenium-python
     ```
-2. Create a virtual environment:
 
+2. Create a virtual environment:
     ```
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
-3. Install dependencies:
 
+3. Install dependencies:
     ```
     pip install -r requirements.txt
     ```
@@ -71,14 +68,13 @@ Key packages (see `requirements.txt` for full list):
 See installation guide: https://docs.qameta.io/allure/#_installing_a_commandline
 
 ## Environment Variables (.env)
-
 Create a .env file in the project root:
 ```env
 # Application
 BASE_URL=https://the-internet.herokuapp.com/
 
 # Browser Configuration
-BROWSER=chrome              # Options: chrome, firefox
+BROWSER=chrome             # Options: chrome, firefox
 HEADLESS=True              # Run without UI (CI default)
 MAXIMIZED=False            # Maximize browser window
 
@@ -97,7 +93,6 @@ PASSWORD=SuperSecretPassword!
 **⚠️ Note:** Never commit `.env` with real credentials. Use CI secrets for production.
 
 ## Running tests locally
-
 - Run all tests (sequential):
     ```
     pytest
@@ -136,7 +131,6 @@ PASSWORD=SuperSecretPassword!
 - Allure reports automatically deployed to GitHub Pages
 
 ## Allure Reports (Live)
-
 Latest reports are published automatically to GitHub Pages:
 
 - 🔹 **Chrome (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19434448678/)
@@ -167,12 +161,10 @@ selenium-python/
 ```
 
 ## How to Add New Tests
-
 1. Create page object in pages/features/your_feature/your_page.py
 2. Register it in pages/base/page_manager.py
 3. Add test in tests/test_your_feature.py
 4. (Optional) Add @pytest.mark.smoke or other markers
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
