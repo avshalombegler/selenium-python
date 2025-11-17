@@ -6,7 +6,6 @@ import allure
 if TYPE_CHECKING:
     from pages.base.page_manager import PageManager
     from logging import Logger
-    from selenium.webdriver.common.action_chains import ActionChains
 
 
 @allure.feature("Dynamic Content")

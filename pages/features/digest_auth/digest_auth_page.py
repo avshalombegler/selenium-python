@@ -14,7 +14,7 @@ if TYPE_CHECKING:
 
 
 class DigestAuthPage(BasePage):
-    """Page object for the Digest Authentication page containing methods to interact with and validate page context menu"""
+    """Page object for the Digest Authentication page containing methods to test digest authentication scenarios"""
 
     def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         super().__init__(driver, logger)

@@ -59,7 +59,6 @@ class DragAndDropPage(BasePage):
                     dropEffect: 'move'
                 };
             }
-            
             // Dispatch dragstart on source
             var dragStartEvent = new DragEvent('dragstart', {
                 bubbles: true,
@@ -67,7 +66,6 @@ class DragAndDropPage(BasePage):
                 dataTransfer: dataTransfer
             });
             source.dispatchEvent(dragStartEvent);
-            
             // Dispatch dragenter and dragover on target to prepare for drop
             var dragEnterEvent = new DragEvent('dragenter', {
                 bubbles: true,
@@ -75,14 +73,12 @@ class DragAndDropPage(BasePage):
                 dataTransfer: dataTransfer
             });
             target.dispatchEvent(dragEnterEvent);
-            
             var dragOverEvent = new DragEvent('dragover', {
                 bubbles: true,
                 cancelable: true,
                 dataTransfer: dataTransfer
             });
             target.dispatchEvent(dragOverEvent);
-            
             // Dispatch drop on target
             var dropEvent = new DragEvent('drop', {
                 bubbles: true,
@@ -90,7 +86,6 @@ class DragAndDropPage(BasePage):
                 dataTransfer: dataTransfer
             });
             target.dispatchEvent(dropEvent);
-            
             // Dispatch dragend on source
             var dragEndEvent = new DragEvent('dragend', {
                 bubbles: true,

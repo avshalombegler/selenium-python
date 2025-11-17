@@ -15,11 +15,9 @@ from logging import Logger
 from utils.logging_helper import get_logger
 from config.env_config import SHORT_TIMEOUT, LONG_TIMEOUT, BASE_URL
 
-# === TYPE CHECKING ONLY ===
 if TYPE_CHECKING:
-    # Use simple string-based locators for typing so they match selenium expected_conditions signatures
-    from selenium.webdriver.common.by import By  # noqa: F401 (only for dev clarity)
-    from pages.base.page_manager import PageManager
+    # from selenium.webdriver.common.by import By
+    # from pages.base.page_manager import PageManager
 
     Locator = Tuple[str, str]
 else:

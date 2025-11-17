@@ -25,7 +25,7 @@ class DynamicContentPage(BasePage):
                 img = block.find_element(*DynamicContentPageLocators.IMAGE_IN_BLOCK).get_attribute("src")
                 text = block.find_element(*DynamicContentPageLocators.TEXT_IN_BLOCK).text.strip()
                 data.append({"image": img, "text": text})
-            except:
+            except Exception:
                 self.logger.warning("Failed to parse block content")
                 continue
         return data

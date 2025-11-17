@@ -19,7 +19,6 @@ import logging
 
 if TYPE_CHECKING:
     from selenium.webdriver.chrome.webdriver import WebDriver
-    from logging import Logger
 
 logger = logging.getLogger(__name__)
 
@@ -112,7 +111,7 @@ def start_video_recording(
         ]
 
         try:
-            proc = subprocess.run(ffmpeg_cmd, check=True, capture_output=True, text=True)
+            subprocess.run(ffmpeg_cmd, check=True, capture_output=True, text=True)
             logger.info(f"Video created: {video_path}")
             with FileLock(lock_file):
                 allure.attach.file(
