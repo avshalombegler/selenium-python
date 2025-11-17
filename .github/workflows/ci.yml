@@ -144,13 +144,13 @@ jobs:
           allure generate --clean reports/allure-results -o reports/allure-report/latest-only/build-${{ matrix.browser }}-${{ github.run_id }}
           sleep 2
 
-      - name: Upload Latest-Only Allure Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report-${{ matrix.browser }}-latest-only
-          path: reports/allure-report/latest-only/
-          retention-days: 7 
+      # - name: Upload Latest-Only Allure Report
+      #   if: always()
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: allure-report-${{ matrix.browser }}-latest-only
+      #     path: reports/allure-report/latest-only/
+      #     retention-days: 7 
 
       - name: Download Previous Allure Results
         if: always()
@@ -229,12 +229,12 @@ jobs:
       - name: Create reports directory
         run: mkdir -p reports
       
-      - name: Download Allure Report (Chrome) - Latest Only
-        if: always()
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-report-chrome-latest-only
-          path: reports/chrome/latest-only
+      # - name: Download Allure Report (Chrome) - Latest Only
+      #   if: always()
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: allure-report-chrome-latest-only
+      #     path: reports/chrome/latest-only
       
       - name: Download Allure Report (Chrome) - Latest with History
         if: always()
