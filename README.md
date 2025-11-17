@@ -1,8 +1,23 @@
 
 # Selenium-Python Test Suite
 
-A modern, maintainable test automation suite for https://the-internet.herokuapp.com  
+![CI Status](https://github.com/avshalombegler/selenium-python/workflows/CI/badge.svg)
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+A modern, maintainable test automation suite for https://the-internet.herokuapp.com.  
 Built with **Page Object Model**, **pytest**, **Allure reporting**, **video recording**, and **GitHub Actions CI/CD**.
+
+## Table of Contents
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running Tests](#running-tests)
+- [CI/CD](#github-actions-cicd)
+- [Reports](#allure-reports-live)
+- [Contributing](#contributing)
+- [Troubleshooting](#troubleshooting)
 
 ## Features
 
@@ -17,10 +32,20 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 
 ## Requirements
 
-- Python 3.10+
-- Git
-- Chrome/Firefox browser
-- `webdriver-manager` handles drivers automatically
+### System Requirements
+- **Python:** 3.10 or higher
+- **Git:** Latest version
+- **Browsers:** 
+  - Chrome 120+ / ChromeDriver (auto-managed)
+  - Firefox 121+ / GeckoDriver (auto-managed)
+
+### Python Dependencies
+Key packages (see `requirements.txt` for full list):
+- `selenium==4.15.0`
+- `pytest==7.4.3`
+- `allure-pytest==2.13.2`
+- `pytest-xdist==3.5.0`
+- `python-dotenv==1.0.0`
 
 ## Installation
 
@@ -42,23 +67,34 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
     pip install -r requirements.txt
     ```
 
-Note: Allure CLI is not installed via pip → install separately:
-https://docs.qameta.io/allure/#_get_started
+**Note:** Allure CLI requires separate installation (not available via pip).  
+See installation guide: https://docs.qameta.io/allure/#_installing_a_commandline
 
 ## Environment Variables (.env)
 
 Create a .env file in the project root:
-```
+```env
+# Application
 BASE_URL=https://the-internet.herokuapp.com/
-BROWSER=chrome       # chrome or firefox
-HEADLESS=True        # True/False
-MAXIMIZED=False
-SHORT_TIMEOUT=3
-LONG_TIMEOUT=10
-VIDEO_RECORDING=True
+
+# Browser Configuration
+BROWSER=chrome              # Options: chrome, firefox
+HEADLESS=True              # Run without UI (CI default)
+MAXIMIZED=False            # Maximize browser window
+
+# Timeouts (seconds)
+SHORT_TIMEOUT=3            # For quick operations
+LONG_TIMEOUT=10            # For slow operations
+
+# Features
+VIDEO_RECORDING=True       # Record test execution
+
+# Test Credentials (for demo site)
 USERNAME=tomsmith
 PASSWORD=SuperSecretPassword!
 ```
+
+**⚠️ Note:** Never commit `.env` with real credentials. Use CI secrets for production.
 
 ## Running tests locally
 
@@ -100,12 +136,15 @@ PASSWORD=SuperSecretPassword!
 - Allure reports automatically deployed to GitHub Pages
 
 ## Allure Reports (Live)
-Latest reports are published automatically after every successful CI run:
 
-- **Chrome - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19432878234/)
-- **Chrome - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19432878234/)
-- **Firefox - Latest Only (current run only)**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19432878234/)
-- **Firefox - Latest with History**: [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19432878234/)
+Latest reports are published automatically to GitHub Pages:
+
+- 🔹 **Chrome (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-0000000000/)
+- 📊 **Chrome (With History):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-0000000000/)
+- 🔹 **Firefox (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-0000000000/)
+- 📊 **Firefox (With History):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-0000000000/)
+
+> Reports update automatically after each CI run.
 
 ## Project layout
 ```
@@ -133,3 +172,7 @@ selenium-python/
 2. Register it in pages/base/page_manager.py
 3. Add test in tests/test_your_feature.py
 4. (Optional) Add @pytest.mark.smoke or other markers
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
