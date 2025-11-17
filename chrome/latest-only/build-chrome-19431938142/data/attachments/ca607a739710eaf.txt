@@ -1,0 +1,39 @@
+INFO     root:conftest.py:290 Starting test: test_checkbox_remove_and_add.
+INFO     root:base_page.py:178 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_dynamic_controls.py:22 Test Remove/add checkbox area.
+INFO     root:main_page.py:116 Navigating to Dynamic Controls page.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', '.example h4')'.
+INFO     root:test_dynamic_controls.py:25 Checking if checkbox is present.
+INFO     root:test_dynamic_controls.py:28 Clicking remove button.
+INFO     root:base_page.py:166 Waiting for loader to disappear.
+INFO     root:test_dynamic_controls.py:31 Checking if checkbox absent.
+ERROR    root:base_page.py:84 Timeout after 10s for locator ('css selector', "input[type='checkbox']"): Message: 
+Stacktrace:
+#0 0x560aa6adb32a <unknown>
+#1 0x560aa6527e4b <unknown>
+#2 0x560aa657a82b <unknown>
+#3 0x560aa657aa61 <unknown>
+#4 0x560aa65c9a44 <unknown>
+#5 0x560aa65c6df7 <unknown>
+#6 0x560aa656cc1a <unknown>
+#7 0x560aa656d921 <unknown>
+#8 0x560aa6aa2239 <unknown>
+#9 0x560aa6aa51e8 <unknown>
+#10 0x560aa6a8b4c9 <unknown>
+#11 0x560aa6aa5db5 <unknown>
+#12 0x560aa6a72e93 <unknown>
+#13 0x560aa6ac8098 <unknown>
+#14 0x560aa6ac8273 <unknown>
+#15 0x560aa6ada2c3 <unknown>
+#16 0x7f6e5729caa4 <unknown>
+#17 0x7f6e57329c6c <unknown>
+
+INFO     root:test_dynamic_controls.py:34 Verifying remove message text.
+INFO     root:test_dynamic_controls.py:37 Clicking add button.
+INFO     root:base_page.py:166 Waiting for loader to disappear.
+INFO     root:test_dynamic_controls.py:40 Checking if checkbox is present.
+INFO     root:test_dynamic_controls.py:43 Verifying add message text.

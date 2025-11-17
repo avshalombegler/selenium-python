@@ -1,0 +1,28 @@
+INFO     root:conftest.py:290 Starting test: test_digest_auth_login_scenarios[wrong-admin].
+INFO     root:test_digest_auth_login_scenarios.py:30 Tests for Digest Authentication scenarios.
+INFO     root:main_page.py:82 Navigating to Digest Authentication page.
+INFO     root:base_page.py:178 Navigating to URL: https://wrong:admin@the-internet.herokuapp.com/digest_auth.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:test_digest_auth_login_scenarios.py:33 Check if login succeeded.
+ERROR    root:base_page.py:84 Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x558bb934d32a <unknown>
+#1 0x558bb8d99e4b <unknown>
+#2 0x558bb8dec82b <unknown>
+#3 0x558bb8deca61 <unknown>
+#4 0x558bb8e3ba44 <unknown>
+#5 0x558bb8e38df7 <unknown>
+#6 0x558bb8ddec1a <unknown>
+#7 0x558bb8ddf921 <unknown>
+#8 0x558bb9314239 <unknown>
+#9 0x558bb93171e8 <unknown>
+#10 0x558bb92fd4c9 <unknown>
+#11 0x558bb9317db5 <unknown>
+#12 0x558bb92e4e93 <unknown>
+#13 0x558bb933a098 <unknown>
+#14 0x558bb933a273 <unknown>
+#15 0x558bb934c2c3 <unknown>
+#16 0x7fab4f89caa4 <unknown>
+#17 0x7fab4f929c6c <unknown>
+
+INFO     root:test_digest_auth_login_scenarios.py:36 Page source: <html><head></head><body></body></html>

@@ -1,0 +1,11 @@
+2025-11-17 13:52:35,947 - INFO - [test_table_header_per_column[Lorem]] Starting test: test_table_header_per_column[Lorem].
+2025-11-17 13:52:35,948 - INFO - [test_table_header_per_column[Lorem]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 13:52:36,007 - INFO - [test_table_header_per_column[Lorem]] Navigation completed.
+2025-11-17 13:52:36,007 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 13:52:36,025 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 13:52:36,026 - INFO - [test_table_header_per_column[Lorem]] Verify table head text per column.
+2025-11-17 13:52:36,027 - INFO - [test_table_header_per_column[Lorem]] Navigating to Challenging DOM page.
+2025-11-17 13:52:36,197 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-17 13:52:36,215 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-17 13:52:36,215 - INFO - [test_table_header_per_column[Lorem]] Getting table head text of column 'Lorem'.
+2025-11-17 13:52:36,255 - INFO - [test_table_header_per_column[Lorem]] Finished test: test_table_header_per_column[Lorem] (Duration: 0.23s).
