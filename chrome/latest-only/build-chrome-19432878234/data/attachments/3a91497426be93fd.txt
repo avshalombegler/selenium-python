@@ -1,0 +1,43 @@
+2025-11-17 14:24:07,717 - INFO - [test_files_download_functionality] Starting test: test_files_download_functionality.
+2025-11-17 14:24:07,718 - INFO - [test_files_download_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-17 14:24:07,831 - INFO - [test_files_download_functionality] Navigation completed.
+2025-11-17 14:24:07,831 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-17 14:24:07,848 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-17 14:24:07,849 - INFO - [test_files_download_functionality] Directory cleaned and recreated at: downloads/gw0.
+2025-11-17 14:24:07,850 - INFO - [test_files_download_functionality] Tests Files Download.
+2025-11-17 14:24:07,851 - INFO - [test_files_download_functionality] Navigating to File Download page.
+2025-11-17 14:24:08,042 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-17 14:24:08,059 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-17 14:24:08,059 - INFO - [test_files_download_functionality] Getring list of downloadable files.
+2025-11-17 14:24:08,182 - INFO - [test_files_download_functionality] Downloading all files in page.
+2025-11-17 14:24:08,182 - INFO - [test_files_download_functionality] Download file 'Manual Testing PCMM88.pdf'.
+2025-11-17 14:24:08,347 - INFO - [test_files_download_functionality] Clicked download link for file: Manual Testing PCMM88.pdf
+2025-11-17 14:24:08,348 - INFO - [test_files_download_functionality] Download file 'Captura de Tela 2025-11-13 às 21.11.03.png'.
+2025-11-17 14:24:08,551 - INFO - [test_files_download_functionality] Clicked download link for file: Captura de Tela 2025-11-13 às 21.11.03.png
+2025-11-17 14:24:08,551 - INFO - [test_files_download_functionality] Download file 'TestUpload.txt'.
+2025-11-17 14:24:08,979 - INFO - [test_files_download_functionality] Clicked download link for file: TestUpload.txt
+2025-11-17 14:24:08,980 - INFO - [test_files_download_functionality] Download file 'testfile.txt'.
+2025-11-17 14:24:09,150 - INFO - [test_files_download_functionality] Clicked download link for file: testfile.txt
+2025-11-17 14:24:09,150 - INFO - [test_files_download_functionality] Download file 'KB.png'.
+2025-11-17 14:24:09,427 - INFO - [test_files_download_functionality] Clicked download link for file: KB.png
+2025-11-17 14:24:09,427 - INFO - [test_files_download_functionality] Download file 'file1.gif'.
+2025-11-17 14:24:09,609 - INFO - [test_files_download_functionality] Clicked download link for file: file1.gif
+2025-11-17 14:24:09,609 - INFO - [test_files_download_functionality] Download file 'sample.txt'.
+2025-11-17 14:24:09,806 - INFO - [test_files_download_functionality] Clicked download link for file: sample.txt
+2025-11-17 14:24:09,806 - INFO - [test_files_download_functionality] Download file 'sample.docx'.
+2025-11-17 14:24:09,998 - INFO - [test_files_download_functionality] Clicked download link for file: sample.docx
+2025-11-17 14:24:09,999 - INFO - [test_files_download_functionality] Download file 'file2.png'.
+2025-11-17 14:24:10,187 - INFO - [test_files_download_functionality] Clicked download link for file: file2.png
+2025-11-17 14:24:10,188 - INFO - [test_files_download_functionality] Download file 'random_data.txt'.
+2025-11-17 14:24:10,352 - INFO - [test_files_download_functionality] Clicked download link for file: random_data.txt
+2025-11-17 14:24:10,352 - INFO - [test_files_download_functionality] Download file 'file.json'.
+2025-11-17 14:24:10,521 - INFO - [test_files_download_functionality] Clicked download link for file: file.json
+2025-11-17 14:24:10,522 - INFO - [test_files_download_functionality] Download file 'test_document.txt'.
+2025-11-17 14:24:10,708 - INFO - [test_files_download_functionality] Clicked download link for file: test_document.txt
+2025-11-17 14:24:10,708 - INFO - [test_files_download_functionality] Download file 'some-file.txt'.
+2025-11-17 14:24:10,887 - INFO - [test_files_download_functionality] Clicked download link for file: some-file.txt
+2025-11-17 14:24:10,888 - INFO - [test_files_download_functionality] Verifying downloaded files count equals to files in page.
+2025-11-17 14:24:10,888 - INFO - [test_files_download_functionality] Finished test: test_files_download_functionality (Duration: 3.04s).
+2025-11-17 14:24:10,895 - INFO - [test_files_download_functionality] Directory cleaned and recreated at: downloads/gw0.
+2025-11-17 14:24:10,895 - INFO - [test_files_download_functionality] Cleaned downloads directory after successful test: test_files_download_functionality.
+2025-11-17 14:24:10,898 - INFO - [test_files_download_functionality] Quitting driver for browser: chrome.

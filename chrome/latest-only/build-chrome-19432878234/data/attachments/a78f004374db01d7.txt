@@ -1,0 +1,25 @@
+INFO     root:conftest.py:114 Directory cleaned and recreated at: downloads/gw1.
+INFO     root:conftest.py:114 Directory cleaned and recreated at: tests_screenshots/gw1.
+INFO     root:conftest.py:114 Directory cleaned and recreated at: tests_recordings/gw1.
+INFO     WDM:logger.py:11 xdist worker is: gw1
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 There is no [linux64] chromedriver "142.0.7444.162" for browser google-chrome "142.0.7444" in cache
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 WebDriver version 142.0.7444.162 selected
+INFO     WDM:logger.py:11 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+INFO     WDM:logger.py:11 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+INFO     WDM:logger.py:11 Driver downloading response is 200
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/chromedriver/linux64/142.0.7444.162]
+INFO     root:conftest.py:290 Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.].
+INFO     root:base_page.py:178 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_basic_auth_login_scenarios.py:37 Tests basic autorization login scenatios.
+INFO     root:main_page.py:48 Returning object of Basic Auth page.
+INFO     root:test_basic_auth_login_scenarios.py:40 Initialize URL based on username and password.
+INFO     root:test_basic_auth_login_scenarios.py:43 Get status code and authorization message.
+INFO     root:test_basic_auth_login_scenarios.py:46 Validate status code and authorization message.
