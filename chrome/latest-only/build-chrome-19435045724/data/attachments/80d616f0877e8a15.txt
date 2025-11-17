@@ -1,0 +1,23 @@
+INFO     root:conftest.py:290 Starting test: test_each_button_clicks[red].
+INFO     root:base_page.py:178 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:180 Navigation completed.
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:51 Capture loop started for Firefox.
+INFO     root:conftest.py:309 Started recording: tests_recordings/gw0/test_each_button_clicks[red]_20251117_153328/test_each_button_clicks[red]_20251117_153328.mp4
+INFO     root:test_challenging_dom.py:28 Verify each button in page is clickable.
+INFO     root:main_page.py:61 Navigating to Challenging DOM page.
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 0: tests_recordings/gw0/test_each_button_clicks[red]_20251117_153328/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:134 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 1: tests_recordings/gw0/test_each_button_clicks[red]_20251117_153328/frames/frame_000001.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:139 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:31 Clicking red button.
+INFO     root:conftest.py:313 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:85 Stopping video recording and assembling.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:71 Saved frame 2: tests_recordings/gw0/test_each_button_clicks[red]_20251117_153328/frames/frame_000002.png
+INFO     utils.video_recorder:video_recorder.py:88 Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[red]_20251117_153328/frames
+INFO     utils.video_recorder:video_recorder.py:92 Found 3 valid frames.
+INFO     utils.video_recorder:video_recorder.py:116 Video created: tests_recordings/gw0/test_each_button_clicks[red]_20251117_153328/test_each_button_clicks[red]_20251117_153328.mp4

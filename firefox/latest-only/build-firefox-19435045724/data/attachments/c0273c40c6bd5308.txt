@@ -1,0 +1,17 @@
+2025-11-17 15:32:41,986 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-17 15:32:41,987 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-17 15:32:41,987 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-17 15:32:41,988 - INFO - [] xdist worker is: gw2
+2025-11-17 15:32:41,989 - INFO - [] ====== WebDriver manager ======
+2025-11-17 15:32:42,061 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 15:32:42,061 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-17 15:32:42,252 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-17 15:32:42,252 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-17 15:32:42,452 - INFO - [] Driver [/home/runner/.wdm/gw2/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+2025-11-17 15:32:48,321 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Starting test: test_digest_auth_login_scenarios[admin-admin].
+2025-11-17 15:32:48,328 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Tests for Digest Authentication scenarios.
+2025-11-17 15:32:48,329 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to Digest Authentication page.
+2025-11-17 15:32:48,329 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-17 15:32:48,755 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-11-17 15:32:48,755 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Check if login succeeded.
+2025-11-17 15:32:48,831 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Finished test: test_digest_auth_login_scenarios[admin-admin] (Duration: 0.50s).
