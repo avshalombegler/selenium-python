@@ -8,6 +8,7 @@ import allure
 import pytest
 import config.env_config as env_config
 from _pytest.nodes import Item
+from _pytest.main import Session
 from pathlib import Path
 from filelock import FileLock
 from datetime import datetime
@@ -44,26 +45,38 @@ Helper Functions
 
 def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_port: int) -> ChromeOptions:
     options = ChromeOptions()
+
+    # Core arguments
     options.add_argument(f"--user-data-dir={user_data_dir}")  # Use the per-worker user-data-dir
     options.add_argument(f"--remote-debugging-port={debug_port}")  # avoid DevTools port collisions between workers
-    options.add_argument("--disable-popup-blocking")
-    options.add_argument("--disable-notifications")
-    options.add_argument("--disable-gpu")  # If there are GPU related issues
-    options.add_argument("--no-sandbox")  # If there are sandbox related issues
-    options.add_argument("--disable-dev-shm-usage")  # If there are memory related issues
-    options.add_experimental_option("prefs", {"profile.default_content_setting_values.notifications": 2})
+
+    # Stability arguments
+    for arg in [
+        "--disable-popup-blocking",
+        "--disable-notifications",
+        "--disable-gpu",
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+    ]:
+        options.add_argument(arg)
+
+    # Download preferences
+    options.add_experimental_option(
+        "prefs",
+        {
+            "download.default_directory": str(downloads_directory.resolve()),
+            "download.prompt_for_download": False,
+            "download.directory_upgrade": True,
+            "profile.default_content_setting_values.notifications": 2,
+        },
+    )
+
+    # Window and headless modes
     if env_config.MAXIMIZED:
         options.add_argument("--start-maximized")
     if env_config.HEADLESS:
         options.add_argument("--headless=new")
-    # Set the preferences for download behavior
-    prefs = {
-        "download.default_directory": str(downloads_directory.resolve()),
-        "download.prompt_for_download": False,  # Disable the "Save As" prompt
-        "download.directory_upgrade": True,
-        # "plugins.always_open_pdf_externally": True,  # Optional: for handling PDFs
-    }
-    options.add_experimental_option("prefs", prefs)
+
     return options
 
 
@@ -93,7 +106,8 @@ def build_firefox_options(user_data_dir: Path, downloads_directory: Path) -> Fir
 
 
 def get_worker_id() -> str:
-    return os.environ.get("PYTEST_XDIST_WORKER", "local") or f"local_{os.getpid()}"
+    """Get worker ID for xdist or fallback to local PID."""
+    return os.environ.get("PYTEST_XDIST_WORKER") or f"local_{os.getpid()}"
 
 
 def get_config_path(request: FixtureRequest, attr: str, error_msg: str) -> Path:
@@ -181,22 +195,19 @@ def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]
 
 
 @pytest.fixture(scope="session", autouse=True)
-def clean_screenshots_at_start() -> None:
+def clean_directories_at_start(request: FixtureRequest) -> None:
+    """Clean screenshots, videos, and downloads directories at session start."""
     worker_id = get_worker_id()
+
+    # Clean screenshots
     screenshots_dir = Path("tests_screenshots") / worker_id
     clean_directory(screenshots_dir, worker_id)
 
-
-@pytest.fixture(scope="session", autouse=True)
-def clean_videos_at_start() -> None:
-    worker_id = get_worker_id()
+    # Clean videos
     videos_dir = Path("tests_recordings") / worker_id
     clean_directory(videos_dir, worker_id)
 
-
-@pytest.fixture(scope="session", autouse=True)
-def clean_downloads_at_start(request: FixtureRequest) -> None:  # Add request param
-    worker_id = get_worker_id()
+    # Clean downloads and store path in config
     downloads_dir = Path("downloads") / worker_id
     clean_directory(downloads_dir, worker_id)
     request.config.downloads_directory = downloads_dir  # type: ignore[attr-defined]
@@ -204,9 +215,7 @@ def clean_downloads_at_start(request: FixtureRequest) -> None:  # Add request pa
 
 @pytest.fixture(scope="session")
 def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
-    """
-    Initialize driver object at the start of each test.
-    """
+    """Initialize driver object at the start of each test."""
     browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
     root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
 
@@ -249,12 +258,11 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
         except Exception:
             pass  # Ignore if not supported
 
+        yield driver
+
     except Exception as e:
         root_logger.error(f"Failed to initialize {browser} driver: {str(e)}")
         raise
-
-    try:
-        yield driver
     finally:
         root_logger.info(f"Quitting driver for browser: {browser}.")
         driver.quit()
@@ -269,25 +277,17 @@ def page_manager(driver: WebDriver, logger: Logger) -> PageManager:
 
 
 @pytest.fixture(scope="function", autouse=True)
-def ui_test(page_manager: PageManager, request: FixtureRequest) -> Generator[None, None, None]:
-    """
-    Navigate to base URL only for UI tests.
-    Use: add @pytest.mark.ui to tests.
-    """
+def test_setup(page_manager: PageManager, request: FixtureRequest) -> Generator[None, None, None]:
+    """Set test context and navigate to base URL for UI tests."""
+    test_name = request.node.name
+    set_current_test(test_name)
+    root_logger.info(f"Starting test: {test_name}")
+
+    # Navigate to base URL for UI tests
     if request.node.get_closest_marker("ui") or request.node.get_closest_marker("current"):
         with allure.step(f"Navigate to base URL: {env_config.BASE_URL}"):
             page_manager.navigate_to_base_url(env_config.BASE_URL)
-    yield
 
-
-@pytest.fixture(scope="function", autouse=True)
-def test_context(request: FixtureRequest) -> Generator[None, None, None]:
-    """
-    Sets current test name at the start of each test for logging purposes.
-    """
-    test_name = request.node.name
-    set_current_test(test_name)
-    root_logger.info(f"Starting test: {test_name}.")
     yield
 
 
@@ -308,10 +308,15 @@ def video_recorder(request: FixtureRequest, driver: WebDriver) -> Generator[None
     stop_func, video_path = start_video_recording(driver, test_name, worker_id)
     root_logger.info(f"Started recording: {video_path}")
 
-    yield
-
-    root_logger.info("Stopping video recording...")
-    stop_func()
+    try:
+        yield
+    finally:
+        # Ensure recording stops even if test fails
+        try:
+            root_logger.info("Stopping video recording...")
+            stop_func()
+        except Exception as e:
+            root_logger.error(f"Failed to stop video recording: {str(e)}")
 
 
 @pytest.fixture(scope="function")
@@ -324,15 +329,24 @@ def actions(driver: WebDriver) -> ActionChains:
 
 
 @pytest.fixture(scope="function")
-def downloads_directory(request: FixtureRequest) -> Path:
-    """
-    Provides the downloads directory path for the current test worker.
-    Ensures the directory is cleaned and ready for use.
-    """
+def downloads_directory(request: FixtureRequest) -> Generator[Path, None, None]:
+    """Provides clean downloads directory for tests marked with @pytest.mark.clean_downloads."""
     worker_id = get_worker_id()
     downloads_dir = Path("downloads") / worker_id
-    clean_directory(downloads_dir, worker_id)
-    return downloads_dir
+
+    # Only clean if test is marked
+    if request.node.get_closest_marker("clean_downloads"):
+        clean_directory(downloads_dir, worker_id)
+
+    yield downloads_dir
+
+    # Clean after test if marked
+    if request.node.get_closest_marker("clean_downloads"):
+        try:
+            clean_directory(downloads_dir, worker_id)
+            root_logger.info(f"Cleaned downloads after test: {request.node.name}")
+        except Exception as e:
+            root_logger.warning(f"Failed to clean downloads: {str(e)}")
 
 
 """
@@ -347,8 +361,7 @@ def pytest_runtest_makereport(item: Item) -> Generator[None, None, None]:
     """
     Pytest hook to handle:
         - Test duration logging.
-        - Screenshot taking on test faliure (Locally and to Allure Report).
-        - Cleaning downloads directory after successful downloads-related tests.
+        - Screenshot taking on test failure (Locally and to Allure Report).
     """
     outcome = yield
     report = outcome.get_result()  # type: ignore[attr-defined]
@@ -356,18 +369,35 @@ def pytest_runtest_makereport(item: Item) -> Generator[None, None, None]:
     if report.when == "call":
         test_name = item.name
         duration = report.duration if hasattr(report, "duration") else 0
-        root_logger.info(f"Finished test: {test_name} (Duration: {duration:.2f}s).")
 
-        driver = getattr(item, "funcargs", {}).get("driver")
-        if report.failed and driver:
-            save_screenshot_on_failure(driver, test_name)
+        # Log outcome explicitly
+        outcome_str = "PASSED" if report.passed else "FAILED" if report.failed else "SKIPPED"
+        root_logger.info(f"Test {outcome_str}: {test_name} (Duration: {duration:.2f}s).")
 
-        # Only clean downloads directory for successful tests that involve downloads
-        if report.passed and item.get_closest_marker("clean_downloads"):
-            downloads_dir = getattr(item, "funcargs", {}).get("downloads_directory")
-            if downloads_dir and downloads_dir.exists():
-                clean_directory(downloads_dir, get_worker_id())
-                root_logger.info(f"Cleaned downloads directory after successful test: {test_name}.")
+        # Take screenshot only on failure and only if driver is available
+        if report.failed:
+            driver = item.funcargs.get("driver") if hasattr(item, "funcargs") else None
+            if driver:
+                try:
+                    save_screenshot_on_failure(driver, test_name)
+                except Exception as e:
+                    root_logger.error(f"Failed to save screenshot for {test_name}: {str(e)}")
 
-    if report.when == "teardown":
+    elif report.when == "teardown":
         set_current_test(None)
+        # Log teardown failures explicitly
+        if report.failed:
+            root_logger.error(f"Test teardown failed for: {item.name}")
+
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_sessionfinish(session: Session, exitstatus: int) -> None:
+    """
+    Log final test session results.
+    """
+    passed = session.testscollected - session.testsfailed
+    root_logger.info(
+        f"Test session finished. Total: {session.testscollected}, "
+        f"Passed: {passed}, Failed: {session.testsfailed}, "
+        f"Exit status: {exitstatus}"
+    )
