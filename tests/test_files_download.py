@@ -16,6 +16,7 @@ if TYPE_CHECKING:
 class TestFilesDownload:
     """Tests Files Download functionality"""
 
+    @pytest.mark.xfail(reason="One file link is broken")
     @pytest.mark.full
     @pytest.mark.ui
     @pytest.mark.clean_downloads

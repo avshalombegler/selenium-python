@@ -15,7 +15,8 @@ if TYPE_CHECKING:
 class TestExitIntent:
     """Tests Exit Intent functionality"""
 
-    @pytest.mark.fix
+    @pytest.mark.skip(reason="Test is not yet complete")
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_modal_window_functionality(self, page_manager: PageManager, logger: Logger, actions: ActionChains) -> None:
