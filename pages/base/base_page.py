@@ -21,18 +21,53 @@ if TYPE_CHECKING:
 else:
     Locator = Any
 
-# Generic return type – usually WebElement or bool
 T = TypeVar("T")
 
 
 class BasePage:
+    """
+    Base page object providing common web automation methods.
+
+    Method Categories:
+    1. Initialization
+    2. Core Helpers (Private)
+    3. Wait Methods
+    4. Navigation Methods
+    5. Element Interaction Methods
+    6. Element State Methods
+    7. Element Query Methods
+    8. Utility Methods
+    """
+
+    # ============================================================================
+    # INITIALIZATION
+    # ============================================================================
+
     def __init__(self, driver: WebDriver, logger: Logger | None = None) -> None:
         self.driver = driver
-        # Accept an injected logger (for tests) or use a sensible default from logging_helper
         self.logger = logger if logger is not None else get_logger(self.__class__.__name__)
         self.short_wait = SHORT_TIMEOUT
         self.long_wait = LONG_TIMEOUT
         self.base_url = BASE_URL
+
+    # ============================================================================
+    # CORE HELPERS (PRIVATE)
+    # ============================================================================
+
+    def _get_timeout(self, timeout: Optional[Union[int, float]], use_long: bool = False) -> Union[int, float]:
+        """
+        Centralized timeout resolution.
+
+        Args:
+            timeout: Explicit timeout value or None
+            use_long: If True and timeout is None, use long_wait instead of short_wait
+
+        Returns:
+            Resolved timeout value
+        """
+        if timeout is not None:
+            return timeout
+        return self.long_wait if use_long else self.short_wait
 
     def _safe_wait(
         self,
@@ -56,11 +91,9 @@ class BasePage:
             NoSuchElementException: If element not found
             Exception: For any other error
         """
-        timeout = timeout or self.short_wait
+        timeout = self._get_timeout(timeout)
         wait = WebDriverWait(self.driver, timeout)
         try:
-            # ec_method may be a function like EC.visibility_of_element_located or
-            # EC.invisibility_of_element (when given a WebElement)
             try:
                 name = getattr(ec_method, "__name__", repr(ec_method))
             except Exception:
@@ -69,13 +102,44 @@ class BasePage:
             return wait.until(ec_method(locator))
         except TimeoutException as e:
             self.logger.error(f"Timeout after {timeout}s for locator {locator}: {str(e)}")
-            raise  # Let pytest hook handle screenshot
+            raise
         except NoSuchElementException as e:
             self.logger.error(f"No element found for locator {locator}: {str(e)}")
             raise
-        except Exception as e:  # Catch-all for unexpected
+        except Exception as e:
             self.logger.critical(f"Unexpected error for locator {locator}: {str(e)}")
             raise
+
+    def _execute_element_action(
+        self,
+        locator: Locator,
+        action_name: str,
+        action_func: Callable[[WebElement], Any],
+        timeout: Optional[Union[int, float]] = None,
+        retry: int = 2,
+    ) -> Any:
+        """
+        Generic method for element actions with retry.
+
+        Args:
+            locator: Element locator tuple
+            action_name: Description of action for logging (e.g., "Check enabled state")
+            action_func: Function to execute on the WebElement
+            timeout: Optional timeout for waiting
+            retry: Number of retry attempts
+
+        Returns:
+            Result of action_func
+        """
+        self.logger.info(f"{action_name} on element '{locator}'.")
+
+        def action() -> Any:
+            elem = self.wait_for_visibility(locator, timeout)
+            result = action_func(elem)
+            self.logger.debug(f"{action_name} completed for '{locator}'.")
+            return result
+
+        return self._retry(action, locator=locator, retry_count=retry)
 
     def _retry(
         self,
@@ -87,11 +151,19 @@ class BasePage:
     ) -> Any:
         """
         Generic retry helper used to reduce duplicate retry loops.
-        - func: callable to execute
-        - locator: used only for logging context
-        - retry_count: attempts
-        - exceptions: tuple of exceptions to catch and retry on
-        - final_message: optional final error message to log before re-raising
+
+        Args:
+            func: Callable to execute
+            locator: Used only for logging context
+            retry_count: Number of attempts
+            exceptions: Tuple of exceptions to catch and retry on
+            final_message: Optional final error message to log before re-raising
+
+        Returns:
+            Result of func()
+
+        Raises:
+            Last exception encountered after all retries exhausted
         """
         for attempt in range(retry_count):
             try:
@@ -103,19 +175,23 @@ class BasePage:
                     self.logger.error(msg)
                     raise
 
+    # ============================================================================
+    # WAIT METHODS
+    # ============================================================================
+
     def wait_for_page_to_load(self, indicator_locator: Locator, timeout: Optional[Union[int, float]] = None) -> None:
         """
         Wait for page to load by checking visibility of an indicator element.
 
         Args:
-            indicator_locator: Tuple of (By, value) for the indicator element.
-            timeout: Optional timeout in seconds (defaults to LONG_TIMEOUT).
+            indicator_locator: Tuple of (By, value) for the indicator element
+            timeout: Optional timeout in seconds (defaults to LONG_TIMEOUT)
 
         Raises:
-            TimeoutException: If the indicator is not visible within timeout.
-            NoSuchElementException: If the locator is invalid.
+            TimeoutException: If the indicator is not visible within timeout
+            NoSuchElementException: If the locator is invalid
         """
-        timeout = timeout or self.long_wait
+        timeout = self._get_timeout(timeout)
         wait = WebDriverWait(self.driver, timeout)
         try:
             self.logger.info(f"Waiting for page to load with indicator '{indicator_locator}' for {timeout}s.")
@@ -126,48 +202,107 @@ class BasePage:
             self.logger.info(f"Page loaded successfully with indicator '{indicator_locator}'.")
         except TimeoutException as e:
             self.logger.error(f"Page load timed out after {timeout}s for indicator '{indicator_locator}': {str(e)}")
-            raise  # Let hook handle screenshot
+            raise
         except NoSuchElementException as e:
             self.logger.error(f"Invalid locator '{indicator_locator}': {str(e)}")
             raise
 
-    def wait_for_visibility(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> "WebElement":
-        """Wait for element visible"""
+    def wait_for_visibility(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> WebElement:
+        """
+        Wait for element to be visible.
+
+        Args:
+            locator: Element locator tuple
+            timeout: Optional timeout in seconds
+
+        Returns:
+            WebElement: The visible element
+
+        Raises:
+            TimeoutException: If element not visible within timeout
+        """
         return cast(WebElement, self._safe_wait(EC.visibility_of_element_located, locator, timeout))
 
     def wait_for_invisibility(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> bool:
-        """Wait for element invisible (use EC that accepts WebElement)"""
-        timeout = timeout or self.short_wait
+        """
+        Wait for element to become invisible.
+
+        Args:
+            locator: Element locator tuple
+            timeout: Optional timeout in seconds
+
+        Returns:
+            bool: True if element became invisible
+
+        Raises:
+            TimeoutException: If element remains visible after timeout
+        """
+        timeout = self._get_timeout(timeout)
         elem = self.wait_for_visibility(locator, timeout)
         wait = WebDriverWait(self.driver, timeout)
-        # invisibility_of_element expects a WebElement; ensure bool return for mypy
         result = wait.until(EC.invisibility_of_element(elem))
         return bool(result)
 
     def wait_for_loader(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> bool:
         """
         Wait for loading indicator to appear and disappear.
-        Returns True if loader completed normally, False if timeout occurred.
+
+        Args:
+            locator: Loader element locator tuple
+            timeout: Optional timeout in seconds
+
+        Returns:
+            bool: True if loader completed, False if timeout
         """
-        timeout = timeout or self.long_wait
-        self.logger.info("Waiting for loader to disappear.")
+        timeout = self._get_timeout(timeout)
+        self.logger.info("Waiting for loader to complete.")
+
         try:
-            # Split timeout between appearing and disappearing
-            half_timeout = max(timeout / 2, 1)  # At least 1 second each
+            half_timeout = timeout / 2
             self.wait_for_visibility(locator, timeout=half_timeout)
             self.wait_for_invisibility(locator, timeout=half_timeout)
+            self.logger.debug("Loader completed successfully.")
             return True
         except TimeoutException as e:
             self.logger.warning(f"Loader timeout after {timeout}s: {str(e)}")
             return False
 
+    # ============================================================================
+    # NAVIGATION METHODS
+    # ============================================================================
+
     def navigate_to(self, url: str) -> None:
+        """
+        Navigate to a URL.
+
+        Args:
+            url: Target URL to navigate to
+        """
         self.logger.info(f"Navigating to URL: {url}.")
         self.driver.get(url)
         self.logger.info("Navigation completed.")
 
+    def refresh_page(self) -> None:
+        """Refresh the current page."""
+        self.logger.info("Refreshing page.")
+        self.driver.refresh()
+        self.logger.debug("Page refreshed.")
+
+    # ============================================================================
+    # ELEMENT INTERACTION METHODS
+    # ============================================================================
+
     def click_element(self, locator: Locator, retry: int = 2) -> None:
-        """Click with retry for stale/intercepted, no screenshot"""
+        """
+        Click an element with retry for stale/intercepted exceptions.
+
+        Args:
+            locator: Element locator tuple
+            retry: Number of retry attempts
+
+        Raises:
+            Exception: If click fails after all retries
+        """
 
         def action() -> None:
             elem = self.wait_for_visibility(locator)
@@ -175,38 +310,169 @@ class BasePage:
             elem.click()
             self.logger.debug(f"Clicked on element with locator '{locator}'.")
 
-        # Call _retry but do not return its Any to satisfy a None return type
         self._retry(action, locator=locator, retry_count=retry)
-        return None
+
+    def send_keys_to_element(self, locator: Locator, text: str, retry: int = 2) -> None:
+        """
+        Send keys to an element with retry.
+
+        Args:
+            locator: Element locator tuple
+            text: Text to send to the element
+            retry: Number of retry attempts
+
+        Raises:
+            Exception: If send keys fails after all retries
+        """
+        self._execute_element_action(
+            locator,
+            f"Sending keys '{text}'",
+            lambda elem: elem.send_keys(text),
+            retry=retry,
+        )
+
+    def perform_right_click(self, locator: Locator, actions: ActionChains, retry: int = 2) -> None:
+        """
+        Perform right-click on an element with retry.
+
+        Args:
+            locator: Element locator tuple
+            actions: ActionChains instance for performing the action
+            retry: Number of retry attempts
+
+        Raises:
+            Exception: If right-click fails after all retries
+        """
+        self._execute_element_action(
+            locator,
+            "Performing right-click",
+            lambda elem: actions.context_click(elem).perform(),
+            retry=retry,
+        )
+
+    def download_file(
+        self, locator: Locator, file_name: str, timeout: Optional[Union[int, float]] = None, retry: int = 2
+    ) -> None:
+        """
+        Click a download link for a specific file with retry.
+
+        Args:
+            locator: Download link locator with {file_name} placeholder
+            file_name: Name of the file to download
+            timeout: Optional timeout for waiting
+            retry: Number of retry attempts
+
+        Raises:
+            Exception: If download click fails after all retries
+        """
+        self.logger.info(f"Downloading file '{file_name}'.")
+        formatted_locator = (locator[0], locator[1].format(file_name=file_name))
+
+        def action() -> None:
+            self.wait_for_visibility(formatted_locator, timeout)
+            self.click_element(formatted_locator)
+            self.logger.debug(f"Clicked download link for file: {file_name}")
+
+        self._retry(action, locator=formatted_locator, retry_count=retry)
+
+    # ============================================================================
+    # ELEMENT STATE METHODS
+    # ============================================================================
+
+    def is_element_visible(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> bool:
+        """
+        Check if element is visible (in DOM and displayed).
+
+        Args:
+            locator: Element locator tuple
+            timeout: Optional timeout for waiting
+
+        Returns:
+            bool: True if element is visible, False otherwise
+        """
+        try:
+            self._safe_wait(EC.visibility_of_element_located, locator, timeout)
+            return True
+        except TimeoutException:
+            return False
+
+    def is_element_selected(
+        self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2
+    ) -> bool:
+        """
+        Check if element is selected (e.g., checkbox, radio button).
+
+        Args:
+            locator: Element locator tuple
+            timeout: Optional timeout for waiting
+            retry: Number of retry attempts
+
+        Returns:
+            bool: True if element is selected, False otherwise
+        """
+        return bool(
+            self._execute_element_action(
+                locator,
+                "Checking selected state",
+                lambda elem: elem.is_selected(),
+                timeout,
+                retry,
+            )
+        )
+
+    def is_element_enabled(self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2) -> bool:
+        """
+        Check if element is enabled (not disabled).
+
+        Args:
+            locator: Element locator tuple
+            timeout: Optional timeout for waiting
+            retry: Number of retry attempts
+
+        Returns:
+            bool: True if element is enabled, False otherwise
+        """
+        return bool(
+            self._execute_element_action(
+                locator,
+                "Checking enabled state",
+                lambda elem: elem.is_enabled(),
+                timeout,
+                retry,
+            )
+        )
+
+    # ============================================================================
+    # ELEMENT QUERY METHODS
+    # ============================================================================
 
     def get_dynamic_element_text(
         self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2
     ) -> str:
         """
-        Get text with retry for stale elements.
+        Get text from an element with retry for stale elements.
 
         Args:
-            locator: Tuple of (By, value) for the element.
-            timeout: Optional timeout in seconds (defaults to LONG_TIMEOUT).
-            retry_count: Number of retry attempts for stale elements.
+            locator: Element locator tuple
+            timeout: Optional timeout in seconds (defaults to LONG_TIMEOUT)
+            retry: Number of retry attempts for stale elements
 
         Returns:
-            str: Text of the element.
+            str: Text content of the element
 
         Raises:
-            TimeoutException: If element is not visible within timeout.
-            NoSuchElementException: If element cannot be found after retries.
+            TimeoutException: If element is not visible within timeout
+            StaleElementReferenceException: If element cannot be found after retries
         """
-        timeout = timeout or self.long_wait
+        timeout = self._get_timeout(timeout, use_long=True)
 
-        def action() -> str | Any:
+        def action() -> str:
             self.logger.debug(f"Waiting for '{locator}' visibility.")
             elem = self.wait_for_visibility(locator, timeout)
             text = elem.text
             self.logger.debug(f"Retrieved text: '{text}'.")
             return text
 
-        # Only retry on stale element; other exceptions should propagate immediately
         return self._retry(
             action,
             locator=locator,
@@ -215,21 +481,16 @@ class BasePage:
             final_message=f"Failed to get text for '{locator}' after {retry} attempts",
         )
 
-    def get_number_of_elements(self, locator: Locator) -> int:
-        self.logger.info(f"Counting elements with locator: '{locator}'.")
-        try:
-            elements = WebDriverWait(self.driver, self.short_wait).until(
-                EC.presence_of_all_elements_located(locator),
-                message=f"Timeout waiting for elements with locator '{locator}'.",
-            )
-            count = len(elements)
-            self.logger.debug(f"Found {count} elements with locator '{locator}'.")
-            return count
-        except TimeoutException:
-            self.logger.debug(f"No elements found with locator '{locator}' after {SHORT_TIMEOUT}s, returning 0.")
-            return 0
-
     def get_all_elements(self, locator: Locator) -> List[WebElement]:
+        """
+        Get all elements matching the locator.
+
+        Args:
+            locator: Element locator tuple
+
+        Returns:
+            List[WebElement]: List of matching elements (empty if none found)
+        """
         try:
             elements = WebDriverWait(self.driver, self.short_wait).until(
                 EC.presence_of_all_elements_located(locator),
@@ -238,7 +499,23 @@ class BasePage:
             return elements
         except TimeoutException:
             self.logger.debug(f"No elements found with locator {locator} after {SHORT_TIMEOUT}s.")
-        return []
+            return []
+
+    def get_number_of_elements(self, locator: Locator) -> int:
+        """
+        Count the number of elements matching the locator.
+
+        Args:
+            locator: Element locator tuple
+
+        Returns:
+            int: Number of matching elements
+        """
+        self.logger.info(f"Counting elements with locator: '{locator}'.")
+        elements = self.get_all_elements(locator)
+        count = len(elements)
+        self.logger.debug(f"Found {count} elements with locator '{locator}'.")
+        return count
 
     def get_element_attr_js(self, web_element: WebElement, attr: str) -> Any | None:
         """
@@ -263,87 +540,39 @@ class BasePage:
             return None
 
     def get_current_url(self) -> str:
-        return self.driver.current_url
+        """
+        Get the current page URL.
+
+        Returns:
+            str: Current URL
+        """
+        url = self.driver.current_url
+        self.logger.debug(f"Current URL: {url}")
+        return url
 
     def get_base_url(self) -> str:
-        return self.base_url
+        """
+        Get the base URL from configuration.
+
+        Returns:
+            str: Base URL
+        """
+        url = self.base_url
+        self.logger.debug(f"Base URL: {url}")
+        return url
+
+    # ============================================================================
+    # UTILITY METHODS
+    # ============================================================================
 
     def get_files_in_directory(self, directory_path: Path) -> list:
         """
-        Returns a list of file names in the specified directory.
+        Get all files in a directory.
+
+        Args:
+            directory_path: Path to the directory
+
+        Returns:
+            list: List of file paths in the directory
         """
         return [item for item in directory_path.iterdir() if item.is_file()]
-
-    def is_element_selected(
-        self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2
-    ) -> bool:
-        self.logger.info(f"Check element with locator '{locator}' selected state.")
-
-        def action() -> bool | Any:
-            elem = self.wait_for_visibility(locator, timeout)
-            state = elem.is_selected()
-            self.logger.debug(f"Element with locator '{locator}' selected state '{state}'.")
-            return state
-
-        return self._retry(action, locator=locator, retry_count=retry)
-
-    def is_element_enabled(self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2) -> bool:
-        self.logger.info(f"Check element with locator '{locator}' enabled state.")
-
-        def action() -> bool | Any:
-            elem = self.wait_for_visibility(locator, timeout)
-            state = elem.is_enabled()
-            self.logger.debug(f"Element with locator '{locator}' enabled state '{state}'.")
-            return state
-
-        return self._retry(action, locator=locator, retry_count=retry)
-
-    def is_element_visible(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> bool:
-        """Check if element is visible (in DOM + displayed)"""
-        try:
-            self._safe_wait(EC.visibility_of_element_located, locator, timeout)
-            return True
-        except TimeoutException:
-            return False
-
-    def perform_right_click(self, locator: Locator, actions: ActionChains, retry: int = 2) -> None:
-        self.logger.info(f"Performing right-click on element with locator '{locator}'.")
-
-        def action() -> None:
-            elem = self.wait_for_visibility(locator)
-            actions.context_click(elem).perform()
-            self.logger.debug(f"Performed right-click on element '{elem}'.")
-
-        self._retry(action, locator=locator, retry_count=retry)
-        return None
-
-    def refresh_page(self) -> None:
-        return self.driver.refresh()
-
-    def send_keys_to_element(self, locator: Locator, text: str, retry: int = 2) -> None:
-        self.logger.info(f"Send keys '{text}' to element with locator '{locator}'.")
-
-        def action() -> None:
-            elem = self.wait_for_visibility(locator)
-            elem.send_keys(text)
-
-        self._retry(action, locator=locator, retry_count=retry)
-        return None
-
-    def download_file(
-        self, locator: Locator, file_name: str, timeout: Optional[Union[int, float]] = None, retry: int = 2
-    ) -> None:
-        self.logger.info(f"Download file '{file_name}'.")
-
-        formatted_locaor = (locator[0], locator[1].format(file_name=file_name))
-
-        def action() -> None:
-            link_element = self.wait_for_visibility(formatted_locaor, timeout)
-            if link_element:
-                self.click_element(formatted_locaor)
-                self.logger.info(f"Clicked download link for file: {file_name}")
-            else:
-                raise ValueError(f"Download link for file '{file_name}' not found.")
-
-        self._retry(action, locator=locator, retry_count=retry)
-        return None
