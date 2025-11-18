@@ -341,13 +341,13 @@ class BasePage:
         self._retry(action, locator=locator, retry_count=retry)
         return None
 
-    def download_file(self, locator: Locator, file_name: str, retry: int = 2) -> None:
+    def download_file(self, locator: Locator, file_name: str, timeout: Optional[Union[int, float]] = None, retry: int = 2) -> None:
         self.logger.info(f"Download file '{file_name}'.")
 
         formatted_locaor = (locator[0], locator[1].format(file_name=file_name))
 
         def action() -> None:
-            link_element = self.wait_for_visibility(formatted_locaor)
+            link_element = self.wait_for_visibility(formatted_locaor, timeout)
             if link_element:
                 self.click_element(formatted_locaor)
                 self.logger.info(f"Clicked download link for file: {file_name}")

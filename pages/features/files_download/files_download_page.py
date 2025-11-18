@@ -33,8 +33,8 @@ class FilesDownloadPage(BasePage):
         return downloadable_files
 
     @allure.step("Download file '{file_name}'")
-    def download_file_by_filename(self, file_name: str) -> None:
-        self.download_file(FilesDownloadPageLocators.FILE_NAME_LINK, file_name)
+    def download_file_by_filename(self, file_name: str, timeout: int = 10) -> None:
+        self.download_file(FilesDownloadPageLocators.FILE_NAME_LINK, file_name, timeout=timeout)
 
     @allure.step("Get number of downloaded files")
     def get_number_of_downloaded_files(self, download_directory: Path) -> list:
