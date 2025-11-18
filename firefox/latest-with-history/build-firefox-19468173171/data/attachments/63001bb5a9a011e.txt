@@ -1,0 +1,11 @@
+INFO     root:conftest.py:284 Starting test: test_ab_testing_content
+INFO     root:base_page.py:165 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:167 Navigation completed.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:126 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_ab_testing.py:21 Tests for verifying title and paragraph content of page
+INFO     root:main_page.py:36 Navigating to A/B Testing page.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     root:base_page.py:126 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_ab_testing.py:25 Retrieved title: A/B Test Variation 1.
+INFO     root:test_ab_testing.py:30 Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..

@@ -1,0 +1,32 @@
+2025-11-18 13:40:14,177 - INFO - [test_files_upload_functionality[test1.json]] Starting test: test_files_upload_functionality[test1.json]
+2025-11-18 13:40:14,177 - INFO - [test_files_upload_functionality[test1.json]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-18 13:40:14,297 - INFO - [test_files_upload_functionality[test1.json]] Navigation completed.
+2025-11-18 13:40:14,297 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-18 13:40:14,323 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-18 13:40:14,324 - INFO - [] Capture loop started for Firefox.
+2025-11-18 13:40:14,324 - INFO - [test_files_upload_functionality[test1.json]] Started recording: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/test_files_upload_functionality[test1.json]_20251118_134014.mp4
+2025-11-18 13:40:14,326 - INFO - [test_files_upload_functionality[test1.json]] Tests Files Upload.
+2025-11-18 13:40:14,326 - INFO - [test_files_upload_functionality[test1.json]] Navigating to File Upload page.
+2025-11-18 13:40:14,451 - INFO - [] Saved frame 0: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/frames/frame_000000.png
+2025-11-18 13:40:14,475 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:40:14,610 - INFO - [] Saved frame 1: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/frames/frame_000001.png
+2025-11-18 13:40:14,617 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:40:14,808 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 13:40:14,971 - INFO - [] Saved frame 2: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/frames/frame_000002.png
+2025-11-18 13:40:14,987 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:40:15,002 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 13:40:15,002 - INFO - [test_files_upload_functionality[test1.json]] Upload file using the Upload button.
+2025-11-18 13:40:15,003 - INFO - [test_files_upload_functionality[test1.json]] Send keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/test1.json' to element with locator '('id', 'file-upload')'.
+2025-11-18 13:40:15,143 - INFO - [] Saved frame 3: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/frames/frame_000003.png
+2025-11-18 13:40:15,149 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:40:15,457 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 13:40:15,580 - INFO - [] Saved frame 4: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/frames/frame_000004.png
+2025-11-18 13:40:15,588 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:40:15,598 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 13:40:15,598 - INFO - [test_files_upload_functionality[test1.json]] Verifying file uploaded sucessfully.
+2025-11-18 13:40:15,618 - INFO - [test_files_upload_functionality[test1.json]] Test PASSED: test_files_upload_functionality[test1.json] (Duration: 1.29s).
+2025-11-18 13:40:15,619 - INFO - [test_files_upload_functionality[test1.json]] Stopping video recording...
+2025-11-18 13:40:15,619 - INFO - [test_files_upload_functionality[test1.json]] Stopping video recording and assembling.
+2025-11-18 13:40:15,647 - INFO - [test_files_upload_functionality[test1.json]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/frames
+2025-11-18 13:40:15,648 - INFO - [test_files_upload_functionality[test1.json]] Found 5 valid frames.
+2025-11-18 13:40:15,971 - INFO - [test_files_upload_functionality[test1.json]] Video created: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251118_134014/test_files_upload_functionality[test1.json]_20251118_134014.mp4

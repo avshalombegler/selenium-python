@@ -1,0 +1,21 @@
+2025-11-18 13:40:01,824 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-18 13:40:01,824 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-18 13:40:01,825 - INFO - [] Directory cleaned and recreated at: downloads/gw3.
+2025-11-18 13:40:01,826 - INFO - [] xdist worker is: gw3
+2025-11-18 13:40:01,826 - INFO - [] ====== WebDriver manager ======
+2025-11-18 13:40:01,902 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-18 13:40:01,902 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-18 13:40:02,237 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-18 13:40:02,237 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-18 13:40:02,581 - INFO - [] Driver [/home/runner/.wdm/gw3/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+2025-11-18 13:40:14,044 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]
+2025-11-18 13:40:14,047 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-18 13:40:15,272 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-11-18 13:40:15,272 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-18 13:40:15,300 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-18 13:40:15,304 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-18 13:40:15,304 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-18 13:40:15,304 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-18 13:40:15,305 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-18 13:40:15,454 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-18 13:40:15,455 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Test PASSED: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.15s).

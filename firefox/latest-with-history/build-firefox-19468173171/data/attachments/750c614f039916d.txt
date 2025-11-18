@@ -1,0 +1,15 @@
+2025-11-18 13:40:17,873 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Starting test: test_files_upload_functionality[Company_Portal_Installer.exe]
+2025-11-18 13:40:17,874 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-18 13:40:18,067 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Navigation completed.
+2025-11-18 13:40:18,067 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-18 13:40:18,090 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-18 13:40:18,092 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Tests Files Upload.
+2025-11-18 13:40:18,092 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Navigating to File Upload page.
+2025-11-18 13:40:18,447 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 13:40:18,465 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 13:40:18,466 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Upload file using the Upload button.
+2025-11-18 13:40:18,466 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Send keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/Company_Portal_Installer.exe' to element with locator '('id', 'file-upload')'.
+2025-11-18 13:40:18,773 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 13:40:18,810 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 13:40:18,810 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Verifying file uploaded sucessfully.
+2025-11-18 13:40:18,832 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Test PASSED: test_files_upload_functionality[Company_Portal_Installer.exe] (Duration: 0.74s).
