@@ -19,6 +19,7 @@ from pages.features.dynamic_loading.dynamic_loading_page import DynamicLoadingPa
 from pages.features.entry_ad.entry_ad_page import EntryAdPage
 from pages.features.exit_intent.exit_intent_page import ExitIntentPage
 from pages.features.files_download.files_download_page import FilesDownloadPage
+from pages.features.files_upload.files_upload_page import FileUploadPage
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
@@ -145,3 +146,10 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.FILE_DOWNLOAD_LINK)
 
         return FilesDownloadPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_file_upload_link(self, page_name: str = "File Upload") -> FileUploadPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.FILE_UPLOAD_LINK)
+
+        return FileUploadPage(self.driver, self.logger)

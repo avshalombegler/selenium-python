@@ -25,3 +25,4 @@ class MainPageLocators:
     ENTRY_AD_LINK: Locator = (By.LINK_TEXT, "Entry Ad")
     EXIT_INTENT_LINK: Locator = (By.LINK_TEXT, "Exit Intent")
     FILE_DOWNLOAD_LINK: Locator = (By.LINK_TEXT, "File Download")
+    FILE_UPLOAD_LINK: Locator = (By.LINK_TEXT, "File Upload")
