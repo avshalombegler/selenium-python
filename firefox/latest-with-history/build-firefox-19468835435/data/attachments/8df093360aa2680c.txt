@@ -1,0 +1,15 @@
+INFO     root:conftest.py:284 Starting test: test_add_elements
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 3s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_add_remove_elements.py:21 Tests for add elements.
+INFO     root:main_page.py:43 Navigating to Add/Remove Elements page.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'div#content h3')' for 3s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+INFO     root:test_add_remove_elements.py:24 Add two elements.
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     root:add_remove_elements_page.py:28 Counting Delete Element button(s).
+INFO     root:base_page.py:514 Counting elements with locator: '('css selector', '#elements > button')'.
+INFO     root:test_add_remove_elements.py:27 Found 2 delete buttons.
