@@ -1,0 +1,40 @@
+2025-11-18 12:25:59,700 - INFO - [test_checkboxes_functionality] Starting test: test_checkboxes_functionality.
+2025-11-18 12:25:59,700 - INFO - [test_checkboxes_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-18 12:25:59,824 - INFO - [test_checkboxes_functionality] Navigation completed.
+2025-11-18 12:25:59,824 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-18 12:25:59,841 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-18 12:25:59,842 - INFO - [] Capture loop started for Firefox.
+2025-11-18 12:25:59,843 - INFO - [test_checkboxes_functionality] Started recording: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/test_checkboxes_functionality_20251118_122559.mp4
+2025-11-18 12:25:59,844 - INFO - [test_checkboxes_functionality] Test for verifying checkbox functionality.
+2025-11-18 12:25:59,844 - INFO - [test_checkboxes_functionality] Navigating to Checkboxes page.
+2025-11-18 12:25:59,955 - INFO - [] Saved frame 0: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/frames/frame_000000.png
+2025-11-18 12:25:59,959 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 12:26:00,166 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-18 12:26:00,268 - INFO - [] Saved frame 1: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/frames/frame_000001.png
+2025-11-18 12:26:00,282 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 12:26:00,290 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-18 12:26:00,291 - INFO - [test_checkboxes_functionality] Check checkboxes initial state.
+2025-11-18 12:26:00,291 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")' selected state.
+2025-11-18 12:26:00,319 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")' selected state.
+2025-11-18 12:26:00,405 - INFO - [] Saved frame 2: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/frames/frame_000002.png
+2025-11-18 12:26:00,415 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 12:26:00,415 - INFO - [test_checkboxes_functionality] Set checkboxes new state.
+2025-11-18 12:26:00,415 - INFO - [test_checkboxes_functionality] Set checkbox '0' to 'True'.
+2025-11-18 12:26:00,416 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")' selected state.
+2025-11-18 12:26:00,530 - INFO - [] Saved frame 3: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/frames/frame_000003.png
+2025-11-18 12:26:00,534 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 12:26:00,590 - INFO - [test_checkboxes_functionality] Set checkbox '1' to 'False'.
+2025-11-18 12:26:00,590 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")' selected state.
+2025-11-18 12:26:00,661 - INFO - [] Saved frame 4: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/frames/frame_000004.png
+2025-11-18 12:26:00,664 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 12:26:00,747 - INFO - [test_checkboxes_functionality] Check checkboxes new state.
+2025-11-18 12:26:00,747 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")' selected state.
+2025-11-18 12:26:00,811 - INFO - [] Saved frame 5: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/frames/frame_000005.png
+2025-11-18 12:26:00,816 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 12:26:00,829 - INFO - [test_checkboxes_functionality] Check element with locator '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")' selected state.
+2025-11-18 12:26:00,849 - INFO - [test_checkboxes_functionality] Finished test: test_checkboxes_functionality (Duration: 1.01s).
+2025-11-18 12:26:00,850 - INFO - [test_checkboxes_functionality] Stopping video recording...
+2025-11-18 12:26:00,850 - INFO - [test_checkboxes_functionality] Stopping video recording and assembling.
+2025-11-18 12:26:00,878 - INFO - [test_checkboxes_functionality] Thread joined. Frames dir: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/frames
+2025-11-18 12:26:00,878 - INFO - [test_checkboxes_functionality] Found 6 valid frames.
+2025-11-18 12:26:01,112 - INFO - [test_checkboxes_functionality] Video created: tests_recordings/gw2/test_checkboxes_functionality_20251118_122559/test_checkboxes_functionality_20251118_122559.mp4

@@ -1,0 +1,14 @@
+INFO     root:conftest.py:290 Starting test: test_cells_content_per_column[Diceret-Phaedrum].
+INFO     root:base_page.py:165 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:167 Navigation completed.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:126 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_challenging_dom.py:51 Verify cell content per column.
+INFO     root:main_page.py:62 Navigating to Challenging DOM page.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+ERROR    root:base_page.py:128 Page load timed out after 10s for indicator '('css selector', 'div.example h3')': Message: Page load failed: indicator '('css selector', 'div.example h3')' not visible after 10s
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16

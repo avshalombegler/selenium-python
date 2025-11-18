@@ -1,0 +1,15 @@
+2025-11-18 12:25:34,590 - INFO - [test_files_download_functionality[TestingFile.pdf]] Starting test: test_files_download_functionality[TestingFile.pdf].
+2025-11-18 12:25:34,590 - INFO - [test_files_download_functionality[TestingFile.pdf]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-18 12:25:34,720 - INFO - [test_files_download_functionality[TestingFile.pdf]] Navigation completed.
+2025-11-18 12:25:34,721 - INFO - [test_files_download_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-18 12:25:34,729 - INFO - [test_files_download_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-18 12:25:34,730 - INFO - [test_files_download_functionality[TestingFile.pdf]] Tests Files Upload.
+2025-11-18 12:25:34,731 - INFO - [test_files_download_functionality[TestingFile.pdf]] Navigating to File Upload page.
+2025-11-18 12:25:35,073 - INFO - [test_files_download_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 12:25:35,085 - INFO - [test_files_download_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 12:25:35,086 - INFO - [test_files_download_functionality[TestingFile.pdf]] Upload file using the Upload button.
+2025-11-18 12:25:35,086 - INFO - [test_files_download_functionality[TestingFile.pdf]] Send keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/TestingFile.pdf' to element with locator '('id', 'file-upload')'.
+2025-11-18 12:25:35,633 - INFO - [test_files_download_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 12:25:35,643 - INFO - [test_files_download_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 12:25:35,643 - INFO - [test_files_download_functionality[TestingFile.pdf]] Verifying file uploaded sucessfully.
+2025-11-18 12:25:35,660 - INFO - [test_files_download_functionality[TestingFile.pdf]] Finished test: test_files_download_functionality[TestingFile.pdf] (Duration: 0.93s).

@@ -1,0 +1,25 @@
+2025-11-18 12:25:19,806 - INFO - [] Directory cleaned and recreated at: downloads/gw3.
+2025-11-18 12:25:19,806 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-18 12:25:19,807 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-18 12:25:19,808 - INFO - [] xdist worker is: gw3
+2025-11-18 12:25:19,808 - INFO - [] ====== WebDriver manager ======
+2025-11-18 12:25:21,178 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-18 12:25:21,260 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-18 12:25:21,351 - INFO - [] Driver [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.175/chromedriver-linux64/chromedriver] found in cache
+2025-11-18 12:25:30,282 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Starting test: test_digest_auth_login_scenarios[admin-admin].
+2025-11-18 12:25:30,305 - INFO - [] Capture loop started for Firefox.
+2025-11-18 12:25:30,308 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Started recording: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251118_122530/test_digest_auth_login_scenarios[admin-admin]_20251118_122530.mp4
+2025-11-18 12:25:30,319 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Tests for Digest Authentication scenarios.
+2025-11-18 12:25:30,320 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to Digest Authentication page.
+2025-11-18 12:25:30,320 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-18 12:25:30,675 - INFO - [] Saved frame 0: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251118_122530/frames/frame_000000.png
+2025-11-18 12:25:31,446 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-11-18 12:25:31,446 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Check if login succeeded.
+2025-11-18 12:25:31,546 - INFO - [] Saved frame 1: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251118_122530/frames/frame_000001.png
+2025-11-18 12:25:31,556 - WARNING - [test_digest_auth_login_scenarios[admin-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 12:25:31,576 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Finished test: test_digest_auth_login_scenarios[admin-admin] (Duration: 1.27s).
+2025-11-18 12:25:31,578 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording...
+2025-11-18 12:25:31,578 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording and assembling.
+2025-11-18 12:25:31,614 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Thread joined. Frames dir: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251118_122530/frames
+2025-11-18 12:25:31,615 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Found 2 valid frames.
+2025-11-18 12:25:31,842 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Video created: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251118_122530/test_digest_auth_login_scenarios[admin-admin]_20251118_122530.mp4
