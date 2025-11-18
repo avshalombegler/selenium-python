@@ -5,6 +5,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import (
     TimeoutException,
     NoSuchElementException,
@@ -16,21 +17,9 @@ from utils.logging_helper import get_logger
 from config.env_config import SHORT_TIMEOUT, LONG_TIMEOUT, BASE_URL
 
 if TYPE_CHECKING:
-    # from selenium.webdriver.common.by import By
-    # from pages.base.page_manager import PageManager
-
     Locator = Tuple[str, str]
 else:
-    from selenium.webdriver.support import expected_conditions as EC
-
     Locator = Any
-
-# When not TYPE_CHECKING we still need EC available for runtime
-if TYPE_CHECKING:
-    from selenium.webdriver.support import expected_conditions as EC
-else:
-    # already imported above in else block
-    pass
 
 # Generic return type – usually WebElement or bool
 T = TypeVar("T")
@@ -341,7 +330,9 @@ class BasePage:
         self._retry(action, locator=locator, retry_count=retry)
         return None
 
-    def download_file(self, locator: Locator, file_name: str, timeout: Optional[Union[int, float]] = None, retry: int = 2) -> None:
+    def download_file(
+        self, locator: Locator, file_name: str, timeout: Optional[Union[int, float]] = None, retry: int = 2
+    ) -> None:
         self.logger.info(f"Download file '{file_name}'.")
 
         formatted_locaor = (locator[0], locator[1].format(file_name=file_name))
