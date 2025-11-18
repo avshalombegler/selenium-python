@@ -20,6 +20,7 @@ from pages.features.entry_ad.entry_ad_page import EntryAdPage
 from pages.features.exit_intent.exit_intent_page import ExitIntentPage
 from pages.features.files_download.files_download_page import FilesDownloadPage
 from pages.features.files_upload.files_upload_page import FileUploadPage
+from pages.features.floating_menu.floating_menu_page import FloatingMenuPage
 from utils.logging_helper import get_logger
 
 if TYPE_CHECKING:
@@ -94,3 +95,6 @@ class PageManager:
 
     def get_file_upload_page(self) -> FileUploadPage:
         return self.main_page.click_file_upload_link()
+
+    def get_floating_menu_page(self) -> FloatingMenuPage:
+        return self.main_page.click_floating_menu_link()

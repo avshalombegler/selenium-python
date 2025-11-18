@@ -31,7 +31,7 @@ class TestFilesDownload:
         logger.info("Tests Files Download.")
         page = page_manager.get_file_download_page()
 
-        logger.info("Getring list of downloadable files.")
+        logger.info("Getting list of downloadable files.")
         file_names = page.get_list_of_downloadable_files()
 
         logger.info("Downloading all files in page.")

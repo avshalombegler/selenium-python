@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 @allure.feature("Files Upload")
 @allure.story("Tests Files Upload functionality")
 @pytest.mark.usefixtures("page_manager")
-class TestFilesDownload:
+class TestFilesUpload:
     """Tests Files Upload functionality"""
 
     TEST_FILES_DIR = Path(__file__).parent / "files"
@@ -30,7 +30,7 @@ class TestFilesDownload:
     @pytest.mark.ui
     @pytest.mark.parametrize("filename", FILES_NAMES)
     @allure.severity(allure.severity_level.NORMAL)
-    def test_files_download_functionality(self, page_manager: PageManager, logger: Logger, filename: str) -> None:
+    def test_files_upload_functionality(self, page_manager: PageManager, logger: Logger, filename: str) -> None:
         logger.info("Tests Files Upload.")
         page = page_manager.get_file_upload_page()
 
