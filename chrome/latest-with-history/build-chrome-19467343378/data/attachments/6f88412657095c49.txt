@@ -1,0 +1,36 @@
+2025-11-18 13:10:55,097 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-18 13:10:55,098 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-18 13:10:55,099 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-18 13:10:55,100 - INFO - [] xdist worker is: gw2
+2025-11-18 13:10:55,100 - INFO - [] ====== WebDriver manager ======
+2025-11-18 13:10:57,205 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-18 13:10:57,332 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-18 13:10:57,390 - INFO - [] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.175/chromedriver-linux64/chromedriver] found in cache
+2025-11-18 13:11:09,369 - INFO - [test_floating_menu_functionality[Home]] Starting test: test_floating_menu_functionality[Home].
+2025-11-18 13:11:09,370 - INFO - [test_floating_menu_functionality[Home]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-18 13:11:09,981 - INFO - [test_floating_menu_functionality[Home]] Navigation completed.
+2025-11-18 13:11:09,981 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-18 13:11:10,001 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-18 13:11:10,002 - INFO - [] Capture loop started for Firefox.
+2025-11-18 13:11:10,002 - INFO - [test_floating_menu_functionality[Home]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251118_131110/test_floating_menu_functionality[Home]_20251118_131110.mp4
+2025-11-18 13:11:10,004 - INFO - [test_floating_menu_functionality[Home]] Tests Files Download.
+2025-11-18 13:11:10,005 - INFO - [test_floating_menu_functionality[Home]] Navigating to Floating Menu page.
+2025-11-18 13:11:10,152 - INFO - [] Saved frame 0: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251118_131110/frames/frame_000000.png
+2025-11-18 13:11:10,179 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:11:10,325 - INFO - [] Saved frame 1: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251118_131110/frames/frame_000001.png
+2025-11-18 13:11:10,327 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:11:10,694 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 13:11:10,867 - INFO - [] Saved frame 2: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251118_131110/frames/frame_000002.png
+2025-11-18 13:11:10,870 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:11:10,876 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 13:11:10,876 - INFO - [test_floating_menu_functionality[Home]] Scroll down.
+2025-11-18 13:11:10,884 - INFO - [test_floating_menu_functionality[Home]] Clicking floating menu item 'Home'.
+2025-11-18 13:11:10,983 - INFO - [test_floating_menu_functionality[Home]] Verifying url updated after click on menu item.
+2025-11-18 13:11:11,113 - INFO - [test_floating_menu_functionality[Home]] Finished test: test_floating_menu_functionality[Home] (Duration: 1.11s).
+2025-11-18 13:11:11,115 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:11:11,116 - INFO - [test_floating_menu_functionality[Home]] Stopping video recording...
+2025-11-18 13:11:11,116 - INFO - [test_floating_menu_functionality[Home]] Stopping video recording and assembling.
+2025-11-18 13:11:11,117 - INFO - [] Saved frame 3: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251118_131110/frames/frame_000003.png
+2025-11-18 13:11:11,184 - INFO - [test_floating_menu_functionality[Home]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251118_131110/frames
+2025-11-18 13:11:11,184 - INFO - [test_floating_menu_functionality[Home]] Found 4 valid frames.
+2025-11-18 13:11:11,752 - INFO - [test_floating_menu_functionality[Home]] Video created: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251118_131110/test_floating_menu_functionality[Home]_20251118_131110.mp4

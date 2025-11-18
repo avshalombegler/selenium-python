@@ -1,0 +1,16 @@
+2025-11-18 13:11:09,680 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Starting test: test_digest_auth_login_scenarios[wrong-admin].
+2025-11-18 13:11:09,682 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Tests for Digest Authentication scenarios.
+2025-11-18 13:11:09,682 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to Digest Authentication page.
+2025-11-18 13:11:09,682 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to URL: https://wrong:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-18 13:11:10,023 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigation completed.
+2025-11-18 13:11:10,023 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Check if login succeeded.
+2025-11-18 13:11:10,060 - CRITICAL - [test_digest_auth_login_scenarios[wrong-admin]] Unexpected error for locator ('css selector', 'div#content p'): Alert Text: This site is asking you to sign in.
+Message: Unexpected promptUserAndPass dialog detected. Performed handler "dismiss"
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:927:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:3233:11
+
+2025-11-18 13:11:10,064 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Page source: <html><head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head><body><pre></pre></body></html>
+2025-11-18 13:11:10,065 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Finished test: test_digest_auth_login_scenarios[wrong-admin] (Duration: 0.38s).

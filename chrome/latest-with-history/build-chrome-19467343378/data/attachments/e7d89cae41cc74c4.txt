@@ -1,0 +1,26 @@
+2025-11-18 13:11:13,972 - INFO - [test_floating_menu_functionality[About]] Starting test: test_floating_menu_functionality[About].
+2025-11-18 13:11:13,972 - INFO - [test_floating_menu_functionality[About]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-18 13:11:14,074 - INFO - [test_floating_menu_functionality[About]] Navigation completed.
+2025-11-18 13:11:14,074 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-18 13:11:14,090 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-18 13:11:14,090 - INFO - [] Capture loop started for Firefox.
+2025-11-18 13:11:14,091 - INFO - [test_floating_menu_functionality[About]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[About]_20251118_131114/test_floating_menu_functionality[About]_20251118_131114.mp4
+2025-11-18 13:11:14,092 - INFO - [test_floating_menu_functionality[About]] Tests Files Download.
+2025-11-18 13:11:14,093 - INFO - [test_floating_menu_functionality[About]] Navigating to Floating Menu page.
+2025-11-18 13:11:14,185 - INFO - [] Saved frame 0: tests_recordings/gw2/test_floating_menu_functionality[About]_20251118_131114/frames/frame_000000.png
+2025-11-18 13:11:14,189 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:11:14,438 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-18 13:11:14,580 - INFO - [] Saved frame 1: tests_recordings/gw2/test_floating_menu_functionality[About]_20251118_131114/frames/frame_000001.png
+2025-11-18 13:11:14,581 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:11:14,588 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-18 13:11:14,588 - INFO - [test_floating_menu_functionality[About]] Scroll down.
+2025-11-18 13:11:14,593 - INFO - [test_floating_menu_functionality[About]] Clicking floating menu item 'About'.
+2025-11-18 13:11:14,691 - INFO - [test_floating_menu_functionality[About]] Verifying url updated after click on menu item.
+2025-11-18 13:11:14,879 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-18 13:11:14,879 - INFO - [] Saved frame 2: tests_recordings/gw2/test_floating_menu_functionality[About]_20251118_131114/frames/frame_000002.png
+2025-11-18 13:11:14,880 - INFO - [test_floating_menu_functionality[About]] Finished test: test_floating_menu_functionality[About] (Duration: 0.79s).
+2025-11-18 13:11:14,881 - INFO - [test_floating_menu_functionality[About]] Stopping video recording...
+2025-11-18 13:11:14,881 - INFO - [test_floating_menu_functionality[About]] Stopping video recording and assembling.
+2025-11-18 13:11:14,946 - INFO - [test_floating_menu_functionality[About]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[About]_20251118_131114/frames
+2025-11-18 13:11:14,946 - INFO - [test_floating_menu_functionality[About]] Found 3 valid frames.
+2025-11-18 13:11:15,229 - INFO - [test_floating_menu_functionality[About]] Video created: tests_recordings/gw2/test_floating_menu_functionality[About]_20251118_131114/test_floating_menu_functionality[About]_20251118_131114.mp4

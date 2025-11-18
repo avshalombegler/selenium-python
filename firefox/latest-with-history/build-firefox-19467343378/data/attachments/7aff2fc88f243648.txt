@@ -1,0 +1,12 @@
+INFO     root:conftest.py:290 Starting test: test_floating_menu_functionality[About].
+INFO     root:base_page.py:165 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:167 Navigation completed.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:126 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_floating_menu.py:29 Tests Files Download.
+INFO     root:main_page.py:160 Navigating to Floating Menu page.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:126 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_floating_menu.py:32 Scroll down.
+INFO     root:test_floating_menu.py:35 Clicking floating menu item 'About'.
+INFO     root:test_floating_menu.py:38 Verifying url updated after click on menu item.

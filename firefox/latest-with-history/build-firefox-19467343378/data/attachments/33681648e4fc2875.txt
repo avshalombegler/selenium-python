@@ -1,0 +1,12 @@
+INFO     root:conftest.py:290 Starting test: test_cells_content_per_column[Diceret-Phaedrum].
+INFO     root:base_page.py:165 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:167 Navigation completed.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:126 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_challenging_dom.py:51 Verify cell content per column.
+INFO     root:main_page.py:63 Navigating to Challenging DOM page.
+INFO     root:base_page.py:121 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     root:base_page.py:126 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:56 Getting table cell 'Phaedrum' text under column 'Diceret'.
+INFO     root:test_challenging_dom.py:56 Getting table cell 'Phaedrum' text under column 'Diceret'.
+INFO     root:test_challenging_dom.py:56 Getting table cell 'Phaedrum' text under column 'Diceret'.
