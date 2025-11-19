@@ -1,0 +1,35 @@
+INFO     root:conftest.py:299 Starting test: test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:324 Started recording: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334.mp4
+INFO     root:test_form_authentication.py:39 Tests Form Authentication.
+INFO     root:main_page.py:169 Navigating to Form Authentication page.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 0: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 1: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/frames/frame_000001.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', '.example h2')'.
+INFO     root:test_form_authentication.py:42 Entering username 'wrong'.
+INFO     root:base_page.py:134 Sending keys 'wrong' on element '('id', 'username')'.
+INFO     root:test_form_authentication.py:45 Entering password 'SuperSecretPassword!'.
+INFO     root:base_page.py:134 Sending keys 'SuperSecretPassword!' on element '('id', 'password')'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 2: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/frames/frame_000002.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_form_authentication.py:62 Clicking login button.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 3: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/frames/frame_000003.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_form_authentication.py:65 Verifying flash message after unsuccessfull login.
+CRITICAL root:base_page.py:110 Unexpected error for locator ('id', 'flash'): HTTPConnectionPool(host='localhost', port=58511): Read timed out. (read timeout=120)
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+ERROR    utils.video_recorder:video_recorder.py:75 Capture error: HTTPConnectionPool(host='localhost', port=58511): Read timed out. (read timeout=120)
+INFO     root:conftest.py:331 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 4: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/frames/frame_000004.png
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 5 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251119_150334.mp4

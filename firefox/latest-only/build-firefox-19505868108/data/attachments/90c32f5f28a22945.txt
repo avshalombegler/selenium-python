@@ -1,0 +1,15 @@
+2025-11-19 15:03:36,206 - INFO - [test_files_upload_functionality[test1.json]] Starting test: test_files_upload_functionality[test1.json]
+2025-11-19 15:03:36,207 - INFO - [test_files_upload_functionality[test1.json]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-19 15:03:36,412 - INFO - [test_files_upload_functionality[test1.json]] Navigation completed.
+2025-11-19 15:03:36,415 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-19 15:03:36,453 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-19 15:03:36,456 - INFO - [test_files_upload_functionality[test1.json]] Tests Files Upload.
+2025-11-19 15:03:36,456 - INFO - [test_files_upload_functionality[test1.json]] Navigating to File Upload page.
+2025-11-19 15:03:36,918 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-19 15:03:36,931 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-19 15:03:36,931 - INFO - [test_files_upload_functionality[test1.json]] Upload file using the Upload button.
+2025-11-19 15:03:36,931 - INFO - [test_files_upload_functionality[test1.json]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/test1.json' on element '('id', 'file-upload')'.
+2025-11-19 15:03:37,210 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-19 15:03:37,227 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-19 15:03:37,227 - INFO - [test_files_upload_functionality[test1.json]] Verifying file uploaded sucessfully.
+2025-11-19 15:03:37,247 - INFO - [test_files_upload_functionality[test1.json]] Test PASSED: test_files_upload_functionality[test1.json] (Duration: 0.79s).

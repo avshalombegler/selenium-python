@@ -1,0 +1,40 @@
+2025-11-19 15:03:02,459 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-19 15:03:02,459 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-19 15:03:02,461 - INFO - [] Directory cleaned and recreated at: downloads/gw0.
+2025-11-19 15:03:02,462 - INFO - [] xdist worker is: gw0
+2025-11-19 15:03:02,462 - INFO - [] ====== WebDriver manager ======
+2025-11-19 15:03:05,297 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-19 15:03:05,354 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-19 15:03:05,414 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-19 15:03:05,597 - INFO - [] WebDriver version 142.0.7444.175 selected
+2025-11-19 15:03:05,604 - INFO - [] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/linux64/chromedriver-linux64.zip
+2025-11-19 15:03:05,605 - INFO - [] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/linux64/chromedriver-linux64.zip
+2025-11-19 15:03:05,651 - INFO - [] Driver downloading response is 200
+2025-11-19 15:03:05,731 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-19 15:03:05,947 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw0/drivers/chromedriver/linux64/142.0.7444.175]
+2025-11-19 15:03:19,982 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue]
+2025-11-19 15:03:19,983 - INFO - [test_each_button_clicks[blue]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-19 15:03:20,529 - INFO - [test_each_button_clicks[blue]] Navigation completed.
+2025-11-19 15:03:20,529 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-19 15:03:20,587 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-19 15:03:20,590 - INFO - [] Capture loop started for Firefox.
+2025-11-19 15:03:20,591 - INFO - [test_each_button_clicks[blue]] Started recording: tests_recordings/gw0/test_each_button_clicks[blue]_20251119_150320/test_each_button_clicks[blue]_20251119_150320.mp4
+2025-11-19 15:03:20,595 - INFO - [test_each_button_clicks[blue]] Verify each button in page is clickable.
+2025-11-19 15:03:20,595 - INFO - [test_each_button_clicks[blue]] Navigating to Challenging DOM page.
+2025-11-19 15:03:20,729 - INFO - [] Saved frame 0: tests_recordings/gw0/test_each_button_clicks[blue]_20251119_150320/frames/frame_000000.png
+2025-11-19 15:03:20,737 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-19 15:03:21,161 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-19 15:03:21,340 - INFO - [] Saved frame 1: tests_recordings/gw0/test_each_button_clicks[blue]_20251119_150320/frames/frame_000001.png
+2025-11-19 15:03:21,349 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-19 15:03:21,360 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-19 15:03:21,360 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-11-19 15:03:21,514 - INFO - [] Saved frame 2: tests_recordings/gw0/test_each_button_clicks[blue]_20251119_150320/frames/frame_000002.png
+2025-11-19 15:03:21,519 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-19 15:03:21,699 - INFO - [test_each_button_clicks[blue]] Test PASSED: test_each_button_clicks[blue] (Duration: 1.10s).
+2025-11-19 15:03:21,700 - INFO - [test_each_button_clicks[blue]] Stopping video recording...
+2025-11-19 15:03:21,700 - INFO - [test_each_button_clicks[blue]] Stopping video recording and assembling.
+2025-11-19 15:03:21,796 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-19 15:03:21,799 - INFO - [] Saved frame 3: tests_recordings/gw0/test_each_button_clicks[blue]_20251119_150320/frames/frame_000003.png
+2025-11-19 15:03:21,866 - INFO - [test_each_button_clicks[blue]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[blue]_20251119_150320/frames
+2025-11-19 15:03:21,866 - INFO - [test_each_button_clicks[blue]] Found 4 valid frames.
+2025-11-19 15:03:22,605 - INFO - [test_each_button_clicks[blue]] Video created: tests_recordings/gw0/test_each_button_clicks[blue]_20251119_150320/test_each_button_clicks[blue]_20251119_150320.mp4
