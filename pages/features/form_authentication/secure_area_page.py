@@ -2,13 +2,13 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 import allure
 from pages.base.base_page import BasePage
-from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 from pages.features.form_authentication.locators import SecureAreaPageLocators
 
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
+    from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 
 
 class SecureAreaPage(BasePage):
@@ -27,7 +27,7 @@ class SecureAreaPage(BasePage):
         return self.get_dynamic_element_text(SecureAreaPageLocators.FLASH_MSG)
 
     @allure.step("Click logout")
-    def click_logout(self) -> FormAuthenticationPage:
+    def click_logout(self) -> "FormAuthenticationPage":
         self.click_element(SecureAreaPageLocators.LOGOUT_BTN)
         from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 
