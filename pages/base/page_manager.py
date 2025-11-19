@@ -22,6 +22,7 @@ from pages.features.files_download.files_download_page import FilesDownloadPage
 from pages.features.files_upload.files_upload_page import FileUploadPage
 from pages.features.floating_menu.floating_menu_page import FloatingMenuPage
 from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
+from pages.features.frames.frames_page import FramesPage
 from utils.logging_helper import get_logger
 
 if TYPE_CHECKING:
@@ -102,3 +103,6 @@ class PageManager:
 
     def get_form_authentication_page(self) -> FormAuthenticationPage:
         return self.main_page.click_form_authentication_link()
+
+    def get_frames_page(self) -> FramesPage:
+        return self.main_page.click_frames_link()

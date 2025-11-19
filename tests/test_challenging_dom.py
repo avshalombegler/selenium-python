@@ -22,8 +22,8 @@ class TestChallengingDom:
 
     @pytest.mark.full
     @pytest.mark.ui
-    @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("button", BUTTONS)
+    @allure.severity(allure.severity_level.NORMAL)
     def test_each_button_clicks(self, page_manager: PageManager, logger: Logger, button: str) -> None:
         logger.info("Verify each button in page is clickable.")
         page = page_manager.get_challenging_dom_page()
@@ -33,8 +33,8 @@ class TestChallengingDom:
 
     @pytest.mark.full
     @pytest.mark.ui
-    @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("col", COLUMNS)
+    @allure.severity(allure.severity_level.NORMAL)
     def test_table_header_per_column(self, page_manager: PageManager, logger: Logger, col: str) -> None:
         logger.info("Verify table head text per column.")
         page = page_manager.get_challenging_dom_page()
@@ -45,8 +45,8 @@ class TestChallengingDom:
 
     @pytest.mark.full
     @pytest.mark.ui
-    @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.parametrize("col, cell", list(zip(COLUMNS, CELL_VALUES)))
+    @allure.severity(allure.severity_level.NORMAL)
     def test_cells_content_per_column(self, page_manager: PageManager, logger: Logger, col: str, cell: str) -> None:
         logger.info("Verify cell content per column.")
         page = page_manager.get_challenging_dom_page()
