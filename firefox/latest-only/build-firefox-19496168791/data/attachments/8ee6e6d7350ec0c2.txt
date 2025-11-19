@@ -1,0 +1,31 @@
+2025-11-19 09:21:05,727 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-19 09:21:05,728 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-19 09:21:05,729 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-19 09:21:05,730 - INFO - [] xdist worker is: gw2
+2025-11-19 09:21:05,731 - INFO - [] ====== WebDriver manager ======
+2025-11-19 09:21:05,805 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-19 09:21:05,805 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-19 09:21:06,030 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-19 09:21:06,031 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-19 09:21:06,331 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-19 09:21:06,331 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-19 09:21:06,592 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-19 09:21:06,592 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-19 09:21:06,788 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-19 09:21:06,891 - INFO - [] Driver downloading response is 200
+2025-11-19 09:21:07,018 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-19 09:21:07,018 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-19 09:21:07,314 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw2/drivers/geckodriver/linux64/v0.36.0]
+2025-11-19 09:21:12,373 - INFO - [test_floating_menu_functionality[Home]] Starting test: test_floating_menu_functionality[Home]
+2025-11-19 09:21:12,374 - INFO - [test_floating_menu_functionality[Home]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-19 09:21:12,920 - INFO - [test_floating_menu_functionality[Home]] Navigation completed.
+2025-11-19 09:21:12,920 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-19 09:21:13,219 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-19 09:21:13,226 - INFO - [test_floating_menu_functionality[Home]] Tests Files Download.
+2025-11-19 09:21:13,230 - INFO - [test_floating_menu_functionality[Home]] Navigating to Floating Menu page.
+2025-11-19 09:21:14,090 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-19 09:21:14,135 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-19 09:21:14,135 - INFO - [test_floating_menu_functionality[Home]] Scroll down.
+2025-11-19 09:21:14,146 - INFO - [test_floating_menu_functionality[Home]] Clicking floating menu item 'Home'.
+2025-11-19 09:21:14,347 - INFO - [test_floating_menu_functionality[Home]] Verifying url updated after click on menu item.
+2025-11-19 09:21:14,356 - INFO - [test_floating_menu_functionality[Home]] Test PASSED: test_floating_menu_functionality[Home] (Duration: 1.13s).

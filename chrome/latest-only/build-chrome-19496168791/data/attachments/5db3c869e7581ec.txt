@@ -1,0 +1,31 @@
+INFO     root:conftest.py:299 Starting test: test_add_elements
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:324 Started recording: tests_recordings/gw2/test_add_elements_20251119_092122/test_add_elements_20251119_092122.mp4
+INFO     root:test_add_remove_elements.py:21 Tests for add elements.
+INFO     root:main_page.py:44 Navigating to Add/Remove Elements page.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 0: tests_recordings/gw2/test_add_elements_20251119_092122/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 1: tests_recordings/gw2/test_add_elements_20251119_092122/frames/frame_000001.png
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 2: tests_recordings/gw2/test_add_elements_20251119_092122/frames/frame_000002.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+INFO     root:test_add_remove_elements.py:24 Add two elements.
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     root:add_remove_elements_page.py:19 Clicking Add Element button.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 3: tests_recordings/gw2/test_add_elements_20251119_092122/frames/frame_000003.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:add_remove_elements_page.py:28 Counting Delete Element button(s).
+INFO     root:base_page.py:514 Counting elements with locator: '('css selector', '#elements > button')'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 4: tests_recordings/gw2/test_add_elements_20251119_092122/frames/frame_000004.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_add_remove_elements.py:27 Found 2 delete buttons.
+INFO     root:conftest.py:331 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw2/test_add_elements_20251119_092122/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 5 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw2/test_add_elements_20251119_092122/test_add_elements_20251119_092122.mp4

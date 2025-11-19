@@ -1,0 +1,16 @@
+2025-11-19 09:21:17,576 - INFO - [test_add_elements] Starting test: test_add_elements
+2025-11-19 09:21:17,577 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-19 09:21:17,737 - INFO - [test_add_elements] Navigation completed.
+2025-11-19 09:21:17,738 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-19 09:21:17,770 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-19 09:21:17,772 - INFO - [test_add_elements] Tests for add elements.
+2025-11-19 09:21:17,772 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-19 09:21:18,112 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-19 09:21:18,133 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-19 09:21:18,133 - INFO - [test_add_elements] Add two elements.
+2025-11-19 09:21:18,134 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-19 09:21:18,264 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-19 09:21:18,345 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-19 09:21:18,346 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-19 09:21:18,350 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-19 09:21:18,351 - INFO - [test_add_elements] Test PASSED: test_add_elements (Duration: 0.58s).

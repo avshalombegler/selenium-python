@@ -1,0 +1,13 @@
+2025-11-19 09:21:22,199 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Starting test: test_cells_content_per_column[Amet-Consequuntur]
+2025-11-19 09:21:22,199 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-19 09:21:22,279 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigation completed.
+2025-11-19 09:21:22,279 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-19 09:21:22,294 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-19 09:21:22,297 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Verify cell content per column.
+2025-11-19 09:21:22,297 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigating to Challenging DOM page.
+2025-11-19 09:21:22,660 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-19 09:21:22,672 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-19 09:21:22,672 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-19 09:21:22,715 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-19 09:21:22,753 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-19 09:21:22,791 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Test PASSED: test_cells_content_per_column[Amet-Consequuntur] (Duration: 0.49s).

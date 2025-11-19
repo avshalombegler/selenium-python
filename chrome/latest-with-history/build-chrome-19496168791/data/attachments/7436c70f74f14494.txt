@@ -1,0 +1,430 @@
+INFO     root:conftest.py:299 Starting test: test_files_download_functionality
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:324 Started recording: tests_recordings/gw2/test_files_download_functionality_20251119_092140/test_files_download_functionality_20251119_092140.mp4
+INFO     root:conftest.py:143 Directory cleaned and recreated at: downloads/gw2.
+INFO     root:test_files_download.py:31 Tests Files Download.
+INFO     root:main_page.py:147 Navigating to File Download page.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 0: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 1: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000001.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_files_download.py:34 Getting list of downloadable files.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 2: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000002.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 3: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000003.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 4: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000004.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 5: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000005.png
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 6: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000006.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 7: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000007.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 8: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000008.png
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 9: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000009.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 10: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000010.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 11: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000011.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 12: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000012.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 13: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000013.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 14: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000014.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 15: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000015.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 16: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000016.png
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 17: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000017.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 18: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000018.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 19: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000019.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 20: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000020.png
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 21: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000021.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_files_download.py:37 Downloading all files in page.
+INFO     root:base_page.py:368 Downloading file 'ass-4.txt'.
+INFO     root:base_page.py:368 Downloading file 'myfile.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 22: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000022.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'my_custom_file.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 23: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000023.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test1.js'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 24: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000024.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'selenium-snapshot.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 25: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000025.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample_media_file.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 26: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000026.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'DemofileUpload.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 27: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000027.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'testfile.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 28: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000028.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'tempFile.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 29: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000029.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'empty.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 30: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000030.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 31: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000031.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Sharayu_Renghe_Automation_Tester.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 32: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000032.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'SomeFile.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 33: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000033.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 34: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000034.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 35: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000035.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'audio-first.mp3'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 36: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000036.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'file_for_upload.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 37: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000037.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'E9B1F6DD-3FFD-418F-BFA5-AE9EE964F1F4.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 38: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000038.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sm.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 39: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000039.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample3.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 40: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000040.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file '47861DFF-1D57-4B93-A2AE-2870AA754BEF.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 41: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000041.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Doc1.docx'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 42: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000042.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'f1.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 43: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000043.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file '1. BasicUserInfoImportTemplate_fujitsulimT3.csv'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 44: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000044.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test16521988674341855262.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 45: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000045.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'demo-upload.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 46: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000046.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'offerApproval.feature'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 47: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000047.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'robothelper.zip'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 48: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000048.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Screenshot 2025-10-22 163830.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 49: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000049.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test-upload.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 50: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000050.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'zero_bytes_file.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 51: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000051.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 52: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000052.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test1.json'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 53: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000053.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 54: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000054.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'example.json'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 55: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000055.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 56: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000056.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test_upload.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 57: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000057.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 58: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000058.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'CATE-CHAPTER_1-QUALITY.ppt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 59: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000059.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Myfile.feature'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 60: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000060.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'photok.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 61: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000061.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Jpeg_with_exif.jpeg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 62: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000062.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 63: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000063.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'demo.json'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 64: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000064.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample_single.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 65: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000065.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file '1753447080697.0.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 66: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000066.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'testfile1.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 67: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000067.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'image.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 68: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000068.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'avatar-blank.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 69: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000069.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'empty_file.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 70: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000070.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'new11.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 71: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000071.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Testleaf_Logo.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 72: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000072.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Bing.url'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 73: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000073.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Screenshot 2025-09-17 at 4.08.52 PM.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 74: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000074.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'chromedriver.exe'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 75: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000075.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'upload_test.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 76: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000076.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'large-test-file.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 77: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000077.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'selenide-intro.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 78: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000078.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Grua Jyoti Scheme.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 79: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000079.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'DocumentPDF.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 80: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000080.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'targetScreenshot (3).png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 81: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000081.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'TestingFile.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 82: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000082.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'dummyPDF.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 83: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000083.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'photok2.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 84: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000084.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'file.json'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 85: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000085.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'selenium-server-4.12.1.jar'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 86: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000086.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'bo.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 87: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000087.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 88: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000088.png
+INFO     root:base_page.py:368 Downloading file 'test-image.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 89: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000089.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Aesthetic couple wallpaper.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 90: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000090.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'large_test_file.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 91: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000091.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 92: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000092.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Screenshot_2025-11-16_at_9.23.28_PM.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 93: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000093.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 94: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000094.png
+INFO     root:base_page.py:368 Downloading file 'test14608837520526914010.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 95: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000095.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 96: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000096.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'luminoslogo.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 97: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000097.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 98: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000098.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file '20MB.bin'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 99: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000099.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Test.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 100: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000100.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'random_data.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 101: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000101.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test9603158587166286641.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 102: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000102.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'example.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 103: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000103.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'NZ Map itenerary.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 104: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000104.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'some-file.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 105: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000105.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test.json'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 106: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000106.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'image.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 107: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000107.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 108: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000108.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Rimini Street - Pinkfish Components.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 109: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000109.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample_file.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 110: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000110.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file '120613121823-kkk-4.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 111: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000111.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'arquivo.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 112: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000112.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'dummyPdfSample.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 113: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000113.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'CatCheck-1.gif'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 114: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000114.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sampleFile.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 115: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000115.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file '2do Parcial 2024 t2.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 116: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000116.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test12986680034525037195.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 117: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000117.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Djinu.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 118: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000118.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'ClassRoon-PW-W4-File Upload & Download.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 119: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000119.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test.xml'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 120: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000120.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample_upload.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 121: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000121.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'constancia-cuil.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 122: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000122.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'file_for_upload.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 123: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000123.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'kote.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 124: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000124.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'uploadfile.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 125: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000125.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Pic.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 126: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000126.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'shared image (4).jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 127: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000127.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 128: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000128.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'bb.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 129: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000129.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 130: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000130.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'shared image.jfif'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 131: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000131.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 132: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000132.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'upload_file.xlsx'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 133: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000133.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 134: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000134.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'LambdaTest.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 135: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000135.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'first_names_100.csv'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 136: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000136.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'testfile23.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 137: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000137.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'test.csv'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 138: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000138.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Random_data.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 139: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000139.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'sample-zip-file.zip'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 140: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000140.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Company_Portal_Installer.exe'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 141: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000141.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 142: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000142.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'webdriverIO.png'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 143: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000143.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file '1.jpg'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 144: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000144.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'upload_dummy.txt'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 145: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000145.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:368 Downloading file 'Python Basics.pdf'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 146: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000146.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 147: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000147.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_files_download.py:41 Verifying downloaded files count equals to files in page.
+INFO     root:conftest.py:143 Directory cleaned and recreated at: downloads/gw2.
+INFO     root:conftest.py:362 Cleaned downloads after test: test_files_download_functionality
+INFO     root:conftest.py:331 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 148: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames/frame_000148.png
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw2/test_files_download_functionality_20251119_092140/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 149 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw2/test_files_download_functionality_20251119_092140/test_files_download_functionality_20251119_092140.mp4
+INFO     root:conftest.py:282 Quitting driver for browser: chrome.

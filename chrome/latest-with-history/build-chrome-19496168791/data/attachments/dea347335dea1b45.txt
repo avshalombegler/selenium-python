@@ -1,0 +1,26 @@
+2025-11-19 09:21:19,835 - INFO - [test_floating_menu_functionality[Contact]] Starting test: test_floating_menu_functionality[Contact]
+2025-11-19 09:21:19,835 - INFO - [test_floating_menu_functionality[Contact]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-19 09:21:19,894 - INFO - [test_floating_menu_functionality[Contact]] Navigation completed.
+2025-11-19 09:21:19,895 - INFO - [test_floating_menu_functionality[Contact]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-19 09:21:19,924 - INFO - [test_floating_menu_functionality[Contact]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-19 09:21:19,925 - INFO - [] Capture loop started for Firefox.
+2025-11-19 09:21:19,925 - INFO - [test_floating_menu_functionality[Contact]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[Contact]_20251119_092119/test_floating_menu_functionality[Contact]_20251119_092119.mp4
+2025-11-19 09:21:19,928 - INFO - [test_floating_menu_functionality[Contact]] Tests Files Download.
+2025-11-19 09:21:19,928 - INFO - [test_floating_menu_functionality[Contact]] Navigating to Floating Menu page.
+2025-11-19 09:21:20,039 - INFO - [] Saved frame 0: tests_recordings/gw2/test_floating_menu_functionality[Contact]_20251119_092119/frames/frame_000000.png
+2025-11-19 09:21:20,057 - WARNING - [test_floating_menu_functionality[Contact]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-19 09:21:20,249 - INFO - [test_floating_menu_functionality[Contact]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-19 09:21:20,443 - INFO - [] Saved frame 1: tests_recordings/gw2/test_floating_menu_functionality[Contact]_20251119_092119/frames/frame_000001.png
+2025-11-19 09:21:20,443 - WARNING - [test_floating_menu_functionality[Contact]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-19 09:21:20,453 - INFO - [test_floating_menu_functionality[Contact]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-19 09:21:20,453 - INFO - [test_floating_menu_functionality[Contact]] Scroll down.
+2025-11-19 09:21:20,457 - INFO - [test_floating_menu_functionality[Contact]] Clicking floating menu item 'Contact'.
+2025-11-19 09:21:20,565 - INFO - [test_floating_menu_functionality[Contact]] Verifying url updated after click on menu item.
+2025-11-19 09:21:20,722 - WARNING - [test_floating_menu_functionality[Contact]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-19 09:21:20,722 - INFO - [test_floating_menu_functionality[Contact]] Test PASSED: test_floating_menu_functionality[Contact] (Duration: 0.79s).
+2025-11-19 09:21:20,723 - INFO - [] Saved frame 2: tests_recordings/gw2/test_floating_menu_functionality[Contact]_20251119_092119/frames/frame_000002.png
+2025-11-19 09:21:20,724 - INFO - [test_floating_menu_functionality[Contact]] Stopping video recording...
+2025-11-19 09:21:20,724 - INFO - [test_floating_menu_functionality[Contact]] Stopping video recording and assembling.
+2025-11-19 09:21:20,790 - INFO - [test_floating_menu_functionality[Contact]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[Contact]_20251119_092119/frames
+2025-11-19 09:21:20,791 - INFO - [test_floating_menu_functionality[Contact]] Found 3 valid frames.
+2025-11-19 09:21:21,142 - INFO - [test_floating_menu_functionality[Contact]] Video created: tests_recordings/gw2/test_floating_menu_functionality[Contact]_20251119_092119/test_floating_menu_functionality[Contact]_20251119_092119.mp4
