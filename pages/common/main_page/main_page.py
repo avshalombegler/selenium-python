@@ -21,6 +21,7 @@ from pages.features.exit_intent.exit_intent_page import ExitIntentPage
 from pages.features.files_download.files_download_page import FilesDownloadPage
 from pages.features.files_upload.files_upload_page import FileUploadPage
 from pages.features.floating_menu.floating_menu_page import FloatingMenuPage
+from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
@@ -161,3 +162,10 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.FLOATING_MENU_LINK)
 
         return FloatingMenuPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_form_authentication_link(self, page_name: str = "Form Authentication") -> FormAuthenticationPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.FORM_AUTH_LINK)
+
+        return FormAuthenticationPage(self.driver, self.logger)

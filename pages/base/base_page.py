@@ -191,7 +191,7 @@ class BasePage:
             TimeoutException: If the indicator is not visible within timeout
             NoSuchElementException: If the locator is invalid
         """
-        timeout = self._get_timeout(timeout)
+        timeout = self._get_timeout(timeout, use_long=True)
         wait = WebDriverWait(self.driver, timeout)
         try:
             self.logger.info(f"Waiting for page to load with indicator '{indicator_locator}' for {timeout}s.")

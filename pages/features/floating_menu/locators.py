@@ -1,5 +1,5 @@
 """
-Module containing locators for Files Download page object.
+Module containing locators for Floating Menu page object.
 """
 
 from pages.base.base_page import Locator
