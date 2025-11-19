@@ -289,6 +289,36 @@ class BasePage:
         self.logger.debug("Page refreshed.")
 
     # ============================================================================
+    # FRAME/WINDOW METHODS
+    # ============================================================================
+
+    def switch_to_frame(self, locator: Locator, retry: int = 2) -> None:
+        """
+        Switch to an iframe or frame with retry.
+
+        Args:
+            locator: Frame element locator tuple
+            retry: Number of retry attempts
+
+        Raises:
+            Exception: If frame switch fails after all retries
+        """
+
+        def action() -> None:
+            try:
+                elem = self.wait_for_visibility(locator)
+                self.driver.switch_to.frame(elem)
+                self.logger.debug(f"Switched to frame with locator '{locator}'.")
+            except NoSuchElementException as e:
+                self.logger.warning(f"Frame not found with locator '{locator}': {str(e)}")
+                raise
+            except StaleElementReferenceException as e:
+                self.logger.warning(f"Frame element stale for '{locator}': {str(e)}")
+                raise
+
+        self._retry(action, locator=locator, retry_count=retry)
+
+    # ============================================================================
     # ELEMENT INTERACTION METHODS
     # ============================================================================
 
