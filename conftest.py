@@ -57,6 +57,8 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
         "--disable-gpu",
         "--no-sandbox",
         "--disable-dev-shm-usage",
+        "--password-store=basic",  # Use basic password store
+        "--use-mock-keychain",  # Disable OS keychain integration
     ]:
         options.add_argument(arg)
 
@@ -68,8 +70,16 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
             "download.prompt_for_download": False,
             "download.directory_upgrade": True,
             "profile.default_content_setting_values.notifications": 2,
+            "credentials_enable_service": False,  # Disable password manager
+            "profile.password_manager_enabled": False,  # Disable password manager UI
+            "profile.password_manager_leak_detection": False,  # Disable leak detection
+            "autofill.profile_enabled": False,  # Disable autofill
         },
     )
+
+    # Exclude automation switches that might trigger prompts
+    options.add_experimental_option("excludeSwitches", ["enable-automation", "enable-logging"])
+    options.add_experimental_option("useAutomationExtension", False)
 
     # Window and headless modes
     if env_config.MAXIMIZED:
@@ -98,6 +108,11 @@ def build_firefox_options(user_data_dir: Path, downloads_directory: Path) -> Fir
     profile.set_preference("browser.download.manager.focusWhenStarting", False)
     profile.set_preference("browser.download.manager.useWindow", False)
     profile.set_preference("browser.download.manager.showAlertOnComplete", False)
+
+    # Disable password manager
+    profile.set_preference("signon.rememberSignons", False)  # Disable saving passwords
+    profile.set_preference("signon.autofillForms", False)  # Disable autofill
+    profile.set_preference("signon.management.page.breach-alerts.enabled", False)  # Disable breach alerts
 
     if env_config.HEADLESS:
         options.add_argument("--headless=new")
