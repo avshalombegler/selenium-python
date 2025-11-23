@@ -1,0 +1,30 @@
+2025-11-23 07:48:51,605 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Starting test: test_files_upload_functionality[Company_Portal_Installer.exe]
+2025-11-23 07:48:51,606 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-23 07:48:51,694 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Navigation completed.
+2025-11-23 07:48:51,695 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-23 07:48:51,719 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-23 07:48:51,721 - INFO - [] Capture loop started for Firefox.
+2025-11-23 07:48:51,722 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Started recording: tests_recordings/gw1/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851.mp4
+2025-11-23 07:48:51,725 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Tests Files Upload.
+2025-11-23 07:48:51,725 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Navigating to File Upload page.
+2025-11-23 07:48:51,847 - INFO - [] Saved frame 0: tests_recordings/gw1/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851/frames/frame_000000.png
+2025-11-23 07:48:51,850 - WARNING - [test_files_upload_functionality[Company_Portal_Installer.exe]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:52,025 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-23 07:48:52,151 - INFO - [] Saved frame 1: tests_recordings/gw1/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851/frames/frame_000001.png
+2025-11-23 07:48:52,156 - WARNING - [test_files_upload_functionality[Company_Portal_Installer.exe]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:52,164 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-23 07:48:52,164 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Upload file using the Upload button.
+2025-11-23 07:48:52,164 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/Company_Portal_Installer.exe' on element '('id', 'file-upload')'.
+2025-11-23 07:48:52,311 - INFO - [] Saved frame 2: tests_recordings/gw1/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851/frames/frame_000002.png
+2025-11-23 07:48:52,316 - WARNING - [test_files_upload_functionality[Company_Portal_Installer.exe]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:52,624 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-23 07:48:52,728 - INFO - [] Saved frame 3: tests_recordings/gw1/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851/frames/frame_000003.png
+2025-11-23 07:48:52,735 - WARNING - [test_files_upload_functionality[Company_Portal_Installer.exe]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:52,744 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-23 07:48:52,744 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Verifying file uploaded sucessfully.
+2025-11-23 07:48:52,770 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Test PASSED: test_files_upload_functionality[Company_Portal_Installer.exe] (Duration: 1.05s).
+2025-11-23 07:48:52,772 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Stopping video recording...
+2025-11-23 07:48:52,772 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Stopping video recording and assembling.
+2025-11-23 07:48:52,795 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851/frames
+2025-11-23 07:48:52,795 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Found 4 valid frames.
+2025-11-23 07:48:53,124 - INFO - [test_files_upload_functionality[Company_Portal_Installer.exe]] Video created: tests_recordings/gw1/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851/test_files_upload_functionality[Company_Portal_Installer.exe]_20251123_074851.mp4

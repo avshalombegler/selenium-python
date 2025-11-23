@@ -1,0 +1,22 @@
+2025-11-23 07:48:56,521 - INFO - [test_table_header_per_column[Amet]] Starting test: test_table_header_per_column[Amet]
+2025-11-23 07:48:56,522 - INFO - [test_table_header_per_column[Amet]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-23 07:48:56,615 - INFO - [test_table_header_per_column[Amet]] Navigation completed.
+2025-11-23 07:48:56,615 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-23 07:48:56,644 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-23 07:48:56,645 - INFO - [] Capture loop started for Firefox.
+2025-11-23 07:48:56,645 - INFO - [test_table_header_per_column[Amet]] Started recording: tests_recordings/gw0/test_table_header_per_column[Amet]_20251123_074856/test_table_header_per_column[Amet]_20251123_074856.mp4
+2025-11-23 07:48:56,647 - INFO - [test_table_header_per_column[Amet]] Verify table head text per column.
+2025-11-23 07:48:56,648 - INFO - [test_table_header_per_column[Amet]] Navigating to Challenging DOM page.
+2025-11-23 07:48:56,758 - INFO - [] Saved frame 0: tests_recordings/gw0/test_table_header_per_column[Amet]_20251123_074856/frames/frame_000000.png
+2025-11-23 07:48:56,760 - WARNING - [test_table_header_per_column[Amet]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:56,947 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-23 07:48:57,079 - INFO - [] Saved frame 1: tests_recordings/gw0/test_table_header_per_column[Amet]_20251123_074856/frames/frame_000001.png
+2025-11-23 07:48:57,080 - WARNING - [test_table_header_per_column[Amet]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:57,089 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-23 07:48:57,090 - INFO - [test_table_header_per_column[Amet]] Getting table head text of column 'Amet'.
+2025-11-23 07:48:57,139 - INFO - [test_table_header_per_column[Amet]] Test PASSED: test_table_header_per_column[Amet] (Duration: 0.49s).
+2025-11-23 07:48:57,140 - INFO - [test_table_header_per_column[Amet]] Stopping video recording...
+2025-11-23 07:48:57,141 - INFO - [test_table_header_per_column[Amet]] Stopping video recording and assembling.
+2025-11-23 07:48:57,146 - INFO - [test_table_header_per_column[Amet]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Amet]_20251123_074856/frames
+2025-11-23 07:48:57,146 - INFO - [test_table_header_per_column[Amet]] Found 2 valid frames.
+2025-11-23 07:48:57,361 - INFO - [test_table_header_per_column[Amet]] Video created: tests_recordings/gw0/test_table_header_per_column[Amet]_20251123_074856/test_table_header_per_column[Amet]_20251123_074856.mp4

@@ -1,0 +1,33 @@
+2025-11-23 07:49:01,649 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Starting test: test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]
+2025-11-23 07:49:01,649 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-23 07:49:01,726 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Navigation completed.
+2025-11-23 07:49:01,726 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-23 07:49:01,744 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-23 07:49:01,744 - INFO - [] Capture loop started for Firefox.
+2025-11-23 07:49:01,745 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Started recording: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901.mp4
+2025-11-23 07:49:01,748 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Tests Form Authentication.
+2025-11-23 07:49:01,749 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Navigating to Form Authentication page.
+2025-11-23 07:49:01,845 - INFO - [] Saved frame 0: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/frames/frame_000000.png
+2025-11-23 07:49:01,850 - WARNING - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:49:02,029 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+2025-11-23 07:49:02,156 - INFO - [] Saved frame 1: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/frames/frame_000001.png
+2025-11-23 07:49:02,158 - WARNING - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:49:02,167 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Page loaded successfully with indicator '('css selector', '.example h2')'.
+2025-11-23 07:49:02,167 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Entering username 'wrong'.
+2025-11-23 07:49:02,168 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Sending keys 'wrong' on element '('id', 'username')'.
+2025-11-23 07:49:02,245 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Entering password 'SuperSecretPassword!'.
+2025-11-23 07:49:02,246 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Sending keys 'SuperSecretPassword!' on element '('id', 'password')'.
+2025-11-23 07:49:02,322 - INFO - [] Saved frame 2: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/frames/frame_000002.png
+2025-11-23 07:49:02,324 - WARNING - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:49:02,379 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Clicking login button.
+2025-11-23 07:49:02,486 - INFO - [] Saved frame 3: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/frames/frame_000003.png
+2025-11-23 07:49:02,491 - WARNING - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:49:02,561 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Verifying flash message after unsuccessfull login.
+2025-11-23 07:49:02,721 - INFO - [] Saved frame 4: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/frames/frame_000004.png
+2025-11-23 07:49:02,726 - WARNING - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:49:02,740 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Test PASSED: test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!] (Duration: 0.99s).
+2025-11-23 07:49:02,741 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Stopping video recording...
+2025-11-23 07:49:02,741 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Stopping video recording and assembling.
+2025-11-23 07:49:02,788 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Thread joined. Frames dir: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/frames
+2025-11-23 07:49:02,788 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Found 5 valid frames.
+2025-11-23 07:49:03,081 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Video created: tests_recordings/gw1/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901/test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]_20251123_074901.mp4

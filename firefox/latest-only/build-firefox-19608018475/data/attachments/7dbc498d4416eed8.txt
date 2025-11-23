@@ -1,0 +1,33 @@
+2025-11-23 07:49:01,080 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-23 07:49:01,081 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-23 07:49:01,082 - INFO - [] Directory cleaned and recreated at: downloads/gw1.
+2025-11-23 07:49:01,083 - INFO - [] xdist worker is: gw1
+2025-11-23 07:49:01,083 - INFO - [] ====== WebDriver manager ======
+2025-11-23 07:49:01,155 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-23 07:49:01,155 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-23 07:49:01,578 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-23 07:49:01,578 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-23 07:49:01,834 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-23 07:49:01,834 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-23 07:49:02,060 - INFO - [] Getting latest mozilla release info for v0.36.0
+2025-11-23 07:49:02,060 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-23 07:49:02,335 - INFO - [] About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+2025-11-23 07:49:02,449 - INFO - [] Driver downloading response is 200
+2025-11-23 07:49:02,486 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-23 07:49:02,486 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-23 07:49:02,805 - INFO - [] Driver has been saved in cache [/home/runner/.wdm/gw1/drivers/geckodriver/linux64/v0.36.0]
+2025-11-23 07:49:09,822 - INFO - [test_files_upload_functionality[audio-first.mp3]] Starting test: test_files_upload_functionality[audio-first.mp3]
+2025-11-23 07:49:09,823 - INFO - [test_files_upload_functionality[audio-first.mp3]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-23 07:49:11,099 - INFO - [test_files_upload_functionality[audio-first.mp3]] Navigation completed.
+2025-11-23 07:49:11,100 - INFO - [test_files_upload_functionality[audio-first.mp3]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-23 07:49:11,153 - INFO - [test_files_upload_functionality[audio-first.mp3]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-23 07:49:11,156 - INFO - [test_files_upload_functionality[audio-first.mp3]] Tests Files Upload.
+2025-11-23 07:49:11,156 - INFO - [test_files_upload_functionality[audio-first.mp3]] Navigating to File Upload page.
+2025-11-23 07:49:11,594 - INFO - [test_files_upload_functionality[audio-first.mp3]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-23 07:49:11,607 - INFO - [test_files_upload_functionality[audio-first.mp3]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-23 07:49:11,607 - INFO - [test_files_upload_functionality[audio-first.mp3]] Upload file using the Upload button.
+2025-11-23 07:49:11,608 - INFO - [test_files_upload_functionality[audio-first.mp3]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/audio-first.mp3' on element '('id', 'file-upload')'.
+2025-11-23 07:49:12,983 - INFO - [test_files_upload_functionality[audio-first.mp3]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-23 07:49:12,998 - INFO - [test_files_upload_functionality[audio-first.mp3]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-23 07:49:12,999 - INFO - [test_files_upload_functionality[audio-first.mp3]] Verifying file uploaded sucessfully.
+2025-11-23 07:49:13,021 - INFO - [test_files_upload_functionality[audio-first.mp3]] Test PASSED: test_files_upload_functionality[audio-first.mp3] (Duration: 1.87s).

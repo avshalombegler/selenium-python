@@ -1,0 +1,32 @@
+2025-11-23 07:48:53,274 - INFO - [test_bottom_nested_frames_functionality] Starting test: test_bottom_nested_frames_functionality
+2025-11-23 07:48:53,274 - INFO - [test_bottom_nested_frames_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-23 07:48:53,403 - INFO - [test_bottom_nested_frames_functionality] Navigation completed.
+2025-11-23 07:48:53,404 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-23 07:48:53,430 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-23 07:48:53,431 - INFO - [] Capture loop started for Firefox.
+2025-11-23 07:48:53,432 - INFO - [test_bottom_nested_frames_functionality] Started recording: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/test_bottom_nested_frames_functionality_20251123_074853.mp4
+2025-11-23 07:48:53,433 - INFO - [test_bottom_nested_frames_functionality] Tests Nested Frames.
+2025-11-23 07:48:53,434 - INFO - [test_bottom_nested_frames_functionality] Navigating to Frames page.
+2025-11-23 07:48:53,545 - INFO - [] Saved frame 0: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/frames/frame_000000.png
+2025-11-23 07:48:53,563 - WARNING - [test_bottom_nested_frames_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:53,719 - INFO - [] Saved frame 1: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/frames/frame_000001.png
+2025-11-23 07:48:53,727 - WARNING - [test_bottom_nested_frames_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:53,876 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-23 07:48:53,987 - INFO - [] Saved frame 2: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/frames/frame_000002.png
+2025-11-23 07:48:53,992 - WARNING - [test_bottom_nested_frames_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:53,997 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-23 07:48:53,998 - INFO - [test_bottom_nested_frames_functionality] Clicking Nested Frames link.
+2025-11-23 07:48:54,265 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-23 07:48:54,423 - INFO - [] Saved frame 3: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/frames/frame_000003.png
+2025-11-23 07:48:54,430 - WARNING - [test_bottom_nested_frames_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:54,437 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-23 07:48:54,437 - INFO - [test_bottom_nested_frames_functionality] Switching to frame 'bottom'.
+2025-11-23 07:48:54,472 - INFO - [test_bottom_nested_frames_functionality] Verifying frame text.
+2025-11-23 07:48:54,498 - INFO - [test_bottom_nested_frames_functionality] Test PASSED: test_bottom_nested_frames_functionality (Duration: 1.06s).
+2025-11-23 07:48:54,499 - INFO - [test_bottom_nested_frames_functionality] Stopping video recording...
+2025-11-23 07:48:54,500 - INFO - [test_bottom_nested_frames_functionality] Stopping video recording and assembling.
+2025-11-23 07:48:54,573 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-23 07:48:54,574 - INFO - [] Saved frame 4: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/frames/frame_000004.png
+2025-11-23 07:48:54,643 - INFO - [test_bottom_nested_frames_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/frames
+2025-11-23 07:48:54,644 - INFO - [test_bottom_nested_frames_functionality] Found 5 valid frames.
+2025-11-23 07:48:55,017 - INFO - [test_bottom_nested_frames_functionality] Video created: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251123_074853/test_bottom_nested_frames_functionality_20251123_074853.mp4
