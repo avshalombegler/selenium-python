@@ -16,8 +16,7 @@ class TestIframe:
 
     TEXT = "Testing switch to iframe functionality"
 
-    # @pytest.mark.full
-    @pytest.mark.current
+    @pytest.mark.full
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_iframe_functionality(self, page_manager: PageManager, logger: Logger) -> None:
@@ -27,7 +26,7 @@ class TestIframe:
         logger.info("Clicking iframe link.")
         iframe_page = page.click_iframe_link()
 
-        if "read-only" in iframe_page.driver.page_source.lower():
+        if "read-only" in iframe_page.get_page_source(lowercase=True):
             pytest.skip("herokuapp blocked – TinyMCE read-only mode")
 
         logger.info("Switching to iframe.")

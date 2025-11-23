@@ -591,6 +591,50 @@ class BasePage:
         self.logger.debug(f"Base URL: {url}")
         return url
 
+    def get_page_source(self, timeout: Optional[Union[int, float]] = None, lowercase: bool = False) -> str:
+        """
+        Get the page source with optional wait for page readiness.
+
+        Args:
+            timeout: Optional timeout for waiting for document ready state
+            lowercase: If True, return lowercase version of page source
+
+        Returns:
+            str: Page source HTML (optionally lowercased)
+
+        Raises:
+            TimeoutException: If page doesn't reach ready state within timeout
+        """
+        timeout = self._get_timeout(timeout, use_long=True)
+        self.logger.info("Getting page source.")
+        
+        try:
+            # Wait for document ready state
+            wait = WebDriverWait(self.driver, timeout)
+            wait.until(
+                lambda d: d.execute_script("return document.readyState") == "complete",
+                message=f"Page not ready after {timeout}s"
+            )
+            
+            page_source = self.driver.page_source
+            
+            if lowercase:
+                page_source = page_source.lower()
+                self.logger.debug("Retrieved page source (lowercased).")
+            else:
+                self.logger.debug("Retrieved page source.")
+                
+            return page_source
+        
+        except TimeoutException as e:
+            self.logger.warning(f"Timeout waiting for page ready state: {str(e)}")
+            # Return page source anyway even if not fully ready
+            page_source = self.driver.page_source
+            return page_source.lower() if lowercase else page_source
+        except Exception as e:
+            self.logger.error(f"Error getting page source: {str(e)}")
+            raise
+
     # ============================================================================
     # UTILITY METHODS
     # ============================================================================
