@@ -1,0 +1,66 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
+import allure
+from pages.base.base_page import BasePage
+from pages.features.geolocation.locators import GeolocationPageLocators
+
+
+if TYPE_CHECKING:
+    from selenium.webdriver.remote.webdriver import WebDriver
+    from logging import Logger
+
+
+class GeolocationPage(BasePage):
+    """Page object for the Geolocation page containing methods to interact with and validate page functionality"""
+
+    def __init__(
+        self,
+        driver: WebDriver,
+        logger: Logger | None = None,
+        wait_for_load: bool = True,
+    ) -> None:
+        super().__init__(driver, logger)
+        if wait_for_load:
+            self.wait_for_page_to_load(GeolocationPageLocators.PAGE_LOADED_INDICATOR)
+
+        # Inject geolocation mock for Firefox after page loads
+        if driver.capabilities.get("browserName", "").lower() == "firefox":
+            self._inject_firefox_geolocation_mock()
+
+    def _inject_firefox_geolocation_mock(self) -> None:
+        """Inject geolocation mock for Firefox browser."""
+        import conftest_config
+
+        script = f"""
+        Object.defineProperty(navigator.geolocation, 'getCurrentPosition', {{
+            value: function(success, error) {{
+                success({{
+                    coords: {{
+                        latitude: {conftest_config.geolocation_lat},
+                        longitude: {conftest_config.geolocation_lon},
+                        accuracy: 100,
+                        altitude: null,
+                        altitudeAccuracy: null,
+                        heading: null,
+                        speed: null
+                    }},
+                    timestamp: Date.now()
+                }});
+            }},
+            writable: false,
+            configurable: false
+        }});
+        """
+        self.driver.execute_script(script)
+
+    @allure.step("Click 'Where am I?' button")
+    def click_where_am_i_button(self) -> None:
+        self.click_element(GeolocationPageLocators.WHERE_AM_I_BTN)
+
+    @allure.step("Get latitude value")
+    def get_latitude_value(self) -> float:
+        return float(self.get_dynamic_element_text(GeolocationPageLocators.LAT_VAL))
+
+    @allure.step("Click longitude value")
+    def get_longitude_value(self) -> float:
+        return float(self.get_dynamic_element_text(GeolocationPageLocators.LONG_VAL))

@@ -13,16 +13,20 @@ from pathlib import Path
 from filelock import FileLock
 from datetime import datetime
 from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.firefox.service import Service as FirefoxService
-from selenium.webdriver.common.action_chains import ActionChains
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.core.driver_cache import DriverCacheManager
 from pages.base.page_manager import PageManager
 from utils.logging_helper import configure_root_logger, set_current_test
 from utils.video_recorder import start_video_recording
+import conftest_config
+
+CACHE_VALID_RANGE = 30  # Days to keep cache valid
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
@@ -35,20 +39,49 @@ WINDOW_WIDTH, WINDOW_HEIGHT = 1920, 1080
 # Configure root logger once for the test session
 root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO)
 
+# ============================================================================
+# HELPER METHODS
+# ============================================================================
 
-"""
 
-Helper Functions
+def get_chrome_driver_path() -> str:
+    """Get ChromeDriver path with extended cache and error handling."""
+    try:
+        cache_manager = DriverCacheManager(valid_range=CACHE_VALID_RANGE)
+        return ChromeDriverManager(cache_manager=cache_manager).install()
+    except Exception as e:
+        root_logger.warning(f"Failed to download ChromeDriver: {e}")
+        # Fallback: try to use system chromedriver
+        system_path = shutil.which("chromedriver")
+        if system_path:
+            root_logger.info(f"Using system ChromeDriver: {system_path}")
+            return system_path
+        raise RuntimeError("ChromeDriver not found. Install manually or check GitHub API limits.")
 
-"""
+
+def get_firefox_driver_path() -> str:
+    """Get GeckoDriver path with extended cache and error handling."""
+    try:
+        cache_manager = DriverCacheManager(valid_range=CACHE_VALID_RANGE)
+        return GeckoDriverManager(cache_manager=cache_manager).install()
+    except Exception as e:
+        root_logger.warning(f"Failed to download GeckoDriver: {e}")
+        # Fallback: try to use system geckodriver
+        system_path = shutil.which("geckodriver")
+        if system_path:
+            root_logger.info(f"Using system GeckoDriver: {system_path}")
+            return system_path
+        raise RuntimeError("GeckoDriver not found. Install manually or check GitHub API limits.")
 
 
 def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_port: int) -> ChromeOptions:
     options = ChromeOptions()
 
     # Core arguments
-    options.add_argument(f"--user-data-dir={user_data_dir}")  # Use the per-worker user-data-dir
-    options.add_argument(f"--remote-debugging-port={debug_port}")  # avoid DevTools port collisions between workers
+    options.add_argument(f"--user-data-dir={user_data_dir}")
+    options.add_argument(f"--remote-debugging-port={debug_port}")
+    options.add_argument("--use-fake-ui-for-media-stream")
+    options.add_argument("--use-fake-device-for-media-stream")
 
     # Stability arguments
     for arg in [
@@ -57,27 +90,30 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
         "--disable-gpu",
         "--no-sandbox",
         "--disable-dev-shm-usage",
-        "--password-store=basic",  # Use basic password store
-        "--use-mock-keychain",  # Disable OS keychain integration
+        "--password-store=basic",
+        "--use-mock-keychain",
     ]:
         options.add_argument(arg)
 
-    # Download preferences
+    # Consolidated preferences
     options.add_experimental_option(
         "prefs",
         {
+            # Download preferences
             "download.default_directory": str(downloads_directory.resolve()),
             "download.prompt_for_download": False,
             "download.directory_upgrade": True,
+            # Notification and credential preferences
             "profile.default_content_setting_values.notifications": 2,
-            "credentials_enable_service": False,  # Disable password manager
-            "profile.password_manager_enabled": False,  # Disable password manager UI
-            "profile.password_manager_leak_detection": False,  # Disable leak detection
-            "autofill.profile_enabled": False,  # Disable autofill
+            "profile.default_content_setting_values.geolocation": 1,  # Allow geolocation
+            "credentials_enable_service": False,
+            "profile.password_manager_enabled": False,
+            "profile.password_manager_leak_detection": False,
+            "autofill.profile_enabled": False,
         },
     )
 
-    # Exclude automation switches that might trigger prompts
+    # Exclude automation switches
     options.add_experimental_option("excludeSwitches", ["enable-automation", "enable-logging"])
     options.add_experimental_option("useAutomationExtension", False)
 
@@ -93,26 +129,43 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
 def build_firefox_options(user_data_dir: Path, downloads_directory: Path) -> FirefoxOptions:
     options = FirefoxOptions()
 
-    # Set custom profile directory for isolation
-    profile = webdriver.FirefoxProfile(str(user_data_dir))  # Create profile from the directory
+    # Clean existing profile directory
+    if user_data_dir.exists():
+        shutil.rmtree(user_data_dir, ignore_errors=True)
+    user_data_dir.mkdir(parents=True, exist_ok=True)
+
+    profile = webdriver.FirefoxProfile(str(user_data_dir))
     options.profile = profile
 
+    # Geolocation preferences
+    profile.set_preference("geo.prompt.testing", True)
+    profile.set_preference("geo.prompt.testing.allow", True)
+    profile.set_preference("geo.enabled", True)
+    profile.set_preference("geo.provider.use_corelocation", False)
+    profile.set_preference("geo.provider.testing", False)  # Set to False for manual override
+
+    # Cache preferences
+    profile.set_preference("browser.cache.disk.enable", False)
+    profile.set_preference("browser.cache.memory.enable", False)
+    profile.set_preference("browser.cache.offline.enable", False)
+
+    # Download preferences
     profile.set_preference("browser.download.dir", str(downloads_directory.resolve()))
-    profile.set_preference("browser.download.folderList", 2)  # 2 = custom location
+    profile.set_preference("browser.download.folderList", 2)
     profile.set_preference("browser.download.manager.showWhenStarting", False)
-    profile.set_preference("browser.download.manager.closeWhenDone", True)  # Close download dialog
+    profile.set_preference("browser.download.manager.closeWhenDone", True)
     profile.set_preference(
         "browser.helperApps.neverAsk.saveToDisk", "application/octet-stream,text/plain,application/pdf"
-    )  # Auto-save common types
+    )
     profile.set_preference("browser.download.manager.alertOnEXEOpen", False)
     profile.set_preference("browser.download.manager.focusWhenStarting", False)
     profile.set_preference("browser.download.manager.useWindow", False)
     profile.set_preference("browser.download.manager.showAlertOnComplete", False)
 
-    # Disable password manager
-    profile.set_preference("signon.rememberSignons", False)  # Disable saving passwords
-    profile.set_preference("signon.autofillForms", False)  # Disable autofill
-    profile.set_preference("signon.management.page.breach-alerts.enabled", False)  # Disable breach alerts
+    # Password manager preferences
+    profile.set_preference("signon.rememberSignons", False)
+    profile.set_preference("signon.autofillForms", False)
+    profile.set_preference("signon.management.page.breach-alerts.enabled", False)
 
     if env_config.HEADLESS:
         options.add_argument("--headless=new")
@@ -176,11 +229,9 @@ def save_screenshot_on_failure(driver: WebDriver, test_name: str) -> None:
         root_logger.error(f"Failed to save screenshot to {screenshot_path}: {str(e)}.")
 
 
-"""
-
-Pytest Fixtures
-
-"""
+# ============================================================================
+# PYTEST FIXTURES
+# ============================================================================
 
 
 @pytest.fixture(scope="session")
@@ -234,44 +285,56 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
     browser = request.config.getoption("--browser", default=env_config.BROWSER.lower())
     root_logger.debug(f"Initializing driver for browser: {browser} (Config: {env_config.BROWSER.lower()}).")
 
-    # Get downloads_directory that was set by clean_downloads_at_start fixture
     downloads_directory = get_config_path(
         request, "downloads_directory", "downloads_directory not set by clean_downloads_per_test fixture."
     )
-    root_logger.debug(f"Using downloads_directory: {downloads_directory}")
-
-    # Get user_data_dir that was set by unique_user_data_dir
     user_data_dir = get_config_path(request, "user_data_dir", "user_data_dir not set by unique_user_data_dir fixture.")
-    root_logger.debug(f"Using user_data_dir: {user_data_dir}")
 
-    # Compute a stable-ish integer suffix for a debugging port to avoid CDP collisions
     worker_token = os.environ.get("PYTEST_XDIST_WORKER", str(os.getpid()))
     port_suffix = int("".join(ch for ch in worker_token if ch.isdigit()) or "0") % 1000
-    debug_port = DEBUG_PORT_BASE + port_suffix  # keep port in reasonable range
-    root_logger.debug(f"Using debug_port: {debug_port}")
+    debug_port = DEBUG_PORT_BASE + port_suffix
+
+    driver: WebDriver | None = None
 
     try:
-        driver: WebDriver
         if browser == "chrome":
-            chrome_service = ChromeService(ChromeDriverManager().install())
+            chrome_driver_path = get_chrome_driver_path()
+            chrome_service = ChromeService(chrome_driver_path)
             chrome_options = build_chrome_options(user_data_dir, downloads_directory, debug_port)
             driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
+            # Set geolocation override after driver initialization
+            driver.execute_cdp_cmd(
+                "Browser.grantPermissions",
+                {"origin": "https://the-internet.herokuapp.com", "permissions": ["geolocation"]},
+            )
+            driver.execute_cdp_cmd(
+                "Emulation.setGeolocationOverride",
+                {
+                    "latitude": conftest_config.geolocation_lat,
+                    "longitude": conftest_config.geolocation_lon,
+                    "accuracy": 100,
+                },
+            )
+
         elif browser == "firefox":
-            firefox_service = FirefoxService(GeckoDriverManager().install())
+            firefox_driver_path = get_firefox_driver_path()
+            firefox_service = FirefoxService(firefox_driver_path)
             firefox_options = build_firefox_options(user_data_dir, downloads_directory)
             driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
+
+            driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
             if env_config.MAXIMIZED:
                 driver.maximize_window()
 
         else:
             raise ValueError(f"Unsupported browser: {browser}. Use 'chrome' or 'firefox'.")
 
-        # Ensure even viewport size
-        try:
-            driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
-        except Exception:
-            pass  # Ignore if not supported
+        if driver is not None:
+            try:
+                driver.set_window_size(WINDOW_WIDTH, WINDOW_HEIGHT)
+            except Exception:
+                pass
 
         yield driver
 
@@ -279,8 +342,12 @@ def driver(request: FixtureRequest) -> Generator[WebDriver, None, None]:
         root_logger.error(f"Failed to initialize {browser} driver: {str(e)}")
         raise
     finally:
-        root_logger.info(f"Quitting driver for browser: {browser}.")
-        driver.quit()
+        if driver is not None:
+            root_logger.info(f"Quitting driver for browser: {browser}.")
+            try:
+                driver.quit()
+            except Exception as e:
+                root_logger.warning(f"Failed to quit driver: {str(e)}")
 
 
 @pytest.fixture(scope="function")
@@ -364,11 +431,47 @@ def downloads_directory(request: FixtureRequest) -> Generator[Path, None, None]:
             root_logger.warning(f"Failed to clean downloads: {str(e)}")
 
 
-"""
+# ============================================================================
+# PYTEST HOOKS
+# ============================================================================
 
-Pytest Hooks
 
-"""
+@pytest.hookimpl(tryfirst=True)
+def pytest_configure(config: pytest.Config) -> None:
+    """Add browser info to Allure environment and ensure clean results directory."""
+    # Set geolocation values
+    conftest_config.geolocation_lat = 32.0853
+    conftest_config.geolocation_lon = 34.7818
+
+    browser = config.getoption("--browser", default=env_config.BROWSER.lower())
+
+    # Get the allure results directory from pytest options
+    allure_results_dir = getattr(config.option, 'allure_report_dir', None)
+    
+    if not allure_results_dir:
+        # Fallback to default if not specified
+        allure_results_dir = str(Path("reports") / "allure-results")
+        config.option.allure_report_dir = allure_results_dir
+    
+    allure_results_path = Path(allure_results_dir)
+    
+    # Clean allure results ONLY for non-xdist runs to avoid mixing browser results
+    if not os.environ.get("PYTEST_XDIST_WORKER"):
+        if allure_results_path.exists():
+            root_logger.info(f"Cleaning Allure results directory: {allure_results_path}")
+            shutil.rmtree(allure_results_path, ignore_errors=True)
+        
+        # Create fresh directory
+        allure_results_path.mkdir(parents=True, exist_ok=True)
+        root_logger.info(f"Created fresh Allure results directory: {allure_results_path}")
+
+        env_properties_path = allure_results_path / "environment.properties"
+        with open(env_properties_path, "w") as f:
+            f.write(f"Browser={browser}\n")
+            f.write(f"Headless={env_config.HEADLESS}\n")
+            f.write(f"Maximized={env_config.MAXIMIZED}\n")
+            f.write(f"Base.URL={env_config.BASE_URL}\n")
+            f.write(f"Window.Size={WINDOW_WIDTH}x{WINDOW_HEIGHT}\n")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)

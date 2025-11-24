@@ -19,6 +19,6 @@ class NestedFramesPageLocators:
 
 
 class IframesPageLocators:
-    PAGE_LOADED_INDICATOR: Locator = (By.TAG_NAME, ".example h3")
+    PAGE_LOADED_INDICATOR: Locator = (By.CSS_SELECTOR, ".example h3")
     IFRAME: Locator = (By.CSS_SELECTOR, ".tox-edit-area__iframe")
     RICH_TEXT_AREA: Locator = (By.CSS_SELECTOR, "#tinymce > p")

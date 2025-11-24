@@ -148,7 +148,6 @@ jobs:
             pytest \
               tests/ \
               -v \
-              --durations=0 \
               -n ${{ matrix.workers }} \
               --dist=loadfile \
               --alluredir=reports/allure-results \
@@ -166,7 +165,6 @@ jobs:
             pytest \
             tests/ \
             -v \
-            --durations=0 \
             --last-failed \
             --alluredir=reports/allure-results
 

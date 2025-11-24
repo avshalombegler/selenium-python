@@ -23,6 +23,7 @@ from pages.features.files_upload.files_upload_page import FileUploadPage
 from pages.features.floating_menu.floating_menu_page import FloatingMenuPage
 from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 from pages.features.frames.frames_page import FramesPage
+from pages.features.geolocation.geolocation_page import GeolocationPage
 from utils.logging_helper import get_logger
 
 if TYPE_CHECKING:
@@ -106,3 +107,8 @@ class PageManager:
 
     def get_frames_page(self) -> FramesPage:
         return self.main_page.click_frames_link()
+
+    def get_geolocation_page(self, navigate: bool = True) -> GeolocationPage:
+        if navigate:
+            return self.main_page.click_geolocation_link()
+        return GeolocationPage(self.driver, self.logger, wait_for_load=False)
