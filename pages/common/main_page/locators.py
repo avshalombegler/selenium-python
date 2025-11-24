@@ -27,3 +27,4 @@ class MainPageLocators:
     FLOATING_MENU_LINK: Locator = (By.LINK_TEXT, "Floating Menu")
     FORM_AUTH_LINK: Locator = (By.LINK_TEXT, "Form Authentication")
     FRAMES_LINK: Locator = (By.LINK_TEXT, "Frames")
+    GEOLOCATION_LINK: Locator = (By.LINK_TEXT, "Geolocation")

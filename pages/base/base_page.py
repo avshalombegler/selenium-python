@@ -607,25 +607,25 @@ class BasePage:
         """
         timeout = self._get_timeout(timeout, use_long=True)
         self.logger.info("Getting page source.")
-        
+
         try:
             # Wait for document ready state
             wait = WebDriverWait(self.driver, timeout)
             wait.until(
                 lambda d: d.execute_script("return document.readyState") == "complete",
-                message=f"Page not ready after {timeout}s"
+                message=f"Page not ready after {timeout}s",
             )
-            
+
             page_source = self.driver.page_source
-            
+
             if lowercase:
                 page_source = page_source.lower()
                 self.logger.debug("Retrieved page source (lowercased).")
             else:
                 self.logger.debug("Retrieved page source.")
-                
+
             return page_source
-        
+
         except TimeoutException as e:
             self.logger.warning(f"Timeout waiting for page ready state: {str(e)}")
             # Return page source anyway even if not fully ready

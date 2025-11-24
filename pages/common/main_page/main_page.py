@@ -23,6 +23,7 @@ from pages.features.files_upload.files_upload_page import FileUploadPage
 from pages.features.floating_menu.floating_menu_page import FloatingMenuPage
 from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 from pages.features.frames.frames_page import FramesPage
+from pages.features.geolocation.geolocation_page import GeolocationPage
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
@@ -177,3 +178,10 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.FRAMES_LINK)
 
         return FramesPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_geolocation_link(self, page_name: str = "Geolocation") -> GeolocationPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.GEOLOCATION_LINK)
+
+        return GeolocationPage(self.driver, self.logger, wait_for_load=True)
