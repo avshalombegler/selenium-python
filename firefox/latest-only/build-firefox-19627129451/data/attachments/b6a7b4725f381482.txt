@@ -1,0 +1,26 @@
+2025-11-24 07:54:37,823 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-24 07:54:37,824 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-24 07:54:37,824 - INFO - [] Directory cleaned and recreated at: downloads/gw3.
+2025-11-24 07:54:37,825 - INFO - [] xdist worker is: gw3
+2025-11-24 07:54:37,826 - INFO - [] ====== WebDriver manager ======
+2025-11-24 07:54:37,899 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-24 07:54:37,899 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-24 07:54:38,183 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-24 07:54:38,183 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-24 07:54:38,487 - INFO - [] Driver [/home/runner/.wdm/gw3/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+2025-11-24 07:54:44,938 - INFO - [test_top_nested_frames_functionality[left]] Starting test: test_top_nested_frames_functionality[left]
+2025-11-24 07:54:44,939 - INFO - [test_top_nested_frames_functionality[left]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-24 07:54:46,227 - INFO - [test_top_nested_frames_functionality[left]] Navigation completed.
+2025-11-24 07:54:46,227 - INFO - [test_top_nested_frames_functionality[left]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-24 07:54:46,324 - INFO - [test_top_nested_frames_functionality[left]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-24 07:54:46,334 - INFO - [test_top_nested_frames_functionality[left]] Tests Nested Frames.
+2025-11-24 07:54:46,334 - INFO - [test_top_nested_frames_functionality[left]] Navigating to Frames page.
+2025-11-24 07:54:47,325 - INFO - [test_top_nested_frames_functionality[left]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-24 07:54:47,357 - INFO - [test_top_nested_frames_functionality[left]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-24 07:54:47,358 - INFO - [test_top_nested_frames_functionality[left]] Clicking Nested Frames link.
+2025-11-24 07:54:47,752 - INFO - [test_top_nested_frames_functionality[left]] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-24 07:54:47,770 - INFO - [test_top_nested_frames_functionality[left]] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-24 07:54:47,770 - INFO - [test_top_nested_frames_functionality[left]] Switching to frame 'top'.
+2025-11-24 07:54:47,787 - INFO - [test_top_nested_frames_functionality[left]] Switching to nested frame 'left'.
+2025-11-24 07:54:47,802 - INFO - [test_top_nested_frames_functionality[left]] Verifying frame text.
+2025-11-24 07:54:47,816 - INFO - [test_top_nested_frames_functionality[left]] Test PASSED: test_top_nested_frames_functionality[left] (Duration: 1.48s).

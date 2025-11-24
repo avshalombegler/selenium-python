@@ -1,0 +1,29 @@
+INFO     root:conftest.py:366 Starting test: test_bottom_nested_frames_functionality
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:391 Started recording: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251124_075452/test_bottom_nested_frames_functionality_20251124_075452.mp4
+INFO     root:test_nested_frames.py:45 Tests Nested Frames.
+INFO     root:main_page.py:177 Navigating to Frames page.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 0: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251124_075452/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 1: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251124_075452/frames/frame_000001.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_nested_frames.py:48 Clicking Nested Frames link.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 2: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251124_075452/frames/frame_000002.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'frameset')'.
+INFO     root:test_nested_frames.py:51 Switching to frame 'bottom'.
+INFO     root:test_nested_frames.py:54 Verifying frame text.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 3: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251124_075452/frames/frame_000003.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:398 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251124_075452/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 4 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251124_075452/test_bottom_nested_frames_functionality_20251124_075452.mp4

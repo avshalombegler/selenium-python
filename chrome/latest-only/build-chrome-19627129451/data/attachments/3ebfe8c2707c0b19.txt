@@ -1,0 +1,39 @@
+2025-11-24 07:54:31,396 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw3.
+2025-11-24 07:54:31,397 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw3.
+2025-11-24 07:54:31,397 - INFO - [] Directory cleaned and recreated at: downloads/gw3.
+2025-11-24 07:54:31,398 - INFO - [] xdist worker is: gw3
+2025-11-24 07:54:31,398 - INFO - [] ====== WebDriver manager ======
+2025-11-24 07:54:33,759 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-24 07:54:33,835 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-24 07:54:33,904 - INFO - [] Driver [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.175/chromedriver-linux64/chromedriver] found in cache
+2025-11-24 07:54:46,635 - INFO - [test_top_nested_frames_functionality[left]] Starting test: test_top_nested_frames_functionality[left]
+2025-11-24 07:54:46,635 - INFO - [test_top_nested_frames_functionality[left]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-24 07:54:47,087 - INFO - [test_top_nested_frames_functionality[left]] Navigation completed.
+2025-11-24 07:54:47,088 - INFO - [test_top_nested_frames_functionality[left]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-24 07:54:47,145 - INFO - [test_top_nested_frames_functionality[left]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-24 07:54:47,146 - INFO - [] Capture loop started for Firefox.
+2025-11-24 07:54:47,147 - INFO - [test_top_nested_frames_functionality[left]] Started recording: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251124_075447/test_top_nested_frames_functionality[left]_20251124_075447.mp4
+2025-11-24 07:54:47,149 - INFO - [test_top_nested_frames_functionality[left]] Tests Nested Frames.
+2025-11-24 07:54:47,149 - INFO - [test_top_nested_frames_functionality[left]] Navigating to Frames page.
+2025-11-24 07:54:47,269 - INFO - [] Saved frame 0: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251124_075447/frames/frame_000000.png
+2025-11-24 07:54:47,279 - WARNING - [test_top_nested_frames_functionality[left]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-24 07:54:47,519 - INFO - [test_top_nested_frames_functionality[left]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-24 07:54:47,604 - INFO - [] Saved frame 1: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251124_075447/frames/frame_000001.png
+2025-11-24 07:54:47,616 - WARNING - [test_top_nested_frames_functionality[left]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-24 07:54:47,623 - INFO - [test_top_nested_frames_functionality[left]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-24 07:54:47,623 - INFO - [test_top_nested_frames_functionality[left]] Clicking Nested Frames link.
+2025-11-24 07:54:47,887 - INFO - [test_top_nested_frames_functionality[left]] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-24 07:54:47,986 - INFO - [] Saved frame 2: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251124_075447/frames/frame_000002.png
+2025-11-24 07:54:47,998 - WARNING - [test_top_nested_frames_functionality[left]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-24 07:54:48,005 - INFO - [test_top_nested_frames_functionality[left]] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-24 07:54:48,005 - INFO - [test_top_nested_frames_functionality[left]] Switching to frame 'top'.
+2025-11-24 07:54:48,033 - INFO - [test_top_nested_frames_functionality[left]] Switching to nested frame 'left'.
+2025-11-24 07:54:48,062 - INFO - [test_top_nested_frames_functionality[left]] Verifying frame text.
+2025-11-24 07:54:48,129 - INFO - [] Saved frame 3: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251124_075447/frames/frame_000003.png
+2025-11-24 07:54:48,137 - WARNING - [test_top_nested_frames_functionality[left]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-24 07:54:48,152 - INFO - [test_top_nested_frames_functionality[left]] Test PASSED: test_top_nested_frames_functionality[left] (Duration: 1.00s).
+2025-11-24 07:54:48,153 - INFO - [test_top_nested_frames_functionality[left]] Stopping video recording...
+2025-11-24 07:54:48,153 - INFO - [test_top_nested_frames_functionality[left]] Stopping video recording and assembling.
+2025-11-24 07:54:48,196 - INFO - [test_top_nested_frames_functionality[left]] Thread joined. Frames dir: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251124_075447/frames
+2025-11-24 07:54:48,196 - INFO - [test_top_nested_frames_functionality[left]] Found 4 valid frames.
+2025-11-24 07:54:48,924 - INFO - [test_top_nested_frames_functionality[left]] Video created: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251124_075447/test_top_nested_frames_functionality[left]_20251124_075447.mp4

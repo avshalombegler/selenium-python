@@ -1,0 +1,15 @@
+INFO     root:conftest.py:366 Starting test: test_table_edit_and_delete_buttons_per_row
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_challenging_dom.py:64 Verify edit and delete buttons per row are clickable.
+INFO     root:main_page.py:66 Navigating to Challenging DOM page.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:68 Clicking edit button in row {i}.
+INFO     root:test_challenging_dom.py:75 Click delete button in row {i}.
+INFO     root:test_challenging_dom.py:68 Clicking edit button in row {i}.
+INFO     root:test_challenging_dom.py:75 Click delete button in row {i}.
+INFO     root:test_challenging_dom.py:68 Clicking edit button in row {i}.
+INFO     root:test_challenging_dom.py:75 Click delete button in row {i}.

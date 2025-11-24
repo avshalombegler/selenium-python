@@ -1,0 +1,29 @@
+INFO     root:conftest.py:366 Starting test: test_cells_content_per_column[Amet-Consequuntur]
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:391 Started recording: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501.mp4
+INFO     root:test_challenging_dom.py:51 Verify cell content per column.
+INFO     root:main_page.py:66 Navigating to Challenging DOM page.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 0: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 1: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/frames/frame_000001.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:56 Getting table cell 'Consequuntur' text under column 'Amet'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 2: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/frames/frame_000002.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:56 Getting table cell 'Consequuntur' text under column 'Amet'.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 3: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/frames/frame_000003.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:56 Getting table cell 'Consequuntur' text under column 'Amet'.
+INFO     root:conftest.py:398 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 4: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/frames/frame_000004.png
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 5 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501/test_cells_content_per_column[Amet-Consequuntur]_20251124_075501.mp4

@@ -1,0 +1,15 @@
+INFO     root:conftest.py:366 Starting test: test_digest_auth_login_scenarios[admin-admin]
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:391 Started recording: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251124_075454/test_digest_auth_login_scenarios[admin-admin]_20251124_075454.mp4
+INFO     root:test_digest_auth_login_scenarios.py:30 Tests for Digest Authentication scenarios.
+INFO     root:main_page.py:87 Navigating to Digest Authentication page.
+INFO     root:base_page.py:281 Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:test_digest_auth_login_scenarios.py:33 Check if login succeeded.
+INFO     utils.video_recorder:video_recorder.py:70 Saved frame 0: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251124_075454/frames/frame_000000.png
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:398 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251124_075454/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 1 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-admin]_20251124_075454/test_digest_auth_login_scenarios[admin-admin]_20251124_075454.mp4

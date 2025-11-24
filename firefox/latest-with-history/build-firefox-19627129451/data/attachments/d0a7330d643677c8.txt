@@ -1,0 +1,14 @@
+INFO     root:conftest.py:366 Starting test: test_files_upload_functionality[test1.json]
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_files_upload.py:34 Tests Files Upload.
+INFO     root:main_page.py:156 Navigating to File Upload page.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_files_upload.py:39 Upload file using the Upload button.
+INFO     root:base_page.py:134 Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/test1.json' on element '('id', 'file-upload')'.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_files_upload.py:43 Verifying file uploaded sucessfully.

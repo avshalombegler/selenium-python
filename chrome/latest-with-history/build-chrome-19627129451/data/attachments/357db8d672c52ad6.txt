@@ -1,0 +1,27 @@
+2025-11-24 07:55:44,215 - INFO - [test_geolocation_functionality] Starting test: test_geolocation_functionality
+2025-11-24 07:55:44,216 - INFO - [test_geolocation_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-24 07:55:44,324 - INFO - [test_geolocation_functionality] Navigation completed.
+2025-11-24 07:55:44,325 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-24 07:55:44,337 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-24 07:55:44,338 - INFO - [] Capture loop started for Firefox.
+2025-11-24 07:55:44,339 - INFO - [test_geolocation_functionality] Started recording: tests_recordings/gw2/test_geolocation_functionality_20251124_075544/test_geolocation_functionality_20251124_075544.mp4
+2025-11-24 07:55:44,340 - INFO - [test_geolocation_functionality] Tests Geolocation.
+2025-11-24 07:55:44,340 - INFO - [test_geolocation_functionality] Navigating to Geolocation page.
+2025-11-24 07:55:44,420 - INFO - [] Saved frame 0: tests_recordings/gw2/test_geolocation_functionality_20251124_075544/frames/frame_000000.png
+2025-11-24 07:55:44,429 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-24 07:55:44,542 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-24 07:55:44,625 - INFO - [] Saved frame 1: tests_recordings/gw2/test_geolocation_functionality_20251124_075544/frames/frame_000001.png
+2025-11-24 07:55:44,628 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-24 07:55:44,633 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-24 07:55:44,633 - INFO - [test_geolocation_functionality] Clicking 'Where am I' button.
+2025-11-24 07:55:44,700 - INFO - [test_geolocation_functionality] Verifying geolocation latitude value.
+2025-11-24 07:55:44,792 - INFO - [] Saved frame 2: tests_recordings/gw2/test_geolocation_functionality_20251124_075544/frames/frame_000002.png
+2025-11-24 07:55:44,798 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-24 07:55:44,808 - INFO - [test_geolocation_functionality] Verifying geolocation longitude value.
+2025-11-24 07:55:44,825 - INFO - [test_geolocation_functionality] Test PASSED: test_geolocation_functionality (Duration: 0.49s).
+2025-11-24 07:55:44,826 - INFO - [test_geolocation_functionality] Stopping video recording...
+2025-11-24 07:55:44,826 - INFO - [test_geolocation_functionality] Stopping video recording and assembling.
+2025-11-24 07:55:44,859 - INFO - [test_geolocation_functionality] Thread joined. Frames dir: tests_recordings/gw2/test_geolocation_functionality_20251124_075544/frames
+2025-11-24 07:55:44,859 - INFO - [test_geolocation_functionality] Found 3 valid frames.
+2025-11-24 07:55:45,030 - INFO - [test_geolocation_functionality] Video created: tests_recordings/gw2/test_geolocation_functionality_20251124_075544/test_geolocation_functionality_20251124_075544.mp4
+2025-11-24 07:55:45,032 - INFO - [test_geolocation_functionality] Quitting driver for browser: chrome.
