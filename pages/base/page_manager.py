@@ -24,6 +24,7 @@ from pages.features.floating_menu.floating_menu_page import FloatingMenuPage
 from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 from pages.features.frames.frames_page import FramesPage
 from pages.features.geolocation.geolocation_page import GeolocationPage
+from pages.features.horizontal_slider.horizontal_slider_page import HorizontalSliderPage
 from utils.logging_helper import get_logger
 
 if TYPE_CHECKING:
@@ -112,3 +113,8 @@ class PageManager:
         if navigate:
             return self.main_page.click_geolocation_link()
         return GeolocationPage(self.driver, self.logger, wait_for_load=False)
+
+    def get_horizontal_slider_page(
+        self,
+    ) -> HorizontalSliderPage:
+        return self.main_page.click_horizontal_slider_link()

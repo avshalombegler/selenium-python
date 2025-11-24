@@ -75,11 +75,24 @@ def get_firefox_driver_path() -> str:
 
 
 def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_port: int) -> ChromeOptions:
+    # Clean existing profile directory
+    if user_data_dir.exists():
+        shutil.rmtree(user_data_dir, ignore_errors=True)
+    user_data_dir.mkdir(parents=True, exist_ok=True)
+
     options = ChromeOptions()
 
-    # Core arguments
+    # Core arguments (order matters!)
     options.add_argument(f"--user-data-dir={user_data_dir}")
+    options.add_argument("--profile-directory=Default")
     options.add_argument(f"--remote-debugging-port={debug_port}")
+
+    # Disable profile reset BEFORE other args
+    options.add_argument("--disable-features=TriggeredProfileReset,ProfileResetPrompt")
+    options.add_argument("--no-first-run")
+    options.add_argument("--no-default-browser-check")
+
+    # Media stream arguments
     options.add_argument("--use-fake-ui-for-media-stream")
     options.add_argument("--use-fake-device-for-media-stream")
 
@@ -90,8 +103,7 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
         "--disable-gpu",
         "--no-sandbox",
         "--disable-dev-shm-usage",
-        "--password-store=basic",
-        "--use-mock-keychain",
+        "--disable-blink-features=AutomationControlled",
     ]:
         options.add_argument(arg)
 
@@ -105,11 +117,22 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
             "download.directory_upgrade": True,
             # Notification and credential preferences
             "profile.default_content_setting_values.notifications": 2,
-            "profile.default_content_setting_values.geolocation": 1,  # Allow geolocation
+            "profile.default_content_setting_values.geolocation": 1,
+            # Disable password manager
             "credentials_enable_service": False,
             "profile.password_manager_enabled": False,
-            "profile.password_manager_leak_detection": False,
-            "autofill.profile_enabled": False,
+            # Disable profile reset prompt
+            "profile.exit_type": "Normal",
+            "profile.exited_cleanly": True,
+            # Disable various automation detection features
+            "profile.default_content_settings.popups": 0,
+            # Disable profile reset prompt
+            "profile.reset_prompt_memento": {
+                "prompt_shown_count": 0,
+                "last_reset_time": 0,
+                "last_reset_version": "",
+            },
+            "profile.reset_prompt_enabled": False,
         },
     )
 
@@ -175,7 +198,7 @@ def build_firefox_options(user_data_dir: Path, downloads_directory: Path) -> Fir
 
 def get_worker_id() -> str:
     """Get worker ID for xdist or fallback to local PID."""
-    return os.environ.get("PYTEST_XDIST_WORKER") or f"local_{os.getpid()}"
+    return os.environ.get("PYTEST_XDIST_WORKER") or "local"
 
 
 def get_config_path(request: FixtureRequest, attr: str, error_msg: str) -> Path:
@@ -245,7 +268,7 @@ def logger() -> logging.Logger:
 @pytest.fixture(scope="session", autouse=True)
 def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]:
     """
-    Creates and yields a unique Chrome user data directory per test worker/session.
+    Creates and yields a unique Chrome user data directory per test.
     Ensures isolation between parallel test runs (xdist) by using worker ID or PID.
     Directory is created in system temp and stored in config for driver setup.
     """
@@ -254,7 +277,7 @@ def unique_user_data_dir(request: FixtureRequest) -> Generator[None, None, None]
     except Exception:
         worker_id = get_worker_id()
 
-    user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker_id}"
+    user_data_dir = Path(tempfile.gettempdir()) / f"user_data_{worker_id}_{request.node.name}"
     user_data_dir.mkdir(parents=True, exist_ok=True)
     request.config.user_data_dir = user_data_dir  # type: ignore[attr-defined]
     yield
@@ -446,21 +469,21 @@ def pytest_configure(config: pytest.Config) -> None:
     browser = config.getoption("--browser", default=env_config.BROWSER.lower())
 
     # Get the allure results directory from pytest options
-    allure_results_dir = getattr(config.option, 'allure_report_dir', None)
-    
+    allure_results_dir = getattr(config.option, "allure_report_dir", None)
+
     if not allure_results_dir:
         # Fallback to default if not specified
         allure_results_dir = str(Path("reports") / "allure-results")
         config.option.allure_report_dir = allure_results_dir
-    
+
     allure_results_path = Path(allure_results_dir)
-    
+
     # Clean allure results ONLY for non-xdist runs to avoid mixing browser results
     if not os.environ.get("PYTEST_XDIST_WORKER"):
         if allure_results_path.exists():
             root_logger.info(f"Cleaning Allure results directory: {allure_results_path}")
             shutil.rmtree(allure_results_path, ignore_errors=True)
-        
+
         # Create fresh directory
         allure_results_path.mkdir(parents=True, exist_ok=True)
         root_logger.info(f"Created fresh Allure results directory: {allure_results_path}")
