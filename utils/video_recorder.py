@@ -16,8 +16,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-import allure
-from filelock import FileLock
 from selenium import webdriver
 
 if TYPE_CHECKING:
@@ -43,7 +41,6 @@ def start_video_recording(
     base_dir = Path("tests_recordings") / worker_id / f"{test_name}_{timestamp}"
     frames_dir = base_dir / "frames"
     video_path = base_dir / f"{test_name}_{timestamp}.mp4"
-    lock_file = base_dir / f"{worker_id}.lock"
 
     frames_dir.mkdir(parents=True, exist_ok=True)
 
@@ -116,10 +113,6 @@ def start_video_recording(
         try:
             subprocess.run(ffmpeg_cmd, check=True, capture_output=True, text=True)
             logger.info(f"Video created: {video_path}")
-            with FileLock(lock_file):
-                allure.attach.file(
-                    str(video_path), name=f"Recording - {test_name}", attachment_type=allure.attachment_type.MP4
-                )
         except Exception as e:
             logger.error(f"ffmpeg failed: {e}")
 
