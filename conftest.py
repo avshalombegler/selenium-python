@@ -25,7 +25,7 @@ from webdriver_manager.core.driver_cache import DriverCacheManager
 from webdriver_manager.firefox import GeckoDriverManager
 
 import config.env_config as env_config
-import conftest_config
+import config.conftest_config as conftest_config
 from pages.base.page_manager import PageManager
 from utils.logging_helper import configure_root_logger, set_current_test
 from utils.video_recorder import start_video_recording

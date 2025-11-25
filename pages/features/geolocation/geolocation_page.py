@@ -32,7 +32,7 @@ class GeolocationPage(BasePage):
 
     def _inject_firefox_geolocation_mock(self) -> None:
         """Inject geolocation mock for Firefox browser."""
-        import conftest_config
+        import config.conftest_config as conftest_config
 
         script = f"""
         Object.defineProperty(navigator.geolocation, 'getCurrentPosition', {{
