@@ -25,6 +25,7 @@ from pages.features.form_authentication.form_authentication_page import FormAuth
 from pages.features.frames.frames_page import FramesPage
 from pages.features.geolocation.geolocation_page import GeolocationPage
 from pages.features.horizontal_slider.horizontal_slider_page import HorizontalSliderPage
+from pages.features.hovers.hovers_page import HoversPage
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
@@ -193,3 +194,10 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.HORIZONTAL_SLIDER_LINK)
 
         return HorizontalSliderPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_hovers_link(self, page_name: str = "Hovers") -> HoversPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.HOVERS_LINK)
+
+        return HoversPage(self.driver, self.logger)

@@ -286,7 +286,13 @@ class BasePage:
         """Refresh the current page."""
         self.logger.info("Refreshing page.")
         self.driver.refresh()
-        self.logger.debug("Page refreshed.")
+        self.logger.info("Page refreshed.")
+
+    def navigate_back(self) -> None:
+        """Navigate back."""
+        self.logger.info("Navigating back.")
+        self.driver.back()
+        self.logger.info("Navigation completed.")
 
     # ============================================================================
     # FRAME/WINDOW METHODS

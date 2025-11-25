@@ -29,3 +29,4 @@ class MainPageLocators:
     FRAMES_LINK: Locator = (By.LINK_TEXT, "Frames")
     GEOLOCATION_LINK: Locator = (By.LINK_TEXT, "Geolocation")
     HORIZONTAL_SLIDER_LINK: Locator = (By.LINK_TEXT, "Horizontal Slider")
+    HOVERS_LINK: Locator = (By.LINK_TEXT, "Hovers")
