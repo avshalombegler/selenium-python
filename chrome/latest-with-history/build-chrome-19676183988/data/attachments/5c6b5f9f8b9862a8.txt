@@ -1,0 +1,21 @@
+2025-11-25 16:12:56,884 - INFO - [test_right_click_on_hotspot] Starting test: test_right_click_on_hotspot
+2025-11-25 16:12:56,884 - INFO - [test_right_click_on_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:12:56,945 - INFO - [test_right_click_on_hotspot] Navigation completed.
+2025-11-25 16:12:56,946 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:12:57,002 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:12:57,003 - INFO - [] Capture loop started.
+2025-11-25 16:12:57,003 - INFO - [test_right_click_on_hotspot] Started recording: tests_recordings/gw2/test_right_click_on_hotspot_20251125_161257/test_right_click_on_hotspot_20251125_161257.mp4
+2025-11-25 16:12:57,005 - INFO - [test_right_click_on_hotspot] Navigating to Context Menu page.
+2025-11-25 16:12:57,120 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:12:57,282 - INFO - [test_right_click_on_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 16:12:57,388 - WARNING - [test_right_click_on_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:12:57,398 - INFO - [test_right_click_on_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 16:12:57,399 - INFO - [test_right_click_on_hotspot] Testing right-click on hot spot
+2025-11-25 16:12:57,399 - INFO - [test_right_click_on_hotspot] Video recording active – skipping alert text check
+2025-11-25 16:12:57,400 - INFO - [test_right_click_on_hotspot] Test PASSED: test_right_click_on_hotspot (Duration: 0.39s).
+2025-11-25 16:12:57,400 - INFO - [test_right_click_on_hotspot] Stopping video recording...
+2025-11-25 16:12:57,401 - INFO - [test_right_click_on_hotspot] Stopping video recording and assembling.
+2025-11-25 16:12:57,450 - INFO - [test_right_click_on_hotspot] Thread joined. Frames dir: tests_recordings/gw2/test_right_click_on_hotspot_20251125_161257/frames
+2025-11-25 16:12:57,450 - INFO - [test_right_click_on_hotspot] Found 2 valid frames.
+2025-11-25 16:12:57,689 - INFO - [test_right_click_on_hotspot] Video created: tests_recordings/gw2/test_right_click_on_hotspot_20251125_161257/test_right_click_on_hotspot_20251125_161257.mp4
+2025-11-25 16:12:58,691 - INFO - [test_right_click_on_hotspot] Video attached to test body: tests_recordings/gw2/test_right_click_on_hotspot_20251125_161257/test_right_click_on_hotspot_20251125_161257.mp4

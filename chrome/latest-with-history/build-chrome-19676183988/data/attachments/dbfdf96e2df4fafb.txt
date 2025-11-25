@@ -1,0 +1,75 @@
+INFO     root:conftest.py:391 Starting test: test_iframe_functionality
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw0/test_iframe_functionality_20251125_161310/test_iframe_functionality_20251125_161310.mp4
+INFO     root:test_iframe.py:26 Tests iframe.
+INFO     root:main_page.py:185 Navigating to Frames page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_iframe.py:29 Clicking iframe link.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:base_page.py:652 Getting page source.
+INFO     root:test_iframe.py:35 Switching to iframe.
+INFO     root:test_iframe.py:38 Sending text to iframe's rich text area.
+INFO     root:base_page.py:139 Sending keys 'Testing switch to iframe functionality' on element '('css selector', '#tinymce > p')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  root:base_page.py:177 Attempt 1/2 failed for ('css selector', '#tinymce > p'): Message: element not interactable
+  (Session info: chrome=142.0.7444.162); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5626c816e4ca <unknown>
+#1 0x5626c7bbcc78 <unknown>
+#2 0x5626c7c0997b <unknown>
+#3 0x5626c7c07dd4 <unknown>
+#4 0x5626c7c034e7 <unknown>
+#5 0x5626c7c5bdf7 <unknown>
+#6 0x5626c7c01c2a <unknown>
+#7 0x5626c7c02931 <unknown>
+#8 0x5626c8134cf9 <unknown>
+#9 0x5626c8137cdc <unknown>
+#10 0x5626c811df79 <unknown>
+#11 0x5626c81388b5 <unknown>
+#12 0x5626c81059c3 <unknown>
+#13 0x5626c815b228 <unknown>
+#14 0x5626c815b403 <unknown>
+#15 0x5626c816d463 <unknown>
+#16 0x7f04d2a9caa4 <unknown>
+#17 0x7f04d2b29c6c <unknown>
+
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  root:base_page.py:177 Attempt 2/2 failed for ('css selector', '#tinymce > p'): Message: element not interactable
+  (Session info: chrome=142.0.7444.162); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5626c816e4ca <unknown>
+#1 0x5626c7bbcc78 <unknown>
+#2 0x5626c7c0997b <unknown>
+#3 0x5626c7c07dd4 <unknown>
+#4 0x5626c7c034e7 <unknown>
+#5 0x5626c7c5bdf7 <unknown>
+#6 0x5626c7c01c2a <unknown>
+#7 0x5626c7c02931 <unknown>
+#8 0x5626c8134cf9 <unknown>
+#9 0x5626c8137cdc <unknown>
+#10 0x5626c811df79 <unknown>
+#11 0x5626c81388b5 <unknown>
+#12 0x5626c81059c3 <unknown>
+#13 0x5626c815b228 <unknown>
+#14 0x5626c815b403 <unknown>
+#15 0x5626c816d463 <unknown>
+#16 0x7f04d2a9caa4 <unknown>
+#17 0x7f04d2b29c6c <unknown>
+
+ERROR    root:base_page.py:180 All retries failed for ('css selector', '#tinymce > p')
+INFO     root:conftest.py:422 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw0/test_iframe_functionality_20251125_161310/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 10 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw0/test_iframe_functionality_20251125_161310/test_iframe_functionality_20251125_161310.mp4
+INFO     root:conftest.py:441 Video attached to test body: tests_recordings/gw0/test_iframe_functionality_20251125_161310/test_iframe_functionality_20251125_161310.mp4

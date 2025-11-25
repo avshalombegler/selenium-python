@@ -1,0 +1,21 @@
+2025-11-25 16:12:33,961 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]
+2025-11-25 16:12:33,962 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:12:34,549 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-11-25 16:12:34,549 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:12:34,561 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:12:34,562 - INFO - [] Capture loop started.
+2025-11-25 16:12:34,563 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:12:34,563 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Started recording: tests_recordings/gw2/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_161234/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_161234.mp4
+2025-11-25 16:12:34,565 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-25 16:12:34,566 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-25 16:12:34,566 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-25 16:12:34,567 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-25 16:12:34,673 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:12:34,712 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-25 16:12:34,713 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Test PASSED: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.15s).
+2025-11-25 16:12:34,714 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Stopping video recording...
+2025-11-25 16:12:34,714 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Stopping video recording and assembling.
+2025-11-25 16:12:34,779 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Thread joined. Frames dir: tests_recordings/gw2/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_161234/frames
+2025-11-25 16:12:34,780 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Found 2 valid frames.
+2025-11-25 16:12:35,020 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Video created: tests_recordings/gw2/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_161234/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_161234.mp4
+2025-11-25 16:12:36,022 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Video attached to test body: tests_recordings/gw2/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_161234/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_161234.mp4

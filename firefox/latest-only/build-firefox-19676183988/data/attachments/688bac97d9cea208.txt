@@ -1,0 +1,80 @@
+2025-11-25 16:13:15,251 - INFO - [test_hovers_functionality] Starting test: test_hovers_functionality
+2025-11-25 16:13:15,251 - INFO - [test_hovers_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:13:15,855 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 16:13:15,855 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:13:15,865 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:13:15,865 - INFO - [] Capture loop started.
+2025-11-25 16:13:15,866 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:15,866 - INFO - [test_hovers_functionality] Started recording: tests_recordings/gw3/test_hovers_functionality_20251125_161315/test_hovers_functionality_20251125_161315.mp4
+2025-11-25 16:13:15,868 - INFO - [test_hovers_functionality] Tests Hovers.
+2025-11-25 16:13:15,868 - INFO - [test_hovers_functionality] Navigating to Hovers page.
+2025-11-25 16:13:16,011 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:16,181 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:16,238 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:16,350 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:16,412 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:16,954 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 16:13:17,033 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:17,044 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 16:13:17,044 - INFO - [test_hovers_functionality] Hovering mouse over profile image.
+2025-11-25 16:13:17,096 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:17,394 - INFO - [test_hovers_functionality] Getting user name text.
+2025-11-25 16:13:17,481 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:17,510 - INFO - [test_hovers_functionality] Verifying user name text.
+2025-11-25 16:13:17,510 - INFO - [test_hovers_functionality] Clicking view profile link.
+2025-11-25 16:13:17,549 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:17,657 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:17,722 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:17,785 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+2025-11-25 16:13:17,864 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:17,873 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1')'.
+2025-11-25 16:13:17,874 - INFO - [test_hovers_functionality] Getting current browser url.
+2025-11-25 16:13:17,876 - INFO - [test_hovers_functionality] Verifying user name in current url.
+2025-11-25 16:13:17,876 - INFO - [test_hovers_functionality] Navigating back page.
+2025-11-25 16:13:17,876 - INFO - [test_hovers_functionality] Navigating back.
+2025-11-25 16:13:17,930 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:18,558 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 16:13:18,559 - INFO - [test_hovers_functionality] Hovering mouse over profile image.
+2025-11-25 16:13:18,710 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:18,767 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:19,019 - INFO - [test_hovers_functionality] Getting user name text.
+2025-11-25 16:13:19,133 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:19,161 - INFO - [test_hovers_functionality] Verifying user name text.
+2025-11-25 16:13:19,161 - INFO - [test_hovers_functionality] Clicking view profile link.
+2025-11-25 16:13:19,193 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:19,317 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:19,380 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:19,460 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+2025-11-25 16:13:19,559 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:19,583 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1')'.
+2025-11-25 16:13:19,583 - INFO - [test_hovers_functionality] Getting current browser url.
+2025-11-25 16:13:19,587 - INFO - [test_hovers_functionality] Verifying user name in current url.
+2025-11-25 16:13:19,587 - INFO - [test_hovers_functionality] Navigating back page.
+2025-11-25 16:13:19,587 - INFO - [test_hovers_functionality] Navigating back.
+2025-11-25 16:13:19,621 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:20,047 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 16:13:20,047 - INFO - [test_hovers_functionality] Hovering mouse over profile image.
+2025-11-25 16:13:20,132 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:20,198 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:20,405 - INFO - [test_hovers_functionality] Getting user name text.
+2025-11-25 16:13:20,476 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:20,487 - INFO - [test_hovers_functionality] Verifying user name text.
+2025-11-25 16:13:20,487 - INFO - [test_hovers_functionality] Clicking view profile link.
+2025-11-25 16:13:20,542 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:20,591 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+2025-11-25 16:13:20,666 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:20,681 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1')'.
+2025-11-25 16:13:20,681 - INFO - [test_hovers_functionality] Getting current browser url.
+2025-11-25 16:13:20,683 - INFO - [test_hovers_functionality] Verifying user name in current url.
+2025-11-25 16:13:20,683 - INFO - [test_hovers_functionality] Navigating back page.
+2025-11-25 16:13:20,683 - INFO - [test_hovers_functionality] Navigating back.
+2025-11-25 16:13:20,733 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:13:21,059 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 16:13:21,060 - INFO - [test_hovers_functionality] Test PASSED: test_hovers_functionality (Duration: 5.19s).
+2025-11-25 16:13:21,061 - INFO - [test_hovers_functionality] Stopping video recording...
+2025-11-25 16:13:21,061 - INFO - [test_hovers_functionality] Stopping video recording and assembling.
+2025-11-25 16:13:21,141 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:13:21,208 - INFO - [test_hovers_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_hovers_functionality_20251125_161315/frames
+2025-11-25 16:13:21,209 - INFO - [test_hovers_functionality] Found 15 valid frames.
+2025-11-25 16:13:21,625 - INFO - [test_hovers_functionality] Video created: tests_recordings/gw3/test_hovers_functionality_20251125_161315/test_hovers_functionality_20251125_161315.mp4
+2025-11-25 16:13:22,626 - INFO - [test_hovers_functionality] Video attached to test body: tests_recordings/gw3/test_hovers_functionality_20251125_161315/test_hovers_functionality_20251125_161315.mp4
