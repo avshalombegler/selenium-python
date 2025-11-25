@@ -75,11 +75,6 @@ def get_firefox_driver_path() -> str:
 
 
 def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_port: int) -> ChromeOptions:
-    # Clean existing profile directory
-    if user_data_dir.exists():
-        shutil.rmtree(user_data_dir, ignore_errors=True)
-    user_data_dir.mkdir(parents=True, exist_ok=True)
-
     options = ChromeOptions()
 
     # Core arguments (order matters!)
@@ -119,8 +114,11 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
             "profile.default_content_setting_values.notifications": 2,
             "profile.default_content_setting_values.geolocation": 1,
             # Disable password manager
-            "credentials_enable_service": False,
-            "profile.password_manager_enabled": False,
+            "credentials_enable_service": False,  # Disable password manager
+            "profile.password_manager_enabled": False,  # Disable password manager UI
+            "profile.password_manager_leak_detection": False,  # Disable leak detection
+            "autofill.profile_enabled": False,  # Disable autofill
+
             # Disable profile reset prompt
             "profile.exit_type": "Normal",
             "profile.exited_cleanly": True,
