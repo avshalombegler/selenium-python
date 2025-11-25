@@ -1,0 +1,18 @@
+2025-11-25 11:29:57,807 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]
+2025-11-25 11:29:57,807 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 11:29:57,966 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-11-25 11:29:57,966 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 11:29:57,990 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 11:29:57,993 - INFO - [] Capture loop started for Firefox.
+2025-11-25 11:29:58,000 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Started recording: tests_recordings/gw3/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_112957/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_112957.mp4
+2025-11-25 11:29:58,002 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-25 11:29:58,003 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-25 11:29:58,003 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-25 11:29:58,003 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-25 11:29:58,036 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-25 11:29:58,036 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Test PASSED: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.03s).
+2025-11-25 11:29:58,042 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Stopping video recording...
+2025-11-25 11:29:58,042 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Stopping video recording and assembling.
+2025-11-25 11:29:58,205 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Thread joined. Frames dir: tests_recordings/gw3/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_112957/frames
+2025-11-25 11:29:58,205 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Found 1 valid frames.
+2025-11-25 11:29:58,420 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Video created: tests_recordings/gw3/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_112957/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251125_112957.mp4

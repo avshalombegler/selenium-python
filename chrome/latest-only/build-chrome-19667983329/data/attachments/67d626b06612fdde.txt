@@ -1,0 +1,24 @@
+INFO     root:conftest.py:386 Starting test: test_horizontal_slider_functionality_using_mouse
+INFO     root:base_page.py:282 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:284 Navigation completed.
+INFO     root:base_page.py:198 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:203 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:411 Started recording: tests_recordings/gw0/test_horizontal_slider_functionality_using_mouse_20251125_113041/test_horizontal_slider_functionality_using_mouse_20251125_113041.mp4
+INFO     root:test_horizontal_slider.py:31 Tests Horizontal Slider.
+INFO     root:main_page.py:194 Navigating to Horizontal Slider page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:198 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:203 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_horizontal_slider.py:34 Setting horizontal slider value using drag and drop.
+INFO     root:test_horizontal_slider.py:37 Verifying horizontal slider new value.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_horizontal_slider.py:40 Setting horizontal slider value using drag and drop.
+INFO     root:test_horizontal_slider.py:43 Verifying horizontal slider new value.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:418 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw0/test_horizontal_slider_functionality_using_mouse_20251125_113041/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 4 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw0/test_horizontal_slider_functionality_using_mouse_20251125_113041/test_horizontal_slider_functionality_using_mouse_20251125_113041.mp4

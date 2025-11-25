@@ -1,0 +1,36 @@
+2025-11-25 11:30:13,491 - INFO - [test_example_1] Starting test: test_example_1
+2025-11-25 11:30:13,491 - INFO - [test_example_1] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 11:30:13,538 - INFO - [test_example_1] Navigation completed.
+2025-11-25 11:30:13,538 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 11:30:13,556 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 11:30:13,557 - INFO - [] Capture loop started for Firefox.
+2025-11-25 11:30:13,557 - INFO - [test_example_1] Started recording: tests_recordings/gw3/test_example_1_20251125_113013/test_example_1_20251125_113013.mp4
+2025-11-25 11:30:13,558 - INFO - [test_example_1] Tests Dynamic Loading - Example 1.
+2025-11-25 11:30:13,558 - INFO - [test_example_1] Navigating to Dynamic Loading page.
+2025-11-25 11:30:13,665 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:13,781 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 11:30:13,882 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:13,888 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 11:30:13,889 - INFO - [test_example_1] Navigating to Example 1: Element on page that is hidden page.
+2025-11-25 11:30:14,018 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-25 11:30:14,117 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:14,123 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-25 11:30:14,123 - INFO - [test_example_1] Clicking start button.
+2025-11-25 11:30:14,199 - INFO - [test_example_1] Waiting for loader to complete.
+2025-11-25 11:30:14,280 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:15,326 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:15,858 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:16,389 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:16,937 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:17,465 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:17,992 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:18,539 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:19,069 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:19,579 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:19,579 - INFO - [test_example_1] Verifying success message.
+2025-11-25 11:30:19,599 - INFO - [test_example_1] Test PASSED: test_example_1 (Duration: 6.04s).
+2025-11-25 11:30:19,599 - INFO - [test_example_1] Stopping video recording...
+2025-11-25 11:30:19,600 - INFO - [test_example_1] Stopping video recording and assembling.
+2025-11-25 11:30:19,642 - INFO - [test_example_1] Thread joined. Frames dir: tests_recordings/gw3/test_example_1_20251125_113013/frames
+2025-11-25 11:30:19,643 - INFO - [test_example_1] Found 44 valid frames.
+2025-11-25 11:30:20,593 - INFO - [test_example_1] Video created: tests_recordings/gw3/test_example_1_20251125_113013/test_example_1_20251125_113013.mp4

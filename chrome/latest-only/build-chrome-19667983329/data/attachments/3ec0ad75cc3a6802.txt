@@ -1,0 +1,51 @@
+2025-11-25 11:30:11,306 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Starting test: test_digest_auth_login_scenarios[admin-wrong]
+2025-11-25 11:30:11,307 - INFO - [] Capture loop started for Firefox.
+2025-11-25 11:30:11,307 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251125_113011/test_digest_auth_login_scenarios[admin-wrong]_20251125_113011.mp4
+2025-11-25 11:30:11,309 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Tests for Digest Authentication scenarios.
+2025-11-25 11:30:11,309 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to Digest Authentication page.
+2025-11-25 11:30:11,309 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to URL: https://admin:wrong@the-internet.herokuapp.com/digest_auth.
+2025-11-25 11:30:11,458 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:11,459 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigation completed.
+2025-11-25 11:30:11,460 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Check if login succeeded.
+2025-11-25 11:30:11,565 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:12,504 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:13,058 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:13,631 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:14,137 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:14,648 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:15,723 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:16,233 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:17,307 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:17,809 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:19,956 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:20,414 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:20,952 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:21,463 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 11:30:21,464 - ERROR - [test_digest_auth_login_scenarios[admin-wrong]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x55c3452d14ca <unknown>
+#1 0x55c344d1fe4b <unknown>
+#2 0x55c344d72814 <unknown>
+#3 0x55c344d72a51 <unknown>
+#4 0x55c344dc1a44 <unknown>
+#5 0x55c344dbedf7 <unknown>
+#6 0x55c344d64c2a <unknown>
+#7 0x55c344d65931 <unknown>
+#8 0x55c345297cf9 <unknown>
+#9 0x55c34529acdc <unknown>
+#10 0x55c345280f79 <unknown>
+#11 0x55c34529b8b5 <unknown>
+#12 0x55c3452689c3 <unknown>
+#13 0x55c3452be228 <unknown>
+#14 0x55c3452be403 <unknown>
+#15 0x55c3452d0463 <unknown>
+#16 0x7f2d8fc9caa4 <unknown>
+#17 0x7f2d8fd29c6c <unknown>
+
+2025-11-25 11:30:21,466 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page source: <html><head></head><body></body></html>
+2025-11-25 11:30:21,466 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Test PASSED: test_digest_auth_login_scenarios[admin-wrong] (Duration: 10.16s).
+2025-11-25 11:30:21,467 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording...
+2025-11-25 11:30:21,468 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording and assembling.
+2025-11-25 11:30:21,522 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251125_113011/frames
+2025-11-25 11:30:21,523 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Found 79 valid frames.
+2025-11-25 11:30:22,957 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251125_113011/test_digest_auth_login_scenarios[admin-wrong]_20251125_113011.mp4

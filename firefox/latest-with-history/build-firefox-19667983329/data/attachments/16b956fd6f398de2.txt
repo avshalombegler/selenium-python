@@ -1,0 +1,15 @@
+2025-11-25 11:30:18,481 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Starting test: test_files_upload_functionality[TestingFile.pdf]
+2025-11-25 11:30:18,481 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 11:30:18,810 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigation completed.
+2025-11-25 11:30:18,810 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 11:30:18,825 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 11:30:18,827 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Tests Files Upload.
+2025-11-25 11:30:18,827 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigating to File Upload page.
+2025-11-25 11:30:19,284 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 11:30:19,298 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 11:30:19,298 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Upload file using the Upload button.
+2025-11-25 11:30:19,298 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/TestingFile.pdf' on element '('id', 'file-upload')'.
+2025-11-25 11:30:20,743 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 11:30:20,752 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 11:30:20,752 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Verifying file uploaded sucessfully.
+2025-11-25 11:30:20,766 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Test PASSED: test_files_upload_functionality[TestingFile.pdf] (Duration: 1.94s).
