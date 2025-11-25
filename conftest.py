@@ -418,9 +418,10 @@ def video_recorder(request: FixtureRequest, driver: WebDriver) -> Generator[None
     try:
         yield
     finally:
-        # Ensure recording stops even if test fails
+        # Stop recording and attach to test body
         try:
             root_logger.info("Stopping video recording...")
+            # Stop recording without attaching in the stop function
             stop_func()
         except Exception as e:
             root_logger.error(f"Failed to stop video recording: {str(e)}")
@@ -508,6 +509,7 @@ def pytest_runtest_makereport(item: Item) -> Generator[None, None, None]:
     Pytest hook to handle:
         - Test duration logging.
         - Screenshot taking on test failure (Locally and to Allure Report).
+        - Video attachment to test body.
     """
     outcome = yield
     report = outcome.get_result()  # type: ignore[attr-defined]
@@ -519,6 +521,37 @@ def pytest_runtest_makereport(item: Item) -> Generator[None, None, None]:
         # Log outcome explicitly
         outcome_str = "PASSED" if report.passed else "FAILED" if report.failed else "SKIPPED"
         root_logger.info(f"Test {outcome_str}: {test_name} (Duration: {duration:.2f}s).")
+
+        # Attach video to test body if recording is enabled
+        if getattr(env_config, "VIDEO_RECORDING", False):
+            worker_id = get_worker_id()
+            test_name_clean = test_name.replace(":", "_").replace("/", "_")
+
+            # Find the most recent video for this test
+            recordings_dir = Path("tests_recordings") / worker_id
+            if recordings_dir.exists():
+                video_files = list(recordings_dir.glob(f"{test_name_clean}_*/*.mp4"))
+                if video_files:
+                    # Get the most recent video
+                    latest_video = max(video_files, key=lambda p: p.stat().st_mtime)
+
+                    # Wait briefly to ensure video is fully written
+                    import time
+
+                    time.sleep(0.5)
+
+                    if latest_video.exists() and latest_video.stat().st_size > 0:
+                        try:
+                            lock_file = latest_video.parent / f"{worker_id}.lock"
+                            with FileLock(lock_file):
+                                allure.attach.file(
+                                    str(latest_video),
+                                    name="Test Recording",
+                                    attachment_type=allure.attachment_type.MP4,
+                                )
+                                root_logger.info(f"Video attached to test body: {latest_video}")
+                        except Exception as e:
+                            root_logger.error(f"Failed to attach video: {str(e)}")
 
         # Take screenshot only on failure and only if driver is available
         if report.failed:
