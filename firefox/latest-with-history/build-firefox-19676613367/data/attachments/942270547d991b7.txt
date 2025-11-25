@@ -1,0 +1,45 @@
+2025-11-25 16:26:58,706 - INFO - [test_inputs_functionality] Starting test: test_inputs_functionality
+2025-11-25 16:26:58,707 - INFO - [test_inputs_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:26:58,935 - INFO - [test_inputs_functionality] Navigation completed.
+2025-11-25 16:26:58,935 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:26:58,954 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:26:58,956 - INFO - [] Capture loop started.
+2025-11-25 16:26:58,956 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:58,957 - INFO - [test_inputs_functionality] Started recording: tests_recordings/gw0/test_inputs_functionality_20251125_162658/test_inputs_functionality_20251125_162658.mp4
+2025-11-25 16:26:58,958 - INFO - [test_inputs_functionality] Tests Inputs.
+2025-11-25 16:26:58,958 - INFO - [test_inputs_functionality] Navigating to Inputs page.
+2025-11-25 16:26:59,080 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:59,156 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:59,219 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:59,294 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:59,358 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:59,430 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h3')' for 10s.
+2025-11-25 16:26:59,507 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:59,515 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h3')'.
+2025-11-25 16:26:59,515 - INFO - [test_inputs_functionality] Entering input number.
+2025-11-25 16:26:59,515 - INFO - [test_inputs_functionality] Sending keys '1337' on element '('css selector', 'input[type=number]')'.
+2025-11-25 16:26:59,533 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:26:59,550 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:26:59,551 - INFO - [test_inputs_functionality] Increasing number value using keyboard arrow.
+2025-11-25 16:26:59,573 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:59,987 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:27:00,353 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:27:00,708 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:27:01,059 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:27:01,266 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:27:01,446 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:27:01,468 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:27:01,469 - INFO - [test_inputs_functionality] Decreasing number value using keyboard arrow.
+2025-11-25 16:27:01,503 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:27:01,974 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:27:02,187 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:27:02,331 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:27:02,358 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:27:02,358 - INFO - [test_inputs_functionality] Test PASSED: test_inputs_functionality (Duration: 3.40s).
+2025-11-25 16:27:02,361 - INFO - [test_inputs_functionality] Stopping video recording...
+2025-11-25 16:27:02,361 - INFO - [test_inputs_functionality] Stopping video recording and assembling.
+2025-11-25 16:27:02,397 - INFO - [test_inputs_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_inputs_functionality_20251125_162658/frames
+2025-11-25 16:27:02,398 - INFO - [test_inputs_functionality] Found 11 valid frames.
+2025-11-25 16:27:02,760 - INFO - [test_inputs_functionality] Video created: tests_recordings/gw0/test_inputs_functionality_20251125_162658/test_inputs_functionality_20251125_162658.mp4
+2025-11-25 16:27:03,761 - INFO - [test_inputs_functionality] Video attached to test body: tests_recordings/gw0/test_inputs_functionality_20251125_162658/test_inputs_functionality_20251125_162658.mp4
+2025-11-25 16:27:03,763 - INFO - [test_inputs_functionality] Quitting driver for browser: firefox.

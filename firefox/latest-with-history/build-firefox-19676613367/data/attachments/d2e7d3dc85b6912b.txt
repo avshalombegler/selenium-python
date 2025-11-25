@@ -1,0 +1,28 @@
+2025-11-25 16:26:40,277 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Starting test: test_cells_content_per_column[Ipsum-Apeirian]
+2025-11-25 16:26:40,277 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:26:40,389 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-25 16:26:40,389 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:26:40,407 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:26:40,408 - INFO - [] Capture loop started.
+2025-11-25 16:26:40,408 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:40,410 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251125_162640/test_cells_content_per_column[Ipsum-Apeirian]_20251125_162640.mp4
+2025-11-25 16:26:40,411 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Verify cell content per column.
+2025-11-25 16:26:40,411 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-25 16:26:40,519 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:40,565 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:40,702 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 16:26:40,754 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:40,762 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 16:26:40,762 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-25 16:26:40,794 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-25 16:26:40,823 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:40,885 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:40,886 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-25 16:26:40,949 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Test PASSED: test_cells_content_per_column[Ipsum-Apeirian] (Duration: 0.54s).
+2025-11-25 16:26:40,950 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:40,951 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-11-25 16:26:40,951 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording and assembling.
+2025-11-25 16:26:41,058 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251125_162640/frames
+2025-11-25 16:26:41,058 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Found 4 valid frames.
+2025-11-25 16:26:41,348 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Video created: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251125_162640/test_cells_content_per_column[Ipsum-Apeirian]_20251125_162640.mp4
+2025-11-25 16:26:42,350 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Video attached to test body: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251125_162640/test_cells_content_per_column[Ipsum-Apeirian]_20251125_162640.mp4

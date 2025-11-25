@@ -1,0 +1,27 @@
+2025-11-25 16:26:28,623 - INFO - [test_table_header_per_column[Ipsum]] Starting test: test_table_header_per_column[Ipsum]
+2025-11-25 16:26:28,630 - INFO - [test_table_header_per_column[Ipsum]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:26:28,834 - INFO - [test_table_header_per_column[Ipsum]] Navigation completed.
+2025-11-25 16:26:28,834 - INFO - [test_table_header_per_column[Ipsum]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:26:28,853 - INFO - [test_table_header_per_column[Ipsum]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:26:28,856 - INFO - [] Capture loop started.
+2025-11-25 16:26:28,856 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:28,856 - INFO - [test_table_header_per_column[Ipsum]] Started recording: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251125_162628/test_table_header_per_column[Ipsum]_20251125_162628.mp4
+2025-11-25 16:26:28,858 - INFO - [test_table_header_per_column[Ipsum]] Verify table head text per column.
+2025-11-25 16:26:28,858 - INFO - [test_table_header_per_column[Ipsum]] Navigating to Challenging DOM page.
+2025-11-25 16:26:28,960 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:28,993 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:29,110 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:29,169 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:29,312 - INFO - [test_table_header_per_column[Ipsum]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 16:26:29,394 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:29,409 - INFO - [test_table_header_per_column[Ipsum]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 16:26:29,411 - INFO - [test_table_header_per_column[Ipsum]] Getting table head text of column 'Ipsum'.
+2025-11-25 16:26:29,447 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:26:29,567 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:26:29,568 - INFO - [test_table_header_per_column[Ipsum]] Test PASSED: test_table_header_per_column[Ipsum] (Duration: 0.71s).
+2025-11-25 16:26:29,569 - INFO - [test_table_header_per_column[Ipsum]] Stopping video recording...
+2025-11-25 16:26:29,569 - INFO - [test_table_header_per_column[Ipsum]] Stopping video recording and assembling.
+2025-11-25 16:26:29,615 - INFO - [test_table_header_per_column[Ipsum]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251125_162628/frames
+2025-11-25 16:26:29,616 - INFO - [test_table_header_per_column[Ipsum]] Found 4 valid frames.
+2025-11-25 16:26:29,899 - INFO - [test_table_header_per_column[Ipsum]] Video created: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251125_162628/test_table_header_per_column[Ipsum]_20251125_162628.mp4
+2025-11-25 16:26:30,901 - INFO - [test_table_header_per_column[Ipsum]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251125_162628/test_table_header_per_column[Ipsum]_20251125_162628.mp4

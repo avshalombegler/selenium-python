@@ -1,0 +1,24 @@
+2025-11-25 16:27:03,896 - INFO - [test_geolocation_functionality] Starting test: test_geolocation_functionality
+2025-11-25 16:27:03,896 - INFO - [test_geolocation_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:27:03,965 - INFO - [test_geolocation_functionality] Navigation completed.
+2025-11-25 16:27:03,965 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:27:03,985 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:27:03,986 - INFO - [] Capture loop started.
+2025-11-25 16:27:03,987 - INFO - [test_geolocation_functionality] Started recording: tests_recordings/gw3/test_geolocation_functionality_20251125_162703/test_geolocation_functionality_20251125_162703.mp4
+2025-11-25 16:27:03,988 - INFO - [test_geolocation_functionality] Tests Geolocation.
+2025-11-25 16:27:03,988 - INFO - [test_geolocation_functionality] Navigating to Geolocation page.
+2025-11-25 16:27:04,096 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:27:04,236 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 16:27:04,348 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:27:04,354 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 16:27:04,354 - INFO - [test_geolocation_functionality] Clicking 'Where am I' button.
+2025-11-25 16:27:04,456 - INFO - [test_geolocation_functionality] Verifying geolocation latitude value.
+2025-11-25 16:27:04,601 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:27:04,621 - INFO - [test_geolocation_functionality] Verifying geolocation longitude value.
+2025-11-25 16:27:04,646 - INFO - [test_geolocation_functionality] Test PASSED: test_geolocation_functionality (Duration: 0.66s).
+2025-11-25 16:27:04,646 - INFO - [test_geolocation_functionality] Stopping video recording...
+2025-11-25 16:27:04,646 - INFO - [test_geolocation_functionality] Stopping video recording and assembling.
+2025-11-25 16:27:04,658 - INFO - [test_geolocation_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_geolocation_functionality_20251125_162703/frames
+2025-11-25 16:27:04,658 - INFO - [test_geolocation_functionality] Found 3 valid frames.
+2025-11-25 16:27:04,886 - INFO - [test_geolocation_functionality] Video created: tests_recordings/gw3/test_geolocation_functionality_20251125_162703/test_geolocation_functionality_20251125_162703.mp4
+2025-11-25 16:27:05,888 - INFO - [test_geolocation_functionality] Video attached to test body: tests_recordings/gw3/test_geolocation_functionality_20251125_162703/test_geolocation_functionality_20251125_162703.mp4
