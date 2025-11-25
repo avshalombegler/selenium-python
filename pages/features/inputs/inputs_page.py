@@ -28,7 +28,7 @@ class InputsPage(BasePage):
 
     @allure.step("Enter input number")
     def enter_input_number(self, value: int) -> None:
-        self.send_keys_to_element(InputsPageLocators.INPUT_NUMBER, value)
+        self.send_keys_to_element(InputsPageLocators.INPUT_NUMBER, str(value))
 
     @allure.step("Increase number value by '{value}' using keyboard arrow")
     def increase_number_value(self, actions: ActionChains, value: int) -> None:
@@ -45,4 +45,6 @@ class InputsPage(BasePage):
     @allure.step("Get input number value")
     def get_input_number_value(self) -> int:
         elem = self.wait_for_visibility(InputsPageLocators.INPUT_NUMBER)
-        return int(self.get_element_attr_js(elem, "value"))
+        value = self.get_element_attr_js(elem, "value")
+        assert value is not None, "Input value attribute is None"
+        return int(value)
