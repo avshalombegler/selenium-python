@@ -26,6 +26,7 @@ from pages.features.frames.frames_page import FramesPage
 from pages.features.geolocation.geolocation_page import GeolocationPage
 from pages.features.horizontal_slider.horizontal_slider_page import HorizontalSliderPage
 from pages.features.hovers.hovers_page import HoversPage
+from pages.features.infinite_scroll.infinite_scroll_page import InfiniteScrollPage
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
@@ -201,3 +202,10 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.HOVERS_LINK)
 
         return HoversPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_infinite_scroll_link(self, page_name: str = "Infinite Scroll") -> InfiniteScrollPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.INFINITE_SCROLL_LINK)
+
+        return InfiniteScrollPage(self.driver, self.logger)

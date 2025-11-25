@@ -33,10 +33,11 @@ class BasePage:
     2. Core Helpers (Private)
     3. Wait Methods
     4. Navigation Methods
-    5. Element Interaction Methods
-    6. Element State Methods
-    7. Element Query Methods
-    8. Utility Methods
+    5. Frame/Window Methods
+    6. Element Interaction Methods
+    7. Element State Methods
+    8. Element Query Methods
+    9. Utility Methods
     """
 
     # ============================================================================
@@ -327,6 +328,42 @@ class BasePage:
     # ============================================================================
     # ELEMENT INTERACTION METHODS
     # ============================================================================
+
+    def scroll_to_bottom(self, smooth: bool = True, wait_after: Optional[Union[int, float]] = None) -> None:
+        """
+        Scroll to the bottom of the page with optional wait for content to load.
+
+        Args:
+            smooth: If True, use smooth scrolling; otherwise instant scroll
+            wait_after: Optional time in seconds to wait after scrolling for content to load
+
+        Raises:
+            JavascriptException: If script execution fails
+        """
+        behavior = "smooth" if smooth else "auto"
+        self.logger.info(f"Scrolling to bottom of page ({'smooth' if smooth else 'instant'}).")
+
+        try:
+            self.driver.execute_script(
+                f"""
+                window.scrollTo({{
+                    top: document.body.scrollHeight,
+                    behavior: '{behavior}'
+                }});
+            """
+            )
+            self.logger.debug("Scrolled to bottom successfully.")
+
+            if wait_after:
+                self.logger.debug(f"Waiting {wait_after}s for content to load after scroll.")
+                import time
+
+                time.sleep(wait_after)
+                self.logger.debug("Wait after scroll completed.")
+
+        except JavascriptException as e:
+            self.logger.error(f"Failed to scroll to bottom: {str(e)}")
+            raise
 
     def click_element(self, locator: Locator, retry: int = 2) -> None:
         """
