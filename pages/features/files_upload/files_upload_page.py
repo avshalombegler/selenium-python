@@ -1,13 +1,17 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
+
 from pages.base.base_page import BasePage
 from pages.features.files_upload.file_uploaded_page import FileUploadedPage
 from pages.features.files_upload.locators import FilesUploadPageLocators
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
+
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class FileUploadPage(BasePage):

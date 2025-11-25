@@ -1,6 +1,5 @@
 import logging
 from contextvars import ContextVar
-from typing import Optional
 
 # Context variable that holds the current test name for the running context
 current_test_name: ContextVar[str] = ContextVar("current_test_name", default="")
@@ -63,7 +62,7 @@ def configure_root_logger(log_file: str = "test_logs.log", level: int = logging.
     return logger
 
 
-def set_current_test(name: Optional[str]) -> None:
+def set_current_test(name: str | None) -> None:
     """
     Set the current test name for logging. Pass None or empty string to clear.
     """
@@ -73,7 +72,7 @@ def set_current_test(name: Optional[str]) -> None:
         current_test_name.set("")
 
 
-def get_logger(name: Optional[str] = None) -> logging.Logger:
+def get_logger(name: str | None = None) -> logging.Logger:
     """
     Return a configured logger.
 

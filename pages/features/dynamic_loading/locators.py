@@ -2,8 +2,9 @@
 Module containing locators for Dynamic Loading page object.
 """
 
-from pages.base.base_page import Locator
 from selenium.webdriver.common.by import By
+
+from pages.base.base_page import Locator
 
 
 class DynamicLoadingPageLocators:
@@ -14,13 +15,13 @@ class DynamicLoadingPageLocators:
 
 class Example1PageLocators:
     PAGE_LOADED_INDICATOR: Locator = (By.CSS_SELECTOR, ".example h4")
-    START_BTN: Locator = (By.CSS_SELECTOR, "div#start >button")
+    START_BTN: Locator = (By.CSS_SELECTOR, "div#start > button")
     WAIT_LOADER: Locator = (By.CSS_SELECTOR, "div#loading")
     SUCCESS_MSG: Locator = (By.CSS_SELECTOR, "div#finish > h4")
 
 
 class Example2PageLocators:
     PAGE_LOADED_INDICATOR = (By.CSS_SELECTOR, ".example h4")
-    START_BTN = (By.CSS_SELECTOR, "div#start >button")
+    START_BTN = (By.CSS_SELECTOR, "div#start > button")
     WAIT_LOADER = (By.CSS_SELECTOR, "div#loading")
     SUCCESS_MSG = (By.CSS_SELECTOR, "div#finish > h4")

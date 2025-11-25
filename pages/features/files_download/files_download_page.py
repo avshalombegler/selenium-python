@@ -1,13 +1,17 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
+
 from pages.base.base_page import BasePage
 from pages.features.files_download.locators import FilesDownloadPageLocators
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
     from pathlib import Path
+
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class FilesDownloadPage(BasePage):

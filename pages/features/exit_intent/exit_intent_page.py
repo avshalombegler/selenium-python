@@ -1,13 +1,17 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
+
 from pages.base.base_page import BasePage
 from pages.features.exit_intent.locators import ExitIntentPageLocators
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
-    from selenium.webdriver.common.action_chains import ActionChains
     from logging import Logger
+
+    from selenium.webdriver.common.action_chains import ActionChains
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class ExitIntentPage(BasePage):

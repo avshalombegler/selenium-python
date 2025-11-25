@@ -1,14 +1,18 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
+
 from pages.base.base_page import BasePage
+from pages.features.frames.iframe_page import IframesPage
 from pages.features.frames.locators import FramesPageLocators
 from pages.features.frames.nested_frames_page import NestedFramesPage
-from pages.features.frames.iframe_page import IframesPage
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
+
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class FramesPage(BasePage):

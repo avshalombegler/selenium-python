@@ -1,13 +1,17 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
 from selenium.webdriver.support.ui import Select
+
 from pages.base.base_page import BasePage
 from pages.features.dropdown_list.locators import DropdownListPageLocators
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
+
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class DropdownListPage(BasePage):

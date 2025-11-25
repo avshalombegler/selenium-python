@@ -1,6 +1,9 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
+
 from pages.base.base_page import BasePage
 from pages.common.main_page.locators import MainPageLocators
 from pages.features.ab_testing.ab_testing_page import ABTestingPage
@@ -27,10 +30,12 @@ from pages.features.geolocation.geolocation_page import GeolocationPage
 from pages.features.horizontal_slider.horizontal_slider_page import HorizontalSliderPage
 from pages.features.hovers.hovers_page import HoversPage
 from pages.features.infinite_scroll.infinite_scroll_page import InfiniteScrollPage
+from pages.features.inputs.inputs_page import InputsPage
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
+
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class MainPage(BasePage):
@@ -209,3 +214,10 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.INFINITE_SCROLL_LINK)
 
         return InfiniteScrollPage(self.driver, self.logger)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_inputs_link(self, page_name: str = "Inputs") -> InputsPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.INPUTS_LINK)
+
+        return InputsPage(self.driver, self.logger)

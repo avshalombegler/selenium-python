@@ -1,23 +1,27 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING, Any, Callable, Optional, Tuple, TypeVar, Union, List, cast
+
+from collections.abc import Callable
+from logging import Logger
 from pathlib import Path
-from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions as EC
+from typing import TYPE_CHECKING, Any, TypeVar, cast
+
 from selenium.common.exceptions import (
-    TimeoutException,
+    JavascriptException,
     NoSuchElementException,
     StaleElementReferenceException,
-    JavascriptException,
+    TimeoutException,
 )
-from logging import Logger
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+from config.env_config import BASE_URL, LONG_TIMEOUT, SHORT_TIMEOUT
 from utils.logging_helper import get_logger
-from config.env_config import SHORT_TIMEOUT, LONG_TIMEOUT, BASE_URL
 
 if TYPE_CHECKING:
-    Locator = Tuple[str, str]
+    Locator = tuple[str, str]
 else:
     Locator = Any
 
@@ -55,7 +59,7 @@ class BasePage:
     # CORE HELPERS (PRIVATE)
     # ============================================================================
 
-    def _get_timeout(self, timeout: Optional[Union[int, float]], use_long: bool = False) -> Union[int, float]:
+    def _get_timeout(self, timeout: int | float | None, use_long: bool = False) -> int | float:
         """
         Centralized timeout resolution.
 
@@ -74,7 +78,7 @@ class BasePage:
         self,
         ec_method: Callable[..., Callable[[Any], T]],
         locator: Any,
-        timeout: Optional[Union[int, float]] = None,
+        timeout: int | float | None = None,
     ) -> T:
         """
         Generic wait with exception handling.
@@ -116,7 +120,7 @@ class BasePage:
         locator: Locator,
         action_name: str,
         action_func: Callable[[WebElement], Any],
-        timeout: Optional[Union[int, float]] = None,
+        timeout: int | float | None = None,
         retry: int = 2,
     ) -> Any:
         """
@@ -170,7 +174,7 @@ class BasePage:
             try:
                 return func()
             except exceptions as e:
-                self.logger.warning(f"Attempt {attempt+1}/{retry_count} failed for {locator}: {str(e)}")
+                self.logger.warning(f"Attempt {attempt + 1}/{retry_count} failed for {locator}: {str(e)}")
                 if attempt == retry_count - 1:
                     msg = final_message or f"All retries failed for {locator}"
                     self.logger.error(msg)
@@ -180,7 +184,7 @@ class BasePage:
     # WAIT METHODS
     # ============================================================================
 
-    def wait_for_page_to_load(self, indicator_locator: Locator, timeout: Optional[Union[int, float]] = None) -> None:
+    def wait_for_page_to_load(self, indicator_locator: Locator, timeout: int | float | None = None) -> None:
         """
         Wait for page to load by checking visibility of an indicator element.
 
@@ -208,7 +212,7 @@ class BasePage:
             self.logger.error(f"Invalid locator '{indicator_locator}': {str(e)}")
             raise
 
-    def wait_for_visibility(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> WebElement:
+    def wait_for_visibility(self, locator: Locator, timeout: int | float | None = None) -> WebElement:
         """
         Wait for element to be visible.
 
@@ -224,7 +228,7 @@ class BasePage:
         """
         return cast(WebElement, self._safe_wait(EC.visibility_of_element_located, locator, timeout))
 
-    def wait_for_invisibility(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> bool:
+    def wait_for_invisibility(self, locator: Locator, timeout: int | float | None = None) -> bool:
         """
         Wait for element to become invisible.
 
@@ -244,7 +248,7 @@ class BasePage:
         result = wait.until(EC.invisibility_of_element(elem))
         return bool(result)
 
-    def wait_for_loader(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> bool:
+    def wait_for_loader(self, locator: Locator, timeout: int | float | None = None) -> bool:
         """
         Wait for loading indicator to appear and disappear.
 
@@ -329,7 +333,7 @@ class BasePage:
     # ELEMENT INTERACTION METHODS
     # ============================================================================
 
-    def scroll_to_bottom(self, smooth: bool = True, wait_after: Optional[Union[int, float]] = None) -> None:
+    def scroll_to_bottom(self, smooth: bool = True, wait_after: int | float | None = None) -> None:
         """
         Scroll to the bottom of the page with optional wait for content to load.
 
@@ -424,7 +428,7 @@ class BasePage:
         )
 
     def download_file(
-        self, locator: Locator, file_name: str, timeout: Optional[Union[int, float]] = None, retry: int = 2
+        self, locator: Locator, file_name: str, timeout: int | float | None = None, retry: int = 2
     ) -> None:
         """
         Click a download link for a specific file with retry.
@@ -452,7 +456,7 @@ class BasePage:
     # ELEMENT STATE METHODS
     # ============================================================================
 
-    def is_element_visible(self, locator: Locator, timeout: Optional[Union[int, float]] = None) -> bool:
+    def is_element_visible(self, locator: Locator, timeout: int | float | None = None) -> bool:
         """
         Check if element is visible (in DOM and displayed).
 
@@ -469,9 +473,7 @@ class BasePage:
         except TimeoutException:
             return False
 
-    def is_element_selected(
-        self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2
-    ) -> bool:
+    def is_element_selected(self, locator: Locator, timeout: int | float | None = None, retry: int = 2) -> bool:
         """
         Check if element is selected (e.g., checkbox, radio button).
 
@@ -493,7 +495,7 @@ class BasePage:
             )
         )
 
-    def is_element_enabled(self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2) -> bool:
+    def is_element_enabled(self, locator: Locator, timeout: int | float | None = None, retry: int = 2) -> bool:
         """
         Check if element is enabled (not disabled).
 
@@ -519,9 +521,7 @@ class BasePage:
     # ELEMENT QUERY METHODS
     # ============================================================================
 
-    def get_dynamic_element_text(
-        self, locator: Locator, timeout: Optional[Union[int, float]] = None, retry: int = 2
-    ) -> str:
+    def get_dynamic_element_text(self, locator: Locator, timeout: int | float | None = None, retry: int = 2) -> str:
         """
         Get text from an element with retry for stale elements.
 
@@ -554,7 +554,7 @@ class BasePage:
             final_message=f"Failed to get text for '{locator}' after {retry} attempts",
         )
 
-    def get_all_elements(self, locator: Locator) -> List[WebElement]:
+    def get_all_elements(self, locator: Locator) -> list[WebElement]:
         """
         Get all elements matching the locator.
 
@@ -634,7 +634,7 @@ class BasePage:
         self.logger.debug(f"Base URL: {url}")
         return url
 
-    def get_page_source(self, timeout: Optional[Union[int, float]] = None, lowercase: bool = False) -> str:
+    def get_page_source(self, timeout: int | float | None = None, lowercase: bool = False) -> str:
         """
         Get the page source with optional wait for page readiness.
 

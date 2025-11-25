@@ -1,37 +1,42 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING, Generator
+
+import logging
 import os
 import shutil
-import logging
 import tempfile
+from collections.abc import Generator
+from datetime import datetime
+from pathlib import Path
+from typing import TYPE_CHECKING
+
 import allure
 import pytest
-import config.env_config as env_config
-from _pytest.nodes import Item
 from _pytest.main import Session
-from pathlib import Path
+from _pytest.nodes import Item
 from filelock import FileLock
-from datetime import datetime
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.core.driver_cache import DriverCacheManager
+from webdriver_manager.firefox import GeckoDriverManager
+
+import config.env_config as env_config
+import conftest_config
 from pages.base.page_manager import PageManager
 from utils.logging_helper import configure_root_logger, set_current_test
 from utils.video_recorder import start_video_recording
-import conftest_config
 
 CACHE_VALID_RANGE = 30  # Days to keep cache valid
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
-    from _pytest.fixtures import FixtureRequest
     from logging import Logger
+
+    from _pytest.fixtures import FixtureRequest
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 DEBUG_PORT_BASE = 9222
 WINDOW_WIDTH, WINDOW_HEIGHT = 1920, 1080
@@ -222,7 +227,7 @@ def save_screenshot_on_failure(driver: WebDriver, test_name: str) -> None:
     worker_id = get_worker_id()
     screenshot_dir = Path("tests_screenshots") / worker_id
     screenshot_filename = (
-        f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_" f"{test_name.replace(':', '_').replace('/', '_')}.png"
+        f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{test_name.replace(':', '_').replace('/', '_')}.png"
     )
     screenshot_path = Path(screenshot_dir) / screenshot_filename
     lock_file = Path(screenshot_dir) / f"{worker_id}.lock"

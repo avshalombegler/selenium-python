@@ -1,12 +1,16 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
-import pytest
+
 import allure
+import pytest
 
 if TYPE_CHECKING:
-    from pages.base.page_manager import PageManager
     from logging import Logger
+
     from selenium.webdriver.common.action_chains import ActionChains
+
+    from pages.base.page_manager import PageManager
 
 
 @allure.feature("Hovers")
@@ -35,9 +39,9 @@ class TestHovers:
             username_text = page.get_user_name_text(user_index)
 
             logger.info("Verifying user name text.")
-            assert (
-                self.USER + str(user_index) in username_text
-            ), f"Expected '{username_text}' to contain '{self.USER + str(user_index)}'"
+            assert self.USER + str(user_index) in username_text, (
+                f"Expected '{username_text}' to contain '{self.USER + str(user_index)}'"
+            )
 
             logger.info("Clicking view profile link.")
             user_page = page.click_view_profile_link(user_index)
@@ -46,9 +50,9 @@ class TestHovers:
             current_url = user_page.get_current_browser_url()
 
             logger.info("Verifying user name in current url.")
-            assert (
-                self.USERS + str(user_index) in current_url
-            ), f"Expected '{current_url}' to contain '{self.USERS + str(user_index)}'"
+            assert self.USERS + str(user_index) in current_url, (
+                f"Expected '{current_url}' to contain '{self.USERS + str(user_index)}'"
+            )
 
             logger.info("Navigating back page.")
             user_page.navigate_back_page()
