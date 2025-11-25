@@ -24,6 +24,7 @@ from pages.features.floating_menu.floating_menu_page import FloatingMenuPage
 from pages.features.form_authentication.form_authentication_page import FormAuthenticationPage
 from pages.features.frames.frames_page import FramesPage
 from pages.features.geolocation.geolocation_page import GeolocationPage
+from pages.features.horizontal_slider.horizontal_slider_page import HorizontalSliderPage
 
 if TYPE_CHECKING:
     from selenium.webdriver.remote.webdriver import WebDriver
@@ -185,3 +186,10 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.GEOLOCATION_LINK)
 
         return GeolocationPage(self.driver, self.logger, wait_for_load=True)
+
+    @allure.step("Navigate to {page_name} page")
+    def click_horizontal_slider_link(self, page_name: str = "Horizontal Slider") -> HorizontalSliderPage:
+        self.logger.info(f"Navigating to {page_name} page.")
+        self.click_element(MainPageLocators.HORIZONTAL_SLIDER_LINK)
+
+        return HorizontalSliderPage(self.driver, self.logger)
