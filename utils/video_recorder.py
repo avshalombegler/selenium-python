@@ -19,7 +19,7 @@ from typing import TYPE_CHECKING
 from selenium import webdriver
 
 if TYPE_CHECKING:
-    from selenium.webdriver.chrome.webdriver import WebDriver
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 logger = logging.getLogger(__name__)
 
@@ -47,7 +47,7 @@ def start_video_recording(
     stop_event = threading.Event()
 
     def capture_loop() -> None:
-        logger.info("Capture loop started for Firefox.")
+        logger.info("Capture loop started.")
         idx = 0
         while not stop_event.is_set():
             try:
@@ -62,12 +62,10 @@ def start_video_recording(
                 else:
                     logger.info("Using Firefox screenshot method.")
                     raw = driver.get_screenshot_as_png()
-                    # logger.info(f"Raw screenshot size: {len(raw)} bytes.")
 
                 if len(raw) > MIN_FRAME_SIZE and (not MAX_FRAMES or idx < MAX_FRAMES):
                     frame_file = frames_dir / f"frame_{idx:06d}.png"
                     frame_file.write_bytes(raw)
-                    # logger.info(f"Saved frame {idx}: {frame_file}")
                     idx += 1
                 else:
                     logger.debug(f"Frame {idx} skipped (size: {len(raw)})")
