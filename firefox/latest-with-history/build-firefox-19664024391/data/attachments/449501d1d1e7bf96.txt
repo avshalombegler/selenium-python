@@ -1,0 +1,11 @@
+2025-11-25 09:06:43,676 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green]
+2025-11-25 09:06:43,676 - INFO - [test_each_button_clicks[green]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:06:43,858 - INFO - [test_each_button_clicks[green]] Navigation completed.
+2025-11-25 09:06:43,858 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:06:43,896 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:06:43,898 - INFO - [test_each_button_clicks[green]] Verify each button in page is clickable.
+2025-11-25 09:06:43,898 - INFO - [test_each_button_clicks[green]] Navigating to Challenging DOM page.
+2025-11-25 09:06:44,288 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 09:06:44,312 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 09:06:44,312 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-11-25 09:06:44,580 - INFO - [test_each_button_clicks[green]] Test PASSED: test_each_button_clicks[green] (Duration: 0.68s).

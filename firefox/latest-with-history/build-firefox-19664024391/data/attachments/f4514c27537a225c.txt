@@ -1,0 +1,11 @@
+2025-11-25 09:06:46,228 - INFO - [test_table_header_per_column[Dolor]] Starting test: test_table_header_per_column[Dolor]
+2025-11-25 09:06:46,229 - INFO - [test_table_header_per_column[Dolor]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:06:46,440 - INFO - [test_table_header_per_column[Dolor]] Navigation completed.
+2025-11-25 09:06:46,440 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:06:46,461 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:06:46,464 - INFO - [test_table_header_per_column[Dolor]] Verify table head text per column.
+2025-11-25 09:06:46,464 - INFO - [test_table_header_per_column[Dolor]] Navigating to Challenging DOM page.
+2025-11-25 09:06:46,853 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 09:06:46,873 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 09:06:46,873 - INFO - [test_table_header_per_column[Dolor]] Getting table head text of column 'Dolor'.
+2025-11-25 09:06:46,926 - INFO - [test_table_header_per_column[Dolor]] Test PASSED: test_table_header_per_column[Dolor] (Duration: 0.46s).

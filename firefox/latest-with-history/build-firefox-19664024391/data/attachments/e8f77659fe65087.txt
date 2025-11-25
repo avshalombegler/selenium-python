@@ -1,0 +1,16 @@
+2025-11-25 09:06:45,428 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Starting test: test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]
+2025-11-25 09:06:45,428 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:06:45,852 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Navigation completed.
+2025-11-25 09:06:45,852 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:06:45,864 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:06:45,866 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Tests Form Authentication.
+2025-11-25 09:06:45,866 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Navigating to Form Authentication page.
+2025-11-25 09:06:46,452 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+2025-11-25 09:06:46,472 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Page loaded successfully with indicator '('css selector', '.example h2')'.
+2025-11-25 09:06:46,472 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Entering username 'wrong'.
+2025-11-25 09:06:46,473 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Sending keys 'wrong' on element '('id', 'username')'.
+2025-11-25 09:06:46,518 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Entering password 'SuperSecretPassword!'.
+2025-11-25 09:06:46,518 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Sending keys 'SuperSecretPassword!' on element '('id', 'password')'.
+2025-11-25 09:06:46,558 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Clicking login button.
+2025-11-25 09:06:46,799 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Verifying flash message after unsuccessfull login.
+2025-11-25 09:06:46,829 - INFO - [test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!]] Test PASSED: test_form_authentication_functionality[wrong-SuperSecretPassword!-Your username is invalid!] (Duration: 0.96s).
