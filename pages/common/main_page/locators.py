@@ -30,3 +30,4 @@ class MainPageLocators:
     GEOLOCATION_LINK: Locator = (By.LINK_TEXT, "Geolocation")
     HORIZONTAL_SLIDER_LINK: Locator = (By.LINK_TEXT, "Horizontal Slider")
     HOVERS_LINK: Locator = (By.LINK_TEXT, "Hovers")
+    INFINITE_SCROLL_LINK: Locator = (By.LINK_TEXT, "Infinite Scroll")
