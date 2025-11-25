@@ -1,0 +1,35 @@
+2025-11-25 15:04:31,432 - INFO - [test_infinite_scroll_functionality] Starting test: test_infinite_scroll_functionality
+2025-11-25 15:04:31,432 - INFO - [test_infinite_scroll_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 15:04:31,540 - INFO - [test_infinite_scroll_functionality] Navigation completed.
+2025-11-25 15:04:31,540 - INFO - [test_infinite_scroll_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 15:04:31,553 - INFO - [test_infinite_scroll_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 15:04:31,554 - INFO - [test_infinite_scroll_functionality] Tests Infinite Scroll.
+2025-11-25 15:04:31,554 - INFO - [test_infinite_scroll_functionality] Navigating to Infinite Scroll page.
+2025-11-25 15:04:31,905 - INFO - [test_infinite_scroll_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 15:04:31,925 - INFO - [test_infinite_scroll_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 15:04:31,926 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-25 15:04:31,932 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-25 15:04:31,932 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-25 15:04:32,947 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-25 15:04:32,964 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-25 15:04:32,965 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-25 15:04:32,983 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-25 15:04:32,984 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-25 15:04:33,989 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-25 15:04:33,993 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-25 15:04:33,993 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-25 15:04:33,996 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-25 15:04:33,996 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-25 15:04:35,000 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-25 15:04:35,003 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-25 15:04:35,003 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-25 15:04:35,005 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-25 15:04:35,005 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-25 15:04:36,009 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-25 15:04:36,012 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-25 15:04:36,012 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-25 15:04:36,013 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-25 15:04:36,014 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-25 15:04:37,017 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-25 15:04:37,020 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-25 15:04:37,021 - INFO - [test_infinite_scroll_functionality] Test PASSED: test_infinite_scroll_functionality (Duration: 5.47s).

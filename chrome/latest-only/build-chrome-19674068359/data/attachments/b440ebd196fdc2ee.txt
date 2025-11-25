@@ -1,0 +1,15 @@
+2025-11-25 15:04:34,475 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Starting test: test_digest_auth_login_scenarios[admin-admin]
+2025-11-25 15:04:34,475 - INFO - [] Capture loop started for Firefox.
+2025-11-25 15:04:34,477 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251125_150434/test_digest_auth_login_scenarios[admin-admin]_20251125_150434.mp4
+2025-11-25 15:04:34,478 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Tests for Digest Authentication scenarios.
+2025-11-25 15:04:34,481 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to Digest Authentication page.
+2025-11-25 15:04:34,482 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-25 15:04:34,764 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-11-25 15:04:34,765 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Check if login succeeded.
+2025-11-25 15:04:34,874 - WARNING - [test_digest_auth_login_scenarios[admin-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 15:04:34,898 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Test PASSED: test_digest_auth_login_scenarios[admin-admin] (Duration: 0.42s).
+2025-11-25 15:04:34,899 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording...
+2025-11-25 15:04:34,899 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording and assembling.
+2025-11-25 15:04:34,930 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251125_150434/frames
+2025-11-25 15:04:34,931 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Found 2 valid frames.
+2025-11-25 15:04:35,173 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251125_150434/test_digest_auth_login_scenarios[admin-admin]_20251125_150434.mp4

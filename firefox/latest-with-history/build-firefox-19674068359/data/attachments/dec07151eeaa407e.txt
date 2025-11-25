@@ -1,0 +1,18 @@
+INFO     root:conftest.py:391 Starting test: test_example_2
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_dynamic_loading.py:37 Tests Dynamic Loading - Example 2.
+INFO     root:main_page.py:136 Navigating to Dynamic Loading page.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:dynamic_loading_page.py:35 Navigating to Example 2: Element rendered after the fact page.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h4')'.
+INFO     root:test_dynamic_loading.py:40 Clicking start button.
+INFO     root:base_page.py:263 Waiting for loader to complete.
+WARNING  root:base_page.py:272 Loader timeout after 10s: Message: 
+
+INFO     root:test_dynamic_loading.py:43 Verifying success message.
+INFO     root:conftest.py:371 Quitting driver for browser: firefox.

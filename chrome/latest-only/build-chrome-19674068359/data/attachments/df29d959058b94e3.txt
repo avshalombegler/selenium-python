@@ -1,0 +1,24 @@
+2025-11-25 15:04:41,595 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Starting test: test_cells_content_per_column[Amet-Consequuntur]
+2025-11-25 15:04:41,595 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 15:04:41,638 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigation completed.
+2025-11-25 15:04:41,638 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 15:04:41,653 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 15:04:41,654 - INFO - [] Capture loop started for Firefox.
+2025-11-25 15:04:41,655 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251125_150441/test_cells_content_per_column[Amet-Consequuntur]_20251125_150441.mp4
+2025-11-25 15:04:41,656 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Verify cell content per column.
+2025-11-25 15:04:41,656 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Navigating to Challenging DOM page.
+2025-11-25 15:04:41,746 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 15:04:41,883 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 15:04:42,000 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 15:04:42,007 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 15:04:42,008 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-25 15:04:42,068 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-25 15:04:42,169 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 15:04:42,233 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Getting table cell 'Consequuntur' text under column 'Amet'.
+2025-11-25 15:04:42,347 - WARNING - [test_cells_content_per_column[Amet-Consequuntur]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 15:04:42,393 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Test PASSED: test_cells_content_per_column[Amet-Consequuntur] (Duration: 0.74s).
+2025-11-25 15:04:42,394 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Stopping video recording...
+2025-11-25 15:04:42,394 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Stopping video recording and assembling.
+2025-11-25 15:04:42,412 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251125_150441/frames
+2025-11-25 15:04:42,412 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Found 4 valid frames.
+2025-11-25 15:04:42,626 - INFO - [test_cells_content_per_column[Amet-Consequuntur]] Video created: tests_recordings/gw0/test_cells_content_per_column[Amet-Consequuntur]_20251125_150441/test_cells_content_per_column[Amet-Consequuntur]_20251125_150441.mp4

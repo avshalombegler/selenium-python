@@ -1,0 +1,18 @@
+2025-11-25 15:04:34,910 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Starting test: test_basic_auth[wrong-wrong-401-Not authorized\n]
+2025-11-25 15:04:34,911 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 15:04:34,961 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Navigation completed.
+2025-11-25 15:04:34,961 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 15:04:34,985 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 15:04:34,986 - INFO - [] Capture loop started for Firefox.
+2025-11-25 15:04:34,987 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Started recording: tests_recordings/gw3/test_basic_auth[wrong-wrong-401-Not authorized\n]_20251125_150434/test_basic_auth[wrong-wrong-401-Not authorized\n]_20251125_150434.mp4
+2025-11-25 15:04:34,990 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Tests basic autorization login scenatios.
+2025-11-25 15:04:34,990 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Returning object of Basic Auth page.
+2025-11-25 15:04:34,990 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Initialize URL based on username and password.
+2025-11-25 15:04:34,991 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Get status code and authorization message.
+2025-11-25 15:04:35,006 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Validate status code and authorization message.
+2025-11-25 15:04:35,007 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Test PASSED: test_basic_auth[wrong-wrong-401-Not authorized\n] (Duration: 0.02s).
+2025-11-25 15:04:35,008 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Stopping video recording...
+2025-11-25 15:04:35,008 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Stopping video recording and assembling.
+2025-11-25 15:04:35,181 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Thread joined. Frames dir: tests_recordings/gw3/test_basic_auth[wrong-wrong-401-Not authorized\n]_20251125_150434/frames
+2025-11-25 15:04:35,182 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Found 1 valid frames.
+2025-11-25 15:04:35,344 - INFO - [test_basic_auth[wrong-wrong-401-Not authorized\n]] Video created: tests_recordings/gw3/test_basic_auth[wrong-wrong-401-Not authorized\n]_20251125_150434/test_basic_auth[wrong-wrong-401-Not authorized\n]_20251125_150434.mp4

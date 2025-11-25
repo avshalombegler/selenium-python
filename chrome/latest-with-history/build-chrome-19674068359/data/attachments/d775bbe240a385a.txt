@@ -1,0 +1,32 @@
+INFO     root:conftest.py:391 Starting test: test_inputs_functionality
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:53 Capture loop started for Firefox.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw2/test_inputs_functionality_20251125_150510/test_inputs_functionality_20251125_150510.mp4
+INFO     root:test_inputs.py:31 Tests Inputs.
+INFO     root:main_page.py:220 Navigating to Inputs page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h3')'.
+INFO     root:test_inputs.py:34 Entering input number.
+INFO     root:base_page.py:139 Sending keys '1337' on element '('css selector', 'input[type=number]')'.
+INFO     root:test_inputs.py:37 Getting input number value.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_inputs.py:40 Getting input number value.
+INFO     root:test_inputs.py:43 Increasing number value using keyboard arrow.
+INFO     root:test_inputs.py:46 Getting input number value.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_inputs.py:49 Getting input number value.
+INFO     root:test_inputs.py:52 Decreasing number value using keyboard arrow.
+INFO     root:test_inputs.py:55 Getting input number value.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_inputs.py:58 Getting input number value.
+INFO     root:conftest.py:423 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:87 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:90 Thread joined. Frames dir: tests_recordings/gw2/test_inputs_functionality_20251125_150510/frames
+INFO     utils.video_recorder:video_recorder.py:94 Found 10 valid frames.
+INFO     utils.video_recorder:video_recorder.py:118 Video created: tests_recordings/gw2/test_inputs_functionality_20251125_150510/test_inputs_functionality_20251125_150510.mp4
+INFO     root:conftest.py:371 Quitting driver for browser: chrome.
