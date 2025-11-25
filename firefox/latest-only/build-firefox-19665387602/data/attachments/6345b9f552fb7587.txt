@@ -1,0 +1,13 @@
+2025-11-25 09:55:26,637 - INFO - [test_geolocation_functionality] Starting test: test_geolocation_functionality
+2025-11-25 09:55:26,638 - INFO - [test_geolocation_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:55:26,753 - INFO - [test_geolocation_functionality] Navigation completed.
+2025-11-25 09:55:26,753 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:55:26,761 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:55:26,762 - INFO - [test_geolocation_functionality] Tests Geolocation.
+2025-11-25 09:55:26,762 - INFO - [test_geolocation_functionality] Navigating to Geolocation page.
+2025-11-25 09:55:27,026 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 09:55:27,034 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 09:55:27,039 - INFO - [test_geolocation_functionality] Clicking 'Where am I' button.
+2025-11-25 09:55:27,112 - INFO - [test_geolocation_functionality] Verifying geolocation latitude value.
+2025-11-25 09:55:27,125 - INFO - [test_geolocation_functionality] Verifying geolocation longitude value.
+2025-11-25 09:55:27,137 - INFO - [test_geolocation_functionality] Test PASSED: test_geolocation_functionality (Duration: 0.38s).

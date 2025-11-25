@@ -1,0 +1,15 @@
+2025-11-25 09:55:15,850 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Starting test: test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]
+2025-11-25 09:55:15,851 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:55:16,074 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Navigation completed.
+2025-11-25 09:55:16,075 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:55:16,089 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:55:16,091 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Tests Files Upload.
+2025-11-25 09:55:16,091 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Navigating to File Upload page.
+2025-11-25 09:55:16,709 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 09:55:16,745 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 09:55:16,749 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Upload file using the Upload button.
+2025-11-25 09:55:16,750 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/Screenshot_2025-11-16_at_9.23.28_PM.png' on element '('id', 'file-upload')'.
+2025-11-25 09:55:17,123 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 09:55:17,171 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 09:55:17,172 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Verifying file uploaded sucessfully.
+2025-11-25 09:55:17,215 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Test PASSED: test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png] (Duration: 1.12s).

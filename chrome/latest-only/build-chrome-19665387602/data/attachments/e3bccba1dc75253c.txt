@@ -1,0 +1,58 @@
+2025-11-25 09:56:22,619 - INFO - [test_hovers_functionality] Starting test: test_hovers_functionality
+2025-11-25 09:56:22,619 - INFO - [test_hovers_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:56:22,688 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 09:56:22,689 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:56:22,705 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:56:22,707 - INFO - [] Capture loop started for Firefox.
+2025-11-25 09:56:22,707 - INFO - [test_hovers_functionality] Started recording: tests_recordings/gw0/test_hovers_functionality_20251125_095622/test_hovers_functionality_20251125_095622.mp4
+2025-11-25 09:56:22,709 - INFO - [test_hovers_functionality] Tests Hovers.
+2025-11-25 09:56:22,709 - INFO - [test_hovers_functionality] Navigating to Hovers page.
+2025-11-25 09:56:22,827 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:22,953 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 09:56:23,056 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,063 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 09:56:23,063 - INFO - [test_hovers_functionality] Hovering mouse over profile image.
+2025-11-25 09:56:23,341 - INFO - [test_hovers_functionality] Getting user name text.
+2025-11-25 09:56:23,410 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,423 - INFO - [test_hovers_functionality] Verifying user name text.
+2025-11-25 09:56:23,423 - INFO - [test_hovers_functionality] Clicking view profile link.
+2025-11-25 09:56:23,538 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+2025-11-25 09:56:23,622 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,630 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1')'.
+2025-11-25 09:56:23,630 - INFO - [test_hovers_functionality] Getting current browser url.
+2025-11-25 09:56:23,635 - INFO - [test_hovers_functionality] Verifying user name in current url.
+2025-11-25 09:56:23,635 - INFO - [test_hovers_functionality] Navigating back page.
+2025-11-25 09:56:23,635 - INFO - [test_hovers_functionality] Navigating back.
+2025-11-25 09:56:23,651 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 09:56:23,652 - INFO - [test_hovers_functionality] Hovering mouse over profile image.
+2025-11-25 09:56:23,935 - INFO - [test_hovers_functionality] Getting user name text.
+2025-11-25 09:56:24,011 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,025 - INFO - [test_hovers_functionality] Verifying user name text.
+2025-11-25 09:56:24,025 - INFO - [test_hovers_functionality] Clicking view profile link.
+2025-11-25 09:56:24,126 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+2025-11-25 09:56:24,220 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,227 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1')'.
+2025-11-25 09:56:24,227 - INFO - [test_hovers_functionality] Getting current browser url.
+2025-11-25 09:56:24,231 - INFO - [test_hovers_functionality] Verifying user name in current url.
+2025-11-25 09:56:24,231 - INFO - [test_hovers_functionality] Navigating back page.
+2025-11-25 09:56:24,232 - INFO - [test_hovers_functionality] Navigating back.
+2025-11-25 09:56:24,245 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 09:56:24,246 - INFO - [test_hovers_functionality] Hovering mouse over profile image.
+2025-11-25 09:56:24,535 - INFO - [test_hovers_functionality] Getting user name text.
+2025-11-25 09:56:24,607 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,619 - INFO - [test_hovers_functionality] Verifying user name text.
+2025-11-25 09:56:24,619 - INFO - [test_hovers_functionality] Clicking view profile link.
+2025-11-25 09:56:24,744 - INFO - [test_hovers_functionality] Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+2025-11-25 09:56:24,816 - WARNING - [test_hovers_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,823 - INFO - [test_hovers_functionality] Page loaded successfully with indicator '('css selector', 'h1')'.
+2025-11-25 09:56:24,823 - INFO - [test_hovers_functionality] Getting current browser url.
+2025-11-25 09:56:24,827 - INFO - [test_hovers_functionality] Verifying user name in current url.
+2025-11-25 09:56:24,827 - INFO - [test_hovers_functionality] Navigating back page.
+2025-11-25 09:56:24,828 - INFO - [test_hovers_functionality] Navigating back.
+2025-11-25 09:56:24,839 - INFO - [test_hovers_functionality] Navigation completed.
+2025-11-25 09:56:24,839 - INFO - [test_hovers_functionality] Test PASSED: test_hovers_functionality (Duration: 2.13s).
+2025-11-25 09:56:24,840 - INFO - [test_hovers_functionality] Stopping video recording...
+2025-11-25 09:56:24,840 - INFO - [test_hovers_functionality] Stopping video recording and assembling.
+2025-11-25 09:56:24,877 - INFO - [test_hovers_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_hovers_functionality_20251125_095622/frames
+2025-11-25 09:56:24,878 - INFO - [test_hovers_functionality] Found 8 valid frames.
+2025-11-25 09:56:25,273 - INFO - [test_hovers_functionality] Video created: tests_recordings/gw0/test_hovers_functionality_20251125_095622/test_hovers_functionality_20251125_095622.mp4

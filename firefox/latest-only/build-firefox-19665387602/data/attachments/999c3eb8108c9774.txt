@@ -1,0 +1,15 @@
+INFO     root:conftest.py:386 Starting test: test_top_nested_frames_functionality[right]
+INFO     root:base_page.py:282 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:284 Navigation completed.
+INFO     root:base_page.py:198 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:203 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_nested_frames.py:26 Tests Nested Frames.
+INFO     root:main_page.py:180 Navigating to Frames page.
+INFO     root:base_page.py:198 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:203 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_nested_frames.py:29 Clicking Nested Frames link.
+INFO     root:base_page.py:198 Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+INFO     root:base_page.py:203 Page loaded successfully with indicator '('css selector', 'frameset')'.
+INFO     root:test_nested_frames.py:32 Switching to frame 'top'.
+INFO     root:test_nested_frames.py:35 Switching to nested frame 'right'.
+INFO     root:test_nested_frames.py:38 Verifying frame text.

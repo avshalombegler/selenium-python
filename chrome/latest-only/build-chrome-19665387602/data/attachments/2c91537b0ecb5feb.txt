@@ -1,0 +1,238 @@
+2025-11-25 09:56:09,414 - INFO - [test_files_download_functionality] Starting test: test_files_download_functionality
+2025-11-25 09:56:09,414 - INFO - [test_files_download_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:56:09,462 - INFO - [test_files_download_functionality] Navigation completed.
+2025-11-25 09:56:09,463 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:56:09,477 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:56:09,478 - INFO - [] Capture loop started for Firefox.
+2025-11-25 09:56:09,479 - INFO - [test_files_download_functionality] Started recording: tests_recordings/gw2/test_files_download_functionality_20251125_095609/test_files_download_functionality_20251125_095609.mp4
+2025-11-25 09:56:09,480 - INFO - [test_files_download_functionality] Directory cleaned and recreated at: downloads/gw2.
+2025-11-25 09:56:09,481 - INFO - [test_files_download_functionality] Tests Files Download.
+2025-11-25 09:56:09,481 - INFO - [test_files_download_functionality] Navigating to File Download page.
+2025-11-25 09:56:09,585 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:09,703 - INFO - [test_files_download_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 09:56:09,831 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:09,837 - INFO - [test_files_download_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 09:56:09,837 - INFO - [test_files_download_functionality] Getting list of downloadable files.
+2025-11-25 09:56:09,993 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:10,151 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:10,302 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:10,469 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:10,629 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:10,794 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:10,947 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:11,115 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:11,290 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:11,445 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:11,603 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:11,760 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:11,827 - INFO - [test_files_download_functionality] Downloading all files in page.
+2025-11-25 09:56:11,827 - INFO - [test_files_download_functionality] Downloading file 'Microsoft Word Document.docx'.
+2025-11-25 09:56:11,931 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:12,038 - INFO - [test_files_download_functionality] Downloading file 'download (6).xlsx'.
+2025-11-25 09:56:12,152 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:12,251 - INFO - [test_files_download_functionality] Downloading file 'test.csv'.
+2025-11-25 09:56:12,374 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:12,472 - INFO - [test_files_download_functionality] Downloading file 'apple.jpg'.
+2025-11-25 09:56:12,589 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:12,679 - INFO - [test_files_download_functionality] Downloading file 'C0F02E66-EE7F-4E25-9E30-CC2046116F61.png'.
+2025-11-25 09:56:12,798 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:12,897 - INFO - [test_files_download_functionality] Downloading file 'Job Offer-2023 Operations Full-Time Analyst Program Hiring - Full Time - Mumbai (1).pdf'.
+2025-11-25 09:56:13,005 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:13,102 - INFO - [test_files_download_functionality] Downloading file 'tmpgkyzl3.tmp'.
+2025-11-25 09:56:13,219 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:13,312 - INFO - [test_files_download_functionality] Downloading file '17640411692562183758437788847198.jpg'.
+2025-11-25 09:56:13,426 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:13,524 - INFO - [test_files_download_functionality] Downloading file 'sample-zip-file.zip'.
+2025-11-25 09:56:13,641 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:13,732 - INFO - [test_files_download_functionality] Downloading file 'Screenshot 2025-11-14 145055.png'.
+2025-11-25 09:56:13,867 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:14,038 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:14,156 - INFO - [test_files_download_functionality] Downloading file 'sample3.pdf'.
+2025-11-25 09:56:14,467 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:14,792 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:15,059 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:15,060 - INFO - [test_files_download_functionality] Downloading file 'large-test-file.txt'.
+2025-11-25 09:56:15,238 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:15,365 - INFO - [test_files_download_functionality] Downloading file 'Bugs.txt'.
+2025-11-25 09:56:15,495 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:15,603 - INFO - [test_files_download_functionality] Downloading file 'tmpifii8igo.txt'.
+2025-11-25 09:56:15,727 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:15,842 - INFO - [test_files_download_functionality] Downloading file 'selenium.xlsx'.
+2025-11-25 09:56:15,968 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:16,071 - INFO - [test_files_download_functionality] Downloading file 'Screenshot_2025-11-16_at_9.23.28_PM.png'.
+2025-11-25 09:56:16,208 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:16,309 - INFO - [test_files_download_functionality] Downloading file 'fac1.xml'.
+2025-11-25 09:56:16,420 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:16,520 - INFO - [test_files_download_functionality] Downloading file 'file.json'.
+2025-11-25 09:56:16,637 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:16,740 - INFO - [test_files_download_functionality] Downloading file 'chromedriver.exe'.
+2025-11-25 09:56:16,854 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:16,946 - INFO - [test_files_download_functionality] Downloading file 'bb.txt'.
+2025-11-25 09:56:17,090 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:17,195 - INFO - [test_files_download_functionality] Downloading file 'Collections.pdf'.
+2025-11-25 09:56:17,304 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:17,397 - INFO - [test_files_download_functionality] Downloading file 'test_upload.txt'.
+2025-11-25 09:56:17,520 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:17,622 - INFO - [test_files_download_functionality] Downloading file 'arquivo.txt'.
+2025-11-25 09:56:17,738 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:17,838 - INFO - [test_files_download_functionality] Downloading file 'skim_indicator__suprim__t_202510030937.sql'.
+2025-11-25 09:56:17,956 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:18,053 - INFO - [test_files_download_functionality] Downloading file 'LambdaTest.txt'.
+2025-11-25 09:56:18,173 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:18,303 - INFO - [test_files_download_functionality] Downloading file 'bz9.jpg'.
+2025-11-25 09:56:18,421 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:18,524 - INFO - [test_files_download_functionality] Downloading file 'sample.pdf'.
+2025-11-25 09:56:18,637 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:18,737 - INFO - [test_files_download_functionality] Downloading file 'app_liveBug.jpg'.
+2025-11-25 09:56:18,855 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:18,950 - INFO - [test_files_download_functionality] Downloading file 'CATE-CHAPTER_1-QUALITY.ppt'.
+2025-11-25 09:56:19,053 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:19,166 - INFO - [test_files_download_functionality] Downloading file 'Company_Portal_Installer.exe'.
+2025-11-25 09:56:19,272 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:19,363 - INFO - [test_files_download_functionality] Downloading file 'test-image.png'.
+2025-11-25 09:56:19,491 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:19,593 - INFO - [test_files_download_functionality] Downloading file 'text.txt'.
+2025-11-25 09:56:19,707 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:19,827 - INFO - [test_files_download_functionality] Downloading file 'EA088A60-5FF5-4903-8022-050A3578CEF6.png'.
+2025-11-25 09:56:19,958 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:20,054 - INFO - [test_files_download_functionality] Downloading file 'WebdriverIO_JS_Jasmine_Interview_QA_Colorful.pdf'.
+2025-11-25 09:56:20,168 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:20,271 - INFO - [test_files_download_functionality] Downloading file 'selenium-snapshot.png'.
+2025-11-25 09:56:20,386 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:20,493 - INFO - [test_files_download_functionality] Downloading file 'Vector.png'.
+2025-11-25 09:56:20,610 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:20,702 - INFO - [test_files_download_functionality] Downloading file 'selenide-intro.txt'.
+2025-11-25 09:56:20,824 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:20,921 - INFO - [test_files_download_functionality] Downloading file 'izaro-upload-test5876874598672483577.txt'.
+2025-11-25 09:56:21,039 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:21,130 - INFO - [test_files_download_functionality] Downloading file 'sampleFile.txt'.
+2025-11-25 09:56:21,235 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:21,343 - INFO - [test_files_download_functionality] Downloading file 'upload-me.txt'.
+2025-11-25 09:56:21,468 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:21,575 - INFO - [test_files_download_functionality] Downloading file 'example.json'.
+2025-11-25 09:56:21,686 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:21,960 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:22,065 - INFO - [test_files_download_functionality] Downloading file 'large_test_file.txt'.
+2025-11-25 09:56:22,229 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:22,331 - INFO - [test_files_download_functionality] Downloading file 'upload.png'.
+2025-11-25 09:56:22,497 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:22,661 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:22,753 - INFO - [test_files_download_functionality] Downloading file 'invoice_19.pdf'.
+2025-11-25 09:56:22,900 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,124 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,125 - INFO - [test_files_download_functionality] Downloading file 'image-20251007-144122.png'.
+2025-11-25 09:56:23,259 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,350 - INFO - [test_files_download_functionality] Downloading file 'my_custom_file.txt'.
+2025-11-25 09:56:23,465 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,580 - INFO - [test_files_download_functionality] Downloading file 'appyranjan11@gmail.com.pdf'.
+2025-11-25 09:56:23,718 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:23,822 - INFO - [test_files_download_functionality] Downloading file 'tmpqxe1b3.tmp'.
+2025-11-25 09:56:23,951 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,056 - INFO - [test_files_download_functionality] Downloading file 'sample.txt'.
+2025-11-25 09:56:24,193 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,317 - INFO - [test_files_download_functionality] Downloading file 's1.png'.
+2025-11-25 09:56:24,420 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,523 - INFO - [test_files_download_functionality] Downloading file 'PRD 32 - Hotel listing booking.com.pdf'.
+2025-11-25 09:56:24,652 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,802 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:24,873 - INFO - [test_files_download_functionality] Downloading file 'test-document.txt'.
+2025-11-25 09:56:25,005 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:25,192 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:25,284 - INFO - [test_files_download_functionality] Downloading file 'Profit_and_Loss_2025-01-01_to_2025-10-03.pdf'.
+2025-11-25 09:56:25,434 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:25,615 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:25,712 - INFO - [test_files_download_functionality] Downloading file 'playwrightlogo.png'.
+2025-11-25 09:56:25,843 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:25,949 - INFO - [test_files_download_functionality] Downloading file '68zacktk2i_Screenshot (2).png'.
+2025-11-25 09:56:26,063 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:26,249 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:26,313 - INFO - [test_files_download_functionality] Downloading file 'test-upload.txt'.
+2025-11-25 09:56:26,464 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:26,572 - INFO - [test_files_download_functionality] Downloading file 'some-file.txt'.
+2025-11-25 09:56:26,690 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:26,803 - INFO - [test_files_download_functionality] Downloading file 'win.ini'.
+2025-11-25 09:56:26,941 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:27,122 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:27,219 - INFO - [test_files_download_functionality] Downloading file 'Fee Receipt.pdf'.
+2025-11-25 09:56:27,369 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:27,481 - INFO - [test_files_download_functionality] Downloading file 'download.xlsx'.
+2025-11-25 09:56:27,589 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:27,684 - INFO - [test_files_download_functionality] Downloading file 'test.txt'.
+2025-11-25 09:56:27,810 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:27,915 - INFO - [test_files_download_functionality] Downloading file 'some_file.txt'.
+2025-11-25 09:56:28,048 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:28,165 - INFO - [test_files_download_functionality] Downloading file 'TestingFile.pdf'.
+2025-11-25 09:56:28,308 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:28,465 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:28,525 - INFO - [test_files_download_functionality] Downloading file 'test_file.txt'.
+2025-11-25 09:56:28,659 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:28,765 - INFO - [test_files_download_functionality] Downloading file 'random_data.txt'.
+2025-11-25 09:56:28,903 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:29,005 - INFO - [test_files_download_functionality] Downloading file 'Ketaki_Badave_SQC A3.pdf'.
+2025-11-25 09:56:29,157 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:29,270 - INFO - [test_files_download_functionality] Downloading file 'newsong.json'.
+2025-11-25 09:56:29,398 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:29,505 - INFO - [test_files_download_functionality] Downloading file 'empty_file.txt'.
+2025-11-25 09:56:29,625 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:29,728 - INFO - [test_files_download_functionality] Downloading file 'audio-first.mp3'.
+2025-11-25 09:56:29,856 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:29,958 - INFO - [test_files_download_functionality] Downloading file 'test_upload_file.txt'.
+2025-11-25 09:56:30,084 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:30,183 - INFO - [test_files_download_functionality] Downloading file '8b993540-f289-4fc2-ab8a-e11188155d7e.xlsx'.
+2025-11-25 09:56:30,306 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:30,410 - INFO - [test_files_download_functionality] Downloading file 'sample.png'.
+2025-11-25 09:56:30,537 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:30,744 - INFO - [test_files_download_functionality] Downloading file 'PopUp.pdf'.
+2025-11-25 09:56:30,868 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:30,995 - INFO - [test_files_download_functionality] Downloading file 'image.png'.
+2025-11-25 09:56:31,111 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:31,226 - INFO - [test_files_download_functionality] Downloading file 'StudentManager.java'.
+2025-11-25 09:56:31,358 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:31,468 - INFO - [test_files_download_functionality] Downloading file 'example.txt'.
+2025-11-25 09:56:31,608 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:31,830 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:31,926 - INFO - [test_files_download_functionality] Downloading file 'test.json'.
+2025-11-25 09:56:32,039 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:32,190 - INFO - [test_files_download_functionality] Downloading file 'SomeFile.txt'.
+2025-11-25 09:56:32,357 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:32,544 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:32,654 - INFO - [test_files_download_functionality] Downloading file 'profit_and_loss_2025-01-01_to_2025-10-03.pdf'.
+2025-11-25 09:56:32,781 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:32,883 - INFO - [test_files_download_functionality] Downloading file 'sm.jpg'.
+2025-11-25 09:56:33,006 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:33,126 - INFO - [test_files_download_functionality] Downloading file 'test1.json'.
+2025-11-25 09:56:33,239 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:33,340 - INFO - [test_files_download_functionality] Downloading file 'newband.json'.
+2025-11-25 09:56:33,466 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:33,565 - INFO - [test_files_download_functionality] Downloading file 'zero_bytes_file.txt'.
+2025-11-25 09:56:33,667 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:33,766 - INFO - [test_files_download_functionality] Downloading file 'Jpeg_with_exif.jpeg'.
+2025-11-25 09:56:33,884 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:33,989 - INFO - [test_files_download_functionality] Downloading file 'webdriverIO.png'.
+2025-11-25 09:56:34,102 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:34,203 - INFO - [test_files_download_functionality] Downloading file 'Image.png'.
+2025-11-25 09:56:34,334 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:34,431 - INFO - [test_files_download_functionality] Downloading file '7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf'.
+2025-11-25 09:56:34,534 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:34,635 - INFO - [test_files_download_functionality] Downloading file 'img2.jpg'.
+2025-11-25 09:56:34,750 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:34,853 - INFO - [test_files_download_functionality] Downloading file 'playwright.config.ts'.
+2025-11-25 09:56:34,969 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:35,075 - INFO - [test_files_download_functionality] Downloading file 'izaro-upload-test2159146755072571279.txt'.
+2025-11-25 09:56:35,188 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:35,289 - INFO - [test_files_download_functionality] Downloading file 'test.xml'.
+2025-11-25 09:56:35,404 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:35,504 - INFO - [test_files_download_functionality] Downloading file 'sample_media_file.png'.
+2025-11-25 09:56:35,637 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:35,738 - INFO - [test_files_download_functionality] Downloading file 'upload_test.txt'.
+2025-11-25 09:56:35,852 - WARNING - [test_files_download_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:35,952 - INFO - [test_files_download_functionality] Verifying downloaded files count equals to files in page.
+2025-11-25 09:56:35,953 - INFO - [test_files_download_functionality] Test PASSED: test_files_download_functionality (Duration: 26.47s).
+2025-11-25 09:56:35,967 - INFO - [test_files_download_functionality] Directory cleaned and recreated at: downloads/gw2.
+2025-11-25 09:56:35,967 - INFO - [test_files_download_functionality] Cleaned downloads after test: test_files_download_functionality
+2025-11-25 09:56:35,968 - INFO - [test_files_download_functionality] Stopping video recording...
+2025-11-25 09:56:35,968 - INFO - [test_files_download_functionality] Stopping video recording and assembling.
+2025-11-25 09:56:36,055 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:36,122 - INFO - [test_files_download_functionality] Thread joined. Frames dir: tests_recordings/gw2/test_files_download_functionality_20251125_095609/frames
+2025-11-25 09:56:36,124 - INFO - [test_files_download_functionality] Found 123 valid frames.
+2025-11-25 09:56:38,020 - INFO - [test_files_download_functionality] Video created: tests_recordings/gw2/test_files_download_functionality_20251125_095609/test_files_download_functionality_20251125_095609.mp4

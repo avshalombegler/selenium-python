@@ -1,0 +1,20 @@
+2025-11-25 09:55:24,327 - INFO - [test_table_header_per_column[Sit]] Starting test: test_table_header_per_column[Sit]
+2025-11-25 09:55:24,327 - INFO - [test_table_header_per_column[Sit]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:55:24,382 - INFO - [test_table_header_per_column[Sit]] Navigation completed.
+2025-11-25 09:55:24,382 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:55:24,408 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:55:24,411 - INFO - [] Capture loop started for Firefox.
+2025-11-25 09:55:24,413 - INFO - [test_table_header_per_column[Sit]] Started recording: tests_recordings/gw0/test_table_header_per_column[Sit]_20251125_095524/test_table_header_per_column[Sit]_20251125_095524.mp4
+2025-11-25 09:55:24,415 - INFO - [test_table_header_per_column[Sit]] Verify table head text per column.
+2025-11-25 09:55:24,415 - INFO - [test_table_header_per_column[Sit]] Navigating to Challenging DOM page.
+2025-11-25 09:55:24,520 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:55:24,686 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 09:55:24,814 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:55:24,821 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 09:55:24,821 - INFO - [test_table_header_per_column[Sit]] Getting table head text of column 'Sit'.
+2025-11-25 09:55:24,879 - INFO - [test_table_header_per_column[Sit]] Test PASSED: test_table_header_per_column[Sit] (Duration: 0.46s).
+2025-11-25 09:55:24,879 - INFO - [test_table_header_per_column[Sit]] Stopping video recording...
+2025-11-25 09:55:24,880 - INFO - [test_table_header_per_column[Sit]] Stopping video recording and assembling.
+2025-11-25 09:55:25,031 - INFO - [test_table_header_per_column[Sit]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Sit]_20251125_095524/frames
+2025-11-25 09:55:25,031 - INFO - [test_table_header_per_column[Sit]] Found 3 valid frames.
+2025-11-25 09:55:25,230 - INFO - [test_table_header_per_column[Sit]] Video created: tests_recordings/gw0/test_table_header_per_column[Sit]_20251125_095524/test_table_header_per_column[Sit]_20251125_095524.mp4

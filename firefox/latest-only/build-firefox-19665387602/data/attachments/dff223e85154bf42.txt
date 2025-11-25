@@ -1,0 +1,11 @@
+2025-11-25 09:55:15,834 - INFO - [test_table_header_per_column[Sit]] Starting test: test_table_header_per_column[Sit]
+2025-11-25 09:55:15,834 - INFO - [test_table_header_per_column[Sit]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:55:16,064 - INFO - [test_table_header_per_column[Sit]] Navigation completed.
+2025-11-25 09:55:16,065 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:55:16,088 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:55:16,090 - INFO - [test_table_header_per_column[Sit]] Verify table head text per column.
+2025-11-25 09:55:16,091 - INFO - [test_table_header_per_column[Sit]] Navigating to Challenging DOM page.
+2025-11-25 09:55:16,471 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 09:55:16,494 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 09:55:16,495 - INFO - [test_table_header_per_column[Sit]] Getting table head text of column 'Sit'.
+2025-11-25 09:55:16,570 - INFO - [test_table_header_per_column[Sit]] Test PASSED: test_table_header_per_column[Sit] (Duration: 0.48s).

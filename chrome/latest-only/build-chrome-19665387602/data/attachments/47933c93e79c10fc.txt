@@ -1,0 +1,20 @@
+2025-11-25 09:55:22,727 - INFO - [test_table_header_per_column[Ipsum]] Starting test: test_table_header_per_column[Ipsum]
+2025-11-25 09:55:22,727 - INFO - [test_table_header_per_column[Ipsum]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:55:22,793 - INFO - [test_table_header_per_column[Ipsum]] Navigation completed.
+2025-11-25 09:55:22,794 - INFO - [test_table_header_per_column[Ipsum]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:55:22,809 - INFO - [test_table_header_per_column[Ipsum]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:55:22,810 - INFO - [] Capture loop started for Firefox.
+2025-11-25 09:55:22,811 - INFO - [test_table_header_per_column[Ipsum]] Started recording: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251125_095522/test_table_header_per_column[Ipsum]_20251125_095522.mp4
+2025-11-25 09:55:22,812 - INFO - [test_table_header_per_column[Ipsum]] Verify table head text per column.
+2025-11-25 09:55:22,813 - INFO - [test_table_header_per_column[Ipsum]] Navigating to Challenging DOM page.
+2025-11-25 09:55:22,931 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:55:23,109 - INFO - [test_table_header_per_column[Ipsum]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 09:55:23,251 - WARNING - [test_table_header_per_column[Ipsum]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:55:23,260 - INFO - [test_table_header_per_column[Ipsum]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 09:55:23,260 - INFO - [test_table_header_per_column[Ipsum]] Getting table head text of column 'Ipsum'.
+2025-11-25 09:55:23,285 - INFO - [test_table_header_per_column[Ipsum]] Test PASSED: test_table_header_per_column[Ipsum] (Duration: 0.47s).
+2025-11-25 09:55:23,286 - INFO - [test_table_header_per_column[Ipsum]] Stopping video recording...
+2025-11-25 09:55:23,286 - INFO - [test_table_header_per_column[Ipsum]] Stopping video recording and assembling.
+2025-11-25 09:55:23,316 - INFO - [test_table_header_per_column[Ipsum]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251125_095522/frames
+2025-11-25 09:55:23,316 - INFO - [test_table_header_per_column[Ipsum]] Found 2 valid frames.
+2025-11-25 09:55:23,523 - INFO - [test_table_header_per_column[Ipsum]] Video created: tests_recordings/gw0/test_table_header_per_column[Ipsum]_20251125_095522/test_table_header_per_column[Ipsum]_20251125_095522.mp4

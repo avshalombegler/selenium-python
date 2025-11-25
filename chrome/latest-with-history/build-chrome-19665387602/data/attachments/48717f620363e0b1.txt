@@ -1,0 +1,25 @@
+2025-11-25 09:56:01,269 - INFO - [test_horizontal_slider_functionality_using_keys] Starting test: test_horizontal_slider_functionality_using_keys
+2025-11-25 09:56:01,270 - INFO - [test_horizontal_slider_functionality_using_keys] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 09:56:01,312 - INFO - [test_horizontal_slider_functionality_using_keys] Navigation completed.
+2025-11-25 09:56:01,312 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 09:56:01,329 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 09:56:01,330 - INFO - [] Capture loop started for Firefox.
+2025-11-25 09:56:01,330 - INFO - [test_horizontal_slider_functionality_using_keys] Started recording: tests_recordings/gw2/test_horizontal_slider_functionality_using_keys_20251125_095601/test_horizontal_slider_functionality_using_keys_20251125_095601.mp4
+2025-11-25 09:56:01,332 - INFO - [test_horizontal_slider_functionality_using_keys] Tests Horizontal Slider.
+2025-11-25 09:56:01,332 - INFO - [test_horizontal_slider_functionality_using_keys] Navigating to Horizontal Slider page.
+2025-11-25 09:56:01,451 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:01,559 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 09:56:01,654 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:01,660 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 09:56:01,660 - INFO - [test_horizontal_slider_functionality_using_keys] Setting horizontal slider value using arrow key.
+2025-11-25 09:56:02,005 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:02,517 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:03,539 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:04,040 - INFO - [test_horizontal_slider_functionality_using_keys] Verifying horizontal slider new value.
+2025-11-25 09:56:04,071 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 09:56:04,082 - INFO - [test_horizontal_slider_functionality_using_keys] Test PASSED: test_horizontal_slider_functionality_using_keys (Duration: 2.75s).
+2025-11-25 09:56:04,083 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording...
+2025-11-25 09:56:04,083 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording and assembling.
+2025-11-25 09:56:04,134 - INFO - [test_horizontal_slider_functionality_using_keys] Thread joined. Frames dir: tests_recordings/gw2/test_horizontal_slider_functionality_using_keys_20251125_095601/frames
+2025-11-25 09:56:04,134 - INFO - [test_horizontal_slider_functionality_using_keys] Found 19 valid frames.
+2025-11-25 09:56:04,590 - INFO - [test_horizontal_slider_functionality_using_keys] Video created: tests_recordings/gw2/test_horizontal_slider_functionality_using_keys_20251125_095601/test_horizontal_slider_functionality_using_keys_20251125_095601.mp4
