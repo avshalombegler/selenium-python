@@ -1,0 +1,23 @@
+2025-11-25 15:22:30,987 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-25 15:22:30,988 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-25 15:22:30,989 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-25 15:22:30,990 - INFO - [] xdist worker is: gw2
+2025-11-25 15:22:30,990 - INFO - [] ====== WebDriver manager ======
+2025-11-25 15:22:31,064 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-25 15:22:31,064 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-25 15:22:31,247 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-25 15:22:31,248 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-25 15:22:31,440 - INFO - [] Driver [/home/runner/.wdm/gw2/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+2025-11-25 15:22:38,077 - INFO - [test_floating_menu_functionality[Home]] Starting test: test_floating_menu_functionality[Home]
+2025-11-25 15:22:38,080 - INFO - [test_floating_menu_functionality[Home]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 15:22:38,531 - INFO - [test_floating_menu_functionality[Home]] Navigation completed.
+2025-11-25 15:22:38,532 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 15:22:38,650 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 15:22:38,652 - INFO - [test_floating_menu_functionality[Home]] Tests Files Download.
+2025-11-25 15:22:38,653 - INFO - [test_floating_menu_functionality[Home]] Navigating to Floating Menu page.
+2025-11-25 15:22:39,767 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 15:22:39,823 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 15:22:39,823 - INFO - [test_floating_menu_functionality[Home]] Scroll down.
+2025-11-25 15:22:39,855 - INFO - [test_floating_menu_functionality[Home]] Clicking floating menu item 'Home'.
+2025-11-25 15:22:40,091 - INFO - [test_floating_menu_functionality[Home]] Verifying url updated after click on menu item.
+2025-11-25 15:22:40,103 - INFO - [test_floating_menu_functionality[Home]] Test PASSED: test_floating_menu_functionality[Home] (Duration: 1.45s).

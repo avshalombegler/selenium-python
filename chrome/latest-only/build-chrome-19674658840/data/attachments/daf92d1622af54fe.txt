@@ -1,0 +1,32 @@
+INFO     root:conftest.py:391 Starting test: test_checkboxes_functionality
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:53 Capture loop started for Firefox.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw0/test_checkboxes_functionality_20251125_152316/test_checkboxes_functionality_20251125_152316.mp4
+INFO     root:test_checkboxes.py:24 Test for verifying checkbox functionality.
+INFO     root:main_page.py:81 Navigating to Checkboxes page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_checkboxes.py:27 Check checkboxes initial state.
+INFO     root:base_page.py:139 Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(1)')'.
+INFO     root:base_page.py:139 Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(2)')'.
+INFO     root:test_checkboxes.py:31 Set checkboxes new state.
+INFO     root:checkboxes_page.py:54 Set checkbox '0' to 'True'.
+INFO     root:base_page.py:139 Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(1)')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:checkboxes_page.py:54 Set checkbox '1' to 'False'.
+INFO     root:base_page.py:139 Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(2)')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_checkboxes.py:35 Check checkboxes new state.
+INFO     root:base_page.py:139 Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(1)')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:139 Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(2)')'.
+INFO     root:conftest.py:423 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:87 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:90 Thread joined. Frames dir: tests_recordings/gw0/test_checkboxes_functionality_20251125_152316/frames
+INFO     utils.video_recorder:video_recorder.py:94 Found 5 valid frames.
+INFO     utils.video_recorder:video_recorder.py:118 Video created: tests_recordings/gw0/test_checkboxes_functionality_20251125_152316/test_checkboxes_functionality_20251125_152316.mp4

@@ -1,0 +1,16 @@
+2025-11-25 15:22:41,218 - INFO - [test_top_nested_frames_functionality[middle]] Starting test: test_top_nested_frames_functionality[middle]
+2025-11-25 15:22:41,219 - INFO - [test_top_nested_frames_functionality[middle]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 15:22:41,472 - INFO - [test_top_nested_frames_functionality[middle]] Navigation completed.
+2025-11-25 15:22:41,472 - INFO - [test_top_nested_frames_functionality[middle]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 15:22:41,517 - INFO - [test_top_nested_frames_functionality[middle]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 15:22:41,519 - INFO - [test_top_nested_frames_functionality[middle]] Tests Nested Frames.
+2025-11-25 15:22:41,519 - INFO - [test_top_nested_frames_functionality[middle]] Navigating to Frames page.
+2025-11-25 15:22:42,135 - INFO - [test_top_nested_frames_functionality[middle]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 15:22:42,149 - INFO - [test_top_nested_frames_functionality[middle]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 15:22:42,149 - INFO - [test_top_nested_frames_functionality[middle]] Clicking Nested Frames link.
+2025-11-25 15:22:42,483 - INFO - [test_top_nested_frames_functionality[middle]] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-25 15:22:42,512 - INFO - [test_top_nested_frames_functionality[middle]] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-25 15:22:42,512 - INFO - [test_top_nested_frames_functionality[middle]] Switching to frame 'top'.
+2025-11-25 15:22:42,531 - INFO - [test_top_nested_frames_functionality[middle]] Switching to nested frame 'middle'.
+2025-11-25 15:22:42,547 - INFO - [test_top_nested_frames_functionality[middle]] Verifying frame text.
+2025-11-25 15:22:42,568 - INFO - [test_top_nested_frames_functionality[middle]] Test PASSED: test_top_nested_frames_functionality[middle] (Duration: 1.05s).

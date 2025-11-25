@@ -1,0 +1,25 @@
+2025-11-25 15:22:47,699 - INFO - [test_remove_elements] Starting test: test_remove_elements
+2025-11-25 15:22:47,699 - INFO - [test_remove_elements] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 15:22:47,936 - INFO - [test_remove_elements] Navigation completed.
+2025-11-25 15:22:47,937 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 15:22:47,966 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 15:22:47,968 - INFO - [test_remove_elements] Tests for remove elements.
+2025-11-25 15:22:47,968 - INFO - [test_remove_elements] Navigating to Add/Remove Elements page.
+2025-11-25 15:22:48,372 - INFO - [test_remove_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-25 15:22:48,444 - INFO - [test_remove_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-25 15:22:48,445 - INFO - [test_remove_elements] Ensure there are elements to remove
+2025-11-25 15:22:48,445 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-25 15:22:48,682 - INFO - [test_remove_elements] Clicking Add Element button.
+2025-11-25 15:22:48,810 - INFO - [test_remove_elements] Remove all elements
+2025-11-25 15:22:48,953 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-25 15:22:48,953 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-25 15:22:48,963 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-25 15:22:49,066 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-25 15:22:49,066 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-25 15:22:49,073 - INFO - [test_remove_elements] Clicking Delete Element button.
+2025-11-25 15:22:49,191 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-25 15:22:49,191 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-25 15:22:52,229 - INFO - [test_remove_elements] Counting Delete Element button(s).
+2025-11-25 15:22:52,229 - INFO - [test_remove_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-25 15:22:55,250 - INFO - [test_remove_elements] Found 0 delete buttons.
+2025-11-25 15:22:55,251 - INFO - [test_remove_elements] Test PASSED: test_remove_elements (Duration: 7.28s).
