@@ -152,21 +152,23 @@ jobs:
               --dist=loadfile \
               --alluredir=reports/allure-results \
               --junitxml=reports/junit.xml \
+              --reruns 1 \
+              --reruns-delay 2 \
               -m ${{ matrix.marker }}
 
       - name: Clean Allure Report Directory
         if: steps.pytest.outcome == 'failure'
         run: rm -rf reports/allure-report/build-*
 
-      - name: Retry Failed Tests
-        if: steps.pytest.outcome == 'failure'
-        run: |
-          PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-            pytest \
-            tests/ \
-            -v \
-            --last-failed \
-            --alluredir=reports/allure-results
+      # - name: Retry Failed Tests
+      #   if: steps.pytest.outcome == 'failure'
+      #   run: |
+      #     PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
+      #       pytest \
+      #       tests/ \
+      #       -v \
+      #       --last-failed \
+      #       --alluredir=reports/allure-results
 
       - name: Generate Allure Report (Latest-Only)
         if: always()
@@ -225,7 +227,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-${{ matrix.browser }}-raw
+          name: allure-results-${{ matrix.browser }}
           path: reports/allure-results/
           retention-days: 7
 
