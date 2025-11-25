@@ -1,0 +1,13 @@
+2025-11-25 14:56:04,596 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Starting test: test_cells_content_per_column[Ipsum-Apeirian]
+2025-11-25 14:56:04,597 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 14:56:04,857 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-25 14:56:04,858 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 14:56:04,888 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 14:56:04,893 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Verify cell content per column.
+2025-11-25 14:56:04,894 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-25 14:56:05,215 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 14:56:05,246 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 14:56:05,247 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-25 14:56:05,307 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-25 14:56:05,369 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-25 14:56:05,408 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Test PASSED: test_cells_content_per_column[Ipsum-Apeirian] (Duration: 0.51s).

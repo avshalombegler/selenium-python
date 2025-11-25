@@ -1,0 +1,27 @@
+INFO     root:conftest.py:391 Starting test: test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:53 Capture loop started for Firefox.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw1/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251125_145650/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251125_145650.mp4
+INFO     root:test_form_authentication.py:42 Tests Form Authentication.
+INFO     root:main_page.py:178 Navigating to Form Authentication page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h2')'.
+INFO     root:test_form_authentication.py:45 Entering username 'tomsmith'.
+INFO     root:base_page.py:139 Sending keys 'tomsmith' on element '('id', 'username')'.
+INFO     root:test_form_authentication.py:48 Entering password 'wrong!'.
+INFO     root:base_page.py:139 Sending keys 'wrong!' on element '('id', 'password')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_form_authentication.py:65 Clicking login button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_form_authentication.py:68 Verifying flash message after unsuccessfull login.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:423 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:87 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:90 Thread joined. Frames dir: tests_recordings/gw1/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251125_145650/frames
+INFO     utils.video_recorder:video_recorder.py:94 Found 5 valid frames.
+INFO     utils.video_recorder:video_recorder.py:118 Video created: tests_recordings/gw1/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251125_145650/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251125_145650.mp4

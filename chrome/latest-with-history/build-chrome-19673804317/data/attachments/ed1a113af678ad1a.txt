@@ -1,0 +1,26 @@
+2025-11-25 14:56:40,330 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Starting test: test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]
+2025-11-25 14:56:40,331 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 14:56:40,454 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Navigation completed.
+2025-11-25 14:56:40,455 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 14:56:40,490 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 14:56:40,491 - INFO - [] Capture loop started for Firefox.
+2025-11-25 14:56:40,492 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Started recording: tests_recordings/gw1/test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]_20251125_145640/test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]_20251125_145640.mp4
+2025-11-25 14:56:40,493 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Tests Files Upload.
+2025-11-25 14:56:40,493 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Navigating to File Upload page.
+2025-11-25 14:56:40,623 - WARNING - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:40,824 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 14:56:40,945 - WARNING - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:40,953 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 14:56:40,953 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Upload file using the Upload button.
+2025-11-25 14:56:40,953 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/CATE-CHAPTER_1-QUALITY.ppt' on element '('id', 'file-upload')'.
+2025-11-25 14:56:41,100 - WARNING - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:41,342 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 14:56:41,454 - WARNING - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:41,463 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 14:56:41,464 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Verifying file uploaded sucessfully.
+2025-11-25 14:56:41,487 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Test PASSED: test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt] (Duration: 0.99s).
+2025-11-25 14:56:41,488 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Stopping video recording...
+2025-11-25 14:56:41,489 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Stopping video recording and assembling.
+2025-11-25 14:56:41,517 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]_20251125_145640/frames
+2025-11-25 14:56:41,518 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Found 4 valid frames.
+2025-11-25 14:56:41,925 - INFO - [test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]] Video created: tests_recordings/gw1/test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]_20251125_145640/test_files_upload_functionality[CATE-CHAPTER_1-QUALITY.ppt]_20251125_145640.mp4

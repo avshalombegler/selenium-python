@@ -1,0 +1,13 @@
+2025-11-25 14:55:54,616 - INFO - [test_floating_menu_functionality[News]] Starting test: test_floating_menu_functionality[News]
+2025-11-25 14:55:54,617 - INFO - [test_floating_menu_functionality[News]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 14:55:54,920 - INFO - [test_floating_menu_functionality[News]] Navigation completed.
+2025-11-25 14:55:54,920 - INFO - [test_floating_menu_functionality[News]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 14:55:54,983 - INFO - [test_floating_menu_functionality[News]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 14:55:54,996 - INFO - [test_floating_menu_functionality[News]] Tests Files Download.
+2025-11-25 14:55:54,998 - INFO - [test_floating_menu_functionality[News]] Navigating to Floating Menu page.
+2025-11-25 14:55:55,789 - INFO - [test_floating_menu_functionality[News]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 14:55:55,829 - INFO - [test_floating_menu_functionality[News]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 14:55:55,830 - INFO - [test_floating_menu_functionality[News]] Scroll down.
+2025-11-25 14:55:55,837 - INFO - [test_floating_menu_functionality[News]] Clicking floating menu item 'News'.
+2025-11-25 14:55:55,981 - INFO - [test_floating_menu_functionality[News]] Verifying url updated after click on menu item.
+2025-11-25 14:55:55,983 - INFO - [test_floating_menu_functionality[News]] Test PASSED: test_floating_menu_functionality[News] (Duration: 0.99s).

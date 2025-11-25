@@ -1,0 +1,15 @@
+INFO     root:conftest.py:391 Starting test: test_broken_images_count
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_broken_images.py:27 Verify broken images count.
+INFO     root:main_page.py:67 Navigating to Broken Images page.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_broken_images.py:30 Getting broken images count.
+INFO     root:broken_images_page.py:26 Get all image elements.
+INFO     root:broken_images_page.py:40 Check if image is broken.
+INFO     root:broken_images_page.py:40 Check if image is broken.
+INFO     root:broken_images_page.py:40 Check if image is broken.
+INFO     root:test_broken_images.py:32 Found 2 broken images.

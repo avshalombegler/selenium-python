@@ -1,0 +1,25 @@
+INFO     root:conftest.py:221 Directory cleaned and recreated at: tests_screenshots/gw3.
+INFO     root:conftest.py:221 Directory cleaned and recreated at: tests_recordings/gw3.
+INFO     root:conftest.py:221 Directory cleaned and recreated at: downloads/gw3.
+INFO     WDM:logger.py:11 xdist worker is: gw3
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 GH_TOKEN will be used to perform requests
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 GH_TOKEN will be used to perform requests
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/gw3/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+INFO     root:conftest.py:391 Starting test: test_top_nested_frames_functionality[left]
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_nested_frames.py:29 Tests Nested Frames.
+INFO     root:main_page.py:185 Navigating to Frames page.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_nested_frames.py:32 Clicking Nested Frames link.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'frameset')'.
+INFO     root:test_nested_frames.py:35 Switching to frame 'top'.
+INFO     root:test_nested_frames.py:38 Switching to nested frame 'left'.
+INFO     root:test_nested_frames.py:41 Verifying frame text.

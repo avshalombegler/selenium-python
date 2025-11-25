@@ -1,0 +1,77 @@
+2025-11-25 14:56:56,241 - INFO - [test_checkbox_remove_and_add] Starting test: test_checkbox_remove_and_add
+2025-11-25 14:56:56,241 - INFO - [test_checkbox_remove_and_add] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 14:56:56,335 - INFO - [test_checkbox_remove_and_add] Navigation completed.
+2025-11-25 14:56:56,335 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 14:56:56,360 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 14:56:56,361 - INFO - [] Capture loop started for Firefox.
+2025-11-25 14:56:56,362 - INFO - [test_checkbox_remove_and_add] Started recording: tests_recordings/gw1/test_checkbox_remove_and_add_20251125_145656/test_checkbox_remove_and_add_20251125_145656.mp4
+2025-11-25 14:56:56,363 - INFO - [test_checkbox_remove_and_add] Test Remove/add checkbox area.
+2025-11-25 14:56:56,364 - INFO - [test_checkbox_remove_and_add] Navigating to Dynamic Controls page.
+2025-11-25 14:56:56,566 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:57,084 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-25 14:56:57,287 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:57,324 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-25 14:56:57,324 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-25 14:56:57,364 - INFO - [test_checkbox_remove_and_add] Clicking remove button.
+2025-11-25 14:56:57,569 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:57,856 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:58,092 - INFO - [test_checkbox_remove_and_add] Waiting for loader to complete.
+2025-11-25 14:56:58,269 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:58,535 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:58,753 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:59,117 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:56:59,698 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:01,236 - INFO - [test_checkbox_remove_and_add] Checking if checkbox absent.
+2025-11-25 14:57:01,836 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:02,408 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:03,444 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:03,995 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:04,562 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:05,100 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:05,635 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:06,170 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:06,732 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:07,271 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:07,808 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:09,410 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:10,095 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:10,504 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:11,100 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:11,623 - ERROR - [test_checkbox_remove_and_add] Timeout after 10s for locator ('css selector', 'input[type=checkbox]'): Message: 
+Stacktrace:
+#0 0x56210769a4ca <unknown>
+#1 0x5621070e8e4b <unknown>
+#2 0x56210713b814 <unknown>
+#3 0x56210713ba51 <unknown>
+#4 0x56210718aa44 <unknown>
+#5 0x562107187df7 <unknown>
+#6 0x56210712dc2a <unknown>
+#7 0x56210712e931 <unknown>
+#8 0x562107660cf9 <unknown>
+#9 0x562107663cdc <unknown>
+#10 0x562107649f79 <unknown>
+#11 0x5621076648b5 <unknown>
+#12 0x5621076319c3 <unknown>
+#13 0x562107687228 <unknown>
+#14 0x562107687403 <unknown>
+#15 0x562107699463 <unknown>
+#16 0x7fbcdae9caa4 <unknown>
+#17 0x7fbcdaf29c6c <unknown>
+
+2025-11-25 14:57:11,624 - INFO - [test_checkbox_remove_and_add] Verifying remove message text.
+2025-11-25 14:57:11,720 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:11,731 - INFO - [test_checkbox_remove_and_add] Clicking add button.
+2025-11-25 14:57:11,835 - INFO - [test_checkbox_remove_and_add] Waiting for loader to complete.
+2025-11-25 14:57:11,939 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:13,017 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:14,116 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:14,562 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:15,086 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-25 14:57:15,119 - INFO - [test_checkbox_remove_and_add] Verifying add message text.
+2025-11-25 14:57:15,296 - WARNING - [test_checkbox_remove_and_add] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 14:57:15,310 - INFO - [test_checkbox_remove_and_add] Test PASSED: test_checkbox_remove_and_add (Duration: 18.95s).
+2025-11-25 14:57:15,311 - INFO - [test_checkbox_remove_and_add] Stopping video recording...
+2025-11-25 14:57:15,311 - INFO - [test_checkbox_remove_and_add] Stopping video recording and assembling.
+2025-11-25 14:57:15,359 - INFO - [test_checkbox_remove_and_add] Thread joined. Frames dir: tests_recordings/gw1/test_checkbox_remove_and_add_20251125_145656/frames
+2025-11-25 14:57:15,361 - INFO - [test_checkbox_remove_and_add] Found 114 valid frames.
+2025-11-25 14:57:18,133 - INFO - [test_checkbox_remove_and_add] Video created: tests_recordings/gw1/test_checkbox_remove_and_add_20251125_145656/test_checkbox_remove_and_add_20251125_145656.mp4

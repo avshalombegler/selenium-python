@@ -1,0 +1,14 @@
+INFO     root:conftest.py:391 Starting test: test_content_changes_after_refresh
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_dynamic_content.py:24 Test that content changes after page refresh.
+INFO     root:main_page.py:116 Navigating to Dynamic Content page.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:base_page.py:292 Refreshing page.
+INFO     root:base_page.py:294 Page refreshed.
+INFO     root:test_dynamic_content.py:32 Validating initial content blocks structure and count.
+INFO     root:test_dynamic_content.py:36 Validating refreshed content blocks structure and count.
+INFO     root:test_dynamic_content.py:40 Comparing content changes after refresh.

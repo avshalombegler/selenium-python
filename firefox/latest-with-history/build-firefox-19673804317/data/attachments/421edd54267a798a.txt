@@ -1,0 +1,13 @@
+2025-11-25 14:56:03,643 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Starting test: test_cells_content_per_column[Lorem-Iuvaret]
+2025-11-25 14:56:03,644 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 14:56:03,936 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigation completed.
+2025-11-25 14:56:03,936 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 14:56:03,963 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 14:56:03,965 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Verify cell content per column.
+2025-11-25 14:56:03,969 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Navigating to Challenging DOM page.
+2025-11-25 14:56:04,409 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 14:56:04,441 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 14:56:04,441 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Getting table cell 'Iuvaret' text under column 'Lorem'.
+2025-11-25 14:56:04,495 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Getting table cell 'Iuvaret' text under column 'Lorem'.
+2025-11-25 14:56:04,543 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Getting table cell 'Iuvaret' text under column 'Lorem'.
+2025-11-25 14:56:04,589 - INFO - [test_cells_content_per_column[Lorem-Iuvaret]] Test PASSED: test_cells_content_per_column[Lorem-Iuvaret] (Duration: 0.62s).

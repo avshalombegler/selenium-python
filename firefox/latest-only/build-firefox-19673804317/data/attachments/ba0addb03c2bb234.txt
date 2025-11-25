@@ -1,0 +1,11 @@
+INFO     root:conftest.py:391 Starting test: test_horizontal_slider_functionality_using_keys
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_horizontal_slider.py:56 Tests Horizontal Slider.
+INFO     root:main_page.py:199 Navigating to Horizontal Slider page.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_horizontal_slider.py:59 Setting horizontal slider value using arrow key.
+INFO     root:test_horizontal_slider.py:62 Verifying horizontal slider new value.
