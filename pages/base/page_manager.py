@@ -1,8 +1,11 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
-from pages.common.main_page.main_page import MainPage
+
 from pages.common.main_page.locators import MainPageLocators
+from pages.common.main_page.main_page import MainPage
 from pages.features.ab_testing.ab_testing_page import ABTestingPage
 from pages.features.add_remove_elements.add_remove_elements_page import AddRemoveElementsPage
 from pages.features.basic_auth.basic_auth_page import BasicAuthPage
@@ -27,11 +30,13 @@ from pages.features.geolocation.geolocation_page import GeolocationPage
 from pages.features.horizontal_slider.horizontal_slider_page import HorizontalSliderPage
 from pages.features.hovers.hovers_page import HoversPage
 from pages.features.infinite_scroll.infinite_scroll_page import InfiniteScrollPage
+from pages.features.inputs.inputs_page import InputsPage
 from utils.logging_helper import get_logger
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
+
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class PageManager:
@@ -124,3 +129,6 @@ class PageManager:
 
     def get_infinite_scroll_page(self) -> InfiniteScrollPage:
         return self.main_page.click_infinite_scroll_link()
+
+    def get_inputs_page(self) -> InputsPage:
+        return self.main_page.click_inputs_link()

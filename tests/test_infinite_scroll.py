@@ -1,11 +1,14 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
-import pytest
+
 import allure
+import pytest
 
 if TYPE_CHECKING:
-    from pages.base.page_manager import PageManager
     from logging import Logger
+
+    from pages.base.page_manager import PageManager
 
 
 @allure.feature("Infinite Scroll")
@@ -32,6 +35,6 @@ class TestInfiniteScroll:
             new_height = page.get_page_height()
 
             logger.info("Verifying new page height is bigger than old page height.")
-            assert (
-                old_height < new_height
-            ), f"Expected 'old height < new height', but got 'old height: {old_height} < height: {new_height}'"
+            assert old_height < new_height, (
+                f"Expected 'old height < new height', but got 'old height: {old_height} < height: {new_height}'"
+            )

@@ -1,13 +1,17 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
+
 from pages.base.base_page import BasePage
 from pages.features.broken_images.locators import BrokenImagesPageLocators
 
 if TYPE_CHECKING:
+    from logging import Logger
+
     from selenium.webdriver.remote.webdriver import WebDriver
     from selenium.webdriver.remote.webelement import WebElement
-    from logging import Logger
 
 
 class BrokenImagesPage(BasePage):

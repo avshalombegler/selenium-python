@@ -1,12 +1,16 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
-import pytest
+
 import allure
+import pytest
 
 if TYPE_CHECKING:
-    from pages.base.page_manager import PageManager
     from logging import Logger
+
     from selenium.webdriver.common.action_chains import ActionChains
+
+    from pages.base.page_manager import PageManager
 
 
 @allure.feature("Exit Intent")

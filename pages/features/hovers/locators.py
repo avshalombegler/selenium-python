@@ -2,8 +2,9 @@
 Module containing locators for Hovers pages object.
 """
 
-from pages.base.base_page import Locator
 from selenium.webdriver.common.by import By
+
+from pages.base.base_page import Locator
 
 
 class HoversPageLocators:

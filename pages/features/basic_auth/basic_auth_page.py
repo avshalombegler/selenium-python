@@ -1,14 +1,18 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
+
 import allure
 import requests
 from bs4 import BeautifulSoup
+
 from pages.base.base_page import BasePage
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
     from typing import Any
+
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class BasicAuthPage(BasePage):

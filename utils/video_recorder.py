@@ -5,17 +5,20 @@ Requires: ffmpeg, filelock, selenium, pytest-xdist.
 """
 
 from __future__ import annotations
-from typing import TYPE_CHECKING, Callable
+
+import base64
+import logging
+import subprocess
 import threading
 import time
-import base64
-import subprocess
+from collections.abc import Callable
 from datetime import datetime
 from pathlib import Path
+from typing import TYPE_CHECKING
+
+import allure
 from filelock import FileLock
 from selenium import webdriver
-import allure
-import logging
 
 if TYPE_CHECKING:
     from selenium.webdriver.chrome.webdriver import WebDriver

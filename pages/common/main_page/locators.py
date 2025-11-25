@@ -2,8 +2,9 @@
 Module containing locators for Main Page object.
 """
 
-from pages.base.base_page import Locator
 from selenium.webdriver.common.by import By
+
+from pages.base.base_page import Locator
 
 
 class MainPageLocators:
@@ -31,3 +32,4 @@ class MainPageLocators:
     HORIZONTAL_SLIDER_LINK: Locator = (By.LINK_TEXT, "Horizontal Slider")
     HOVERS_LINK: Locator = (By.LINK_TEXT, "Hovers")
     INFINITE_SCROLL_LINK: Locator = (By.LINK_TEXT, "Infinite Scroll")
+    INPUTS_LINK: Locator = (By.LINK_TEXT, "Inputs")

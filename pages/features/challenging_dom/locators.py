@@ -2,13 +2,14 @@
 Module containing locators for Challenging DOM page object.
 """
 
-from pages.base.base_page import Locator
 from selenium.webdriver.common.by import By
+
+from pages.base.base_page import Locator
 
 
 class ChallengingDomPageLocators:
     PAGE_LOADED_INDICATOR: Locator = (By.CSS_SELECTOR, "div.example h3")
-    BLUE_BTN: Locator = (By.CSS_SELECTOR, "a[class='button']")
+    BLUE_BTN: Locator = (By.CSS_SELECTOR, "a[class=button]")
     RED_BTN: Locator = (By.CSS_SELECTOR, "a[class='button alert']")
     GREEN_BTN: Locator = (By.CSS_SELECTOR, "a[class='button success']")
     EDIT_BTN: Locator = (By.XPATH, "//tbody//tr['{row_num}']//a[(text()='edit')]")

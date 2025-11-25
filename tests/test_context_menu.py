@@ -1,12 +1,16 @@
 from __future__ import annotations
+
 from typing import TYPE_CHECKING
-import pytest
+
 import allure
+import pytest
 
 if TYPE_CHECKING:
-    from pages.base.page_manager import PageManager
     from logging import Logger
+
     from selenium.webdriver.common.action_chains import ActionChains
+
+    from pages.base.page_manager import PageManager
 
 
 @allure.feature("Context Menu")
@@ -41,6 +45,6 @@ class TestContextMenu:
         alert_text = page.right_click_on_hot_spot_and_get_alert_text(actions)
 
         if alert_text != "VIDEO_RECORDING_ACTIVE":
-            assert (
-                alert_text == self.EXPECTED_ALERT_TEXT
-            ), f"Expected alert text '{self.EXPECTED_ALERT_TEXT}', got '{alert_text}'"
+            assert alert_text == self.EXPECTED_ALERT_TEXT, (
+                f"Expected alert text '{self.EXPECTED_ALERT_TEXT}', got '{alert_text}'"
+            )

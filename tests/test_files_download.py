@@ -1,13 +1,16 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING
+
 import os
-import pytest
+from typing import TYPE_CHECKING
+
 import allure
+import pytest
 
 if TYPE_CHECKING:
-    from pages.base.page_manager import PageManager
     from logging import Logger
     from pathlib import Path
+
+    from pages.base.page_manager import PageManager
 
 
 @allure.feature("Files Download")

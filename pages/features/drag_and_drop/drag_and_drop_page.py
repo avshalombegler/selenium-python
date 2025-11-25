@@ -1,15 +1,19 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING
-import allure
+
 import time
+from typing import TYPE_CHECKING
+
+import allure
+
 from pages.base.base_page import BasePage
 from pages.features.drag_and_drop.locators import DragAndDropPageLocators
 
 if TYPE_CHECKING:
+    from logging import Logger
+
+    from selenium.webdriver.common.action_chains import ActionChains
     from selenium.webdriver.remote.webdriver import WebDriver
     from selenium.webdriver.remote.webelement import WebElement
-    from selenium.webdriver.common.action_chains import ActionChains
-    from logging import Logger
 
 
 class DragAndDropPage(BasePage):

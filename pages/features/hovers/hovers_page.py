@@ -1,15 +1,18 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING
-import allure
-from pages.base.base_page import BasePage
-from pages.features.hovers.locators import HoversPageLocators
-from pages.features.hovers.hovers_user_page import HoversUserPage
 
+from typing import TYPE_CHECKING
+
+import allure
+
+from pages.base.base_page import BasePage
+from pages.features.hovers.hovers_user_page import HoversUserPage
+from pages.features.hovers.locators import HoversPageLocators
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
     from logging import Logger
+
     from selenium.webdriver.common.action_chains import ActionChains
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class HoversPage(BasePage):

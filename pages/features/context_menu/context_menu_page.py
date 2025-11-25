@@ -1,21 +1,25 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING
-import allure
+
 from dataclasses import dataclass
+from typing import TYPE_CHECKING
+
+import allure
+from selenium.common.exceptions import (
+    NoAlertPresentException,
+    TimeoutException,
+)
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+from config.env_config import VIDEO_RECORDING
 from pages.base.base_page import BasePage
 from pages.features.context_menu.locators import ContextMenuPageLocators
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import (
-    TimeoutException,
-    NoAlertPresentException,
-)
-from config.env_config import VIDEO_RECORDING
 
 if TYPE_CHECKING:
-    from selenium.webdriver.remote.webdriver import WebDriver
-    from selenium.webdriver.common.action_chains import ActionChains
     from logging import Logger
+
+    from selenium.webdriver.common.action_chains import ActionChains
+    from selenium.webdriver.remote.webdriver import WebDriver
 
 
 @dataclass
