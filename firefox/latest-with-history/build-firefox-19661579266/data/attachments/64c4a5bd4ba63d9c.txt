@@ -1,0 +1,12 @@
+2025-11-25 07:24:04,745 - INFO - [test_iframe_functionality] Starting test: test_iframe_functionality
+2025-11-25 07:24:04,745 - INFO - [test_iframe_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:24:04,999 - INFO - [test_iframe_functionality] Navigation completed.
+2025-11-25 07:24:04,999 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:24:05,008 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:24:05,009 - INFO - [test_iframe_functionality] Tests iframe.
+2025-11-25 07:24:05,009 - INFO - [test_iframe_functionality] Navigating to Frames page.
+2025-11-25 07:24:05,381 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 07:24:05,389 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 07:24:05,389 - INFO - [test_iframe_functionality] Clicking iframe link.
+2025-11-25 07:24:06,070 - INFO - [test_iframe_functionality] Getting page source.
+2025-11-25 07:24:06,078 - INFO - [test_iframe_functionality] Test SKIPPED: test_iframe_functionality (Duration: 1.07s).

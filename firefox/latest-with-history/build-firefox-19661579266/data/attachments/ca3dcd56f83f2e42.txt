@@ -1,0 +1,26 @@
+2025-11-25 07:23:59,003 - INFO - [test_checkbox_remove_and_add] Starting test: test_checkbox_remove_and_add
+2025-11-25 07:23:59,004 - INFO - [test_checkbox_remove_and_add] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:23:59,487 - INFO - [test_checkbox_remove_and_add] Navigation completed.
+2025-11-25 07:23:59,487 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:23:59,505 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:23:59,507 - INFO - [test_checkbox_remove_and_add] Test Remove/add checkbox area.
+2025-11-25 07:23:59,507 - INFO - [test_checkbox_remove_and_add] Navigating to Dynamic Controls page.
+2025-11-25 07:24:00,060 - INFO - [test_checkbox_remove_and_add] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-25 07:24:00,079 - INFO - [test_checkbox_remove_and_add] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-25 07:24:00,080 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-25 07:24:00,102 - INFO - [test_checkbox_remove_and_add] Clicking remove button.
+2025-11-25 07:24:00,212 - INFO - [test_checkbox_remove_and_add] Waiting for loader to complete.
+2025-11-25 07:24:03,295 - INFO - [test_checkbox_remove_and_add] Checking if checkbox absent.
+2025-11-25 07:24:13,374 - ERROR - [test_checkbox_remove_and_add] Timeout after 10s for locator ('css selector', "input[type='checkbox']"): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-11-25 07:24:13,374 - INFO - [test_checkbox_remove_and_add] Verifying remove message text.
+2025-11-25 07:24:13,389 - INFO - [test_checkbox_remove_and_add] Clicking add button.
+2025-11-25 07:24:13,465 - INFO - [test_checkbox_remove_and_add] Waiting for loader to complete.
+2025-11-25 07:24:16,527 - INFO - [test_checkbox_remove_and_add] Checking if checkbox is present.
+2025-11-25 07:24:16,534 - INFO - [test_checkbox_remove_and_add] Verifying add message text.
+2025-11-25 07:24:16,549 - INFO - [test_checkbox_remove_and_add] Test PASSED: test_checkbox_remove_and_add (Duration: 17.04s).

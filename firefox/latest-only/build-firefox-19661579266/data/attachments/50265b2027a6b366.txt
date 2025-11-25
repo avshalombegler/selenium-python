@@ -1,0 +1,11 @@
+2025-11-25 07:23:56,112 - INFO - [test_table_header_per_column[Amet]] Starting test: test_table_header_per_column[Amet]
+2025-11-25 07:23:56,116 - INFO - [test_table_header_per_column[Amet]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:23:56,413 - INFO - [test_table_header_per_column[Amet]] Navigation completed.
+2025-11-25 07:23:56,413 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:23:56,434 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:23:56,436 - INFO - [test_table_header_per_column[Amet]] Verify table head text per column.
+2025-11-25 07:23:56,436 - INFO - [test_table_header_per_column[Amet]] Navigating to Challenging DOM page.
+2025-11-25 07:23:56,852 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 07:23:56,887 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 07:23:56,888 - INFO - [test_table_header_per_column[Amet]] Getting table head text of column 'Amet'.
+2025-11-25 07:23:56,973 - INFO - [test_table_header_per_column[Amet]] Test PASSED: test_table_header_per_column[Amet] (Duration: 0.54s).

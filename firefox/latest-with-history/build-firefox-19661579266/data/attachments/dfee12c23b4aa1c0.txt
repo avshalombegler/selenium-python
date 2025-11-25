@@ -1,0 +1,11 @@
+2025-11-25 07:23:56,985 - INFO - [test_table_header_per_column[Diceret]] Starting test: test_table_header_per_column[Diceret]
+2025-11-25 07:23:56,985 - INFO - [test_table_header_per_column[Diceret]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:23:57,269 - INFO - [test_table_header_per_column[Diceret]] Navigation completed.
+2025-11-25 07:23:57,269 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:23:57,295 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:23:57,297 - INFO - [test_table_header_per_column[Diceret]] Verify table head text per column.
+2025-11-25 07:23:57,297 - INFO - [test_table_header_per_column[Diceret]] Navigating to Challenging DOM page.
+2025-11-25 07:23:57,725 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 07:23:57,767 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 07:23:57,767 - INFO - [test_table_header_per_column[Diceret]] Getting table head text of column 'Diceret'.
+2025-11-25 07:23:57,822 - INFO - [test_table_header_per_column[Diceret]] Test PASSED: test_table_header_per_column[Diceret] (Duration: 0.53s).

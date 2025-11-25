@@ -1,0 +1,20 @@
+2025-11-25 07:24:22,329 - INFO - [test_table_header_per_column[Dolor]] Starting test: test_table_header_per_column[Dolor]
+2025-11-25 07:24:22,330 - INFO - [test_table_header_per_column[Dolor]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:24:22,450 - INFO - [test_table_header_per_column[Dolor]] Navigation completed.
+2025-11-25 07:24:22,450 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:24:22,473 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:24:22,475 - INFO - [] Capture loop started for Firefox.
+2025-11-25 07:24:22,475 - INFO - [test_table_header_per_column[Dolor]] Started recording: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251125_072422/test_table_header_per_column[Dolor]_20251125_072422.mp4
+2025-11-25 07:24:22,476 - INFO - [test_table_header_per_column[Dolor]] Verify table head text per column.
+2025-11-25 07:24:22,477 - INFO - [test_table_header_per_column[Dolor]] Navigating to Challenging DOM page.
+2025-11-25 07:24:22,597 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 07:24:22,825 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 07:24:22,971 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 07:24:22,981 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 07:24:22,982 - INFO - [test_table_header_per_column[Dolor]] Getting table head text of column 'Dolor'.
+2025-11-25 07:24:23,015 - INFO - [test_table_header_per_column[Dolor]] Test PASSED: test_table_header_per_column[Dolor] (Duration: 0.54s).
+2025-11-25 07:24:23,016 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording...
+2025-11-25 07:24:23,016 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording and assembling.
+2025-11-25 07:24:23,037 - INFO - [test_table_header_per_column[Dolor]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251125_072422/frames
+2025-11-25 07:24:23,037 - INFO - [test_table_header_per_column[Dolor]] Found 2 valid frames.
+2025-11-25 07:24:23,267 - INFO - [test_table_header_per_column[Dolor]] Video created: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251125_072422/test_table_header_per_column[Dolor]_20251125_072422.mp4

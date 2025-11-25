@@ -1,0 +1,15 @@
+2025-11-25 07:23:52,639 - INFO - [test_bottom_nested_frames_functionality] Starting test: test_bottom_nested_frames_functionality
+2025-11-25 07:23:52,640 - INFO - [test_bottom_nested_frames_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:23:52,961 - INFO - [test_bottom_nested_frames_functionality] Navigation completed.
+2025-11-25 07:23:52,961 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:23:52,987 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:23:52,990 - INFO - [test_bottom_nested_frames_functionality] Tests Nested Frames.
+2025-11-25 07:23:52,991 - INFO - [test_bottom_nested_frames_functionality] Navigating to Frames page.
+2025-11-25 07:23:53,646 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 07:23:53,661 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 07:23:53,661 - INFO - [test_bottom_nested_frames_functionality] Clicking Nested Frames link.
+2025-11-25 07:23:53,926 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-25 07:23:53,944 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-25 07:23:53,944 - INFO - [test_bottom_nested_frames_functionality] Switching to frame 'bottom'.
+2025-11-25 07:23:53,959 - INFO - [test_bottom_nested_frames_functionality] Verifying frame text.
+2025-11-25 07:23:53,987 - INFO - [test_bottom_nested_frames_functionality] Test PASSED: test_bottom_nested_frames_functionality (Duration: 1.00s).

@@ -1,0 +1,13 @@
+2025-11-25 07:24:00,594 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Starting test: test_cells_content_per_column[Sit-Definiebas]
+2025-11-25 07:24:00,595 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:24:00,802 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigation completed.
+2025-11-25 07:24:00,802 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:24:00,813 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:24:00,814 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Verify cell content per column.
+2025-11-25 07:24:00,815 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Navigating to Challenging DOM page.
+2025-11-25 07:24:01,147 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 07:24:01,155 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 07:24:01,155 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-25 07:24:01,195 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-25 07:24:01,232 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Getting table cell 'Definiebas' text under column 'Sit'.
+2025-11-25 07:24:01,279 - INFO - [test_cells_content_per_column[Sit-Definiebas]] Test PASSED: test_cells_content_per_column[Sit-Definiebas] (Duration: 0.46s).

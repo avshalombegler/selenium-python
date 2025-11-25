@@ -1,0 +1,18 @@
+2025-11-25 07:24:23,499 - INFO - [test_basic_auth[--401-Not authorized\n]] Starting test: test_basic_auth[--401-Not authorized\n]
+2025-11-25 07:24:23,499 - INFO - [test_basic_auth[--401-Not authorized\n]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:24:23,579 - INFO - [test_basic_auth[--401-Not authorized\n]] Navigation completed.
+2025-11-25 07:24:23,579 - INFO - [test_basic_auth[--401-Not authorized\n]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:24:23,598 - INFO - [test_basic_auth[--401-Not authorized\n]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:24:23,599 - INFO - [] Capture loop started for Firefox.
+2025-11-25 07:24:23,600 - INFO - [test_basic_auth[--401-Not authorized\n]] Started recording: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251125_072423/test_basic_auth[--401-Not authorized\n]_20251125_072423.mp4
+2025-11-25 07:24:23,601 - INFO - [test_basic_auth[--401-Not authorized\n]] Tests basic autorization login scenatios.
+2025-11-25 07:24:23,602 - INFO - [test_basic_auth[--401-Not authorized\n]] Returning object of Basic Auth page.
+2025-11-25 07:24:23,602 - INFO - [test_basic_auth[--401-Not authorized\n]] Initialize URL based on username and password.
+2025-11-25 07:24:23,602 - INFO - [test_basic_auth[--401-Not authorized\n]] Get status code and authorization message.
+2025-11-25 07:24:23,752 - INFO - [test_basic_auth[--401-Not authorized\n]] Validate status code and authorization message.
+2025-11-25 07:24:23,753 - INFO - [test_basic_auth[--401-Not authorized\n]] Test PASSED: test_basic_auth[--401-Not authorized\n] (Duration: 0.15s).
+2025-11-25 07:24:23,754 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording...
+2025-11-25 07:24:23,754 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording and assembling.
+2025-11-25 07:24:23,803 - INFO - [test_basic_auth[--401-Not authorized\n]] Thread joined. Frames dir: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251125_072423/frames
+2025-11-25 07:24:23,803 - INFO - [test_basic_auth[--401-Not authorized\n]] Found 1 valid frames.
+2025-11-25 07:24:24,000 - INFO - [test_basic_auth[--401-Not authorized\n]] Video created: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251125_072423/test_basic_auth[--401-Not authorized\n]_20251125_072423.mp4
