@@ -1,0 +1,24 @@
+INFO     root:conftest.py:391 Starting test: test_drag_and_drop_functionality
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw2/test_drag_and_drop_functionality_20251125_160017/test_drag_and_drop_functionality_20251125_160017.mp4
+INFO     root:test_drag_and_drop.py:31 Tests Drag and Drop functionality.
+INFO     root:main_page.py:102 Navigating to Drag and Drop page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_drag_and_drop.py:34 Getting box elements for drag and drop.
+INFO     root:test_drag_and_drop.py:38 Performing drag and drop on box element.
+INFO     root:drag_and_drop_page.py:40 Drag and drop completed using ActionChains.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_drag_and_drop.py:41 Verifying drag and drop action succeeded.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:423 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw2/test_drag_and_drop_functionality_20251125_160017/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 6 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw2/test_drag_and_drop_functionality_20251125_160017/test_drag_and_drop_functionality_20251125_160017.mp4

@@ -1,0 +1,21 @@
+2025-11-25 16:00:23,135 - INFO - [test_inputs_functionality] Starting test: test_inputs_functionality
+2025-11-25 16:00:23,135 - INFO - [test_inputs_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:00:23,297 - INFO - [test_inputs_functionality] Navigation completed.
+2025-11-25 16:00:23,297 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:00:23,304 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:00:23,305 - INFO - [test_inputs_functionality] Tests Inputs.
+2025-11-25 16:00:23,305 - INFO - [test_inputs_functionality] Navigating to Inputs page.
+2025-11-25 16:00:23,673 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h3')' for 10s.
+2025-11-25 16:00:23,684 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h3')'.
+2025-11-25 16:00:23,684 - INFO - [test_inputs_functionality] Entering input number.
+2025-11-25 16:00:23,684 - INFO - [test_inputs_functionality] Sending keys '1337' on element '('css selector', 'input[type=number]')'.
+2025-11-25 16:00:23,699 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:00:23,709 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:00:23,709 - INFO - [test_inputs_functionality] Increasing number value using keyboard arrow.
+2025-11-25 16:00:25,059 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:00:25,068 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:00:25,068 - INFO - [test_inputs_functionality] Decreasing number value using keyboard arrow.
+2025-11-25 16:00:25,604 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:00:25,613 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-25 16:00:25,613 - INFO - [test_inputs_functionality] Test PASSED: test_inputs_functionality (Duration: 2.31s).
+2025-11-25 16:00:25,616 - INFO - [test_inputs_functionality] Quitting driver for browser: firefox.

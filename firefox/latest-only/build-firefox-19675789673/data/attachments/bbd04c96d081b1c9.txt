@@ -1,0 +1,43 @@
+INFO     root:conftest.py:391 Starting test: test_hovers_functionality
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_hovers.py:31 Tests Hovers.
+INFO     root:main_page.py:206 Navigating to Hovers page.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_hovers.py:35 Hovering mouse over profile image.
+INFO     root:test_hovers.py:38 Getting user name text.
+INFO     root:test_hovers.py:41 Verifying user name text.
+INFO     root:test_hovers.py:46 Clicking view profile link.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1')'.
+INFO     root:test_hovers.py:49 Getting current browser url.
+INFO     root:test_hovers.py:52 Verifying user name in current url.
+INFO     root:test_hovers.py:57 Navigating back page.
+INFO     root:base_page.py:298 Navigating back.
+INFO     root:base_page.py:300 Navigation completed.
+INFO     root:test_hovers.py:35 Hovering mouse over profile image.
+INFO     root:test_hovers.py:38 Getting user name text.
+INFO     root:test_hovers.py:41 Verifying user name text.
+INFO     root:test_hovers.py:46 Clicking view profile link.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1')'.
+INFO     root:test_hovers.py:49 Getting current browser url.
+INFO     root:test_hovers.py:52 Verifying user name in current url.
+INFO     root:test_hovers.py:57 Navigating back page.
+INFO     root:base_page.py:298 Navigating back.
+INFO     root:base_page.py:300 Navigation completed.
+INFO     root:test_hovers.py:35 Hovering mouse over profile image.
+INFO     root:test_hovers.py:38 Getting user name text.
+INFO     root:test_hovers.py:41 Verifying user name text.
+INFO     root:test_hovers.py:46 Clicking view profile link.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1')'.
+INFO     root:test_hovers.py:49 Getting current browser url.
+INFO     root:test_hovers.py:52 Verifying user name in current url.
+INFO     root:test_hovers.py:57 Navigating back page.
+INFO     root:base_page.py:298 Navigating back.
+INFO     root:base_page.py:300 Navigation completed.
+INFO     root:conftest.py:371 Quitting driver for browser: firefox.

@@ -1,0 +1,26 @@
+2025-11-25 16:00:02,214 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Starting test: test_files_upload_functionality[TestingFile.pdf]
+2025-11-25 16:00:02,215 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:00:02,309 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigation completed.
+2025-11-25 16:00:02,309 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:00:02,327 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:00:02,328 - INFO - [] Capture loop started for Firefox.
+2025-11-25 16:00:02,329 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Started recording: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251125_160002/test_files_upload_functionality[TestingFile.pdf]_20251125_160002.mp4
+2025-11-25 16:00:02,330 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Tests Files Upload.
+2025-11-25 16:00:02,330 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigating to File Upload page.
+2025-11-25 16:00:02,469 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:00:02,687 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 16:00:02,800 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:00:02,807 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 16:00:02,808 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Upload file using the Upload button.
+2025-11-25 16:00:02,808 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/TestingFile.pdf' on element '('id', 'file-upload')'.
+2025-11-25 16:00:02,926 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:00:03,452 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 16:00:03,550 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:00:03,557 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 16:00:03,558 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Verifying file uploaded sucessfully.
+2025-11-25 16:00:03,584 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Test PASSED: test_files_upload_functionality[TestingFile.pdf] (Duration: 1.25s).
+2025-11-25 16:00:03,587 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Stopping video recording...
+2025-11-25 16:00:03,587 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Stopping video recording and assembling.
+2025-11-25 16:00:03,610 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251125_160002/frames
+2025-11-25 16:00:03,610 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Found 4 valid frames.
+2025-11-25 16:00:03,950 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Video created: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251125_160002/test_files_upload_functionality[TestingFile.pdf]_20251125_160002.mp4
