@@ -132,14 +132,6 @@ jobs:
       - name: Create additional directories
         run: mkdir -p tests_recordings tests_screenshots
 
-      - name: Create Allure Environment Properties
-        if: always()
-        run: |
-          echo "Browser=${{ matrix.browser }}" > reports/allure-results/environment.properties
-          echo "Run ID=${{ github.run_id }}" >> reports/allure-results/environment.properties
-          echo "Suite=${{ matrix.suite }}" >> reports/allure-results/environment.properties
-          # Add more properties as needed, e.g., OS, Python version, etc.
-
       - name: Run Pytest with Allure
         continue-on-error: true
         id: pytest

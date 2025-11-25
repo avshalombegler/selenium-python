@@ -118,7 +118,6 @@ def build_chrome_options(user_data_dir: Path, downloads_directory: Path, debug_p
             "profile.password_manager_enabled": False,  # Disable password manager UI
             "profile.password_manager_leak_detection": False,  # Disable leak detection
             "autofill.profile_enabled": False,  # Disable autofill
-
             # Disable profile reset prompt
             "profile.exit_type": "Normal",
             "profile.exited_cleanly": True,
@@ -488,11 +487,14 @@ def pytest_configure(config: pytest.Config) -> None:
 
         env_properties_path = allure_results_path / "environment.properties"
         with open(env_properties_path, "w") as f:
-            f.write(f"Browser={browser}\n")
+            f.write(f"Browser={browser.capitalize()}\n")
             f.write(f"Headless={env_config.HEADLESS}\n")
             f.write(f"Maximized={env_config.MAXIMIZED}\n")
-            f.write(f"Base.URL={env_config.BASE_URL}\n")
-            f.write(f"Window.Size={WINDOW_WIDTH}x{WINDOW_HEIGHT}\n")
+            f.write(f"Base URL={env_config.BASE_URL}\n")
+            f.write(f"Window Size={WINDOW_WIDTH}x{WINDOW_HEIGHT}\n")
+            if os.environ.get("GITHUB_ACTIONS"):
+                f.write(f"Run ID={os.environ.get('GITHUB_RUN_ID', 'N/A')}\n")
+                f.write(f"Workflow={os.environ.get('GITHUB_WORKFLOW', 'N/A')}\n")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
