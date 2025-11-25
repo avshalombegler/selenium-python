@@ -160,16 +160,6 @@ jobs:
         if: steps.pytest.outcome == 'failure'
         run: rm -rf reports/allure-report/build-*
 
-      # - name: Retry Failed Tests
-      #   if: steps.pytest.outcome == 'failure'
-      #   run: |
-      #     PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-      #       pytest \
-      #       tests/ \
-      #       -v \
-      #       --last-failed \
-      #       --alluredir=reports/allure-results
-
       - name: Generate Allure Report (Latest-Only)
         if: always()
         run: |
@@ -266,7 +256,6 @@ jobs:
   
   deploy:
     needs: test
-    # if: github.ref == 'refs/heads/main' && success()
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
