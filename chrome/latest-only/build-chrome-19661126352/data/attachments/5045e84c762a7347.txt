@@ -1,0 +1,49 @@
+INFO     root:conftest.py:387 Starting test: test_digest_auth_login_scenarios[admin-wrong]
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:412 Started recording: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-wrong]_20251125_070404/test_digest_auth_login_scenarios[admin-wrong]_20251125_070404.mp4
+INFO     root:test_digest_auth_login_scenarios.py:30 Tests for Digest Authentication scenarios.
+INFO     root:main_page.py:88 Navigating to Digest Authentication page.
+INFO     root:base_page.py:281 Navigating to URL: https://admin:wrong@the-internet.herokuapp.com/digest_auth.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:test_digest_auth_login_scenarios.py:33 Check if login succeeded.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+ERROR    root:base_page.py:104 Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x559a6e60d4ca <unknown>
+#1 0x559a6e05be4b <unknown>
+#2 0x559a6e0ae814 <unknown>
+#3 0x559a6e0aea51 <unknown>
+#4 0x559a6e0fda44 <unknown>
+#5 0x559a6e0fadf7 <unknown>
+#6 0x559a6e0a0c2a <unknown>
+#7 0x559a6e0a1931 <unknown>
+#8 0x559a6e5d3cf9 <unknown>
+#9 0x559a6e5d6cdc <unknown>
+#10 0x559a6e5bcf79 <unknown>
+#11 0x559a6e5d78b5 <unknown>
+#12 0x559a6e5a49c3 <unknown>
+#13 0x559a6e5fa228 <unknown>
+#14 0x559a6e5fa403 <unknown>
+#15 0x559a6e60c463 <unknown>
+#16 0x7f611a29caa4 <unknown>
+#17 0x7f611a329c6c <unknown>
+
+INFO     root:test_digest_auth_login_scenarios.py:36 Page source: <html><head></head><body></body></html>
+INFO     root:conftest.py:419 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-wrong]_20251125_070404/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 78 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-wrong]_20251125_070404/test_digest_auth_login_scenarios[admin-wrong]_20251125_070404.mp4

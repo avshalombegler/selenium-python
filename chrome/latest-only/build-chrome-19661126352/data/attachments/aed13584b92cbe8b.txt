@@ -1,0 +1,36 @@
+INFO     root:conftest.py:387 Starting test: test_textbox_enable_and_disable
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:412 Started recording: tests_recordings/gw2/test_textbox_enable_and_disable_20251125_070420/test_textbox_enable_and_disable_20251125_070420.mp4
+INFO     root:test_dynamic_controls.py:51 Test Enable/disable textbox area.
+INFO     root:main_page.py:122 Navigating to Dynamic Controls page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', '.example h4')'.
+INFO     root:test_dynamic_controls.py:54 Checking if textbox is disabled.
+INFO     root:base_page.py:134 Checking enabled state on element '('css selector', "input[type='text']")'.
+INFO     root:test_dynamic_controls.py:57 Clicking enable button.
+INFO     root:base_page.py:258 Waiting for loader to complete.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dynamic_controls.py:60 Checking if textbox is enabled.
+INFO     root:base_page.py:134 Checking enabled state on element '('css selector', "input[type='text']")'.
+INFO     root:test_dynamic_controls.py:63 Get enable message text.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dynamic_controls.py:66 Clicking disable button.
+INFO     root:base_page.py:258 Waiting for loader to complete.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_dynamic_controls.py:69 Checking if textbox is disabled.
+INFO     root:base_page.py:134 Checking enabled state on element '('css selector', "input[type='text']")'.
+INFO     root:test_dynamic_controls.py:72 Get disable message text.
+INFO     root:conftest.py:419 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw2/test_textbox_enable_and_disable_20251125_070420/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 53 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw2/test_textbox_enable_and_disable_20251125_070420/test_textbox_enable_and_disable_20251125_070420.mp4

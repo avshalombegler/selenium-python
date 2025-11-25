@@ -1,0 +1,20 @@
+INFO     root:conftest.py:217 Directory cleaned and recreated at: tests_screenshots/gw0.
+INFO     root:conftest.py:217 Directory cleaned and recreated at: tests_recordings/gw0.
+INFO     root:conftest.py:217 Directory cleaned and recreated at: downloads/gw0.
+INFO     WDM:logger.py:11 xdist worker is: gw0
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 GH_TOKEN will be used to perform requests
+INFO     WDM:logger.py:11 Get LATEST geckodriver version for 145.0 firefox
+INFO     WDM:logger.py:11 GH_TOKEN will be used to perform requests
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/gw0/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+INFO     root:conftest.py:387 Starting test: test_each_button_clicks[blue]
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     root:test_challenging_dom.py:28 Verify each button in page is clickable.
+INFO     root:main_page.py:67 Navigating to Challenging DOM page.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:31 Clicking blue button.

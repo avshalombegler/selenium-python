@@ -1,0 +1,21 @@
+2025-11-25 07:03:39,530 - INFO - [test_checkboxes_functionality] Starting test: test_checkboxes_functionality
+2025-11-25 07:03:39,530 - INFO - [test_checkboxes_functionality] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:03:39,638 - INFO - [test_checkboxes_functionality] Navigation completed.
+2025-11-25 07:03:39,638 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:03:39,645 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:03:39,646 - INFO - [test_checkboxes_functionality] Test for verifying checkbox functionality.
+2025-11-25 07:03:39,647 - INFO - [test_checkboxes_functionality] Navigating to Checkboxes page.
+2025-11-25 07:03:39,805 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 07:03:39,812 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 07:03:39,812 - INFO - [test_checkboxes_functionality] Check checkboxes initial state.
+2025-11-25 07:03:39,813 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")'.
+2025-11-25 07:03:39,823 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")'.
+2025-11-25 07:03:39,832 - INFO - [test_checkboxes_functionality] Set checkboxes new state.
+2025-11-25 07:03:39,832 - INFO - [test_checkboxes_functionality] Set checkbox '0' to 'True'.
+2025-11-25 07:03:39,832 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")'.
+2025-11-25 07:03:39,909 - INFO - [test_checkboxes_functionality] Set checkbox '1' to 'False'.
+2025-11-25 07:03:39,909 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")'.
+2025-11-25 07:03:39,985 - INFO - [test_checkboxes_functionality] Check checkboxes new state.
+2025-11-25 07:03:39,985 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(1)")'.
+2025-11-25 07:03:40,006 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', "form#checkboxes input[type='checkbox']:nth-of-type(2)")'.
+2025-11-25 07:03:40,016 - INFO - [test_checkboxes_functionality] Test PASSED: test_checkboxes_functionality (Duration: 0.37s).

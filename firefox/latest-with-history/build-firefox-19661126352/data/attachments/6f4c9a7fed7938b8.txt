@@ -1,0 +1,11 @@
+2025-11-25 07:03:30,039 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]
+2025-11-25 07:03:30,039 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:03:30,280 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Navigation completed.
+2025-11-25 07:03:30,281 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:03:30,306 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:03:30,317 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Tests basic autorization login scenatios.
+2025-11-25 07:03:30,317 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Returning object of Basic Auth page.
+2025-11-25 07:03:30,318 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Initialize URL based on username and password.
+2025-11-25 07:03:30,319 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Get status code and authorization message.
+2025-11-25 07:03:30,360 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Validate status code and authorization message.
+2025-11-25 07:03:30,360 - INFO - [test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]] Test PASSED: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.] (Duration: 0.04s).

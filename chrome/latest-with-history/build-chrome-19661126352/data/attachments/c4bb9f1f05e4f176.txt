@@ -1,0 +1,34 @@
+INFO     root:conftest.py:217 Directory cleaned and recreated at: tests_screenshots/gw3.
+INFO     root:conftest.py:217 Directory cleaned and recreated at: tests_recordings/gw3.
+INFO     root:conftest.py:217 Directory cleaned and recreated at: downloads/gw3.
+INFO     WDM:logger.py:11 xdist worker is: gw3
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/gw3/drivers/chromedriver/linux64/142.0.7444.175/chromedriver-linux64/chromedriver] found in cache
+INFO     root:conftest.py:387 Starting test: test_top_nested_frames_functionality[left]
+INFO     root:base_page.py:281 Navigating to URL: https://the-internet.herokuapp.com/.
+INFO     root:base_page.py:283 Navigation completed.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started for Firefox.
+INFO     root:conftest.py:412 Started recording: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251125_070345/test_top_nested_frames_functionality[left]_20251125_070345.mp4
+INFO     root:test_nested_frames.py:26 Tests Nested Frames.
+INFO     root:main_page.py:178 Navigating to Frames page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_nested_frames.py:29 Clicking Nested Frames link.
+INFO     root:base_page.py:197 Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Page loaded successfully with indicator '('css selector', 'frameset')'.
+INFO     root:test_nested_frames.py:32 Switching to frame 'top'.
+INFO     root:test_nested_frames.py:35 Switching to nested frame 'left'.
+INFO     root:test_nested_frames.py:38 Verifying frame text.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:conftest.py:419 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:84 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:87 Thread joined. Frames dir: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251125_070345/frames
+INFO     utils.video_recorder:video_recorder.py:91 Found 4 valid frames.
+INFO     utils.video_recorder:video_recorder.py:115 Video created: tests_recordings/gw3/test_top_nested_frames_functionality[left]_20251125_070345/test_top_nested_frames_functionality[left]_20251125_070345.mp4

@@ -1,0 +1,21 @@
+2025-11-25 07:03:18,701 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-25 07:03:18,702 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-25 07:03:18,703 - INFO - [] Directory cleaned and recreated at: downloads/gw0.
+2025-11-25 07:03:18,704 - INFO - [] xdist worker is: gw0
+2025-11-25 07:03:18,704 - INFO - [] ====== WebDriver manager ======
+2025-11-25 07:03:18,776 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-25 07:03:18,777 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-25 07:03:18,964 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-25 07:03:18,964 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-25 07:03:19,152 - INFO - [] Driver [/home/runner/.wdm/gw0/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+2025-11-25 07:03:27,205 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue]
+2025-11-25 07:03:27,206 - INFO - [test_each_button_clicks[blue]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 07:03:27,737 - INFO - [test_each_button_clicks[blue]] Navigation completed.
+2025-11-25 07:03:27,740 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 07:03:27,849 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 07:03:27,858 - INFO - [test_each_button_clicks[blue]] Verify each button in page is clickable.
+2025-11-25 07:03:27,858 - INFO - [test_each_button_clicks[blue]] Navigating to Challenging DOM page.
+2025-11-25 07:03:28,696 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 07:03:28,771 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 07:03:28,771 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-11-25 07:03:29,280 - INFO - [test_each_button_clicks[blue]] Test PASSED: test_each_button_clicks[blue] (Duration: 1.42s).
