@@ -1,0 +1,23 @@
+2025-11-25 16:32:30,635 - INFO - [test_right_click_outside_hotspot] Starting test: test_right_click_outside_hotspot
+2025-11-25 16:32:30,635 - INFO - [test_right_click_outside_hotspot] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:32:30,690 - INFO - [test_right_click_outside_hotspot] Navigation completed.
+2025-11-25 16:32:30,691 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:32:30,709 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:32:30,710 - INFO - [] Capture loop started.
+2025-11-25 16:32:30,711 - INFO - [test_right_click_outside_hotspot] Started recording: tests_recordings/gw3/test_right_click_outside_hotspot_20251125_163230/test_right_click_outside_hotspot_20251125_163230.mp4
+2025-11-25 16:32:30,712 - INFO - [test_right_click_outside_hotspot] Navigating to Context Menu page.
+2025-11-25 16:32:30,822 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:30,942 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 16:32:31,037 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:31,043 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 16:32:31,043 - INFO - [test_right_click_outside_hotspot] Testing right-click outside hot spot
+2025-11-25 16:32:31,043 - INFO - [test_right_click_outside_hotspot] Perform right-click on page title to verify context menu alert does not activate.
+2025-11-25 16:32:31,043 - INFO - [test_right_click_outside_hotspot] Performing right-click on element '('css selector', 'div.example h3')'.
+2025-11-25 16:32:31,359 - INFO - [test_right_click_outside_hotspot] Test PASSED: test_right_click_outside_hotspot (Duration: 0.65s).
+2025-11-25 16:32:31,360 - INFO - [test_right_click_outside_hotspot] Stopping video recording...
+2025-11-25 16:32:31,360 - INFO - [test_right_click_outside_hotspot] Stopping video recording and assembling.
+2025-11-25 16:32:31,431 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:31,499 - INFO - [test_right_click_outside_hotspot] Thread joined. Frames dir: tests_recordings/gw3/test_right_click_outside_hotspot_20251125_163230/frames
+2025-11-25 16:32:31,499 - INFO - [test_right_click_outside_hotspot] Found 3 valid frames.
+2025-11-25 16:32:31,704 - INFO - [test_right_click_outside_hotspot] Video created: tests_recordings/gw3/test_right_click_outside_hotspot_20251125_163230/test_right_click_outside_hotspot_20251125_163230.mp4
+2025-11-25 16:32:32,705 - INFO - [test_right_click_outside_hotspot] Video attached to test body: tests_recordings/gw3/test_right_click_outside_hotspot_20251125_163230/test_right_click_outside_hotspot_20251125_163230.mp4

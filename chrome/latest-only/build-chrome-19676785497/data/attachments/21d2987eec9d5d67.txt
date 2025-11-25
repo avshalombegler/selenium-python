@@ -1,0 +1,26 @@
+2025-11-25 16:32:15,713 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Starting test: test_files_upload_functionality[TestingFile.pdf]
+2025-11-25 16:32:15,713 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:32:15,756 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigation completed.
+2025-11-25 16:32:15,756 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:32:15,772 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:32:15,773 - INFO - [] Capture loop started.
+2025-11-25 16:32:15,773 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Started recording: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251125_163215/test_files_upload_functionality[TestingFile.pdf]_20251125_163215.mp4
+2025-11-25 16:32:15,775 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Tests Files Upload.
+2025-11-25 16:32:15,776 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigating to File Upload page.
+2025-11-25 16:32:15,894 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:16,031 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 16:32:16,141 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:16,147 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 16:32:16,148 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Upload file using the Upload button.
+2025-11-25 16:32:16,148 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/TestingFile.pdf' on element '('id', 'file-upload')'.
+2025-11-25 16:32:16,457 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-25 16:32:16,551 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:16,560 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-25 16:32:16,561 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Verifying file uploaded sucessfully.
+2025-11-25 16:32:16,595 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Test PASSED: test_files_upload_functionality[TestingFile.pdf] (Duration: 0.82s).
+2025-11-25 16:32:16,596 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Stopping video recording...
+2025-11-25 16:32:16,596 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Stopping video recording and assembling.
+2025-11-25 16:32:16,613 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251125_163215/frames
+2025-11-25 16:32:16,613 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Found 4 valid frames.
+2025-11-25 16:32:16,856 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Video created: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251125_163215/test_files_upload_functionality[TestingFile.pdf]_20251125_163215.mp4
+2025-11-25 16:32:17,859 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251125_163215/test_files_upload_functionality[TestingFile.pdf]_20251125_163215.mp4

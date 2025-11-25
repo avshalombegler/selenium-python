@@ -1,0 +1,24 @@
+2025-11-25 16:32:28,492 - INFO - [test_ab_testing_content] Starting test: test_ab_testing_content
+2025-11-25 16:32:28,493 - INFO - [test_ab_testing_content] Navigating to URL: https://the-internet.herokuapp.com/.
+2025-11-25 16:32:28,640 - INFO - [test_ab_testing_content] Navigation completed.
+2025-11-25 16:32:28,640 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-25 16:32:28,649 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-25 16:32:28,651 - INFO - [] Capture loop started.
+2025-11-25 16:32:28,651 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:32:28,653 - INFO - [test_ab_testing_content] Started recording: tests_recordings/gw3/test_ab_testing_content_20251125_163228/test_ab_testing_content_20251125_163228.mp4
+2025-11-25 16:32:28,655 - INFO - [test_ab_testing_content] Tests for verifying title and paragraph content of page
+2025-11-25 16:32:28,655 - INFO - [test_ab_testing_content] Navigating to A/B Testing page.
+2025-11-25 16:32:28,732 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:28,781 - INFO - [] Using Firefox screenshot method.
+2025-11-25 16:32:28,882 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-25 16:32:28,915 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-25 16:32:28,921 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-25 16:32:28,936 - INFO - [test_ab_testing_content] Retrieved title: A/B Test Variation 1.
+2025-11-25 16:32:28,949 - INFO - [test_ab_testing_content] Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+2025-11-25 16:32:28,950 - INFO - [test_ab_testing_content] Test PASSED: test_ab_testing_content (Duration: 0.30s).
+2025-11-25 16:32:28,950 - INFO - [test_ab_testing_content] Stopping video recording...
+2025-11-25 16:32:28,950 - INFO - [test_ab_testing_content] Stopping video recording and assembling.
+2025-11-25 16:32:28,981 - INFO - [test_ab_testing_content] Thread joined. Frames dir: tests_recordings/gw3/test_ab_testing_content_20251125_163228/frames
+2025-11-25 16:32:28,982 - INFO - [test_ab_testing_content] Found 2 valid frames.
+2025-11-25 16:32:29,135 - INFO - [test_ab_testing_content] Video created: tests_recordings/gw3/test_ab_testing_content_20251125_163228/test_ab_testing_content_20251125_163228.mp4
+2025-11-25 16:32:30,138 - INFO - [test_ab_testing_content] Video attached to test body: tests_recordings/gw3/test_ab_testing_content_20251125_163228/test_ab_testing_content_20251125_163228.mp4
