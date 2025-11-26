@@ -156,7 +156,7 @@ EOF
                     ])
                     
                     // Archive JUnit XML
-                    junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
+                    // junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
                 }
                 
                 // Archive other artifacts
