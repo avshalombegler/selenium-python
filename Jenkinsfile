@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters {
-        choice(name: 'BROWSER', choices: ['chrome', 'firefox', 'both'], description: 'Browser to run tests on')
+        choice(name: 'BROWSER', choices: ['both', 'chrome', 'firefox'], description: 'Browser to run tests on')
         choice(name: 'MARKER', choices: ['full', 'smoke', 'regression'], description: 'Test marker to run')
         string(name: 'WORKERS', defaultValue: 'auto', description: 'Number of parallel workers')
     }
@@ -98,6 +98,23 @@ EOF
                 }
             }
         }
+        
+        stage('Merge Allure Results') {
+            steps {
+                script {
+                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
+                    
+                    // Merge all browser results into single directory for Allure plugin
+                    browsers.each { browser ->
+                        sh """
+                            if [ -d "reports/allure-results-${browser}" ]; then
+                                cp -r reports/allure-results-${browser}/* reports/allure-results/ || true
+                            fi
+                        """
+                    }
+                }
+            }
+        }
     }
     
     post {
@@ -105,18 +122,20 @@ EOF
             script {
                 def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                 
+                // Generate individual browser HTML reports
                 browsers.each { browser ->
-                    // Generate Allure HTML report manually
                     sh """
-                        allure generate reports/allure-results-${browser} \
-                        -o reports/allure-report-${browser} \
-                        --clean
+                        if [ -d "reports/allure-results-${browser}" ]; then
+                            allure generate reports/allure-results-${browser} \
+                            -o reports/allure-report-${browser} \
+                            --clean
+                        fi
                     """
                     
-                    // Archive the HTML report
+                    // Archive individual browser HTML reports
                     archiveArtifacts artifacts: "reports/allure-report-${browser}/**", allowEmptyArchive: true
                     
-                    // Publish HTML report for viewing in Jenkins
+                    // Publish individual HTML reports
                     publishHTML([
                         allowMissing: false,
                         alwaysLinkToLastBuild: true,
@@ -130,6 +149,15 @@ EOF
                     // Archive JUnit XML
                     junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
                 }
+                
+                // Use Allure plugin for merged results (this creates the "Allure Report" menu item)
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'reports/allure-results']]
+                ])
                 
                 // Archive other artifacts
                 archiveArtifacts artifacts: 'tests_recordings/**', allowEmptyArchive: true
