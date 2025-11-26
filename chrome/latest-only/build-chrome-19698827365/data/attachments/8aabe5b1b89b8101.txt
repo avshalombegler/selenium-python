@@ -1,0 +1,24 @@
+2025-11-26 09:28:09,290 - INFO - [test_floating_menu_functionality[About]] Starting test: test_floating_menu_functionality[About]
+2025-11-26 09:28:09,291 - INFO - [test_floating_menu_functionality[About]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:28:09,441 - INFO - [test_floating_menu_functionality[About]] Navigation completed.
+2025-11-26 09:28:09,441 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:28:09,460 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:28:09,460 - INFO - [] Capture loop started.
+2025-11-26 09:28:09,461 - INFO - [test_floating_menu_functionality[About]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_092809/test_floating_menu_functionality[About]_20251126_092809.mp4
+2025-11-26 09:28:09,462 - INFO - [test_floating_menu_functionality[About]] Tests Files Download.
+2025-11-26 09:28:09,463 - INFO - [test_floating_menu_functionality[About]] Navigating to Floating Menu page.
+2025-11-26 09:28:09,589 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:09,863 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 09:28:10,047 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:10,054 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 09:28:10,054 - INFO - [test_floating_menu_functionality[About]] Scroll down.
+2025-11-26 09:28:10,061 - INFO - [test_floating_menu_functionality[About]] Clicking floating menu item 'About'.
+2025-11-26 09:28:10,159 - INFO - [test_floating_menu_functionality[About]] Verifying url updated after click on menu item.
+2025-11-26 09:28:10,325 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:10,328 - INFO - [test_floating_menu_functionality[About]] Test PASSED: test_floating_menu_functionality[About] (Duration: 0.87s).
+2025-11-26 09:28:10,329 - INFO - [test_floating_menu_functionality[About]] Stopping video recording...
+2025-11-26 09:28:10,329 - INFO - [test_floating_menu_functionality[About]] Stopping video recording and assembling.
+2025-11-26 09:28:10,395 - INFO - [test_floating_menu_functionality[About]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_092809/frames
+2025-11-26 09:28:10,395 - INFO - [test_floating_menu_functionality[About]] Found 3 valid frames.
+2025-11-26 09:28:10,780 - INFO - [test_floating_menu_functionality[About]] Video created: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_092809/test_floating_menu_functionality[About]_20251126_092809.mp4
+2025-11-26 09:28:11,782 - INFO - [test_floating_menu_functionality[About]] Video attached to test body: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_092809/test_floating_menu_functionality[About]_20251126_092809.mp4

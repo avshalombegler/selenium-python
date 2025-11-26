@@ -1,0 +1,22 @@
+2025-11-26 09:28:36,659 - INFO - [test_ab_testing_content] Starting test: test_ab_testing_content
+2025-11-26 09:28:36,659 - INFO - [test_ab_testing_content] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:28:36,753 - INFO - [test_ab_testing_content] Navigation completed.
+2025-11-26 09:28:36,754 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:28:36,768 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:28:36,769 - INFO - [] Capture loop started.
+2025-11-26 09:28:36,770 - INFO - [test_ab_testing_content] Started recording: tests_recordings/gw2/test_ab_testing_content_20251126_092836/test_ab_testing_content_20251126_092836.mp4
+2025-11-26 09:28:36,771 - INFO - [test_ab_testing_content] Tests for verifying title and paragraph content of page
+2025-11-26 09:28:36,771 - INFO - [test_ab_testing_content] Navigating to A/B Testing page.
+2025-11-26 09:28:36,902 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:37,071 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 09:28:37,169 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:37,175 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 09:28:37,198 - INFO - [test_ab_testing_content] Retrieved title: A/B Test Control.
+2025-11-26 09:28:37,220 - INFO - [test_ab_testing_content] Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+2025-11-26 09:28:37,221 - INFO - [test_ab_testing_content] Test PASSED: test_ab_testing_content (Duration: 0.45s).
+2025-11-26 09:28:37,221 - INFO - [test_ab_testing_content] Stopping video recording...
+2025-11-26 09:28:37,221 - INFO - [test_ab_testing_content] Stopping video recording and assembling.
+2025-11-26 09:28:37,231 - INFO - [test_ab_testing_content] Thread joined. Frames dir: tests_recordings/gw2/test_ab_testing_content_20251126_092836/frames
+2025-11-26 09:28:37,232 - INFO - [test_ab_testing_content] Found 2 valid frames.
+2025-11-26 09:28:37,398 - INFO - [test_ab_testing_content] Video created: tests_recordings/gw2/test_ab_testing_content_20251126_092836/test_ab_testing_content_20251126_092836.mp4
+2025-11-26 09:28:38,401 - INFO - [test_ab_testing_content] Video attached to test body: tests_recordings/gw2/test_ab_testing_content_20251126_092836/test_ab_testing_content_20251126_092836.mp4

@@ -1,0 +1,32 @@
+2025-11-26 09:27:39,665 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-26 09:27:39,665 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-26 09:27:39,666 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-26 09:27:39,667 - INFO - [] xdist worker is: gw2
+2025-11-26 09:27:39,667 - INFO - [] ====== WebDriver manager ======
+2025-11-26 09:27:42,461 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-26 09:27:42,568 - INFO - [] Get LATEST chromedriver version for google-chrome
+2025-11-26 09:27:42,678 - INFO - [] Driver [/home/runner/.wdm/gw2/drivers/chromedriver/linux64/142.0.7444.175/chromedriver-linux64/chromedriver] found in cache
+2025-11-26 09:28:00,425 - INFO - [test_floating_menu_functionality[Home]] Starting test: test_floating_menu_functionality[Home]
+2025-11-26 09:28:00,425 - INFO - [test_floating_menu_functionality[Home]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:28:01,341 - INFO - [test_floating_menu_functionality[Home]] Navigation completed.
+2025-11-26 09:28:01,341 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:28:01,387 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:28:01,389 - INFO - [] Capture loop started.
+2025-11-26 09:28:01,389 - INFO - [test_floating_menu_functionality[Home]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_092801/test_floating_menu_functionality[Home]_20251126_092801.mp4
+2025-11-26 09:28:01,393 - INFO - [test_floating_menu_functionality[Home]] Tests Files Download.
+2025-11-26 09:28:01,393 - INFO - [test_floating_menu_functionality[Home]] Navigating to Floating Menu page.
+2025-11-26 09:28:01,529 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:01,980 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 09:28:02,262 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:02,274 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 09:28:02,275 - INFO - [test_floating_menu_functionality[Home]] Scroll down.
+2025-11-26 09:28:02,283 - INFO - [test_floating_menu_functionality[Home]] Clicking floating menu item 'Home'.
+2025-11-26 09:28:02,513 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:02,513 - INFO - [test_floating_menu_functionality[Home]] Verifying url updated after click on menu item.
+2025-11-26 09:28:02,518 - INFO - [test_floating_menu_functionality[Home]] Test PASSED: test_floating_menu_functionality[Home] (Duration: 1.13s).
+2025-11-26 09:28:02,519 - INFO - [test_floating_menu_functionality[Home]] Stopping video recording...
+2025-11-26 09:28:02,519 - INFO - [test_floating_menu_functionality[Home]] Stopping video recording and assembling.
+2025-11-26 09:28:02,534 - INFO - [test_floating_menu_functionality[Home]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_092801/frames
+2025-11-26 09:28:02,534 - INFO - [test_floating_menu_functionality[Home]] Found 3 valid frames.
+2025-11-26 09:28:03,231 - INFO - [test_floating_menu_functionality[Home]] Video created: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_092801/test_floating_menu_functionality[Home]_20251126_092801.mp4
+2025-11-26 09:28:04,233 - INFO - [test_floating_menu_functionality[Home]] Video attached to test body: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_092801/test_floating_menu_functionality[Home]_20251126_092801.mp4

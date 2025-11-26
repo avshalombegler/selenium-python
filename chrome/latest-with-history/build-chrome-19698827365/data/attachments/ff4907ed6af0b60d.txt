@@ -1,0 +1,24 @@
+2025-11-26 09:28:44,179 - INFO - [test_iframe_functionality] Starting test: test_iframe_functionality
+2025-11-26 09:28:44,179 - INFO - [test_iframe_functionality] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:28:44,268 - INFO - [test_iframe_functionality] Navigation completed.
+2025-11-26 09:28:44,268 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:28:44,289 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:28:44,291 - INFO - [] Capture loop started.
+2025-11-26 09:28:44,291 - INFO - [test_iframe_functionality] Started recording: tests_recordings/gw3/test_iframe_functionality_20251126_092844/test_iframe_functionality_20251126_092844.mp4
+2025-11-26 09:28:44,292 - INFO - [test_iframe_functionality] Tests iframe.
+2025-11-26 09:28:44,292 - INFO - [test_iframe_functionality] Navigating to Frames page.
+2025-11-26 09:28:44,439 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:44,638 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 09:28:44,765 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:44,776 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 09:28:44,776 - INFO - [test_iframe_functionality] Clicking iframe link.
+2025-11-26 09:28:44,890 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:45,954 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:28:45,954 - INFO - [test_iframe_functionality] Getting page source.
+2025-11-26 09:28:45,964 - INFO - [test_iframe_functionality] Test SKIPPED: test_iframe_functionality (Duration: 1.67s).
+2025-11-26 09:28:45,965 - INFO - [test_iframe_functionality] Stopping video recording...
+2025-11-26 09:28:45,965 - INFO - [test_iframe_functionality] Stopping video recording and assembling.
+2025-11-26 09:28:46,019 - INFO - [test_iframe_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_iframe_functionality_20251126_092844/frames
+2025-11-26 09:28:46,019 - INFO - [test_iframe_functionality] Found 4 valid frames.
+2025-11-26 09:28:46,241 - INFO - [test_iframe_functionality] Video created: tests_recordings/gw3/test_iframe_functionality_20251126_092844/test_iframe_functionality_20251126_092844.mp4
+2025-11-26 09:28:47,242 - INFO - [test_iframe_functionality] Video attached to test body: tests_recordings/gw3/test_iframe_functionality_20251126_092844/test_iframe_functionality_20251126_092844.mp4
