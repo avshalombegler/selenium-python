@@ -30,7 +30,17 @@ class HorizontalSliderPage(BasePage):
     @allure.step("Set horizontal slider value using mouse")
     def set_horizontal_slider_value_using_mouse(self, actions: ActionChains, r: int) -> None:
         slider_elem = self.wait_for_visibility(HorizontalSliderPageLocators.SLIDER)
-        actions.drag_and_drop_by_offset(slider_elem, r, 0).perform()
+
+        # Ensure element is in view
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", slider_elem)
+        sleep(0.5)
+
+        # Move to element first to ensure proper positioning
+        actions.move_to_element(slider_elem).pause(0.3).perform()
+        actions.reset_actions()
+
+        # Perform drag with pause
+        actions.click_and_hold(slider_elem).pause(0.2).move_by_offset(r, 0).pause(0.2).release().perform()
 
     @allure.step("Set horizontal slider value using keys")
     def set_horizontal_slider_value_using_keys(self, actions: ActionChains, r: int) -> None:

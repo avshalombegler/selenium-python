@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import time
 from collections.abc import Callable
 from logging import Logger
 from pathlib import Path
@@ -352,12 +353,15 @@ class BasePage:
                 }});
             """
             )
+
+            # Wait for smooth scroll to complete
+            if smooth:
+                time.sleep(1)  # Allow smooth scroll animation to complete
+
             self.logger.debug("Scrolled to bottom successfully.")
 
             if wait_after:
                 self.logger.debug(f"Waiting {wait_after}s for content to load after scroll.")
-                import time
-
                 time.sleep(wait_after)
                 self.logger.debug("Wait after scroll completed.")
 
@@ -654,8 +658,6 @@ class BasePage:
                 lambda d: d.execute_script("return document.readyState") == "complete",
                 message=f"Page not ready after {timeout}s",
             )
-            
-            import time
 
             time.sleep(1)
             page_source = self.driver.page_source
