@@ -1,0 +1,45 @@
+2025-11-26 14:14:05,876 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Starting test: test_digest_auth_login_scenarios[admin-wrong]
+2025-11-26 14:14:05,877 - INFO - [] Capture loop started.
+2025-11-26 14:14:05,878 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251126_141405/test_digest_auth_login_scenarios[admin-wrong]_20251126_141405.mp4
+2025-11-26 14:14:05,881 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Tests for Digest Authentication scenarios.
+2025-11-26 14:14:05,881 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to Digest Authentication page.
+2025-11-26 14:14:06,037 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Check if login succeeded.
+2025-11-26 14:14:06,177 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:06,755 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:07,290 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:07,858 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:10,983 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:11,544 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:12,096 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:12,621 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:15,180 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:16,254 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:14:16,255 - ERROR - [test_digest_auth_login_scenarios[admin-wrong]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+#0 0x55c5a6a1f32a <unknown>
+#1 0x55c5a646be4b <unknown>
+#2 0x55c5a64be82b <unknown>
+#3 0x55c5a64bea61 <unknown>
+#4 0x55c5a650da44 <unknown>
+#5 0x55c5a650adf7 <unknown>
+#6 0x55c5a64b0c1a <unknown>
+#7 0x55c5a64b1921 <unknown>
+#8 0x55c5a69e6239 <unknown>
+#9 0x55c5a69e91e8 <unknown>
+#10 0x55c5a69cf4c9 <unknown>
+#11 0x55c5a69e9db5 <unknown>
+#12 0x55c5a69b6e93 <unknown>
+#13 0x55c5a6a0c098 <unknown>
+#14 0x55c5a6a0c273 <unknown>
+#15 0x55c5a6a1e2c3 <unknown>
+#16 0x7f9db709caa4 <unknown>
+#17 0x7f9db7129c6c <unknown>
+
+2025-11-26 14:14:16,259 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page source: <html><head></head><body></body></html>
+2025-11-26 14:14:16,260 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Test PASSED: test_digest_auth_login_scenarios[admin-wrong] (Duration: 10.38s).
+2025-11-26 14:14:16,261 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording...
+2025-11-26 14:14:16,261 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording and assembling.
+2025-11-26 14:14:16,311 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251126_141405/frames
+2025-11-26 14:14:16,312 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Found 80 valid frames.
+2025-11-26 14:14:17,930 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251126_141405/test_digest_auth_login_scenarios[admin-wrong]_20251126_141405.mp4
+2025-11-26 14:14:18,932 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video attached to test body: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251126_141405/test_digest_auth_login_scenarios[admin-wrong]_20251126_141405.mp4

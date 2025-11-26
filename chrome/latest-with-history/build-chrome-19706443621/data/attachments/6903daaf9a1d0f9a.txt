@@ -1,0 +1,26 @@
+2025-11-26 14:13:55,413 - INFO - [test_add_elements] Starting test: test_add_elements
+2025-11-26 14:13:55,457 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:13:55,479 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:13:55,480 - INFO - [] Capture loop started.
+2025-11-26 14:13:55,481 - INFO - [test_add_elements] Started recording: tests_recordings/gw3/test_add_elements_20251126_141355/test_add_elements_20251126_141355.mp4
+2025-11-26 14:13:55,482 - INFO - [test_add_elements] Tests for add elements.
+2025-11-26 14:13:55,482 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-26 14:13:55,590 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:13:55,723 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-26 14:13:55,829 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:13:55,838 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-26 14:13:55,838 - INFO - [test_add_elements] Add two elements.
+2025-11-26 14:13:55,838 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-26 14:13:55,937 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-26 14:13:56,063 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:13:56,134 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-26 14:13:56,134 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-26 14:13:56,270 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:13:56,270 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-26 14:13:56,271 - INFO - [test_add_elements] Test PASSED: test_add_elements (Duration: 0.79s).
+2025-11-26 14:13:56,271 - INFO - [test_add_elements] Stopping video recording...
+2025-11-26 14:13:56,271 - INFO - [test_add_elements] Stopping video recording and assembling.
+2025-11-26 14:13:56,325 - INFO - [test_add_elements] Thread joined. Frames dir: tests_recordings/gw3/test_add_elements_20251126_141355/frames
+2025-11-26 14:13:56,325 - INFO - [test_add_elements] Found 4 valid frames.
+2025-11-26 14:13:56,556 - INFO - [test_add_elements] Video created: tests_recordings/gw3/test_add_elements_20251126_141355/test_add_elements_20251126_141355.mp4
+2025-11-26 14:13:57,558 - INFO - [test_add_elements] Video attached to test body: tests_recordings/gw3/test_add_elements_20251126_141355/test_add_elements_20251126_141355.mp4
