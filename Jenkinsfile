@@ -1,12 +1,9 @@
 pipeline {
     agent any
     
-    tools {
-        allure 'Allure'
-    }
-
     parameters {
         choice(name: 'BROWSER', choices: ['chrome', 'firefox', 'both'], description: 'Browser to run tests on')
+        choice(name: 'MARKER', choices: ['full', 'smoke', 'regression'], description: 'Test marker to run')
         string(name: 'WORKERS', defaultValue: 'auto', description: 'Number of parallel workers')
     }
     
@@ -24,7 +21,6 @@ pipeline {
         MAXIMIZED = 'False'
         PYTHONUNBUFFERED = '1'
         ALLURE_VERSION = '2.35.1'
-        MARKER = 'full'
     }
     
     stages {
@@ -83,12 +79,13 @@ EOF
                     browsers.each { browser ->
                         stages["Test ${browser}"] = {
                             sh """
-                                echo "BROWSER=${browser}" >> .env
+                                export BROWSER=${browser}
                                 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
                                     pytest tests/ \
                                     -v \
                                     -n ${params.WORKERS} \
                                     --dist=loadfile \
+                                    --browser=${browser} \
                                     --alluredir=reports/allure-results-${browser} \
                                     --junitxml=reports/junit-${browser}.xml \
                                     --reruns 1 \
