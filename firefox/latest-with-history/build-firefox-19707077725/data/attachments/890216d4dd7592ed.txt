@@ -1,0 +1,30 @@
+2025-11-26 14:28:27,155 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw2.
+2025-11-26 14:28:27,156 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw2.
+2025-11-26 14:28:27,157 - INFO - [] Directory cleaned and recreated at: downloads/gw2.
+2025-11-26 14:28:27,158 - INFO - [] Using system GeckoDriver: /usr/local/bin/geckodriver
+2025-11-26 14:28:39,187 - INFO - [test_floating_menu_functionality[Home]] Starting test: test_floating_menu_functionality[Home]
+2025-11-26 14:28:40,276 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:28:40,305 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:28:40,306 - INFO - [] Capture loop started.
+2025-11-26 14:28:40,307 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:40,307 - INFO - [test_floating_menu_functionality[Home]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_142840/test_floating_menu_functionality[Home]_20251126_142840.mp4
+2025-11-26 14:28:40,309 - INFO - [test_floating_menu_functionality[Home]] Tests Files Download.
+2025-11-26 14:28:40,309 - INFO - [test_floating_menu_functionality[Home]] Navigating to Floating Menu page.
+2025-11-26 14:28:40,416 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:40,544 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:28:40,603 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:40,717 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:28:40,777 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:41,483 - INFO - [test_floating_menu_functionality[Home]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:28:41,568 - WARNING - [test_floating_menu_functionality[Home]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:28:41,576 - INFO - [test_floating_menu_functionality[Home]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:28:41,576 - INFO - [test_floating_menu_functionality[Home]] Scroll down.
+2025-11-26 14:28:41,589 - INFO - [test_floating_menu_functionality[Home]] Clicking floating menu item 'Home'.
+2025-11-26 14:28:41,630 - INFO - [test_floating_menu_functionality[Home]] Verifying url updated after click on menu item.
+2025-11-26 14:28:41,632 - INFO - [test_floating_menu_functionality[Home]] Test PASSED: test_floating_menu_functionality[Home] (Duration: 1.32s).
+2025-11-26 14:28:41,633 - INFO - [test_floating_menu_functionality[Home]] Stopping video recording...
+2025-11-26 14:28:41,633 - INFO - [test_floating_menu_functionality[Home]] Stopping video recording and assembling.
+2025-11-26 14:28:41,636 - INFO - [test_floating_menu_functionality[Home]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_142840/frames
+2025-11-26 14:28:41,636 - INFO - [test_floating_menu_functionality[Home]] Found 4 valid frames.
+2025-11-26 14:28:41,861 - INFO - [test_floating_menu_functionality[Home]] Video created: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_142840/test_floating_menu_functionality[Home]_20251126_142840.mp4
+2025-11-26 14:28:42,863 - INFO - [test_floating_menu_functionality[Home]] Video attached to test body: tests_recordings/gw2/test_floating_menu_functionality[Home]_20251126_142840/test_floating_menu_functionality[Home]_20251126_142840.mp4

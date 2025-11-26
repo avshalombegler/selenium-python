@@ -1,0 +1,25 @@
+2025-11-26 14:29:01,638 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality
+2025-11-26 14:29:01,769 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:29:01,790 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:29:01,791 - INFO - [] Capture loop started.
+2025-11-26 14:29:01,792 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_142901/test_drag_and_drop_functionality_20251126_142901.mp4
+2025-11-26 14:29:01,793 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-26 14:29:01,794 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-26 14:29:01,934 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:02,164 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:02,325 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:29:02,409 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:02,415 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:29:02,415 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-26 14:29:02,448 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-26 14:29:02,975 - INFO - [test_drag_and_drop_functionality] Drag and drop completed using ActionChains.
+2025-11-26 14:29:03,046 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:03,375 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-26 14:29:03,466 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:03,525 - INFO - [test_drag_and_drop_functionality] Test PASSED: test_drag_and_drop_functionality (Duration: 1.73s).
+2025-11-26 14:29:03,526 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-26 14:29:03,526 - INFO - [test_drag_and_drop_functionality] Stopping video recording and assembling.
+2025-11-26 14:29:03,530 - INFO - [test_drag_and_drop_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_142901/frames
+2025-11-26 14:29:03,530 - INFO - [test_drag_and_drop_functionality] Found 7 valid frames.
+2025-11-26 14:29:03,951 - INFO - [test_drag_and_drop_functionality] Video created: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_142901/test_drag_and_drop_functionality_20251126_142901.mp4
+2025-11-26 14:29:04,952 - INFO - [test_drag_and_drop_functionality] Video attached to test body: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_142901/test_drag_and_drop_functionality_20251126_142901.mp4

@@ -1,0 +1,26 @@
+2025-11-26 14:29:29,710 - INFO - [test_horizontal_slider_functionality_using_keys] Starting test: test_horizontal_slider_functionality_using_keys
+2025-11-26 14:29:29,782 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:29:29,797 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:29:29,798 - INFO - [] Capture loop started.
+2025-11-26 14:29:29,799 - INFO - [test_horizontal_slider_functionality_using_keys] Started recording: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_142929/test_horizontal_slider_functionality_using_keys_20251126_142929.mp4
+2025-11-26 14:29:29,800 - INFO - [test_horizontal_slider_functionality_using_keys] Tests Horizontal Slider.
+2025-11-26 14:29:29,800 - INFO - [test_horizontal_slider_functionality_using_keys] Navigating to Horizontal Slider page.
+2025-11-26 14:29:29,927 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:30,067 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:29:30,156 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:30,162 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:29:30,162 - INFO - [test_horizontal_slider_functionality_using_keys] Setting horizontal slider value using arrow key.
+2025-11-26 14:29:30,520 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:31,056 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:31,579 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:32,091 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:32,592 - INFO - [test_horizontal_slider_functionality_using_keys] Verifying horizontal slider new value.
+2025-11-26 14:29:32,622 - INFO - [test_horizontal_slider_functionality_using_keys] Test PASSED: test_horizontal_slider_functionality_using_keys (Duration: 2.82s).
+2025-11-26 14:29:32,623 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording...
+2025-11-26 14:29:32,623 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording and assembling.
+2025-11-26 14:29:32,706 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:29:32,774 - INFO - [test_horizontal_slider_functionality_using_keys] Thread joined. Frames dir: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_142929/frames
+2025-11-26 14:29:32,775 - INFO - [test_horizontal_slider_functionality_using_keys] Found 17 valid frames.
+2025-11-26 14:29:33,224 - INFO - [test_horizontal_slider_functionality_using_keys] Video created: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_142929/test_horizontal_slider_functionality_using_keys_20251126_142929.mp4
+2025-11-26 14:29:34,226 - INFO - [test_horizontal_slider_functionality_using_keys] Video attached to test body: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_142929/test_horizontal_slider_functionality_using_keys_20251126_142929.mp4
+2025-11-26 14:29:34,228 - INFO - [test_horizontal_slider_functionality_using_keys] Quitting driver for browser: chrome.

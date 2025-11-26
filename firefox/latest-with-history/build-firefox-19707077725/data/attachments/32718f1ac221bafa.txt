@@ -1,0 +1,28 @@
+2025-11-26 14:28:49,150 - INFO - [test_floating_menu_functionality[About]] Starting test: test_floating_menu_functionality[About]
+2025-11-26 14:28:49,803 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:28:49,820 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:28:49,821 - INFO - [] Capture loop started.
+2025-11-26 14:28:49,821 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:49,822 - INFO - [test_floating_menu_functionality[About]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_142849/test_floating_menu_functionality[About]_20251126_142849.mp4
+2025-11-26 14:28:49,824 - INFO - [test_floating_menu_functionality[About]] Tests Files Download.
+2025-11-26 14:28:49,824 - INFO - [test_floating_menu_functionality[About]] Navigating to Floating Menu page.
+2025-11-26 14:28:49,930 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:50,080 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:28:50,134 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:50,203 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:28:50,266 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:50,708 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:28:50,765 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:28:50,783 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:28:50,783 - INFO - [test_floating_menu_functionality[About]] Scroll down.
+2025-11-26 14:28:50,792 - INFO - [test_floating_menu_functionality[About]] Clicking floating menu item 'About'.
+2025-11-26 14:28:50,832 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:28:50,923 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:28:50,944 - INFO - [test_floating_menu_functionality[About]] Verifying url updated after click on menu item.
+2025-11-26 14:28:50,946 - INFO - [test_floating_menu_functionality[About]] Test PASSED: test_floating_menu_functionality[About] (Duration: 1.12s).
+2025-11-26 14:28:50,947 - INFO - [test_floating_menu_functionality[About]] Stopping video recording...
+2025-11-26 14:28:50,947 - INFO - [test_floating_menu_functionality[About]] Stopping video recording and assembling.
+2025-11-26 14:28:50,986 - INFO - [test_floating_menu_functionality[About]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_142849/frames
+2025-11-26 14:28:50,986 - INFO - [test_floating_menu_functionality[About]] Found 5 valid frames.
+2025-11-26 14:28:51,305 - INFO - [test_floating_menu_functionality[About]] Video created: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_142849/test_floating_menu_functionality[About]_20251126_142849.mp4
+2025-11-26 14:28:52,307 - INFO - [test_floating_menu_functionality[About]] Video attached to test body: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_142849/test_floating_menu_functionality[About]_20251126_142849.mp4
