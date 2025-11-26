@@ -1,4 +1,5 @@
 """Test setup and page manager fixtures."""
+
 from __future__ import annotations
 
 import logging
