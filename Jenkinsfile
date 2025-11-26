@@ -21,6 +21,7 @@ pipeline {
         MAXIMIZED = 'False'
         PYTHONUNBUFFERED = '1'
         ALLURE_VERSION = '2.35.1'
+        PATH = "/usr/local/bin:${env.PATH}"
     }
     
     stages {
@@ -108,7 +109,7 @@ EOF
                     browsers.each { browser ->
                         sh """
                             mkdir -p reports/allure-report-${browser}
-                            allure generate --clean reports/allure-results-${browser} -o reports/allure-report-${browser}
+                            /usr/local/bin/allure generate --clean reports/allure-results-${browser} -o reports/allure-report-${browser}
                         """
                     }
                 }
