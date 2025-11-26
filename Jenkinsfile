@@ -33,16 +33,7 @@ pipeline {
                 checkout scm
             }
         }
-        
-        stage('Setup Environment') {
-            steps {
-                sh '''
-                    apt-get update || true
-                    apt-get install -y ffmpeg rsync || true
-                '''
-            }
-        }
-        
+                
         stage('Setup Python') {
             steps {
                 sh '''
