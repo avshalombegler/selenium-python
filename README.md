@@ -203,7 +203,6 @@ selenium-python/
 │    ├── common/                # Shared components
 │    └── features/              # Page objects per feature
 ├── pytest_plugins/             # Modular pytest plugins
-│    ├── __init__.py
 │    ├── browser_fixtures.py    # Browser/driver setup
 │    ├── browser_helpers.py     # Browser utilities
 │    ├── directory_fixtures.py  # Directory management
