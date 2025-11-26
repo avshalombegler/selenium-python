@@ -1,0 +1,137 @@
+2025-11-26 12:06:01,422 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Starting test: test_digest_auth_login_scenarios[wrong-admin]
+2025-11-26 12:06:01,423 - INFO - [] Capture loop started.
+2025-11-26 12:06:01,423 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:01,423 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Started recording: tests_recordings/gw3/test_digest_auth_login_scenarios[wrong-admin]_20251126_120601/test_digest_auth_login_scenarios[wrong-admin]_20251126_120601.mp4
+2025-11-26 12:06:01,424 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Tests for Digest Authentication scenarios.
+2025-11-26 12:06:01,425 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to Digest Authentication page.
+2025-11-26 12:06:01,425 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to URL: https://wrong:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-26 12:06:01,518 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:07,662 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigation completed.
+2025-11-26 12:06:07,662 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Check if login succeeded.
+2025-11-26 12:06:07,684 - ERROR - [] Capture error: Alert Text: None
+Message: Unexpected promptUserAndPass dialog detected. Performed handler "dismiss"
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:927:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:3233:11
+
+2025-11-26 12:06:07,685 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:07,751 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:07,842 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:07,950 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,048 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,152 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,246 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,350 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,455 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,549 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,649 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,697 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:08,760 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,871 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:08,972 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,073 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,188 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,221 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:09,287 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,380 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,482 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,575 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,675 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,783 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,874 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:09,967 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,072 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,165 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,261 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,396 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,490 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,600 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,706 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,776 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:10,831 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:10,952 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,052 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,149 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,246 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,339 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,438 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,550 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,657 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,755 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,802 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:11,866 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:11,967 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,071 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,166 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,266 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,367 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,466 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,563 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,663 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,772 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,871 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:12,979 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,087 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,189 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,306 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,352 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:13,417 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,534 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,658 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,771 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:13,888 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:14,059 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:14,191 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:14,325 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:14,400 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:14,469 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:14,590 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:14,749 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:14,941 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,102 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,230 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,342 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,446 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,598 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,696 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,805 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:15,925 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,101 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,209 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,307 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,403 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,444 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:16,509 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,615 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,723 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,834 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,941 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:16,975 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:17,041 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,152 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,264 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,375 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,489 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,591 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:17,661 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,772 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,871 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:17,989 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:18,019 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:18,020 - ERROR - [test_digest_auth_login_scenarios[wrong-admin]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-11-26 12:06:18,022 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Page source: <html><head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head><body><pre></pre></body></html>
+2025-11-26 12:06:18,022 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Test PASSED: test_digest_auth_login_scenarios[wrong-admin] (Duration: 16.60s).
+2025-11-26 12:06:18,023 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording...
+2025-11-26 12:06:18,023 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording and assembling.
+2025-11-26 12:06:18,084 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Thread joined. Frames dir: tests_recordings/gw3/test_digest_auth_login_scenarios[wrong-admin]_20251126_120601/frames
+2025-11-26 12:06:18,086 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Found 94 valid frames.
+2025-11-26 12:06:19,492 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Video created: tests_recordings/gw3/test_digest_auth_login_scenarios[wrong-admin]_20251126_120601/test_digest_auth_login_scenarios[wrong-admin]_20251126_120601.mp4
+2025-11-26 12:06:20,494 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Video attached to test body: tests_recordings/gw3/test_digest_auth_login_scenarios[wrong-admin]_20251126_120601/test_digest_auth_login_scenarios[wrong-admin]_20251126_120601.mp4

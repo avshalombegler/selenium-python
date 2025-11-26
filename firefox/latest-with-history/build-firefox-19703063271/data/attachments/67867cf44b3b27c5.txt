@@ -1,0 +1,28 @@
+2025-11-26 12:06:19,645 - INFO - [test_right_click_outside_hotspot] Starting test: test_right_click_outside_hotspot
+2025-11-26 12:06:19,646 - INFO - [test_right_click_outside_hotspot] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:06:20,140 - INFO - [test_right_click_outside_hotspot] Navigation completed.
+2025-11-26 12:06:20,140 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:06:20,150 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:06:20,151 - INFO - [] Capture loop started.
+2025-11-26 12:06:20,151 - INFO - [test_right_click_outside_hotspot] Started recording: tests_recordings/gw2/test_right_click_outside_hotspot_20251126_120620/test_right_click_outside_hotspot_20251126_120620.mp4
+2025-11-26 12:06:20,151 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:20,153 - INFO - [test_right_click_outside_hotspot] Navigating to Context Menu page.
+2025-11-26 12:06:20,223 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:20,266 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:20,368 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:20,429 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:20,769 - INFO - [test_right_click_outside_hotspot] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 12:06:20,854 - WARNING - [test_right_click_outside_hotspot] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:20,863 - INFO - [test_right_click_outside_hotspot] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 12:06:20,864 - INFO - [test_right_click_outside_hotspot] Testing right-click outside hot spot
+2025-11-26 12:06:20,864 - INFO - [test_right_click_outside_hotspot] Perform right-click on page title to verify context menu alert does not activate.
+2025-11-26 12:06:20,865 - INFO - [test_right_click_outside_hotspot] Performing right-click on element '('css selector', 'div.example h3')'.
+2025-11-26 12:06:20,918 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:21,180 - INFO - [test_right_click_outside_hotspot] Test PASSED: test_right_click_outside_hotspot (Duration: 1.03s).
+2025-11-26 12:06:21,181 - INFO - [test_right_click_outside_hotspot] Stopping video recording...
+2025-11-26 12:06:21,181 - INFO - [test_right_click_outside_hotspot] Stopping video recording and assembling.
+2025-11-26 12:06:21,259 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:21,326 - INFO - [test_right_click_outside_hotspot] Thread joined. Frames dir: tests_recordings/gw2/test_right_click_outside_hotspot_20251126_120620/frames
+2025-11-26 12:06:21,326 - INFO - [test_right_click_outside_hotspot] Found 4 valid frames.
+2025-11-26 12:06:21,505 - INFO - [test_right_click_outside_hotspot] Video created: tests_recordings/gw2/test_right_click_outside_hotspot_20251126_120620/test_right_click_outside_hotspot_20251126_120620.mp4
+2025-11-26 12:06:22,507 - INFO - [test_right_click_outside_hotspot] Video attached to test body: tests_recordings/gw2/test_right_click_outside_hotspot_20251126_120620/test_right_click_outside_hotspot_20251126_120620.mp4

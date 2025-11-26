@@ -1,0 +1,29 @@
+2025-11-26 12:06:18,632 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Starting test: test_cells_content_per_column[Ipsum-Apeirian]
+2025-11-26 12:06:18,633 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:06:19,169 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigation completed.
+2025-11-26 12:06:19,169 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:06:19,192 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:06:19,194 - INFO - [] Capture loop started.
+2025-11-26 12:06:19,194 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:19,197 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Started recording: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251126_120619/test_cells_content_per_column[Ipsum-Apeirian]_20251126_120619.mp4
+2025-11-26 12:06:19,198 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Verify cell content per column.
+2025-11-26 12:06:19,199 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Navigating to Challenging DOM page.
+2025-11-26 12:06:19,305 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:19,344 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:19,460 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:19,507 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:19,870 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 12:06:19,958 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:19,966 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 12:06:19,966 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-26 12:06:19,998 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-26 12:06:20,024 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:20,025 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Getting table cell 'Apeirian' text under column 'Ipsum'.
+2025-11-26 12:06:20,088 - WARNING - [test_cells_content_per_column[Ipsum-Apeirian]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:20,110 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Test PASSED: test_cells_content_per_column[Ipsum-Apeirian] (Duration: 0.91s).
+2025-11-26 12:06:20,111 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording...
+2025-11-26 12:06:20,111 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Stopping video recording and assembling.
+2025-11-26 12:06:20,153 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251126_120619/frames
+2025-11-26 12:06:20,153 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Found 4 valid frames.
+2025-11-26 12:06:20,395 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Video created: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251126_120619/test_cells_content_per_column[Ipsum-Apeirian]_20251126_120619.mp4
+2025-11-26 12:06:21,396 - INFO - [test_cells_content_per_column[Ipsum-Apeirian]] Video attached to test body: tests_recordings/gw0/test_cells_content_per_column[Ipsum-Apeirian]_20251126_120619/test_cells_content_per_column[Ipsum-Apeirian]_20251126_120619.mp4

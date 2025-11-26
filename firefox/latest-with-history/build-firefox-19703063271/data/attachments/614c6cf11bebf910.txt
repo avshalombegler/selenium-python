@@ -1,0 +1,100 @@
+2025-11-26 12:06:54,526 - INFO - [test_infinite_scroll_functionality] Starting test: test_infinite_scroll_functionality
+2025-11-26 12:06:54,526 - INFO - [test_infinite_scroll_functionality] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:06:55,057 - INFO - [test_infinite_scroll_functionality] Navigation completed.
+2025-11-26 12:06:55,057 - INFO - [test_infinite_scroll_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:06:55,070 - INFO - [test_infinite_scroll_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:06:55,071 - INFO - [] Capture loop started.
+2025-11-26 12:06:55,071 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:55,071 - INFO - [test_infinite_scroll_functionality] Started recording: tests_recordings/gw0/test_infinite_scroll_functionality_20251126_120655/test_infinite_scroll_functionality_20251126_120655.mp4
+2025-11-26 12:06:55,072 - INFO - [test_infinite_scroll_functionality] Tests Infinite Scroll.
+2025-11-26 12:06:55,072 - INFO - [test_infinite_scroll_functionality] Navigating to Infinite Scroll page.
+2025-11-26 12:06:55,171 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:55,211 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:55,274 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:55,315 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:55,378 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:55,698 - INFO - [test_infinite_scroll_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 12:06:55,767 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:55,773 - INFO - [test_infinite_scroll_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 12:06:55,773 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-26 12:06:55,775 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-26 12:06:55,775 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-26 12:06:55,834 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:55,944 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,058 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,171 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,282 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,399 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,512 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,632 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,755 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,777 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-26 12:06:56,804 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:56,804 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-26 12:06:56,805 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-26 12:06:56,807 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-26 12:06:56,807 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-26 12:06:56,872 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:56,987 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,104 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,218 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,333 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,445 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,559 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,676 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,791 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:57,811 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-26 12:06:57,841 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:57,841 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-26 12:06:57,842 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-26 12:06:57,844 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-26 12:06:57,845 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-26 12:06:57,907 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,026 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,139 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,256 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,371 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,482 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,608 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,718 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,830 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:58,848 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-26 12:06:58,875 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:58,875 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-26 12:06:58,875 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-26 12:06:58,877 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-26 12:06:58,878 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-26 12:06:58,943 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,054 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,167 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,278 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,390 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,502 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,613 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,724 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,836 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:59,883 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-26 12:06:59,887 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-26 12:06:59,887 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-26 12:06:59,890 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-26 12:06:59,890 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-26 12:06:59,952 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,067 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,184 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,301 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,417 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,532 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,650 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,762 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,885 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:07:00,894 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-26 12:07:00,931 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:07:00,931 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-26 12:07:00,932 - INFO - [test_infinite_scroll_functionality] Test PASSED: test_infinite_scroll_functionality (Duration: 5.86s).
+2025-11-26 12:07:00,932 - INFO - [test_infinite_scroll_functionality] Stopping video recording...
+2025-11-26 12:07:00,932 - INFO - [test_infinite_scroll_functionality] Stopping video recording and assembling.
+2025-11-26 12:07:00,998 - INFO - [test_infinite_scroll_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_infinite_scroll_functionality_20251126_120655/frames
+2025-11-26 12:07:00,999 - INFO - [test_infinite_scroll_functionality] Found 49 valid frames.
+2025-11-26 12:07:02,460 - INFO - [test_infinite_scroll_functionality] Video created: tests_recordings/gw0/test_infinite_scroll_functionality_20251126_120655/test_infinite_scroll_functionality_20251126_120655.mp4
+2025-11-26 12:07:03,463 - INFO - [test_infinite_scroll_functionality] Video attached to test body: tests_recordings/gw0/test_infinite_scroll_functionality_20251126_120655/test_infinite_scroll_functionality_20251126_120655.mp4
+2025-11-26 12:07:03,465 - INFO - [test_infinite_scroll_functionality] Quitting driver for browser: firefox.

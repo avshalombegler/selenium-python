@@ -1,0 +1,28 @@
+2025-11-26 12:06:19,432 - INFO - [test_drag_and_drop_functionality[Option 1]] Starting test: test_drag_and_drop_functionality[Option 1]
+2025-11-26 12:06:19,432 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:06:19,869 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigation completed.
+2025-11-26 12:06:19,869 - INFO - [test_drag_and_drop_functionality[Option 1]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:06:19,881 - INFO - [test_drag_and_drop_functionality[Option 1]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:06:19,882 - INFO - [] Capture loop started.
+2025-11-26 12:06:19,882 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:19,883 - INFO - [test_drag_and_drop_functionality[Option 1]] Started recording: tests_recordings/gw1/test_drag_and_drop_functionality[Option 1]_20251126_120619/test_drag_and_drop_functionality[Option 1]_20251126_120619.mp4
+2025-11-26 12:06:19,884 - INFO - [test_drag_and_drop_functionality[Option 1]] Tests Dropdown List functionality.
+2025-11-26 12:06:19,884 - INFO - [test_drag_and_drop_functionality[Option 1]] Navigating to Dropdown List page.
+2025-11-26 12:06:19,972 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:19,991 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:20,088 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:20,146 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:20,452 - INFO - [test_drag_and_drop_functionality[Option 1]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 12:06:20,526 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:20,532 - INFO - [test_drag_and_drop_functionality[Option 1]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 12:06:20,533 - INFO - [test_drag_and_drop_functionality[Option 1]] Selecting option 'Option 1' from dropdown.
+2025-11-26 12:06:20,592 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:06:20,607 - INFO - [test_drag_and_drop_functionality[Option 1]] Verifying option 'Option 1' selected.
+2025-11-26 12:06:20,689 - WARNING - [test_drag_and_drop_functionality[Option 1]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:06:20,708 - INFO - [test_drag_and_drop_functionality[Option 1]] Test PASSED: test_drag_and_drop_functionality[Option 1] (Duration: 0.82s).
+2025-11-26 12:06:20,709 - INFO - [test_drag_and_drop_functionality[Option 1]] Stopping video recording...
+2025-11-26 12:06:20,709 - INFO - [test_drag_and_drop_functionality[Option 1]] Stopping video recording and assembling.
+2025-11-26 12:06:20,755 - INFO - [test_drag_and_drop_functionality[Option 1]] Thread joined. Frames dir: tests_recordings/gw1/test_drag_and_drop_functionality[Option 1]_20251126_120619/frames
+2025-11-26 12:06:20,756 - INFO - [test_drag_and_drop_functionality[Option 1]] Found 4 valid frames.
+2025-11-26 12:06:20,937 - INFO - [test_drag_and_drop_functionality[Option 1]] Video created: tests_recordings/gw1/test_drag_and_drop_functionality[Option 1]_20251126_120619/test_drag_and_drop_functionality[Option 1]_20251126_120619.mp4
+2025-11-26 12:06:21,938 - INFO - [test_drag_and_drop_functionality[Option 1]] Video attached to test body: tests_recordings/gw1/test_drag_and_drop_functionality[Option 1]_20251126_120619/test_drag_and_drop_functionality[Option 1]_20251126_120619.mp4
