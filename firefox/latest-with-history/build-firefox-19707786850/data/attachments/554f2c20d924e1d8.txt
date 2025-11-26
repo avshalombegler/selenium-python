@@ -1,0 +1,42 @@
+INFO     root:test_fixtures.py:43 Starting test: test_inputs_functionality
+INFO     root:base_page.py:205 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:210 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:recording_fixtures.py:39 Started recording: tests_recordings/gw3/test_inputs_functionality_20251126_145256/test_inputs_functionality_20251126_145256.mp4
+INFO     root:test_inputs.py:31 Tests Inputs.
+INFO     root:main_page.py:220 Navigating to Inputs page.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:base_page.py:205 Waiting for page to load with indicator '('css selector', 'h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:210 Page loaded successfully with indicator '('css selector', 'h3')'.
+INFO     root:test_inputs.py:34 Entering input number.
+INFO     root:base_page.py:142 Sending keys '1337' on element '('css selector', 'input[type=number]')'.
+INFO     root:test_inputs.py:37 Getting input number value.
+INFO     root:test_inputs.py:40 Getting input number value.
+INFO     root:test_inputs.py:43 Increasing number value using keyboard arrow.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:test_inputs.py:46 Getting input number value.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_inputs.py:49 Getting input number value.
+INFO     root:test_inputs.py:52 Decreasing number value using keyboard arrow.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:test_inputs.py:55 Getting input number value.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_inputs.py:58 Getting input number value.
+INFO     root:recording_fixtures.py:45 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw3/test_inputs_functionality_20251126_145256/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 11 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw3/test_inputs_functionality_20251126_145256/test_inputs_functionality_20251126_145256.mp4
+INFO     root:recording_fixtures.py:62 Video attached to test body: tests_recordings/gw3/test_inputs_functionality_20251126_145256/test_inputs_functionality_20251126_145256.mp4
+INFO     root:browser_fixtures.py:104 Quitting driver for browser: firefox.

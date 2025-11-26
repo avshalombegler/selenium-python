@@ -1,0 +1,24 @@
+2025-11-26 14:53:43,582 - INFO - [test_horizontal_slider_functionality_using_keys] Starting test: test_horizontal_slider_functionality_using_keys
+2025-11-26 14:53:43,679 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:53:43,699 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:53:43,700 - INFO - [] Capture loop started.
+2025-11-26 14:53:43,700 - INFO - [test_horizontal_slider_functionality_using_keys] Started recording: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_145343/test_horizontal_slider_functionality_using_keys_20251126_145343.mp4
+2025-11-26 14:53:43,702 - INFO - [test_horizontal_slider_functionality_using_keys] Tests Horizontal Slider.
+2025-11-26 14:53:43,702 - INFO - [test_horizontal_slider_functionality_using_keys] Navigating to Horizontal Slider page.
+2025-11-26 14:53:43,817 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:43,989 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:53:44,125 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:44,133 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:53:44,133 - INFO - [test_horizontal_slider_functionality_using_keys] Setting horizontal slider value using arrow key.
+2025-11-26 14:53:44,499 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:45,583 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:46,096 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:46,597 - INFO - [test_horizontal_slider_functionality_using_keys] Verifying horizontal slider new value.
+2025-11-26 14:53:46,613 - INFO - [test_horizontal_slider_functionality_using_keys] Test PASSED: test_horizontal_slider_functionality_using_keys (Duration: 2.91s).
+2025-11-26 14:53:46,614 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording...
+2025-11-26 14:53:46,614 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording and assembling.
+2025-11-26 14:53:46,628 - INFO - [test_horizontal_slider_functionality_using_keys] Thread joined. Frames dir: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_145343/frames
+2025-11-26 14:53:46,628 - INFO - [test_horizontal_slider_functionality_using_keys] Found 18 valid frames.
+2025-11-26 14:53:47,075 - INFO - [test_horizontal_slider_functionality_using_keys] Video created: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_145343/test_horizontal_slider_functionality_using_keys_20251126_145343.mp4
+2025-11-26 14:53:48,077 - INFO - [test_horizontal_slider_functionality_using_keys] Video attached to test body: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251126_145343/test_horizontal_slider_functionality_using_keys_20251126_145343.mp4
+2025-11-26 14:53:48,078 - INFO - [test_horizontal_slider_functionality_using_keys] Quitting driver for browser: chrome.

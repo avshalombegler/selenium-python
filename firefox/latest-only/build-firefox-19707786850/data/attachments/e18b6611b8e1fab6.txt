@@ -1,0 +1,29 @@
+2025-11-26 14:52:46,918 - INFO - [test_content_changes_after_refresh] Starting test: test_content_changes_after_refresh
+2025-11-26 14:52:47,076 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:52:47,083 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:52:47,084 - INFO - [] Capture loop started.
+2025-11-26 14:52:47,084 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:52:47,085 - INFO - [test_content_changes_after_refresh] Started recording: tests_recordings/gw0/test_content_changes_after_refresh_20251126_145247/test_content_changes_after_refresh_20251126_145247.mp4
+2025-11-26 14:52:47,086 - INFO - [test_content_changes_after_refresh] Test that content changes after page refresh.
+2025-11-26 14:52:47,086 - INFO - [test_content_changes_after_refresh] Navigating to Dynamic Content page.
+2025-11-26 14:52:47,159 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:52:47,188 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:52:47,238 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:52:47,300 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:52:47,362 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:52:47,440 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:52:47,446 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:52:47,488 - INFO - [test_content_changes_after_refresh] Refreshing page.
+2025-11-26 14:52:47,506 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:52:47,652 - INFO - [test_content_changes_after_refresh] Page refreshed.
+2025-11-26 14:52:47,755 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:52:47,798 - INFO - [test_content_changes_after_refresh] Validating initial content blocks structure and count.
+2025-11-26 14:52:47,799 - INFO - [test_content_changes_after_refresh] Validating refreshed content blocks structure and count.
+2025-11-26 14:52:47,799 - INFO - [test_content_changes_after_refresh] Comparing content changes after refresh.
+2025-11-26 14:52:47,799 - INFO - [test_content_changes_after_refresh] Test PASSED: test_content_changes_after_refresh (Duration: 0.71s).
+2025-11-26 14:52:47,800 - INFO - [test_content_changes_after_refresh] Stopping video recording...
+2025-11-26 14:52:47,800 - INFO - [test_content_changes_after_refresh] Stopping video recording and assembling.
+2025-11-26 14:52:47,821 - INFO - [test_content_changes_after_refresh] Thread joined. Frames dir: tests_recordings/gw0/test_content_changes_after_refresh_20251126_145247/frames
+2025-11-26 14:52:47,821 - INFO - [test_content_changes_after_refresh] Found 4 valid frames.
+2025-11-26 14:52:48,084 - INFO - [test_content_changes_after_refresh] Video created: tests_recordings/gw0/test_content_changes_after_refresh_20251126_145247/test_content_changes_after_refresh_20251126_145247.mp4
+2025-11-26 14:52:49,086 - INFO - [test_content_changes_after_refresh] Video attached to test body: tests_recordings/gw0/test_content_changes_after_refresh_20251126_145247/test_content_changes_after_refresh_20251126_145247.mp4

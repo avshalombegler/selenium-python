@@ -1,0 +1,43 @@
+2025-11-26 14:53:27,316 - INFO - [test_textbox_enable_and_disable] Starting test: test_textbox_enable_and_disable
+2025-11-26 14:53:27,493 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:53:27,510 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:53:27,511 - INFO - [] Capture loop started.
+2025-11-26 14:53:27,511 - INFO - [test_textbox_enable_and_disable] Started recording: tests_recordings/gw1/test_textbox_enable_and_disable_20251126_145327/test_textbox_enable_and_disable_20251126_145327.mp4
+2025-11-26 14:53:27,512 - INFO - [test_textbox_enable_and_disable] Test Enable/disable textbox area.
+2025-11-26 14:53:27,513 - INFO - [test_textbox_enable_and_disable] Navigating to Dynamic Controls page.
+2025-11-26 14:53:27,631 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:27,821 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-26 14:53:27,928 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:27,943 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-26 14:53:27,944 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-26 14:53:27,944 - INFO - [test_textbox_enable_and_disable] Checking enabled state on element '('css selector', 'input[type=text]')'.
+2025-11-26 14:53:27,972 - INFO - [test_textbox_enable_and_disable] Clicking enable button.
+2025-11-26 14:53:28,072 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:28,142 - INFO - [test_textbox_enable_and_disable] Waiting for loader to complete.
+2025-11-26 14:53:28,224 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:28,775 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:29,311 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:29,853 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:30,417 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:30,980 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:31,493 - INFO - [test_textbox_enable_and_disable] Checking if textbox is enabled.
+2025-11-26 14:53:31,494 - INFO - [test_textbox_enable_and_disable] Checking enabled state on element '('css selector', 'input[type=text]')'.
+2025-11-26 14:53:31,523 - INFO - [test_textbox_enable_and_disable] Get enable message text.
+2025-11-26 14:53:31,594 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:31,606 - INFO - [test_textbox_enable_and_disable] Clicking disable button.
+2025-11-26 14:53:31,749 - INFO - [test_textbox_enable_and_disable] Waiting for loader to complete.
+2025-11-26 14:53:31,884 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:33,434 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:33,969 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:34,486 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:35,083 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:53:35,083 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-26 14:53:35,083 - INFO - [test_textbox_enable_and_disable] Checking enabled state on element '('css selector', 'input[type=text]')'.
+2025-11-26 14:53:35,099 - INFO - [test_textbox_enable_and_disable] Get disable message text.
+2025-11-26 14:53:35,116 - INFO - [test_textbox_enable_and_disable] Test PASSED: test_textbox_enable_and_disable (Duration: 7.60s).
+2025-11-26 14:53:35,116 - INFO - [test_textbox_enable_and_disable] Stopping video recording...
+2025-11-26 14:53:35,116 - INFO - [test_textbox_enable_and_disable] Stopping video recording and assembling.
+2025-11-26 14:53:35,147 - INFO - [test_textbox_enable_and_disable] Thread joined. Frames dir: tests_recordings/gw1/test_textbox_enable_and_disable_20251126_145327/frames
+2025-11-26 14:53:35,148 - INFO - [test_textbox_enable_and_disable] Found 52 valid frames.
+2025-11-26 14:53:36,161 - INFO - [test_textbox_enable_and_disable] Video created: tests_recordings/gw1/test_textbox_enable_and_disable_20251126_145327/test_textbox_enable_and_disable_20251126_145327.mp4
+2025-11-26 14:53:37,163 - INFO - [test_textbox_enable_and_disable] Video attached to test body: tests_recordings/gw1/test_textbox_enable_and_disable_20251126_145327/test_textbox_enable_and_disable_20251126_145327.mp4
