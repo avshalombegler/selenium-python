@@ -1,0 +1,23 @@
+INFO     root:test_fixtures.py:42 Starting test: test_ab_testing_content
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:recording_fixtures.py:39 Started recording: tests_recordings/gw2/test_ab_testing_content_20251126_121131/test_ab_testing_content_20251126_121131.mp4
+INFO     root:test_ab_testing.py:24 Tests for verifying title and paragraph content of page
+INFO     root:main_page.py:47 Navigating to A/B Testing page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_ab_testing.py:28 Retrieved title: A/B Test Control.
+INFO     root:test_ab_testing.py:33 Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+INFO     root:recording_fixtures.py:45 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw2/test_ab_testing_content_20251126_121131/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 2 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw2/test_ab_testing_content_20251126_121131/test_ab_testing_content_20251126_121131.mp4
+INFO     root:recording_fixtures.py:62 Video attached to test body: tests_recordings/gw2/test_ab_testing_content_20251126_121131/test_ab_testing_content_20251126_121131.mp4

@@ -1,0 +1,25 @@
+2025-11-26 12:11:03,284 - INFO - [test_basic_auth[--401-Not authorized\n]] Starting test: test_basic_auth[--401-Not authorized\n]
+2025-11-26 12:11:03,284 - INFO - [test_basic_auth[--401-Not authorized\n]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:11:03,395 - INFO - [test_basic_auth[--401-Not authorized\n]] Navigation completed.
+2025-11-26 12:11:03,396 - INFO - [test_basic_auth[--401-Not authorized\n]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:11:03,419 - INFO - [test_basic_auth[--401-Not authorized\n]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:11:03,420 - INFO - [] Capture loop started.
+2025-11-26 12:11:03,420 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:03,422 - INFO - [test_basic_auth[--401-Not authorized\n]] Started recording: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_121103/test_basic_auth[--401-Not authorized\n]_20251126_121103.mp4
+2025-11-26 12:11:03,423 - INFO - [test_basic_auth[--401-Not authorized\n]] Tests basic autorization login scenatios.
+2025-11-26 12:11:03,424 - INFO - [test_basic_auth[--401-Not authorized\n]] Returning object of Basic Auth page.
+2025-11-26 12:11:03,424 - INFO - [test_basic_auth[--401-Not authorized\n]] Initialize URL based on username and password.
+2025-11-26 12:11:03,424 - INFO - [test_basic_auth[--401-Not authorized\n]] Get status code and authorization message.
+2025-11-26 12:11:03,576 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:03,676 - INFO - [test_basic_auth[--401-Not authorized\n]] Test FAILED: test_basic_auth[--401-Not authorized\n] (Duration: 0.08s).
+2025-11-26 12:11:03,676 - INFO - [test_basic_auth[--401-Not authorized\n]] Test test_basic_auth[--401-Not authorized\n] failed, capturing screenshot.
+2025-11-26 12:11:03,704 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:03,721 - INFO - [test_basic_auth[--401-Not authorized\n]] Screenshot saved successfully to: tests_screenshots/gw3/20251126_121103_test_basic_auth[--401-Not authorized\n].png.
+2025-11-26 12:11:03,722 - INFO - [test_basic_auth[--401-Not authorized\n]] Screenshot attached to Allure report for test_basic_auth[--401-Not authorized\n].
+2025-11-26 12:11:03,723 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording...
+2025-11-26 12:11:03,723 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording and assembling.
+2025-11-26 12:11:03,752 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:11:03,820 - INFO - [test_basic_auth[--401-Not authorized\n]] Thread joined. Frames dir: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_121103/frames
+2025-11-26 12:11:03,820 - INFO - [test_basic_auth[--401-Not authorized\n]] Found 3 valid frames.
+2025-11-26 12:11:03,995 - INFO - [test_basic_auth[--401-Not authorized\n]] Video created: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_121103/test_basic_auth[--401-Not authorized\n]_20251126_121103.mp4
+2025-11-26 12:11:04,997 - INFO - [test_basic_auth[--401-Not authorized\n]] Video attached to test body: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_121103/test_basic_auth[--401-Not authorized\n]_20251126_121103.mp4

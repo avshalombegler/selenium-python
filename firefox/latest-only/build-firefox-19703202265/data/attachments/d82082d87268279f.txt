@@ -1,0 +1,25 @@
+2025-11-26 12:11:06,415 - INFO - [test_table_header_per_column[Amet]] Starting test: test_table_header_per_column[Amet]
+2025-11-26 12:11:06,415 - INFO - [test_table_header_per_column[Amet]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:11:06,527 - INFO - [test_table_header_per_column[Amet]] Navigation completed.
+2025-11-26 12:11:06,527 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:11:06,536 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:11:06,538 - INFO - [] Capture loop started.
+2025-11-26 12:11:06,538 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:06,539 - INFO - [test_table_header_per_column[Amet]] Started recording: tests_recordings/gw0/test_table_header_per_column[Amet]_20251126_121106/test_table_header_per_column[Amet]_20251126_121106.mp4
+2025-11-26 12:11:06,541 - INFO - [test_table_header_per_column[Amet]] Verify table head text per column.
+2025-11-26 12:11:06,541 - INFO - [test_table_header_per_column[Amet]] Navigating to Challenging DOM page.
+2025-11-26 12:11:06,600 - WARNING - [test_table_header_per_column[Amet]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:11:06,645 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:06,791 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 12:11:06,881 - WARNING - [test_table_header_per_column[Amet]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:11:06,889 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 12:11:06,889 - INFO - [test_table_header_per_column[Amet]] Getting table head text of column 'Amet'.
+2025-11-26 12:11:06,945 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:06,953 - INFO - [test_table_header_per_column[Amet]] Test PASSED: test_table_header_per_column[Amet] (Duration: 0.41s).
+2025-11-26 12:11:06,955 - INFO - [test_table_header_per_column[Amet]] Stopping video recording...
+2025-11-26 12:11:06,955 - INFO - [test_table_header_per_column[Amet]] Stopping video recording and assembling.
+2025-11-26 12:11:07,017 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:11:07,087 - INFO - [test_table_header_per_column[Amet]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Amet]_20251126_121106/frames
+2025-11-26 12:11:07,088 - INFO - [test_table_header_per_column[Amet]] Found 3 valid frames.
+2025-11-26 12:11:07,381 - INFO - [test_table_header_per_column[Amet]] Video created: tests_recordings/gw0/test_table_header_per_column[Amet]_20251126_121106/test_table_header_per_column[Amet]_20251126_121106.mp4
+2025-11-26 12:11:08,383 - INFO - [test_table_header_per_column[Amet]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Amet]_20251126_121106/test_table_header_per_column[Amet]_20251126_121106.mp4

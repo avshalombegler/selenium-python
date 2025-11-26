@@ -1,0 +1,28 @@
+2025-11-26 12:11:02,548 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Starting test: test_digest_auth_login_scenarios[wrong-admin]
+2025-11-26 12:11:02,549 - INFO - [] Capture loop started.
+2025-11-26 12:11:02,549 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:02,550 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251126_121102/test_digest_auth_login_scenarios[wrong-admin]_20251126_121102.mp4
+2025-11-26 12:11:02,552 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Tests for Digest Authentication scenarios.
+2025-11-26 12:11:02,552 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to Digest Authentication page.
+2025-11-26 12:11:02,552 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigating to URL: https://wrong:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-26 12:11:02,638 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:11:02,639 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Navigation completed.
+2025-11-26 12:11:02,639 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Check if login succeeded.
+2025-11-26 12:11:02,649 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:11:02,657 - CRITICAL - [test_digest_auth_login_scenarios[wrong-admin]] Unexpected error for locator ('css selector', 'div#content p'): Alert Text: None
+Message: Unexpected promptUserAndPass dialog detected. Performed handler "dismiss"
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:927:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:3233:11
+
+2025-11-26 12:11:02,724 - WARNING - [test_digest_auth_login_scenarios[wrong-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:11:02,725 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Page source: <html><head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head><body><pre></pre></body></html>
+2025-11-26 12:11:02,725 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Test PASSED: test_digest_auth_login_scenarios[wrong-admin] (Duration: 0.17s).
+2025-11-26 12:11:02,726 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording...
+2025-11-26 12:11:02,727 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Stopping video recording and assembling.
+2025-11-26 12:11:02,792 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251126_121102/frames
+2025-11-26 12:11:02,792 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Found 2 valid frames.
+2025-11-26 12:11:02,947 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251126_121102/test_digest_auth_login_scenarios[wrong-admin]_20251126_121102.mp4
+2025-11-26 12:11:03,949 - INFO - [test_digest_auth_login_scenarios[wrong-admin]] Video attached to test body: tests_recordings/gw2/test_digest_auth_login_scenarios[wrong-admin]_20251126_121102/test_digest_auth_login_scenarios[wrong-admin]_20251126_121102.mp4
