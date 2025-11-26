@@ -51,31 +51,35 @@ root_logger = configure_root_logger(log_file="test_logs.log", level=logging.INFO
 
 def get_chrome_driver_path() -> str:
     """Get ChromeDriver path with extended cache and error handling."""
+    # First try system chromedriver (Jenkins environment)
+    system_path = shutil.which("chromedriver")
+    if system_path:
+        root_logger.info(f"Using system ChromeDriver: {system_path}")
+        return system_path
+
+    # Fallback to webdriver-manager for local development
     try:
         cache_manager = DriverCacheManager(valid_range=CACHE_VALID_RANGE)
         return ChromeDriverManager(cache_manager=cache_manager).install()
     except Exception as e:
-        root_logger.warning(f"Failed to download ChromeDriver: {e}")
-        # Fallback: try to use system chromedriver
-        system_path = shutil.which("chromedriver")
-        if system_path:
-            root_logger.info(f"Using system ChromeDriver: {system_path}")
-            return system_path
+        root_logger.error(f"Failed to download ChromeDriver: {e}")
         raise RuntimeError("ChromeDriver not found. Install manually or check GitHub API limits.")
 
 
 def get_firefox_driver_path() -> str:
     """Get GeckoDriver path with extended cache and error handling."""
+    # First try system geckodriver (Jenkins environment)
+    system_path = shutil.which("geckodriver")
+    if system_path:
+        root_logger.info(f"Using system GeckoDriver: {system_path}")
+        return system_path
+
+    # Fallback to webdriver-manager for local development
     try:
         cache_manager = DriverCacheManager(valid_range=CACHE_VALID_RANGE)
         return GeckoDriverManager(cache_manager=cache_manager).install()
     except Exception as e:
-        root_logger.warning(f"Failed to download GeckoDriver: {e}")
-        # Fallback: try to use system geckodriver
-        system_path = shutil.which("geckodriver")
-        if system_path:
-            root_logger.info(f"Using system GeckoDriver: {system_path}")
-            return system_path
+        root_logger.error(f"Failed to download GeckoDriver: {e}")
         raise RuntimeError("GeckoDriver not found. Install manually or check GitHub API limits.")
 
 
@@ -482,6 +486,17 @@ def downloads_directory(request: FixtureRequest) -> Generator[Path, None, None]:
 # ============================================================================
 
 
+def pytest_addoption(parser: pytest.Parser) -> None:
+    """Add custom command line options."""
+    parser.addoption(
+        "--browser",
+        action="store",
+        default=None,  # Will fallback to env_config.BROWSER
+        help="Browser to run tests: chrome or firefox",
+        choices=["chrome", "firefox"],
+    )
+
+
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config: pytest.Config) -> None:
     """Add browser info to Allure environment and ensure clean results directory."""
@@ -489,7 +504,15 @@ def pytest_configure(config: pytest.Config) -> None:
     conftest_config.geolocation_lat = 32.0853
     conftest_config.geolocation_lon = 34.7818
 
-    browser = config.getoption("--browser", default=env_config.BROWSER.lower())
+    # Get browser from CLI arg, then env var, then config default
+    browser = config.getoption("--browser", default=None)
+    if browser is None:
+        browser = os.environ.get("BROWSER", env_config.BROWSER).lower()
+    else:
+        browser = browser.lower()
+
+    # Store for use in fixtures
+    config.browser = browser  # type: ignore[attr-defined]
 
     # Get the allure results directory from pytest options
     allure_results_dir = getattr(config.option, "allure_report_dir", None)
@@ -501,8 +524,12 @@ def pytest_configure(config: pytest.Config) -> None:
 
     allure_results_path = Path(allure_results_dir)
 
-    # Clean allure results ONLY for non-xdist runs to avoid mixing browser results
-    if not os.environ.get("PYTEST_XDIST_WORKER"):
+    # Clean allure results ONLY for non-xdist runs and local development
+    # Don't clean in CI environments (Jenkins or GitHub Actions) where browsers run in parallel
+    is_ci_environment = os.environ.get("JENKINS_HOME") or os.environ.get("GITHUB_ACTIONS")
+    is_xdist_worker = os.environ.get("PYTEST_XDIST_WORKER")
+
+    if not is_xdist_worker and not is_ci_environment:
         if allure_results_path.exists():
             root_logger.info(f"Cleaning Allure results directory: {allure_results_path}")
             shutil.rmtree(allure_results_path, ignore_errors=True)
@@ -510,17 +537,25 @@ def pytest_configure(config: pytest.Config) -> None:
         # Create fresh directory
         allure_results_path.mkdir(parents=True, exist_ok=True)
         root_logger.info(f"Created fresh Allure results directory: {allure_results_path}")
+    else:
+        # In CI or xdist, just ensure directory exists
+        allure_results_path.mkdir(parents=True, exist_ok=True)
+        if is_ci_environment:
+            root_logger.info(f"Running in CI environment - preserving existing results in: {allure_results_path}")
 
-        env_properties_path = allure_results_path / "environment.properties"
-        with open(env_properties_path, "w") as f:
-            f.write(f"Browser={browser.capitalize()}\n")
-            f.write(f"Headless={env_config.HEADLESS}\n")
-            f.write(f"Maximized={env_config.MAXIMIZED}\n")
-            f.write(f"Base.URL={env_config.BASE_URL}\n")
-            f.write(f"Window.Size={WINDOW_WIDTH}x{WINDOW_HEIGHT}\n")
-            if os.environ.get("GITHUB_ACTIONS"):
-                f.write(f"Run.ID={os.environ.get('GITHUB_RUN_ID', 'N/A')}\n")
-                f.write(f"Workflow={os.environ.get('GITHUB_WORKFLOW', 'N/A')}\n")
+    env_properties_path = allure_results_path / "environment.properties"
+    with open(env_properties_path, "w") as f:
+        f.write(f"Browser={browser.capitalize()}\n")
+        f.write(f"Headless={env_config.HEADLESS}\n")
+        f.write(f"Maximized={env_config.MAXIMIZED}\n")
+        f.write(f"Base.URL={env_config.BASE_URL}\n")
+        f.write(f"Window.Size={WINDOW_WIDTH}x{WINDOW_HEIGHT}\n")
+        if os.environ.get("GITHUB_ACTIONS"):
+            f.write(f"Run.ID={os.environ.get('GITHUB_RUN_ID', 'N/A')}\n")
+            f.write(f"Workflow={os.environ.get('GITHUB_WORKFLOW', 'N/A')}\n")
+        elif os.environ.get("JENKINS_HOME"):
+            f.write(f"Build.Number={os.environ.get('BUILD_NUMBER', 'N/A')}\n")
+            f.write(f"Job.Name={os.environ.get('JOB_NAME', 'N/A')}\n")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
