@@ -344,12 +344,12 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git checkout main
-          # Replace existing run IDs in the URLs with the new one
+          git pull origin main --rebase
           sed -i "s/build-chrome-[0-9]*/build-chrome-${{ github.run_id }}/g" README.md
           sed -i "s/build-firefox-[0-9]*/build-firefox-${{ github.run_id }}/g" README.md
           git add README.md
           git commit -m "Update README with latest run ID ${{ github.run_id }}" || echo "No changes to commit"
-          git push
+          git push || (git pull --rebase && git push)
 
   clean:
     needs: deploy
