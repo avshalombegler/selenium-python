@@ -1,0 +1,25 @@
+2025-11-26 14:34:19,411 - INFO - [test_ab_testing_content] Starting test: test_ab_testing_content
+2025-11-26 14:34:19,872 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:34:19,957 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:34:19,958 - INFO - [] Capture loop started.
+2025-11-26 14:34:19,958 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:19,959 - INFO - [test_ab_testing_content] Started recording: tests_recordings/gw2/test_ab_testing_content_20251126_143419/test_ab_testing_content_20251126_143419.mp4
+2025-11-26 14:34:19,960 - INFO - [test_ab_testing_content] Tests for verifying title and paragraph content of page
+2025-11-26 14:34:19,960 - INFO - [test_ab_testing_content] Navigating to A/B Testing page.
+2025-11-26 14:34:20,151 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:20,177 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:20,361 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:20,401 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:20,627 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:20,923 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:34:20,994 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:21,003 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:34:21,016 - INFO - [test_ab_testing_content] Retrieved title: A/B Test Control.
+2025-11-26 14:34:21,028 - INFO - [test_ab_testing_content] Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+2025-11-26 14:34:21,028 - INFO - [test_ab_testing_content] Test PASSED: test_ab_testing_content (Duration: 1.07s).
+2025-11-26 14:34:21,029 - INFO - [test_ab_testing_content] Stopping video recording...
+2025-11-26 14:34:21,029 - INFO - [test_ab_testing_content] Stopping video recording and assembling.
+2025-11-26 14:34:21,062 - INFO - [test_ab_testing_content] Thread joined. Frames dir: tests_recordings/gw2/test_ab_testing_content_20251126_143419/frames
+2025-11-26 14:34:21,063 - INFO - [test_ab_testing_content] Found 4 valid frames.
+2025-11-26 14:34:21,229 - INFO - [test_ab_testing_content] Video created: tests_recordings/gw2/test_ab_testing_content_20251126_143419/test_ab_testing_content_20251126_143419.mp4
+2025-11-26 14:34:22,231 - INFO - [test_ab_testing_content] Video attached to test body: tests_recordings/gw2/test_ab_testing_content_20251126_143419/test_ab_testing_content_20251126_143419.mp4

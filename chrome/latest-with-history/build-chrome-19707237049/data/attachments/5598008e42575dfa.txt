@@ -1,0 +1,25 @@
+2025-11-26 14:34:32,540 - INFO - [test_horizontal_slider_functionality_using_mouse] Starting test: test_horizontal_slider_functionality_using_mouse
+2025-11-26 14:34:32,639 - INFO - [test_horizontal_slider_functionality_using_mouse] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:34:32,653 - INFO - [test_horizontal_slider_functionality_using_mouse] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:34:32,654 - INFO - [] Capture loop started.
+2025-11-26 14:34:32,654 - INFO - [test_horizontal_slider_functionality_using_mouse] Started recording: tests_recordings/gw1/test_horizontal_slider_functionality_using_mouse_20251126_143432/test_horizontal_slider_functionality_using_mouse_20251126_143432.mp4
+2025-11-26 14:34:32,656 - INFO - [test_horizontal_slider_functionality_using_mouse] Tests Horizontal Slider.
+2025-11-26 14:34:32,656 - INFO - [test_horizontal_slider_functionality_using_mouse] Navigating to Horizontal Slider page.
+2025-11-26 14:34:32,772 - WARNING - [test_horizontal_slider_functionality_using_mouse] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:32,916 - INFO - [test_horizontal_slider_functionality_using_mouse] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:34:33,016 - WARNING - [test_horizontal_slider_functionality_using_mouse] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:33,022 - INFO - [test_horizontal_slider_functionality_using_mouse] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:34:33,023 - INFO - [test_horizontal_slider_functionality_using_mouse] Setting horizontal slider value using drag and drop.
+2025-11-26 14:34:35,071 - INFO - [test_horizontal_slider_functionality_using_mouse] Verifying horizontal slider new value.
+2025-11-26 14:34:35,154 - WARNING - [test_horizontal_slider_functionality_using_mouse] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:35,168 - INFO - [test_horizontal_slider_functionality_using_mouse] Setting horizontal slider value using drag and drop.
+2025-11-26 14:34:36,291 - WARNING - [test_horizontal_slider_functionality_using_mouse] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:37,203 - INFO - [test_horizontal_slider_functionality_using_mouse] Verifying horizontal slider new value.
+2025-11-26 14:34:37,280 - WARNING - [test_horizontal_slider_functionality_using_mouse] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:37,293 - INFO - [test_horizontal_slider_functionality_using_mouse] Test PASSED: test_horizontal_slider_functionality_using_mouse (Duration: 4.64s).
+2025-11-26 14:34:37,293 - INFO - [test_horizontal_slider_functionality_using_mouse] Stopping video recording...
+2025-11-26 14:34:37,293 - INFO - [test_horizontal_slider_functionality_using_mouse] Stopping video recording and assembling.
+2025-11-26 14:34:37,342 - INFO - [test_horizontal_slider_functionality_using_mouse] Thread joined. Frames dir: tests_recordings/gw1/test_horizontal_slider_functionality_using_mouse_20251126_143432/frames
+2025-11-26 14:34:37,342 - INFO - [test_horizontal_slider_functionality_using_mouse] Found 14 valid frames.
+2025-11-26 14:34:37,730 - INFO - [test_horizontal_slider_functionality_using_mouse] Video created: tests_recordings/gw1/test_horizontal_slider_functionality_using_mouse_20251126_143432/test_horizontal_slider_functionality_using_mouse_20251126_143432.mp4
+2025-11-26 14:34:38,731 - INFO - [test_horizontal_slider_functionality_using_mouse] Video attached to test body: tests_recordings/gw1/test_horizontal_slider_functionality_using_mouse_20251126_143432/test_horizontal_slider_functionality_using_mouse_20251126_143432.mp4

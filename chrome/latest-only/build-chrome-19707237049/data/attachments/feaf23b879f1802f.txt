@@ -1,0 +1,21 @@
+2025-11-26 14:34:14,550 - INFO - [test_iframe_functionality] Starting test: test_iframe_functionality
+2025-11-26 14:34:14,624 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:34:14,642 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:34:14,643 - INFO - [] Capture loop started.
+2025-11-26 14:34:14,643 - INFO - [test_iframe_functionality] Started recording: tests_recordings/gw3/test_iframe_functionality_20251126_143414/test_iframe_functionality_20251126_143414.mp4
+2025-11-26 14:34:14,644 - INFO - [test_iframe_functionality] Tests iframe.
+2025-11-26 14:34:14,644 - INFO - [test_iframe_functionality] Navigating to Frames page.
+2025-11-26 14:34:14,795 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:14,964 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:34:15,066 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:15,072 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:34:15,072 - INFO - [test_iframe_functionality] Clicking iframe link.
+2025-11-26 14:34:15,856 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:15,857 - INFO - [test_iframe_functionality] Getting page source.
+2025-11-26 14:34:16,877 - INFO - [test_iframe_functionality] Test SKIPPED: test_iframe_functionality (Duration: 2.23s).
+2025-11-26 14:34:16,878 - INFO - [test_iframe_functionality] Stopping video recording...
+2025-11-26 14:34:16,878 - INFO - [test_iframe_functionality] Stopping video recording and assembling.
+2025-11-26 14:34:16,904 - INFO - [test_iframe_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_iframe_functionality_20251126_143414/frames
+2025-11-26 14:34:16,904 - INFO - [test_iframe_functionality] Found 10 valid frames.
+2025-11-26 14:34:17,255 - INFO - [test_iframe_functionality] Video created: tests_recordings/gw3/test_iframe_functionality_20251126_143414/test_iframe_functionality_20251126_143414.mp4
+2025-11-26 14:34:18,261 - INFO - [test_iframe_functionality] Video attached to test body: tests_recordings/gw3/test_iframe_functionality_20251126_143414/test_iframe_functionality_20251126_143414.mp4

@@ -1,0 +1,28 @@
+2025-11-26 14:34:10,822 - INFO - [test_valid_images_count] Starting test: test_valid_images_count
+2025-11-26 14:34:11,098 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:34:11,109 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:34:11,110 - INFO - [] Capture loop started.
+2025-11-26 14:34:11,110 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:11,111 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw3/test_valid_images_count_20251126_143411/test_valid_images_count_20251126_143411.mp4
+2025-11-26 14:34:11,112 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-26 14:34:11,113 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-26 14:34:11,224 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:11,266 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:11,324 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:11,386 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:11,596 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:34:11,683 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:11,689 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:34:11,690 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-26 14:34:11,690 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-26 14:34:11,693 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-26 14:34:11,706 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-26 14:34:11,715 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-26 14:34:11,726 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-26 14:34:11,726 - INFO - [test_valid_images_count] Test PASSED: test_valid_images_count (Duration: 0.61s).
+2025-11-26 14:34:11,727 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-26 14:34:11,727 - INFO - [test_valid_images_count] Stopping video recording and assembling.
+2025-11-26 14:34:11,749 - INFO - [test_valid_images_count] Thread joined. Frames dir: tests_recordings/gw3/test_valid_images_count_20251126_143411/frames
+2025-11-26 14:34:11,750 - INFO - [test_valid_images_count] Found 3 valid frames.
+2025-11-26 14:34:11,974 - INFO - [test_valid_images_count] Video created: tests_recordings/gw3/test_valid_images_count_20251126_143411/test_valid_images_count_20251126_143411.mp4
+2025-11-26 14:34:12,976 - INFO - [test_valid_images_count] Video attached to test body: tests_recordings/gw3/test_valid_images_count_20251126_143411/test_valid_images_count_20251126_143411.mp4

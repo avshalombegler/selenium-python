@@ -1,0 +1,31 @@
+2025-11-26 14:33:42,649 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Starting test: test_files_upload_functionality[TestingFile.pdf]
+2025-11-26 14:33:42,876 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:33:42,885 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:33:42,886 - INFO - [] Capture loop started.
+2025-11-26 14:33:42,886 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:33:42,887 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Started recording: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251126_143342/test_files_upload_functionality[TestingFile.pdf]_20251126_143342.mp4
+2025-11-26 14:33:42,888 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Tests Files Upload.
+2025-11-26 14:33:42,888 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Navigating to File Upload page.
+2025-11-26 14:33:42,984 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:42,998 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:33:43,107 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:43,165 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:33:43,293 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:33:43,366 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:43,373 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:33:43,374 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Upload file using the Upload button.
+2025-11-26 14:33:43,374 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/TestingFile.pdf' on element '('id', 'file-upload')'.
+2025-11-26 14:33:43,432 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:33:43,866 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:33:43,958 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:44,023 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:33:44,023 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Verifying file uploaded sucessfully.
+2025-11-26 14:33:44,026 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:33:44,170 - WARNING - [test_files_upload_functionality[TestingFile.pdf]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:44,176 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Test PASSED: test_files_upload_functionality[TestingFile.pdf] (Duration: 1.29s).
+2025-11-26 14:33:44,177 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Stopping video recording...
+2025-11-26 14:33:44,177 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Stopping video recording and assembling.
+2025-11-26 14:33:44,233 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251126_143342/frames
+2025-11-26 14:33:44,234 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Found 5 valid frames.
+2025-11-26 14:33:44,553 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Video created: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251126_143342/test_files_upload_functionality[TestingFile.pdf]_20251126_143342.mp4
+2025-11-26 14:33:45,555 - INFO - [test_files_upload_functionality[TestingFile.pdf]] Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[TestingFile.pdf]_20251126_143342/test_files_upload_functionality[TestingFile.pdf]_20251126_143342.mp4

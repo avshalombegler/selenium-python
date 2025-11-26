@@ -1,0 +1,36 @@
+2025-11-26 14:34:08,450 - INFO - [test_checkboxes_functionality] Starting test: test_checkboxes_functionality
+2025-11-26 14:34:08,827 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:34:08,841 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:34:08,842 - INFO - [] Capture loop started.
+2025-11-26 14:34:08,842 - INFO - [test_checkboxes_functionality] Started recording: tests_recordings/gw0/test_checkboxes_functionality_20251126_143408/test_checkboxes_functionality_20251126_143408.mp4
+2025-11-26 14:34:08,842 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:08,845 - INFO - [test_checkboxes_functionality] Test for verifying checkbox functionality.
+2025-11-26 14:34:08,845 - INFO - [test_checkboxes_functionality] Navigating to Checkboxes page.
+2025-11-26 14:34:08,929 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:08,972 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:09,104 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:09,398 - INFO - [test_checkboxes_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:34:09,503 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:09,510 - INFO - [test_checkboxes_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:34:09,510 - INFO - [test_checkboxes_functionality] Check checkboxes initial state.
+2025-11-26 14:34:09,510 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(1)')'.
+2025-11-26 14:34:09,522 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(2)')'.
+2025-11-26 14:34:09,531 - INFO - [test_checkboxes_functionality] Set checkboxes new state.
+2025-11-26 14:34:09,531 - INFO - [test_checkboxes_functionality] Set checkbox '0' to 'True'.
+2025-11-26 14:34:09,531 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(1)')'.
+2025-11-26 14:34:09,570 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:09,612 - INFO - [test_checkboxes_functionality] Set checkbox '1' to 'False'.
+2025-11-26 14:34:09,612 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(2)')'.
+2025-11-26 14:34:09,683 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:09,749 - INFO - [] Using Firefox screenshot method.
+2025-11-26 14:34:09,791 - INFO - [test_checkboxes_functionality] Check checkboxes new state.
+2025-11-26 14:34:09,791 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(1)')'.
+2025-11-26 14:34:09,867 - WARNING - [test_checkboxes_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:34:09,876 - INFO - [test_checkboxes_functionality] Checking selected state on element '('css selector', 'form#checkboxes input[type=checkbox]:nth-of-type(2)')'.
+2025-11-26 14:34:09,887 - INFO - [test_checkboxes_functionality] Test PASSED: test_checkboxes_functionality (Duration: 1.04s).
+2025-11-26 14:34:09,888 - INFO - [test_checkboxes_functionality] Stopping video recording...
+2025-11-26 14:34:09,888 - INFO - [test_checkboxes_functionality] Stopping video recording and assembling.
+2025-11-26 14:34:09,931 - INFO - [test_checkboxes_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_checkboxes_functionality_20251126_143408/frames
+2025-11-26 14:34:09,932 - INFO - [test_checkboxes_functionality] Found 5 valid frames.
+2025-11-26 14:34:10,120 - INFO - [test_checkboxes_functionality] Video created: tests_recordings/gw0/test_checkboxes_functionality_20251126_143408/test_checkboxes_functionality_20251126_143408.mp4
+2025-11-26 14:34:11,122 - INFO - [test_checkboxes_functionality] Video attached to test body: tests_recordings/gw0/test_checkboxes_functionality_20251126_143408/test_checkboxes_functionality_20251126_143408.mp4

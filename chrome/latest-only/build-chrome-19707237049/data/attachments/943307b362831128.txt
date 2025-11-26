@@ -1,0 +1,24 @@
+2025-11-26 14:33:43,332 - INFO - [test_files_upload_functionality[test1.json]] Starting test: test_files_upload_functionality[test1.json]
+2025-11-26 14:33:43,414 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:33:43,439 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:33:43,440 - INFO - [] Capture loop started.
+2025-11-26 14:33:43,441 - INFO - [test_files_upload_functionality[test1.json]] Started recording: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_143343/test_files_upload_functionality[test1.json]_20251126_143343.mp4
+2025-11-26 14:33:43,442 - INFO - [test_files_upload_functionality[test1.json]] Tests Files Upload.
+2025-11-26 14:33:43,442 - INFO - [test_files_upload_functionality[test1.json]] Navigating to File Upload page.
+2025-11-26 14:33:43,551 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:43,714 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:33:43,815 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:43,821 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:33:43,821 - INFO - [test_files_upload_functionality[test1.json]] Upload file using the Upload button.
+2025-11-26 14:33:43,821 - INFO - [test_files_upload_functionality[test1.json]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/test1.json' on element '('id', 'file-upload')'.
+2025-11-26 14:33:44,278 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 14:33:44,570 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:33:44,576 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 14:33:44,576 - INFO - [test_files_upload_functionality[test1.json]] Verifying file uploaded sucessfully.
+2025-11-26 14:33:44,594 - INFO - [test_files_upload_functionality[test1.json]] Test PASSED: test_files_upload_functionality[test1.json] (Duration: 1.15s).
+2025-11-26 14:33:44,594 - INFO - [test_files_upload_functionality[test1.json]] Stopping video recording...
+2025-11-26 14:33:44,595 - INFO - [test_files_upload_functionality[test1.json]] Stopping video recording and assembling.
+2025-11-26 14:33:44,630 - INFO - [test_files_upload_functionality[test1.json]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_143343/frames
+2025-11-26 14:33:44,688 - INFO - [test_files_upload_functionality[test1.json]] Found 3 valid frames.
+2025-11-26 14:33:44,929 - INFO - [test_files_upload_functionality[test1.json]] Video created: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_143343/test_files_upload_functionality[test1.json]_20251126_143343.mp4
+2025-11-26 14:33:45,930 - INFO - [test_files_upload_functionality[test1.json]] Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_143343/test_files_upload_functionality[test1.json]_20251126_143343.mp4
