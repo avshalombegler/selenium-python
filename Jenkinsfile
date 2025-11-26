@@ -20,8 +20,6 @@ pipeline {
         HEADLESS = 'True'
         MAXIMIZED = 'False'
         PYTHONUNBUFFERED = '1'
-        ALLURE_VERSION = '2.35.1'
-        PATH = "/usr/local/bin:${env.PATH}"
     }
     
     stages {
@@ -100,21 +98,6 @@ EOF
                 }
             }
         }
-        
-        stage('Generate Allure Report') {
-            steps {
-                script {
-                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                    
-                    browsers.each { browser ->
-                        sh """
-                            mkdir -p reports/allure-report-${browser}
-                            /usr/local/bin/allure generate --clean reports/allure-results-${browser} -o reports/allure-report-${browser}
-                        """
-                    }
-                }
-            }
-        }
     }
     
     post {
@@ -123,10 +106,11 @@ EOF
                 def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                 
                 browsers.each { browser ->
-                    // Publish Allure Report
+                    // Publish Allure Report using Jenkins tool
                     allure([
                         includeProperties: false,
                         jdk: '',
+                        commandline: 'Allure',
                         properties: [],
                         reportBuildPolicy: 'ALWAYS',
                         results: [[path: "reports/allure-results-${browser}"]]
@@ -136,7 +120,6 @@ EOF
                     junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
                     
                     // Archive artifacts
-                    archiveArtifacts artifacts: "reports/allure-report-${browser}/**", allowEmptyArchive: true
                     archiveArtifacts artifacts: 'tests_recordings/**', allowEmptyArchive: true
                     archiveArtifacts artifacts: 'tests_screenshots/**', allowEmptyArchive: true
                 }
