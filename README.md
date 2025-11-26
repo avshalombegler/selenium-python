@@ -202,12 +202,19 @@ selenium-python/
 │    ├── base/                  # BasePage, PageManager
 │    ├── common/                # Shared components
 │    └── features/              # Page objects per feature
+├── pytest_plugins/             # Modular pytest plugins
+│    ├── __init__.py
+│    ├── browser_fixtures.py    # Browser/driver setup
+│    ├── browser_helpers.py     # Browser utilities
+│    ├── directory_fixtures.py  # Directory management
+│    ├── hooks.py               # Pytest hooks
+│    ├── recording_fixtures.py  # Video recording
+│    └── test_fixtures.py       # Test-level fixtures
 ├── reports/                    # Allure results and artifacts
 ├── tests/                      # Test cases
 ├── utils/                      # Helpers (logging, video, etc.)
-├── conftest.py                 # Fixtures, hooks, driver setup
+├── conftest.py                 # Main conftest - registers plugins
 ├── pyproject.toml              # Project configuration
-├── pytest.ini                  # Pytest configuration
 ├── .env                        # Environment variables (gitignored)
 ├── requirements.txt
 └── README.md
