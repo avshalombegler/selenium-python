@@ -16,7 +16,7 @@ if TYPE_CHECKING:
 @allure.feature("Horizontal Slider")
 @allure.story("Tests Horizontal Slider functionality")
 @pytest.mark.usefixtures("page_manager")
-class TestGeolocation:
+class TestHorizontalSlider:
     """Tests Horizontal Slider functionality"""
 
     EXPECTED_MIN_RANGE: float = 0.0
