@@ -1,0 +1,35 @@
+INFO     root:conftest.py:391 Starting test: test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw1/test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]_20251126_092044/test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]_20251126_092044.mp4
+INFO     root:test_form_authentication.py:42 Tests Form Authentication.
+INFO     root:main_page.py:178 Navigating to Form Authentication page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h2')'.
+INFO     root:test_form_authentication.py:45 Entering username 'tomsmith'.
+INFO     root:base_page.py:139 Sending keys 'tomsmith' on element '('id', 'username')'.
+INFO     root:test_form_authentication.py:48 Entering password 'SuperSecretPassword!'.
+INFO     root:base_page.py:139 Sending keys 'SuperSecretPassword!' on element '('id', 'password')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_form_authentication.py:52 Clicking login button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h2')'.
+INFO     root:test_form_authentication.py:55 Verifying flash message after successfull login.
+INFO     root:test_form_authentication.py:58 Clicking logout button.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h2')'.
+INFO     root:test_form_authentication.py:61 Verifying flash message after successfull logout.
+INFO     root:conftest.py:422 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw1/test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]_20251126_092044/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 6 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw1/test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]_20251126_092044/test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]_20251126_092044.mp4
+INFO     root:conftest.py:441 Video attached to test body: tests_recordings/gw1/test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]_20251126_092044/test_form_authentication_functionality[tomsmith-SuperSecretPassword!-You logged into a secure area!]_20251126_092044.mp4

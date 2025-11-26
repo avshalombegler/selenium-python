@@ -1,0 +1,28 @@
+2025-11-26 09:20:48,182 - INFO - [test_add_elements] Starting test: test_add_elements
+2025-11-26 09:20:48,183 - INFO - [test_add_elements] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:20:48,257 - INFO - [test_add_elements] Navigation completed.
+2025-11-26 09:20:48,258 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:20:48,272 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:20:48,273 - INFO - [] Capture loop started.
+2025-11-26 09:20:48,274 - INFO - [test_add_elements] Started recording: tests_recordings/gw3/test_add_elements_20251126_092048/test_add_elements_20251126_092048.mp4
+2025-11-26 09:20:48,275 - INFO - [test_add_elements] Tests for add elements.
+2025-11-26 09:20:48,275 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-26 09:20:48,391 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:48,575 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-26 09:20:48,680 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:48,685 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-26 09:20:48,686 - INFO - [test_add_elements] Add two elements.
+2025-11-26 09:20:48,686 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-26 09:20:48,790 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-26 09:20:48,912 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:49,002 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-26 09:20:49,002 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-26 09:20:49,112 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:49,112 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-26 09:20:49,113 - INFO - [test_add_elements] Test PASSED: test_add_elements (Duration: 0.84s).
+2025-11-26 09:20:49,113 - INFO - [test_add_elements] Stopping video recording...
+2025-11-26 09:20:49,113 - INFO - [test_add_elements] Stopping video recording and assembling.
+2025-11-26 09:20:49,168 - INFO - [test_add_elements] Thread joined. Frames dir: tests_recordings/gw3/test_add_elements_20251126_092048/frames
+2025-11-26 09:20:49,169 - INFO - [test_add_elements] Found 4 valid frames.
+2025-11-26 09:20:49,380 - INFO - [test_add_elements] Video created: tests_recordings/gw3/test_add_elements_20251126_092048/test_add_elements_20251126_092048.mp4
+2025-11-26 09:20:50,381 - INFO - [test_add_elements] Video attached to test body: tests_recordings/gw3/test_add_elements_20251126_092048/test_add_elements_20251126_092048.mp4

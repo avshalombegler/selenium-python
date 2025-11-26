@@ -1,0 +1,23 @@
+INFO     root:conftest.py:391 Starting test: test_table_header_per_column[Sit]
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw0/test_table_header_per_column[Sit]_20251126_092049/test_table_header_per_column[Sit]_20251126_092049.mp4
+INFO     root:test_challenging_dom.py:42 Verify table head text per column.
+INFO     root:main_page.py:74 Navigating to Challenging DOM page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:45 Getting table head text of column 'Sit'.
+INFO     root:conftest.py:422 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Sit]_20251126_092049/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 3 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw0/test_table_header_per_column[Sit]_20251126_092049/test_table_header_per_column[Sit]_20251126_092049.mp4
+INFO     root:conftest.py:441 Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Sit]_20251126_092049/test_table_header_per_column[Sit]_20251126_092049.mp4

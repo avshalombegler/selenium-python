@@ -1,0 +1,104 @@
+2025-11-26 09:21:31,810 - INFO - [test_textbox_enable_and_disable] Starting test: test_textbox_enable_and_disable
+2025-11-26 09:21:31,810 - INFO - [test_textbox_enable_and_disable] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:21:32,315 - INFO - [test_textbox_enable_and_disable] Navigation completed.
+2025-11-26 09:21:32,315 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:21:32,352 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:21:32,354 - INFO - [] Capture loop started.
+2025-11-26 09:21:32,354 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:32,356 - INFO - [test_textbox_enable_and_disable] Started recording: tests_recordings/gw2/test_textbox_enable_and_disable_20251126_092132/test_textbox_enable_and_disable_20251126_092132.mp4
+2025-11-26 09:21:32,360 - INFO - [test_textbox_enable_and_disable] Test Enable/disable textbox area.
+2025-11-26 09:21:32,360 - INFO - [test_textbox_enable_and_disable] Navigating to Dynamic Controls page.
+2025-11-26 09:21:32,524 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:32,584 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:21:32,646 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,048 - INFO - [test_textbox_enable_and_disable] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-26 09:21:33,082 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:21:33,089 - INFO - [test_textbox_enable_and_disable] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-26 09:21:33,089 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-26 09:21:33,090 - INFO - [test_textbox_enable_and_disable] Checking enabled state on element '('css selector', 'input[type=text]')'.
+2025-11-26 09:21:33,101 - INFO - [test_textbox_enable_and_disable] Clicking enable button.
+2025-11-26 09:21:33,148 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,194 - INFO - [test_textbox_enable_and_disable] Waiting for loader to complete.
+2025-11-26 09:21:33,227 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:21:33,293 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,389 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,485 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,581 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,677 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,772 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,870 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:33,968 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,066 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,164 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,261 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,371 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,469 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,579 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,676 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,787 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,886 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:34,984 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,090 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,191 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,287 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,391 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,488 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,584 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,681 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,778 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,811 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:21:35,874 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:35,969 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,070 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,169 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,267 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,317 - INFO - [test_textbox_enable_and_disable] Checking if textbox is enabled.
+2025-11-26 09:21:36,318 - INFO - [test_textbox_enable_and_disable] Checking enabled state on element '('css selector', 'input[type=text]')'.
+2025-11-26 09:21:36,330 - INFO - [test_textbox_enable_and_disable] Get enable message text.
+2025-11-26 09:21:36,342 - INFO - [test_textbox_enable_and_disable] Clicking disable button.
+2025-11-26 09:21:36,375 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,414 - INFO - [test_textbox_enable_and_disable] Waiting for loader to complete.
+2025-11-26 09:21:36,445 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:21:36,511 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,622 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,722 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,817 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:36,913 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,009 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,107 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,216 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,314 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,420 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,522 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,619 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,715 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,813 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:37,922 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,019 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,116 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,212 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,308 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,406 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,504 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,604 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,701 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,799 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,896 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:38,993 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:39,027 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:21:39,095 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:39,193 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:39,291 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:39,391 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:39,495 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:21:39,531 - WARNING - [test_textbox_enable_and_disable] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:21:39,531 - INFO - [test_textbox_enable_and_disable] Checking if textbox is disabled.
+2025-11-26 09:21:39,531 - INFO - [test_textbox_enable_and_disable] Checking enabled state on element '('css selector', 'input[type=text]')'.
+2025-11-26 09:21:39,543 - INFO - [test_textbox_enable_and_disable] Get disable message text.
+2025-11-26 09:21:39,558 - INFO - [test_textbox_enable_and_disable] Test PASSED: test_textbox_enable_and_disable (Duration: 7.20s).
+2025-11-26 09:21:39,558 - INFO - [test_textbox_enable_and_disable] Stopping video recording...
+2025-11-26 09:21:39,558 - INFO - [test_textbox_enable_and_disable] Stopping video recording and assembling.
+2025-11-26 09:21:39,592 - INFO - [test_textbox_enable_and_disable] Thread joined. Frames dir: tests_recordings/gw2/test_textbox_enable_and_disable_20251126_092132/frames
+2025-11-26 09:21:39,593 - INFO - [test_textbox_enable_and_disable] Found 67 valid frames.
+2025-11-26 09:21:40,794 - INFO - [test_textbox_enable_and_disable] Video created: tests_recordings/gw2/test_textbox_enable_and_disable_20251126_092132/test_textbox_enable_and_disable_20251126_092132.mp4
+2025-11-26 09:21:41,795 - INFO - [test_textbox_enable_and_disable] Video attached to test body: tests_recordings/gw2/test_textbox_enable_and_disable_20251126_092132/test_textbox_enable_and_disable_20251126_092132.mp4

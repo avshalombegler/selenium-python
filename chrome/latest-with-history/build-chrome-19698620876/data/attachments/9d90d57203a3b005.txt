@@ -1,0 +1,18 @@
+INFO     root:conftest.py:391 Starting test: test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     root:conftest.py:416 Started recording: tests_recordings/gw3/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251126_092039/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251126_092039.mp4
+INFO     root:test_basic_auth_login_scenarios.py:40 Tests basic autorization login scenatios.
+INFO     root:main_page.py:61 Returning object of Basic Auth page.
+INFO     root:test_basic_auth_login_scenarios.py:43 Initialize URL based on username and password.
+INFO     root:test_basic_auth_login_scenarios.py:46 Get status code and authorization message.
+INFO     root:test_basic_auth_login_scenarios.py:49 Validate status code and authorization message.
+INFO     root:conftest.py:422 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw3/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251126_092039/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 1 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw3/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251126_092039/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251126_092039.mp4
+INFO     root:conftest.py:441 Video attached to test body: tests_recordings/gw3/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251126_092039/test_basic_auth[admin-admin-200-Congratulations! You must have the proper credentials.]_20251126_092039.mp4

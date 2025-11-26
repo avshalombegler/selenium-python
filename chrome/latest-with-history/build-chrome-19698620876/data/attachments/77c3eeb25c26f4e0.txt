@@ -1,0 +1,28 @@
+2025-11-26 09:20:34,373 - INFO - [test_top_nested_frames_functionality[right]] Starting test: test_top_nested_frames_functionality[right]
+2025-11-26 09:20:34,373 - INFO - [test_top_nested_frames_functionality[right]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:20:34,478 - INFO - [test_top_nested_frames_functionality[right]] Navigation completed.
+2025-11-26 09:20:34,479 - INFO - [test_top_nested_frames_functionality[right]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:20:34,517 - INFO - [test_top_nested_frames_functionality[right]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:20:34,518 - INFO - [] Capture loop started.
+2025-11-26 09:20:34,519 - INFO - [test_top_nested_frames_functionality[right]] Started recording: tests_recordings/gw3/test_top_nested_frames_functionality[right]_20251126_092034/test_top_nested_frames_functionality[right]_20251126_092034.mp4
+2025-11-26 09:20:34,520 - INFO - [test_top_nested_frames_functionality[right]] Tests Nested Frames.
+2025-11-26 09:20:34,521 - INFO - [test_top_nested_frames_functionality[right]] Navigating to Frames page.
+2025-11-26 09:20:34,631 - WARNING - [test_top_nested_frames_functionality[right]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:34,828 - INFO - [test_top_nested_frames_functionality[right]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 09:20:34,957 - WARNING - [test_top_nested_frames_functionality[right]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:34,969 - INFO - [test_top_nested_frames_functionality[right]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 09:20:34,970 - INFO - [test_top_nested_frames_functionality[right]] Clicking Nested Frames link.
+2025-11-26 09:20:35,343 - INFO - [test_top_nested_frames_functionality[right]] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-26 09:20:35,445 - WARNING - [test_top_nested_frames_functionality[right]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:35,450 - INFO - [test_top_nested_frames_functionality[right]] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-26 09:20:35,451 - INFO - [test_top_nested_frames_functionality[right]] Switching to frame 'top'.
+2025-11-26 09:20:35,481 - INFO - [test_top_nested_frames_functionality[right]] Switching to nested frame 'right'.
+2025-11-26 09:20:35,523 - INFO - [test_top_nested_frames_functionality[right]] Verifying frame text.
+2025-11-26 09:20:35,628 - WARNING - [test_top_nested_frames_functionality[right]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:20:35,646 - INFO - [test_top_nested_frames_functionality[right]] Test PASSED: test_top_nested_frames_functionality[right] (Duration: 1.13s).
+2025-11-26 09:20:35,647 - INFO - [test_top_nested_frames_functionality[right]] Stopping video recording...
+2025-11-26 09:20:35,647 - INFO - [test_top_nested_frames_functionality[right]] Stopping video recording and assembling.
+2025-11-26 09:20:35,689 - INFO - [test_top_nested_frames_functionality[right]] Thread joined. Frames dir: tests_recordings/gw3/test_top_nested_frames_functionality[right]_20251126_092034/frames
+2025-11-26 09:20:35,689 - INFO - [test_top_nested_frames_functionality[right]] Found 5 valid frames.
+2025-11-26 09:20:35,948 - INFO - [test_top_nested_frames_functionality[right]] Video created: tests_recordings/gw3/test_top_nested_frames_functionality[right]_20251126_092034/test_top_nested_frames_functionality[right]_20251126_092034.mp4
+2025-11-26 09:20:36,950 - INFO - [test_top_nested_frames_functionality[right]] Video attached to test body: tests_recordings/gw3/test_top_nested_frames_functionality[right]_20251126_092034/test_top_nested_frames_functionality[right]_20251126_092034.mp4
