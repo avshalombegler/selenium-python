@@ -24,7 +24,6 @@ jobs:
         include:
           - suite: full
             marker: full
-            # marker: current
     
     name: ${{ matrix.browser }} ${{ matrix.suite }} tests
     steps:
@@ -112,7 +111,7 @@ jobs:
 
       - name: Create .env file
         run: |
-          echo "BASE_URL=https://the-internet.herokuapp.com/" > .env
+          echo "BASE_URL=${{ secrets.BASE_URL }}" > .env
           echo "BROWSER=${{ matrix.browser }}" >> .env
           echo "SHORT_TIMEOUT=3" >> .env
           echo "LONG_TIMEOUT=10" >> .env
@@ -124,7 +123,7 @@ jobs:
           echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
 
       - name: Check website availability
-        run: curl -s -f https://the-internet.herokuapp.com/ || exit 1
+        run: curl -s -f ${{ secrets.BASE_URL }} || exit 1
 
       - name: Create reports directories
         run: mkdir -p reports/allure-results reports/allure-report
