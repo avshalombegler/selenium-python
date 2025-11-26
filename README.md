@@ -196,25 +196,25 @@ Latest reports are published automatically to GitHub Pages:
 ```
 selenium-python/
 ├── .github/
-│    └── workflows/ci.yml       # GitHub Actions workflow
-├── config/env_config.py        # Loads .env variables
-├── pages/                      # Page Object Model classes
-│    ├── base/                  # BasePage, PageManager
-│    ├── common/                # Shared components
-│    └── features/              # Page objects per feature
-├── pytest_plugins/             # Modular pytest plugins
-│    ├── browser_fixtures.py    # Browser/driver setup
-│    ├── browser_helpers.py     # Browser utilities
-│    ├── directory_fixtures.py  # Directory management
-│    ├── hooks.py               # Pytest hooks
-│    ├── recording_fixtures.py  # Video recording
-│    └── test_fixtures.py       # Test-level fixtures
-├── reports/                    # Allure results and artifacts
-├── tests/                      # Test cases
-├── utils/                      # Helpers (logging, video, etc.)
-├── conftest.py                 # Main conftest - registers plugins
-├── pyproject.toml              # Project configuration
-├── .env                        # Environment variables (gitignored)
+│    └── workflows/ci.yml               # GitHub Actions workflow
+├── config/env_config.py                # Loads .env variables
+├── pages/                              # Page Object Model classes
+│    ├── base/                          # BasePage, PageManager
+│    ├── common/                        # Shared components
+│    └── features/                      # Page objects per feature
+├── pytest_plugins/                     # Modular pytest plugins
+│    ├── browser_fixtures.py            # Browser/driver setup
+│    ├── browser_helpers.py             # Browser utilities
+│    ├── directory_fixtures.py          # Directory management
+│    ├── hooks.py                       # Pytest hooks
+│    ├── recording_fixtures.py          # Video recording
+│    └── test_fixtures.py               # Test-level fixtures
+├── reports/                            # Allure results and artifacts
+├── tests/                              # Test cases
+├── utils/                              # Helpers (logging, video, etc.)
+├── conftest.py                         # Main conftest - registers plugins
+├── pyproject.toml                      # Project configuration
+├── .env                                # Environment variables (gitignored)
 ├── requirements.txt
 └── README.md
 ```
