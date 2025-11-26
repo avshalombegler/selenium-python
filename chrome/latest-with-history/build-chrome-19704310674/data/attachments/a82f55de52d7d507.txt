@@ -1,0 +1,26 @@
+2025-11-26 12:52:07,071 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Starting test: test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]
+2025-11-26 12:52:07,072 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:52:07,210 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Navigation completed.
+2025-11-26 12:52:07,210 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:52:07,244 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:52:07,245 - INFO - [] Capture loop started.
+2025-11-26 12:52:07,246 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Started recording: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251126_125207/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251126_125207.mp4
+2025-11-26 12:52:07,247 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Tests Files Upload.
+2025-11-26 12:52:07,248 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Navigating to File Upload page.
+2025-11-26 12:52:07,360 - WARNING - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:07,563 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 12:52:07,659 - WARNING - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:07,664 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 12:52:07,665 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Upload file using the Upload button.
+2025-11-26 12:52:07,665 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/Screenshot_2025-11-16_at_9.23.28_PM.png' on element '('id', 'file-upload')'.
+2025-11-26 12:52:08,301 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 12:52:08,415 - WARNING - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:08,421 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 12:52:08,421 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Verifying file uploaded sucessfully.
+2025-11-26 12:52:08,441 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Test PASSED: test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png] (Duration: 1.19s).
+2025-11-26 12:52:08,441 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Stopping video recording...
+2025-11-26 12:52:08,442 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Stopping video recording and assembling.
+2025-11-26 12:52:08,477 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251126_125207/frames
+2025-11-26 12:52:08,478 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Found 3 valid frames.
+2025-11-26 12:52:08,683 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Video created: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251126_125207/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251126_125207.mp4
+2025-11-26 12:52:09,685 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251126_125207/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251126_125207.mp4

@@ -1,0 +1,38 @@
+2025-11-26 12:52:29,323 - INFO - [test_example_1] Starting test: test_example_1
+2025-11-26 12:52:29,323 - INFO - [test_example_1] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:52:29,454 - INFO - [test_example_1] Navigation completed.
+2025-11-26 12:52:29,454 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:52:29,486 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:52:29,492 - INFO - [] Capture loop started.
+2025-11-26 12:52:29,492 - INFO - [test_example_1] Started recording: tests_recordings/gw2/test_example_1_20251126_125229/test_example_1_20251126_125229.mp4
+2025-11-26 12:52:29,494 - INFO - [test_example_1] Tests Dynamic Loading - Example 1.
+2025-11-26 12:52:29,494 - INFO - [test_example_1] Navigating to Dynamic Loading page.
+2025-11-26 12:52:29,625 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:29,825 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 12:52:29,943 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:29,948 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 12:52:29,948 - INFO - [test_example_1] Navigating to Example 1: Element on page that is hidden page.
+2025-11-26 12:52:30,185 - INFO - [test_example_1] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-26 12:52:30,274 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:30,279 - INFO - [test_example_1] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-26 12:52:30,279 - INFO - [test_example_1] Clicking start button.
+2025-11-26 12:52:30,359 - INFO - [test_example_1] Waiting for loader to complete.
+2025-11-26 12:52:30,441 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:30,972 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:31,547 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:32,094 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:32,639 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:33,217 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:33,783 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:34,344 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:34,944 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:35,459 - WARNING - [test_example_1] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:35,460 - INFO - [test_example_1] Verifying success message.
+2025-11-26 12:52:35,533 - INFO - [test_example_1] Test PASSED: test_example_1 (Duration: 6.04s).
+2025-11-26 12:52:35,534 - INFO - [test_example_1] Stopping video recording...
+2025-11-26 12:52:35,534 - INFO - [test_example_1] Stopping video recording and assembling.
+2025-11-26 12:52:35,630 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:35,700 - INFO - [test_example_1] Thread joined. Frames dir: tests_recordings/gw2/test_example_1_20251126_125229/frames
+2025-11-26 12:52:35,701 - INFO - [test_example_1] Found 38 valid frames.
+2025-11-26 12:52:36,606 - INFO - [test_example_1] Video created: tests_recordings/gw2/test_example_1_20251126_125229/test_example_1_20251126_125229.mp4
+2025-11-26 12:52:37,609 - INFO - [test_example_1] Video attached to test body: tests_recordings/gw2/test_example_1_20251126_125229/test_example_1_20251126_125229.mp4

@@ -1,0 +1,29 @@
+2025-11-26 12:52:33,651 - INFO - [test_iframe_functionality] Starting test: test_iframe_functionality
+2025-11-26 12:52:33,651 - INFO - [test_iframe_functionality] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 12:52:33,986 - INFO - [test_iframe_functionality] Navigation completed.
+2025-11-26 12:52:33,986 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 12:52:33,996 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 12:52:33,997 - INFO - [] Capture loop started.
+2025-11-26 12:52:33,997 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:52:33,997 - INFO - [test_iframe_functionality] Started recording: tests_recordings/gw0/test_iframe_functionality_20251126_125233/test_iframe_functionality_20251126_125233.mp4
+2025-11-26 12:52:33,999 - INFO - [test_iframe_functionality] Tests iframe.
+2025-11-26 12:52:34,000 - INFO - [test_iframe_functionality] Navigating to Frames page.
+2025-11-26 12:52:34,104 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:52:34,143 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:34,205 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:52:34,265 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:34,324 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:52:34,523 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 12:52:34,603 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:34,610 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 12:52:34,610 - INFO - [test_iframe_functionality] Clicking iframe link.
+2025-11-26 12:52:34,668 - INFO - [] Using Firefox screenshot method.
+2025-11-26 12:52:35,371 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 12:52:35,371 - INFO - [test_iframe_functionality] Getting page source.
+2025-11-26 12:52:35,376 - INFO - [test_iframe_functionality] Test SKIPPED: test_iframe_functionality (Duration: 1.38s).
+2025-11-26 12:52:35,376 - INFO - [test_iframe_functionality] Stopping video recording...
+2025-11-26 12:52:35,376 - INFO - [test_iframe_functionality] Stopping video recording and assembling.
+2025-11-26 12:52:35,436 - INFO - [test_iframe_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_iframe_functionality_20251126_125233/frames
+2025-11-26 12:52:35,437 - INFO - [test_iframe_functionality] Found 5 valid frames.
+2025-11-26 12:52:35,743 - INFO - [test_iframe_functionality] Video created: tests_recordings/gw0/test_iframe_functionality_20251126_125233/test_iframe_functionality_20251126_125233.mp4
+2025-11-26 12:52:36,745 - INFO - [test_iframe_functionality] Video attached to test body: tests_recordings/gw0/test_iframe_functionality_20251126_125233/test_iframe_functionality_20251126_125233.mp4
