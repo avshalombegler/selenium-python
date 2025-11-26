@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A modern, maintainable test automation suite for https://the-internet.herokuapp.com.  
-Built with **Page Object Model**, **pytest**, **Allure reporting**, **video recording**, and **GitHub Actions CI/CD**.
+Built with **Page Object Model**, **pytest**, **Allure reporting**, **video recording**, and **CI/CD** (GitHub Actions & Jenkins).
 
 ## Table of Contents
 - [Features](#features)
@@ -15,6 +15,8 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - [Environment Variables](#environment-variables-env)
 - [Running tests locally](#running-tests-locally)
 - [GitHub Actions CI/CD](#github-actions-cicd)
+- [Jenkins CI/CD](#jenkins-cicd)
+- [Docker Support](#docker-support)
 - [Allure Reports](#allure-reports-live)
 - [Project layout](#project-layout)
 
@@ -26,6 +28,7 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - Multi-browser support (Chrome & Firefox)
 - Headless & headed mode
 - GitHub Actions CI with matrix strategy
+- Jenkins pipeline support with Docker
 - Allure reports automatically published to GitHub Pages
 
 ## Requirements
@@ -128,6 +131,53 @@ PASSWORD=SuperSecretPassword!
 - Parallel execution with pytest-xdist
 - Artifacts: Allure results, videos, junit.xml
 - Allure reports automatically deployed to GitHub Pages
+
+## Jenkins CI/CD
+
+### Prerequisites
+- Jenkins 2.400+ with Docker support
+- Docker installed on Jenkins agent
+- Required Jenkins plugins:
+  - Docker Pipeline
+  - Allure Plugin
+  - HTML Publisher Plugin
+
+### Pipeline Features
+- Multi-browser execution (Chrome & Firefox)
+- Parallel test execution
+- Allure report generation
+- Video recording for failed tests
+- Automatic artifact archiving
+- Post-build notifications
+
+### Running in Jenkins
+1. Create a new Pipeline job in Jenkins
+2. Configure SCM to point to your repository
+3. Set "Script Path" to `Jenkinsfile`
+4. Configure build triggers (e.g., Poll SCM, GitHub webhook)
+5. Run the pipeline
+
+### Pipeline Parameters
+The Jenkinsfile supports the following parameters:
+- `BROWSER`: Browser choice (chrome/firefox/both)
+- `HEADLESS`: Run in headless mode (true/false)
+- `PARALLEL_WORKERS`: Number of parallel workers (default: auto)
+
+### Viewing Reports in Jenkins
+After each build:
+- **Allure Report:** Click "Allure Report" in the build menu
+- **JUnit Results:** Available in "Test Result" section
+- **Videos:** Archived as build artifacts
+
+## Docker Support
+
+### Dockerfile.jenkins
+The project includes a custom Jenkins agent image with all dependencies:
+- Python 3.10
+- Chrome & ChromeDriver
+- Firefox & GeckoDriver
+- Allure CLI
+- All Python dependencies
 
 ## Allure Reports (Live)
 Latest reports are published automatically to GitHub Pages:
