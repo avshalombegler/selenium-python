@@ -1,0 +1,34 @@
+2025-11-26 15:09:03,304 - INFO - [test_inputs_functionality] Starting test: test_inputs_functionality
+2025-11-26 15:09:03,374 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 15:09:03,390 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 15:09:03,391 - INFO - [] Capture loop started.
+2025-11-26 15:09:03,391 - INFO - [test_inputs_functionality] Started recording: tests_recordings/gw0/test_inputs_functionality_20251126_150903/test_inputs_functionality_20251126_150903.mp4
+2025-11-26 15:09:03,393 - INFO - [test_inputs_functionality] Tests Inputs.
+2025-11-26 15:09:03,393 - INFO - [test_inputs_functionality] Navigating to Inputs page.
+2025-11-26 15:09:03,528 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:09:03,709 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h3')' for 10s.
+2025-11-26 15:09:03,883 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:09:03,909 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h3')'.
+2025-11-26 15:09:03,909 - INFO - [test_inputs_functionality] Entering input number.
+2025-11-26 15:09:03,909 - INFO - [test_inputs_functionality] Sending keys '1337' on element '('css selector', 'input[type=number]')'.
+2025-11-26 15:09:04,115 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:09:04,198 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 15:09:04,373 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:09:04,410 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 15:09:04,410 - INFO - [test_inputs_functionality] Increasing number value using keyboard arrow.
+2025-11-26 15:09:04,589 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:09:06,674 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 15:09:06,773 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:09:06,786 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 15:09:06,786 - INFO - [test_inputs_functionality] Decreasing number value using keyboard arrow.
+2025-11-26 15:09:07,411 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 15:09:07,527 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:09:07,537 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 15:09:07,538 - INFO - [test_inputs_functionality] Test PASSED: test_inputs_functionality (Duration: 4.15s).
+2025-11-26 15:09:07,539 - INFO - [test_inputs_functionality] Stopping video recording...
+2025-11-26 15:09:07,539 - INFO - [test_inputs_functionality] Stopping video recording and assembling.
+2025-11-26 15:09:07,590 - INFO - [test_inputs_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_inputs_functionality_20251126_150903/frames
+2025-11-26 15:09:07,590 - INFO - [test_inputs_functionality] Found 12 valid frames.
+2025-11-26 15:09:08,110 - INFO - [test_inputs_functionality] Video created: tests_recordings/gw0/test_inputs_functionality_20251126_150903/test_inputs_functionality_20251126_150903.mp4
+2025-11-26 15:09:09,115 - INFO - [test_inputs_functionality] Video attached to test body: tests_recordings/gw0/test_inputs_functionality_20251126_150903/test_inputs_functionality_20251126_150903.mp4
+2025-11-26 15:09:09,117 - INFO - [test_inputs_functionality] Quitting driver for browser: chrome.

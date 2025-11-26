@@ -1,0 +1,26 @@
+2025-11-26 15:08:58,828 - INFO - [test_content_changes_after_refresh] Starting test: test_content_changes_after_refresh
+2025-11-26 15:08:58,902 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 15:08:58,917 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 15:08:58,918 - INFO - [] Capture loop started.
+2025-11-26 15:08:58,918 - INFO - [test_content_changes_after_refresh] Started recording: tests_recordings/gw0/test_content_changes_after_refresh_20251126_150858/test_content_changes_after_refresh_20251126_150858.mp4
+2025-11-26 15:08:58,920 - INFO - [test_content_changes_after_refresh] Test that content changes after page refresh.
+2025-11-26 15:08:58,920 - INFO - [test_content_changes_after_refresh] Navigating to Dynamic Content page.
+2025-11-26 15:08:59,046 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:59,225 - INFO - [test_content_changes_after_refresh] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 15:08:59,334 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:59,339 - INFO - [test_content_changes_after_refresh] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 15:08:59,478 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:59,490 - INFO - [test_content_changes_after_refresh] Refreshing page.
+2025-11-26 15:08:59,576 - INFO - [test_content_changes_after_refresh] Page refreshed.
+2025-11-26 15:08:59,678 - WARNING - [test_content_changes_after_refresh] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:59,750 - INFO - [test_content_changes_after_refresh] Validating initial content blocks structure and count.
+2025-11-26 15:08:59,750 - INFO - [test_content_changes_after_refresh] Validating refreshed content blocks structure and count.
+2025-11-26 15:08:59,750 - INFO - [test_content_changes_after_refresh] Comparing content changes after refresh.
+2025-11-26 15:08:59,750 - INFO - [test_content_changes_after_refresh] Test PASSED: test_content_changes_after_refresh (Duration: 0.83s).
+2025-11-26 15:08:59,751 - INFO - [test_content_changes_after_refresh] Stopping video recording...
+2025-11-26 15:08:59,751 - INFO - [test_content_changes_after_refresh] Stopping video recording and assembling.
+2025-11-26 15:08:59,842 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:59,910 - INFO - [test_content_changes_after_refresh] Thread joined. Frames dir: tests_recordings/gw0/test_content_changes_after_refresh_20251126_150858/frames
+2025-11-26 15:08:59,911 - INFO - [test_content_changes_after_refresh] Found 5 valid frames.
+2025-11-26 15:09:00,250 - INFO - [test_content_changes_after_refresh] Video created: tests_recordings/gw0/test_content_changes_after_refresh_20251126_150858/test_content_changes_after_refresh_20251126_150858.mp4
+2025-11-26 15:09:01,252 - INFO - [test_content_changes_after_refresh] Video attached to test body: tests_recordings/gw0/test_content_changes_after_refresh_20251126_150858/test_content_changes_after_refresh_20251126_150858.mp4

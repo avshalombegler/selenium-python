@@ -1,0 +1,25 @@
+2025-11-26 15:08:05,686 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-26 15:08:05,687 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-26 15:08:05,688 - INFO - [] Directory cleaned and recreated at: downloads/gw0.
+2025-11-26 15:08:05,689 - INFO - [] Using system ChromeDriver: /usr/bin/chromedriver
+2025-11-26 15:08:17,312 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue]
+2025-11-26 15:08:17,777 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 15:08:17,823 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 15:08:17,824 - INFO - [] Capture loop started.
+2025-11-26 15:08:17,826 - INFO - [test_each_button_clicks[blue]] Started recording: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_150817/test_each_button_clicks[blue]_20251126_150817.mp4
+2025-11-26 15:08:17,828 - INFO - [test_each_button_clicks[blue]] Verify each button in page is clickable.
+2025-11-26 15:08:17,829 - INFO - [test_each_button_clicks[blue]] Navigating to Challenging DOM page.
+2025-11-26 15:08:17,960 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:18,294 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 15:08:18,469 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:18,479 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 15:08:18,479 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-11-26 15:08:18,652 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:18,823 - INFO - [test_each_button_clicks[blue]] Test PASSED: test_each_button_clicks[blue] (Duration: 0.99s).
+2025-11-26 15:08:18,824 - INFO - [test_each_button_clicks[blue]] Stopping video recording...
+2025-11-26 15:08:18,824 - INFO - [test_each_button_clicks[blue]] Stopping video recording and assembling.
+2025-11-26 15:08:18,936 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 15:08:19,004 - INFO - [test_each_button_clicks[blue]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_150817/frames
+2025-11-26 15:08:19,005 - INFO - [test_each_button_clicks[blue]] Found 4 valid frames.
+2025-11-26 15:08:19,433 - INFO - [test_each_button_clicks[blue]] Video created: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_150817/test_each_button_clicks[blue]_20251126_150817.mp4
+2025-11-26 15:08:20,435 - INFO - [test_each_button_clicks[blue]] Video attached to test body: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_150817/test_each_button_clicks[blue]_20251126_150817.mp4
