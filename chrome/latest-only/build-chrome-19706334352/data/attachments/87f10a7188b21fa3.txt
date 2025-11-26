@@ -1,0 +1,24 @@
+2025-11-26 14:03:43,487 - INFO - [test_valid_images_count] Starting test: test_valid_images_count
+2025-11-26 14:03:43,553 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:03:43,571 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:03:43,572 - INFO - [] Capture loop started.
+2025-11-26 14:03:43,573 - INFO - [test_valid_images_count] Started recording: tests_recordings/gw2/test_valid_images_count_20251126_140343/test_valid_images_count_20251126_140343.mp4
+2025-11-26 14:03:43,574 - INFO - [test_valid_images_count] Verify valid images count.
+2025-11-26 14:03:43,574 - INFO - [test_valid_images_count] Navigating to Broken Images page.
+2025-11-26 14:03:43,678 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:03:43,850 - INFO - [test_valid_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:03:43,959 - WARNING - [test_valid_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:03:43,967 - INFO - [test_valid_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:03:43,968 - INFO - [test_valid_images_count] Getting valid images count.
+2025-11-26 14:03:43,968 - INFO - [test_valid_images_count] Get all image elements.
+2025-11-26 14:03:43,977 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-26 14:03:43,991 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-26 14:03:44,002 - INFO - [test_valid_images_count] Check if image is broken.
+2025-11-26 14:03:44,011 - INFO - [test_valid_images_count] Found 1 valid images.
+2025-11-26 14:03:44,011 - INFO - [test_valid_images_count] Test PASSED: test_valid_images_count (Duration: 0.44s).
+2025-11-26 14:03:44,012 - INFO - [test_valid_images_count] Stopping video recording...
+2025-11-26 14:03:44,012 - INFO - [test_valid_images_count] Stopping video recording and assembling.
+2025-11-26 14:03:44,021 - INFO - [test_valid_images_count] Thread joined. Frames dir: tests_recordings/gw2/test_valid_images_count_20251126_140343/frames
+2025-11-26 14:03:44,021 - INFO - [test_valid_images_count] Found 2 valid frames.
+2025-11-26 14:03:44,212 - INFO - [test_valid_images_count] Video created: tests_recordings/gw2/test_valid_images_count_20251126_140343/test_valid_images_count_20251126_140343.mp4
+2025-11-26 14:03:45,213 - INFO - [test_valid_images_count] Video attached to test body: tests_recordings/gw2/test_valid_images_count_20251126_140343/test_valid_images_count_20251126_140343.mp4
