@@ -1,0 +1,27 @@
+2025-11-26 13:27:43,890 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green]
+2025-11-26 13:27:44,116 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 13:27:44,132 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 13:27:44,133 - INFO - [] Capture loop started.
+2025-11-26 13:27:44,133 - INFO - [] Using Firefox screenshot method.
+2025-11-26 13:27:44,134 - INFO - [test_each_button_clicks[green]] Started recording: tests_recordings/gw0/test_each_button_clicks[green]_20251126_132744/test_each_button_clicks[green]_20251126_132744.mp4
+2025-11-26 13:27:44,135 - INFO - [test_each_button_clicks[green]] Verify each button in page is clickable.
+2025-11-26 13:27:44,135 - INFO - [test_each_button_clicks[green]] Navigating to Challenging DOM page.
+2025-11-26 13:27:44,202 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:27:44,243 - INFO - [] Using Firefox screenshot method.
+2025-11-26 13:27:44,398 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:27:44,437 - INFO - [] Using Firefox screenshot method.
+2025-11-26 13:27:44,646 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 13:27:44,733 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:27:44,753 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 13:27:44,753 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-11-26 13:27:44,796 - INFO - [] Using Firefox screenshot method.
+2025-11-26 13:27:44,857 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:27:44,926 - INFO - [] Using Firefox screenshot method.
+2025-11-26 13:27:45,148 - INFO - [test_each_button_clicks[green]] Test PASSED: test_each_button_clicks[green] (Duration: 1.01s).
+2025-11-26 13:27:45,149 - INFO - [test_each_button_clicks[green]] Stopping video recording...
+2025-11-26 13:27:45,149 - INFO - [test_each_button_clicks[green]] Stopping video recording and assembling.
+2025-11-26 13:27:45,222 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:27:45,291 - INFO - [test_each_button_clicks[green]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[green]_20251126_132744/frames
+2025-11-26 13:27:45,291 - INFO - [test_each_button_clicks[green]] Found 5 valid frames.
+2025-11-26 13:27:45,597 - INFO - [test_each_button_clicks[green]] Video created: tests_recordings/gw0/test_each_button_clicks[green]_20251126_132744/test_each_button_clicks[green]_20251126_132744.mp4
+2025-11-26 13:27:46,599 - INFO - [test_each_button_clicks[green]] Video attached to test body: tests_recordings/gw0/test_each_button_clicks[green]_20251126_132744/test_each_button_clicks[green]_20251126_132744.mp4

@@ -1,0 +1,22 @@
+2025-11-26 13:28:06,765 - INFO - [test_floating_menu_functionality[Contact]] Starting test: test_floating_menu_functionality[Contact]
+2025-11-26 13:28:06,884 - INFO - [test_floating_menu_functionality[Contact]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 13:28:06,900 - INFO - [test_floating_menu_functionality[Contact]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 13:28:06,901 - INFO - [] Capture loop started.
+2025-11-26 13:28:06,902 - INFO - [test_floating_menu_functionality[Contact]] Started recording: tests_recordings/gw3/test_floating_menu_functionality[Contact]_20251126_132806/test_floating_menu_functionality[Contact]_20251126_132806.mp4
+2025-11-26 13:28:06,903 - INFO - [test_floating_menu_functionality[Contact]] Tests Files Download.
+2025-11-26 13:28:06,904 - INFO - [test_floating_menu_functionality[Contact]] Navigating to Floating Menu page.
+2025-11-26 13:28:07,024 - WARNING - [test_floating_menu_functionality[Contact]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:28:07,256 - INFO - [test_floating_menu_functionality[Contact]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 13:28:07,447 - WARNING - [test_floating_menu_functionality[Contact]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:28:07,454 - INFO - [test_floating_menu_functionality[Contact]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 13:28:07,454 - INFO - [test_floating_menu_functionality[Contact]] Scroll down.
+2025-11-26 13:28:07,460 - INFO - [test_floating_menu_functionality[Contact]] Clicking floating menu item 'Contact'.
+2025-11-26 13:28:07,612 - INFO - [test_floating_menu_functionality[Contact]] Verifying url updated after click on menu item.
+2025-11-26 13:28:07,778 - WARNING - [test_floating_menu_functionality[Contact]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 13:28:07,778 - INFO - [test_floating_menu_functionality[Contact]] Test PASSED: test_floating_menu_functionality[Contact] (Duration: 0.87s).
+2025-11-26 13:28:07,779 - INFO - [test_floating_menu_functionality[Contact]] Stopping video recording...
+2025-11-26 13:28:07,779 - INFO - [test_floating_menu_functionality[Contact]] Stopping video recording and assembling.
+2025-11-26 13:28:07,845 - INFO - [test_floating_menu_functionality[Contact]] Thread joined. Frames dir: tests_recordings/gw3/test_floating_menu_functionality[Contact]_20251126_132806/frames
+2025-11-26 13:28:07,845 - INFO - [test_floating_menu_functionality[Contact]] Found 3 valid frames.
+2025-11-26 13:28:08,149 - INFO - [test_floating_menu_functionality[Contact]] Video created: tests_recordings/gw3/test_floating_menu_functionality[Contact]_20251126_132806/test_floating_menu_functionality[Contact]_20251126_132806.mp4
+2025-11-26 13:28:09,320 - INFO - [test_floating_menu_functionality[Contact]] Video attached to test body: tests_recordings/gw3/test_floating_menu_functionality[Contact]_20251126_132806/test_floating_menu_functionality[Contact]_20251126_132806.mp4

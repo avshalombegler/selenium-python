@@ -1,0 +1,32 @@
+INFO     root:test_fixtures.py:43 Starting test: test_cells_content_per_column[Sit-Definiebas]
+INFO     root:base_page.py:204 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:209 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:recording_fixtures.py:39 Started recording: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251126_132805/test_cells_content_per_column[Sit-Definiebas]_20251126_132805.mp4
+INFO     root:test_challenging_dom.py:54 Verify cell content per column.
+INFO     root:main_page.py:74 Navigating to Challenging DOM page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:base_page.py:204 Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:209 Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+INFO     root:test_challenging_dom.py:59 Getting table cell 'Definiebas' text under column 'Sit'.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:59 Getting table cell 'Definiebas' text under column 'Sit'.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_challenging_dom.py:59 Getting table cell 'Definiebas' text under column 'Sit'.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:recording_fixtures.py:45 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251126_132805/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 7 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251126_132805/test_cells_content_per_column[Sit-Definiebas]_20251126_132805.mp4
+INFO     root:recording_fixtures.py:62 Video attached to test body: tests_recordings/gw0/test_cells_content_per_column[Sit-Definiebas]_20251126_132805/test_cells_content_per_column[Sit-Definiebas]_20251126_132805.mp4
