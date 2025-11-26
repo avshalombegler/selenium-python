@@ -30,4 +30,4 @@ class InfiniteScrollPage(BasePage):
 
     @allure.step("Scroll to bottom of page")
     def scroll_to_bottom_of_page(self) -> None:
-        self.scroll_to_bottom(wait_after=1)
+        self.scroll_to_bottom(wait_after=2)

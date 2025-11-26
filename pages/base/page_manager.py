@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
+from urllib.parse import urljoin
 
 import allure
 
@@ -46,6 +47,7 @@ class PageManager:
         # all pages built by PageManager share the same logger instance.
         self.logger = logger if logger is not None else get_logger(__name__)
         self.main_page = MainPage(driver, self.logger)
+        self.base_url = "https://the-internet.herokuapp.com/"
 
     @allure.step("Navigate to base URL: {url}")
     def navigate_to_base_url(self, url: str) -> MainPage:
@@ -77,7 +79,8 @@ class PageManager:
     def get_digest_auth_page(self, username: str, password: str) -> DigestAuthPage:
         if not username or not password:
             raise ValueError(f"Invalid credentials: username='{username}', password='{password or ''}'")
-        url = f"https://{username}:{password}@the-internet.herokuapp.com/digest_auth"
+        base_path = urljoin(self.base_url, "digest_auth")
+        url = base_path.replace("https://", f"https://{username}:{password}@")
         return self.main_page.get_digest_auth_page(url)
 
     def get_drag_and_drop_page(self) -> DragAndDropPage:

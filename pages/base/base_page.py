@@ -4,7 +4,9 @@ from collections.abc import Callable
 from logging import Logger
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, TypeVar, cast
+from urllib.parse import urljoin
 
+import allure
 from selenium.common.exceptions import (
     JavascriptException,
     NoSuchElementException,
@@ -276,16 +278,10 @@ class BasePage:
     # NAVIGATION METHODS
     # ============================================================================
 
-    def navigate_to(self, url: str) -> None:
-        """
-        Navigate to a URL.
-
-        Args:
-            url: Target URL to navigate to
-        """
-        self.logger.info(f"Navigating to URL: {url}.")
+    @allure.step("Navigate to the page")
+    def navigate_to(self, path: str = "") -> None:
+        url = urljoin(self.base_url, path)
         self.driver.get(url)
-        self.logger.info("Navigation completed.")
 
     def refresh_page(self) -> None:
         """Refresh the current page."""
@@ -658,7 +654,10 @@ class BasePage:
                 lambda d: d.execute_script("return document.readyState") == "complete",
                 message=f"Page not ready after {timeout}s",
             )
+            
+            import time
 
+            time.sleep(1)
             page_source = self.driver.page_source
 
             if lowercase:
