@@ -7,7 +7,6 @@ pipeline {
 
     parameters {
         choice(name: 'BROWSER', choices: ['chrome', 'firefox', 'both'], description: 'Browser to run tests on')
-        choice(name: 'MARKER', defaultValue: 'full', description: 'Test marker to run')
         string(name: 'WORKERS', defaultValue: 'auto', description: 'Number of parallel workers')
     }
     
@@ -18,7 +17,6 @@ pipeline {
     }
     
     environment {
-        BASE_URL = credentials('BASE_URL')
         SHORT_TIMEOUT = '3'
         LONG_TIMEOUT = '10'
         VIDEO_RECORDING = 'True'
@@ -26,6 +24,7 @@ pipeline {
         MAXIMIZED = 'False'
         PYTHONUNBUFFERED = '1'
         ALLURE_VERSION = '2.35.1'
+        MARKER = 'full'
     }
     
     stages {
@@ -65,6 +64,7 @@ pipeline {
         stage('Create .env File') {
             steps {
                 withCredentials([
+                    string(credentialsId: 'BASE_URL', variable: 'BASE_URL'),
                     string(credentialsId: 'TEST_USERNAME', variable: 'USERNAME'),
                     string(credentialsId: 'TEST_PASSWORD', variable: 'PASSWORD')
                 ]) {
@@ -86,7 +86,9 @@ EOF
         
         stage('Check Website Availability') {
             steps {
-                sh 'curl -s -f ${BASE_URL} || exit 1'
+                withCredentials([string(credentialsId: 'BASE_URL', variable: 'BASE_URL')]) {
+                    sh 'curl -s -f ${BASE_URL} || exit 1'
+                }
             }
         }
         
