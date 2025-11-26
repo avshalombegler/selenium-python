@@ -106,23 +106,34 @@ EOF
                 def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                 
                 browsers.each { browser ->
-                    // Publish Allure Report using Jenkins tool
-                    allure([
-                        includeProperties: false,
-                        jdk: '',
-                        commandline: 'Allure',
-                        properties: [],
-                        reportBuildPolicy: 'ALWAYS',
-                        results: [[path: "reports/allure-results-${browser}"]]
+                    // Generate Allure HTML report manually
+                    sh """
+                        allure generate reports/allure-results-${browser} \
+                        -o reports/allure-report-${browser} \
+                        --clean
+                    """
+                    
+                    // Archive the HTML report
+                    archiveArtifacts artifacts: "reports/allure-report-${browser}/**", allowEmptyArchive: true
+                    
+                    // Publish HTML report for viewing in Jenkins
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: "reports/allure-report-${browser}",
+                        reportFiles: 'index.html',
+                        reportName: "Allure Report - ${browser}",
+                        reportTitles: ''
                     ])
                     
                     // Archive JUnit XML
                     junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
-                    
-                    // Archive artifacts
-                    archiveArtifacts artifacts: 'tests_recordings/**', allowEmptyArchive: true
-                    archiveArtifacts artifacts: 'tests_screenshots/**', allowEmptyArchive: true
                 }
+                
+                // Archive other artifacts
+                archiveArtifacts artifacts: 'tests_recordings/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'tests_screenshots/**', allowEmptyArchive: true
             }
         }
         
