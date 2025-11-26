@@ -1,0 +1,29 @@
+2025-11-26 11:58:05,403 - INFO - [test_floating_menu_functionality[News]] Starting test: test_floating_menu_functionality[News]
+2025-11-26 11:58:05,403 - INFO - [test_floating_menu_functionality[News]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 11:58:06,014 - INFO - [test_floating_menu_functionality[News]] Navigation completed.
+2025-11-26 11:58:06,014 - INFO - [test_floating_menu_functionality[News]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 11:58:06,024 - INFO - [test_floating_menu_functionality[News]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 11:58:06,024 - INFO - [] Capture loop started.
+2025-11-26 11:58:06,024 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:06,025 - INFO - [test_floating_menu_functionality[News]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[News]_20251126_115806/test_floating_menu_functionality[News]_20251126_115806.mp4
+2025-11-26 11:58:06,026 - INFO - [test_floating_menu_functionality[News]] Tests Files Download.
+2025-11-26 11:58:06,026 - INFO - [test_floating_menu_functionality[News]] Navigating to Floating Menu page.
+2025-11-26 11:58:06,158 - WARNING - [test_floating_menu_functionality[News]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:06,166 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:06,252 - WARNING - [test_floating_menu_functionality[News]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:06,314 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:06,774 - INFO - [test_floating_menu_functionality[News]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 11:58:06,821 - WARNING - [test_floating_menu_functionality[News]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:06,828 - INFO - [test_floating_menu_functionality[News]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 11:58:06,828 - INFO - [test_floating_menu_functionality[News]] Scroll down.
+2025-11-26 11:58:06,832 - INFO - [test_floating_menu_functionality[News]] Clicking floating menu item 'News'.
+2025-11-26 11:58:06,889 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:06,895 - INFO - [test_floating_menu_functionality[News]] Verifying url updated after click on menu item.
+2025-11-26 11:58:06,975 - WARNING - [test_floating_menu_functionality[News]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:06,976 - INFO - [test_floating_menu_functionality[News]] Test PASSED: test_floating_menu_functionality[News] (Duration: 0.95s).
+2025-11-26 11:58:06,977 - INFO - [test_floating_menu_functionality[News]] Stopping video recording...
+2025-11-26 11:58:06,977 - INFO - [test_floating_menu_functionality[News]] Stopping video recording and assembling.
+2025-11-26 11:58:07,043 - INFO - [test_floating_menu_functionality[News]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[News]_20251126_115806/frames
+2025-11-26 11:58:07,043 - INFO - [test_floating_menu_functionality[News]] Found 4 valid frames.
+2025-11-26 11:58:07,395 - INFO - [test_floating_menu_functionality[News]] Video created: tests_recordings/gw2/test_floating_menu_functionality[News]_20251126_115806/test_floating_menu_functionality[News]_20251126_115806.mp4
+2025-11-26 11:58:08,397 - INFO - [test_floating_menu_functionality[News]] Video attached to test body: tests_recordings/gw2/test_floating_menu_functionality[News]_20251126_115806/test_floating_menu_functionality[News]_20251126_115806.mp4

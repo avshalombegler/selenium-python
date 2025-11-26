@@ -1,0 +1,32 @@
+2025-11-26 11:59:06,548 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality
+2025-11-26 11:59:06,548 - INFO - [test_drag_and_drop_functionality] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 11:59:07,208 - INFO - [test_drag_and_drop_functionality] Navigation completed.
+2025-11-26 11:59:07,208 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 11:59:07,225 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 11:59:07,226 - INFO - [] Capture loop started.
+2025-11-26 11:59:07,227 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:59:07,228 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw1/test_drag_and_drop_functionality_20251126_115907/test_drag_and_drop_functionality_20251126_115907.mp4
+2025-11-26 11:59:07,229 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-26 11:59:07,229 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-26 11:59:07,308 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:59:07,335 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:59:07,401 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:59:07,464 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:59:07,879 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 11:59:07,970 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:59:07,980 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 11:59:07,980 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-26 11:59:08,017 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-26 11:59:08,026 - INFO - [test_drag_and_drop_functionality] Drag and drop completed using JS simulation.
+2025-11-26 11:59:08,035 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:59:08,186 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:59:08,296 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:59:08,392 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:59:08,427 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-26 11:59:08,452 - INFO - [test_drag_and_drop_functionality] Test PASSED: test_drag_and_drop_functionality (Duration: 1.22s).
+2025-11-26 11:59:08,453 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-26 11:59:08,453 - INFO - [test_drag_and_drop_functionality] Stopping video recording and assembling.
+2025-11-26 11:59:08,488 - INFO - [test_drag_and_drop_functionality] Thread joined. Frames dir: tests_recordings/gw1/test_drag_and_drop_functionality_20251126_115907/frames
+2025-11-26 11:59:08,488 - INFO - [test_drag_and_drop_functionality] Found 7 valid frames.
+2025-11-26 11:59:08,746 - INFO - [test_drag_and_drop_functionality] Video created: tests_recordings/gw1/test_drag_and_drop_functionality_20251126_115907/test_drag_and_drop_functionality_20251126_115907.mp4
+2025-11-26 11:59:09,749 - INFO - [test_drag_and_drop_functionality] Video attached to test body: tests_recordings/gw1/test_drag_and_drop_functionality_20251126_115907/test_drag_and_drop_functionality_20251126_115907.mp4

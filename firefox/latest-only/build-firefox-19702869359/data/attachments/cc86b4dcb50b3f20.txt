@@ -1,0 +1,23 @@
+2025-11-26 11:58:26,166 - INFO - [test_table_header_per_column[Diceret]] Starting test: test_table_header_per_column[Diceret]
+2025-11-26 11:58:26,167 - INFO - [test_table_header_per_column[Diceret]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 11:58:26,962 - INFO - [test_table_header_per_column[Diceret]] Navigation completed.
+2025-11-26 11:58:26,962 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 11:58:26,973 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 11:58:26,973 - INFO - [] Capture loop started.
+2025-11-26 11:58:26,973 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:26,974 - INFO - [test_table_header_per_column[Diceret]] Started recording: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251126_115826/test_table_header_per_column[Diceret]_20251126_115826.mp4
+2025-11-26 11:58:26,975 - INFO - [test_table_header_per_column[Diceret]] Verify table head text per column.
+2025-11-26 11:58:26,975 - INFO - [test_table_header_per_column[Diceret]] Navigating to Challenging DOM page.
+2025-11-26 11:58:27,025 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:27,075 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:27,918 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 11:58:27,966 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:27,972 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 11:58:27,972 - INFO - [test_table_header_per_column[Diceret]] Getting table head text of column 'Diceret'.
+2025-11-26 11:58:28,010 - INFO - [test_table_header_per_column[Diceret]] Test PASSED: test_table_header_per_column[Diceret] (Duration: 1.03s).
+2025-11-26 11:58:28,011 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording...
+2025-11-26 11:58:28,011 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording and assembling.
+2025-11-26 11:58:28,032 - INFO - [test_table_header_per_column[Diceret]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251126_115826/frames
+2025-11-26 11:58:28,032 - INFO - [test_table_header_per_column[Diceret]] Found 2 valid frames.
+2025-11-26 11:58:28,216 - INFO - [test_table_header_per_column[Diceret]] Video created: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251126_115826/test_table_header_per_column[Diceret]_20251126_115826.mp4
+2025-11-26 11:58:29,217 - INFO - [test_table_header_per_column[Diceret]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251126_115826/test_table_header_per_column[Diceret]_20251126_115826.mp4

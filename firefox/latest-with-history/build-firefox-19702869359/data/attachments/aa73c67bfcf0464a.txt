@@ -1,0 +1,31 @@
+INFO     root:test_fixtures.py:42 Starting test: test_files_upload_functionality[test1.json]
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:recording_fixtures.py:39 Started recording: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_115819/test_files_upload_functionality[test1.json]_20251126_115819.mp4
+INFO     root:test_files_upload.py:37 Tests Files Upload.
+INFO     root:main_page.py:164 Navigating to File Upload page.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_files_upload.py:42 Upload file using the Upload button.
+INFO     root:base_page.py:139 Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/test1.json' on element '('id', 'file-upload')'.
+INFO     utils.video_recorder:video_recorder.py:63 Using Firefox screenshot method.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', '.example h3')'.
+INFO     root:test_files_upload.py:46 Verifying file uploaded sucessfully.
+INFO     root:recording_fixtures.py:45 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_115819/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 5 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_115819/test_files_upload_functionality[test1.json]_20251126_115819.mp4
+INFO     root:recording_fixtures.py:62 Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251126_115819/test_files_upload_functionality[test1.json]_20251126_115819.mp4

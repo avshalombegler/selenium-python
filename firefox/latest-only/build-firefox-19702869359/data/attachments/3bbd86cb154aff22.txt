@@ -1,0 +1,33 @@
+2025-11-26 11:58:06,647 - INFO - [test_top_nested_frames_functionality[middle]] Starting test: test_top_nested_frames_functionality[middle]
+2025-11-26 11:58:06,648 - INFO - [test_top_nested_frames_functionality[middle]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 11:58:07,303 - INFO - [test_top_nested_frames_functionality[middle]] Navigation completed.
+2025-11-26 11:58:07,303 - INFO - [test_top_nested_frames_functionality[middle]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 11:58:07,316 - INFO - [test_top_nested_frames_functionality[middle]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 11:58:07,317 - INFO - [] Capture loop started.
+2025-11-26 11:58:07,317 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:07,318 - INFO - [test_top_nested_frames_functionality[middle]] Started recording: tests_recordings/gw3/test_top_nested_frames_functionality[middle]_20251126_115807/test_top_nested_frames_functionality[middle]_20251126_115807.mp4
+2025-11-26 11:58:07,319 - INFO - [test_top_nested_frames_functionality[middle]] Tests Nested Frames.
+2025-11-26 11:58:07,320 - INFO - [test_top_nested_frames_functionality[middle]] Navigating to Frames page.
+2025-11-26 11:58:07,480 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:07,577 - WARNING - [test_top_nested_frames_functionality[middle]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:07,639 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:07,745 - WARNING - [test_top_nested_frames_functionality[middle]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:07,800 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:08,374 - INFO - [test_top_nested_frames_functionality[middle]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 11:58:08,448 - WARNING - [test_top_nested_frames_functionality[middle]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:08,457 - INFO - [test_top_nested_frames_functionality[middle]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 11:58:08,457 - INFO - [test_top_nested_frames_functionality[middle]] Clicking Nested Frames link.
+2025-11-26 11:58:08,514 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:08,795 - INFO - [test_top_nested_frames_functionality[middle]] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-26 11:58:08,867 - WARNING - [test_top_nested_frames_functionality[middle]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:08,874 - INFO - [test_top_nested_frames_functionality[middle]] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-26 11:58:08,875 - INFO - [test_top_nested_frames_functionality[middle]] Switching to frame 'top'.
+2025-11-26 11:58:08,883 - INFO - [test_top_nested_frames_functionality[middle]] Switching to nested frame 'middle'.
+2025-11-26 11:58:08,894 - INFO - [test_top_nested_frames_functionality[middle]] Verifying frame text.
+2025-11-26 11:58:08,907 - INFO - [test_top_nested_frames_functionality[middle]] Test PASSED: test_top_nested_frames_functionality[middle] (Duration: 1.59s).
+2025-11-26 11:58:08,908 - INFO - [test_top_nested_frames_functionality[middle]] Stopping video recording...
+2025-11-26 11:58:08,908 - INFO - [test_top_nested_frames_functionality[middle]] Stopping video recording and assembling.
+2025-11-26 11:58:08,933 - INFO - [test_top_nested_frames_functionality[middle]] Thread joined. Frames dir: tests_recordings/gw3/test_top_nested_frames_functionality[middle]_20251126_115807/frames
+2025-11-26 11:58:08,934 - INFO - [test_top_nested_frames_functionality[middle]] Found 5 valid frames.
+2025-11-26 11:58:09,199 - INFO - [test_top_nested_frames_functionality[middle]] Video created: tests_recordings/gw3/test_top_nested_frames_functionality[middle]_20251126_115807/test_top_nested_frames_functionality[middle]_20251126_115807.mp4
+2025-11-26 11:58:10,201 - INFO - [test_top_nested_frames_functionality[middle]] Video attached to test body: tests_recordings/gw3/test_top_nested_frames_functionality[middle]_20251126_115807/test_top_nested_frames_functionality[middle]_20251126_115807.mp4

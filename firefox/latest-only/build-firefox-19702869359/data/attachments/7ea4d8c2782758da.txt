@@ -1,0 +1,133 @@
+2025-11-26 11:58:33,048 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Starting test: test_digest_auth_login_scenarios[admin-wrong]
+2025-11-26 11:58:33,050 - INFO - [] Capture loop started.
+2025-11-26 11:58:33,050 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:33,051 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Started recording: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-wrong]_20251126_115833/test_digest_auth_login_scenarios[admin-wrong]_20251126_115833.mp4
+2025-11-26 11:58:33,054 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Tests for Digest Authentication scenarios.
+2025-11-26 11:58:33,055 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to Digest Authentication page.
+2025-11-26 11:58:33,056 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to URL: https://admin:wrong@the-internet.herokuapp.com/digest_auth.
+2025-11-26 11:58:33,165 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:33,293 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigation completed.
+2025-11-26 11:58:33,293 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Check if login succeeded.
+2025-11-26 11:58:33,323 - ERROR - [] Capture error: Alert Text: None
+Message: Unexpected promptUserAndPass dialog detected. Performed handler "dismiss"
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:927:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:3233:11
+
+2025-11-26 11:58:33,327 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:33,390 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:33,494 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:33,609 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:33,708 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:33,819 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:33,876 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:33,937 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,031 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,132 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,227 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,320 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,418 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,552 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,649 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,742 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,847 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:34,951 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,060 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,162 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,273 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,372 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,465 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,557 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,652 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,744 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,847 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:35,958 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,054 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,151 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,248 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,346 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,443 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,580 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,673 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,771 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,863 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:36,954 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,047 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,153 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,273 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,379 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,471 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,563 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,658 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,752 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,847 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:37,954 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,086 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,177 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,269 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,360 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,452 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,595 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,692 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,786 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,880 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:38,977 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,073 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,176 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,268 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,362 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,464 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,605 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,698 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,820 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:39,941 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:40,096 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:40,222 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:40,342 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:40,486 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:40,672 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:40,803 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:40,906 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,007 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,108 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,199 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,290 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,381 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,474 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,605 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,700 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,792 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,883 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:41,976 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,110 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,202 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,298 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,396 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,489 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,634 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,732 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,837 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,939 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:42,983 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:43,048 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:43,149 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:43,256 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:43,357 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:43,455 - INFO - [] Using Firefox screenshot method.
+2025-11-26 11:58:43,486 - ERROR - [test_digest_auth_login_scenarios[admin-wrong]] Timeout after 10s for locator ('css selector', 'div#content p'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-11-26 11:58:43,490 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page source: <html><head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head><body><pre></pre></body></html>
+2025-11-26 11:58:43,490 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Test PASSED: test_digest_auth_login_scenarios[admin-wrong] (Duration: 10.44s).
+2025-11-26 11:58:43,492 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording...
+2025-11-26 11:58:43,492 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording and assembling.
+2025-11-26 11:58:43,550 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Thread joined. Frames dir: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-wrong]_20251126_115833/frames
+2025-11-26 11:58:43,551 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Found 98 valid frames.
+2025-11-26 11:58:44,829 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video created: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-wrong]_20251126_115833/test_digest_auth_login_scenarios[admin-wrong]_20251126_115833.mp4
+2025-11-26 11:58:45,831 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video attached to test body: tests_recordings/gw3/test_digest_auth_login_scenarios[admin-wrong]_20251126_115833/test_digest_auth_login_scenarios[admin-wrong]_20251126_115833.mp4

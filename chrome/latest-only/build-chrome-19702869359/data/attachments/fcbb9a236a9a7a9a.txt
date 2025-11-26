@@ -1,0 +1,43 @@
+INFO     root:test_fixtures.py:42 Starting test: test_remove_elements
+INFO     root:base_page.py:286 Navigating to URL: https://the-internet.herokuapp.com.
+INFO     root:base_page.py:288 Navigation completed.
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+INFO     utils.video_recorder:video_recorder.py:50 Capture loop started.
+INFO     root:recording_fixtures.py:39 Started recording: tests_recordings/gw1/test_remove_elements_20251126_115831/test_remove_elements_20251126_115831.mp4
+INFO     root:test_add_remove_elements.py:37 Tests for remove elements.
+INFO     root:main_page.py:54 Navigating to Add/Remove Elements page.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:202 Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:base_page.py:207 Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+INFO     root:test_add_remove_elements.py:40 Ensure there are elements to remove
+INFO     root:add_remove_elements_page.py:23 Clicking Add Element button.
+INFO     root:add_remove_elements_page.py:23 Clicking Add Element button.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_add_remove_elements.py:43 Remove all elements
+INFO     root:add_remove_elements_page.py:32 Counting Delete Element button(s).
+INFO     root:base_page.py:587 Counting elements with locator: '('css selector', '#elements > button')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:add_remove_elements_page.py:28 Clicking Delete Element button.
+INFO     root:add_remove_elements_page.py:32 Counting Delete Element button(s).
+INFO     root:base_page.py:587 Counting elements with locator: '('css selector', '#elements > button')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:add_remove_elements_page.py:28 Clicking Delete Element button.
+INFO     root:add_remove_elements_page.py:32 Counting Delete Element button(s).
+INFO     root:base_page.py:587 Counting elements with locator: '('css selector', '#elements > button')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:add_remove_elements_page.py:32 Counting Delete Element button(s).
+INFO     root:base_page.py:587 Counting elements with locator: '('css selector', '#elements > button')'.
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: localhost. Connection pool size: 1
+INFO     root:test_add_remove_elements.py:46 Found 0 delete buttons.
+INFO     root:recording_fixtures.py:45 Stopping video recording...
+INFO     utils.video_recorder:video_recorder.py:82 Stopping video recording and assembling.
+INFO     utils.video_recorder:video_recorder.py:85 Thread joined. Frames dir: tests_recordings/gw1/test_remove_elements_20251126_115831/frames
+INFO     utils.video_recorder:video_recorder.py:89 Found 49 valid frames.
+INFO     utils.video_recorder:video_recorder.py:113 Video created: tests_recordings/gw1/test_remove_elements_20251126_115831/test_remove_elements_20251126_115831.mp4
+INFO     root:recording_fixtures.py:62 Video attached to test body: tests_recordings/gw1/test_remove_elements_20251126_115831/test_remove_elements_20251126_115831.mp4

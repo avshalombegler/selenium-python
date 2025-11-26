@@ -1,0 +1,29 @@
+2025-11-26 11:58:33,563 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Starting test: test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]
+2025-11-26 11:58:33,564 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 11:58:33,687 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Navigation completed.
+2025-11-26 11:58:33,688 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 11:58:33,713 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 11:58:33,714 - INFO - [] Capture loop started.
+2025-11-26 11:58:33,715 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Started recording: tests_recordings/gw2/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251126_115833/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251126_115833.mp4
+2025-11-26 11:58:33,716 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Tests Form Authentication.
+2025-11-26 11:58:33,717 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Navigating to Form Authentication page.
+2025-11-26 11:58:33,850 - WARNING - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:34,108 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Waiting for page to load with indicator '('css selector', '.example h2')' for 10s.
+2025-11-26 11:58:34,301 - WARNING - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:34,314 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Page loaded successfully with indicator '('css selector', '.example h2')'.
+2025-11-26 11:58:34,314 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Entering username 'tomsmith'.
+2025-11-26 11:58:34,314 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Sending keys 'tomsmith' on element '('id', 'username')'.
+2025-11-26 11:58:34,457 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Entering password 'wrong!'.
+2025-11-26 11:58:34,457 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Sending keys 'wrong!' on element '('id', 'password')'.
+2025-11-26 11:58:34,645 - WARNING - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:34,705 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Clicking login button.
+2025-11-26 11:58:34,862 - WARNING - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:35,320 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Verifying flash message after unsuccessfull login.
+2025-11-26 11:58:35,495 - WARNING - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 11:58:35,522 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Test PASSED: test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!] (Duration: 1.81s).
+2025-11-26 11:58:35,523 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Stopping video recording...
+2025-11-26 11:58:35,523 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Stopping video recording and assembling.
+2025-11-26 11:58:35,553 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Thread joined. Frames dir: tests_recordings/gw2/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251126_115833/frames
+2025-11-26 11:58:35,554 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Found 5 valid frames.
+2025-11-26 11:58:35,854 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Video created: tests_recordings/gw2/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251126_115833/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251126_115833.mp4
+2025-11-26 11:58:36,855 - INFO - [test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]] Video attached to test body: tests_recordings/gw2/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251126_115833/test_form_authentication_functionality[tomsmith-wrong!-Your password is invalid!]_20251126_115833.mp4
