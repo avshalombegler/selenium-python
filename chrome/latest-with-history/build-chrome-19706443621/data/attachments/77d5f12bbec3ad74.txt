@@ -1,0 +1,20 @@
+2025-11-26 14:08:14,872 - INFO - [test_ab_testing_content] Starting test: test_ab_testing_content
+2025-11-26 14:08:15,158 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:08:15,181 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:08:15,185 - INFO - [] Capture loop started.
+2025-11-26 14:08:15,185 - INFO - [test_ab_testing_content] Started recording: tests_recordings/gw3/test_ab_testing_content_20251126_140815/test_ab_testing_content_20251126_140815.mp4
+2025-11-26 14:08:15,186 - INFO - [test_ab_testing_content] Tests for verifying title and paragraph content of page
+2025-11-26 14:08:15,187 - INFO - [test_ab_testing_content] Navigating to A/B Testing page.
+2025-11-26 14:08:15,393 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:08:15,604 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:08:15,705 - WARNING - [test_ab_testing_content] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:08:15,710 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:08:15,727 - INFO - [test_ab_testing_content] Retrieved title: A/B Test Control.
+2025-11-26 14:08:15,747 - INFO - [test_ab_testing_content] Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+2025-11-26 14:08:15,747 - INFO - [test_ab_testing_content] Test PASSED: test_ab_testing_content (Duration: 0.56s).
+2025-11-26 14:08:15,748 - INFO - [test_ab_testing_content] Stopping video recording...
+2025-11-26 14:08:15,748 - INFO - [test_ab_testing_content] Stopping video recording and assembling.
+2025-11-26 14:08:15,768 - INFO - [test_ab_testing_content] Thread joined. Frames dir: tests_recordings/gw3/test_ab_testing_content_20251126_140815/frames
+2025-11-26 14:08:15,769 - INFO - [test_ab_testing_content] Found 2 valid frames.
+2025-11-26 14:08:15,948 - INFO - [test_ab_testing_content] Video created: tests_recordings/gw3/test_ab_testing_content_20251126_140815/test_ab_testing_content_20251126_140815.mp4
+2025-11-26 14:08:16,951 - INFO - [test_ab_testing_content] Video attached to test body: tests_recordings/gw3/test_ab_testing_content_20251126_140815/test_ab_testing_content_20251126_140815.mp4

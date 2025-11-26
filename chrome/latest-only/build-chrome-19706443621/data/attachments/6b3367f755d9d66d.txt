@@ -1,0 +1,23 @@
+2025-11-26 14:08:08,067 - INFO - [test_drag_and_drop_functionality] Starting test: test_drag_and_drop_functionality
+2025-11-26 14:08:08,220 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:08:08,245 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:08:08,247 - INFO - [] Capture loop started.
+2025-11-26 14:08:08,248 - INFO - [test_drag_and_drop_functionality] Started recording: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_140808/test_drag_and_drop_functionality_20251126_140808.mp4
+2025-11-26 14:08:08,255 - INFO - [test_drag_and_drop_functionality] Tests Drag and Drop functionality.
+2025-11-26 14:08:08,255 - INFO - [test_drag_and_drop_functionality] Navigating to Drag and Drop page.
+2025-11-26 14:08:08,375 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:08:08,557 - INFO - [test_drag_and_drop_functionality] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 14:08:08,647 - WARNING - [test_drag_and_drop_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:08:08,652 - INFO - [test_drag_and_drop_functionality] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 14:08:08,652 - INFO - [test_drag_and_drop_functionality] Getting box elements for drag and drop.
+2025-11-26 14:08:08,680 - INFO - [test_drag_and_drop_functionality] Performing drag and drop on box element.
+2025-11-26 14:08:09,200 - INFO - [test_drag_and_drop_functionality] Drag and drop completed using ActionChains.
+2025-11-26 14:08:09,286 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 14:08:09,600 - INFO - [test_drag_and_drop_functionality] Verifying drag and drop action succeeded.
+2025-11-26 14:08:09,651 - INFO - [test_drag_and_drop_functionality] Test PASSED: test_drag_and_drop_functionality (Duration: 1.40s).
+2025-11-26 14:08:09,652 - INFO - [test_drag_and_drop_functionality] Stopping video recording...
+2025-11-26 14:08:09,653 - INFO - [test_drag_and_drop_functionality] Stopping video recording and assembling.
+2025-11-26 14:08:09,660 - INFO - [test_drag_and_drop_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_140808/frames
+2025-11-26 14:08:09,660 - INFO - [test_drag_and_drop_functionality] Found 5 valid frames.
+2025-11-26 14:08:09,925 - INFO - [test_drag_and_drop_functionality] Video created: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_140808/test_drag_and_drop_functionality_20251126_140808.mp4
+2025-11-26 14:08:10,927 - INFO - [test_drag_and_drop_functionality] Video attached to test body: tests_recordings/gw0/test_drag_and_drop_functionality_20251126_140808/test_drag_and_drop_functionality_20251126_140808.mp4

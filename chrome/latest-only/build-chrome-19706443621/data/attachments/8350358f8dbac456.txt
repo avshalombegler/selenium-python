@@ -1,0 +1,17 @@
+2025-11-26 14:07:42,835 - INFO - [test_basic_auth[--401-Not authorized\n]] Starting test: test_basic_auth[--401-Not authorized\n]
+2025-11-26 14:07:42,953 - INFO - [test_basic_auth[--401-Not authorized\n]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 14:07:42,972 - INFO - [test_basic_auth[--401-Not authorized\n]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 14:07:42,973 - INFO - [] Capture loop started.
+2025-11-26 14:07:42,973 - INFO - [test_basic_auth[--401-Not authorized\n]] Started recording: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_140742/test_basic_auth[--401-Not authorized\n]_20251126_140742.mp4
+2025-11-26 14:07:42,975 - INFO - [test_basic_auth[--401-Not authorized\n]] Tests basic autorization login scenatios.
+2025-11-26 14:07:42,975 - INFO - [test_basic_auth[--401-Not authorized\n]] Returning object of Basic Auth page.
+2025-11-26 14:07:42,975 - INFO - [test_basic_auth[--401-Not authorized\n]] Initialize URL based on username and password.
+2025-11-26 14:07:42,976 - INFO - [test_basic_auth[--401-Not authorized\n]] Get status code and authorization message.
+2025-11-26 14:07:43,307 - INFO - [test_basic_auth[--401-Not authorized\n]] Validate status code and authorization message.
+2025-11-26 14:07:43,308 - INFO - [test_basic_auth[--401-Not authorized\n]] Test PASSED: test_basic_auth[--401-Not authorized\n] (Duration: 0.33s).
+2025-11-26 14:07:43,310 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording...
+2025-11-26 14:07:43,310 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording and assembling.
+2025-11-26 14:07:43,407 - INFO - [test_basic_auth[--401-Not authorized\n]] Thread joined. Frames dir: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_140742/frames
+2025-11-26 14:07:43,407 - INFO - [test_basic_auth[--401-Not authorized\n]] Found 3 valid frames.
+2025-11-26 14:07:43,578 - INFO - [test_basic_auth[--401-Not authorized\n]] Video created: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_140742/test_basic_auth[--401-Not authorized\n]_20251126_140742.mp4
+2025-11-26 14:07:44,580 - INFO - [test_basic_auth[--401-Not authorized\n]] Video attached to test body: tests_recordings/gw3/test_basic_auth[--401-Not authorized\n]_20251126_140742/test_basic_auth[--401-Not authorized\n]_20251126_140742.mp4
