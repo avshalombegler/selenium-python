@@ -1,0 +1,17 @@
+2025-11-26 09:36:20,726 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Starting test: test_digest_auth_login_scenarios[admin-admin]
+2025-11-26 09:36:20,726 - INFO - [] Capture loop started.
+2025-11-26 09:36:20,727 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251126_093620/test_digest_auth_login_scenarios[admin-admin]_20251126_093620.mp4
+2025-11-26 09:36:20,728 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Tests for Digest Authentication scenarios.
+2025-11-26 09:36:20,728 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to Digest Authentication page.
+2025-11-26 09:36:20,728 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigating to URL: https://admin:admin@the-internet.herokuapp.com/digest_auth.
+2025-11-26 09:36:20,898 - WARNING - [test_digest_auth_login_scenarios[admin-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:20,898 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Navigation completed.
+2025-11-26 09:36:20,898 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Check if login succeeded.
+2025-11-26 09:36:20,998 - WARNING - [test_digest_auth_login_scenarios[admin-admin]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:20,999 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Test PASSED: test_digest_auth_login_scenarios[admin-admin] (Duration: 0.27s).
+2025-11-26 09:36:21,000 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording...
+2025-11-26 09:36:21,000 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Stopping video recording and assembling.
+2025-11-26 09:36:21,057 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251126_093620/frames
+2025-11-26 09:36:21,057 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Found 2 valid frames.
+2025-11-26 09:36:21,238 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251126_093620/test_digest_auth_login_scenarios[admin-admin]_20251126_093620.mp4
+2025-11-26 09:36:22,239 - INFO - [test_digest_auth_login_scenarios[admin-admin]] Video attached to test body: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-admin]_20251126_093620/test_digest_auth_login_scenarios[admin-admin]_20251126_093620.mp4

@@ -1,0 +1,26 @@
+2025-11-26 09:37:03,293 - INFO - [test_horizontal_slider_functionality_using_keys] Starting test: test_horizontal_slider_functionality_using_keys
+2025-11-26 09:37:03,294 - INFO - [test_horizontal_slider_functionality_using_keys] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:37:03,348 - INFO - [test_horizontal_slider_functionality_using_keys] Navigation completed.
+2025-11-26 09:37:03,349 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:37:03,365 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:37:03,365 - INFO - [] Capture loop started.
+2025-11-26 09:37:03,366 - INFO - [test_horizontal_slider_functionality_using_keys] Started recording: tests_recordings/gw3/test_horizontal_slider_functionality_using_keys_20251126_093703/test_horizontal_slider_functionality_using_keys_20251126_093703.mp4
+2025-11-26 09:37:03,367 - INFO - [test_horizontal_slider_functionality_using_keys] Tests Horizontal Slider.
+2025-11-26 09:37:03,367 - INFO - [test_horizontal_slider_functionality_using_keys] Navigating to Horizontal Slider page.
+2025-11-26 09:37:03,472 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:03,567 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 09:37:03,703 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:03,711 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 09:37:03,712 - INFO - [test_horizontal_slider_functionality_using_keys] Setting horizontal slider value using arrow key.
+2025-11-26 09:37:04,075 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:04,601 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:05,211 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:06,220 - INFO - [test_horizontal_slider_functionality_using_keys] Verifying horizontal slider new value.
+2025-11-26 09:37:06,397 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:06,429 - INFO - [test_horizontal_slider_functionality_using_keys] Test PASSED: test_horizontal_slider_functionality_using_keys (Duration: 3.06s).
+2025-11-26 09:37:06,430 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording...
+2025-11-26 09:37:06,430 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording and assembling.
+2025-11-26 09:37:06,450 - INFO - [test_horizontal_slider_functionality_using_keys] Thread joined. Frames dir: tests_recordings/gw3/test_horizontal_slider_functionality_using_keys_20251126_093703/frames
+2025-11-26 09:37:06,450 - INFO - [test_horizontal_slider_functionality_using_keys] Found 17 valid frames.
+2025-11-26 09:37:07,428 - INFO - [test_horizontal_slider_functionality_using_keys] Video created: tests_recordings/gw3/test_horizontal_slider_functionality_using_keys_20251126_093703/test_horizontal_slider_functionality_using_keys_20251126_093703.mp4
+2025-11-26 09:37:08,429 - INFO - [test_horizontal_slider_functionality_using_keys] Video attached to test body: tests_recordings/gw3/test_horizontal_slider_functionality_using_keys_20251126_093703/test_horizontal_slider_functionality_using_keys_20251126_093703.mp4

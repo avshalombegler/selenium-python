@@ -1,0 +1,34 @@
+2025-11-26 09:37:21,185 - INFO - [test_inputs_functionality] Starting test: test_inputs_functionality
+2025-11-26 09:37:21,185 - INFO - [test_inputs_functionality] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:37:21,242 - INFO - [test_inputs_functionality] Navigation completed.
+2025-11-26 09:37:21,242 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:37:21,256 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:37:21,257 - INFO - [] Capture loop started.
+2025-11-26 09:37:21,258 - INFO - [test_inputs_functionality] Started recording: tests_recordings/gw3/test_inputs_functionality_20251126_093721/test_inputs_functionality_20251126_093721.mp4
+2025-11-26 09:37:21,259 - INFO - [test_inputs_functionality] Tests Inputs.
+2025-11-26 09:37:21,259 - INFO - [test_inputs_functionality] Navigating to Inputs page.
+2025-11-26 09:37:21,374 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:21,501 - INFO - [test_inputs_functionality] Waiting for page to load with indicator '('css selector', 'h3')' for 10s.
+2025-11-26 09:37:21,609 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:21,616 - INFO - [test_inputs_functionality] Page loaded successfully with indicator '('css selector', 'h3')'.
+2025-11-26 09:37:21,616 - INFO - [test_inputs_functionality] Entering input number.
+2025-11-26 09:37:21,616 - INFO - [test_inputs_functionality] Sending keys '1337' on element '('css selector', 'input[type=number]')'.
+2025-11-26 09:37:21,669 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 09:37:21,784 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:21,789 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 09:37:21,789 - INFO - [test_inputs_functionality] Increasing number value using keyboard arrow.
+2025-11-26 09:37:23,433 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 09:37:23,512 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:23,520 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 09:37:23,520 - INFO - [test_inputs_functionality] Decreasing number value using keyboard arrow.
+2025-11-26 09:37:24,122 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 09:37:24,204 - WARNING - [test_inputs_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:37:24,213 - INFO - [test_inputs_functionality] Getting input number value.
+2025-11-26 09:37:24,214 - INFO - [test_inputs_functionality] Test PASSED: test_inputs_functionality (Duration: 2.96s).
+2025-11-26 09:37:24,215 - INFO - [test_inputs_functionality] Stopping video recording...
+2025-11-26 09:37:24,215 - INFO - [test_inputs_functionality] Stopping video recording and assembling.
+2025-11-26 09:37:24,266 - INFO - [test_inputs_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_inputs_functionality_20251126_093721/frames
+2025-11-26 09:37:24,266 - INFO - [test_inputs_functionality] Found 10 valid frames.
+2025-11-26 09:37:24,598 - INFO - [test_inputs_functionality] Video created: tests_recordings/gw3/test_inputs_functionality_20251126_093721/test_inputs_functionality_20251126_093721.mp4
+2025-11-26 09:37:25,600 - INFO - [test_inputs_functionality] Video attached to test body: tests_recordings/gw3/test_inputs_functionality_20251126_093721/test_inputs_functionality_20251126_093721.mp4
+2025-11-26 09:37:25,601 - INFO - [test_inputs_functionality] Quitting driver for browser: chrome.

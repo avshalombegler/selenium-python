@@ -1,0 +1,31 @@
+2025-11-26 09:36:31,588 - INFO - [test_floating_menu_functionality[About]] Starting test: test_floating_menu_functionality[About]
+2025-11-26 09:36:31,588 - INFO - [test_floating_menu_functionality[About]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:36:31,820 - INFO - [test_floating_menu_functionality[About]] Navigation completed.
+2025-11-26 09:36:31,821 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:36:31,832 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:36:31,833 - INFO - [] Capture loop started.
+2025-11-26 09:36:31,833 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:31,833 - INFO - [test_floating_menu_functionality[About]] Started recording: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_093631/test_floating_menu_functionality[About]_20251126_093631.mp4
+2025-11-26 09:36:31,835 - INFO - [test_floating_menu_functionality[About]] Tests Files Download.
+2025-11-26 09:36:31,836 - INFO - [test_floating_menu_functionality[About]] Navigating to Floating Menu page.
+2025-11-26 09:36:31,931 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:31,941 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:32,057 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:32,062 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:32,113 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:32,179 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:32,341 - INFO - [test_floating_menu_functionality[About]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-26 09:36:32,406 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:32,415 - INFO - [test_floating_menu_functionality[About]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-26 09:36:32,415 - INFO - [test_floating_menu_functionality[About]] Scroll down.
+2025-11-26 09:36:32,420 - INFO - [test_floating_menu_functionality[About]] Clicking floating menu item 'About'.
+2025-11-26 09:36:32,476 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:32,561 - WARNING - [test_floating_menu_functionality[About]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:32,583 - INFO - [test_floating_menu_functionality[About]] Verifying url updated after click on menu item.
+2025-11-26 09:36:32,593 - INFO - [test_floating_menu_functionality[About]] Test PASSED: test_floating_menu_functionality[About] (Duration: 0.76s).
+2025-11-26 09:36:32,595 - INFO - [test_floating_menu_functionality[About]] Stopping video recording...
+2025-11-26 09:36:32,596 - INFO - [test_floating_menu_functionality[About]] Stopping video recording and assembling.
+2025-11-26 09:36:32,620 - INFO - [test_floating_menu_functionality[About]] Thread joined. Frames dir: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_093631/frames
+2025-11-26 09:36:32,620 - INFO - [test_floating_menu_functionality[About]] Found 5 valid frames.
+2025-11-26 09:36:33,151 - INFO - [test_floating_menu_functionality[About]] Video created: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_093631/test_floating_menu_functionality[About]_20251126_093631.mp4
+2025-11-26 09:36:34,154 - INFO - [test_floating_menu_functionality[About]] Video attached to test body: tests_recordings/gw2/test_floating_menu_functionality[About]_20251126_093631/test_floating_menu_functionality[About]_20251126_093631.mp4

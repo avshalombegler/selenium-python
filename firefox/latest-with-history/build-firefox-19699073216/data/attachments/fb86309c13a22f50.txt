@@ -1,0 +1,41 @@
+2025-11-26 09:36:16,122 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-26 09:36:16,123 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-26 09:36:16,124 - INFO - [] Directory cleaned and recreated at: downloads/gw0.
+2025-11-26 09:36:16,125 - INFO - [] xdist worker is: gw0
+2025-11-26 09:36:16,125 - INFO - [] ====== WebDriver manager ======
+2025-11-26 09:36:16,201 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-26 09:36:16,202 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-26 09:36:16,423 - INFO - [] Get LATEST geckodriver version for 145.0 firefox
+2025-11-26 09:36:16,423 - INFO - [] GH_TOKEN will be used to perform requests
+2025-11-26 09:36:16,657 - INFO - [] Driver [/home/runner/.wdm/gw0/drivers/geckodriver/linux64/v0.36.0/geckodriver] found in cache
+2025-11-26 09:36:20,661 - INFO - [test_each_button_clicks[blue]] Starting test: test_each_button_clicks[blue]
+2025-11-26 09:36:20,661 - INFO - [test_each_button_clicks[blue]] Navigating to URL: https://the-internet.herokuapp.com.
+2025-11-26 09:36:21,301 - INFO - [test_each_button_clicks[blue]] Navigation completed.
+2025-11-26 09:36:21,302 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-26 09:36:21,359 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-26 09:36:21,361 - INFO - [] Capture loop started.
+2025-11-26 09:36:21,361 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:21,363 - INFO - [test_each_button_clicks[blue]] Started recording: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_093621/test_each_button_clicks[blue]_20251126_093621.mp4
+2025-11-26 09:36:21,364 - INFO - [test_each_button_clicks[blue]] Verify each button in page is clickable.
+2025-11-26 09:36:21,366 - INFO - [test_each_button_clicks[blue]] Navigating to Challenging DOM page.
+2025-11-26 09:36:21,546 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:21,844 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:21,886 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:22,127 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:22,169 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:22,743 - INFO - [test_each_button_clicks[blue]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-26 09:36:23,080 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:23,296 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:23,387 - INFO - [test_each_button_clicks[blue]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-26 09:36:23,388 - INFO - [test_each_button_clicks[blue]] Clicking blue button.
+2025-11-26 09:36:23,524 - WARNING - [test_each_button_clicks[blue]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:23,587 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:23,723 - INFO - [] Using Firefox screenshot method.
+2025-11-26 09:36:24,086 - INFO - [test_each_button_clicks[blue]] Test PASSED: test_each_button_clicks[blue] (Duration: 2.72s).
+2025-11-26 09:36:24,091 - INFO - [test_each_button_clicks[blue]] Stopping video recording...
+2025-11-26 09:36:24,092 - INFO - [test_each_button_clicks[blue]] Stopping video recording and assembling.
+2025-11-26 09:36:24,194 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-26 09:36:24,272 - INFO - [test_each_button_clicks[blue]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_093621/frames
+2025-11-26 09:36:24,273 - INFO - [test_each_button_clicks[blue]] Found 8 valid frames.
+2025-11-26 09:36:24,634 - INFO - [test_each_button_clicks[blue]] Video created: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_093621/test_each_button_clicks[blue]_20251126_093621.mp4
+2025-11-26 09:36:25,636 - INFO - [test_each_button_clicks[blue]] Video attached to test body: tests_recordings/gw0/test_each_button_clicks[blue]_20251126_093621/test_each_button_clicks[blue]_20251126_093621.mp4
