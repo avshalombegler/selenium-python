@@ -122,7 +122,16 @@ EOF
             script {
                 def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                 
-                // Generate individual browser HTML reports
+                // First, use Allure plugin for merged results (this creates the "Allure Report" menu item)
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'reports/allure-results']]
+                ])
+                
+                // Then generate individual browser HTML reports
                 browsers.each { browser ->
                     sh """
                         if [ -d "reports/allure-results-${browser}" ]; then
@@ -149,15 +158,6 @@ EOF
                     // Archive JUnit XML
                     junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
                 }
-                
-                // Use Allure plugin for merged results (this creates the "Allure Report" menu item)
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'reports/allure-results']]
-                ])
                 
                 // Archive other artifacts
                 archiveArtifacts artifacts: 'tests_recordings/**', allowEmptyArchive: true
