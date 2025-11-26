@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
+from urllib.parse import urljoin
 
 import allure
 import requests
@@ -27,7 +28,7 @@ class BasicAuthPage(BasePage):
     @allure.step("Initialize URL based on username and password")
     def init_url(self, username: str, password: str) -> str:
         if username == "" and password == "":
-            return self.base_url + "basic_auth"
+            return urljoin(self.base_url, "basic_auth")
         else:
             return f"http://{username}:{password}@the-internet.herokuapp.com/basic_auth"
 
