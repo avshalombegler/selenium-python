@@ -143,7 +143,7 @@ jobs:
           echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
 
       - name: Check website availability
-        run: curl -s -f ${{ secrets.BASE_URL }} || exit 1
+        run: curl -s -f ${{ secrets.BASE_URL }} > /dev/null || exit 1
 
       - name: Create reports directories
         run: mkdir -p reports/allure-results reports/allure-report

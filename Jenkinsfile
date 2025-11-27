@@ -32,7 +32,7 @@ pipeline {
         stage('Prepare Directories') {
             steps {
                 sh '''
-                    mkdir -p reports/allure-results reports/allure-report
+                    mkdir -p reports
                     mkdir -p tests_recordings tests_screenshots
                 '''
             }
@@ -64,7 +64,7 @@ EOF
         stage('Check Website Availability') {
             steps {
                 withCredentials([string(credentialsId: 'BASE_URL', variable: 'BASE_URL')]) {
-                    sh 'curl -s -f ${BASE_URL} || exit 1'
+                    sh 'curl -s -f ${BASE_URL} > /dev/null || exit 1'
                 }
             }
         }
@@ -98,23 +98,6 @@ EOF
                 }
             }
         }
-        
-        stage('Merge Allure Results') {
-            steps {
-                script {
-                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                    
-                    // Merge all browser results into single directory for Allure plugin
-                    browsers.each { browser ->
-                        sh """
-                            if [ -d "reports/allure-results-${browser}" ]; then
-                                cp -r reports/allure-results-${browser}/* reports/allure-results/ || true
-                            fi
-                        """
-                    }
-                }
-            }
-        }
     }
     
     post {
@@ -122,16 +105,7 @@ EOF
             script {
                 def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                 
-                // First, use Allure plugin for merged results (this creates the "Allure Report" menu item)
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'reports/allure-results']]
-                ])
-                
-                // Then generate individual browser HTML reports
+                // Generate individual browser HTML reports
                 browsers.each { browser ->
                     sh """
                         if [ -d "reports/allure-results-${browser}" ]; then
