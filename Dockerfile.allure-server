@@ -24,12 +24,15 @@ RUN mkdir -p /app/projects /app/reports
 
 WORKDIR /app
 
-# Copy application files
-COPY allure_server_api.py /app/
+# Copy application files (use explicit path)
+COPY ./allure_server_api.py /app/allure_server_api.py
+
+# Verify file was copied (for debugging)
+RUN ls -la /app/
 
 # Railway uses PORT environment variable
 ENV PORT=5050
 EXPOSE ${PORT}
 
-# Start gunicorn directly (no shell script needed)
+# Start gunicorn directly
 CMD ["sh", "-c", "gunicorn -w 2 -b 0.0.0.0:${PORT} --timeout 120 --access-logfile - --error-logfile - allure_server_api:app"]
