@@ -17,7 +17,8 @@ if TYPE_CHECKING:
 class TestABTesting:
     """Tests for verifying title and paragraph content of page"""
 
-    @pytest.mark.full
+    # @pytest.mark.full
+    @pytest.mark.smoke
     @pytest.mark.ui
     @allure.severity(allure.severity_level.NORMAL)
     def test_ab_testing_content(self, page_manager: PageManager, logger: Logger) -> None:
