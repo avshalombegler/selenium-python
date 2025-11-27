@@ -27,11 +27,12 @@ WORKDIR /app
 # Copy application files
 COPY allure_server_api.py /app/
 
-# Verify the file exists and can be imported
-RUN python3 -c "import allure_server_api; print('Module OK')"
-
-# Railway uses PORT environment variable
+# Set PYTHONPATH to include /app
+ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
 
-# Use exec form with sh -c for proper variable expansion
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info allure_server_api:app"]
+# Verify the file exists and can be imported with PYTHONPATH set
+RUN python3 -c "import sys; print('PYTHONPATH:', sys.path); import allure_server_api; print('Module OK')"
+
+# Use exec form with sh -c, and explicitly set PYTHONPATH in the command
+CMD ["sh", "-c", "cd /app && python3 -m gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info allure_server_api:app"]
