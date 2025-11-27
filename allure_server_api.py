@@ -1,9 +1,9 @@
+import logging
 import os
 import shutil
 import subprocess
-import tarfile
-import logging
 import sys
+import tarfile
 from pathlib import Path
 
 from flask import Flask, jsonify, request, send_from_directory
@@ -11,8 +11,8 @@ from flask import Flask, jsonify, request, send_from_directory
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler(sys.stdout)]
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
 )
 logger = logging.getLogger(__name__)
 
@@ -117,11 +117,11 @@ def upload_results(project_name):
             ["allure", "generate", str(allure_results_dir), "-o", str(report_dir), "--clean"],
             check=True,
             capture_output=True,
-            text=True
+            text=True,
         )
         logger.info(f"Generated report for {project_name}")
         logger.info(f"Allure output: {result.stdout}")
-        
+
         # List generated files
         generated_files = list(report_dir.glob("*"))
         logger.info(f"Generated files in report dir: {[f.name for f in generated_files]}")

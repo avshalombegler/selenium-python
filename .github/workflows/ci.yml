@@ -2,7 +2,7 @@ name: Selenium Tests CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
@@ -10,6 +10,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: [chrome, firefox]
     
     steps:
       - uses: actions/checkout@v4
@@ -24,18 +27,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: Install Chrome
+      - name: Install Browsers
         run: |
+          # Install Chrome
           wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          
+          # Install Firefox
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+          sudo apt-get install -y google-chrome-stable firefox
           
       - name: Run tests
         run: |
           pytest tests/ \
-            --alluredir=allure-results \
-            --html=report.html \
+            --alluredir=allure-results-${{ matrix.browser }} \
+            --browser=${{ matrix.browser }} \
+            --html=report-${{ matrix.browser }}.html \
             --self-contained-html \
             -v
         continue-on-error: true
@@ -45,57 +52,44 @@ jobs:
         env:
           RAILWAY_URL: ${{ secrets.RAILWAY_ALLURE_SERVER_URL }}
         run: |
-          if [ -d "allure-results" ]; then
-            cd allure-results
-            tar -czf ../allure-results.tar.gz .
+          BROWSER="${{ matrix.browser }}"
+          RESULTS_DIR="allure-results-${BROWSER}"
+          
+          if [ -d "$RESULTS_DIR" ]; then
+            cd "$RESULTS_DIR"
+            tar -czf ../allure-results-${BROWSER}.tar.gz .
             cd ..
             
-            PROJECT_NAME="selenium-tests"
+            PROJECT_NAME="selenium-tests-${BROWSER}"
             BUILD_ID="${{ github.run_number }}"
             
-            echo "Uploading to Railway Allure Server..."
+            echo "Uploading ${BROWSER} results to Railway Allure Server..."
             RESPONSE=$(curl -X POST \
               -H "Content-Type: application/gzip" \
-              --data-binary @allure-results.tar.gz \
+              --data-binary @allure-results-${BROWSER}.tar.gz \
               -L \
-              "${RAILWAY_URL}/api/upload/${PROJECT_NAME}?buildId=${BUILD_ID}" \
               -w "\nHTTP Status: %{http_code}\n" \
-              -s)
+              -s \
+              "${RAILWAY_URL}/api/upload/${PROJECT_NAME}?buildId=${BUILD_ID}")
             
             echo "$RESPONSE"
             
             HTTP_CODE=$(echo "$RESPONSE" | tail -n 1 | grep -oP '\d+')
             if [ "$HTTP_CODE" = "200" ]; then
-              echo "✓ Report uploaded successfully!"
-              echo "View report at: ${RAILWAY_URL}/reports/${PROJECT_NAME}"
+              echo "✓ ${BROWSER} report uploaded successfully!"
+              echo "View report at: ${RAILWAY_URL}/reports/${PROJECT_NAME}/latest"
             else
               echo "✗ Upload failed with status: $HTTP_CODE"
               exit 1
             fi
           else
-            echo "No allure-results directory found"
+            echo "No ${RESULTS_DIR} directory found"
           fi
-          
-      - name: Generate Allure Report (for GitHub Pages)
-        if: always()
-        uses: simple-elf/allure-report-action@master
-        with:
-          allure_results: allure-results
-          allure_history: allure-history
-          keep_reports: 20
-          
-      - name: Deploy to GitHub Pages
-        if: always() && github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-history
-          publish_branch: gh-pages
           
       - name: Upload HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-report-${{ github.run_number }}
-          path: report.html
+          name: test-report-${{ matrix.browser }}-${{ github.run_number }}
+          path: report-${{ matrix.browser }}.html
           retention-days: 30
