@@ -151,7 +151,7 @@ EOF
                         keepAll: true,
                         reportDir: "reports/allure-report-${browser}",
                         reportFiles: 'index.html',
-                        reportName: "Allure Report - ${browser}",
+                        reportName: "Allure-Report-${browser}",
                         reportTitles: ''
                     ])
                     
