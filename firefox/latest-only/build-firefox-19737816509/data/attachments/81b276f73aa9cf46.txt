@@ -1,0 +1,28 @@
+2025-11-27 13:28:06,415 - INFO - [test_geolocation_functionality] Starting test: test_geolocation_functionality
+2025-11-27 13:28:06,552 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:28:06,564 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:28:06,565 - INFO - [] Capture loop started.
+2025-11-27 13:28:06,565 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:28:06,566 - INFO - [test_geolocation_functionality] Started recording: tests_recordings/gw0/test_geolocation_functionality_20251127_132806/test_geolocation_functionality_20251127_132806.mp4
+2025-11-27 13:28:06,567 - INFO - [test_geolocation_functionality] Tests Geolocation.
+2025-11-27 13:28:06,567 - INFO - [test_geolocation_functionality] Navigating to Geolocation page.
+2025-11-27 13:28:06,676 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:28:06,807 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:06,869 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:28:06,945 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:07,007 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:28:07,106 - INFO - [test_geolocation_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:28:07,191 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:07,198 - INFO - [test_geolocation_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:28:07,201 - INFO - [test_geolocation_functionality] Clicking 'Where am I' button.
+2025-11-27 13:28:07,259 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:28:07,295 - INFO - [test_geolocation_functionality] Verifying geolocation latitude value.
+2025-11-27 13:28:07,372 - WARNING - [test_geolocation_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:07,385 - INFO - [test_geolocation_functionality] Verifying geolocation longitude value.
+2025-11-27 13:28:07,398 - INFO - [test_geolocation_functionality] Test PASSED: test_geolocation_functionality (Duration: 0.83s).
+2025-11-27 13:28:07,399 - INFO - [test_geolocation_functionality] Stopping video recording...
+2025-11-27 13:28:07,399 - INFO - [test_geolocation_functionality] Stopping video recording and assembling.
+2025-11-27 13:28:07,438 - INFO - [test_geolocation_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_geolocation_functionality_20251127_132806/frames
+2025-11-27 13:28:07,438 - INFO - [test_geolocation_functionality] Found 5 valid frames.
+2025-11-27 13:28:07,676 - INFO - [test_geolocation_functionality] Video created: tests_recordings/gw0/test_geolocation_functionality_20251127_132806/test_geolocation_functionality_20251127_132806.mp4
+2025-11-27 13:28:08,678 - INFO - [test_geolocation_functionality] Video attached to test body: tests_recordings/gw0/test_geolocation_functionality_20251127_132806/test_geolocation_functionality_20251127_132806.mp4

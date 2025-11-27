@@ -1,0 +1,33 @@
+2025-11-27 13:28:20,185 - INFO - [test_example_2] Starting test: test_example_2
+2025-11-27 13:28:20,286 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:28:20,302 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:28:20,303 - INFO - [] Capture loop started.
+2025-11-27 13:28:20,304 - INFO - [test_example_2] Started recording: tests_recordings/gw2/test_example_2_20251127_132820/test_example_2_20251127_132820.mp4
+2025-11-27 13:28:20,305 - INFO - [test_example_2] Tests Dynamic Loading - Example 2.
+2025-11-27 13:28:20,305 - INFO - [test_example_2] Navigating to Dynamic Loading page.
+2025-11-27 13:28:20,429 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:20,596 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:28:20,704 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:20,711 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:28:20,711 - INFO - [test_example_2] Navigating to Example 2: Element rendered after the fact page.
+2025-11-27 13:28:20,898 - INFO - [test_example_2] Waiting for page to load with indicator '('css selector', '.example h4')' for 10s.
+2025-11-27 13:28:21,008 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:21,015 - INFO - [test_example_2] Page loaded successfully with indicator '('css selector', '.example h4')'.
+2025-11-27 13:28:21,016 - INFO - [test_example_2] Clicking start button.
+2025-11-27 13:28:21,137 - INFO - [test_example_2] Waiting for loader to complete.
+2025-11-27 13:28:21,247 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:23,331 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:23,909 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:24,442 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:24,997 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:25,548 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:26,089 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:26,627 - WARNING - [test_example_2] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:28:26,628 - INFO - [test_example_2] Verifying success message.
+2025-11-27 13:28:26,648 - INFO - [test_example_2] Test PASSED: test_example_2 (Duration: 6.34s).
+2025-11-27 13:28:26,648 - INFO - [test_example_2] Stopping video recording...
+2025-11-27 13:28:26,648 - INFO - [test_example_2] Stopping video recording and assembling.
+2025-11-27 13:28:26,691 - INFO - [test_example_2] Thread joined. Frames dir: tests_recordings/gw2/test_example_2_20251127_132820/frames
+2025-11-27 13:28:26,692 - INFO - [test_example_2] Found 44 valid frames.
+2025-11-27 13:28:27,775 - INFO - [test_example_2] Video created: tests_recordings/gw2/test_example_2_20251127_132820/test_example_2_20251127_132820.mp4
+2025-11-27 13:28:28,778 - INFO - [test_example_2] Video attached to test body: tests_recordings/gw2/test_example_2_20251127_132820/test_example_2_20251127_132820.mp4

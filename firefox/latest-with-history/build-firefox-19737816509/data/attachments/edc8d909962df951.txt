@@ -1,0 +1,30 @@
+2025-11-27 13:27:36,985 - INFO - [test_add_elements] Starting test: test_add_elements
+2025-11-27 13:27:37,106 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:27:37,121 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:27:37,122 - INFO - [] Capture loop started.
+2025-11-27 13:27:37,122 - INFO - [test_add_elements] Started recording: tests_recordings/gw2/test_add_elements_20251127_132737/test_add_elements_20251127_132737.mp4
+2025-11-27 13:27:37,122 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:27:37,124 - INFO - [test_add_elements] Tests for add elements.
+2025-11-27 13:27:37,124 - INFO - [test_add_elements] Navigating to Add/Remove Elements page.
+2025-11-27 13:27:37,174 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:37,232 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:27:37,335 - INFO - [test_add_elements] Waiting for page to load with indicator '('css selector', 'div#content h3')' for 10s.
+2025-11-27 13:27:37,418 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:37,424 - INFO - [test_add_elements] Page loaded successfully with indicator '('css selector', 'div#content h3')'.
+2025-11-27 13:27:37,424 - INFO - [test_add_elements] Add two elements.
+2025-11-27 13:27:37,425 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-27 13:27:37,485 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:27:37,501 - INFO - [test_add_elements] Clicking Add Element button.
+2025-11-27 13:27:37,572 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:37,635 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:27:37,653 - INFO - [test_add_elements] Counting Delete Element button(s).
+2025-11-27 13:27:37,653 - INFO - [test_add_elements] Counting elements with locator: '('css selector', '#elements > button')'.
+2025-11-27 13:27:37,734 - WARNING - [test_add_elements] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:37,734 - INFO - [test_add_elements] Found 2 delete buttons.
+2025-11-27 13:27:37,734 - INFO - [test_add_elements] Test PASSED: test_add_elements (Duration: 0.61s).
+2025-11-27 13:27:37,735 - INFO - [test_add_elements] Stopping video recording...
+2025-11-27 13:27:37,735 - INFO - [test_add_elements] Stopping video recording and assembling.
+2025-11-27 13:27:37,800 - INFO - [test_add_elements] Thread joined. Frames dir: tests_recordings/gw2/test_add_elements_20251127_132737/frames
+2025-11-27 13:27:37,800 - INFO - [test_add_elements] Found 4 valid frames.
+2025-11-27 13:27:37,972 - INFO - [test_add_elements] Video created: tests_recordings/gw2/test_add_elements_20251127_132737/test_add_elements_20251127_132737.mp4
+2025-11-27 13:27:38,974 - INFO - [test_add_elements] Video attached to test body: tests_recordings/gw2/test_add_elements_20251127_132737/test_add_elements_20251127_132737.mp4

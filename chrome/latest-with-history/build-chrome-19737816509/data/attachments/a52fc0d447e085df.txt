@@ -1,0 +1,19 @@
+2025-11-27 13:27:51,839 - INFO - [test_table_header_per_column[Dolor]] Starting test: test_table_header_per_column[Dolor]
+2025-11-27 13:27:51,937 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:27:51,954 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:27:51,955 - INFO - [] Capture loop started.
+2025-11-27 13:27:51,955 - INFO - [test_table_header_per_column[Dolor]] Started recording: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251127_132751/test_table_header_per_column[Dolor]_20251127_132751.mp4
+2025-11-27 13:27:51,956 - INFO - [test_table_header_per_column[Dolor]] Verify table head text per column.
+2025-11-27 13:27:51,957 - INFO - [test_table_header_per_column[Dolor]] Navigating to Challenging DOM page.
+2025-11-27 13:27:52,060 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:52,245 - INFO - [test_table_header_per_column[Dolor]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 13:27:52,351 - WARNING - [test_table_header_per_column[Dolor]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:52,357 - INFO - [test_table_header_per_column[Dolor]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 13:27:52,357 - INFO - [test_table_header_per_column[Dolor]] Getting table head text of column 'Dolor'.
+2025-11-27 13:27:52,385 - INFO - [test_table_header_per_column[Dolor]] Test PASSED: test_table_header_per_column[Dolor] (Duration: 0.43s).
+2025-11-27 13:27:52,386 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording...
+2025-11-27 13:27:52,386 - INFO - [test_table_header_per_column[Dolor]] Stopping video recording and assembling.
+2025-11-27 13:27:52,417 - INFO - [test_table_header_per_column[Dolor]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251127_132751/frames
+2025-11-27 13:27:52,417 - INFO - [test_table_header_per_column[Dolor]] Found 2 valid frames.
+2025-11-27 13:27:52,618 - INFO - [test_table_header_per_column[Dolor]] Video created: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251127_132751/test_table_header_per_column[Dolor]_20251127_132751.mp4
+2025-11-27 13:27:53,620 - INFO - [test_table_header_per_column[Dolor]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Dolor]_20251127_132751/test_table_header_per_column[Dolor]_20251127_132751.mp4

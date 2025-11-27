@@ -1,0 +1,25 @@
+2025-11-27 13:27:48,802 - INFO - [test_bottom_nested_frames_functionality] Starting test: test_bottom_nested_frames_functionality
+2025-11-27 13:27:48,913 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:27:48,930 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:27:48,932 - INFO - [] Capture loop started.
+2025-11-27 13:27:48,933 - INFO - [test_bottom_nested_frames_functionality] Started recording: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251127_132748/test_bottom_nested_frames_functionality_20251127_132748.mp4
+2025-11-27 13:27:48,934 - INFO - [test_bottom_nested_frames_functionality] Tests Nested Frames.
+2025-11-27 13:27:48,935 - INFO - [test_bottom_nested_frames_functionality] Navigating to Frames page.
+2025-11-27 13:27:49,045 - WARNING - [test_bottom_nested_frames_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:49,249 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:27:49,336 - WARNING - [test_bottom_nested_frames_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:49,347 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:27:49,348 - INFO - [test_bottom_nested_frames_functionality] Clicking Nested Frames link.
+2025-11-27 13:27:49,633 - INFO - [test_bottom_nested_frames_functionality] Waiting for page to load with indicator '('css selector', 'frameset')' for 10s.
+2025-11-27 13:27:49,738 - WARNING - [test_bottom_nested_frames_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:49,746 - INFO - [test_bottom_nested_frames_functionality] Page loaded successfully with indicator '('css selector', 'frameset')'.
+2025-11-27 13:27:49,747 - INFO - [test_bottom_nested_frames_functionality] Switching to frame 'bottom'.
+2025-11-27 13:27:49,783 - INFO - [test_bottom_nested_frames_functionality] Verifying frame text.
+2025-11-27 13:27:49,810 - INFO - [test_bottom_nested_frames_functionality] Test PASSED: test_bottom_nested_frames_functionality (Duration: 0.88s).
+2025-11-27 13:27:49,810 - INFO - [test_bottom_nested_frames_functionality] Stopping video recording...
+2025-11-27 13:27:49,810 - INFO - [test_bottom_nested_frames_functionality] Stopping video recording and assembling.
+2025-11-27 13:27:49,919 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:27:49,986 - INFO - [test_bottom_nested_frames_functionality] Thread joined. Frames dir: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251127_132748/frames
+2025-11-27 13:27:49,987 - INFO - [test_bottom_nested_frames_functionality] Found 4 valid frames.
+2025-11-27 13:27:50,184 - INFO - [test_bottom_nested_frames_functionality] Video created: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251127_132748/test_bottom_nested_frames_functionality_20251127_132748.mp4
+2025-11-27 13:27:51,186 - INFO - [test_bottom_nested_frames_functionality] Video attached to test body: tests_recordings/gw3/test_bottom_nested_frames_functionality_20251127_132748/test_bottom_nested_frames_functionality_20251127_132748.mp4
