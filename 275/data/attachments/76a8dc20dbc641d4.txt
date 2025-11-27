@@ -1,0 +1,15 @@
+2025-11-27 15:41:52,539 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw0.
+2025-11-27 15:41:52,539 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw0.
+2025-11-27 15:41:52,540 - INFO - [] Directory cleaned and recreated at: downloads/gw0.
+2025-11-27 15:41:52,542 - INFO - [] Using system ChromeDriver: /usr/bin/chromedriver
+2025-11-27 15:41:57,403 - INFO - [test_ab_testing_content] Starting test: test_ab_testing_content
+2025-11-27 15:41:58,304 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 15:41:58,321 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 15:41:58,323 - INFO - [test_ab_testing_content] Tests for verifying title and paragraph content of page
+2025-11-27 15:41:58,323 - INFO - [test_ab_testing_content] Navigating to A/B Testing page.
+2025-11-27 15:41:58,521 - INFO - [test_ab_testing_content] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 15:41:58,537 - INFO - [test_ab_testing_content] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 15:41:58,557 - INFO - [test_ab_testing_content] Retrieved title: A/B Test Variation 1.
+2025-11-27 15:41:58,576 - INFO - [test_ab_testing_content] Retrieved paragraph: Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through)..
+2025-11-27 15:41:58,577 - INFO - [test_ab_testing_content] Test PASSED: test_ab_testing_content (Duration: 0.25s).
+2025-11-27 15:41:58,579 - INFO - [test_ab_testing_content] Quitting driver for browser: chrome.
