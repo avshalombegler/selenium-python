@@ -24,14 +24,11 @@ RUN mkdir -p /app/projects /app/reports
 
 WORKDIR /app
 
-# Copy application files - rename to make it a proper Python module
-COPY allure_server_api.py /app/app.py
+# Copy application files
+COPY allure_server_api.py /app/
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 
-# Verify the file exists and can be imported
-RUN python3 -c "import app; print('Module OK')"
-
-# Use simplified command - gunicorn will find app.py in current directory
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info app:app"]
+# Debug command - show what's happening at runtime
+CMD ["sh", "-c", "echo '=== DEBUG INFO ===' && pwd && echo 'Files in current dir:' && ls -la && echo 'Python version:' && python3 --version && echo 'Trying to import:' && python3 -c 'import sys; print(sys.path); import allure_server_api' && echo 'Starting gunicorn...' && exec gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info --chdir /app allure_server_api:app"]
