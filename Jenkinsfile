@@ -11,7 +11,6 @@ pipeline {
         timeout(time: 30, unit: 'MINUTES')
         buildDiscarder(logRotator(numToKeepStr: '10'))
         timestamps()
-        ansiColor('xterm')  // Better console output
     }
     
     environment {
@@ -26,15 +25,16 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                script {
-                    sh 'mkdir -p reports tests_recordings tests_screenshots'
-                    
-                    withCredentials([
-                        string(credentialsId: 'BASE_URL', variable: 'BASE_URL'),
-                        string(credentialsId: 'TEST_USERNAME', variable: 'USERNAME'),
-                        string(credentialsId: 'TEST_PASSWORD', variable: 'PASSWORD')
-                    ]) {
-                        writeFile file: '.env', text: """BASE_URL=${BASE_URL}
+                ansiColor('xterm') {
+                    script {
+                        sh 'mkdir -p reports tests_recordings tests_screenshots'
+                        
+                        withCredentials([
+                            string(credentialsId: 'BASE_URL', variable: 'BASE_URL'),
+                            string(credentialsId: 'TEST_USERNAME', variable: 'USERNAME'),
+                            string(credentialsId: 'TEST_PASSWORD', variable: 'PASSWORD')
+                        ]) {
+                            writeFile file: '.env', text: """BASE_URL=${BASE_URL}
 SHORT_TIMEOUT=${SHORT_TIMEOUT}
 LONG_TIMEOUT=${LONG_TIMEOUT}
 VIDEO_RECORDING=${VIDEO_RECORDING}
@@ -42,9 +42,9 @@ HEADLESS=${HEADLESS}
 MAXIMIZED=${MAXIMIZED}
 USERNAME=${USERNAME}
 PASSWORD=${PASSWORD}"""
-                        
-                        // Quick health check
-                        sh 'curl -sf ${BASE_URL} > /dev/null || exit 1'
+                            
+                            sh 'curl -sf ${BASE_URL} > /dev/null || exit 1'
+                        }
                     }
                 }
             }
@@ -52,20 +52,22 @@ PASSWORD=${PASSWORD}"""
         
         stage('Run Tests') {
             steps {
-                script {
-                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                    
-                    parallel browsers.collectEntries { browser -> 
-                        [(browser): {
-                            sh """
-                                xvfb-run -a -s "-screen 0 1920x1080x24" \
-                                    pytest tests/ -v -n ${params.WORKERS} --dist=loadfile \
-                                    --browser=${browser} \
-                                    --alluredir=reports/allure-results-${browser} \
-                                    --junitxml=reports/junit-${browser}.xml \
-                                    --reruns 1 --reruns-delay 2 -m ${params.MARKER} || true
-                            """
-                        }]
+                ansiColor('xterm') {
+                    script {
+                        def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
+                        
+                        parallel browsers.collectEntries { browser -> 
+                            [(browser): {
+                                sh """
+                                    xvfb-run -a -s "-screen 0 1920x1080x24" \
+                                        pytest tests/ -v -n ${params.WORKERS} --dist=loadfile \
+                                        --browser=${browser} \
+                                        --alluredir=reports/allure-results-${browser} \
+                                        --junitxml=reports/junit-${browser}.xml \
+                                        --reruns 1 --reruns-delay 2 -m ${params.MARKER} || true
+                                """
+                            }]
+                        }
                     }
                 }
             }
@@ -74,27 +76,29 @@ PASSWORD=${PASSWORD}"""
     
     post {
         always {
-            script {
-                def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                
-                browsers.each { browser ->
-                    sh """
-                        [ -d "reports/allure-results-${browser}" ] && \
-                        allure generate reports/allure-results-${browser} \
-                        -o reports/allure-report-${browser} --clean || true
-                    """
+            ansiColor('xterm') {
+                script {
+                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                     
-                    publishHTML([
-                        allowMissing: true,
-                        alwaysLinkToLastBuild: true,
-                        keepAll: true,
-                        reportDir: "reports/allure-report-${browser}",
-                        reportFiles: 'index.html',
-                        reportName: "Allure - ${browser.capitalize()}"
-                    ])
+                    browsers.each { browser ->
+                        sh """
+                            [ -d "reports/allure-results-${browser}" ] && \
+                            allure generate reports/allure-results-${browser} \
+                            -o reports/allure-report-${browser} --clean || true
+                        """
+                        
+                        publishHTML([
+                            allowMissing: true,
+                            alwaysLinkToLastBuild: true,
+                            keepAll: true,
+                            reportDir: "reports/allure-report-${browser}",
+                            reportFiles: 'index.html',
+                            reportName: "Allure - ${browser.capitalize()}"
+                        ])
+                    }
+                    
+                    archiveArtifacts artifacts: 'reports/**,tests_recordings/**,tests_screenshots/**', allowEmptyArchive: true
                 }
-                
-                archiveArtifacts artifacts: 'reports/**,tests_recordings/**,tests_screenshots/**', allowEmptyArchive: true
             }
         }
         
