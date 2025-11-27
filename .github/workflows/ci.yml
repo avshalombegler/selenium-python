@@ -54,14 +54,24 @@ jobs:
             BUILD_ID="${{ github.run_number }}"
             
             echo "Uploading to Railway Allure Server..."
-            curl -X POST \
+            RESPONSE=$(curl -X POST \
               -H "Content-Type: application/gzip" \
               --data-binary @allure-results.tar.gz \
+              -L \
               "${RAILWAY_URL}/api/upload/${PROJECT_NAME}?buildId=${BUILD_ID}" \
-              -w "\nHTTP Status: %{http_code}\n"
+              -w "\nHTTP Status: %{http_code}\n" \
+              -s)
             
-            echo "✓ Report uploaded successfully!"
-            echo "View report at: ${RAILWAY_URL}/reports/${PROJECT_NAME}"
+            echo "$RESPONSE"
+            
+            HTTP_CODE=$(echo "$RESPONSE" | tail -n 1 | grep -oP '\d+')
+            if [ "$HTTP_CODE" = "200" ]; then
+              echo "✓ Report uploaded successfully!"
+              echo "View report at: ${RAILWAY_URL}/reports/${PROJECT_NAME}"
+            else
+              echo "✗ Upload failed with status: $HTTP_CODE"
+              exit 1
+            fi
           else
             echo "No allure-results directory found"
           fi
