@@ -19,33 +19,21 @@ RUN wget -q https://github.com/allure-framework/allure2/releases/download/${ALLU
     ln -s /opt/allure-${ALLURE_VERSION}/bin/allure /usr/local/bin/allure && \
     rm allure-${ALLURE_VERSION}.tgz
 
-# Create directories
+# Use /opt/app instead of /app to avoid volume mount conflicts
+WORKDIR /opt/app
+
+# Create data directories (these can be on the volume)
 RUN mkdir -p /app/projects /app/reports
 
-WORKDIR /app
-
-# List files in build context BEFORE copy
-RUN echo "=== BUILD CONTEXT CHECK ==="
-
-# Try copying the entire context first
-COPY . /tmp/build-context/
-RUN echo "Files in build context:" && ls -la /tmp/build-context/ && \
-    echo "Looking for Python files:" && \
-    find /tmp/build-context/ -name "*.py" -type f
-
-# Copy the file if it exists
-RUN if [ -f "/tmp/build-context/allure_server_api.py" ]; then \
-        cp /tmp/build-context/allure_server_api.py /app/; \
-        echo "Copied allure_server_api.py"; \
-    else \
-        echo "ERROR: allure_server_api.py not found in build context"; \
-        exit 1; \
-    fi
-
-# Verify it's there
-RUN ls -la /app/ && cat /app/allure_server_api.py | head -20
+# Copy application files to /opt/app
+COPY allure_server_api.py /opt/app/
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/opt/app
 
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info allure_server_api:app"]
+# Verify file was copied
+RUN ls -la /opt/app/ && python3 -c "import allure_server_api; print('Module OK')"
+
+# Start gunicorn from /opt/app
+CMD ["sh", "-c", "cd /opt/app && gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info allure_server_api:app"]
