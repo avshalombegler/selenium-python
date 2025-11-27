@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile.jenkins
+    image: selenium-jenkins-agent:latest
+    container_name: selenium-jenkins-agent
+    restart: unless-stopped
+    ports:
+      - "9090:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - ./:/workspace
+    environment:
+      - JAVA_OPTS=-Dhudson.model.DirectoryBrowserSupport.CSP="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';"
+      - JENKINS_OPTS=--prefix=/
+    networks:
+      - jenkins-network
+
+volumes:
+  jenkins_home:
+    name: jenkins_home
+
+networks:
+  jenkins-network:
+    driver: bridge
