@@ -49,6 +49,7 @@ def index() -> str:
 def serve_report(project_name):
     """Serve the report index"""
     report_path = REPORTS_DIR / project_name / "index.html"
+    logger.info(f"Attempting to serve report: {report_path}, exists: {report_path.exists()}")
     if report_path.exists():
         return send_from_directory(REPORTS_DIR / project_name, "index.html")
     return jsonify({"error": "Report not found"}), 404
@@ -59,6 +60,7 @@ def serve_report(project_name):
 def serve_latest_report(project_name):
     """Serve the latest report"""
     report_path = REPORTS_DIR / project_name / "index.html"
+    logger.info(f"Attempting to serve latest report: {report_path}, exists: {report_path.exists()}")
     if report_path.exists():
         return send_from_directory(REPORTS_DIR / project_name, "index.html")
     return jsonify({"error": "Report not found"}), 404
@@ -92,11 +94,12 @@ def upload_results(project_name):
         # Save uploaded file
         upload_file = results_dir / f"allure-results-{build_id}.tar.gz"
         upload_file.write_bytes(request.data)
-        logger.info(f"Saved upload: {upload_file.name}")
+        logger.info(f"Saved upload: {upload_file.name}, size: {upload_file.stat().st_size} bytes")
 
         # Extract results
         with tarfile.open(upload_file, "r:gz") as tar:
             tar.extractall(results_dir)
+            logger.info(f"Extracted files: {tar.getnames()}")
 
         # Generate report
         report_dir = REPORTS_DIR / project_name
@@ -109,13 +112,18 @@ def upload_results(project_name):
             shutil.copytree(history_src, history_dst, dirs_exist_ok=True)
 
         # Generate Allure report
-        subprocess.run(
+        result = subprocess.run(
             ["allure", "generate", str(results_dir / "allure-results"), "-o", str(report_dir), "--clean"],
             check=True,
             capture_output=True,
             text=True
         )
         logger.info(f"Generated report for {project_name}")
+        logger.info(f"Allure output: {result.stdout}")
+        
+        # List generated files
+        generated_files = list(report_dir.glob("*"))
+        logger.info(f"Generated files in report dir: {[f.name for f in generated_files]}")
 
         # Clean up
         upload_file.unlink()
