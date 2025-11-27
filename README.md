@@ -5,10 +5,11 @@
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-A modern, maintainable test automation suite for https://the-internet.herokuapp.com.  
+A modern, maintainable test automation suite for <https://the-internet.herokuapp.com>.  
 Built with **Page Object Model**, **pytest**, **Allure reporting**, **video recording**, and **CI/CD** (GitHub Actions & Jenkins).
 
 ## Table of Contents
+
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -21,6 +22,7 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - [Project layout](#project-layout)
 
 ## Features
+
 - Clean POM architecture with `BasePage` and `PageManager`
 - Parallel execution via `pytest-xdist`
 - Allure reports with history & trends
@@ -34,14 +36,17 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 ## Requirements
 
 ### System Requirements
+
 - **Python:** 3.10 or higher
 - **Git:** Latest version
-- **Browsers:** 
+- **Browsers:**
   - Chrome 120+ / ChromeDriver (auto-managed)
   - Firefox 121+ / GeckoDriver (auto-managed)
 
 ### Python Dependencies
+
 Key packages (see `requirements.txt` for full list):
+
 - `selenium==4.15.0`
 - `pytest==7.4.3`
 - `allure-pytest==2.13.2`
@@ -49,28 +54,34 @@ Key packages (see `requirements.txt` for full list):
 - `python-dotenv==1.0.0`
 
 ## Installation
+
 1. Clone the repository:
-    ```
+
+    ```bash
     git clone https://github.com/avshalombegler/selenium-python.git
     cd selenium-python
     ```
 
 2. Create a virtual environment:
-    ```
+
+    ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
 
 3. Install dependencies:
-    ```
+
+    ```bash
     pip install -r requirements.txt
     ```
 
 **Note:** Allure CLI requires separate installation (not available via pip).  
-See installation guide: https://docs.qameta.io/allure/#_installing_a_commandline
+See installation guide: <https://docs.qameta.io/allure/#_installing_a_commandline>
 
 ## Environment Variables (.env)
+
 Create a .env file in the project root:
+
 ```env
 # Application
 BASE_URL=https://the-internet.herokuapp.com/
@@ -95,37 +106,45 @@ PASSWORD=SuperSecretPassword!
 **⚠️ Note:** Never commit `.env` with real credentials. Use CI secrets for production.
 
 ## Running tests locally
+
 - Run all tests (sequential):
-    ```
+
+    ```bash
     pytest
     ```
 
 - Run all tests in parallel:
-    ```
+
+    ```bash
     pytest -n auto
     ```
 
 - Run a specific test file:
-    ```
+
+    ```bash
     pytest .\tests\test_test_name.py
     ```
 
 - Generate Allure results (add this flag to the pytest run command):
-    ```
+
+    ```bash
     --alluredir=reports/allure-results
     ```
 
 - View Allure Report Locally:
-    ```
+
+    ```bash
     allure serve reports/allure-results
     ```
 
 - Optional: generate a static HTML report (requires Allure CLI):
-    ```
+
+    ```bash
     allure generate reports/allure-results -o reports/allure-report
     ```
 
 ## GitHub Actions CI/CD
+
 - Runs automatically on every push/PR to main
 - Matrix strategy: Chrome + Firefox (headless)
 - Parallel execution with pytest-xdist
@@ -135,6 +154,7 @@ PASSWORD=SuperSecretPassword!
 ## Jenkins CI/CD
 
 ### Prerequisites
+
 - Jenkins 2.400+ with Docker support
 - Docker installed on Jenkins agent
 - Required Jenkins plugins:
@@ -143,6 +163,7 @@ PASSWORD=SuperSecretPassword!
   - HTML Publisher Plugin
 
 ### Pipeline Features
+
 - Multi-browser execution (Chrome & Firefox)
 - Parallel test execution
 - Allure report generation
@@ -151,6 +172,7 @@ PASSWORD=SuperSecretPassword!
 - Post-build notifications
 
 ### Running in Jenkins
+
 1. Create a new Pipeline job in Jenkins
 2. Configure SCM to point to your repository
 3. Set "Script Path" to `Jenkinsfile`
@@ -158,13 +180,17 @@ PASSWORD=SuperSecretPassword!
 5. Run the pipeline
 
 ### Pipeline Parameters
+
 The Jenkinsfile supports the following parameters:
+
 - `BROWSER`: Browser choice (chrome/firefox/both)
 - `HEADLESS`: Run in headless mode (true/false)
 - `PARALLEL_WORKERS`: Number of parallel workers (default: auto)
 
 ### Viewing Reports in Jenkins
+
 After each build:
+
 - **Allure Report:** Click "Allure Report" in the build menu
 - **JUnit Results:** Available in "Test Result" section
 - **Videos:** Archived as build artifacts
@@ -172,7 +198,9 @@ After each build:
 ## Docker Support
 
 ### Dockerfile.jenkins
+
 The project includes a custom Jenkins agent image with all dependencies:
+
 - Python 3.10
 - Chrome & ChromeDriver
 - Firefox & GeckoDriver
@@ -180,6 +208,7 @@ The project includes a custom Jenkins agent image with all dependencies:
 - All Python dependencies
 
 ## Allure Reports (Live)
+
 Latest reports are published automatically to GitHub Pages:
 
 🔹 **Chrome (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19708267295/)  
@@ -193,7 +222,8 @@ Latest reports are published automatically to GitHub Pages:
 > Reports update automatically after each CI run.
 
 ## Project layout
-```
+
+```text
 selenium-python/
 ├── .github/
 │    └── workflows/ci.yml                   # GitHub Actions workflow
@@ -220,11 +250,12 @@ selenium-python/
 ```
 
 ## How to Add New Tests
+
 1. Create page object in pages/features/your_feature/your_page.py
 2. Register it in pages/base/page_manager.py
 3. Add test in tests/test_your_feature.py
 4. (Optional) Add @pytest.mark.smoke or other markers
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
