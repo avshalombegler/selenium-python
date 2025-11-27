@@ -105,8 +105,9 @@ EOF
             script {
                 def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                 
-                // Generate individual browser HTML reports
+                // Generate and publish reports for each browser
                 browsers.each { browser ->
+                    // Generate Allure report
                     sh """
                         if [ -d "reports/allure-results-${browser}" ]; then
                             allure generate reports/allure-results-${browser} \
@@ -115,10 +116,7 @@ EOF
                         fi
                     """
                     
-                    // Archive individual browser HTML reports
-                    archiveArtifacts artifacts: "reports/allure-report-${browser}/**", allowEmptyArchive: true
-                    
-                    // Publish individual HTML reports
+                    // Publish HTML report with proper escaping
                     publishHTML([
                         allowMissing: false,
                         alwaysLinkToLastBuild: true,
@@ -126,10 +124,15 @@ EOF
                         reportDir: "reports/allure-report-${browser}",
                         reportFiles: 'index.html',
                         reportName: "Allure Report - ${browser.capitalize()}",
-                        reportTitles: ''
+                        reportTitles: "Allure Report - ${browser.capitalize()}",
+                        includes: '**/*',
+                        escapeUnderscores: false
                     ])
                     
-                    // Archive JUnit XML
+                    // Archive the HTML reports
+                    archiveArtifacts artifacts: "reports/allure-report-${browser}/**", allowEmptyArchive: true
+                    
+                    // Archive JUnit XML (uncomment if needed)
                     // junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
                 }
                 
