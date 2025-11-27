@@ -1,0 +1,29 @@
+2025-11-27 13:15:49,562 - INFO - [test_files_upload_functionality[test1.json]] Starting test: test_files_upload_functionality[test1.json]
+2025-11-27 13:15:49,680 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:15:49,691 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:15:49,692 - INFO - [] Capture loop started.
+2025-11-27 13:15:49,692 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:15:49,693 - INFO - [test_files_upload_functionality[test1.json]] Started recording: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251127_131549/test_files_upload_functionality[test1.json]_20251127_131549.mp4
+2025-11-27 13:15:49,694 - INFO - [test_files_upload_functionality[test1.json]] Tests Files Upload.
+2025-11-27 13:15:49,694 - INFO - [test_files_upload_functionality[test1.json]] Navigating to File Upload page.
+2025-11-27 13:15:49,832 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:15:49,846 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:15:49,923 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:15:49,986 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:15:50,027 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:15:50,098 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:15:50,104 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:15:50,104 - INFO - [test_files_upload_functionality[test1.json]] Upload file using the Upload button.
+2025-11-27 13:15:50,104 - INFO - [test_files_upload_functionality[test1.json]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/test1.json' on element '('id', 'file-upload')'.
+2025-11-27 13:15:50,165 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:15:50,228 - INFO - [test_files_upload_functionality[test1.json]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:15:50,306 - WARNING - [test_files_upload_functionality[test1.json]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:15:50,313 - INFO - [test_files_upload_functionality[test1.json]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:15:50,313 - INFO - [test_files_upload_functionality[test1.json]] Verifying file uploaded sucessfully.
+2025-11-27 13:15:50,327 - INFO - [test_files_upload_functionality[test1.json]] Test PASSED: test_files_upload_functionality[test1.json] (Duration: 0.63s).
+2025-11-27 13:15:50,327 - INFO - [test_files_upload_functionality[test1.json]] Stopping video recording...
+2025-11-27 13:15:50,328 - INFO - [test_files_upload_functionality[test1.json]] Stopping video recording and assembling.
+2025-11-27 13:15:50,372 - INFO - [test_files_upload_functionality[test1.json]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251127_131549/frames
+2025-11-27 13:15:50,372 - INFO - [test_files_upload_functionality[test1.json]] Found 4 valid frames.
+2025-11-27 13:15:50,581 - INFO - [test_files_upload_functionality[test1.json]] Video created: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251127_131549/test_files_upload_functionality[test1.json]_20251127_131549.mp4
+2025-11-27 13:15:51,582 - INFO - [test_files_upload_functionality[test1.json]] Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[test1.json]_20251127_131549/test_files_upload_functionality[test1.json]_20251127_131549.mp4

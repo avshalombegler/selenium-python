@@ -1,0 +1,20 @@
+2025-11-27 13:16:02,326 - INFO - [test_table_header_per_column[Sit]] Starting test: test_table_header_per_column[Sit]
+2025-11-27 13:16:02,394 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:16:02,420 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:16:02,422 - INFO - [] Capture loop started.
+2025-11-27 13:16:02,422 - INFO - [test_table_header_per_column[Sit]] Started recording: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_131602/test_table_header_per_column[Sit]_20251127_131602.mp4
+2025-11-27 13:16:02,425 - INFO - [test_table_header_per_column[Sit]] Verify table head text per column.
+2025-11-27 13:16:02,425 - INFO - [test_table_header_per_column[Sit]] Navigating to Challenging DOM page.
+2025-11-27 13:16:02,513 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:16:02,697 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 13:16:02,849 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:16:02,849 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 13:16:02,849 - INFO - [test_table_header_per_column[Sit]] Getting table head text of column 'Sit'.
+2025-11-27 13:16:02,905 - INFO - [test_table_header_per_column[Sit]] Test PASSED: test_table_header_per_column[Sit] (Duration: 0.48s).
+2025-11-27 13:16:02,906 - INFO - [test_table_header_per_column[Sit]] Stopping video recording...
+2025-11-27 13:16:02,906 - INFO - [test_table_header_per_column[Sit]] Stopping video recording and assembling.
+2025-11-27 13:16:02,993 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:16:03,061 - INFO - [test_table_header_per_column[Sit]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_131602/frames
+2025-11-27 13:16:03,062 - INFO - [test_table_header_per_column[Sit]] Found 3 valid frames.
+2025-11-27 13:16:03,259 - INFO - [test_table_header_per_column[Sit]] Video created: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_131602/test_table_header_per_column[Sit]_20251127_131602.mp4
+2025-11-27 13:16:04,261 - INFO - [test_table_header_per_column[Sit]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_131602/test_table_header_per_column[Sit]_20251127_131602.mp4

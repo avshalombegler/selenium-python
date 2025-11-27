@@ -1,0 +1,20 @@
+2025-11-27 13:15:54,416 - INFO - [test_each_button_clicks[green]] Starting test: test_each_button_clicks[green]
+2025-11-27 13:15:54,487 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:15:54,504 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:15:54,645 - INFO - [] Capture loop started.
+2025-11-27 13:15:54,646 - INFO - [test_each_button_clicks[green]] Started recording: tests_recordings/gw0/test_each_button_clicks[green]_20251127_131554/test_each_button_clicks[green]_20251127_131554.mp4
+2025-11-27 13:15:54,647 - INFO - [test_each_button_clicks[green]] Verify each button in page is clickable.
+2025-11-27 13:15:54,647 - INFO - [test_each_button_clicks[green]] Navigating to Challenging DOM page.
+2025-11-27 13:15:54,737 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:15:55,095 - INFO - [test_each_button_clicks[green]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 13:15:55,298 - WARNING - [test_each_button_clicks[green]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:15:55,305 - INFO - [test_each_button_clicks[green]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 13:15:55,306 - INFO - [test_each_button_clicks[green]] Clicking green button.
+2025-11-27 13:15:55,566 - INFO - [test_each_button_clicks[green]] Test PASSED: test_each_button_clicks[green] (Duration: 0.92s).
+2025-11-27 13:15:55,567 - INFO - [test_each_button_clicks[green]] Stopping video recording...
+2025-11-27 13:15:55,568 - INFO - [test_each_button_clicks[green]] Stopping video recording and assembling.
+2025-11-27 13:15:55,707 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:15:55,776 - INFO - [test_each_button_clicks[green]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[green]_20251127_131554/frames
+2025-11-27 13:15:55,776 - INFO - [test_each_button_clicks[green]] Found 3 valid frames.
+2025-11-27 13:15:56,020 - INFO - [test_each_button_clicks[green]] Video created: tests_recordings/gw0/test_each_button_clicks[green]_20251127_131554/test_each_button_clicks[green]_20251127_131554.mp4
+2025-11-27 13:15:57,022 - INFO - [test_each_button_clicks[green]] Video attached to test body: tests_recordings/gw0/test_each_button_clicks[green]_20251127_131554/test_each_button_clicks[green]_20251127_131554.mp4

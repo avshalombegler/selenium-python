@@ -1,0 +1,20 @@
+2025-11-27 13:16:04,266 - INFO - [test_table_header_per_column[Amet]] Starting test: test_table_header_per_column[Amet]
+2025-11-27 13:16:04,335 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:16:04,355 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:16:04,356 - INFO - [] Capture loop started.
+2025-11-27 13:16:04,357 - INFO - [test_table_header_per_column[Amet]] Started recording: tests_recordings/gw0/test_table_header_per_column[Amet]_20251127_131604/test_table_header_per_column[Amet]_20251127_131604.mp4
+2025-11-27 13:16:04,358 - INFO - [test_table_header_per_column[Amet]] Verify table head text per column.
+2025-11-27 13:16:04,358 - INFO - [test_table_header_per_column[Amet]] Navigating to Challenging DOM page.
+2025-11-27 13:16:04,458 - WARNING - [test_table_header_per_column[Amet]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:16:04,662 - INFO - [test_table_header_per_column[Amet]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 13:16:04,770 - WARNING - [test_table_header_per_column[Amet]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:16:04,790 - INFO - [test_table_header_per_column[Amet]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 13:16:04,791 - INFO - [test_table_header_per_column[Amet]] Getting table head text of column 'Amet'.
+2025-11-27 13:16:04,933 - WARNING - [test_table_header_per_column[Amet]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:16:04,948 - INFO - [test_table_header_per_column[Amet]] Test PASSED: test_table_header_per_column[Amet] (Duration: 0.59s).
+2025-11-27 13:16:04,949 - INFO - [test_table_header_per_column[Amet]] Stopping video recording...
+2025-11-27 13:16:04,949 - INFO - [test_table_header_per_column[Amet]] Stopping video recording and assembling.
+2025-11-27 13:16:04,998 - INFO - [test_table_header_per_column[Amet]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Amet]_20251127_131604/frames
+2025-11-27 13:16:04,999 - INFO - [test_table_header_per_column[Amet]] Found 3 valid frames.
+2025-11-27 13:16:05,252 - INFO - [test_table_header_per_column[Amet]] Video created: tests_recordings/gw0/test_table_header_per_column[Amet]_20251127_131604/test_table_header_per_column[Amet]_20251127_131604.mp4
+2025-11-27 13:16:06,253 - INFO - [test_table_header_per_column[Amet]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Amet]_20251127_131604/test_table_header_per_column[Amet]_20251127_131604.mp4

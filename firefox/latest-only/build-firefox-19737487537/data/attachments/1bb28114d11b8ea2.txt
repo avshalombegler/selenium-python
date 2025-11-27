@@ -1,0 +1,24 @@
+2025-11-27 13:16:05,367 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Starting test: test_digest_auth_login_scenarios[admin-wrong]
+2025-11-27 13:16:05,368 - INFO - [] Capture loop started.
+2025-11-27 13:16:05,368 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:16:05,368 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Started recording: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251127_131605/test_digest_auth_login_scenarios[admin-wrong]_20251127_131605.mp4
+2025-11-27 13:16:05,369 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Tests for Digest Authentication scenarios.
+2025-11-27 13:16:05,370 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Navigating to Digest Authentication page.
+2025-11-27 13:16:05,427 - WARNING - [test_digest_auth_login_scenarios[admin-wrong]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:16:05,428 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Check if login succeeded.
+2025-11-27 13:16:05,436 - CRITICAL - [test_digest_auth_login_scenarios[admin-wrong]] Unexpected error for locator ('css selector', 'div#content p'): Alert Text: None
+Message: Unexpected promptUserAndPass dialog detected. Performed handler "dismiss"
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:927:5
+GeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:3233:11
+
+2025-11-27 13:16:05,448 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Page source: <html><head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head><body><pre></pre></body></html>
+2025-11-27 13:16:05,449 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Test PASSED: test_digest_auth_login_scenarios[admin-wrong] (Duration: 0.08s).
+2025-11-27 13:16:05,450 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording...
+2025-11-27 13:16:05,450 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Stopping video recording and assembling.
+2025-11-27 13:16:05,459 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Thread joined. Frames dir: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251127_131605/frames
+2025-11-27 13:16:05,460 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Found 1 valid frames.
+2025-11-27 13:16:05,565 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video created: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251127_131605/test_digest_auth_login_scenarios[admin-wrong]_20251127_131605.mp4
+2025-11-27 13:16:06,567 - INFO - [test_digest_auth_login_scenarios[admin-wrong]] Video attached to test body: tests_recordings/gw2/test_digest_auth_login_scenarios[admin-wrong]_20251127_131605/test_digest_auth_login_scenarios[admin-wrong]_20251127_131605.mp4
