@@ -27,12 +27,10 @@ WORKDIR /app
 # Copy application files
 COPY allure_server_api.py /app/
 
-# Verify file exists
-RUN ls -la /app/ && python3 -c "import allure_server_api; print('Module imported successfully')"
-
 # Railway uses PORT environment variable
 ENV PORT=5050
 ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
 
 EXPOSE ${PORT}
 
@@ -40,5 +38,5 @@ EXPOSE ${PORT}
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
     CMD curl -f http://localhost:${PORT}/health || exit 1
 
-# Start gunicorn with proper Python path
-CMD ["sh", "-c", "exec gunicorn -w 2 -b 0.0.0.0:${PORT} --timeout 120 --access-logfile - --error-logfile - --log-level debug allure_server_api:app"]
+# Start gunicorn - use shell form to properly expand PORT variable
+CMD gunicorn -w 2 -b 0.0.0.0:$PORT --timeout 120 --access-logfile - --error-logfile - --log-level debug allure_server_api:app
