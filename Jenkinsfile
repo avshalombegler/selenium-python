@@ -99,7 +99,7 @@ PASSWORD=${PASSWORD}"""
                         ])
                         
                         // Add upload to Allure Server
-                        withCredentials([string(credentialsId: 'ALLURE_SERVER_URL', variable: 'ALLURE_SERVER_URL')]) {
+                        withCredentials([string(credentialsId: 'RAILWAY_ALLURE_SERVER_URL', variable: 'ALLURE_SERVER_URL')]) {
                             sh """
                                 if [ ! -z "\${ALLURE_SERVER_URL}" ] && [ -d "reports/allure-results-${browser}" ]; then
                                     cd reports

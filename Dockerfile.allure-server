@@ -1,11 +1,16 @@
 FROM openjdk:11-jre-slim
 
-# Install dependencies
+# Install dependencies including Python3 and Flask
 RUN apt-get update && apt-get install -y \
     curl \
     wget \
     unzip \
+    python3 \
+    python3-pip \
     && rm -rf /var/lib/apt/lists/*
+
+# Install Flask and gunicorn
+RUN pip3 install flask gunicorn
 
 # Install Allure
 ENV ALLURE_VERSION=2.35.1
@@ -19,10 +24,13 @@ RUN mkdir -p /app/projects /app/reports
 
 WORKDIR /app
 
-# Copy startup script
+# Copy application files
+COPY allure_server_api.py /app/
 COPY start-allure-server.sh /app/
 RUN chmod +x /app/start-allure-server.sh
 
-EXPOSE 5050
+# Railway uses PORT environment variable
+ENV PORT=5050
+EXPOSE ${PORT}
 
 CMD ["/app/start-allure-server.sh"]

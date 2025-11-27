@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo "Starting Allure Server..."
+echo "Starting Allure Server with Flask API..."
+
+# Use Railway's PORT environment variable or default to 5050
+PORT=${PORT:-5050}
 
 # Create initial project structure if it doesn't exist
 if [ ! -d "/app/projects/default" ]; then
@@ -17,7 +20,7 @@ for project in /app/projects/*; do
     fi
 done
 
-# Start simple HTTP server to serve reports
-echo "Starting HTTP server on port 5050..."
-cd /app/reports
-python3 -m http.server 5050
+# Start Flask application with Gunicorn
+echo "Starting Flask API server on port ${PORT}..."
+cd /app
+exec gunicorn -w 2 -b 0.0.0.0:${PORT} --timeout 120 --access-logfile - --error-logfile - allure_server_api:app
