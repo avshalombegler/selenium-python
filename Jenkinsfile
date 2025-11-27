@@ -1,126 +1,110 @@
 pipeline {
     agent any
     
-    parameters {
-        choice(name: 'BROWSER', choices: ['both', 'chrome', 'firefox'], description: 'Browser to run tests on')
-        choice(name: 'MARKER', choices: ['full', 'smoke', 'regression'], description: 'Test marker to run')
-        string(name: 'WORKERS', defaultValue: 'auto', description: 'Number of parallel workers')
-    }
-    
-    options {
-        timeout(time: 30, unit: 'MINUTES')
-        buildDiscarder(logRotator(numToKeepStr: '10'))
-        timestamps()
-    }
-    
     environment {
-        SHORT_TIMEOUT = '3'
-        LONG_TIMEOUT = '10'
-        VIDEO_RECORDING = 'True'
-        HEADLESS = 'True'
-        MAXIMIZED = 'False'
-        PYTHONUNBUFFERED = '1'
+        PYTHON_VERSION = '3.10'
+        RAILWAY_ALLURE_URL = credentials('railway-allure-url')
     }
     
     stages {
-        stage('Setup') {
+        stage('Checkout') {
             steps {
-                ansiColor('xterm') {
-                    script {
-                        echo 'Creating directories for reports and artifacts'
-                        sh 'mkdir -p reports tests_recordings tests_screenshots'
-                        
-                        withCredentials([
-                            string(credentialsId: 'BASE_URL', variable: 'BASE_URL'),
-                            string(credentialsId: 'TEST_USERNAME', variable: 'USERNAME'),
-                            string(credentialsId: 'TEST_PASSWORD', variable: 'PASSWORD')
-                        ]) {
-                            writeFile file: '.env', text: """BASE_URL=${BASE_URL}
-SHORT_TIMEOUT=${SHORT_TIMEOUT}
-LONG_TIMEOUT=${LONG_TIMEOUT}
-VIDEO_RECORDING=${VIDEO_RECORDING}
-HEADLESS=${HEADLESS}
-MAXIMIZED=${MAXIMIZED}
-USERNAME=${USERNAME}
-PASSWORD=${PASSWORD}"""
-                            
-                            echo 'Verifying BASE_URL is accessible'
-                            sh 'curl -sf ${BASE_URL} > /dev/null || exit 1'
-                        }
-                    }
-                }
+                checkout scm
+            }
+        }
+        
+        stage('Setup Python') {
+            steps {
+                sh '''
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install --upgrade pip
+                    pip install -r requirements.txt
+                '''
             }
         }
         
         stage('Run Tests') {
             steps {
-                ansiColor('xterm') {
-                    script {
-                        def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                        
-                        parallel browsers.collectEntries { browser -> 
-                            [(browser): {
-                                sh """
-                                    xvfb-run -a -s "-screen 0 1920x1080x24" \
-                                        pytest tests/ -v -n ${params.WORKERS} --dist=loadfile \
-                                        --browser=${browser} \
-                                        --alluredir=reports/allure-results-${browser} \
-                                        --junitxml=reports/junit-${browser}.xml \
-                                        --reruns 1 --reruns-delay 2 -m ${params.MARKER} || true
-                                """
-                            }]
-                        }
-                    }
+                sh '''
+                    . venv/bin/activate
+                    pytest tests/ \
+                        --alluredir=allure-results \
+                        --html=report.html \
+                        --self-contained-html \
+                        -v || true
+                '''
+            }
+        }
+        
+        stage('Upload to Railway Allure Server') {
+            steps {
+                script {
+                    def projectName = 'selenium-tests-jenkins'
+                    def buildId = env.BUILD_NUMBER
+                    
+                    sh """
+                        if [ -d "allure-results" ]; then
+                            cd allure-results
+                            tar -czf ../allure-results.tar.gz .
+                            cd ..
+                            
+                            echo "Uploading to Railway Allure Server..."
+                            curl -X POST \
+                                -H "Content-Type: application/gzip" \
+                                --data-binary @allure-results.tar.gz \
+                                "${RAILWAY_ALLURE_URL}/api/upload/${projectName}?buildId=${buildId}" \
+                                -w "\\nHTTP Status: %{http_code}\\n"
+                            
+                            echo "✓ Report uploaded successfully!"
+                            echo "View report at: ${RAILWAY_ALLURE_URL}/reports/${projectName}"
+                        fi
+                    """
                 }
+            }
+        }
+        
+        stage('Generate Local Allure Report') {
+            steps {
+                script {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: 'allure-results']]
+                    ])
+                }
+            }
+        }
+        
+        stage('Archive Reports') {
+            steps {
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'allure-report',
+                    reportFiles: 'index.html',
+                    reportName: 'Allure Report',
+                    reportTitles: "Build ${env.BUILD_NUMBER}"
+                ])
+                
+                archiveArtifacts artifacts: 'report.html', allowEmptyArchive: true
             }
         }
     }
     
     post {
         always {
-            ansiColor('xterm') {
-                script {
-                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                    
-                    browsers.each { browser ->
-                        sh """
-                            [ -d "reports/allure-results-${browser}" ] && \
-                            allure generate reports/allure-results-${browser} \
-                            -o reports/allure-report-${browser} --clean || true
-                        """
-                        
-                        publishHTML([
-                            allowMissing: true,
-                            alwaysLinkToLastBuild: true,
-                            keepAll: true,
-                            reportDir: "reports/allure-report-${browser}",
-                            reportFiles: 'index.html',
-                            reportName: "Allure - ${browser.capitalize()}"
-                        ])
-                        
-                        // Add upload to Allure Server
-                        withCredentials([string(credentialsId: 'RAILWAY_ALLURE_SERVER_URL', variable: 'ALLURE_SERVER_URL')]) {
-                            sh """
-                                if [ ! -z "\${ALLURE_SERVER_URL}" ] && [ -d "reports/allure-results-${browser}" ]; then
-                                    cd reports
-                                    tar -czf allure-results-${browser}.tar.gz allure-results-${browser}/
-                                    curl -X POST \
-                                        -H "Content-Type: application/gzip" \
-                                        --data-binary @allure-results-${browser}.tar.gz \
-                                        "\${ALLURE_SERVER_URL}/api/upload/selenium-python-${browser}?buildId=${BUILD_ID}" \
-                                        || echo "Failed to upload to Allure Server"
-                                fi
-                            """
-                        }
-                    }
-                    
-                    archiveArtifacts artifacts: 'reports/**,tests_recordings/**,tests_screenshots/**', allowEmptyArchive: true
-                }
-            }
+            cleanWs()
         }
-        
-        cleanup {
-            cleanWs(deleteDirs: true, patterns: [[pattern: 'reports/**', type: 'INCLUDE']])
+        success {
+            echo "✓ Tests passed and report uploaded to Railway!"
+            echo "View report: ${RAILWAY_ALLURE_URL}/reports/selenium-tests-jenkins"
+        }
+        failure {
+            echo "✗ Tests failed. Check reports for details."
         }
     }
 }

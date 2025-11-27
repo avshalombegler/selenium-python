@@ -1,408 +1,91 @@
-name: CI for Selenium-Pytest-Allure project
+name: Selenium Tests CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
     branches: [ main ]
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  workflow_dispatch:
 
 jobs:
-  check-skip:
-    runs-on: ubuntu-latest
-    outputs:
-      should_skip: ${{ steps.skip_check.outputs.should_skip }}
-    steps:
-      - name: Check for skip markers
-        id: skip_check
-        run: |
-          COMMIT_MSG="${{ github.event.head_commit.message }}"
-          PR_TITLE="${{ github.event.pull_request.title }}"
-          
-          if [[ "$COMMIT_MSG" == *"[skip ci]"* ]] || [[ "$COMMIT_MSG" == *"[ci skip]"* ]] || [[ "$PR_TITLE" == *"[skip ci]"* ]] || [[ "$PR_TITLE" == *"[ci skip]"* ]]; then
-            echo "should_skip=true" >> $GITHUB_OUTPUT
-            echo "Skipping CI due to skip marker in commit message or PR title"
-          else
-            echo "should_skip=false" >> $GITHUB_OUTPUT
-          fi
-
   test:
-    needs: check-skip
-    if: needs.check-skip.outputs.should_skip != 'true'
-    timeout-minutes: 30
     runs-on: ubuntu-latest
-    outputs:
-      browser: ${{ steps.set_browser.outputs.browser }}
-    strategy:
-      fail-fast: false # Continue running other jobs if one fails
-      matrix:
-        browser: [chrome, firefox]
-        workers: [auto]
-        include:
-          - suite: full
-            marker: full
     
-    name: ${{ matrix.browser }} ${{ matrix.suite }} tests
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set browser output
-        id: set_browser
-        run: echo "browser=${{ matrix.browser }}" >> $GITHUB_OUTPUT
-
-      - name: Update APT package lists
-        run: sudo apt-get update
+      - uses: actions/checkout@v4
       
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-
-      - name: Cache pip
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: ${{ runner.os }}-pip-
-
-      - name: Cache WebDriver
-        uses: actions/cache@v3
-        with:
-          path: ~/.wdm
-          key: ${{ runner.os }}-wdm-${{ matrix.browser }}-${{ hashFiles('.github/workflows/ci.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-wdm-${{ matrix.browser }}-
-            ${{ runner.os }}-wdm-
-
+          
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
-      - name: Install ffmpeg, rsync
-        run: sudo apt-get install -y ffmpeg rsync
-
-      - name: Cache APT packages
-        uses: actions/cache@v3
-        with:
-          path: /var/cache/apt
-          key: ${{ runner.os }}-apt-${{ hashFiles('.github/workflows/ci.yml') }}
-          restore-keys: ${{ runner.os }}-apt-
-
-      - name: Setup Chrome
-        if: matrix.browser == 'chrome'
-        uses: browser-actions/setup-chrome@v1
-
-      - name: Setup Firefox
-        if: matrix.browser == 'firefox'
-        uses: browser-actions/setup-firefox@v1
-
-      - name: Install GeckoDriver
-        if: matrix.browser == 'firefox'
+          
+      - name: Install Chrome
         run: |
-          GECKODRIVER_VERSION=v0.35.0
-          wget -q https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
-          tar -xzf geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
-          sudo mv geckodriver /usr/local/bin/
-          sudo chmod +x /usr/local/bin/geckodriver
-          geckodriver --version
-
-      - name: Cache Allure
-        uses: actions/cache@v3
-        with:
-          path: /usr/local/allure
-          key: ${{ runner.os }}-allure-2.35.1
-
-      - name: Install Java and Allure Commandline
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          
+      - name: Run tests
         run: |
-          sudo apt-get install -y unzip curl openjdk-11-jre-headless
-          if [ ! -d "/usr/local/allure" ]; then  # Only install if not cached
-            curl -L -o /tmp/allure.zip https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip
-            sudo unzip -q /tmp/allure.zip -d /tmp
-            sudo mv /tmp/allure-2.35.1 /usr/local/allure
-            sudo chmod -R +x /usr/local/allure/bin
-            sudo ln -sf /usr/local/allure/bin/allure /usr/local/bin/allure
-          fi
-          allure --version
-
-      - name: Create .env file
-        run: |
-          echo "BASE_URL=${{ secrets.BASE_URL }}" > .env
-          echo "BROWSER=${{ matrix.browser }}" >> .env
-          echo "SHORT_TIMEOUT=3" >> .env
-          echo "LONG_TIMEOUT=10" >> .env
-          echo "VIDEO_RECORDING=True" >> .env
-          echo "HEADLESS=True" >> .env
-          echo "MAXIMIZED=False" >> .env
-          echo "USERNAME=${{ secrets.TEST_USERNAME }}" >> .env
-          echo "PASSWORD=${{ secrets.TEST_PASSWORD }}" >> .env
-          echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
-
-      - name: Check website availability
-        run: curl -s -f ${{ secrets.BASE_URL }} > /dev/null || exit 1
-
-      - name: Create reports directories
-        run: mkdir -p reports/allure-results reports/allure-report
-
-      - name: Create additional directories
-        run: mkdir -p tests_recordings tests_screenshots
-
-      - name: Run Pytest with Allure
+          pytest tests/ \
+            --alluredir=allure-results \
+            --html=report.html \
+            --self-contained-html \
+            -v
         continue-on-error: true
-        id: pytest
-        run: |
-          PYTHONUNBUFFERED=1 xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-            pytest \
-              tests/ \
-              -v \
-              -n ${{ matrix.workers }} \
-              --dist=loadfile \
-              --alluredir=reports/allure-results \
-              --junitxml=reports/junit.xml \
-              --reruns 1 \
-              --reruns-delay 2 \
-              -m ${{ matrix.marker }}
-
-      - name: Clean Allure Report Directory
-        if: steps.pytest.outcome == 'failure'
-        run: rm -rf reports/allure-report/build-*
-
-      - name: Generate Allure Report (Latest-Only)
-        if: always()
-        run: |
-          mkdir -p reports/allure-report/latest-only/build-${{ matrix.browser }}-${{ github.run_id }}
-          allure generate --clean reports/allure-results -o reports/allure-report/latest-only/build-${{ matrix.browser }}-${{ github.run_id }}
-          sleep 2
-
-      - name: Upload Allure Report (Latest-Only)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report-${{ matrix.browser }}-latest-only
-          path: reports/allure-report/latest-only/
-          retention-days: 7 
-
-      - name: Download Previous Allure Results
-        if: always()
-        run: |
-          git fetch origin gh-pages --depth=1 || true
-          mkdir -p reports/allure-results-history
-          if git ls-tree -r origin/gh-pages --name-only 2>/dev/null | grep -q "history/${{ matrix.browser }}"; then
-            git checkout origin/gh-pages -- history/${{ matrix.browser }} || true
-            cp -r history/${{ matrix.browser }}/* reports/allure-results-history/ || true
-          fi
-
-      - name: Merge Allure History
-        if: always()
-        run: |
-          mkdir -p reports/allure-results/history
-          if [ -d "reports/allure-results-history" ] && [ "$(ls -A reports/allure-results-history 2>/dev/null)" ]; then
-            cp -r reports/allure-results-history/* reports/allure-results/history/ || true
-          else
-            echo "No previous allure-results history to merge."
-          fi
-
-      - name: Generate Allure Report (Latest-with-History)
-        if: always()
-        run: |
-          mkdir -p reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}
-          allure generate --clean reports/allure-results -o reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}
-          sleep 2
-
-      - name: Copy history from generated report
-        if: always()
-        run: |
-          if [ -d "reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}/history" ]; then
-            mkdir -p reports/allure-results/history
-            cp -r reports/allure-report/latest-with-history/build-${{ matrix.browser }}-${{ github.run_id }}/history/* reports/allure-results/history/ || true
-            echo "History copied from generated report"
-          else
-            echo "No history in generated report"
-          fi
-
-      - name: Upload Allure Results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results-${{ matrix.browser }}
-          path: reports/allure-results/
-          retention-days: 7
-
-      - name: Upload Allure Results History
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results-${{ matrix.browser }}-history
-          path: reports/allure-results/history
-          retention-days: 30
-          if-no-files-found: ignore
-
-      - name: Upload Allure Report (Latest-with-History)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report-${{ matrix.browser }}-latest-with-history
-          path: reports/allure-report/latest-with-history/
-          retention-days: 7
-
-      - name: Upload Videos
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-videos-${{ matrix.browser }}-${{ github.run_id }}
-          path: tests_recordings/
-          retention-days: 7
-
-      - name: Upload Screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-screenshots-${{ matrix.browser }}-${{ github.run_id }}
-          path: tests_screenshots/
-          retention-days: 7
-
+        
       - name: Upload to Railway Allure Server
         if: always()
+        env:
+          RAILWAY_URL: ${{ secrets.RAILWAY_ALLURE_URL }}
         run: |
-          cd allure-results
-          tar -czf ../allure-results.tar.gz .
-          cd ..
-          curl -X POST \
-            -H "Content-Type: application/gzip" \
-            --data-binary @allure-results.tar.gz \
-            "https://<your-railway-app>.railway.app/api/upload/selenium-tests?buildId=${{ github.run_number }}"
-
-  deploy:
-    needs: [test, check-skip]
-    if: github.ref == 'refs/heads/main' && needs.check-skip.outputs.should_skip != 'true'
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    timeout-minutes: 10
-    steps:
-      - name: Create reports directory
-        run: mkdir -p reports
-      
-      - name: Download Allure Report (Chrome) - (Latest-Only)
+          if [ -d "allure-results" ]; then
+            cd allure-results
+            tar -czf ../allure-results.tar.gz .
+            cd ..
+            
+            PROJECT_NAME="selenium-tests"
+            BUILD_ID="${{ github.run_number }}"
+            
+            echo "Uploading to Railway Allure Server..."
+            curl -X POST \
+              -H "Content-Type: application/gzip" \
+              --data-binary @allure-results.tar.gz \
+              "${RAILWAY_URL}/api/upload/${PROJECT_NAME}?buildId=${BUILD_ID}" \
+              -w "\nHTTP Status: %{http_code}\n"
+            
+            echo "✓ Report uploaded successfully!"
+            echo "View report at: ${RAILWAY_URL}/reports/${PROJECT_NAME}"
+          else
+            echo "No allure-results directory found"
+          fi
+          
+      - name: Generate Allure Report (for GitHub Pages)
         if: always()
-        uses: actions/download-artifact@v4
+        uses: simple-elf/allure-report-action@master
         with:
-          name: allure-report-chrome-latest-only
-          path: reports/chrome/latest-only
-        continue-on-error: true
-      
-      - name: Download Allure Report (Chrome) - (Latest-with-History)
-        if: always()
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-report-chrome-latest-with-history
-          path: reports/chrome/latest-with-history
-        continue-on-error: true
-      
-      - name: Download Allure Report (Firefox) - (Latest-Only)
-        if: always()
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-report-firefox-latest-only
-          path: reports/firefox/latest-only
-        continue-on-error: true
-
-      - name: Download Allure Report (Firefox) - (Latest-with-History)
-        if: always()
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-report-firefox-latest-with-history
-          path: reports/firefox/latest-with-history
-        continue-on-error: true
-
-      - name: Download Allure Results History (Chrome)
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-results-chrome-history
-          path: reports/history/chrome
-        continue-on-error: true
-      
-      - name: Download Allure Results History (Firefox)
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-results-firefox-history
-          path: reports/history/firefox
-        continue-on-error: true
-
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
+          
       - name: Deploy to GitHub Pages
-        id: deployment
+        if: always() && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: reports
-
-      - name: Checkout gh-pages
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-
-      - name: Store History in gh-pages
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          publish_dir: allure-history
+          publish_branch: gh-pages
           
-          # Store history for both browsers
-          for browser in chrome firefox; do
-            mkdir -p history/${browser}
-            if [ -d "reports/history/${browser}" ]; then
-              cp -r reports/history/${browser}/* history/${browser}/ || true
-              echo "Stored history for ${browser}"
-            else
-              echo "No history to store for ${browser}"
-            fi
-          done
-          
-          git add history/
-          git commit -m "Update Allure history for run ${{ github.run_id }}" || echo "No changes to history"
-          git push origin gh-pages
-
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Update README with Latest Run ID
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git checkout main
-          git pull origin main --rebase
-          sed -i "s/build-chrome-[0-9]*/build-chrome-${{ github.run_id }}/g" README.md
-          sed -i "s/build-firefox-[0-9]*/build-firefox-${{ github.run_id }}/g" README.md
-          git add README.md
-          git commit -m "Update README with latest run ID ${{ github.run_id }}" || echo "No changes to commit"
-          git push || (git pull --rebase && git push)
-
-  clean:
-    needs: [deploy, check-skip]
-    if: github.ref == 'refs/heads/main' && needs.check-skip.outputs.should_skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout gh-pages
-        uses: actions/checkout@v4
+      - name: Upload HTML Report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          ref: gh-pages
-      
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-      - name: Clean old reports
-        run: |
-          find chrome/latest-only/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
-          find chrome/latest-with-history/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
-          find firefox/latest-only/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
-          find firefox/latest-with-history/ -type d -name "build-*" -mtime +7 -exec rm -rf {} + 2>/dev/null || true
-          git add .
-          git commit -m "Clean old Allure reports" || echo "No changes"
-          git push
+          name: test-report-${{ github.run_number }}
+          path: report.html
+          retention-days: 30
