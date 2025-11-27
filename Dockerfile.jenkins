@@ -56,6 +56,9 @@ RUN pip3 install --no-cache-dir --break-system-packages -r /tmp/requirements.txt
 # Ensure Python scripts are in PATH
 ENV PATH="/usr/local/bin:${PATH}"
 
+# Set CSP for Allure reports
+ENV JAVA_OPTS="-Dhudson.model.DirectoryBrowserSupport.CSP=\"default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';\""
+
 # Verify installations
 RUN pytest --version && allure --version && chromedriver --version
 
