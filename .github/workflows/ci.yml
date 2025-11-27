@@ -265,26 +265,17 @@ jobs:
           path: tests_screenshots/
           retention-days: 7
 
-      - name: Upload Results to Allure Server
-        if: always() && github.ref == 'refs/heads/main'
-        env:
-          ALLURE_SERVER_URL: ${{ secrets.RAILWAY_ALLURE_SERVER_URL }}
+      - name: Upload to Railway Allure Server
+        if: always()
         run: |
-          if [ ! -z "$ALLURE_SERVER_URL" ]; then
-            PROJECT_NAME="selenium-python-${{ matrix.browser }}"
-            
-            # Create tarball of results
-            cd reports
-            tar -czf allure-results.tar.gz allure-results/
-            
-            # Upload to Allure Server (note: this is a placeholder, needs API endpoint)
-            curl -X POST \
-              -H "Content-Type: application/gzip" \
-              --data-binary @allure-results.tar.gz \
-              "${ALLURE_SERVER_URL}/api/upload/${PROJECT_NAME}?buildId=${{ github.run_id }}" \
-              || echo "Failed to upload to Allure Server"
-          fi
-  
+          cd allure-results
+          tar -czf ../allure-results.tar.gz .
+          cd ..
+          curl -X POST \
+            -H "Content-Type: application/gzip" \
+            --data-binary @allure-results.tar.gz \
+            "https://<your-railway-app>.railway.app/api/upload/selenium-tests?buildId=${{ github.run_number }}"
+
   deploy:
     needs: [test, check-skip]
     if: github.ref == 'refs/heads/main' && needs.check-skip.outputs.should_skip != 'true'
