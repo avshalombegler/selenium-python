@@ -28,15 +28,10 @@ WORKDIR /app
 COPY allure_server_api.py /app/
 
 # Railway uses PORT environment variable
-ENV PORT=5050
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/app
 
-EXPOSE ${PORT}
+# Remove HEALTHCHECK from Dockerfile - Railway handles this via railway.json
+# Railway will use the healthcheckPath from railway.json
 
-# Healthcheck
-HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
-    CMD curl -f http://localhost:${PORT}/health || exit 1
-
-# Start gunicorn - use shell form to properly expand PORT variable
-CMD gunicorn -w 2 -b 0.0.0.0:$PORT --timeout 120 --access-logfile - --error-logfile - --log-level debug allure_server_api:app
+# Use shell form to properly expand PORT variable at runtime
+CMD gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info allure_server_api:app
