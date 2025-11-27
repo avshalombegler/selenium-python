@@ -27,6 +27,7 @@ pipeline {
             steps {
                 ansiColor('xterm') {
                     script {
+                        echo 'Creating directories for reports and artifacts'
                         sh 'mkdir -p reports tests_recordings tests_screenshots'
                         
                         withCredentials([
@@ -43,6 +44,7 @@ MAXIMIZED=${MAXIMIZED}
 USERNAME=${USERNAME}
 PASSWORD=${PASSWORD}"""
                             
+                            echo 'Verifying BASE_URL is accessible'
                             sh 'curl -sf ${BASE_URL} > /dev/null || exit 1'
                         }
                     }
