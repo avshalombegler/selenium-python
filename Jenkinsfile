@@ -9,8 +9,9 @@ pipeline {
     
     options {
         timeout(time: 30, unit: 'MINUTES')
-        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
+        buildDiscarder(logRotator(numToKeepStr: '10'))
         timestamps()
+        ansiColor('xterm')  // Better console output
     }
     
     environment {
@@ -23,48 +24,28 @@ pipeline {
     }
     
     stages {
-        stage('Checkout') {
+        stage('Setup') {
             steps {
-                checkout scm
-            }
-        }
-                        
-        stage('Prepare Directories') {
-            steps {
-                sh '''
-                    mkdir -p reports
-                    mkdir -p tests_recordings tests_screenshots
-                '''
-            }
-        }
-        
-        stage('Create .env File') {
-            steps {
-                withCredentials([
-                    string(credentialsId: 'BASE_URL', variable: 'BASE_URL'),
-                    string(credentialsId: 'TEST_USERNAME', variable: 'USERNAME'),
-                    string(credentialsId: 'TEST_PASSWORD', variable: 'PASSWORD')
-                ]) {
-                    sh '''
-                        cat > .env << EOF
-BASE_URL=${BASE_URL}
+                script {
+                    sh 'mkdir -p reports tests_recordings tests_screenshots'
+                    
+                    withCredentials([
+                        string(credentialsId: 'BASE_URL', variable: 'BASE_URL'),
+                        string(credentialsId: 'TEST_USERNAME', variable: 'USERNAME'),
+                        string(credentialsId: 'TEST_PASSWORD', variable: 'PASSWORD')
+                    ]) {
+                        writeFile file: '.env', text: """BASE_URL=${BASE_URL}
 SHORT_TIMEOUT=${SHORT_TIMEOUT}
 LONG_TIMEOUT=${LONG_TIMEOUT}
 VIDEO_RECORDING=${VIDEO_RECORDING}
 HEADLESS=${HEADLESS}
 MAXIMIZED=${MAXIMIZED}
 USERNAME=${USERNAME}
-PASSWORD=${PASSWORD}
-EOF
-                    '''
-                }
-            }
-        }
-        
-        stage('Check Website Availability') {
-            steps {
-                withCredentials([string(credentialsId: 'BASE_URL', variable: 'BASE_URL')]) {
-                    sh 'curl -s -f ${BASE_URL} > /dev/null || exit 1'
+PASSWORD=${PASSWORD}"""
+                        
+                        // Quick health check
+                        sh 'curl -sf ${BASE_URL} > /dev/null || exit 1'
+                    }
                 }
             }
         }
@@ -73,28 +54,19 @@ EOF
             steps {
                 script {
                     def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                    def stages = [:]
                     
-                    browsers.each { browser ->
-                        stages["Test ${browser}"] = {
+                    parallel browsers.collectEntries { browser -> 
+                        [(browser): {
                             sh """
-                                export BROWSER=${browser}
-                                xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" \
-                                    pytest tests/ \
-                                    -v \
-                                    -n ${params.WORKERS} \
-                                    --dist=loadfile \
+                                xvfb-run -a -s "-screen 0 1920x1080x24" \
+                                    pytest tests/ -v -n ${params.WORKERS} --dist=loadfile \
                                     --browser=${browser} \
                                     --alluredir=reports/allure-results-${browser} \
                                     --junitxml=reports/junit-${browser}.xml \
-                                    --reruns 1 \
-                                    --reruns-delay 2 \
-                                    -m ${params.MARKER} || true
+                                    --reruns 1 --reruns-delay 2 -m ${params.MARKER} || true
                             """
-                        }
+                        }]
                     }
-                    
-                    parallel stages
                 }
             }
         }
@@ -105,53 +77,29 @@ EOF
             script {
                 def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                 
-                // Generate and publish reports for each browser
                 browsers.each { browser ->
-                    // Generate Allure report
                     sh """
-                        if [ -d "reports/allure-results-${browser}" ]; then
-                            allure generate reports/allure-results-${browser} \
-                            -o reports/allure-report-${browser} \
-                            --clean
-                        fi
+                        [ -d "reports/allure-results-${browser}" ] && \
+                        allure generate reports/allure-results-${browser} \
+                        -o reports/allure-report-${browser} --clean || true
                     """
                     
-                    // Publish HTML report with proper escaping
                     publishHTML([
-                        allowMissing: false,
+                        allowMissing: true,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: "reports/allure-report-${browser}",
                         reportFiles: 'index.html',
-                        reportName: "Allure Report - ${browser.capitalize()}",
-                        reportTitles: "Allure Report - ${browser.capitalize()}",
-                        includes: '**/*',
-                        escapeUnderscores: false
+                        reportName: "Allure - ${browser.capitalize()}"
                     ])
-                    
-                    // Archive the HTML reports
-                    archiveArtifacts artifacts: "reports/allure-report-${browser}/**", allowEmptyArchive: true
-                    
-                    // Archive JUnit XML (uncomment if needed)
-                    // junit allowEmptyResults: true, testResults: "reports/junit-${browser}.xml"
                 }
                 
-                // Archive other artifacts
-                archiveArtifacts artifacts: 'tests_recordings/**', allowEmptyArchive: true
-                archiveArtifacts artifacts: 'tests_screenshots/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'reports/**,tests_recordings/**,tests_screenshots/**', allowEmptyArchive: true
             }
         }
         
-        success {
-            echo 'Pipeline completed successfully!'
-        }
-        
-        failure {
-            echo 'Pipeline failed!'
-        }
-        
         cleanup {
-            cleanWs()
+            cleanWs(deleteDirs: true, patterns: [[pattern: 'reports/**', type: 'INCLUDE']])
         }
     }
 }
