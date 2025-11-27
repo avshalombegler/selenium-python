@@ -1,0 +1,30 @@
+2025-11-27 13:21:31,815 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Starting test: test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]
+2025-11-27 13:21:32,135 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:21:32,146 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:21:32,147 - INFO - [] Capture loop started.
+2025-11-27 13:21:32,147 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:32,147 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Started recording: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251127_132132/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251127_132132.mp4
+2025-11-27 13:21:32,149 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Tests Files Upload.
+2025-11-27 13:21:32,149 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Navigating to File Upload page.
+2025-11-27 13:21:32,266 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:32,372 - WARNING - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:32,433 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:32,472 - WARNING - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:32,539 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:32,750 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:21:32,821 - WARNING - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:32,829 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:21:32,829 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Upload file using the Upload button.
+2025-11-27 13:21:32,829 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/Screenshot_2025-11-16_at_9.23.28_PM.png' on element '('id', 'file-upload')'.
+2025-11-27 13:21:32,887 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:33,302 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:21:33,373 - WARNING - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:33,382 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:21:33,382 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Verifying file uploaded sucessfully.
+2025-11-27 13:21:33,402 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Test PASSED: test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png] (Duration: 1.25s).
+2025-11-27 13:21:33,403 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Stopping video recording...
+2025-11-27 13:21:33,403 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Stopping video recording and assembling.
+2025-11-27 13:21:33,439 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251127_132132/frames
+2025-11-27 13:21:33,439 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Found 5 valid frames.
+2025-11-27 13:21:33,684 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Video created: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251127_132132/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251127_132132.mp4
+2025-11-27 13:21:34,686 - INFO - [test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]] Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251127_132132/test_files_upload_functionality[Screenshot_2025-11-16_at_9.23.28_PM.png]_20251127_132132.mp4

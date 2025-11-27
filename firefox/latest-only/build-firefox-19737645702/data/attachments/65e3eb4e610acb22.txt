@@ -1,0 +1,21 @@
+2025-11-27 13:21:40,723 - INFO - [test_table_header_per_column[Diceret]] Starting test: test_table_header_per_column[Diceret]
+2025-11-27 13:21:41,053 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:21:41,064 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:21:41,066 - INFO - [] Capture loop started.
+2025-11-27 13:21:41,066 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:41,066 - INFO - [test_table_header_per_column[Diceret]] Started recording: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251127_132141/test_table_header_per_column[Diceret]_20251127_132141.mp4
+2025-11-27 13:21:41,068 - INFO - [test_table_header_per_column[Diceret]] Verify table head text per column.
+2025-11-27 13:21:41,068 - INFO - [test_table_header_per_column[Diceret]] Navigating to Challenging DOM page.
+2025-11-27 13:21:41,130 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:41,177 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:41,433 - INFO - [test_table_header_per_column[Diceret]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 13:21:41,486 - WARNING - [test_table_header_per_column[Diceret]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:41,493 - INFO - [test_table_header_per_column[Diceret]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 13:21:41,494 - INFO - [test_table_header_per_column[Diceret]] Getting table head text of column 'Diceret'.
+2025-11-27 13:21:41,545 - INFO - [test_table_header_per_column[Diceret]] Test PASSED: test_table_header_per_column[Diceret] (Duration: 0.48s).
+2025-11-27 13:21:41,546 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording...
+2025-11-27 13:21:41,546 - INFO - [test_table_header_per_column[Diceret]] Stopping video recording and assembling.
+2025-11-27 13:21:41,554 - INFO - [test_table_header_per_column[Diceret]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251127_132141/frames
+2025-11-27 13:21:41,554 - INFO - [test_table_header_per_column[Diceret]] Found 2 valid frames.
+2025-11-27 13:21:41,751 - INFO - [test_table_header_per_column[Diceret]] Video created: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251127_132141/test_table_header_per_column[Diceret]_20251127_132141.mp4
+2025-11-27 13:21:42,753 - INFO - [test_table_header_per_column[Diceret]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Diceret]_20251127_132141/test_table_header_per_column[Diceret]_20251127_132141.mp4

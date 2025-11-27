@@ -1,0 +1,34 @@
+2025-11-27 13:21:17,012 - INFO - [] Directory cleaned and recreated at: tests_screenshots/gw1.
+2025-11-27 13:21:17,012 - INFO - [] Directory cleaned and recreated at: tests_recordings/gw1.
+2025-11-27 13:21:17,013 - INFO - [] Directory cleaned and recreated at: downloads/gw1.
+2025-11-27 13:21:17,015 - INFO - [] Using system GeckoDriver: /usr/local/bin/geckodriver
+2025-11-27 13:21:21,200 - INFO - [test_files_upload_functionality[audio-first.mp3]] Starting test: test_files_upload_functionality[audio-first.mp3]
+2025-11-27 13:21:21,896 - INFO - [test_files_upload_functionality[audio-first.mp3]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:21:21,990 - INFO - [test_files_upload_functionality[audio-first.mp3]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:21:21,994 - INFO - [] Capture loop started.
+2025-11-27 13:21:21,994 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:21,995 - INFO - [test_files_upload_functionality[audio-first.mp3]] Started recording: tests_recordings/gw1/test_files_upload_functionality[audio-first.mp3]_20251127_132121/test_files_upload_functionality[audio-first.mp3]_20251127_132121.mp4
+2025-11-27 13:21:21,999 - INFO - [test_files_upload_functionality[audio-first.mp3]] Tests Files Upload.
+2025-11-27 13:21:22,000 - INFO - [test_files_upload_functionality[audio-first.mp3]] Navigating to File Upload page.
+2025-11-27 13:21:22,159 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:22,439 - WARNING - [test_files_upload_functionality[audio-first.mp3]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:22,497 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:22,655 - WARNING - [test_files_upload_functionality[audio-first.mp3]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:22,717 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:23,072 - INFO - [test_files_upload_functionality[audio-first.mp3]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:21:23,194 - WARNING - [test_files_upload_functionality[audio-first.mp3]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:23,203 - INFO - [test_files_upload_functionality[audio-first.mp3]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:21:23,203 - INFO - [test_files_upload_functionality[audio-first.mp3]] Upload file using the Upload button.
+2025-11-27 13:21:23,203 - INFO - [test_files_upload_functionality[audio-first.mp3]] Sending keys '/home/runner/work/selenium-python/selenium-python/tests/test_files_upload/files/audio-first.mp3' on element '('id', 'file-upload')'.
+2025-11-27 13:21:23,259 - INFO - [] Using Firefox screenshot method.
+2025-11-27 13:21:24,262 - INFO - [test_files_upload_functionality[audio-first.mp3]] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-27 13:21:24,330 - WARNING - [test_files_upload_functionality[audio-first.mp3]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:24,336 - INFO - [test_files_upload_functionality[audio-first.mp3]] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-27 13:21:24,336 - INFO - [test_files_upload_functionality[audio-first.mp3]] Verifying file uploaded sucessfully.
+2025-11-27 13:21:24,348 - INFO - [test_files_upload_functionality[audio-first.mp3]] Test PASSED: test_files_upload_functionality[audio-first.mp3] (Duration: 2.35s).
+2025-11-27 13:21:24,349 - INFO - [test_files_upload_functionality[audio-first.mp3]] Stopping video recording...
+2025-11-27 13:21:24,349 - INFO - [test_files_upload_functionality[audio-first.mp3]] Stopping video recording and assembling.
+2025-11-27 13:21:24,397 - INFO - [test_files_upload_functionality[audio-first.mp3]] Thread joined. Frames dir: tests_recordings/gw1/test_files_upload_functionality[audio-first.mp3]_20251127_132121/frames
+2025-11-27 13:21:24,397 - INFO - [test_files_upload_functionality[audio-first.mp3]] Found 5 valid frames.
+2025-11-27 13:21:24,575 - INFO - [test_files_upload_functionality[audio-first.mp3]] Video created: tests_recordings/gw1/test_files_upload_functionality[audio-first.mp3]_20251127_132121/test_files_upload_functionality[audio-first.mp3]_20251127_132121.mp4
+2025-11-27 13:21:25,577 - INFO - [test_files_upload_functionality[audio-first.mp3]] Video attached to test body: tests_recordings/gw1/test_files_upload_functionality[audio-first.mp3]_20251127_132121/test_files_upload_functionality[audio-first.mp3]_20251127_132121.mp4

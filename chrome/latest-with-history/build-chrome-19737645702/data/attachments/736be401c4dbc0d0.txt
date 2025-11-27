@@ -1,0 +1,19 @@
+2025-11-27 13:21:46,417 - INFO - [test_table_header_per_column[Sit]] Starting test: test_table_header_per_column[Sit]
+2025-11-27 13:21:46,534 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 13:21:46,547 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 13:21:46,548 - INFO - [] Capture loop started.
+2025-11-27 13:21:46,549 - INFO - [test_table_header_per_column[Sit]] Started recording: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_132146/test_table_header_per_column[Sit]_20251127_132146.mp4
+2025-11-27 13:21:46,550 - INFO - [test_table_header_per_column[Sit]] Verify table head text per column.
+2025-11-27 13:21:46,550 - INFO - [test_table_header_per_column[Sit]] Navigating to Challenging DOM page.
+2025-11-27 13:21:46,633 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:46,828 - INFO - [test_table_header_per_column[Sit]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 13:21:46,938 - WARNING - [test_table_header_per_column[Sit]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 13:21:46,943 - INFO - [test_table_header_per_column[Sit]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 13:21:46,943 - INFO - [test_table_header_per_column[Sit]] Getting table head text of column 'Sit'.
+2025-11-27 13:21:46,978 - INFO - [test_table_header_per_column[Sit]] Test PASSED: test_table_header_per_column[Sit] (Duration: 0.43s).
+2025-11-27 13:21:46,979 - INFO - [test_table_header_per_column[Sit]] Stopping video recording...
+2025-11-27 13:21:46,979 - INFO - [test_table_header_per_column[Sit]] Stopping video recording and assembling.
+2025-11-27 13:21:47,003 - INFO - [test_table_header_per_column[Sit]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_132146/frames
+2025-11-27 13:21:47,003 - INFO - [test_table_header_per_column[Sit]] Found 2 valid frames.
+2025-11-27 13:21:47,175 - INFO - [test_table_header_per_column[Sit]] Video created: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_132146/test_table_header_per_column[Sit]_20251127_132146.mp4
+2025-11-27 13:21:48,177 - INFO - [test_table_header_per_column[Sit]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Sit]_20251127_132146/test_table_header_per_column[Sit]_20251127_132146.mp4
