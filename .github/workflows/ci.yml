@@ -43,7 +43,7 @@ jobs:
       - name: Upload to Railway Allure Server
         if: always()
         env:
-          RAILWAY_URL: ${{ secrets.RAILWAY_ALLURE_URL }}
+          RAILWAY_URL: ${{ secrets.RAILWAY_ALLURE_SERVER_URL }}
         run: |
           if [ -d "allure-results" ]; then
             cd allure-results
