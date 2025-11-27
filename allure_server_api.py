@@ -54,12 +54,26 @@ def serve_report(project_name):
     return jsonify({"error": "Report not found"}), 404
 
 
+@app.route("/reports/<project_name>/latest")
+@app.route("/reports/<project_name>/latest/")
+def serve_latest_report(project_name):
+    """Serve the latest report"""
+    report_path = REPORTS_DIR / project_name / "index.html"
+    if report_path.exists():
+        return send_from_directory(REPORTS_DIR / project_name, "index.html")
+    return jsonify({"error": "Report not found"}), 404
+
+
 @app.route("/reports/<project_name>/<path:filename>")
 def serve_report_files(project_name, filename):
     """Serve report static files"""
     report_dir = REPORTS_DIR / project_name
     if report_dir.exists():
-        return send_from_directory(report_dir, filename)
+        try:
+            return send_from_directory(report_dir, filename)
+        except Exception as e:
+            logger.error(f"Error serving file {filename}: {e}")
+            return jsonify({"error": "File not found"}), 404
     return jsonify({"error": "File not found"}), 404
 
 
