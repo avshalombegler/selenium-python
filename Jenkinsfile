@@ -97,6 +97,21 @@ PASSWORD=${PASSWORD}"""
                             reportFiles: 'index.html',
                             reportName: "Allure - ${browser.capitalize()}"
                         ])
+                        
+                        // Add upload to Allure Server
+                        withCredentials([string(credentialsId: 'ALLURE_SERVER_URL', variable: 'ALLURE_SERVER_URL')]) {
+                            sh """
+                                if [ ! -z "\${ALLURE_SERVER_URL}" ] && [ -d "reports/allure-results-${browser}" ]; then
+                                    cd reports
+                                    tar -czf allure-results-${browser}.tar.gz allure-results-${browser}/
+                                    curl -X POST \
+                                        -H "Content-Type: application/gzip" \
+                                        --data-binary @allure-results-${browser}.tar.gz \
+                                        "\${ALLURE_SERVER_URL}/api/upload/selenium-python-${browser}?buildId=${BUILD_ID}" \
+                                        || echo "Failed to upload to Allure Server"
+                                fi
+                            """
+                        }
                     }
                     
                     archiveArtifacts artifacts: 'reports/**,tests_recordings/**,tests_screenshots/**', allowEmptyArchive: true
