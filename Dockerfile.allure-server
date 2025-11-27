@@ -26,11 +26,10 @@ WORKDIR /app
 
 # Copy application files
 COPY allure_server_api.py /app/
-COPY start-allure-server.sh /app/
-RUN chmod +x /app/start-allure-server.sh
 
 # Railway uses PORT environment variable
 ENV PORT=5050
 EXPOSE ${PORT}
 
-CMD ["/app/start-allure-server.sh"]
+# Start gunicorn directly (no shell script needed)
+CMD ["sh", "-c", "gunicorn -w 2 -b 0.0.0.0:${PORT} --timeout 120 --access-logfile - --error-logfile - allure_server_api:app"]
