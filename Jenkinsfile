@@ -2,8 +2,7 @@ pipeline {
     agent any
     
     environment {
-        PYTHON_VERSION = '3.10'
-        RAILWAY_ALLURE_URL = credentials('railway-allure-url')
+        RAILWAY_ALLURE_SERVER_URL = credentials('railway-allure-server-url')
     }
     
     stages {
@@ -25,41 +24,44 @@ pipeline {
         }
         
         stage('Run Tests') {
-            steps {
-                sh '''
-                    . venv/bin/activate
-                    pytest tests/ \
-                        --alluredir=allure-results \
-                        --html=report.html \
-                        --self-contained-html \
-                        -v || true
-                '''
-            }
-        }
-        
-        stage('Upload to Railway Allure Server') {
-            steps {
-                script {
-                    def projectName = 'selenium-tests-jenkins'
-                    def buildId = env.BUILD_NUMBER
-                    
-                    sh """
-                        if [ -d "allure-results" ]; then
-                            cd allure-results
-                            tar -czf ../allure-results.tar.gz .
-                            cd ..
-                            
-                            echo "Uploading to Railway Allure Server..."
-                            curl -X POST \
-                                -H "Content-Type: application/gzip" \
-                                --data-binary @allure-results.tar.gz \
-                                "${RAILWAY_ALLURE_URL}/api/upload/${projectName}?buildId=${buildId}" \
-                                -w "\\nHTTP Status: %{http_code}\\n"
-                            
-                            echo "✓ Report uploaded successfully!"
-                            echo "View report at: ${RAILWAY_ALLURE_URL}/reports/${projectName}"
-                        fi
-                    """
+            parallel {
+                stage('Chrome Tests') {
+                    steps {
+                        sh """
+                            pytest tests/ \
+                                --alluredir=allure-results-chrome \
+                                --browser=chrome \
+                                --html=report-chrome.html \
+                                --self-contained-html \
+                                -v
+                        """
+                    }
+                    post {
+                        always {
+                            script {
+                                uploadToRailway('chrome')
+                            }
+                        }
+                    }
+                }
+                stage('Firefox Tests') {
+                    steps {
+                        sh """
+                            pytest tests/ \
+                                --alluredir=allure-results-firefox \
+                                --browser=firefox \
+                                --html=report-firefox.html \
+                                --self-contained-html \
+                                -v
+                        """
+                    }
+                    post {
+                        always {
+                            script {
+                                uploadToRailway('firefox')
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -107,4 +109,37 @@ pipeline {
             echo "✗ Tests failed. Check reports for details."
         }
     }
+}
+
+def uploadToRailway(browser) {
+    def resultsDir = "allure-results-${browser}"
+    def projectName = "selenium-tests-${browser}"
+    def buildId = env.BUILD_NUMBER
+    def railwayUrl = env.RAILWAY_ALLURE_SERVER_URL
+    
+    sh """
+        cd ${resultsDir}
+        tar -czf ../allure-results-${browser}.tar.gz .
+        cd ..
+        
+        echo "Uploading ${browser} results to Railway Allure Server..."
+        RESPONSE=\$(curl -X POST \
+            -H "Content-Type: application/gzip" \
+            --data-binary @allure-results-${browser}.tar.gz \
+            -L \
+            -w "\\nHTTP Status: %{http_code}\\n" \
+            -s \
+            "${railwayUrl}/api/upload/${projectName}?buildId=${buildId}")
+        
+        echo "\$RESPONSE"
+        
+        HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
+        if [ "\$HTTP_CODE" = "200" ]; then
+            echo "✓ ${browser} report uploaded successfully!"
+            echo "View report at: ${railwayUrl}/reports/${projectName}/latest"
+        else
+            echo "✗ Upload failed with status: \$HTTP_CODE"
+            exit 1
+        fi
+    """
 }
