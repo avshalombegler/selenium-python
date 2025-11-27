@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts-jdk17 as base
+FROM jenkins/jenkins:lts-jdk17
 
 USER root
 
@@ -31,8 +31,5 @@ RUN CHROMEDRIVER_VERSION=$(curl -sS https://googlechromelabs.github.io/chrome-fo
 # Install Python packages globally
 COPY requirements.txt /tmp/
 RUN pip3 install --no-cache-dir --break-system-packages -r /tmp/requirements.txt && rm /tmp/requirements.txt
-
-# Set CSP for Allure reports
-ENV JAVA_OPTS="-Dhudson.model.DirectoryBrowserSupport.CSP=\"default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';\""
 
 USER jenkins
