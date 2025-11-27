@@ -89,16 +89,17 @@ def upload_results(project_name):
         # Create project directories
         project_dir = PROJECTS_DIR / project_name
         results_dir = project_dir / "results"
-        results_dir.mkdir(parents=True, exist_ok=True)
+        allure_results_dir = results_dir / "allure-results"
+        allure_results_dir.mkdir(parents=True, exist_ok=True)
 
         # Save uploaded file
         upload_file = results_dir / f"allure-results-{build_id}.tar.gz"
         upload_file.write_bytes(request.data)
         logger.info(f"Saved upload: {upload_file.name}, size: {upload_file.stat().st_size} bytes")
 
-        # Extract results
+        # Extract results directly to allure-results directory
         with tarfile.open(upload_file, "r:gz") as tar:
-            tar.extractall(results_dir)
+            tar.extractall(allure_results_dir)
             logger.info(f"Extracted files: {tar.getnames()}")
 
         # Generate report
@@ -107,13 +108,13 @@ def upload_results(project_name):
 
         # Copy history if exists
         history_src = report_dir / "history"
-        history_dst = results_dir / "allure-results" / "history"
+        history_dst = allure_results_dir / "history"
         if history_src.exists():
             shutil.copytree(history_src, history_dst, dirs_exist_ok=True)
 
         # Generate Allure report
         result = subprocess.run(
-            ["allure", "generate", str(results_dir / "allure-results"), "-o", str(report_dir), "--clean"],
+            ["allure", "generate", str(allure_results_dir), "-o", str(report_dir), "--clean"],
             check=True,
             capture_output=True,
             text=True
