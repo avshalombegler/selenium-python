@@ -24,11 +24,23 @@ RUN mkdir -p /app/projects /app/reports
 
 WORKDIR /app
 
-# Copy application files
-COPY allure_server_api.py /app/
+# Copy ALL files from project root to see what's available
+COPY . /app/
+
+# List what was copied
+RUN echo "=== Files copied to /app ===" && ls -la /app/
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 
-# Debug command - show what's happening at runtime
-CMD ["sh", "-c", "echo '=== DEBUG INFO ===' && pwd && echo 'Files in current dir:' && ls -la && echo 'Python version:' && python3 --version && echo 'Trying to import:' && python3 -c 'import sys; print(sys.path); import allure_server_api' && echo 'Starting gunicorn...' && exec gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 --timeout 120 --access-logfile - --error-logfile - --log-level info --chdir /app allure_server_api:app"]
+# Check if allure_server_api.py exists, if not look for alternatives
+RUN if [ -f "allure_server_api.py" ]; then \
+        echo "Found allure_server_api.py"; \
+    else \
+        echo "allure_server_api.py NOT FOUND"; \
+        echo "Looking for Python files:"; \
+        find /app -name "*.py" -type f; \
+    fi
+
+# Start command that will show us what's there
+CMD ["sh", "-c", "echo '=== RUNTIME DEBUG ===' && pwd && ls -la && python3 allure_server_api.py"]
