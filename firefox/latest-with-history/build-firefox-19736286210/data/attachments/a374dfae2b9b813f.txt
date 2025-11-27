@@ -1,0 +1,26 @@
+2025-11-27 12:30:21,909 - INFO - [test_broken_images_count] Starting test: test_broken_images_count
+2025-11-27 12:30:22,026 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-27 12:30:22,048 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-27 12:30:22,050 - INFO - [] Capture loop started.
+2025-11-27 12:30:22,050 - INFO - [] Using Firefox screenshot method.
+2025-11-27 12:30:22,051 - INFO - [test_broken_images_count] Started recording: tests_recordings/gw3/test_broken_images_count_20251127_123022/test_broken_images_count_20251127_123022.mp4
+2025-11-27 12:30:22,052 - INFO - [test_broken_images_count] Verify broken images count.
+2025-11-27 12:30:22,052 - INFO - [test_broken_images_count] Navigating to Broken Images page.
+2025-11-27 12:30:22,120 - WARNING - [test_broken_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 12:30:22,165 - INFO - [] Using Firefox screenshot method.
+2025-11-27 12:30:22,324 - INFO - [test_broken_images_count] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-27 12:30:22,430 - WARNING - [test_broken_images_count] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-27 12:30:22,438 - INFO - [test_broken_images_count] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-27 12:30:22,439 - INFO - [test_broken_images_count] Getting broken images count.
+2025-11-27 12:30:22,439 - INFO - [test_broken_images_count] Get all image elements.
+2025-11-27 12:30:22,443 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-27 12:30:22,452 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-27 12:30:22,460 - INFO - [test_broken_images_count] Check if image is broken.
+2025-11-27 12:30:22,466 - INFO - [test_broken_images_count] Found 2 broken images.
+2025-11-27 12:30:22,467 - INFO - [test_broken_images_count] Test PASSED: test_broken_images_count (Duration: 0.42s).
+2025-11-27 12:30:22,467 - INFO - [test_broken_images_count] Stopping video recording...
+2025-11-27 12:30:22,467 - INFO - [test_broken_images_count] Stopping video recording and assembling.
+2025-11-27 12:30:22,491 - INFO - [test_broken_images_count] Thread joined. Frames dir: tests_recordings/gw3/test_broken_images_count_20251127_123022/frames
+2025-11-27 12:30:22,491 - INFO - [test_broken_images_count] Found 2 valid frames.
+2025-11-27 12:30:22,664 - INFO - [test_broken_images_count] Video created: tests_recordings/gw3/test_broken_images_count_20251127_123022/test_broken_images_count_20251127_123022.mp4
+2025-11-27 12:30:23,666 - INFO - [test_broken_images_count] Video attached to test body: tests_recordings/gw3/test_broken_images_count_20251127_123022/test_broken_images_count_20251127_123022.mp4
