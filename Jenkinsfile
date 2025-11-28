@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        ALLURE_SERVER_URL = credentials('allure-server-url')  // New credential for Allure service
+        ALLURE_SERVER_URL = credentials('allure-server-url')
     }
     
     stages {
