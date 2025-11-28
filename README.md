@@ -211,13 +211,13 @@ The project includes a custom Jenkins agent image with all dependencies:
 
 Latest reports are published automatically to GitHub Pages:
 
-🔹 **Chrome (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19737816509/)  
+🔹 **Chrome (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19759802562/)  
 
-📊 **Chrome (With History):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19737816509/)  
+📊 **Chrome (With History):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19759802562/)  
 
-🔹 **Firefox (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19737816509/)  
+🔹 **Firefox (Latest Run):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19759802562/)  
 
-📊 **Firefox (With History):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19737816509/)  
+📊 **Firefox (With History):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19759802562/)  
 
 > Reports update automatically after each CI run.
 
