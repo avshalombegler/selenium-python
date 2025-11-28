@@ -12,6 +12,7 @@ services:
     volumes:
       - jenkins_home:/var/jenkins_home
       - ./:/workspace:cached  # cached for better performance on Mac/Windows
+      - allure_history:/workspace/allure-history  # New: Shared volume for history
     environment:
       - JAVA_OPTS=-Dhudson.model.DirectoryBrowserSupport.CSP="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';"
       - JENKINS_OPTS=--prefix=/
@@ -57,6 +58,8 @@ volumes:
     name: jenkins_home
   allure_data:
     name: allure_data
+  allure_history:  # New: Volume for persisting Allure history
+    name: allure_history
 
 networks:
   jenkins-network:

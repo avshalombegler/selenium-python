@@ -1,8 +1,26 @@
 pipeline {
     agent any
     
+    parameters {
+        choice(name: 'BROWSER', choices: ['both', 'chrome', 'firefox'], description: 'Browser to run tests on')
+        choice(name: 'MARKER', choices: ['full', 'smoke', 'regression'], description: 'Test marker to run')
+        string(name: 'WORKERS', defaultValue: 'auto', description: 'Number of parallel workers')
+    }
+    
+    options {
+        timeout(time: 30, unit: 'MINUTES')
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+        timestamps()
+    }
+    
     environment {
-        ALLURE_SERVER_URL = credentials('allure-server-url')
+        ALLURE_SERVER_URL = 'http://allure:5050'  // Hardcode since it's local and secure
+        SHORT_TIMEOUT = '3'
+        LONG_TIMEOUT = '10'
+        VIDEO_RECORDING = 'True'
+        HEADLESS = 'True'
+        MAXIMIZED = 'False'
+        PYTHONUNBUFFERED = '1'
     }
     
     stages {
@@ -24,42 +42,32 @@ pipeline {
         }
         
         stage('Run Tests') {
-            parallel {
-                stage('Chrome Tests') {
-                    steps {
-                        sh """
-                            pytest tests/ \
-                                --alluredir=allure-results-chrome \
-                                --browser=chrome \
-                                --html=report-chrome.html \
-                                --self-contained-html \
-                                -v
-                        """
-                    }
-                    post {
-                        always {
-                            script {
-                                uploadToAllure('chrome')
-                            }
-                        }
+            steps {
+                script {
+                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
+                    
+                    parallel browsers.collectEntries { browser -> 
+                        [(browser): {
+                            sh """
+                                pytest tests/ \
+                                    --alluredir=allure-results-${browser} \
+                                    --browser=${browser} \
+                                    --html=report-${browser}.html \
+                                    --self-contained-html \
+                                    -v
+                            """
+                        }]
                     }
                 }
-                stage('Firefox Tests') {
-                    steps {
-                        sh """
-                            pytest tests/ \
-                                --alluredir=allure-results-firefox \
-                                --browser=firefox \
-                                --html=report-firefox.html \
-                                --self-contained-html \
-                                -v
-                        """
-                    }
-                    post {
-                        always {
-                            script {
-                                uploadToAllure('firefox')
-                            }
+            }
+            post {
+                always {
+                    script {
+                        def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
+                        
+                        browsers.each { browser ->
+                            uploadToAllure(browser, 'latest-only')
+                            uploadToAllure(browser, 'latest-with-history')
                         }
                     }
                 }
@@ -81,21 +89,30 @@ pipeline {
     }
 }
 
-def uploadToAllure(browser) {
+def uploadToAllure(browser, reportType) {
     def resultsDir = "allure-results-${browser}"
-    def projectName = "selenium-tests-${browser}"
-    def buildId = env.BUILD_NUMBER
+    def projectName = "selenium-tests-${browser}-${reportType}"
     def allureUrl = env.ALLURE_SERVER_URL
     
     sh """
+        # Prepare results
+        if [ "${reportType}" = "latest-with-history" ]; then
+            # Merge history for latest-with-history
+            mkdir -p ${resultsDir}/history
+            if [ -d "/workspace/allure-history/${browser}" ]; then
+                cp -r /workspace/allure-history/${browser}/* ${resultsDir}/history/ || true
+            fi
+        fi
+        
+        # Tar and upload
         cd ${resultsDir}
-        tar -czf ../allure-results-${browser}.tar.gz .
+        tar -czf ../allure-results-${browser}-${reportType}.tar.gz .
         cd ..
         
-        echo "Uploading ${browser} results to Allure Docker Service..."
+        echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
             -H "Content-Type: application/gzip" \
-            --data-binary @allure-results-${browser}.tar.gz \
+            --data-binary @allure-results-${browser}-${reportType}.tar.gz \
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \
@@ -105,8 +122,19 @@ def uploadToAllure(browser) {
         
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
-            echo "✓ ${browser} report uploaded successfully!"
+            echo "✓ ${browser} ${reportType} report uploaded successfully!"
             echo "View report at: ${allureUrl}/allure-docker-service/projects/${projectName}/reports/latest/index.html"
+            
+            # Update history for latest-with-history
+            if [ "${reportType}" = "latest-with-history" ]; then
+                mkdir -p /workspace/allure-history/${browser}
+                # Generate report locally to extract history (optional, if needed)
+                allure generate --clean ${resultsDir} -o temp-report || true
+                if [ -d "temp-report/history" ]; then
+                    cp -r temp-report/history/* /workspace/allure-history/${browser}/ || true
+                fi
+                rm -rf temp-report
+            fi
         else
             echo "✗ Upload failed with status: \$HTTP_CODE"
             exit 1
