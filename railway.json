@@ -7,8 +7,8 @@
     }
   ],
   "deploy": {
-    "image": "frankescobar/allure-docker-service:latest",
-    "startCommand": "/usr/bin/java -jar /app/allure-docker-service.jar",
+    "image": "allure/allure-docker-service:latest",
+    "startCommand": "/usr/local/openjdk-11/bin/java -jar /opt/allure/allure-docker-service.jar",
     "healthcheckPath": "/allure-docker-service/health",
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
