@@ -1,0 +1,26 @@
+2025-11-28 09:37:16,271 - INFO - [test_horizontal_slider_functionality_using_keys] Starting test: test_horizontal_slider_functionality_using_keys
+2025-11-28 09:37:16,415 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-28 09:37:16,433 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-28 09:37:16,434 - INFO - [] Capture loop started.
+2025-11-28 09:37:16,434 - INFO - [test_horizontal_slider_functionality_using_keys] Started recording: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251128_093716/test_horizontal_slider_functionality_using_keys_20251128_093716.mp4
+2025-11-28 09:37:16,435 - INFO - [test_horizontal_slider_functionality_using_keys] Tests Horizontal Slider.
+2025-11-28 09:37:16,436 - INFO - [test_horizontal_slider_functionality_using_keys] Navigating to Horizontal Slider page.
+2025-11-28 09:37:16,543 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:16,702 - INFO - [test_horizontal_slider_functionality_using_keys] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-28 09:37:16,812 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:16,820 - INFO - [test_horizontal_slider_functionality_using_keys] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-28 09:37:16,821 - INFO - [test_horizontal_slider_functionality_using_keys] Setting horizontal slider value using arrow key.
+2025-11-28 09:37:17,185 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:17,729 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:18,273 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:18,808 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:19,308 - INFO - [test_horizontal_slider_functionality_using_keys] Verifying horizontal slider new value.
+2025-11-28 09:37:19,349 - WARNING - [test_horizontal_slider_functionality_using_keys] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:19,365 - INFO - [test_horizontal_slider_functionality_using_keys] Test PASSED: test_horizontal_slider_functionality_using_keys (Duration: 2.93s).
+2025-11-28 09:37:19,365 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording...
+2025-11-28 09:37:19,366 - INFO - [test_horizontal_slider_functionality_using_keys] Stopping video recording and assembling.
+2025-11-28 09:37:19,412 - INFO - [test_horizontal_slider_functionality_using_keys] Thread joined. Frames dir: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251128_093716/frames
+2025-11-28 09:37:19,412 - INFO - [test_horizontal_slider_functionality_using_keys] Found 19 valid frames.
+2025-11-28 09:37:19,995 - INFO - [test_horizontal_slider_functionality_using_keys] Video created: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251128_093716/test_horizontal_slider_functionality_using_keys_20251128_093716.mp4
+2025-11-28 09:37:21,000 - INFO - [test_horizontal_slider_functionality_using_keys] Video attached to test body: tests_recordings/gw1/test_horizontal_slider_functionality_using_keys_20251128_093716/test_horizontal_slider_functionality_using_keys_20251128_093716.mp4
+2025-11-28 09:37:21,002 - INFO - [test_horizontal_slider_functionality_using_keys] Quitting driver for browser: chrome.

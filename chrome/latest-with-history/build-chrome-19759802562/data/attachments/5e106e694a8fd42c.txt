@@ -1,0 +1,22 @@
+2025-11-28 09:36:55,444 - INFO - [test_iframe_functionality] Starting test: test_iframe_functionality
+2025-11-28 09:36:55,531 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-28 09:36:55,544 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-28 09:36:55,545 - INFO - [] Capture loop started.
+2025-11-28 09:36:55,545 - INFO - [test_iframe_functionality] Started recording: tests_recordings/gw0/test_iframe_functionality_20251128_093655/test_iframe_functionality_20251128_093655.mp4
+2025-11-28 09:36:55,546 - INFO - [test_iframe_functionality] Tests iframe.
+2025-11-28 09:36:55,546 - INFO - [test_iframe_functionality] Navigating to Frames page.
+2025-11-28 09:36:55,663 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:55,820 - INFO - [test_iframe_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-28 09:36:55,929 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:55,937 - INFO - [test_iframe_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-28 09:36:55,937 - INFO - [test_iframe_functionality] Clicking iframe link.
+2025-11-28 09:36:57,403 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:57,403 - INFO - [test_iframe_functionality] Getting page source.
+2025-11-28 09:36:58,567 - WARNING - [test_iframe_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:58,568 - INFO - [test_iframe_functionality] Test SKIPPED: test_iframe_functionality (Duration: 3.02s).
+2025-11-28 09:36:58,568 - INFO - [test_iframe_functionality] Stopping video recording...
+2025-11-28 09:36:58,568 - INFO - [test_iframe_functionality] Stopping video recording and assembling.
+2025-11-28 09:36:58,638 - INFO - [test_iframe_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_iframe_functionality_20251128_093655/frames
+2025-11-28 09:36:58,639 - INFO - [test_iframe_functionality] Found 8 valid frames.
+2025-11-28 09:36:59,140 - INFO - [test_iframe_functionality] Video created: tests_recordings/gw0/test_iframe_functionality_20251128_093655/test_iframe_functionality_20251128_093655.mp4
+2025-11-28 09:37:00,142 - INFO - [test_iframe_functionality] Video attached to test body: tests_recordings/gw0/test_iframe_functionality_20251128_093655/test_iframe_functionality_20251128_093655.mp4

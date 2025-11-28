@@ -1,0 +1,23 @@
+2025-11-28 09:36:26,466 - INFO - [test_table_header_per_column[Lorem]] Starting test: test_table_header_per_column[Lorem]
+2025-11-28 09:36:27,090 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-28 09:36:27,103 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-28 09:36:27,104 - INFO - [] Capture loop started.
+2025-11-28 09:36:27,104 - INFO - [] Using Firefox screenshot method.
+2025-11-28 09:36:27,105 - INFO - [test_table_header_per_column[Lorem]] Started recording: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251128_093627/test_table_header_per_column[Lorem]_20251128_093627.mp4
+2025-11-28 09:36:27,106 - INFO - [test_table_header_per_column[Lorem]] Verify table head text per column.
+2025-11-28 09:36:27,107 - INFO - [test_table_header_per_column[Lorem]] Navigating to Challenging DOM page.
+2025-11-28 09:36:27,176 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:27,218 - INFO - [] Using Firefox screenshot method.
+2025-11-28 09:36:27,267 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:27,330 - INFO - [] Using Firefox screenshot method.
+2025-11-28 09:36:27,710 - INFO - [test_table_header_per_column[Lorem]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-28 09:36:27,757 - WARNING - [test_table_header_per_column[Lorem]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:27,768 - INFO - [test_table_header_per_column[Lorem]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-28 09:36:27,768 - INFO - [test_table_header_per_column[Lorem]] Getting table head text of column 'Lorem'.
+2025-11-28 09:36:27,795 - INFO - [test_table_header_per_column[Lorem]] Test PASSED: test_table_header_per_column[Lorem] (Duration: 0.69s).
+2025-11-28 09:36:27,798 - INFO - [test_table_header_per_column[Lorem]] Stopping video recording...
+2025-11-28 09:36:27,798 - INFO - [test_table_header_per_column[Lorem]] Stopping video recording and assembling.
+2025-11-28 09:36:27,821 - INFO - [test_table_header_per_column[Lorem]] Thread joined. Frames dir: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251128_093627/frames
+2025-11-28 09:36:27,822 - INFO - [test_table_header_per_column[Lorem]] Found 3 valid frames.
+2025-11-28 09:36:28,057 - INFO - [test_table_header_per_column[Lorem]] Video created: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251128_093627/test_table_header_per_column[Lorem]_20251128_093627.mp4
+2025-11-28 09:36:29,058 - INFO - [test_table_header_per_column[Lorem]] Video attached to test body: tests_recordings/gw0/test_table_header_per_column[Lorem]_20251128_093627/test_table_header_per_column[Lorem]_20251128_093627.mp4

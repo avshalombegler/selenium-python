@@ -1,0 +1,20 @@
+2025-11-28 09:36:16,098 - INFO - [test_each_button_clicks[red]] Starting test: test_each_button_clicks[red]
+2025-11-28 09:36:16,177 - INFO - [test_each_button_clicks[red]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-28 09:36:16,198 - INFO - [test_each_button_clicks[red]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-28 09:36:16,199 - INFO - [] Capture loop started.
+2025-11-28 09:36:16,200 - INFO - [test_each_button_clicks[red]] Started recording: tests_recordings/gw0/test_each_button_clicks[red]_20251128_093616/test_each_button_clicks[red]_20251128_093616.mp4
+2025-11-28 09:36:16,201 - INFO - [test_each_button_clicks[red]] Verify each button in page is clickable.
+2025-11-28 09:36:16,201 - INFO - [test_each_button_clicks[red]] Navigating to Challenging DOM page.
+2025-11-28 09:36:16,320 - WARNING - [test_each_button_clicks[red]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:16,872 - INFO - [test_each_button_clicks[red]] Waiting for page to load with indicator '('css selector', 'div.example h3')' for 10s.
+2025-11-28 09:36:16,980 - WARNING - [test_each_button_clicks[red]] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:16,987 - INFO - [test_each_button_clicks[red]] Page loaded successfully with indicator '('css selector', 'div.example h3')'.
+2025-11-28 09:36:16,987 - INFO - [test_each_button_clicks[red]] Clicking red button.
+2025-11-28 09:36:17,165 - INFO - [test_each_button_clicks[red]] Test PASSED: test_each_button_clicks[red] (Duration: 0.96s).
+2025-11-28 09:36:17,166 - INFO - [test_each_button_clicks[red]] Stopping video recording...
+2025-11-28 09:36:17,166 - INFO - [test_each_button_clicks[red]] Stopping video recording and assembling.
+2025-11-28 09:36:17,277 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:36:17,344 - INFO - [test_each_button_clicks[red]] Thread joined. Frames dir: tests_recordings/gw0/test_each_button_clicks[red]_20251128_093616/frames
+2025-11-28 09:36:17,345 - INFO - [test_each_button_clicks[red]] Found 3 valid frames.
+2025-11-28 09:36:17,518 - INFO - [test_each_button_clicks[red]] Video created: tests_recordings/gw0/test_each_button_clicks[red]_20251128_093616/test_each_button_clicks[red]_20251128_093616.mp4
+2025-11-28 09:36:18,520 - INFO - [test_each_button_clicks[red]] Video attached to test body: tests_recordings/gw0/test_each_button_clicks[red]_20251128_093616/test_each_button_clicks[red]_20251128_093616.mp4

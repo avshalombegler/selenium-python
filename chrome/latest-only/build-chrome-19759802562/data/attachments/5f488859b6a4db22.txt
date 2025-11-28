@@ -1,0 +1,47 @@
+2025-11-28 09:37:04,487 - INFO - [test_infinite_scroll_functionality] Starting test: test_infinite_scroll_functionality
+2025-11-28 09:37:04,581 - INFO - [test_infinite_scroll_functionality] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-28 09:37:04,596 - INFO - [test_infinite_scroll_functionality] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-28 09:37:04,597 - INFO - [] Capture loop started.
+2025-11-28 09:37:04,598 - INFO - [test_infinite_scroll_functionality] Started recording: tests_recordings/gw0/test_infinite_scroll_functionality_20251128_093704/test_infinite_scroll_functionality_20251128_093704.mp4
+2025-11-28 09:37:04,599 - INFO - [test_infinite_scroll_functionality] Tests Infinite Scroll.
+2025-11-28 09:37:04,599 - INFO - [test_infinite_scroll_functionality] Navigating to Infinite Scroll page.
+2025-11-28 09:37:04,757 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:04,974 - INFO - [test_infinite_scroll_functionality] Waiting for page to load with indicator '('css selector', '.example h3')' for 10s.
+2025-11-28 09:37:05,152 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:05,160 - INFO - [test_infinite_scroll_functionality] Page loaded successfully with indicator '('css selector', '.example h3')'.
+2025-11-28 09:37:05,160 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-28 09:37:05,165 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-28 09:37:05,165 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-28 09:37:08,173 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-28 09:37:08,248 - WARNING - [test_infinite_scroll_functionality] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:08,249 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-28 09:37:08,249 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-28 09:37:08,253 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-28 09:37:08,254 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-28 09:37:11,263 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-28 09:37:11,271 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-28 09:37:11,271 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-28 09:37:11,275 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-28 09:37:11,275 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-28 09:37:14,282 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-28 09:37:14,287 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-28 09:37:14,287 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-28 09:37:14,292 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-28 09:37:14,293 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-28 09:37:17,300 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-28 09:37:17,355 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-28 09:37:17,355 - INFO - [test_infinite_scroll_functionality] Getting old page height.
+2025-11-28 09:37:17,356 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 0
+2025-11-28 09:37:17,359 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page.
+2025-11-28 09:37:17,360 - INFO - [test_infinite_scroll_functionality] Scrolling to bottom of page (smooth).
+2025-11-28 09:37:20,366 - INFO - [test_infinite_scroll_functionality] Getting new page height.
+2025-11-28 09:37:20,518 - INFO - [test_infinite_scroll_functionality] Verifying new page height is bigger than old page height.
+2025-11-28 09:37:20,519 - WARNING - [] Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-11-28 09:37:20,519 - INFO - [test_infinite_scroll_functionality] Test PASSED: test_infinite_scroll_functionality (Duration: 15.92s).
+2025-11-28 09:37:20,521 - INFO - [test_infinite_scroll_functionality] Stopping video recording...
+2025-11-28 09:37:20,522 - INFO - [test_infinite_scroll_functionality] Stopping video recording and assembling.
+2025-11-28 09:37:20,589 - INFO - [test_infinite_scroll_functionality] Thread joined. Frames dir: tests_recordings/gw0/test_infinite_scroll_functionality_20251128_093704/frames
+2025-11-28 09:37:20,590 - INFO - [test_infinite_scroll_functionality] Found 69 valid frames.
+2025-11-28 09:37:22,695 - INFO - [test_infinite_scroll_functionality] Video created: tests_recordings/gw0/test_infinite_scroll_functionality_20251128_093704/test_infinite_scroll_functionality_20251128_093704.mp4
+2025-11-28 09:37:23,702 - INFO - [test_infinite_scroll_functionality] Video attached to test body: tests_recordings/gw0/test_infinite_scroll_functionality_20251128_093704/test_infinite_scroll_functionality_20251128_093704.mp4
+2025-11-28 09:37:23,705 - INFO - [test_infinite_scroll_functionality] Quitting driver for browser: chrome.

@@ -1,0 +1,20 @@
+2025-11-28 09:36:33,715 - INFO - [test_basic_auth[--401-Not authorized\n]] Starting test: test_basic_auth[--401-Not authorized\n]
+2025-11-28 09:36:34,308 - INFO - [test_basic_auth[--401-Not authorized\n]] Waiting for page to load with indicator '('css selector', 'h1.heading')' for 10s.
+2025-11-28 09:36:34,321 - INFO - [test_basic_auth[--401-Not authorized\n]] Page loaded successfully with indicator '('css selector', 'h1.heading')'.
+2025-11-28 09:36:34,322 - INFO - [] Capture loop started.
+2025-11-28 09:36:34,322 - INFO - [] Using Firefox screenshot method.
+2025-11-28 09:36:34,322 - INFO - [test_basic_auth[--401-Not authorized\n]] Started recording: tests_recordings/gw2/test_basic_auth[--401-Not authorized\n]_20251128_093634/test_basic_auth[--401-Not authorized\n]_20251128_093634.mp4
+2025-11-28 09:36:34,324 - INFO - [test_basic_auth[--401-Not authorized\n]] Tests basic autorization login scenatios.
+2025-11-28 09:36:34,324 - INFO - [test_basic_auth[--401-Not authorized\n]] Returning object of Basic Auth page.
+2025-11-28 09:36:34,324 - INFO - [test_basic_auth[--401-Not authorized\n]] Initialize URL based on username and password.
+2025-11-28 09:36:34,325 - INFO - [test_basic_auth[--401-Not authorized\n]] Get status code and authorization message.
+2025-11-28 09:36:34,427 - INFO - [] Using Firefox screenshot method.
+2025-11-28 09:36:34,534 - INFO - [] Using Firefox screenshot method.
+2025-11-28 09:36:34,631 - INFO - [test_basic_auth[--401-Not authorized\n]] Validate status code and authorization message.
+2025-11-28 09:36:34,632 - INFO - [test_basic_auth[--401-Not authorized\n]] Test PASSED: test_basic_auth[--401-Not authorized\n] (Duration: 0.31s).
+2025-11-28 09:36:34,633 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording...
+2025-11-28 09:36:34,633 - INFO - [test_basic_auth[--401-Not authorized\n]] Stopping video recording and assembling.
+2025-11-28 09:36:34,635 - INFO - [test_basic_auth[--401-Not authorized\n]] Thread joined. Frames dir: tests_recordings/gw2/test_basic_auth[--401-Not authorized\n]_20251128_093634/frames
+2025-11-28 09:36:34,635 - INFO - [test_basic_auth[--401-Not authorized\n]] Found 3 valid frames.
+2025-11-28 09:36:34,841 - INFO - [test_basic_auth[--401-Not authorized\n]] Video created: tests_recordings/gw2/test_basic_auth[--401-Not authorized\n]_20251128_093634/test_basic_auth[--401-Not authorized\n]_20251128_093634.mp4
+2025-11-28 09:36:35,842 - INFO - [test_basic_auth[--401-Not authorized\n]] Video attached to test body: tests_recordings/gw2/test_basic_auth[--401-Not authorized\n]_20251128_093634/test_basic_auth[--401-Not authorized\n]_20251128_093634.mp4
