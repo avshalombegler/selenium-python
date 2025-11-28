@@ -1,13 +1,22 @@
 {
-  "$schema": "https://railway.app/railway.schema.json",
-  "build": {
-    "builder": "DOCKERFILE",
-    "dockerfilePath": "Dockerfile.allure-server"
-  },
+  "$schema": "https://railway.com/railway.schema.json",
+  "volumes": [
+    {
+      "name": "allure-data",
+      "mountPath": "/app/allure-results"
+    }
+  ],
   "deploy": {
-    "healthcheckPath": "/health",
-    "healthcheckTimeout": 300,
+    "image": "frankescobar/allure-docker-service:latest",
+    "healthcheckPath": "/allure-docker-service/health",
+    "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 10
+    "restartPolicyMaxRetries": 10,
+    "env": {
+      "CHECK_RESULTS_EVERY_SECONDS": "2",
+      "KEEP_HISTORY": "true",
+      "KEEP_REPORTS": "true",
+      "ALLURE_DOCKER_PUBLIC_API": "true"
+    }
   }
 }
