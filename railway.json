@@ -8,7 +8,7 @@
   ],
   "deploy": {
     "image": "allure/allure-docker-service:latest",
-    "startCommand": "java -jar allure-docker-service.jar",
+    "startCommand": "/usr/local/openjdk-11/bin/java -jar allure-docker-service.jar",
     "healthcheckPath": "/allure-docker-service/health",
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
