@@ -31,10 +31,32 @@ services:
         reservations:
           cpus: '1'
           memory: 2G
+  allure:
+    image: frankescobar/allure-docker-service:latest
+    container_name: allure-server
+    restart: unless-stopped
+    ports:
+      - "5050:5050"  # Expose on host; map to public URL if external access needed
+    volumes:
+      - allure_data:/app/allure-docker-api/uploads  # Persist data
+    environment:
+      - CHECK_RESULTS_EVERY_SECONDS=1  # Auto-generate reports
+      - KEEP_HISTORY=1  # Retain historical data
+      - KEEP_HISTORY_LATEST=25  # Keep latest 25 builds per project
+    networks:
+      - jenkins-network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5050/allure-docker-service/ping || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
 
 volumes:
   jenkins_home:
     name: jenkins_home
+  allure_data:
+    name: allure_data
 
 networks:
   jenkins-network:

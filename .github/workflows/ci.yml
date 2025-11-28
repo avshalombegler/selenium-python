@@ -47,10 +47,10 @@ jobs:
             -v
         continue-on-error: true
         
-      - name: Upload to Railway Allure Server
+      - name: Upload to Allure Docker Service
         if: always()
         env:
-          RAILWAY_URL: ${{ secrets.RAILWAY_ALLURE_SERVER_URL }}
+          ALLURE_URL: ${{ secrets.ALLURE_SERVER_URL }}  # New secret for Allure service
         run: |
           BROWSER="${{ matrix.browser }}"
           RESULTS_DIR="allure-results-${BROWSER}"
@@ -63,21 +63,21 @@ jobs:
             PROJECT_NAME="selenium-tests-${BROWSER}"
             BUILD_ID="${{ github.run_number }}"
             
-            echo "Uploading ${BROWSER} results to Railway Allure Server..."
+            echo "Uploading ${BROWSER} results to Allure Docker Service..."
             RESPONSE=$(curl -X POST \
               -H "Content-Type: application/gzip" \
               --data-binary @allure-results-${BROWSER}.tar.gz \
               -L \
               -w "\nHTTP Status: %{http_code}\n" \
               -s \
-              "${RAILWAY_URL}/api/upload/${PROJECT_NAME}?buildId=${BUILD_ID}")
+              "${ALLURE_URL}/allure-docker-service/send-results?project_id=${PROJECT_NAME}")
             
             echo "$RESPONSE"
             
             HTTP_CODE=$(echo "$RESPONSE" | tail -n 1 | grep -oP '\d+')
             if [ "$HTTP_CODE" = "200" ]; then
               echo "✓ ${BROWSER} report uploaded successfully!"
-              echo "View report at: ${RAILWAY_URL}/reports/${PROJECT_NAME}/latest"
+              echo "View report at: ${ALLURE_URL}/allure-docker-service/projects/${PROJECT_NAME}/reports/latest/index.html"
             else
               echo "✗ Upload failed with status: $HTTP_CODE"
               exit 1

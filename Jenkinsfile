@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        RAILWAY_ALLURE_SERVER_URL = credentials('railway-allure-server-url')
+        ALLURE_SERVER_URL = credentials('allure-server-url')  // New credential for Allure service
     }
     
     stages {
@@ -39,7 +39,7 @@ pipeline {
                     post {
                         always {
                             script {
-                                uploadToRailway('chrome')
+                                uploadToAllure('chrome')
                             }
                         }
                     }
@@ -58,41 +58,11 @@ pipeline {
                     post {
                         always {
                             script {
-                                uploadToRailway('firefox')
+                                uploadToAllure('firefox')
                             }
                         }
                     }
                 }
-            }
-        }
-        
-        stage('Generate Local Allure Report') {
-            steps {
-                script {
-                    allure([
-                        includeProperties: false,
-                        jdk: '',
-                        properties: [],
-                        reportBuildPolicy: 'ALWAYS',
-                        results: [[path: 'allure-results']]
-                    ])
-                }
-            }
-        }
-        
-        stage('Archive Reports') {
-            steps {
-                publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'allure-report',
-                    reportFiles: 'index.html',
-                    reportName: 'Allure Report',
-                    reportTitles: "Build ${env.BUILD_NUMBER}"
-                ])
-                
-                archiveArtifacts artifacts: 'report.html', allowEmptyArchive: true
             }
         }
     }
@@ -102,8 +72,8 @@ pipeline {
             cleanWs()
         }
         success {
-            echo "✓ Tests passed and report uploaded to Railway!"
-            echo "View report: ${RAILWAY_ALLURE_URL}/reports/selenium-tests-jenkins"
+            echo "✓ Tests passed and report uploaded to Allure Docker Service!"
+            echo "View combined reports: ${ALLURE_SERVER_URL}/allure-docker-service/projects"
         }
         failure {
             echo "✗ Tests failed. Check reports for details."
@@ -111,32 +81,32 @@ pipeline {
     }
 }
 
-def uploadToRailway(browser) {
+def uploadToAllure(browser) {
     def resultsDir = "allure-results-${browser}"
     def projectName = "selenium-tests-${browser}"
     def buildId = env.BUILD_NUMBER
-    def railwayUrl = env.RAILWAY_ALLURE_SERVER_URL
+    def allureUrl = env.ALLURE_SERVER_URL
     
     sh """
         cd ${resultsDir}
         tar -czf ../allure-results-${browser}.tar.gz .
         cd ..
         
-        echo "Uploading ${browser} results to Railway Allure Server..."
+        echo "Uploading ${browser} results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
             -H "Content-Type: application/gzip" \
             --data-binary @allure-results-${browser}.tar.gz \
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \
-            "${railwayUrl}/api/upload/${projectName}?buildId=${buildId}")
+            "${allureUrl}/allure-docker-service/send-results?project_id=${projectName}")
         
         echo "\$RESPONSE"
         
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
             echo "✓ ${browser} report uploaded successfully!"
-            echo "View report at: ${railwayUrl}/reports/${projectName}/latest"
+            echo "View report at: ${allureUrl}/allure-docker-service/projects/${projectName}/reports/latest/index.html"
         else
             echo "✗ Upload failed with status: \$HTTP_CODE"
             exit 1
