@@ -101,7 +101,7 @@ pipeline {
         }
         success {
             echo "✓ Tests passed and report uploaded to Allure Docker Service!"
-            echo "View combined reports: ${ALLURE_SERVER_URL}/allure-docker-service/projects"
+            echo "View combined reports: http://localhost:5050/allure-docker-service/projects"
         }
         failure {
             echo "✗ Tests failed. Check reports for details."
@@ -141,9 +141,7 @@ def uploadToAllure(browser, reportType) {
         fi
         
         # Tar and upload
-        cd ${resultsDir}
-        tar -czf ../allure-results-${browser}-${reportType}.tar.gz .
-        cd ..
+        tar -czf allure-results-${browser}-${reportType}.tar.gz ${resultsDir}
 
         # Debug: List tar contents
         echo "Contents of tar.gz:"
@@ -168,7 +166,7 @@ def uploadToAllure(browser, reportType) {
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
             echo "✓ ${browser} ${reportType} report uploaded successfully!"
-            echo "View report at: ${allureUrl}/allure-docker-service/projects/${projectName}/reports/latest/index.html"
+            echo "View report at: http://localhost:5050/allure-docker-service/projects/${projectName}/reports/latest/index.html"
             
             # Update history for latest-with-history
             if [ "${reportType}" = "latest-with-history" ]; then

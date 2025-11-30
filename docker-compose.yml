@@ -46,7 +46,7 @@ services:
     networks:
       - jenkins-network
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:5050/allure-docker-service/projects || exit 1"]  # Use /projects instead of /ping
+      test: ["CMD-SHELL", "curl -f http://localhost:5050/allure-docker-service/projects || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 3
