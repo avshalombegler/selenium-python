@@ -111,7 +111,7 @@ pipeline {
 
 def uploadToAllure(browser, reportType) {
     def resultsDir = "allure-results-${browser}"
-    def projectName = "selenium-tests-${browser}-${reportType}"
+    def projectName = "${browser.capitalize()} - ${reportType}"
     def allureUrl = env.ALLURE_SERVER_URL
     
     sh """
@@ -130,11 +130,12 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Rename result.json to match the uuid in the JSON
+        # Rename result.json only if filename UUID != JSON UUID
         RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
         if [ -n "\$RESULT_FILE" ]; then
             UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
-            if [ -n "\$UUID" ]; then
+            FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
+            if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
                 mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
             fi
         fi
