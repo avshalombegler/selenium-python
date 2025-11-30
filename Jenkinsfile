@@ -140,7 +140,7 @@ def uploadToAllure(browser, reportType) {
         
         echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
-            -F "files=@allure-results-${browser}-${reportType}.tar.gz" \
+            -F "files[]=@allure-results-${browser}-${reportType}.tar.gz" \
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \
