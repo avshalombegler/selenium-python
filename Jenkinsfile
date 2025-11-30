@@ -75,6 +75,12 @@ pipeline {
                 }
             }
         }
+        
+        stage('Debug Results') {
+            steps {
+                sh 'ls -la allure-results-chrome/*.json || echo "No JSON files found"'
+            }
+        }
     }
     
     post {
