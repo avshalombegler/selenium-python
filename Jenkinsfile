@@ -101,7 +101,7 @@ pipeline {
         }
         success {
             echo "✓ Tests passed and report uploaded to Allure Docker Service!"
-            echo "View combined reports: http://localhost:5050/allure-docker-service/projects"
+            echo "View combined reports: http://localhost:5050/projects"
         }
         failure {
             echo "✗ Tests failed. Check reports for details."
@@ -162,14 +162,14 @@ def uploadToAllure(browser, reportType) {
             -L \
             -w "\nHTTP Status: %{http_code}\n" \
             -s \
-            "${allureUrl}/allure-docker-service/send-results?project_id=$projectName")
+            "${allureUrl}/send-results?project_id=$projectName")
         
         echo "\$RESPONSE"
         
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
             echo "✓ $browser $reportType report uploaded successfully!"
-            echo "View report at: http://localhost:5050/allure-docker-service/projects/$projectName/reports/latest/index.html"
+            echo "View report at: http://localhost:5050/projects/$projectName/reports/latest/index.html"
             
             # Update history for latest-with-history
             if [ "${reportType}" = "latest-with-history" ]; then
