@@ -1,6 +1,7 @@
 FROM jenkins/jenkins:lts-jdk17
 
-USER root
+# Changed from USER jenkins to allow bind mount writes
+USER root  
 
 # Install system dependencies (add jq for JSON parsing in version fetches)
 RUN apt-get update && apt-get install --no-install-recommends -y \
@@ -40,4 +41,5 @@ RUN ALLURE_VERSION=2.35.1 && \
 COPY requirements.txt /tmp/
 RUN pip3 install --no-cache-dir --break-system-packages -r /tmp/requirements.txt && rm /tmp/requirements.txt
 
-USER jenkins
+# Ensure root for the entire container
+USER root  
