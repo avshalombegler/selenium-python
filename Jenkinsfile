@@ -141,7 +141,7 @@ def uploadToAllure(browser, reportType) {
         fi
         
         # Tar and upload
-        tar -czf allure-results-${browser}-${reportType}.tar.gz ${resultsDir}
+        tar --transform "s|^${resultsDir}|allure-results|" -czf allure-results-${browser}-${reportType}.tar.gz ${resultsDir}
 
         # Debug: List tar contents
         echo "Contents of tar.gz:"
