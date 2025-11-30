@@ -155,7 +155,7 @@ def uploadToAllure(browser, reportType) {
             
             # Update history for latest-with-history
             if [ "${reportType}" = "latest-with-history" ]; then
-                mkdir -p /workspace/allure-history/${browser}
+                mkdir -p /workspace/allure-history/${browser} || true
                 # Generate report locally to extract history (optional, if needed)
                 allure generate --clean ${resultsDir} -o temp-report || true
                 if [ -d "temp-report/history" ]; then
