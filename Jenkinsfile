@@ -130,7 +130,16 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Tar and upload (auto-creates project if needed)
+        # Rename result.json to match the uuid in the JSON
+        RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
+        if [ -n "\$RESULT_FILE" ]; then
+            UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
+            if [ -n "\$UUID" ]; then
+                mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
+            fi
+        fi
+        
+        # Tar and upload
         cd ${resultsDir}
         tar -czf ../allure-results-${browser}-${reportType}.tar.gz .
         cd ..
