@@ -51,6 +51,24 @@ services:
       timeout: 10s
       retries: 3
       start_period: 30s
+  allure-ui:
+    image: frankescobar/allure-docker-service-ui:7.0.3
+    container_name: allure-ui
+    restart: unless-stopped
+    ports:
+      - "5252:5252"
+    environment:
+      - ALLURE_DOCKER_API_URL=http://localhost:5050
+    networks:
+      - jenkins-network
+    depends_on:
+      - allure
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5252 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
 
 volumes:
   jenkins_home:
