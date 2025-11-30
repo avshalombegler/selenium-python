@@ -131,17 +131,13 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Rename result.json only if filename UUID != JSON UUID, then to .json
+        # Rename result.json only if filename UUID != JSON UUID
         RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
         if [ -n "\$RESULT_FILE" ]; then
             UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
             FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
             if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
                 mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
-            fi
-            # Always rename to .json for Allure compatibility
-            if [ -f "${resultsDir}/\${UUID}-result.json" ]; then
-                mv "${resultsDir}/\${UUID}-result.json" "${resultsDir}/\${UUID}.json"
             fi
         fi
         
