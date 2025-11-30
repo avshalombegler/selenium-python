@@ -101,7 +101,7 @@ def uploadToAllure(browser, reportType) {
         echo "Ensuring project '${projectName}' exists..."
         CREATE_RESPONSE=\$(curl -X POST \
             -H "Content-Type: application/json" \
-            -d '{"id": "${projectName}", "name": "${projectName}"}' \
+            -d '{"id": "${projectName}"}' \
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \

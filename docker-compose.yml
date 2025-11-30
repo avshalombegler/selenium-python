@@ -38,7 +38,7 @@ services:
     ports:
       - "5050:5050"  # Expose on host; map to public URL if external access needed
     volumes:
-      - allure_data:/app/allure-docker-api/uploads  # Persist data
+      - allure_data:/app/allure-docker-api  # Persist data
     environment:
       - CHECK_RESULTS_EVERY_SECONDS=1  # Auto-generate reports
       - KEEP_HISTORY=1  # Retain historical data
