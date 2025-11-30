@@ -97,21 +97,6 @@ def uploadToAllure(browser, reportType) {
     def allureUrl = env.ALLURE_SERVER_URL
     
     sh """
-        # Create project if it doesn't exist
-        echo "Ensuring project '${projectName}' exists..."
-        CREATE_RESPONSE=\$(curl -X POST \
-            -H "Content-Type: application/json" \
-            -d '{"id": "${projectName}"}' \
-            -L \
-            -w "\\nHTTP Status: %{http_code}\\n" \
-            -s \
-            "${allureUrl}/allure-docker-service/projects")
-        
-        CREATE_CODE=\$(echo "\$CREATE_RESPONSE" | tail -n 1 | grep -oP '\\d+')
-        if [ "\$CREATE_CODE" != "201" ] && [ "\$CREATE_CODE" != "200" ]; then
-            echo "Warning: Project creation returned \$CREATE_CODE. Proceeding anyway..."
-        fi
-        
         # Check if results directory has files
         if [ ! -d "${resultsDir}" ] || [ -z "\$(find ${resultsDir} -type f -name '*.json' | head -1)" ]; then
             echo "No Allure result files found in ${resultsDir}. Skipping upload."
@@ -127,7 +112,7 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Tar and upload
+        # Tar and upload (auto-creates project if needed)
         cd ${resultsDir}
         tar -czf ../allure-results-${browser}-${reportType}.tar.gz .
         cd ..
@@ -156,7 +141,7 @@ def uploadToAllure(browser, reportType) {
             # Update history for latest-with-history
             if [ "${reportType}" = "latest-with-history" ]; then
                 mkdir -p /workspace/allure-history/${browser} || true
-                # Generate report locally to extract history (optional, if needed)
+                # Generate report locally to extract history
                 allure generate --clean ${resultsDir} -o temp-report || true
                 if [ -d "temp-report/history" ]; then
                     cp -r temp-report/history/* /workspace/allure-history/${browser}/ || true
