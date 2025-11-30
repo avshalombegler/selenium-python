@@ -61,15 +61,16 @@ pipeline {
                     }
                 }
             }
-            post {
-                always {
-                    script {
-                        def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
-                        
-                        browsers.each { browser ->
-                            uploadToAllure(browser, 'latest-only')
-                            uploadToAllure(browser, 'latest-with-history')
-                        }
+        }
+        
+        stage('Upload Reports') {  // New stage for clarity
+            steps {
+                script {
+                    def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
+                    
+                    browsers.each { browser ->
+                        uploadToAllure(browser, 'latest-only')
+                        uploadToAllure(browser, 'latest-with-history')
                     }
                 }
             }
@@ -112,8 +113,7 @@ def uploadToAllure(browser, reportType) {
         
         echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
-            -H "Content-Type: application/gzip" \
-            --data-binary @allure-results-${browser}-${reportType}.tar.gz \
+            -F "results=@allure-results-${browser}-${reportType}.tar.gz" \
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \
