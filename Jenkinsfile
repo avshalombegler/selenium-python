@@ -111,7 +111,7 @@ pipeline {
 
 def uploadToAllure(browser, reportType) {
     def resultsDir = "allure-results-${browser}"
-    def projectName = "${browser.capitalize()} - ${reportType}"
+    def projectName = "selenium-tests-${browser}-${reportType}"
     def allureUrl = env.ALLURE_SERVER_URL
     
     sh """
