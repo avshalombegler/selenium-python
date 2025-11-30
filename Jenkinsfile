@@ -140,24 +140,24 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Tar and upload
-        tar --transform "s|^${resultsDir}|allure-results|" -czf allure-results-${browser}-${reportType}.tar.gz ${resultsDir}
+        # Zip and upload
+        zip -r allure-results-${browser}-${reportType}.zip ${resultsDir}
 
-        # Debug: List tar contents
-        echo "Contents of tar.gz:"
-        tar -tzf allure-results-${browser}-${reportType}.tar.gz
+        # Debug: List zip contents
+        echo "Contents of zip file:"
+        unzip -l allure-results-${browser}-${reportType}.zip
         
-        # Check if tar file is not empty
-        if [ ! -s "allure-results-${browser}-${reportType}.tar.gz" ]; then
-            echo "Tar file is empty. Skipping upload."
+        # Check if zip file is not empty
+        if [ ! -s "allure-results-${browser}-${reportType}.zip" ]; then
+            echo "Zip file is empty. Skipping upload."
             exit 0
         fi
         
         echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
-        RESPONSE=\$(curl -X POST \
-            -F "files[]=@allure-results-${browser}-${reportType}.tar.gz" \
+        RESPONSE=$(curl -X POST \
+            -F "files[]=@allure-results-${browser}-${reportType}.zip" \
             -L \
-            -w "\\nHTTP Status: %{http_code}\\n" \
+            -w "\nHTTP Status: %{http_code}\n" \
             -s \
             "${allureUrl}/allure-docker-service/send-results?project_id=${projectName}")
         

@@ -4,7 +4,7 @@ USER root
 
 # Install system dependencies (add jq for JSON parsing in version fetches)
 RUN apt-get update && apt-get install --no-install-recommends -y \
-    python3 python3-pip python3-venv xvfb xauth wget curl unzip \
+    python3 python3-pip python3-venv xvfb xauth wget curl unzip zip \
     ffmpeg rsync firefox-esr gnupg ca-certificates jq \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
