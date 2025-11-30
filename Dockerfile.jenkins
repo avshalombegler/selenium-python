@@ -8,13 +8,13 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     ffmpeg rsync firefox-esr gnupg ca-certificates jq \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install Chrome (using stable repo, similar to ci.yml's action)
+# Install Chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/google-chrome-keyring.gpg \
     && echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
     && apt-get update && apt-get install --no-install-recommends -y google-chrome-stable \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install drivers (ChromeDriver, GeckoDriver) with pinned versions for stability
+# Install drivers (ChromeDriver, GeckoDriver)
 RUN CHROMEDRIVER_VERSION=$(curl -sS https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE) && \
     wget -q https://storage.googleapis.com/chrome-for-testing-public/${CHROMEDRIVER_VERSION}/linux64/chromedriver-linux64.zip && \
     unzip chromedriver-linux64.zip && mv chromedriver-linux64/chromedriver /usr/local/bin/ && chmod +x /usr/local/bin/chromedriver && \
@@ -25,7 +25,7 @@ RUN CHROMEDRIVER_VERSION=$(curl -sS https://googlechromelabs.github.io/chrome-fo
     geckodriver --version && \
     rm -f chromedriver-linux64.zip geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
 
-# Install Allure CLI with pinned version and basic caching simulation (check if exists)
+# Install Allure CLI
 RUN ALLURE_VERSION=2.35.1 && \
     if [ ! -d "/usr/local/allure" ]; then \
         wget -q https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.zip && \

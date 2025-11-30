@@ -33,7 +33,7 @@ services:
           cpus: '1'
           memory: 2G
   allure:
-    image: frankescobar/allure-docker-service:latest
+    image: frankescobar/allure-docker-service:2.30.0  # Pin to stable version
     container_name: allure-server
     restart: unless-stopped
     ports:

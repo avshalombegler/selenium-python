@@ -97,6 +97,21 @@ def uploadToAllure(browser, reportType) {
     def allureUrl = env.ALLURE_SERVER_URL
     
     sh """
+        # Create project if it doesn't exist
+        echo "Ensuring project '${projectName}' exists..."
+        CREATE_RESPONSE=\$(curl -X POST \
+            -H "Content-Type: application/json" \
+            -d '{"id": "${projectName}", "name": "${projectName}"}' \
+            -L \
+            -w "\\nHTTP Status: %{http_code}\\n" \
+            -s \
+            "${allureUrl}/allure-docker-service/projects")
+        
+        CREATE_CODE=\$(echo "\$CREATE_RESPONSE" | tail -n 1 | grep -oP '\\d+')
+        if [ "\$CREATE_CODE" != "201" ] && [ "\$CREATE_CODE" != "200" ]; then
+            echo "Warning: Project creation returned \$CREATE_CODE. Proceeding anyway..."
+        fi
+        
         # Prepare results
         if [ "${reportType}" = "latest-with-history" ]; then
             # Merge history for latest-with-history
