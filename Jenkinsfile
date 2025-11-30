@@ -78,7 +78,19 @@ pipeline {
         
         stage('Debug Results') {
             steps {
-                sh 'ls -la allure-results-chrome/*.json || echo "No JSON files found"'
+                sh '''
+                    echo "Checking Allure results for chrome..."
+                    ls -la allure-results-chrome/*.json || echo "No JSON files for chrome"
+                    
+                    # Print the content of the result.json file
+                    RESULT_FILE=$(find allure-results-chrome -name "*-result.json" | head -1)
+                    if [ -n "$RESULT_FILE" ]; then
+                        echo "Content of $RESULT_FILE:"
+                        cat "$RESULT_FILE"
+                    else
+                        echo "No *-result.json file found"
+                    fi
+                '''
             }
         }
     }
