@@ -153,20 +153,20 @@ def uploadToAllure(browser, reportType) {
             exit 0
         fi
         
-        echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
-        RESPONSE=$(curl -X POST \
+        echo "Uploading $browser $reportType results to Allure Docker Service..."
+        RESPONSE=\$(curl -X POST \
             -F "files[]=@allure-results-${browser}-${reportType}.zip" \
             -L \
             -w "\nHTTP Status: %{http_code}\n" \
             -s \
-            "${allureUrl}/allure-docker-service/send-results?project_id=${projectName}")
+            "${allureUrl}/allure-docker-service/send-results?project_id=$projectName")
         
         echo "\$RESPONSE"
         
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
-            echo "✓ ${browser} ${reportType} report uploaded successfully!"
-            echo "View report at: http://localhost:5050/allure-docker-service/projects/${projectName}/reports/latest/index.html"
+            echo "✓ $browser $reportType report uploaded successfully!"
+            echo "View report at: http://localhost:5050/allure-docker-service/projects/$projectName/reports/latest/index.html"
             
             # Update history for latest-with-history
             if [ "${reportType}" = "latest-with-history" ]; then
