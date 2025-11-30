@@ -56,7 +56,8 @@ services:
     container_name: allure-ui
     restart: unless-stopped
     environment:
-      - ALLURE_DOCKER_API_URL=http://localhost:5050
+      - ALLURE_DOCKER_PUBLIC_API_URL=http://localhost:5050
+      - ALLURE_DOCKER_PUBLIC_API_URL_PREFIX=""
     ports:
       - "5252:5252"
     networks:
