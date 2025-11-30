@@ -56,7 +56,7 @@ pipeline {
                                     --html=report-${browser}.html \
                                     --self-contained-html \
                                     --reruns 1 --reruns-delay 2 -m ${params.MARKER} \
-                                    --allure-no-capture-assert || true
+                                    --allure-no-capture || true
                             """
                         }]
                     }
