@@ -63,7 +63,7 @@ pipeline {
             }
         }
         
-        stage('Upload Reports') {  // New stage for clarity
+        stage('Upload Reports') {
             steps {
                 script {
                     def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
@@ -112,6 +112,12 @@ def uploadToAllure(browser, reportType) {
             echo "Warning: Project creation returned \$CREATE_CODE. Proceeding anyway..."
         fi
         
+        # Check if results directory has files
+        if [ ! -d "${resultsDir}" ] || [ -z "\$(find ${resultsDir} -type f -name '*.json' | head -1)" ]; then
+            echo "No Allure result files found in ${resultsDir}. Skipping upload."
+            exit 0
+        fi
+        
         # Prepare results
         if [ "${reportType}" = "latest-with-history" ]; then
             # Merge history for latest-with-history
@@ -126,9 +132,15 @@ def uploadToAllure(browser, reportType) {
         tar -czf ../allure-results-${browser}-${reportType}.tar.gz .
         cd ..
         
+        # Check if tar file is not empty
+        if [ ! -s "allure-results-${browser}-${reportType}.tar.gz" ]; then
+            echo "Tar file is empty. Skipping upload."
+            exit 0
+        fi
+        
         echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
-            -F "results=@allure-results-${browser}-${reportType}.tar.gz" \
+            -F "files=@allure-results-${browser}-${reportType}.tar.gz" \  # Changed to "files" to match API expectation
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \
