@@ -32,15 +32,17 @@ services:
           cpus: '1'
           memory: 2G
   allure:
-    image: "frankescobar/allure-docker-service"
+    image: frankescobar/allure-docker-service:2.35.1  # Pin to stable version
     container_name: allure-server
     restart: unless-stopped
+    ports:
+      - "5050:5050"  # Expose on host; map to public URL if external access needed
+    volumes:
+      - allure_data:/app/allure-docker-api  # Persist data
     environment:
       - CHECK_RESULTS_EVERY_SECONDS=1  # Auto-generate reports
       - KEEP_HISTORY=1  # Retain historical data
       - KEEP_HISTORY_LATEST=25  # Keep latest 25 builds per project
-    ports:
-      - "5050:5050"  # Expose on host; map to public URL if external access needed
     networks:
       - jenkins-network
     healthcheck:
@@ -49,16 +51,14 @@ services:
       timeout: 10s
       retries: 3
       start_period: 30s
-    volumes:
-      - allure_data:/app/allure-docker-api  # Persist data
   allure-ui:
-    image: "frankescobar/allure-docker-service-ui"
+    image: frankescobar/allure-docker-service-ui:7.0.3
     container_name: allure-ui
     restart: unless-stopped
-    environment:
-      - ALLURE_DOCKER_PUBLIC_API_URL: "http://localhost:5050"
     ports:
       - "5252:5252"
+    environment:
+      - ALLURE_DOCKER_API_URL=http://localhost:5050
     networks:
       - jenkins-network
     depends_on:
