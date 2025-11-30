@@ -144,6 +144,10 @@ def uploadToAllure(browser, reportType) {
         cd ${resultsDir}
         tar -czf ../allure-results-${browser}-${reportType}.tar.gz .
         cd ..
+
+        # Debug: List tar contents
+echo "Contents of tar.gz:"
+tar -tzf allure-results-${browser}-${reportType}.tar.gz
         
         # Check if tar file is not empty
         if [ ! -s "allure-results-${browser}-${reportType}.tar.gz" ]; then
