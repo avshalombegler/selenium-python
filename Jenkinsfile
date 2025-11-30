@@ -141,7 +141,10 @@ def uploadToAllure(browser, reportType) {
         fi
         
         # Zip and upload
-        zip -r allure-results-${browser}-${reportType}.zip ${resultsDir}
+        mkdir allure-results
+        cp -r ${resultsDir}/* allure-results/
+        zip -r allure-results-${browser}-${reportType}.zip allure-results
+        rm -rf allure-results
 
         # Debug: List zip contents
         echo "Contents of zip file:"
