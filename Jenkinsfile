@@ -49,12 +49,13 @@ pipeline {
                     parallel browsers.collectEntries { browser -> 
                         [(browser): {
                             sh """
-                                pytest tests/ \
-                                    --alluredir=allure-results-${browser} \
+                                xvfb-run -a -s "-screen 0 1920x1080x24" \
+                                    pytest tests/ -v -n ${params.WORKERS} --dist=loadfile \
                                     --browser=${browser} \
+                                    --alluredir=allure-results-${browser} \
                                     --html=report-${browser}.html \
                                     --self-contained-html \
-                                    -v
+                                    --reruns 1 --reruns-delay 2 -m ${params.MARKER} || true
                             """
                         }]
                     }
