@@ -134,7 +134,7 @@ def uploadToAllure(browser, reportType) {
         done
 
         echo "Uploading $browser $reportType results to Allure Docker Service..."
-        RESPONSE=$(curl -X POST \
+        RESPONSE=\$(curl -X POST \
             -H 'Content-Type: multipart/form-data' \
             $FILES \
             -L \
