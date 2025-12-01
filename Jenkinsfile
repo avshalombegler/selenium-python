@@ -105,12 +105,24 @@ def uploadToAllure(browser) {
             exit 0
         fi
         
-        # Create or verify project exists
-        echo "Creating/verifying project: ${projectName}..."
-        curl -X POST "${allureUrl}/allure-docker-service/projects" \
+        # Create or update project with display name
+        echo "Creating/updating project: ${projectName}..."
+        CREATE_RESPONSE=\$(curl -X POST "${allureUrl}/allure-docker-service/projects" \
             -H "Content-Type: application/json" \
             -d '{"id":"${projectId}","name":"${projectName}"}' \
-            -s || echo "Project may already exist, continuing..."
+            -w "\\nHTTP Status: %{http_code}\\n" \
+            -s)
+        
+        echo "\$CREATE_RESPONSE"
+        
+        # If project exists, update it with PUT
+        if echo "\$CREATE_RESPONSE" | grep -q "already exists"; then
+            echo "Project exists, updating name..."
+            curl -X PUT "${allureUrl}/allure-docker-service/projects/${projectId}" \
+                -H "Content-Type: application/json" \
+                -d '{"name":"${projectName}"}' \
+                -s
+        fi
         
         # Rename result.json only if filename UUID != JSON UUID
         RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
