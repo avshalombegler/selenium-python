@@ -75,6 +75,24 @@ pipeline {
                 }
             }
         }
+        
+        // stage('Debug Results') {
+        //     steps {
+        //         sh '''
+        //             echo "Checking Allure results for chrome..."
+        //             ls -la allure-results-chrome/*.json || echo "No JSON files for chrome"
+                    
+        //             # Print the content of the result.json file
+        //             RESULT_FILE=$(find allure-results-chrome -name "*-result.json" | head -1)
+        //             if [ -n "$RESULT_FILE" ]; then
+        //                 echo "Content of $RESULT_FILE:"
+        //                 cat "$RESULT_FILE"
+        //             else
+        //                 echo "No *-result.json file found"
+        //             fi
+        //         '''
+        //     }
+        // }
     }
     
     post {
@@ -107,12 +125,22 @@ def uploadToAllure(browser, reportType) {
         if [ "${reportType}" = "latest-with-history" ]; then
             mkdir -p ${resultsDir}/history
             if [ -d "/workspace/allure-history/${browser}" ]; then
-                cp -r '/workspace/allure-history/'${browser}'/*' ${resultsDir}/history/ || true
+                cp -r /workspace/allure-history/${browser}/* ${resultsDir}/history/ || true
             fi
         fi
-                
+        
+        # Rename result.json only if filename UUID != JSON UUID
+        RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
+        if [ -n "\$RESULT_FILE" ]; then
+            UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
+            FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
+            if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
+                mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
+            fi
+        fi
+        
         # Send results files
-        FILES_TO_SEND=$(find ${resultsDir} -type f \( -name '*.json' -o -name '*.png' -o -name '*.txt' \) | tr '\n' ' ')
+        FILES_TO_SEND=$(find "${resultsDir}" -type f -name '*.json' -o -name '*.png' -o -name '*.txt' | tr '\n' ' ')
         if [ -z "$FILES_TO_SEND" ]; then
             echo "No files to send. Skipping upload."
             exit 0
@@ -137,17 +165,13 @@ def uploadToAllure(browser, reportType) {
             echo "✓ $browser-$reportType report uploaded successfully!"
             echo "View report at: http://localhost:5050/projects/$projectName/reports/latest/index.html"
             
-            # Debug: List extracted results in container
-            echo "Contents of extracted results for project $projectName:"
-            docker exec allure ls -la /app/projects/$projectName/results/ || echo "Failed to access container or path."
-
             # Update history for latest-with-history
             if [ "${reportType}" = "latest-with-history" ]; then
                 mkdir -p /workspace/allure-history/${browser} || true
                 # Generate report locally to extract history
                 allure generate --clean ${resultsDir} -o temp-report || true
                 if [ -d "temp-report/history" ]; then
-                    cp -r temp-report/history/* /workspace/allure-history/${browser}/ || true
+                    cp -r 'temp-report/history/*' /workspace/allure-history/${browser}/ || true
                 fi
                 rm -rf temp-report
             fi
