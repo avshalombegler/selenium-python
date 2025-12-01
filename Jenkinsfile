@@ -75,24 +75,6 @@ pipeline {
                 }
             }
         }
-        
-        // stage('Debug Results') {
-        //     steps {
-        //         sh '''
-        //             echo "Checking Allure results for chrome..."
-        //             ls -la allure-results-chrome/*.json || echo "No JSON files for chrome"
-                    
-        //             # Print the content of the result.json file
-        //             RESULT_FILE=$(find allure-results-chrome -name "*-result.json" | head -1)
-        //             if [ -n "$RESULT_FILE" ]; then
-        //                 echo "Content of $RESULT_FILE:"
-        //                 cat "$RESULT_FILE"
-        //             else
-        //                 echo "No *-result.json file found"
-        //             fi
-        //         '''
-        //     }
-        // }
     }
     
     post {
@@ -135,7 +117,7 @@ def uploadToAllure(browser, reportType) {
             UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
             FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
             if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
-                mv "\$RESULT_FILE" "${resultsDir}/${UUID}-result.json"
+                mv "\$RESULT_FILE" "${resultsDir}/$UUID-result.json"
             fi
         fi
         
