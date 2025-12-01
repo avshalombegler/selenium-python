@@ -91,9 +91,10 @@ pipeline {
 }
 
 def uploadToAllure(browser) {
-    def resultsDir = "allure-results-${browser}"
-    def projectName = "selenium-tests-${browser}"
+    def projectId = "selenium-tests-${browser}"
+    def projectName = browser == 'chrome' ? 'Selenium Tests - Chrome' : 'Selenium Tests - Firefox'
     def allureUrl = env.ALLURE_SERVER_URL
+    def resultsDir = "allure-results-${browser}"
     
     sh """#!/bin/bash
         set -e
@@ -108,7 +109,7 @@ def uploadToAllure(browser) {
         echo "Creating/verifying project: ${projectName}..."
         curl -X POST "${allureUrl}/allure-docker-service/projects" \
             -H "Content-Type: application/json" \
-            -d '{"id":"${projectName}"}' \
+            -d '{"id":"${projectId}","name":"${projectName}"}' \
             -s || echo "Project may already exist, continuing..."
         
         # Rename result.json only if filename UUID != JSON UUID
@@ -142,13 +143,13 @@ def uploadToAllure(browser) {
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \
-            "${allureUrl}/allure-docker-service/send-results?project_id=${projectName}")
+            "${allureUrl}/allure-docker-service/send-results?project_id=${projectId}")
         
         echo "\$RESPONSE"
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
             echo "✓ ${browser} report uploaded successfully!"
-            echo "View report at: http://localhost:5050/allure-docker-service/projects/${projectName}/reports/latest/index.html"
+            echo "View report at: http://localhost:5050/allure-docker-service/projects/${projectId}/reports/latest/index.html"
         else
             echo "✗ Upload failed with status: \$HTTP_CODE"
             echo "Full response: \$RESPONSE"
