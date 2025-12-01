@@ -104,6 +104,13 @@ def uploadToAllure(browser) {
             exit 0
         fi
         
+        # Create or verify project exists
+        echo "Creating/verifying project: ${projectName}..."
+        curl -X POST "${allureUrl}/allure-docker-service/projects" \
+            -H "Content-Type: application/json" \
+            -d '{"id":"${projectName}"}' \
+            -s || echo "Project may already exist, continuing..."
+        
         # Rename result.json only if filename UUID != JSON UUID
         RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
         if [ -n "\$RESULT_FILE" ]; then
@@ -137,12 +144,14 @@ def uploadToAllure(browser) {
             -s \
             "${allureUrl}/allure-docker-service/send-results?project_id=${projectName}")
         
+        echo "\$RESPONSE"
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
             echo "✓ ${browser} report uploaded successfully!"
-            echo "View report at: http://localhost:5050/projects/${projectName}/reports/latest/index.html"
+            echo "View report at: http://localhost:5050/allure-docker-service/projects/${projectName}/reports/latest/index.html"
         else
             echo "✗ Upload failed with status: \$HTTP_CODE"
+            echo "Full response: \$RESPONSE"
             exit 1
         fi
     """
