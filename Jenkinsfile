@@ -107,10 +107,20 @@ def uploadToAllure(browser, reportType) {
         if [ "${reportType}" = "latest-with-history" ]; then
             mkdir -p ${resultsDir}/history
             if [ -d "/workspace/allure-history/${browser}" ]; then
-                cp -r /workspace/allure-history/${browser}/* ${resultsDir}/history/ || true
+                cp -r '/workspace/allure-history/'${browser}'/*' ${resultsDir}/history/ || true
             fi
         fi
-                
+        
+        # Rename result.json only if filename UUID != JSON UUID
+        # RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
+        # if [ -n "\$RESULT_FILE" ]; then
+        #     UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
+        #     FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
+        #     if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
+        #         mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
+        #     fi
+        # fi
+        
         # Send results files
         FILES_TO_SEND=$(find ${resultsDir} -type f \( -name '*.json' -o -name '*.png' -o -name '*.txt' \) | tr '\n' ' ')
         if [ -z "$FILES_TO_SEND" ]; then
