@@ -122,7 +122,7 @@ def uploadToAllure(browser, reportType) {
         fi
         
         # Send results files
-        FILES_TO_SEND=\\\$(find "${resultsDir}" -type f -name '*.json' -o -name '*.png' -o -name '*.txt' | tr '\\n' ' ')
+        FILES_TO_SEND=\\\$(find "${resultsDir}" -type f \\( -name '*.json' -o -name '*.png' -o -name '*.txt' \\) | tr '\\n' ' ')
         if [ -z "\\\$FILES_TO_SEND" ]; then
             echo "No files to send. Skipping upload."
             exit 0
@@ -130,7 +130,7 @@ def uploadToAllure(browser, reportType) {
 
         FILES=''
         for FILE in \\\$FILES_TO_SEND; do
-            FILES+=" -F files[]=@\\\$FILE"
+            FILES="\\\$FILES -F files[]=@\\\$FILE"
         done
 
         echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
