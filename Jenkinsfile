@@ -135,7 +135,7 @@ def uploadToAllure(browser, reportType) {
             UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
             FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
             if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
-                mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
+                mv "\$RESULT_FILE" "${resultsDir}/${UUID}-result.json"
             fi
         fi
         
