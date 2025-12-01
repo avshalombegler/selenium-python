@@ -139,15 +139,14 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Zip allure-results folder before upload
-        mkdir allure-results
-        cp -r ${resultsDir}/* allure-results/
-        zip -r allure-results-${browser}-${reportType}.zip allure-results
-        rm -rf allure-results
+        # Zip results directly before upload
+        cd ${resultsDir}
+        zip -r ../allure-results-${browser}-${reportType}.zip .
+        cd ..
 
         # Debug: List zip contents
-        # echo "Contents of zip file:"
-        # unzip -l allure-results-${browser}-${reportType}.zip
+        echo "Contents of zip file:"
+        unzip -l allure-results-${browser}-${reportType}.zip
         
         # Check if zip file is not empty
         if [ ! -s "allure-results-${browser}-${reportType}.zip" ]; then
@@ -161,7 +160,7 @@ def uploadToAllure(browser, reportType) {
             -L \
             -w "\nHTTP Status: %{http_code}\n" \
             -s \
-            "${allureUrl}/send-results?project_id=$projectName")
+            "${allureUrl}/allure-docker-service/send-results?project_id=$projectName")
         
         echo "\$RESPONSE"
         
@@ -170,6 +169,10 @@ def uploadToAllure(browser, reportType) {
             echo "✓ $browser-$reportType report uploaded successfully!"
             echo "View report at: http://localhost:5050/projects/$projectName/reports/latest/index.html"
             
+            # Debug: List extracted results in container
+            echo "Contents of extracted results for project $projectName:"
+            docker exec allure ls -la /app/projects/$projectName/results/ || echo "Failed to access container or path."
+
             # Update history for latest-with-history
             if [ "${reportType}" = "latest-with-history" ]; then
                 mkdir -p /workspace/allure-history/${browser} || true
