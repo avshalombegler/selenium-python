@@ -11,7 +11,7 @@ services:
       - "50000:50000"
     volumes:
       - jenkins_home:/var/jenkins_home
-      - ./:/workspace:cached  # History will be stored here
+      - ./:/workspace:cached
     environment:
       - JAVA_OPTS=-Dhudson.model.DirectoryBrowserSupport.CSP="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';"
       - JENKINS_OPTS=--prefix=/
@@ -36,13 +36,13 @@ services:
     container_name: allure-server
     restart: unless-stopped
     environment:
-      - CHECK_RESULTS_EVERY_SECONDS=1  # Auto-generate reports
-      - KEEP_HISTORY=1  # Retain historical data
-      - KEEP_HISTORY_LATEST=25  # Keep latest 25 builds per project
+      - CHECK_RESULTS_EVERY_SECONDS=1
+      - KEEP_HISTORY=1
+      - KEEP_HISTORY_LATEST=25
     ports:
-      - "5050:5050"  # Expose on host; map to public URL if external access needed
+      - "5050:5050"
     volumes:
-      - allure_data:/app/allure-docker-api  # Persist data
+      - allure_data:/app/allure-docker-api
     networks:
       - jenkins-network
     healthcheck:
@@ -56,19 +56,31 @@ services:
     container_name: allure-ui
     restart: unless-stopped
     environment:
-      - ALLURE_DOCKER_API_URL=http://localhost:5050
+      - ALLURE_DOCKER_PUBLIC_API_URL=/allure-api
     ports:
       - "5252:5252"
     networks:
       - jenkins-network
     depends_on:
       - allure
+  nginx:
+    image: nginx:alpine
+    container_name: allure-proxy
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - jenkins-network
+    depends_on:
+      - allure
+      - allure-ui
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:5252 || exit 1"]
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 30s
 
 volumes:
   jenkins_home:
