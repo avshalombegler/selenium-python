@@ -122,25 +122,25 @@ def uploadToAllure(browser, reportType) {
         fi
         
         # Send results files
-        FILES_TO_SEND=\$(find "${resultsDir}" -type f -name '*.json' -o -name '*.png' -o -name '*.txt' | tr '\n' ' ')
-        if [ -z "$FILES_TO_SEND" ]; then
+        FILES_TO_SEND=\`find "${resultsDir}" -type f -name '*.json' -o -name '*.png' -o -name '*.txt' | tr '\n' ' '\`
+        if [ -z "\$FILES_TO_SEND" ]; then
             echo "No files to send. Skipping upload."
             exit 0
         fi
 
         FILES=''
-        for FILE in $FILES_TO_SEND; do
-            FILES+="-F files[]=@$FILE "
+        for FILE in \$FILES_TO_SEND; do
+            FILES+=" -F files[]=@\$FILE"
         done
 
-        echo "Uploading $browser $reportType results to Allure Docker Service..."
+        echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
             -H 'Content-Type: multipart/form-data' \
-            $FILES \
+            \$FILES \
             -L \
             -w "\nHTTP Status: %{http_code}\n" \
             -s \
-            "${allureUrl}/allure-docker-service/send-results?project_id=$projectName")
+            "${allureUrl}/allure-docker-service/send-results?project_id=\$projectName")
         
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
