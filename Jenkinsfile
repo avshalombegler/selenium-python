@@ -145,9 +145,9 @@ def uploadToAllure(browser, reportType) {
         zip -r allure-results-${browser}-${reportType}.zip allure-results
         rm -rf allure-results
 
-        // # Debug: List zip contents
-        // echo "Contents of zip file:"
-        // unzip -l allure-results-${browser}-${reportType}.zip
+        # Debug: List zip contents
+        # echo "Contents of zip file:"
+        # unzip -l allure-results-${browser}-${reportType}.zip
         
         # Check if zip file is not empty
         if [ ! -s "allure-results-${browser}-${reportType}.zip" ]; then
