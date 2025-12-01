@@ -121,8 +121,10 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Send results files
-        FILES_TO_SEND=\\\$(find "${resultsDir}" -type f \\( -name '*.json' -o -name '*.png' -o -name '*.txt' \\) | tr '\\n' ' ')
+        # Send results files - separate find commands
+        FILES_TO_SEND=\\\$(find "${resultsDir}" -type f -name '*.json'; find "${resultsDir}" -type f -name '*.png'; find "${resultsDir}" -type f -name '*.txt')
+        FILES_TO_SEND=\\\$(echo "\\\$FILES_TO_SEND" | tr '\\n' ' ')
+        
         if [ -z "\\\$FILES_TO_SEND" ]; then
             echo "No files to send. Skipping upload."
             exit 0
