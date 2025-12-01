@@ -69,7 +69,8 @@ pipeline {
                     def browsers = params.BROWSER == 'both' ? ['chrome', 'firefox'] : [params.BROWSER]
                     
                     browsers.each { browser ->
-                        uploadToAllure(browser)
+                        uploadToAllure(browser, 'latest-only')
+                        uploadToAllure(browser, 'latest-with-history')
                     }
                 }
             }
@@ -90,9 +91,9 @@ pipeline {
     }
 }
 
-def uploadToAllure(browser) {
+def uploadToAllure(browser, reportType) {
     def resultsDir = "allure-results-${browser}"
-    def projectName = "selenium-tests-${browser}"
+    def projectName = "selenium-tests-${browser}-${reportType}"
     def allureUrl = env.ALLURE_SERVER_URL
     
     sh """#!/bin/bash
@@ -102,6 +103,14 @@ def uploadToAllure(browser) {
         if [ ! -d "${resultsDir}" ] || [ -z "\$(find ${resultsDir} -type f -name '*.json' | head -1)" ]; then
             echo "No Allure result files found in ${resultsDir}. Skipping upload."
             exit 0
+        fi
+        
+        # Merge history for latest-with-history reports
+        if [ "${reportType}" = "latest-with-history" ]; then
+            mkdir -p ${resultsDir}/history
+            if [ -d "/workspace/allure-history/${browser}" ]; then
+                cp -r /workspace/allure-history/${browser}/* ${resultsDir}/history/ || true
+            fi
         fi
         
         # Rename result.json only if filename UUID != JSON UUID
@@ -128,7 +137,7 @@ def uploadToAllure(browser) {
             FILES="\$FILES -F files[]=@\$FILE"
         done
 
-        echo "Uploading ${browser} results to Allure Docker Service..."
+        echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
             -H 'Content-Type: multipart/form-data' \
             \$FILES \
@@ -139,8 +148,19 @@ def uploadToAllure(browser) {
         
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
-            echo "✓ ${browser} report uploaded successfully!"
+            echo "✓ ${browser}-${reportType} report uploaded successfully!"
             echo "View report at: http://localhost:5050/projects/${projectName}/reports/latest/index.html"
+            
+            # Update history for latest-with-history
+            if [ "${reportType}" = "latest-with-history" ]; then
+                mkdir -p /workspace/allure-history/${browser} || true
+                # Generate report locally to extract history
+                allure generate --clean ${resultsDir} -o temp-report || true
+                if [ -d "temp-report/history" ]; then
+                    cp -r temp-report/history/* /workspace/allure-history/${browser}/ || true
+                fi
+                rm -rf temp-report
+            fi
         else
             echo "✗ Upload failed with status: \$HTTP_CODE"
             exit 1
