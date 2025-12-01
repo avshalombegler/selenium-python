@@ -76,23 +76,23 @@ pipeline {
             }
         }
         
-        stage('Debug Results') {
-            steps {
-                sh '''
-                    echo "Checking Allure results for chrome..."
-                    ls -la allure-results-chrome/*.json || echo "No JSON files for chrome"
+        // stage('Debug Results') {
+        //     steps {
+        //         sh '''
+        //             echo "Checking Allure results for chrome..."
+        //             ls -la allure-results-chrome/*.json || echo "No JSON files for chrome"
                     
-                    # Print the content of the result.json file
-                    RESULT_FILE=$(find allure-results-chrome -name "*-result.json" | head -1)
-                    if [ -n "$RESULT_FILE" ]; then
-                        echo "Content of $RESULT_FILE:"
-                        cat "$RESULT_FILE"
-                    else
-                        echo "No *-result.json file found"
-                    fi
-                '''
-            }
-        }
+        //             # Print the content of the result.json file
+        //             RESULT_FILE=$(find allure-results-chrome -name "*-result.json" | head -1)
+        //             if [ -n "$RESULT_FILE" ]; then
+        //                 echo "Content of $RESULT_FILE:"
+        //                 cat "$RESULT_FILE"
+        //             else
+        //                 echo "No *-result.json file found"
+        //             fi
+        //         '''
+        //     }
+        // }
     }
     
     post {
@@ -115,15 +115,14 @@ def uploadToAllure(browser, reportType) {
     def allureUrl = env.ALLURE_SERVER_URL
     
     sh """
-        # Check if results directory has files
+        # Check if results directory exists and has JSON files
         if [ ! -d "${resultsDir}" ] || [ -z "\$(find ${resultsDir} -type f -name '*.json' | head -1)" ]; then
             echo "No Allure result files found in ${resultsDir}. Skipping upload."
             exit 0
         fi
         
-        # Prepare results
+        # Merge history for latest-with-history reports
         if [ "${reportType}" = "latest-with-history" ]; then
-            # Merge history for latest-with-history
             mkdir -p ${resultsDir}/history
             if [ -d "/workspace/allure-history/${browser}" ]; then
                 cp -r /workspace/allure-history/${browser}/* ${resultsDir}/history/ || true
@@ -140,15 +139,15 @@ def uploadToAllure(browser, reportType) {
             fi
         fi
         
-        # Zip and upload
+        # Zip allure-results folder before upload
         mkdir allure-results
         cp -r ${resultsDir}/* allure-results/
         zip -r allure-results-${browser}-${reportType}.zip allure-results
         rm -rf allure-results
 
-        # Debug: List zip contents
-        echo "Contents of zip file:"
-        unzip -l allure-results-${browser}-${reportType}.zip
+        // # Debug: List zip contents
+        // echo "Contents of zip file:"
+        // unzip -l allure-results-${browser}-${reportType}.zip
         
         # Check if zip file is not empty
         if [ ! -s "allure-results-${browser}-${reportType}.zip" ]; then
@@ -156,7 +155,7 @@ def uploadToAllure(browser, reportType) {
             exit 0
         fi
         
-        echo "Uploading $browser $reportType results to Allure Docker Service..."
+        echo "Uploading $browser-$reportType results to Allure Docker Service..."
         RESPONSE=\$(curl -X POST \
             -F "files[]=@allure-results-${browser}-${reportType}.zip" \
             -L \
@@ -168,7 +167,7 @@ def uploadToAllure(browser, reportType) {
         
         HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
         if [ "\$HTTP_CODE" = "200" ]; then
-            echo "✓ $browser $reportType report uploaded successfully!"
+            echo "✓ $browser-$reportType report uploaded successfully!"
             echo "View report at: http://localhost:5050/projects/$projectName/reports/latest/index.html"
             
             # Update history for latest-with-history
