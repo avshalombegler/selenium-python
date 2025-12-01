@@ -130,14 +130,14 @@ def uploadToAllure(browser, reportType) {
         fi
         
         # Rename result.json only if filename UUID != JSON UUID
-        RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
-        if [ -n "\$RESULT_FILE" ]; then
-            UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
-            FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
-            if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
-                mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
-            fi
-        fi
+        # RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
+        # if [ -n "\$RESULT_FILE" ]; then
+        #     UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
+        #     FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
+        #     if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
+        #         mv "\$RESULT_FILE" "${resultsDir}/\${UUID}-result.json"
+        #     fi
+        # fi
         
         # Send results files
         FILES_TO_SEND=$(find ${resultsDir} -type f \( -name '*.json' -o -name '*.png' -o -name '*.txt' \) | tr '\n' ' ')
