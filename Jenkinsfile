@@ -96,9 +96,11 @@ def uploadToAllure(browser, reportType) {
     def projectName = "selenium-tests-${browser}-${reportType}"
     def allureUrl = env.ALLURE_SERVER_URL
     
-    sh """
+    sh """#!/bin/bash
+        set -e
+        
         # Check if results directory exists and has JSON files
-        if [ ! -d "${resultsDir}" ] || [ -z "\\\$(find ${resultsDir} -type f -name '*.json' | head -1)" ]; then
+        if [ ! -d "${resultsDir}" ] || [ -z "\$(find ${resultsDir} -type f -name '*.json' | head -1)" ]; then
             echo "No Allure result files found in ${resultsDir}. Skipping upload."
             exit 0
         fi
@@ -112,40 +114,40 @@ def uploadToAllure(browser, reportType) {
         fi
         
         # Rename result.json only if filename UUID != JSON UUID
-        RESULT_FILE=\\\$(find ${resultsDir} -name "*-result.json" | head -1)
-        if [ -n "\\\$RESULT_FILE" ]; then
-            UUID=\\\$(grep '"uuid"' "\\\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
-            FILENAME_UUID=\\\$(basename "\\\$RESULT_FILE" | sed 's/-result.json//')
-            if [ -n "\\\$UUID" ] && [ "\\\$FILENAME_UUID" != "\\\$UUID" ]; then
-                mv "\\\$RESULT_FILE" "${resultsDir}/\\\$UUID-result.json"
+        RESULT_FILE=\$(find ${resultsDir} -name "*-result.json" | head -1)
+        if [ -n "\$RESULT_FILE" ]; then
+            UUID=\$(grep '"uuid"' "\$RESULT_FILE" | sed 's/.*"uuid": "\\([^"]*\\)".*/\\1/')
+            FILENAME_UUID=\$(basename "\$RESULT_FILE" | sed 's/-result.json//')
+            if [ -n "\$UUID" ] && [ "\$FILENAME_UUID" != "\$UUID" ]; then
+                mv "\$RESULT_FILE" "${resultsDir}/\$UUID-result.json"
             fi
         fi
         
         # Send results files - separate find commands
-        FILES_TO_SEND=\\\$(find "${resultsDir}" -type f -name '*.json'; find "${resultsDir}" -type f -name '*.png'; find "${resultsDir}" -type f -name '*.txt')
-        FILES_TO_SEND=\\\$(echo "\\\$FILES_TO_SEND" | tr '\\n' ' ')
+        FILES_TO_SEND=\$(find "${resultsDir}" -type f -name '*.json'; find "${resultsDir}" -type f -name '*.png'; find "${resultsDir}" -type f -name '*.txt')
+        FILES_TO_SEND=\$(echo "\$FILES_TO_SEND" | tr '\\n' ' ')
         
-        if [ -z "\\\$FILES_TO_SEND" ]; then
+        if [ -z "\$FILES_TO_SEND" ]; then
             echo "No files to send. Skipping upload."
             exit 0
         fi
 
         FILES=''
-        for FILE in \\\$FILES_TO_SEND; do
-            FILES="\\\$FILES -F files[]=@\\\$FILE"
+        for FILE in \$FILES_TO_SEND; do
+            FILES="\$FILES -F files[]=@\$FILE"
         done
 
         echo "Uploading ${browser} ${reportType} results to Allure Docker Service..."
-        RESPONSE=\\\$(curl -X POST \
+        RESPONSE=\$(curl -X POST \
             -H 'Content-Type: multipart/form-data' \
-            \\\$FILES \
+            \$FILES \
             -L \
             -w "\\nHTTP Status: %{http_code}\\n" \
             -s \
             "${allureUrl}/allure-docker-service/send-results?project_id=${projectName}")
         
-        HTTP_CODE=\\\$(echo "\\\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
-        if [ "\\\$HTTP_CODE" = "200" ]; then
+        HTTP_CODE=\$(echo "\$RESPONSE" | tail -n 1 | grep -oP '\\d+')
+        if [ "\$HTTP_CODE" = "200" ]; then
             echo "✓ ${browser}-${reportType} report uploaded successfully!"
             echo "View report at: http://localhost:5050/projects/${projectName}/reports/latest/index.html"
             
@@ -160,7 +162,7 @@ def uploadToAllure(browser, reportType) {
                 rm -rf temp-report
             fi
         else
-            echo "✗ Upload failed with status: \\\$HTTP_CODE"
+            echo "✗ Upload failed with status: \$HTTP_CODE"
             exit 1
         fi
     """
