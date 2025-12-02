@@ -13,7 +13,7 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Com
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables-env)
-- [Running tests locally](#running-tests-locally)
+- [Running tests](#running-tests-locally)
 - [Docker Support](#docker-support)
 - [Allure Reports](#allure-reports)
 - [Project structure](#project-structure)
@@ -155,7 +155,9 @@ PASSWORD=SuperSecretPassword!
 
 **⚠️ Note:** Never commit `.env` with real credentials. Use CI secrets for production.
 
-## Running tests locally
+## Running tests
+
+### Locally
 
 - Run all tests (sequential):
 
@@ -193,6 +195,11 @@ PASSWORD=SuperSecretPassword!
     allure generate reports/allure-results -o reports/allure-report
     ```
 
+### Running in GitHub Actions
+
+- GitHub Actions automatically runs tests on every push or pull request to the main branch.
+- For manual runs, go to the Actions tab, select the CI workflow, and click "Run workflow" (if configured with workflow_dispatch).
+
 ### Running in Jenkins
 
 1. Create a new Pipeline job in Jenkins
@@ -201,7 +208,7 @@ PASSWORD=SuperSecretPassword!
 4. Configure build triggers (e.g., Poll SCM, GitHub webhook)
 5. Run the pipeline
 
-### Pipeline Parameters
+#### Pipeline Parameters
 
 The Jenkinsfile supports the following parameters:
 
