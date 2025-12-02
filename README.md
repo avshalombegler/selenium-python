@@ -39,6 +39,9 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Com
 #### Jenkins
 
 - Full Jenkins CI/CD environment via Docker Compose (Jenkins, Allure server, UI, and Nginx)
+- Scheduled job runs every day at night
+- Allure report generation and storage on Allure server
+- Parameterized builds for flexible test configuration
 
 ## Requirements
 
@@ -202,7 +205,7 @@ PASSWORD=SuperSecretPassword!
 
 The Jenkinsfile supports the following parameters:
 
-- `BROWSER`: Browser choice (chrome/firefox/both)
+- `BROWSER`: Browser choice (both/chrome/firefox)
 - `HEADLESS`: Run in headless mode (true/false)
 - `PARALLEL_WORKERS`: Number of parallel workers (default: auto)
 
