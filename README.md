@@ -210,8 +210,8 @@ PASSWORD=SuperSecretPassword!
 The Jenkinsfile supports the following parameters:
 
 - `BROWSER`: Browser choice (both/chrome/firefox)
-- `HEADLESS`: Run in headless mode (true/false)
-- `PARALLEL_WORKERS`: Number of parallel workers (default: auto)
+- `MARKER`: Test marker to run (full/smoke/regression)
+- `WORKERS`: Number of parallel workers (default: auto)
 
 ## Docker Support
 
