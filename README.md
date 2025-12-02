@@ -14,24 +14,31 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Com
 - [Installation](#installation)
 - [Environment Variables](#environment-variables-env)
 - [Running tests locally](#running-tests-locally)
-- [GitHub Actions CI/CD](#github-actions-cicd)
-- [Jenkins CI/CD](#jenkins-cicd)
 - [Docker Support](#docker-support)
 - [Allure Reports](#allure-reports)
 - [Project structure](#project-structure)
 
 ## Features
 
-- Clean POM architecture with `BasePage` and `PageManager`
+- Clean POM architecture
 - Multi-browser support (Chrome & Firefox)
 - Headless & headed mode
-- Parallel execution via `pytest-xdist`
-- Allure reports with history & trends
-- Automatic video recording (attached to Allure)
-- GitHub Actions CI with matrix strategy
+- Parallel test execution via `pytest-xdist`
+- Allure reports generation with history & trends
+  - Automatic screenshot for failed tests
+  - Automatic video recording
+
+### CI/CD Features
+
+#### GitHub Actions
+
+- Runs automatically on every push/PR to main
 - Allure reports automatically published to GitHub Pages
-- Jenkins pipeline support with Docker and Docker Compose
-- Full CI/CD environment via Docker Compose (Jenkins, Allure server, UI, and Nginx)
+- Automatic artifact archiving
+
+#### Jenkins
+
+- Full Jenkins CI/CD environment via Docker Compose (Jenkins, Allure server, UI, and Nginx)
 
 ## Requirements
 
@@ -57,6 +64,15 @@ Key packages (see `requirements.txt` for full list):
 - `webdriver-manager==4.0.2`
 - `pytest-sugar==1.1.1`
 - `pytest-rerunfailures==16.1`
+
+### Jenkins CI/CD Prerequisites
+
+- Jenkins 2.400+ with Docker support
+- Docker installed on Jenkins agent
+- Required Jenkins plugins:
+  - Docker Pipeline
+  - Allure Plugin
+  - HTML Publisher Plugin
 
 ## Installation
 
@@ -173,34 +189,6 @@ PASSWORD=SuperSecretPassword!
     ```bash
     allure generate reports/allure-results -o reports/allure-report
     ```
-
-## GitHub Actions CI/CD
-
-- Runs automatically on every push/PR to main
-- Matrix strategy: Chrome + Firefox (headless)
-- Parallel execution with pytest-xdist
-- Artifacts: Allure results, videos, junit.xml
-- Allure reports automatically deployed to GitHub Pages
-
-## Jenkins CI/CD
-
-### Prerequisites
-
-- Jenkins 2.400+ with Docker support
-- Docker installed on Jenkins agent
-- Required Jenkins plugins:
-  - Docker Pipeline
-  - Allure Plugin
-  - HTML Publisher Plugin
-
-### Pipeline Features
-
-- Multi-browser execution (Chrome & Firefox)
-- Parallel test execution
-- Allure report generation
-- Video recording for failed tests
-- Automatic artifact archiving
-- Post-build notifications
 
 ### Running in Jenkins
 
