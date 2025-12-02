@@ -241,7 +241,7 @@ selenium-python/
 ├── config/
 │    └── conftest_config.py                     # Configuration for pytest conftest
 │    └── env_config.py                          # Loads .env variables
-│    └── ngic.conf                              # Nginx configuration for reverse proxy
+│    └── nginx.conf                             # Nginx configuration for reverse proxy
 ├── pages/                                      # Page Object Model classes
 │    ├── base/                                  # BasePage, PageManager
 │    └── features/                              # Page objects per feature
