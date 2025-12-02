@@ -13,7 +13,7 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Com
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables-env)
-- [Running tests](#running-tests-locally)
+- [Running tests](#running-tests)
 - [Docker Support](#docker-support)
 - [Allure Reports](#allure-reports)
 - [Project structure](#project-structure)
@@ -243,14 +243,6 @@ Ngrok is used to create secure tunnels for external access to Allure reports, en
 
 ## Allure Reports
 
-### 📊 Jenkins Allure Reports
-
-Reports generated from Jenkins pipeline runs are hosted locally and can be accessed publicly via ngrok tunneling. These reports are populated through the Allure server backend, served via the Allure UI, and exposed externally using ngrok for secure remote access.
-
-**Local Access:** [View Report](http://localhost:8080) (via Nginx reverse proxy to Allure UI)
-
-**Public Access:** [View Report](https://x-y-z.ngrok-free.dev) (dynamic tunnel URL provided by ngrok)
-
 ### 📊 GitHub Actions Allure Reports
 
 Latest reports are published automatically to GitHub Pages:
@@ -259,6 +251,14 @@ Latest reports are published automatically to GitHub Pages:
 |-----------|-----------|-----------|
 | **Chrome** | [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19849391347/) | [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19849391347/) |
 | **Firefox** | [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19849391347/) | [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19849391347/) |
+
+### 📊 Jenkins Allure Reports
+
+Reports generated from Jenkins pipeline runs are hosted locally and can be accessed publicly via ngrok tunneling. These reports are populated through the Allure server backend, served via the Allure UI, and exposed externally using ngrok for secure remote access.
+
+**Local Access:** [View Report](http://localhost:8080) (via Nginx reverse proxy to Allure UI)
+
+**Public Access:** [View Report](https://x-y-z.ngrok-free.dev) (dynamic tunnel URL provided by ngrok)
 
 > Reports update automatically after each CI run.
 
