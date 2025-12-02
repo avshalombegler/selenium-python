@@ -125,8 +125,6 @@ For a containerized setup, use Docker Compose to run the full CI/CD environment:
     .\start-ngrok.ps1
     ```
 
-This sets up Jenkins, Allure server, UI, and Nginx automatically.
-
 ## Environment Variables (.env)
 
 Create a .env file in the project root:
