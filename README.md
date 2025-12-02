@@ -1,8 +1,8 @@
-# Selenium-Python Test Suite
+# Selenium-Python Test Automation Suite
 
 [![CI Status](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml/badge.svg)](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml)
 
-A modern, maintainable test automation suite for <https://the-internet.herokuapp.com>.  
+A modern, maintainable test automation suite using **Selenium** for <https://the-internet.herokuapp.com>.  
 Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Compose orchestration**, and **CI/CD** (GitHub Actions & Jenkins).
 
 ## Table of Contents
