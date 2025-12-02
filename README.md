@@ -225,9 +225,14 @@ Reports generated from Jenkins pipeline runs are hosted locally and can be acces
 
 Latest reports are published automatically to GitHub Pages:
 
+| Example 1 | Latest Run | With History |
+|-----------|-----------|-----------|
+| **Chrome** | [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19849391347/) | [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19849391347/) |
+| **Firefox** | [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19849391347/) | [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19849391347/) |
+
 **Chrome:** 🔹[View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19849391347/) (Latest Run) 📊 [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19849391347/) (With History)
 
-**Firefox:**&nbsp;&nbsp;&nbsp;🔹[View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19849391347/) (Latest Run) 📊 [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19849391347/) (With History)
+**Firefox:**🔹[View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19849391347/) (Latest Run) 📊 [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19849391347/) (With History)
 
 > Reports update automatically after each CI run.
 
