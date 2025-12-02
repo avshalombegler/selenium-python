@@ -1,8 +1,6 @@
 # Selenium-Python Test Suite
 
 [![CI Status](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml/badge.svg)](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml)
-![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 A modern, maintainable test automation suite for <https://the-internet.herokuapp.com>.  
 Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Compose orchestration**, and **CI/CD** (GitHub Actions & Jenkins).
@@ -313,7 +311,3 @@ We welcome contributions! Please follow these steps:
 - Submit a pull request with a clear description.
 
 For issues or questions, open a GitHub issue.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
