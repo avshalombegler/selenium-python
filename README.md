@@ -225,9 +225,9 @@ Reports generated from Jenkins pipeline runs are hosted locally and can be acces
 
 Latest reports are published automatically to GitHub Pages:
 
-**Chrome:** 🔹 **(Latest Run)** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19849391347/) 📊 **(With History):** [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19849391347/)  
+**Chrome:** 🔹[View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-only/build-chrome-19849391347/) **(Latest Run)**     📊 [View Report](https://avshalombegler.github.io/selenium-python/chrome/latest-with-history/build-chrome-19849391347/)**(With History):**
 
-**Firefox:** 🔹 **(Latest Run)** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19849391347/) 📊 **(With History):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19849391347/)  
+**Firefox:** 🔹**(Latest Run)** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-only/build-firefox-19849391347/) 📊 **(With History):** [View Report](https://avshalombegler.github.io/selenium-python/firefox/latest-with-history/build-firefox-19849391347/)  
 
 > Reports update automatically after each CI run.
 
