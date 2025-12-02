@@ -291,10 +291,21 @@ selenium-python/
 
 ## How to Add New Tests
 
-1. Create page object in pages/features/your_feature/your_page.py
-2. Register it in pages/base/page_manager.py
-3. Add test in tests/test_your_feature.py
-4. (Optional) Add @pytest.mark.smoke or other markers
+1. Create page object in `pages/features/your_feature/your_page.py`
+2. Register it in `pages/base/page_manager.py`
+3. Add test in `tests/test_your_feature.py`
+4. (Optional) Add `@pytest.mark.smoke` or other markers
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+- Fork the repository and create a feature branch.
+- Write tests for new features and ensure all tests pass.
+- Follow PEP 8 style guidelines.
+- Submit a pull request with a clear description.
+
+For issues or questions, open a GitHub issue.
 
 ## License
 
