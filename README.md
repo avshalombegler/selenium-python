@@ -18,7 +18,7 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - [Jenkins CI/CD](#jenkins-cicd)
 - [Docker Support](#docker-support)
 - [Allure Reports](#allure-reports)
-- [Project layout](#project-layout)
+- [Project structure](#project-structure)
 
 ## Features
 
@@ -232,31 +232,37 @@ Latest reports are published automatically to GitHub Pages:
 
 > Reports update automatically after each CI run.
 
-## Project layout
+## Project structure
 
 ```text
 selenium-python/
 ├── .github/
-│    └── workflows/ci.yml                   # GitHub Actions workflow
-├── config/env_config.py                    # Loads .env variables
-├── pages/                                  # Page Object Model classes
-│    ├── base/                              # BasePage, PageManager
-│    ├── common/                            # Shared components
-│    └── features/                          # Page objects per feature
-├── pytest_plugins/                         # Modular pytest plugins
-│    ├── browser_fixtures.py                # Browser/driver setup
-│    ├── browser_helpers.py                 # Browser utilities
-│    ├── directory_fixtures.py              # Directory management
-│    ├── hooks.py                           # Pytest hooks
-│    ├── recording_fixtures.py              # Video recording
-│    └── test_fixtures.py                   # Test-level fixtures
-├── reports/                                # Allure results and artifacts
-├── tests/                                  # Test cases
-├── utils/                                  # Helpers (logging, video, etc.)
-├── conftest.py                             # Main conftest - registers plugins
-├── pyproject.toml                          # Project configuration
-├── .env                                    # Environment variables (gitignored)
+│    └── workflows/ci.yml                       # GitHub Actions workflow
+├── config/
+│    └── conftest_config.py                     # Configuration for pytest conftest
+│    └── env_config.py                          # Loads .env variables
+│    └── ngic.conf                              # Nginx configuration for reverse proxy
+├── pages/                                      # Page Object Model classes
+│    ├── base/                                  # BasePage, PageManager
+│    └── features/                              # Page objects per feature
+├── pytest_plugins/                             # Modular pytest plugins
+│    ├── browser_fixtures.py                    # Browser/driver setup
+│    ├── browser_helpers.py                     # Browser utilities
+│    ├── directory_fixtures.py                  # Directory management
+│    ├── hooks.py                               # Pytest hooks
+│    ├── recording_fixtures.py                  # Video recording
+│    └── test_fixtures.py                       # Test-level fixtures
+├── reports/                                    # Allure results and artifacts
+├── tests/                                      # Test cases
+├── utils/                                      # Helpers (logging, video, etc.)
+├── .env                                        # Environment variables (gitignored)
+├── conftest.py                                 # Main conftest - registers plugins
+├── docker-compose.yml                          # Docker Compose configuration for CI/CD environment
+├── Dockerfile.jenkins                          # Custom Jenkins agent Docker image
+├── Jenkinsfile                                 # Jenkins pipeline definition
+├── pyproject.toml                              # Project configuration
 ├── requirements.txt
+├── start-ngrok.ps1                             # PowerShell script to start ngrok tunnel
 └── README.md
 ```
 
