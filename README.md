@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A modern, maintainable test automation suite for <https://the-internet.herokuapp.com>.  
-Built with **Page Object Model**, **pytest**, **Allure reporting**, **video recording**, and **CI/CD** (GitHub Actions & Jenkins).
+Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Compose orchestration**, and **CI/CD** (GitHub Actions & Jenkins).
 
 ## Table of Contents
 
@@ -23,14 +23,15 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 ## Features
 
 - Clean POM architecture with `BasePage` and `PageManager`
+- Multi-browser support (Chrome & Firefox)
+- Headless & headed mode
 - Parallel execution via `pytest-xdist`
 - Allure reports with history & trends
 - Automatic video recording (attached to Allure)
-- Multi-browser support (Chrome & Firefox)
-- Headless & headed mode
 - GitHub Actions CI with matrix strategy
-- Jenkins pipeline support with Docker
 - Allure reports automatically published to GitHub Pages
+- Jenkins pipeline support with Docker and Docker Compose
+- Full CI/CD environment via Docker Compose (Jenkins, Allure server, UI, and Nginx)
 
 ## Requirements
 
@@ -41,18 +42,25 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - **Browsers:**
   - Chrome 120+ / ChromeDriver (auto-managed)
   - Firefox 121+ / GeckoDriver (auto-managed)
+- **Docker:** Latest version (for containerized CI/CD)
+- **Docker Compose:** Latest version (for orchestrating the full environment)
 
 ### Python Dependencies
 
 Key packages (see `requirements.txt` for full list):
 
-- `selenium==4.15.0`
-- `pytest==7.4.3`
-- `allure-pytest==2.13.2`
-- `pytest-xdist==3.5.0`
-- `python-dotenv==1.0.0`
+- `selenium==4.36.0`
+- `pytest==8.4.2`
+- `allure-pytest==2.15.0`
+- `pytest-xdist==3.8.0`
+- `python-dotenv==1.1.1`
+- `webdriver-manager==4.0.2`
+- `pytest-sugar==1.1.1`
+- `pytest-rerunfailures==16.1`
 
 ## Installation
+
+### Local Installation
 
 1. Clone the repository:
 
@@ -76,6 +84,30 @@ Key packages (see `requirements.txt` for full list):
 
 **Note:** Allure CLI requires separate installation (not available via pip).  
 See installation guide: <https://docs.qameta.io/allure/#_installing_a_commandline>
+
+### Docker Installation
+
+For a containerized setup, use Docker Compose to run the full CI/CD environment:
+
+1. Ensure Docker and Docker Compose are installed.
+
+2. Clone the repository and navigate to the project directory.
+
+3. Start the services:
+
+    ```bash
+    docker-compose up -d
+    ```
+
+4. Access Jenkins at `http://localhost:8080` (via Nginx proxy).
+
+5. For external access to Allure reports, run the ngrok script:
+
+    ```powershell
+    .\start-ngrok.ps1
+    ```
+
+This sets up Jenkins, Allure server, UI, and Nginx automatically.
 
 ## Environment Variables (.env)
 
