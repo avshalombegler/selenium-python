@@ -213,15 +213,15 @@ Ngrok is used to create secure tunnels for external access to Allure reports, en
 
 ## Allure Reports
 
-### Jenkins Allure Reports
+### 📊 Jenkins Allure Reports
 
 Reports generated from Jenkins pipeline runs are hosted locally and can be accessed publicly via ngrok tunneling. These reports are populated through the Allure server backend, served via the Allure UI, and exposed externally using ngrok for secure remote access.
 
-📊 **Local Access:** [View Report](http://localhost:8080) (via Nginx reverse proxy to Allure UI)
+**Local Access:** [View Report](http://localhost:8080) (via Nginx reverse proxy to Allure UI)
 
-📊 **Public Access:** [Placeholder for Ngrok Public URL](https://x-y-z.ngrok-free.dev) (dynamic tunnel URL provided by ngrok)
+**Public Access:** [View Report](https://x-y-z.ngrok-free.dev) (dynamic tunnel URL provided by ngrok)
 
-### GitHub Actions Allure Reports
+### 📊 GitHub Actions Allure Reports
 
 Latest reports are published automatically to GitHub Pages:
 
