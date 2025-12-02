@@ -24,7 +24,7 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Com
 - Parallel test execution via `pytest-xdist`
 - Allure reports generation with history & trends
   - Automatic screenshot for failed tests
-  - Automatic video recording
+  - Automatic video recording (configurable via `VIDEO_RECORDING` environment variable: true/false)
 
 ### CI/CD Features
 
