@@ -1,6 +1,7 @@
 # Selenium-Python Test Suite
 
 [![CI Status](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml/badge.svg)](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml)
+[![Jenkins](https://img.shields.io/jenkins/build?jobUrl=https://your-jenkins-server/job/your-job-name)](https://your-jenkins-server/job/your-job-name)
 
 A modern, maintainable test automation suite for <https://the-internet.herokuapp.com>.  
 Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Compose orchestration**, and **CI/CD** (GitHub Actions & Jenkins).
