@@ -186,14 +186,6 @@ The Jenkinsfile supports the following parameters:
 - `HEADLESS`: Run in headless mode (true/false)
 - `PARALLEL_WORKERS`: Number of parallel workers (default: auto)
 
-### Viewing Reports in Jenkins
-
-After each build:
-
-- **Allure Report:** Click "Allure Report" in the build menu
-- **JUnit Results:** Available in "Test Result" section
-- **Videos:** Archived as build artifacts
-
 ## Docker Support
 
 ### Dockerfile.jenkins
