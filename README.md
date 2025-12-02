@@ -1,4 +1,3 @@
-
 # Selenium-Python Test Suite
 
 [![CI Status](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml/badge.svg)](https://github.com/avshalombegler/selenium-python/actions/workflows/ci.yml)
@@ -187,14 +186,6 @@ The Jenkinsfile supports the following parameters:
 - `HEADLESS`: Run in headless mode (true/false)
 - `PARALLEL_WORKERS`: Number of parallel workers (default: auto)
 
-### Viewing Reports in Jenkins
-
-After each build:
-
-- **Allure Report:** Click "Allure Report" in the build menu
-- **JUnit Results:** Available in "Test Result" section
-- **Videos:** Archived as build artifacts
-
 ## Docker Support
 
 ### Dockerfile.jenkins
@@ -207,7 +198,29 @@ The project includes a custom Jenkins agent image with all dependencies:
 - Allure CLI
 - All Python dependencies
 
-## Allure Reports (Live)
+### docker-compose.yml
+
+The project utilizes Docker Compose to orchestrate a complete CI/CD environment, including:
+
+- **Jenkins**: Automated build and test execution server
+- **Allure Server**: Backend service for storing and managing Allure test reports
+- **Allure UI**: Web interface for viewing and analyzing Allure reports
+- **Nginx**: Reverse proxy for routing requests to Allure services
+
+### Ngrok Integration
+
+Ngrok is used to create secure tunnels for external access to Allure reports, enabling remote viewing of test results without exposing internal services directly.
+
+## Allure Reports
+
+### Jenkins Allure Reports
+
+Reports generated from Jenkins pipeline runs are hosted locally and can be accessed publicly via ngrok tunneling. These reports are populated through the Allure server backend, served via the Allure UI, and exposed externally using ngrok for secure remote access.
+
+- **Local Access:** [http://localhost:8080](http://localhost:8080) (via Nginx reverse proxy to Allure UI)
+- **Public Access:** [Placeholder for Ngrok Public URL] (dynamic tunnel URL provided by ngrok)
+
+### GitHub Actions Allure Reports
 
 Latest reports are published automatically to GitHub Pages:
 
