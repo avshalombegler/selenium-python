@@ -32,15 +32,15 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **Docker Com
 #### GitHub Actions
 
 - Runs automatically on every push/PR to main
-- Allure reports automatically published to GitHub Pages
 - Automatic artifact archiving
+- Allure reports automatically published to GitHub Pages
 
 #### Jenkins
 
 - Full Jenkins CI/CD environment via Docker Compose (Jenkins, Allure server, UI, and Nginx)
+- Parameterized builds for flexible test configuration
 - Scheduled job runs every day at night
 - Allure report generation and storage on Allure server
-- Parameterized builds for flexible test configuration
 
 ## Requirements
 
