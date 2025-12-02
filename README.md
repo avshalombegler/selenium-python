@@ -17,7 +17,7 @@ Built with **Page Object Model**, **pytest**, **Allure reporting**, **video reco
 - [GitHub Actions CI/CD](#github-actions-cicd)
 - [Jenkins CI/CD](#jenkins-cicd)
 - [Docker Support](#docker-support)
-- [Allure Reports](#allure-reports-live)
+- [Allure Reports](#allure-reports)
 - [Project layout](#project-layout)
 
 ## Features
